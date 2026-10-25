@@ -1,0 +1,12 @@
+{
+  "model_name_or_path": "/home/lgh/models/Qwen3-0.6B",
+  "template": "qwen3",
+  "finetuning_type": "lora",
+  "infer_backend": "huggingface",
+  "infer_dtype": "bfloat16",
+  "enable_thinking": false,
+  "trust_remote_code": false,
+  "do_sample": false,
+  "max_new_tokens": 8,
+  "repetition_penalty": 1.0
+}

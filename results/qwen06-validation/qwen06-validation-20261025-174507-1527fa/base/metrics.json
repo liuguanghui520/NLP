@@ -1,0 +1,45 @@
+{
+  "count": 776,
+  "accuracy": 0.3170103092783505,
+  "macro_f1": 0.2447702432718298,
+  "invalid_rate": 0.0,
+  "per_class": {
+    "0": {
+      "precision": 0.31476683937823835,
+      "recall": 0.9959016393442623,
+      "f1": 0.47834645669291337,
+      "support": 244
+    },
+    "1": {
+      "precision": 0.75,
+      "recall": 0.005639097744360902,
+      "f1": 0.011194029850746268,
+      "support": 532
+    }
+  },
+  "confusion_matrix": [
+    [
+      243,
+      1,
+      0
+    ],
+    [
+      529,
+      3,
+      0
+    ]
+  ],
+  "matrix_rows": [
+    0,
+    1
+  ],
+  "matrix_columns": [
+    0,
+    1,
+    "invalid"
+  ],
+  "peak_allocated_bytes": 1255778304,
+  "peak_reserved_bytes": 2216689664,
+  "memory_boundary": "After model load; generation only, not training peak",
+  "timing_boundary": "Per model.chat call with CUDA sync; excludes manual prompt encoding; not formal latency benchmark"
+}
