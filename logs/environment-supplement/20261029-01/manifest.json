@@ -1,0 +1,13 @@
+{
+  "collected_at": "2026-10-29T04:28:00.6071407+08:00",
+  "collector_sha256": "19f01b6e71b46db4966bb11e1ee2875ef87e1dd8c573aa6ac74d7ee544dbbf03",
+  "historical_environment_sha256": "082959ade65cba5a4ad43c0277ed073f940925f326e5c5a64e818abb46483f04",
+  "files_sha256": {
+    "environment.json": "4dec29337f8d4270b2c06b148b9a13093bd66d796983a64027c658fb58ecc8bd",
+    "gpu-query.log": "7f3c1ddaca77e94e53a56d3e42f57acf4b58791529b4d87d37366cbc38f4d3d2",
+    "nvidia-version.log": "fe6fe34d1a3296c5f6050da01775b3081ed9fd0a49880950f086b124f88a1a4b",
+    "wsl-stderr.log": "349728bb203a7a956f02e3dfff62541a6e589aa164163261e0252df4349d1879",
+    "wsl-stdout.log": "f75ead522fe31e5e43b7ec8edd5d7fe53446e6522125129fd52f5cda09dba340"
+  },
+  "note": "CPU/GPU/WSL read-only software and hardware checks; no timing benchmark rerun"
+}

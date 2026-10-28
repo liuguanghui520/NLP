@@ -10,6 +10,7 @@ import numpy as np
 from scipy.stats import binomtest
 
 from scripts.build_comparison_report import ROOT, ORDER, NAMES, COLORS, macro_f1, paired_bootstrap, holm
+from scripts.case_analysis import DEFAULT_CASE_NOTES, enrich_case, render_casebook
 
 
 def table(headers, rows):
@@ -308,6 +309,7 @@ def documents(r,samples,errors,pending,primary,sensitivity,baselines,lora,costs)
     (r.report/'参数总表.md').write_text('# 完整验证参数表\n\n仅validation776条，seed42。LoRA十组另见观察稿；BERT全部见formal-parameter-tables.json。\n\n'+table(['TF-IDF配置','F1 %','特征维度','迭代数','拟合秒','训练log-loss','验证log-loss','Pipeline字节'],[[x['config_id'],fmt(x['macro_f1'],100),x['features'],x['iterations'],fmt(x['fit_s']),fmt(x['train_log_loss']),fmt(x['validation_log_loss']),x['checkpoint_or_pipeline_bytes']] for x in baselines if x['method']=='tfidf'])+'\n\n'+table(['BERT配置','最佳完整部署字节','训练/可训练参数'],[[x['config_id'],x['checkpoint_or_pipeline_bytes'],x['trainable_parameters']] for x in baselines if x['method']=='bert'])+'\n\n所有候选体积来自只读文件大小查询，不加载权重；包含最佳模型与tokenizer或Pipeline，不含优化器/环境。完整Qwen部署见deployment-storage.json；LoRA增量见十组表。总参数、可训练量和比例见model-parameter-counts.json；TF-IDF特征与系数有不同含义，不混称神经网络参数。',encoding='utf-8')
     (r.report/'种子敏感性.md').write_text('# 43/44配对敏感性\n\n同777条；每行固定已训练种子；提示不复制成新的训练重复。每种子内七组Holm是敏感性展示，不新增确认性比较族。\n\n'+table(['种子','A−B','F1差 pp','95%条件区间 pp','A对B错','A错B对','共同失败','Holm p'],[[x['seed'],NAMES[x['a']]+'−'+NAMES[x['b']],fmt(x['macro_f1_delta'],100),str([round(z*100,4) for z in x['bootstrap_95_percentile']]),x['A_correct_B_wrong'],x['A_wrong_B_correct'],x['both_wrong'],fmt(x['holm_adjusted_p_within_seed_seven_pairs'])] for x in sensitivity]),encoding='utf-8')
     cases=[]
+    case_notes=r.read(r.config.get('case_analysis_notes',DEFAULT_CASE_NOTES))
     by_id={s['sample_id']:s for s in samples}
     chosen=[1,3,10,12,18,20,8,15,6]
     for i in chosen:
@@ -315,15 +317,10 @@ def documents(r,samples,errors,pending,primary,sensitivity,baselines,lora,costs)
         sid=s['sample_id'];allruns=[p for rr in r.records.values() for p in rr if p['sample_id']==sid]
         representative=[p for p in allruns if p['seed'] in (42,None)]
         e=[x for x in errors if x['sample_id']==sid]
-        case=dict(sample=s,all_runs=allruns,error_attributions=e,selection='confirmed pilot exemplars; not representative sample',improvement='可考虑输出约束、保留说话者/评价对象结构或针对混合评价核查；建议使用了测试反馈，未实测改善，冻结实验不变')
-        cases.append(case)
+        case=dict(sample=s,all_runs=allruns,error_attributions=e,selection='confirmed pilot exemplars; not representative sample')
+        cases.append(enrich_case(case,case_notes))
     r.write('casebook.json',cases)
-    text=['# 真实错误案例与局限','', '以下选取已确认试标中的真实案例，覆盖相反标签、混合评价、多对象、酒店回复、格式失败与标签分歧；选择不代表全体错误分布。均为观察情境，内部机制未经实验验证。','']
-    for j,c in enumerate(cases,1):
-        s=c['sample'];text += [f'## 案例{j}：{s["sample_id"]}','',f'源标签={s["source_label"]}，本人判断={s["assessed_label"]}；来源={s["annotation_origin"]}；状态={s["review_status"]}。','', '**规范化全文**','',s['normalized_text'],'','**共同可见前缀**','',s['visible_prefix'],'',
-            table(['方法/种子','原始输出','解析/状态','源标签下错误主类'],[[p['method']+'/'+str(p['seed']),p['raw_output'],str(p['parsed_label'])+'/'+p['status'],next((e['error_type_v1'] for e in c['error_attributions'] if e['run_id']==p['run_id']),'正确')] for p in c['all_runs']]),
-            '', '证据：'+'；'.join(s['evidence_quotes'])+'。实际字符截断='+str(s['char_truncated'])+'；每运行token截断见casebook.json，未知保持未知。', '', '局限与建议：'+c['improvement'],'']
-    (r.report/'真实错误案例与局限.md').write_text('\n'.join(text),encoding='utf-8')
+    (r.report/'真实错误案例与局限.md').write_text(render_casebook(cases),encoding='utf-8')
     (r.report/'待复核清单.md').write_text('# 集中待复核清单\n\n无需现在逐条回复也可使用已完成分析；正式真值不变。请后续按ID裁定，另存人工复核记录，不覆盖AI初判。\n\n'+table(['完整ID','队列序号','源标签','判断','来源','证据片段','需决定问题'],[[p['sample_id'],p['queue_index'],p['source_label'],p['assessed_label'],p['annotation_origin'],'；'.join(p['evidence_quotes']),'；'.join(p['questions'])] for p in pending]),encoding='utf-8')
     claims=[]
     def claim(cid,observation,files,figures,scope,limits,pair=None):
@@ -369,5 +366,6 @@ def finalize_formal(r):
     curves(r,evidence,configs)
     extra_figures(r,primary)
     documents(r,samples,errors,pending,primary,sensitivity,baselines,lora,costs)
-    r.sources[Path(__file__).relative_to(ROOT).as_posix()]=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    for path in [Path(__file__),ROOT/'scripts/case_analysis.py']:
+        r.sources[path.relative_to(ROOT).as_posix()]=hashlib.sha256(path.read_bytes()).hexdigest()
     r.note(f'Formal annotation coverage verified:20 human-confirmed+382 AI, {len(errors)} error runs, {len(pending)} pending samples; {len(r.figure_index)} figure pairs.')

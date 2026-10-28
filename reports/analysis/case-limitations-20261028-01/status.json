@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "revision_id": "case-limitations-20261028-01",
+  "created_at": "2026-10-28T20:46:00.399953+08:00",
+  "command": [
+    "scripts/revise_casebook.py",
+    "--output",
+    "reports/analysis/case-limitations-20261028-01"
+  ],
+  "git_commit": "c1bab6f32bd7c510e90ac7828cdce07848616cad",
+  "input_sha256": {
+    "results/analysis/comparison-formal-20261028-03/casebook.json": "ce597b377a0b6ed16706341dd5aa7dc45a52530103f5d71fce77ca9ec0c14f9b",
+    "configs/analysis/case-limitations-20261028-v1.json": "546f356d03c5d6624966f4f03cf9e595825a55ebc52c5ff8c20f6bc14b59b275",
+    "scripts/revise_casebook.py": "ba0412b471bf03c6fc78998eaedd777a1732eac069c54bdfd63a1cdecd1e6436",
+    "scripts/case_analysis.py": "89bd6b691d77f1ef7ac3ec23548db2cff9a58b6722ba80355c17916516a6ce00",
+    "scripts/formal_comparison.py": "3eea8b33cd49f74724e4e221713254f25c12f84f597b36899e97bd91d1392a88"
+  },
+  "output_sha256": {
+    "casebook.json": "9290ccbdfee8d74f2160e9f82a3bc3d0d515d2e53901b6dc8b911ea5950471f1",
+    "README.md": "26ae04356e1cfc69fd54a5a877679572442819046eda536dcf64a67186be2439",
+    "真实错误案例与局限.md": "865b2e92f2d38cae1218f53f413b633d2f994e4f09d57cdaed21964acf2717cd"
+  },
+  "cases": 9,
+  "case_interpretations_unique": 9,
+  "frozen_sample_prediction_attribution_unchanged": true,
+  "training": false,
+  "model_loading": false,
+  "inference": false,
+  "test_feedback_used": true,
+  "recommendations_executed": false,
+  "student_interpretation_approved": false
+}

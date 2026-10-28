@@ -74,7 +74,9 @@ def main(batch):
         assert (report/rel).is_file(),rel
     audit_dir.mkdir(parents=True)
     sources={}
-    code_paths=[ROOT/'scripts'/n for n in ['build_comparison_report.py','formal_comparison.py','build_formal_annotations.py','audit_formal_delivery.py','collect_analysis_logs.py','collect_analysis_sizes.py']]
+    code_paths=[ROOT/'scripts'/n for n in ['build_comparison_report.py','formal_comparison.py','case_analysis.py','resource_figure.py','build_formal_annotations.py','audit_formal_delivery.py','collect_analysis_logs.py','collect_analysis_sizes.py']]
+    from scripts.case_analysis import DEFAULT_CASE_NOTES
+    code_paths += [ROOT/status['config'].get('case_analysis_notes',DEFAULT_CASE_NOTES)]
     code_paths += [ROOT/'src/evaluation/metrics.py',ROOT/'tests/test_formal_annotations.py',ROOT/'tests/test_offline_comparison.py',ROOT/'configs/analysis/comparison-formal-v1.json',ROOT/'results/error-review/semantic-decisions-20261028.tsv']
     for path in code_paths:
         dest=audit_dir/'source-snapshot'/path.relative_to(ROOT)
@@ -88,7 +90,7 @@ def main(batch):
             if path.is_file():
                 manifest[path.relative_to(ROOT).as_posix()]=digest(path)
     result=dict(status='passed',analysis_id=batch,checked_at=datetime.now().astimezone().isoformat(),
-        checks=['93 input hashes and generated output hashes','frozen labels and all11 prediction hashes via annotation manifest','20 warmup IDs all in training split','22 PNG/PDF pairs','7 paired comparisons,14 sensitivity rows','28 unique training cost identities','casebook and claim source SHA256','source-separated 20+382 annotation audit'],
+        checks=[f'{len(status["input_sha256"])} input hashes and generated output hashes','frozen labels and all11 prediction hashes via annotation manifest','20 warmup IDs all in training split','22 PNG/PDF pairs','7 paired comparisons,14 sensitivity rows','28 unique training cost identities','casebook and claim source SHA256','source-separated 20+382 annotation audit'],
         figure_files=images,unchanged_pixels_from_formal02=unchanged,source_snapshot_sha256=sources,
         delivery_sha256=manifest,annotation_counts=status['annotation_counts'],
         git_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),

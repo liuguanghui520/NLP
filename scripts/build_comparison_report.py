@@ -381,22 +381,13 @@ class Report:
         ax.margins(x=.4)
         self.figure(fig, "07-effect-latency", "效果与响应时间的取舍", "实际CPU/GPU部署路线；x为各模型均值再平均，y误差为训练种子SD；不代表相同计算资源排名。", "methods.json / latency.json")
 
-        fig, axes = plt.subplots(1, 2, figsize=(12, 4.8))
-        memory, disk = [], []
-        for method in ORDER:
-            group = [r for r in self.latency_stats if r["method"] == method]
-            values = [r["resources"]["inference_allocated_peak"] / 2**20 for r in group if r["resources"]["inference_allocated_peak"] is not None]
-            memory.append(max(values) if values else np.nan)
-            disk.append(statistics.mean(r["deployment_bytes"] for r in self.storage if r["method"] == method) / 2**20)
-        x = np.arange(5)
-        axes[0].bar(x[1:], memory[1:], color=[COLORS[m] for m in ORDER[1:]])
-        axes[0].text(0, 50, "CPU\n不适用", ha="center")
-        axes[0].set_ylabel("CUDA allocated峰值 MiB")
-        axes[1].bar(x, disk, color=[COLORS[m] for m in ORDER])
-        axes[1].set_ylabel("单模型完整部署 MiB")
-        for ax in axes:
-            ax.set_xticks(x, [NAMES[m] for m in ORDER], rotation=20)
-        self.figure(fig, "08-resources-storage", "显存记录与完整部署体积", "峰值为加载后测试/预热/延迟全阶段；RSS未当峰值。LoRA部署含基座＋适配器；环境另计。", "latency.json / deployment-storage.json")
+        from scripts.resource_figure import resource_breakdown, draw_resource_figure
+        adapter = next(r for r in self.lora_audit['results'] if r['id']=='T01')
+        resources = resource_breakdown(self.latency_stats,self.storage,adapter['adapter_bytes'])
+        self.write('resource-breakdown.json',resources)
+        fig = draw_resource_figure(resources,plt)
+        self.sources['scripts/resource_figure.py'] = hashlib.sha256((ROOT/'scripts/resource_figure.py').read_bytes()).hexdigest()
+        self.figure(fig, "08-resources-storage", "显存、完整部署与LoRA新增适配器", "加载后测试/预热/延迟峰值；单独展示适配器权重及含配置增量。\n完整部署包含基座；面板单位/尺度不同；MB为十进制，MiB为二进制。", "resource-breakdown.json / latency.json / deployment-storage.json")
 
         fig, axes = plt.subplots(1, 2, figsize=(12, 5))
         length_names = [f"length_{lo}_{hi or 'plus'}" for lo, hi in self.config["length_bins"]]

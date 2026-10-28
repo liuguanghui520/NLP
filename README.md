@@ -2,7 +2,15 @@
 
 ## 正式离线对比与辅助标注（2026-10-28）
 
+本人已确认的报告素材见[模型方案对比结论](reports/analysis/conclusions-confirmed-20261029-01/模型方案对比结论.md)和[参数对比结论](reports/analysis/conclusions-confirmed-20261029-01/参数对比结论.md)，分别汇总8项与12项已审核解释，包含概率估计、环境及适配器增量说明。原始formal-03成果保持不变。
+
 本次正式交付见[对比交付索引](reports/analysis/comparison-formal-20261028-03/README.md)、[图表总览](reports/analysis/comparison-formal-20261028-03/图表总览.html)和[集中待复核清单](reports/analysis/comparison-formal-20261028-03/待复核清单.md)。11份测试运行已重算，完成七组条件配对区间、43/44敏感性、验证参数和成本核验，提供22组PNG/PDF及数据JSON。
+
+环境表与延迟图注见[实验运行环境与延迟口径](docs/environment/实验运行环境与延迟口径.md)，包含2026-10-29补采的CPU、内存、驱动与PyTorch CUDA构建信息；与原始计时记录区分，未重跑延迟基准。
+
+[资源补充图](reports/figures/resources-adapter-20261029-01/resources-with-adapter.png)将显存、完整部署和LoRA新增权重分为三个面板：T01权重12.87MB，含配置增量12.88MB，完整部署4092.33MB。适配器单独使用尺度，基座需求和环境E01标明；PNG、PDF、数据与校验记录同目录保存，原正式图保留。
+
+案例解释定稿见[正文案例与局限定稿](reports/analysis/case-confirmed-20261029-01/正文案例与局限定稿.md)及[9例完整证据](reports/analysis/case-confirmed-20261029-01/真实错误案例与局限.md)。本人已逐例确认解释与正文5组、局限或附录2例安排；案例3＋5、2＋8分别合并。原formal-03数值、图表与标注不变，改进建议尚未实测，标签分歧及124条待复核状态保留。此前未确认的解释草稿留档。
 
 402条去重错例保留20条本人确认与382条AI辅助的来源差异；1118条错误运行全部对应，124条涉及分歧、不确定或证据可见性，仍待复核。原始真值和预测未改，学生最终解释和课程报告尚待确认。标注材料见[标注索引](results/error-review/review-formal-20261028-01/README.md)。本次没有训练或新增模型推理。
 

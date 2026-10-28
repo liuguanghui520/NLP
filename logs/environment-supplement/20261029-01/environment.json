@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-29T04:28:00.6071407+08:00",
+  "scope": "Post-experiment supplementary collection; not a reconstructed benchmark-time snapshot",
+  "cpu": [
+    {
+      "Name": "Intel(R) Core(TM) i7-14650HX",
+      "Manufacturer": "GenuineIntel",
+      "NumberOfCores": 16,
+      "NumberOfLogicalProcessors": 24
+    }
+  ],
+  "host": {
+    "Manufacturer": "THUNDEROBOT",
+    "Model": "R16",
+    "TotalPhysicalMemory": 16976572416
+  },
+  "host_memory_modules": [
+    {
+      "Capacity": 17179869184
+    }
+  ],
+  "os": {
+    "Caption": "Microsoft Windows 11 家庭版 中文版",
+    "Version": "10.0.26200",
+    "BuildNumber": "26200"
+  },
+  "gpu_csv": [
+    "NVIDIA GeForce RTX 4070 Laptop GPU, 616.92, 8188 MiB"
+  ],
+  "driver_version_output": [
+    "NVIDIA-SMI version  : 616.92",
+    "NVML version        : 616.92",
+    "DRIVER version      : Deprecated, see \"KMD version\" instead",
+    "CUDA version        : Deprecated, see \"CUDA UMD version\" instead",
+    "KMD version         : 616.92",
+    "CUDA UMD version    : 13.4"
+  ],
+  "wsl": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.11.17",
+    "distribution": "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.5 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
+    "torch_cuda_build": "13.0",
+    "cuda_available": true,
+    "packages": {
+      "torch": "2.14.1",
+      "transformers": "5.8.0",
+      "peft": "0.18.1",
+      "scikit-learn": "1.9.1",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "matplotlib": "3.11.2",
+      "llamafactory": "0.9.6.dev0"
+    },
+    "wsl_meminfo": [
+      "MemTotal:        8028300 kB",
+      "MemFree:         6717952 kB",
+      "MemAvailable:    7143708 kB"
+    ],
+    "nvcc_path": null,
+    "nvcc_version": null,
+    "toolkit_note": "nvcc absent from PATH does not establish that no toolkit is installed"
+  },
+  "historical_environment_source": "reports/audits/environment.json",
+  "collector": "scripts/collect_benchmark_environment.ps1",
+  "training": false,
+  "model_loading": false,
+  "inference": false
+}

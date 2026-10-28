@@ -1,0 +1,43 @@
+{
+  "methods": [
+    {
+      "method": "tfidf",
+      "allocated_peak_MiB": null,
+      "deployment_bytes": 5960148,
+      "deployment_MB": 5.960148
+    },
+    {
+      "method": "bert",
+      "allocated_peak_MiB": 416.87646484375,
+      "deployment_bytes": 409540656,
+      "deployment_MB": 409.540656
+    },
+    {
+      "method": "qwen_zero_shot",
+      "allocated_peak_MiB": 3365.1025390625,
+      "deployment_bytes": 4079450740,
+      "deployment_MB": 4079.45074
+    },
+    {
+      "method": "qwen_few_shot",
+      "allocated_peak_MiB": 3409.076171875,
+      "deployment_bytes": 4079450740,
+      "deployment_MB": 4079.45074
+    },
+    {
+      "method": "qwen_lora",
+      "allocated_peak_MiB": 3372.587890625,
+      "deployment_bytes": 4092326388,
+      "deployment_MB": 4092.326388
+    }
+  ],
+  "base_deployment_bytes": 4079450740,
+  "adapter_weight_bytes": 12874640,
+  "adapter_weight_MB": 12.87464,
+  "adapter_config_and_other_bytes": 1008,
+  "full_increment_bytes": 12875648,
+  "full_increment_MB": 12.875648,
+  "memory_scope": "after model load through test/warmup/latency; maximum across seed runs",
+  "storage_scope": "decimal MB; full deployment includes tokenizer and base; excludes optimizer/environment",
+  "adapter_scope": "T01 ordinary LoRA weight file only; full increment also includes adapter configuration"
+}

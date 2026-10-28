@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-10-29T04:56:18.281861+08:00",
+  "scope": "confirmed report interpretations only",
+  "model_conclusions_confirmed": 8,
+  "parameter_conclusions_confirmed": 12,
+  "input_sha256": {
+    "data/processed/v1-20261023/test.jsonl": "3df19229abb59d1868a7735b98f42fd799883c22ec37aa8a1760cc2266fb1996",
+    "results/predictions/bert-len512-seed42.jsonl": "7cff3d8399e030fda4e70cebb3237c512243a48d5dbb9f7a0fc3d51a639fbfbb",
+    "results/predictions/bert-len512-seed43.jsonl": "d9c55f7a8d46259cfe8d01bc40aec35912cb9ad25f2bc0108373c8d585e4d5f9",
+    "results/predictions/bert-len512-seed44.jsonl": "82aff1b9256a906a988e0f42fb2707e0e4c75510c8fe82a73a56576c2eb2e165",
+    "results/predictions/test-lora-seed42.jsonl": "dd9b735e6d1d3b69a361edb4dfdfc8f40a374accd8d98fe0b380a27e4e484fa2",
+    "results/predictions/test-lora-seed43.jsonl": "01680ba5e3e0c2035bb67e840ed8afa3d95572eed2fbc336bd49e22a87c7fec5",
+    "results/predictions/test-lora-seed44.jsonl": "7fc809516dd55c9e941b6a74672099efdae14d602740a341d4fd71e5af6f4de5",
+    "results/analysis/comparison-formal-20261028-03/methods.json": "c8d83a2e6d16832943df872064dd4f826d8bc8f38b1149d19e1c5bdb96307bf7",
+    "results/analysis/comparison-formal-20261028-03/paired-comparisons.json": "0cb8581be51f896ab28d1cb117edeec2a0993764ba5bdce2ae24c3e7696fa688",
+    "results/analysis/comparison-formal-20261028-03/latency.json": "bcca9b093b63f47240ff0d3c976d7717d7da5de170725812f8f630e19923aedc",
+    "results/analysis/comparison-formal-20261028-03/formal-cost-ledger.json": "982f7edb06a2e09c095e4367131e6f8610bbe4c87c70bd7d1f2fbc14f359a6c7",
+    "results/analysis/comparison-formal-20261028-03/formal-parameter-tables.json": "dfdc45cb0e8af39fbdcbe6197b3a97f93f0c4384bd4f2fbfd54ae3594248ec04",
+    "results/analysis/comparison-formal-20261028-03/bert-epoch-metrics.json": "6cb51f1f7b18e54441c8a3e012e0ff048f74518995b48dd44e31f34e8b47b349",
+    "results/summaries/validation_searches.json": "ec4645a5038dfbbe5b660699c42adbc9c8b6dee94ad2222406e45918c409b505",
+    "results/summaries/deployment-storage.json": "b96509000b1e7f66c9da01b3219caf8594401bf7164fd5b8c734bb8fedc78ef9",
+    "docs/environment/实验运行环境与延迟口径.md": "3a38f24992c8ce8071d8943ef5ffa39c65237093b7c9cc31d1ae83d73746388d",
+    "reports/figures/resources-adapter-20261029-01/resource-breakdown.json": "451b28d63890a6a70edd6ad908831578911dc27996c3f0da22e1b813c0b5cdc8",
+    "results/analysis/comparison-formal-20261028-03/status.json": "bd85242dd4cae42c9dbc069096ac8a07597973423908870961fb437c7e9ef456"
+  },
+  "output_sha256": {
+    "README.md": "3d412ad55c0de0e4f2beb5b93c7f156fbffc527710e1e5907011a71e9c79f072",
+    "参数对比结论.md": "cbb3a5aac6616aa1a8fad0b23cedd58601a0d873e7c9ad37c07df0f5f9985aaf",
+    "模型方案对比结论.md": "611c21fd15d18a713169f4aead032398e29aca8db401f21744525176fcde0d5a",
+    "贝叶斯概率估计.json": "c0b5f6d2a6cc075eb6c917dc965e080bf17d5df08017b75e3d0e2ce1449c0ee4"
+  },
+  "original_73_outputs_unchanged": true,
+  "training": false,
+  "model_loading": false,
+  "inference": false,
+  "pending_review_samples": 124,
+  "confirmation_source": "user approvals in current design conversation",
+  "AI_assistance": "data verification, replay of previously computed probability and transcription of student-confirmed interpretations; exact model unknown",
+  "whole_course_report_approved": false
+}
