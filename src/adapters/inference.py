@@ -20,7 +20,7 @@ def run(root, paths, args):
     torch.set_num_threads(4)
     method = args.method
     split = 'validation' if args.smoke else args.split
-    out = Path(args.output)
+    out = Path(args.output).resolve()
     out.mkdir(parents=True, exist_ok=False)
     save(out/'status.json', dict(status='running', method=method, seed=args.seed, split=split, smoke=args.smoke))
     data = Path(paths['data'])
@@ -41,6 +41,9 @@ def run(root, paths, args):
                  git_dirty=bool(subprocess.check_output(['git','-c',f'safe.directory={root}','-C',str(root),'status','--porcelain'], text=True).strip()),
                  source_sha256=digest(__file__), versions={n:importlib.metadata.version(n) for n in ['torch','transformers','peft','scikit-learn']})
     try:
+        if method.startswith('qwen'):
+            for name, expected_sha in load(root/'artifacts/lora-lock.json')['base_model_files'].items():
+                assert digest(Path(paths['qwen_model'])/name)==expected_sha, name
         if method in ['bert','tfidf']:
             import joblib
             # Legacy Pipeline serialized the tokenizer under __main__.
@@ -127,7 +130,8 @@ def run(root, paths, args):
         if hasattr(actual_model,'parameters'):
             state['total_parameters'] = sum(p.numel() for p in actual_model.parameters())
         if hasattr(actual_model,'generation_config'):
-            state['effective_generation_config'] = actual_model.generation_config.to_dict()
+            state['model_generation_defaults'] = actual_model.generation_config.to_dict()
+            state['explicit_call_overrides'] = dict(do_sample=False,max_new_tokens=8,repetition_penalty=1.0) if method=='qwen_lora' else dict(do_sample=False,num_beams=1,max_new_tokens=8,use_cache=True,pad_token_id=tok.pad_token_id or tok.eos_token_id)
         if method=='qwen_lora':
             state['stop_token_ids'] = model.engine.template.get_stop_token_ids(tok)
         save(out/'config.json',state)
@@ -143,6 +147,7 @@ def run(root, paths, args):
                     status='ok' if pred is not None else 'invalid_format', model_id=model_id,checkpoint_id=checkpoint_id,
                     prompt_id=prompt_id,prompt_sha256=prompt_hash, latency_ms=ms,
                     char_truncated=row.get('char_truncated'), timing_scope='preprocess_transfer_inference_parse_batch1')
+                value['missing_metadata_reason'] = 'Pretruncation token count not separately measured; baseline truncation flag may be unavailable in this extra inference probe'
                 result_rows.append(value)
                 with (out/'raw.jsonl').open('a',encoding='utf-8') as f:
                     f.write(json.dumps(value,ensure_ascii=False)+'\n')
