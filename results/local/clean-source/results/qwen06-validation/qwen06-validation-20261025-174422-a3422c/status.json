@@ -1,8 +1,0 @@
-{
-  "run_id": "qwen06-validation-20261025-174422-a3422c",
-  "status": "failed",
-  "purpose": "0.6B tool exercise; not formal 1.7B results",
-  "started_utc": "2026-10-25T09:44:22.136302+00:00",
-  "error": "KeyboardInterrupt()",
-  "ended_utc": "2026-10-25T09:44:48.014049+00:00"
-}

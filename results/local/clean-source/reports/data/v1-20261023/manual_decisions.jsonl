@@ -1,2 +1,0 @@
-{"operator": "user", "time": "2026-10-23", "decision": "2026-10-23 用户确认：直接放正文；冒烟67；少样本67", "stage": "before_freeze"}
-{"operator": "user", "time": "2026-10-23", "decision": "2026-10-23 用户确认：对碰撞组仅保留源记录序号最小者；重新分层划分", "stage": "before_freeze"}
