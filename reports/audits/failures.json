@@ -1,0 +1,21 @@
+[
+  {
+    "run_id": "smoke-zero-20261028",
+    "stage": "integration_smoke",
+    "reason": "WSL Git ownership metadata read failed before inference",
+    "retry": "smoke-zero-retry1-20261028",
+    "retry_status": "completed"
+  },
+  {
+    "stage": "baseline_smoke",
+    "reason": "Initial single-class subset; retry used both classes; original retained"
+  },
+  {
+    "stage": "baseline_test_setup",
+    "reason": "Frozen warmup IDs came from non-test splits; original retained; fixed ID lookup"
+  },
+  {
+    "stage": "baseline_latency",
+    "reason": "Initial TF-IDF latency overlapped training; replaced by test-isolated"
+  }
+]

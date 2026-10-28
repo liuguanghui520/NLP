@@ -1,0 +1,562 @@
+[
+  {
+    "a": "bert-len512-seed42",
+    "b": "tfidf-char_1_3-seed42",
+    "split": "test",
+    "counts": {
+      "both_correct": 669,
+      "B_corrects_A": 18,
+      "both_failed": 38,
+      "B_regresses_A": 52
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.04375804375804371,
+    "exact_mcnemar_p": 5.849547318695842e-05,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 0.0004679637854956674
+  },
+  {
+    "a": "bert-len512-seed42",
+    "b": "test-qwen_zero_shot",
+    "split": "test",
+    "counts": {
+      "both_correct": 444,
+      "both_failed": 37,
+      "B_regresses_A": 277,
+      "B_corrects_A": 19
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.33204633204633205,
+    "exact_mcnemar_p": 6.917112456951167e-60,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 2.2134759862243735e-58
+  },
+  {
+    "a": "bert-len512-seed42",
+    "b": "test-qwen_few_shot",
+    "split": "test",
+    "counts": {
+      "both_correct": 574,
+      "both_failed": 35,
+      "B_regresses_A": 147,
+      "B_corrects_A": 21
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.16216216216216217,
+    "exact_mcnemar_p": 1.78061588575196e-24,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 3.739293360079116e-23
+  },
+  {
+    "a": "bert-len512-seed42",
+    "b": "test-lora-seed42",
+    "split": "test",
+    "counts": {
+      "both_correct": 701,
+      "both_failed": 39,
+      "B_corrects_A": 17,
+      "B_regresses_A": 20
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.0038610038610038533,
+    "exact_mcnemar_p": 0.7428293587290682,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 1.0
+  },
+  {
+    "a": "bert-len512-seed43",
+    "b": "tfidf-char_1_3-seed43",
+    "split": "test",
+    "counts": {
+      "both_correct": 661,
+      "both_failed": 35,
+      "B_regresses_A": 55,
+      "B_corrects_A": 26
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.03732303732303732,
+    "exact_mcnemar_p": 0.001688638072721023,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 0.006754552290884092
+  },
+  {
+    "a": "bert-len512-seed43",
+    "b": "test-qwen_zero_shot",
+    "split": "test",
+    "counts": {
+      "both_correct": 447,
+      "B_regresses_A": 269,
+      "both_failed": 45,
+      "B_corrects_A": 16
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.32561132561132566,
+    "exact_mcnemar_p": 2.016173392194954e-60,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 6.854989533462843e-59
+  },
+  {
+    "a": "bert-len512-seed43",
+    "b": "test-qwen_few_shot",
+    "split": "test",
+    "counts": {
+      "both_correct": 582,
+      "B_regresses_A": 134,
+      "both_failed": 48,
+      "B_corrects_A": 13
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.15572715572715579,
+    "exact_mcnemar_p": 1.7249219124030977e-26,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 3.967320398527125e-25
+  },
+  {
+    "a": "bert-len512-seed43",
+    "b": "test-lora-seed43",
+    "split": "test",
+    "counts": {
+      "both_correct": 694,
+      "B_regresses_A": 22,
+      "B_corrects_A": 22,
+      "both_failed": 39
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.0,
+    "exact_mcnemar_p": 1.0,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 1.0
+  },
+  {
+    "a": "bert-len512-seed44",
+    "b": "tfidf-char_1_3-seed44",
+    "split": "test",
+    "counts": {
+      "both_correct": 672,
+      "both_failed": 40,
+      "B_corrects_A": 15,
+      "B_regresses_A": 50
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.04504504504504503,
+    "exact_mcnemar_p": 1.5717029852739467e-05,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 0.0001414532686746552
+  },
+  {
+    "a": "bert-len512-seed44",
+    "b": "test-qwen_zero_shot",
+    "split": "test",
+    "counts": {
+      "both_correct": 441,
+      "B_regresses_A": 281,
+      "both_failed": 33,
+      "B_corrects_A": 22
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.33333333333333337,
+    "exact_mcnemar_p": 2.1174874518408252e-58,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 6.352462355522476e-57
+  },
+  {
+    "a": "bert-len512-seed44",
+    "b": "test-qwen_few_shot",
+    "split": "test",
+    "counts": {
+      "both_correct": 573,
+      "B_regresses_A": 149,
+      "both_failed": 33,
+      "B_corrects_A": 22
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.1634491634491635,
+    "exact_mcnemar_p": 2.2664300128732036e-24,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 4.306217024459087e-23
+  },
+  {
+    "a": "bert-len512-seed44",
+    "b": "test-lora-seed44",
+    "split": "test",
+    "counts": {
+      "both_correct": 699,
+      "B_regresses_A": 23,
+      "B_corrects_A": 18,
+      "both_failed": 37
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.006435006435006385,
+    "exact_mcnemar_p": 0.5327092552361137,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 1.0
+  },
+  {
+    "a": "tfidf-char_1_3-seed42",
+    "b": "test-qwen_zero_shot",
+    "split": "test",
+    "counts": {
+      "both_correct": 429,
+      "B_regresses_A": 258,
+      "both_failed": 56,
+      "B_corrects_A": 34
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.28828828828828834,
+    "exact_mcnemar_p": 8.823903290966301e-44,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 2.2942148556512384e-42
+  },
+  {
+    "a": "tfidf-char_1_3-seed42",
+    "b": "test-qwen_few_shot",
+    "split": "test",
+    "counts": {
+      "both_correct": 538,
+      "B_regresses_A": 149,
+      "both_failed": 33,
+      "B_corrects_A": 57
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.11840411840411846,
+    "exact_mcnemar_p": 1.1282004256832839e-10,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 1.466660553388269e-09
+  },
+  {
+    "a": "tfidf-char_1_3-seed42",
+    "b": "test-lora-seed42",
+    "split": "test",
+    "counts": {
+      "both_correct": 666,
+      "B_regresses_A": 21,
+      "B_corrects_A": 52,
+      "both_failed": 38
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.039897039897039854,
+    "exact_mcnemar_p": 0.0003713401159383162,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 0.0025993808115682133
+  },
+  {
+    "a": "tfidf-char_1_3-seed43",
+    "b": "test-qwen_zero_shot",
+    "split": "test",
+    "counts": {
+      "both_correct": 429,
+      "B_regresses_A": 258,
+      "both_failed": 56,
+      "B_corrects_A": 34
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.28828828828828834,
+    "exact_mcnemar_p": 8.823903290966301e-44,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 2.2942148556512384e-42
+  },
+  {
+    "a": "tfidf-char_1_3-seed43",
+    "b": "test-qwen_few_shot",
+    "split": "test",
+    "counts": {
+      "both_correct": 538,
+      "B_regresses_A": 149,
+      "both_failed": 33,
+      "B_corrects_A": 57
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.11840411840411846,
+    "exact_mcnemar_p": 1.1282004256832839e-10,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 1.466660553388269e-09
+  },
+  {
+    "a": "tfidf-char_1_3-seed43",
+    "b": "test-lora-seed43",
+    "split": "test",
+    "counts": {
+      "both_correct": 666,
+      "B_regresses_A": 21,
+      "B_corrects_A": 50,
+      "both_failed": 40
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.03732303732303732,
+    "exact_mcnemar_p": 0.0007667649897412908,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 0.003833824948706454
+  },
+  {
+    "a": "tfidf-char_1_3-seed44",
+    "b": "test-qwen_zero_shot",
+    "split": "test",
+    "counts": {
+      "both_correct": 429,
+      "B_regresses_A": 258,
+      "both_failed": 56,
+      "B_corrects_A": 34
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.28828828828828834,
+    "exact_mcnemar_p": 8.823903290966301e-44,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 2.2942148556512384e-42
+  },
+  {
+    "a": "tfidf-char_1_3-seed44",
+    "b": "test-qwen_few_shot",
+    "split": "test",
+    "counts": {
+      "both_correct": 538,
+      "B_regresses_A": 149,
+      "both_failed": 33,
+      "B_corrects_A": 57
+    },
+    "direction": "B minus A",
+    "accuracy_difference": -0.11840411840411846,
+    "exact_mcnemar_p": 1.1282004256832839e-10,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 1.466660553388269e-09
+  },
+  {
+    "a": "tfidf-char_1_3-seed44",
+    "b": "test-lora-seed44",
+    "split": "test",
+    "counts": {
+      "both_correct": 667,
+      "B_regresses_A": 20,
+      "B_corrects_A": 50,
+      "both_failed": 40
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.038610038610038644,
+    "exact_mcnemar_p": 0.00044028500651396835,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 0.00264171003908381
+  },
+  {
+    "a": "C_qwen_zero_shot_fixed_prompt_v1_noseed_20261024T154625Z",
+    "b": "C_qwen_few_shot_fixed_prompt_v1_noseed_20261024T154625Z",
+    "split": "validation",
+    "counts": {
+      "both_correct": 417,
+      "B_regresses_A": 87,
+      "B_corrects_A": 172,
+      "both_failed": 100
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.10953608247422675,
+    "exact_mcnemar_p": 1.3992342299666708e-07,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 1.399234229966671e-06
+  },
+  {
+    "a": "C_qwen_zero_shot_fixed_prompt_v1_noseed_20261024T154625Z",
+    "b": "qwen_lora-T01-seed42-validation",
+    "split": "validation",
+    "counts": {
+      "both_correct": 485,
+      "B_corrects_A": 233,
+      "B_regresses_A": 19,
+      "both_failed": 39
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.2757731958762887,
+    "exact_mcnemar_p": 5.216581934608315e-48,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 1.5128087610364113e-46
+  },
+  {
+    "a": "C_qwen_zero_shot_fixed_prompt_v1_noseed_20261024T154625Z",
+    "b": "qwen_lora-T01-seed43-validation",
+    "split": "validation",
+    "counts": {
+      "both_correct": 482,
+      "B_corrects_A": 234,
+      "B_regresses_A": 22,
+      "both_failed": 38
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.2731958762886598,
+    "exact_mcnemar_p": 6.411901853567106e-46,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 1.7312135004631186e-44
+  },
+  {
+    "a": "C_qwen_zero_shot_fixed_prompt_v1_noseed_20261024T154625Z",
+    "b": "qwen_lora-T01-seed44-validation",
+    "split": "validation",
+    "counts": {
+      "both_correct": 484,
+      "B_corrects_A": 232,
+      "both_failed": 40,
+      "B_regresses_A": 20
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.2731958762886598,
+    "exact_mcnemar_p": 6.10796151363052e-47,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 1.7102292238165455e-45
+  },
+  {
+    "a": "C_qwen_few_shot_fixed_prompt_v1_noseed_20261024T154625Z",
+    "b": "qwen_lora-T01-seed42-validation",
+    "split": "validation",
+    "counts": {
+      "both_correct": 569,
+      "B_corrects_A": 149,
+      "both_failed": 38,
+      "B_regresses_A": 20
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.16623711340206193,
+    "exact_mcnemar_p": 1.4188905501747317e-25,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 3.12155921038441e-24
+  },
+  {
+    "a": "C_qwen_few_shot_fixed_prompt_v1_noseed_20261024T154625Z",
+    "b": "qwen_lora-T01-seed43-validation",
+    "split": "validation",
+    "counts": {
+      "both_correct": 567,
+      "B_corrects_A": 149,
+      "both_failed": 38,
+      "B_regresses_A": 22
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.16365979381443307,
+    "exact_mcnemar_p": 2.2664300128732036e-24,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 4.306217024459087e-23
+  },
+  {
+    "a": "C_qwen_few_shot_fixed_prompt_v1_noseed_20261024T154625Z",
+    "b": "qwen_lora-T01-seed44-validation",
+    "split": "validation",
+    "counts": {
+      "both_correct": 566,
+      "B_corrects_A": 150,
+      "both_failed": 37,
+      "B_regresses_A": 23
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.16365979381443307,
+    "exact_mcnemar_p": 4.919158589150757e-24,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 8.362569601556288e-23
+  },
+  {
+    "a": "test-qwen_zero_shot",
+    "b": "test-qwen_few_shot",
+    "split": "test",
+    "counts": {
+      "both_correct": 409,
+      "both_failed": 128,
+      "B_regresses_A": 54,
+      "B_corrects_A": 186
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.16988416988416988,
+    "exact_mcnemar_p": 3.643767041096384e-18,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 5.101273857534938e-17
+  },
+  {
+    "a": "test-qwen_zero_shot",
+    "b": "test-lora-seed42",
+    "split": "test",
+    "counts": {
+      "both_correct": 447,
+      "both_failed": 43,
+      "B_corrects_A": 271,
+      "B_regresses_A": 16
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.3281853281853282,
+    "exact_mcnemar_p": 5.6517564649200656e-61,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 1.978114762722023e-59
+  },
+  {
+    "a": "test-qwen_zero_shot",
+    "b": "test-lora-seed43",
+    "split": "test",
+    "counts": {
+      "both_correct": 446,
+      "both_failed": 44,
+      "B_corrects_A": 270,
+      "B_regresses_A": 17
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.32561132561132566,
+    "exact_mcnemar_p": 9.046930165989902e-60,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 2.8045483514568697e-58
+  },
+  {
+    "a": "test-qwen_zero_shot",
+    "b": "test-lora-seed44",
+    "split": "test",
+    "counts": {
+      "both_correct": 446,
+      "both_failed": 43,
+      "B_corrects_A": 271,
+      "B_regresses_A": 17
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.326898326898327,
+    "exact_mcnemar_p": 4.8060529062409523e-60,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 1.5859974590595142e-58
+  },
+  {
+    "a": "test-qwen_few_shot",
+    "b": "test-lora-seed42",
+    "split": "test",
+    "counts": {
+      "both_correct": 576,
+      "both_failed": 40,
+      "B_corrects_A": 142,
+      "B_regresses_A": 19
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.15830115830115832,
+    "exact_mcnemar_p": 1.8242950410934214e-24,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 3.739293360079116e-23
+  },
+  {
+    "a": "test-qwen_few_shot",
+    "b": "test-lora-seed43",
+    "split": "test",
+    "counts": {
+      "both_correct": 576,
+      "both_failed": 42,
+      "B_corrects_A": 140,
+      "B_regresses_A": 19
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.15572715572715579,
+    "exact_mcnemar_p": 5.6838346170666065e-24,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 9.09413538730657e-23
+  },
+  {
+    "a": "test-qwen_few_shot",
+    "b": "test-lora-seed44",
+    "split": "test",
+    "counts": {
+      "both_correct": 574,
+      "both_failed": 39,
+      "B_corrects_A": 143,
+      "B_regresses_A": 21
+    },
+    "direction": "B minus A",
+    "accuracy_difference": 0.1570141570141571,
+    "exact_mcnemar_p": 1.6688970678401393e-23,
+    "note": "Exploratory paired exact McNemar; Holm correction over this exported family; nonsignificance is not equivalence",
+    "holm_adjusted_p": 2.503345601760209e-22
+  }
+]

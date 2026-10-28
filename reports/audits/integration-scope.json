@@ -1,0 +1,19 @@
+{
+  "baseline_runs": 16,
+  "prompt_validation_runs": 2,
+  "lora_validation_runs": 3,
+  "source_inventory_count": 627,
+  "historical_extensions": "Retained in original source inventory; not retrained",
+  "privacy": "Review text, recovered prompts, raw outputs and local paths excluded from public git",
+  "incomplete": [
+    "Human error analysis",
+    "Clean-machine actual inference",
+    "Public artifact upload/access verification"
+  ],
+  "corrections": [
+    "Old BERT representative errors:60, not245",
+    "Equal accuracy does not imply identical sample predictions",
+    "Nonsignificance does not establish equivalence",
+    "Historical and current selection/test protocols kept distinct"
+  ]
+}

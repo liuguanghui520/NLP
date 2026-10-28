@@ -1,0 +1,50 @@
+[
+  {
+    "run_id": "bert-len512-seed42",
+    "model_hash_verified": true,
+    "truth_ids_verified": true,
+    "metrics_recomputed": true,
+    "latency_ids_verified": true,
+    "selected_epoch": 3
+  },
+  {
+    "run_id": "bert-len512-seed43",
+    "model_hash_verified": true,
+    "truth_ids_verified": true,
+    "metrics_recomputed": true,
+    "latency_ids_verified": true,
+    "selected_epoch": 1
+  },
+  {
+    "run_id": "bert-len512-seed44",
+    "model_hash_verified": true,
+    "truth_ids_verified": true,
+    "metrics_recomputed": true,
+    "latency_ids_verified": true,
+    "selected_epoch": 3
+  },
+  {
+    "run_id": "tfidf-char_1_3-seed42",
+    "model_hash_verified": true,
+    "truth_ids_verified": true,
+    "metrics_recomputed": true,
+    "latency_ids_verified": true,
+    "selected_epoch": 1
+  },
+  {
+    "run_id": "tfidf-char_1_3-seed43",
+    "model_hash_verified": true,
+    "truth_ids_verified": true,
+    "metrics_recomputed": true,
+    "latency_ids_verified": true,
+    "selected_epoch": 1
+  },
+  {
+    "run_id": "tfidf-char_1_3-seed44",
+    "model_hash_verified": true,
+    "truth_ids_verified": true,
+    "metrics_recomputed": true,
+    "latency_ids_verified": true,
+    "selected_epoch": 1
+  }
+]

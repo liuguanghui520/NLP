@@ -1,0 +1,10 @@
+{
+  "examples": 4,
+  "validation_input_hashes": {
+    "qwen_zero_shot": 776,
+    "qwen_few_shot": 776
+  },
+  "message_template_hashes_verified": true,
+  "tokenizer_template_verified": true,
+  "raw_vs_sanitized_manifest": "Original hashes used only after content reconstruction; sanitized file has separate provenance hash"
+}

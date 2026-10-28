@@ -1,0 +1,2921 @@
+[
+  {
+    "run_id": "bert-ep5-seed42",
+    "method": "bert",
+    "seed": 42,
+    "phase": "search",
+    "end_to_end_s": 312.520197325,
+    "train_s": 282.6832607890003,
+    "validation_s": 17.59003810299987,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": 102269186,
+    "trainable_parameters": 102269186,
+    "trainable_fraction": 1.0,
+    "tfidf_features": null,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "train",
+        "elapsed_s": 8.363703916000077,
+        "rss_bytes": 2321784832,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 16.615580873,
+        "rss_bytes": 2321784832,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 23.35865706499999,
+        "rss_bytes": 2321784832,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 30.138800274999994,
+        "rss_bytes": 2321784832,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 36.92414428300003,
+        "rss_bytes": 2321784832,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 43.475199928000166,
+        "rss_bytes": 2321784832,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 50.726792038999974,
+        "rss_bytes": 2321784832,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 66.21634538500007,
+        "rss_bytes": 2359771136,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 1.386423360000208,
+        "rss_bytes": 2359771136,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 8.133878658000185,
+        "rss_bytes": 2359771136,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 15.539693827000065,
+        "rss_bytes": 2359771136,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 23.001321822000136,
+        "rss_bytes": 2359771136,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 30.26851173099999,
+        "rss_bytes": 2359771136,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 37.4684139420001,
+        "rss_bytes": 2359771136,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 44.92895925900007,
+        "rss_bytes": 2359771136,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 51.880749841000124,
+        "rss_bytes": 2359771136,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 61.327045419000115,
+        "rss_bytes": 2359193600,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 3.2690593439999702,
+        "rss_bytes": 2359193600,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 11.0195653400001,
+        "rss_bytes": 2359193600,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 18.98941545699995,
+        "rss_bytes": 2359193600,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 26.06332424800007,
+        "rss_bytes": 2359193600,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 33.00190582999994,
+        "rss_bytes": 2359193600,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 40.12494401999993,
+        "rss_bytes": 2359193600,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 46.878597420999995,
+        "rss_bytes": 2359193600,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 54.24305749900009,
+        "rss_bytes": 2359193600,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 61.34626475599998,
+        "rss_bytes": 2359218176,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 5.408569398000054,
+        "rss_bytes": 2359218176,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 13.010420460999967,
+        "rss_bytes": 2359218176,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 19.82167491799987,
+        "rss_bytes": 2359218176,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 26.997591694999983,
+        "rss_bytes": 2359218176,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 33.83058323199998,
+        "rss_bytes": 2359218176,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 41.259560116999864,
+        "rss_bytes": 2359218176,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 48.10572159399999,
+        "rss_bytes": 2359218176,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 55.50028621499996,
+        "rss_bytes": 2359218176,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 61.31751664800004,
+        "rss_bytes": 2359226368,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 6.235977923000064,
+        "rss_bytes": 2359226368,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 13.785218430000214,
+        "rss_bytes": 2359226368,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 21.33546487300009,
+        "rss_bytes": 2359226368,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 27.82539023900017,
+        "rss_bytes": 2359226368,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 34.654003368000076,
+        "rss_bytes": 2359226368,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 41.58758571800013,
+        "rss_bytes": 2359226368,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 49.21997371300017,
+        "rss_bytes": 2359226368,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 60.88973288400007,
+        "rss_bytes": 2359226368,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "complete",
+        "elapsed_s": 312.519255509,
+        "rss_bytes": 2359226368,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      }
+    ],
+    "best_epoch": 1,
+    "checkpoint_sha256": "15fc5dcfa798f40ed7f93692080dfa4c85d799b3649b7748181f26e0adaf02bc"
+  },
+  {
+    "run_id": "bert-len128-seed42",
+    "method": "bert",
+    "seed": 42,
+    "phase": "search",
+    "end_to_end_s": 153.43161548299997,
+    "train_s": 140.16754575599998,
+    "validation_s": 4.9886941759998535,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": 102269186,
+    "trainable_parameters": 102269186,
+    "trainable_fraction": 1.0,
+    "tfidf_features": null,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "train",
+        "elapsed_s": 6.502482058999931,
+        "rss_bytes": 2324324352,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4657774592
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 12.610941412999978,
+        "rss_bytes": 2324324352,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4657774592
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 18.385284473999945,
+        "rss_bytes": 2324324352,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4657774592
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 24.23193328399998,
+        "rss_bytes": 2324324352,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4657774592
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 29.904388885999992,
+        "rss_bytes": 2324324352,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4657774592
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 35.562890700000025,
+        "rss_bytes": 2324324352,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4657774592
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 41.697283751999976,
+        "rss_bytes": 2324520960,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 51.72898681800007,
+        "rss_bytes": 2324328448,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 1.2429653869999129,
+        "rss_bytes": 2324328448,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 7.055055645999801,
+        "rss_bytes": 2324328448,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 12.889512011999841,
+        "rss_bytes": 2324328448,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 18.799937671999942,
+        "rss_bytes": 2324328448,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 24.95129688199995,
+        "rss_bytes": 2324328448,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 31.30297163099999,
+        "rss_bytes": 2324328448,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 37.499219942999844,
+        "rss_bytes": 2324328448,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 43.78740671699984,
+        "rss_bytes": 2324328448,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 50.58524423799986,
+        "rss_bytes": 2324340736,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 2.667682230000082,
+        "rss_bytes": 2324340736,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 8.853719042999955,
+        "rss_bytes": 2324340736,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 15.296986062000087,
+        "rss_bytes": 2324340736,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 21.095043571000133,
+        "rss_bytes": 2324340736,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 26.941877729999987,
+        "rss_bytes": 2324340736,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 33.10056907400008,
+        "rss_bytes": 2324340736,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 38.509324387000106,
+        "rss_bytes": 2324340736,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 44.588673481000114,
+        "rss_bytes": 2324340736,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 49.6922976620001,
+        "rss_bytes": 2324348928,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      },
+      {
+        "phase": "complete",
+        "elapsed_s": 153.42981375400007,
+        "rss_bytes": 2323308544,
+        "allocated_peak": 2605458944,
+        "reserved_peak": 4729077760
+      }
+    ],
+    "best_epoch": 1,
+    "checkpoint_sha256": "345422d4e3ec8ee07708ab79075d1269e8cff3534d0a24bf62fa4a01a373515e"
+  },
+  {
+    "run_id": "bert-len512-seed42",
+    "method": "bert",
+    "seed": 42,
+    "phase": "search",
+    "end_to_end_s": 297.944416993,
+    "train_s": 249.7563497900003,
+    "validation_s": 18.938074056999994,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": 102269186,
+    "trainable_parameters": 102269186,
+    "trainable_fraction": 1.0,
+    "tfidf_features": null,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "train",
+        "elapsed_s": 5.954561206000108,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 10.70949124599997,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 15.077802374000157,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 21.198706275000177,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 27.358933466000053,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 32.26137584800017,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 37.776793704000056,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 43.42391775500005,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 47.942969361999985,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 54.02496691500005,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 59.11799805999999,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 65.1854398810001,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 69.90178048200005,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 75.10647837600004,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 81.01549140800012,
+        "rss_bytes": 2324819968,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 4737466368
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 99.09803993600008,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 2.660740272999874,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 7.627487301999963,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 13.184554772999945,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 19.264350094000065,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 24.7400652849999,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 29.436427476000063,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 34.65825484700008,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 39.873173395000094,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 45.07690844500007,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 50.15285391999987,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 56.17911994699989,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 60.962714816000016,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 66.34021975399992,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 72.00843454799997,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 77.46638482100002,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 82.557939992,
+        "rss_bytes": 2345472000,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 98.69725505199995,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 5.062458645000106,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 10.279390523000075,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 15.646542796000176,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 20.70599276100006,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 25.934932277000144,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 31.330626295000002,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 36.439938740000116,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 41.985501717000034,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 47.24670395400017,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 52.712917524000204,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 57.60537635000014,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 62.64844797400019,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 68.96286654600021,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 73.86788568600014,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 79.91193791200021,
+        "rss_bytes": 2345684992,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 98.50757614900022,
+        "rss_bytes": 2345725952,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "complete",
+        "elapsed_s": 297.94346507299997,
+        "rss_bytes": 2345725952,
+        "allocated_peak": 3986744832,
+        "reserved_peak": 5140119552
+      }
+    ],
+    "best_epoch": 3,
+    "checkpoint_sha256": "d8e15d741d95bb01a33b3fff035041fe5b960c600905613545d9aef7db3e52ee"
+  },
+  {
+    "run_id": "bert-len512-seed43",
+    "method": "bert",
+    "seed": 43,
+    "phase": "seed_repeat",
+    "end_to_end_s": 283.25091182799997,
+    "train_s": 249.70663198300053,
+    "validation_s": 19.110808199000076,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": 102269186,
+    "trainable_parameters": 102269186,
+    "trainable_fraction": 1.0,
+    "tfidf_features": null,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "train",
+        "elapsed_s": 5.82574474099988,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 10.998271343999932,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 16.778313714999967,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 21.93254858599994,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 27.286544753000044,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 32.39980831699995,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 37.56706412900007,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 42.24382212399996,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 47.92637562699997,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 53.28673878900008,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 58.31447175299991,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 63.45630847000007,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 68.58234299700007,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 74.89796930099988,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 79.65612163399987,
+        "rss_bytes": 2321473536,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 99.81943059899982,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 2.677167452000049,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 8.450996626000233,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 13.500438136000412,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 18.86738970400029,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 24.558201339000334,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 30.196098188000178,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 34.57599594500016,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 40.170193340000424,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 45.99877320800033,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 50.84386862800011,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 56.2633935570002,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 61.22061137200035,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 67.2474562020002,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 72.69696039700011,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 77.70399767100025,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 83.54681479500005,
+        "rss_bytes": 2322108416,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 91.35941235600012,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 5.0605929779999315,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 10.767828270999871,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 16.638138321000042,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 21.584433093999905,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 26.685450307999872,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 31.898485295999762,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 36.430424369999855,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 41.99315609599989,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 47.79778246099977,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 52.11103094600003,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 57.59326496699987,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 62.42299110800013,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 69.00459618500008,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 74.82080257200005,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 79.78168299499976,
+        "rss_bytes": 2322145280,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 90.79637280099996,
+        "rss_bytes": 2322173952,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "complete",
+        "elapsed_s": 283.2497778349998,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3982362112,
+        "reserved_peak": 5140119552
+      }
+    ],
+    "best_epoch": 1,
+    "checkpoint_sha256": "9a250db604deb2f416d3fc7795965e9788dee8ca59aa039349a5a7a29d558c27"
+  },
+  {
+    "run_id": "bert-len512-seed44",
+    "method": "bert",
+    "seed": 44,
+    "phase": "seed_repeat",
+    "end_to_end_s": 300.34836085000006,
+    "train_s": 250.47845524500008,
+    "validation_s": 19.353881387,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": 102269186,
+    "trainable_parameters": 102269186,
+    "trainable_fraction": 1.0,
+    "tfidf_features": null,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "train",
+        "elapsed_s": 5.8067704520003645,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 10.850580756999989,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 16.441300701000273,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 21.646143974000097,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 26.921285788000205,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 32.52936240200006,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 37.70188898300012,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 43.32390733200009,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 48.66071503100011,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 53.91407299599996,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 58.93645872900015,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 64.11333370700004,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 70.2287546120001,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 75.05055396100033,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 81.05340248200037,
+        "rss_bytes": 2321125376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 99.99046195100027,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 2.2057979839996733,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 8.3938307909998,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 13.945120289999977,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 19.05161602299995,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 23.923414627000056,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 28.938866285999666,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 33.923012537999966,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 38.65149274999976,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 44.296745085999646,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 49.55993572299985,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 54.82064378699988,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 59.987478741999894,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 65.9258386219999,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 71.80291164599976,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 76.96218673399972,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 82.15202841899963,
+        "rss_bytes": 2321940480,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 99.6930709369999,
+        "rss_bytes": 2154725376,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 5.370180857999912,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 10.608371583999997,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 15.974182681999991,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 21.978636196000025,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 26.762443818000065,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 31.553541698999652,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 36.9352561339997,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 41.326996810999844,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 46.84076587599975,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 52.632987761000095,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 58.21353885999997,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 64.09585018100006,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 69.41328877399974,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 75.10117537199994,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 80.88226044999965,
+        "rss_bytes": 2155315200,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 99.468702527,
+        "rss_bytes": 2072113152,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "complete",
+        "elapsed_s": 300.3473555800001,
+        "rss_bytes": 2072113152,
+        "allocated_peak": 3981092352,
+        "reserved_peak": 5140119552
+      }
+    ],
+    "best_epoch": 3,
+    "checkpoint_sha256": "04f778b144d3cd1ad2140019568d207350fcb7b1061a51a73526aa6ee34040ad"
+  },
+  {
+    "run_id": "bert-lr_1e5-seed42",
+    "method": "bert",
+    "seed": 42,
+    "phase": "search",
+    "end_to_end_s": 196.83916754300003,
+    "train_s": 169.8351062510003,
+    "validation_s": 10.467125692000309,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": 102269186,
+    "trainable_parameters": 102269186,
+    "trainable_fraction": 1.0,
+    "tfidf_features": null,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "train",
+        "elapsed_s": 8.727537543999915,
+        "rss_bytes": 2327011328,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 16.86437563300001,
+        "rss_bytes": 2327011328,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 23.496277974999884,
+        "rss_bytes": 2327011328,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 30.423895162999997,
+        "rss_bytes": 2327011328,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 37.077183674000025,
+        "rss_bytes": 2327011328,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 43.613240585000085,
+        "rss_bytes": 2327011328,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 50.959413527999914,
+        "rss_bytes": 2327011328,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 68.56509291599991,
+        "rss_bytes": 2327236608,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 1.3958204600000954,
+        "rss_bytes": 2327236608,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 8.116684699000189,
+        "rss_bytes": 2327236608,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 15.64555111300001,
+        "rss_bytes": 2327236608,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 23.04569433300003,
+        "rss_bytes": 2327236608,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 30.13820682100004,
+        "rss_bytes": 2327236608,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 37.73524128300005,
+        "rss_bytes": 2327236608,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 45.21861879800008,
+        "rss_bytes": 2327236608,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 52.114819162,
+        "rss_bytes": 2327236608,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 61.36264033800012,
+        "rss_bytes": 2327306240,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 3.2066946749998806,
+        "rss_bytes": 2327306240,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 10.868415342999924,
+        "rss_bytes": 2327306240,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 18.85997994199988,
+        "rss_bytes": 2327306240,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 25.712170154999967,
+        "rss_bytes": 2327306240,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 32.8830687279999,
+        "rss_bytes": 2327306240,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 39.955960773000015,
+        "rss_bytes": 2327306240,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 46.56719325899985,
+        "rss_bytes": 2327306240,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 54.09619107599997,
+        "rss_bytes": 2327306240,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 65.63468800700002,
+        "rss_bytes": 2343915520,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      },
+      {
+        "phase": "complete",
+        "elapsed_s": 196.83823518600002,
+        "rss_bytes": 2343915520,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 5140119552
+      }
+    ],
+    "best_epoch": 3,
+    "checkpoint_sha256": "0693be773b852fe4c97db2b986bcc150bdcb1d94d9b9cf47e3748ee323348a53"
+  },
+  {
+    "run_id": "bert-lr_5e5-seed42",
+    "method": "bert",
+    "seed": 42,
+    "phase": "search",
+    "end_to_end_s": 199.81168362300002,
+    "train_s": 169.42276947300002,
+    "validation_s": 10.473574654000117,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": 102269186,
+    "trainable_parameters": 102269186,
+    "trainable_fraction": 1.0,
+    "tfidf_features": null,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "train",
+        "elapsed_s": 8.376674361000028,
+        "rss_bytes": 2409017344,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 16.71796818400003,
+        "rss_bytes": 2409017344,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 23.39081099000009,
+        "rss_bytes": 2409017344,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 30.39498578000007,
+        "rss_bytes": 2409017344,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 37.10361496600001,
+        "rss_bytes": 2409017344,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 43.51891166900009,
+        "rss_bytes": 2409017344,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 50.94882118600003,
+        "rss_bytes": 2409017344,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 66.37423945900002,
+        "rss_bytes": 2384502784,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 1.518705845999989,
+        "rss_bytes": 2384502784,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 8.518236477999949,
+        "rss_bytes": 2384502784,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 15.796976212000004,
+        "rss_bytes": 2384502784,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 23.361644257999956,
+        "rss_bytes": 2384502784,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 30.437104818999956,
+        "rss_bytes": 2384502784,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 37.58951356299997,
+        "rss_bytes": 2384502784,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 45.14322055699995,
+        "rss_bytes": 2384502784,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 51.86248162300001,
+        "rss_bytes": 2384502784,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 66.05894362100003,
+        "rss_bytes": 2417532928,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 3.1523240559999977,
+        "rss_bytes": 2417532928,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 10.666584745000023,
+        "rss_bytes": 2417532928,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 18.76789739200001,
+        "rss_bytes": 2417532928,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 25.638529608,
+        "rss_bytes": 2417532928,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 32.837618609999936,
+        "rss_bytes": 2417532928,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 39.95422780900003,
+        "rss_bytes": 2417532928,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 46.44066205900003,
+        "rss_bytes": 2417532928,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 54.06656250699996,
+        "rss_bytes": 2417532928,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 66.09081869099998,
+        "rss_bytes": 2384551936,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4657774592
+      },
+      {
+        "phase": "complete",
+        "elapsed_s": 199.81090679199997,
+        "rss_bytes": 2325475328,
+        "allocated_peak": 3934545408,
+        "reserved_peak": 4657774592
+      }
+    ],
+    "best_epoch": 3,
+    "checkpoint_sha256": "539e4a417134ce461dcd87479fde5ce02728294cb22988e5cc758e26ce0cb7f1"
+  },
+  {
+    "run_id": "bert-main-seed42",
+    "method": "bert",
+    "seed": 42,
+    "phase": "search",
+    "end_to_end_s": 201.93594814099998,
+    "train_s": 174.00302249700002,
+    "validation_s": 10.642392757999971,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": 102269186,
+    "trainable_parameters": 102269186,
+    "trainable_fraction": 1.0,
+    "tfidf_features": null,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "train",
+        "elapsed_s": 10.040401024999994,
+        "rss_bytes": 2023936000,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4355784704
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 18.243335865999995,
+        "rss_bytes": 2024132608,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4355784704
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 25.13448143400001,
+        "rss_bytes": 2024132608,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4355784704
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 32.074105170999985,
+        "rss_bytes": 2024132608,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4355784704
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 38.86258526300003,
+        "rss_bytes": 2024329216,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4355784704
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 45.63918190100003,
+        "rss_bytes": 2024329216,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4355784704
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 53.417639549,
+        "rss_bytes": 2024329216,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4355784704
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 70.26597152700003,
+        "rss_bytes": 2396348416,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 1.5528028719999725,
+        "rss_bytes": 2049773568,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 8.439392257000009,
+        "rss_bytes": 2049773568,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 15.927914475000023,
+        "rss_bytes": 2049773568,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 23.38092237699999,
+        "rss_bytes": 2049773568,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 30.82130300199998,
+        "rss_bytes": 2049773568,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 38.27937817399999,
+        "rss_bytes": 2049773568,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 45.75176882300002,
+        "rss_bytes": 2049773568,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 52.769095291999975,
+        "rss_bytes": 2049773568,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 67.418104991,
+        "rss_bytes": 2296913920,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 3.5552282900000023,
+        "rss_bytes": 2049851392,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 11.041360193000003,
+        "rss_bytes": 2049851392,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 19.168930181999997,
+        "rss_bytes": 2049851392,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 26.17839083299998,
+        "rss_bytes": 2049851392,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 33.30731303199997,
+        "rss_bytes": 2049851392,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 40.692456590999996,
+        "rss_bytes": 2049851392,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 47.29616782199997,
+        "rss_bytes": 2049851392,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 54.59706112199996,
+        "rss_bytes": 2049851392,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 62.07465493500001,
+        "rss_bytes": 2069786624,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "complete",
+        "elapsed_s": 201.935017699,
+        "rss_bytes": 2066640896,
+        "allocated_peak": 3910575616,
+        "reserved_peak": 4557111296
+      }
+    ],
+    "best_epoch": 2,
+    "checkpoint_sha256": "480ad0dbe68b7e1ffcbb15621a7d9a19543b1c80cbca425a2a8ab941bc04f5f9"
+  },
+  {
+    "run_id": "bert-partial-seed42",
+    "method": "bert",
+    "seed": 42,
+    "phase": "search",
+    "end_to_end_s": 131.971568971,
+    "train_s": 106.28487752699999,
+    "validation_s": 10.584831852000036,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": 102269186,
+    "trainable_parameters": 43119362,
+    "trainable_fraction": 0.4216261386885391,
+    "tfidf_features": null,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "train",
+        "elapsed_s": 5.7597596790000125,
+        "rss_bytes": 2178895872,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 10.799426284999981,
+        "rss_bytes": 2178895872,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 14.868988795000007,
+        "rss_bytes": 2178895872,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 19.022774354999967,
+        "rss_bytes": 2178895872,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 23.08518909999998,
+        "rss_bytes": 2178895872,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 26.96060178099998,
+        "rss_bytes": 2178895872,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 31.412236710000002,
+        "rss_bytes": 2178895872,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 44.33257907500001,
+        "rss_bytes": 2180014080,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 0.8527453189999505,
+        "rss_bytes": 2180014080,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 5.2887835840000434,
+        "rss_bytes": 2180014080,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 10.112480609000045,
+        "rss_bytes": 2180014080,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 14.848864781999964,
+        "rss_bytes": 2180014080,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 19.319942571999945,
+        "rss_bytes": 2180014080,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 23.908425480000005,
+        "rss_bytes": 2180014080,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 28.652946895000014,
+        "rss_bytes": 2180014080,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 32.87039147300004,
+        "rss_bytes": 2180014080,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 40.32519984800001,
+        "rss_bytes": 2180009984,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 2.2185968190000267,
+        "rss_bytes": 2180009984,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 7.118854609999971,
+        "rss_bytes": 2180009984,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 12.11368698800004,
+        "rss_bytes": 2180009984,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 16.388060577000033,
+        "rss_bytes": 2180009984,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 20.784711252999955,
+        "rss_bytes": 2180009984,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 25.409137206999958,
+        "rss_bytes": 2180009984,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 29.463246346000005,
+        "rss_bytes": 2180009984,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 34.14929698000003,
+        "rss_bytes": 2180009984,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 45.71006891100001,
+        "rss_bytes": 2180902912,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "complete",
+        "elapsed_s": 131.970682313,
+        "rss_bytes": 2180902912,
+        "allocated_peak": 2169976320,
+        "reserved_peak": 4557111296
+      }
+    ],
+    "best_epoch": 3,
+    "checkpoint_sha256": "8112f437a56f3c113bc034f9f8268917e4fb8de60156c05608bbcdfdc33410c2"
+  },
+  {
+    "run_id": "bert-weighted-seed42",
+    "method": "bert",
+    "seed": 42,
+    "phase": "search",
+    "end_to_end_s": 192.69368775600003,
+    "train_s": 171.03556068299997,
+    "validation_s": 10.460762852999892,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": 102269186,
+    "trainable_parameters": 102269186,
+    "trainable_fraction": 1.0,
+    "tfidf_features": null,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "train",
+        "elapsed_s": 8.625868963000016,
+        "rss_bytes": 2405105664,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 17.241629837999994,
+        "rss_bytes": 2405105664,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 24.016396476999944,
+        "rss_bytes": 2405105664,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 31.034874306999995,
+        "rss_bytes": 2405105664,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 37.93984507999994,
+        "rss_bytes": 2405105664,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 44.600725705999935,
+        "rss_bytes": 2405105664,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 52.08920432100001,
+        "rss_bytes": 2405105664,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 68.02503365299992,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 1.6504836210000349,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 8.604749783999978,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 16.029396393999946,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 23.79556370199998,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 30.84996450899996,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 38.02114885799995,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 45.57817753300003,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 52.301616059000025,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 61.96885950700005,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 3.252292417000035,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 10.787192780000055,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 18.88769722799998,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 25.65107143800003,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 32.59401011099999,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 39.842980581999996,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 46.38370019800004,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "train",
+        "elapsed_s": 53.84863933500003,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "epoch",
+        "elapsed_s": 61.20335800999999,
+        "rss_bytes": 2403258368,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      },
+      {
+        "phase": "complete",
+        "elapsed_s": 192.692935069,
+        "rss_bytes": 2347892736,
+        "allocated_peak": 3934545920,
+        "reserved_peak": 4557111296
+      }
+    ],
+    "best_epoch": 1,
+    "checkpoint_sha256": "38df2ad506114c2d6560b16e5bb9baf86d20c6d7bd285d3040e6fcbbffe6fc9a"
+  },
+  {
+    "run_id": "tfidf-char_1_3-seed42",
+    "method": "tfidf",
+    "seed": 42,
+    "phase": "search",
+    "end_to_end_s": 14.771012215999988,
+    "train_s": 6.0281716329999995,
+    "validation_s": null,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": null,
+    "trainable_parameters": 130997,
+    "trainable_fraction": null,
+    "tfidf_features": 130996,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "complete",
+        "elapsed_s": 14.759401148999999,
+        "rss_bytes": 1016582144
+      }
+    ],
+    "best_epoch": 1,
+    "checkpoint_sha256": "0e1d76c5990925df6de24ce68d73dd193954c5f849b348996f506d372cf35f6c"
+  },
+  {
+    "run_id": "tfidf-char_1_3-seed43",
+    "method": "tfidf",
+    "seed": 43,
+    "phase": "seed_repeat",
+    "end_to_end_s": 16.758389299000015,
+    "train_s": 6.405795310999991,
+    "validation_s": null,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": null,
+    "trainable_parameters": 130997,
+    "trainable_fraction": null,
+    "tfidf_features": 130996,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "complete",
+        "elapsed_s": 16.730963180999993,
+        "rss_bytes": 1065357312
+      }
+    ],
+    "best_epoch": 1,
+    "checkpoint_sha256": "b7c84a4f5519103c90c6ade007a821642931faa5dccbd851e489e52425169675"
+  },
+  {
+    "run_id": "tfidf-char_1_3-seed44",
+    "method": "tfidf",
+    "seed": 44,
+    "phase": "seed_repeat",
+    "end_to_end_s": 17.498306005000018,
+    "train_s": 6.431465887000002,
+    "validation_s": null,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": null,
+    "trainable_parameters": 130997,
+    "trainable_fraction": null,
+    "tfidf_features": 130996,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "complete",
+        "elapsed_s": 17.482587152999997,
+        "rss_bytes": 1067560960
+      }
+    ],
+    "best_epoch": 1,
+    "checkpoint_sha256": "ba3ce042b26d303731f91f2fd9834d8088070e98b1fbe744f3bdd72f64081348"
+  },
+  {
+    "run_id": "tfidf-char_2_4-seed42",
+    "method": "tfidf",
+    "seed": 42,
+    "phase": "search",
+    "end_to_end_s": 15.225214317999999,
+    "train_s": 5.802662464000008,
+    "validation_s": null,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": null,
+    "trainable_parameters": 192407,
+    "trainable_fraction": null,
+    "tfidf_features": 192406,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "complete",
+        "elapsed_s": 15.20914119599999,
+        "rss_bytes": 1033936896
+      }
+    ],
+    "best_epoch": 1,
+    "checkpoint_sha256": "b44faf7b7ce0ea5d3f00bab39f7bc99d71416bb60e941f022f8a8197b7ed9fb9"
+  },
+  {
+    "run_id": "tfidf-char_2_5-seed42",
+    "method": "tfidf",
+    "seed": 42,
+    "phase": "search",
+    "end_to_end_s": 19.929185149999995,
+    "train_s": 8.662249080999999,
+    "validation_s": null,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": null,
+    "trainable_parameters": 200001,
+    "trainable_fraction": null,
+    "tfidf_features": 200000,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "complete",
+        "elapsed_s": 19.920929363,
+        "rss_bytes": 1100685312
+      }
+    ],
+    "best_epoch": 1,
+    "checkpoint_sha256": "e672577a62c4ec72dec9129bdcdcc4572561c1f761fec99a45d859029a8237bd"
+  },
+  {
+    "run_id": "tfidf-word_1_2-seed42",
+    "method": "tfidf",
+    "seed": 42,
+    "phase": "search",
+    "end_to_end_s": 19.602965098999988,
+    "train_s": 8.568465255000007,
+    "validation_s": null,
+    "separate_model_load_s": null,
+    "separate_save_s": null,
+    "separate_test_s": null,
+    "missing_timing_reason": "Historical run did not separately time loading/saves/test; no inferred exact values",
+    "total_parameters": null,
+    "trainable_parameters": 55014,
+    "trainable_fraction": null,
+    "tfidf_features": 55013,
+    "memory_scope": "BERT CUDA peaks may include extra checkpoint reload verification; device samples omit initial interval",
+    "cuda_peak_samples": [
+      {
+        "phase": "complete",
+        "elapsed_s": 19.587229707999995,
+        "rss_bytes": 1086492672
+      }
+    ],
+    "best_epoch": 1,
+    "checkpoint_sha256": "4137542b086a9d9e6cb15dc540fa1eee4674953547a835fb45fa0dd6474c97a2"
+  },
+  {
+    "run_id": "T01",
+    "method": "qwen_lora",
+    "seed": 42,
+    "original_timing": {
+      "trainer_interval_seconds": 3534.2960191630045,
+      "classification_validation_seconds": 192.5556469410003,
+      "trainer_interval_minus_classification_validation_seconds": 3341.740372222004,
+      "boundary": "Trainer begin through end, includes checkpoint saves and logging; excludes initial model load. Subtracted classification intervals include generation, input encoding and prediction IO; not a pure CUDA kernel timing.",
+      "memory_boundary": "CUDA peaks reset after model load and each validation; per segment, includes allocator reservations.",
+      "global_step": 1167,
+      "epoch": 3.0
+    },
+    "memory_scope": "Original training segments reset CUDA peaks after loading and validations"
+  },
+  {
+    "run_id": "T01-S43",
+    "method": "qwen_lora",
+    "seed": 43,
+    "original_timing": {
+      "trainer_interval_seconds": 3567.657770588,
+      "classification_validation_seconds": 187.26282002300036,
+      "trainer_interval_minus_classification_validation_seconds": 3380.394950565,
+      "boundary": "Trainer begin through end, includes checkpoint saves and logging; excludes initial model load. Subtracted classification intervals include generation, input encoding and prediction IO; not a pure CUDA kernel timing.",
+      "memory_boundary": "CUDA peaks reset after model load and each validation; per segment, includes allocator reservations.",
+      "global_step": 1167,
+      "epoch": 3.0
+    },
+    "memory_scope": "Original training segments reset CUDA peaks after loading and validations"
+  },
+  {
+    "run_id": "T01-S44",
+    "method": "qwen_lora",
+    "seed": 44,
+    "original_timing": {
+      "trainer_interval_seconds": 3621.0962429359997,
+      "classification_validation_seconds": 192.4470488650004,
+      "trainer_interval_minus_classification_validation_seconds": 3428.6491940709993,
+      "boundary": "Trainer begin through end, includes checkpoint saves and logging; excludes initial model load. Subtracted classification intervals include generation, input encoding and prediction IO; not a pure CUDA kernel timing.",
+      "memory_boundary": "CUDA peaks reset after model load and each validation; per segment, includes allocator reservations.",
+      "global_step": 1167,
+      "epoch": 3.0
+    },
+    "memory_scope": "Original training segments reset CUDA peaks after loading and validations"
+  }
+]

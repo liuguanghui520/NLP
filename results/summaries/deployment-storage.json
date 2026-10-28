@@ -1,0 +1,68 @@
+[
+  {
+    "method": "qwen_zero_shot",
+    "seed": null,
+    "deployment_bytes": 4079450740,
+    "scope": "All frozen base files incl tokenizer plus adapter weights/config; excludes training optimizer state and Python environment"
+  },
+  {
+    "method": "qwen_few_shot",
+    "seed": null,
+    "deployment_bytes": 4079450740,
+    "scope": "All frozen base files incl tokenizer plus adapter weights/config; excludes training optimizer state and Python environment"
+  },
+  {
+    "method": "qwen_lora",
+    "seed": 42,
+    "deployment_bytes": 4092326388,
+    "scope": "All frozen base files incl tokenizer plus adapter weights/config; excludes training optimizer state and Python environment"
+  },
+  {
+    "method": "qwen_lora",
+    "seed": 43,
+    "deployment_bytes": 4092326388,
+    "scope": "All frozen base files incl tokenizer plus adapter weights/config; excludes training optimizer state and Python environment"
+  },
+  {
+    "method": "qwen_lora",
+    "seed": 44,
+    "deployment_bytes": 4092326388,
+    "scope": "All frozen base files incl tokenizer plus adapter weights/config; excludes training optimizer state and Python environment"
+  },
+  {
+    "method": "bert",
+    "seed": 42,
+    "deployment_bytes": 409540656,
+    "scope": "Complete saved best model/tokenizer folder or Pipeline; excludes Python environment"
+  },
+  {
+    "method": "bert",
+    "seed": 43,
+    "deployment_bytes": 409540656,
+    "scope": "Complete saved best model/tokenizer folder or Pipeline; excludes Python environment"
+  },
+  {
+    "method": "bert",
+    "seed": 44,
+    "deployment_bytes": 409540656,
+    "scope": "Complete saved best model/tokenizer folder or Pipeline; excludes Python environment"
+  },
+  {
+    "method": "tfidf",
+    "seed": 42,
+    "deployment_bytes": 5960148,
+    "scope": "Complete saved best model/tokenizer folder or Pipeline; excludes Python environment"
+  },
+  {
+    "method": "tfidf",
+    "seed": 43,
+    "deployment_bytes": 5960148,
+    "scope": "Complete saved best model/tokenizer folder or Pipeline; excludes Python environment"
+  },
+  {
+    "method": "tfidf",
+    "seed": 44,
+    "deployment_bytes": 5960148,
+    "scope": "Complete saved best model/tokenizer folder or Pipeline; excludes Python environment"
+  }
+]
