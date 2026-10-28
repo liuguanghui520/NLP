@@ -56,7 +56,7 @@ def import_all(root, paths):
                 assert math.isclose(e['metrics']['macro_f1'], record['macro_f1'], abs_tol=1e-12)
             best_epoch = max(range(len(actual)), key=lambda i: actual[i]['macro_f1'])+1
             assert load(run/'selection.json')['epoch'] == best_epoch
-            searches.append(dict(method=method, **c))
+            searches.append(dict(method=method, **{k:v for k,v in c.items() if k!='model'}))
         for seed in [42, 43, 44]:
             run_id = f'{method}-{config_id}-seed{seed}'
             run = base/run_id
@@ -64,6 +64,12 @@ def import_all(root, paths):
             for k, v in winner['config'].items():
                 assert config[k] == v
             selection = load(run/'selection.json')
+            epoch_records = rows(run/'epoch_metrics.jsonl')
+            assert selection['epoch']==max(range(len(epoch_records)),key=lambda i:epoch_records[i]['macro_f1'])+1
+            for ep, recorded in enumerate(epoch_records,1):
+                vp=run/f'validation/epoch-{ep}/predictions.jsonl'
+                vr=evaluate(adapt(vp,method,run_id,config_id,seed,'validation','model',None),expected['validation'])
+                assert vr['complete'] and math.isclose(vr['metrics']['macro_f1'],recorded['macro_f1'],abs_tol=1e-12)
             model = Path(selection['model'])
             weight = model/'model.safetensors' if model.is_dir() else model
             assert digest(weight) == selection['model_sha256']
