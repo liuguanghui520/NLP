@@ -20,9 +20,14 @@ def evaluate(records, expected):
     if ids != expected_ids:
         errors.append('id_order_or_set_mismatch')
     truth = {r['sample_id']: r for r in expected}
+    if len({(r.get('run_id'),r.get('method'),r.get('config_id'),r.get('seed'),r.get('split')) for r in records}) > 1:
+        errors.append('mixed_run_identity')
     for r in records:
         if REQUIRED - r.keys():
             errors.append(f'{r.get("sample_id")}: missing_fields')
+        sha = r.get('source_artifact_sha256')
+        if not isinstance(sha,str) or len(sha)!=64 or any(c not in '0123456789abcdef' for c in sha):
+            errors.append('invalid_provenance_hash')
         t = truth.get(r.get('sample_id'))
         if t and (r.get('true_label') != t['label'] or r.get('split') != t['split']):
             errors.append(f'{r.get("sample_id")}: truth_or_split_conflict')

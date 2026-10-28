@@ -37,6 +37,17 @@ class EvaluationTests(unittest.TestCase):
             records = [dict(self.records[0], **changes), self.records[1]]
             self.assertIsNone(evaluate(records, self.truth)['metrics'])
 
+    def test_weighted_by_evaluation_support(self):
+        truth = [dict(sample_id=str(i),label=0 if i<3 else 1,split='test') for i in range(4)]
+        records = [dict(self.records[1],sample_id=str(i),true_label=t['label']) for i,t in enumerate(truth)]
+        m = evaluate(records,truth)['metrics']
+        self.assertAlmostEqual(m['macro_f1'],.2)
+        self.assertAlmostEqual(m['weighted_f1'],.1)
+
+    def test_mixed_identity(self):
+        records = [self.records[0],dict(self.records[1],seed=43)]
+        self.assertFalse(evaluate(records,self.truth)['complete'])
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,0 +1,12 @@
+# Tested existing environment; CUDA torch build details are in reports/audits/environment.json.
+numpy
+scipy
+scikit-learn
+jieba
+joblib
+psutil
+matplotlib
+torch
+transformers
+peft
+# Qwen LoRA inference additionally requires the separately installed LLaMA-Factory.
