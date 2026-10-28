@@ -1,0 +1,81 @@
+{
+  "model_repository": "Qwen/Qwen3-1.7B",
+  "selected_configuration": "T01",
+  "selection_metric": "validation_macro_f1",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "seed_policy": "Evaluate all three seeds separately; report individual scores, mean and sample standard deviation. Do not select a seed by score.",
+  "adapter": {
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_target": "q_proj,k_proj,v_proj,o_proj",
+    "lora_dropout": 0.05
+  },
+  "training": {
+    "learning_rate": 0.0001,
+    "warmup_ratio": 0.1,
+    "lr_scheduler_type": "linear",
+    "num_train_epochs": 3
+  },
+  "inference": {
+    "template": "qwen3",
+    "enable_thinking": false,
+    "infer_dtype": "bfloat16",
+    "quantized": false,
+    "do_sample": false,
+    "max_new_tokens": 8,
+    "repetition_penalty": 1.0,
+    "batch_size": 1,
+    "instruction": "判断评论整体情感，仅输出0表示负面、1表示正面。",
+    "message_format": "instruction + newline + comment",
+    "history": false,
+    "few_shot_examples": 0,
+    "input_token_budget": 2048,
+    "truncation": "Use frozen 512-character prefix; if encoded prompt exceeds2048 tokens remove comment characters from tail, preserving instruction.",
+    "decoding": "Decode generated continuation only, skip_special_tokens=True; retain raw decoded output before strip.",
+    "stop_tokens": "Installed Factory qwen3 template.get_stop_token_ids(tokenizer)"
+  },
+  "metrics": {
+    "labels": {
+      "0": "negative",
+      "1": "positive"
+    },
+    "parser": "Only raw_output.strip() exactly0 or1 is valid.",
+    "invalid": "Count as incorrect, include in denominator and true-class FN; report invalid rate and invalid confusion column.",
+    "primary": "macro_f1",
+    "additional": [
+      "accuracy",
+      "per_class_precision_recall_f1",
+      "confusion_matrix",
+      "invalid_rate"
+    ],
+    "zero_division": 0,
+    "std": "sample, denominator n-1"
+  },
+  "data": {
+    "version": "v1-20261023",
+    "train_count": 6210,
+    "validation_count": 776,
+    "test_count": 777,
+    "file_hashes": {
+      "train.jsonl": "a37fa5d7139c68fa2fc39bbcff0a9ae3d2beb3e7268fbd25a646b4aa65a3e22f",
+      "validation.jsonl": "eae1c55c43f7121c4e24b4fb4634e0ea3406cbd99fe9cd05ca9151c253c7fe64",
+      "test.jsonl": "3df19229abb59d1868a7735b98f42fd799883c22ec37aa8a1760cc2266fb1996",
+      "latency_ids.json": "b6c17098c5d28e42fbfd2594951875da0d0f66a12596e08998b91970e7a8c4b2"
+    }
+  },
+  "evidence": {
+    "search_batch": "qwen17-comparisons-20261026-012117-9e8e51",
+    "repeat_batch": "qwen17-comparisons-20261026-200544-750ecb",
+    "failed_repeat_batch": "qwen17-comparisons-20261026-143111-673346"
+  },
+  "boundaries": {
+    "test_executed_by_this_script": false,
+    "other_routes_frozen": false,
+    "model_revision": "Original download revision unknown; local base files pinned by SHA256 in private manifest."
+  },
+  "ai_assistance": "Engineering transcription of already confirmed T01 and existing validation inference rules; no new design, model inference or result analysis."
+}

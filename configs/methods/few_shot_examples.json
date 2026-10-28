@@ -1,0 +1,48 @@
+{
+  "version": "v1-20261023",
+  "source_split": "train",
+  "selection_seed": 67,
+  "max_characters": 80,
+  "order": [
+    "negative",
+    "positive",
+    "negative",
+    "positive"
+  ],
+  "examples": [
+    {
+      "position": 1,
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5542",
+      "label": 0,
+      "original_text_sha256": "1cb40c6a072290541e3915e80ee2dea4a038f1e50be9e36158fb2829a009eecb",
+      "text": "[REDACTED_TRAINING_REVIEW_TEXT]"
+    },
+    {
+      "position": 2,
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3812",
+      "label": 1,
+      "original_text_sha256": "efe750f520a0cfe0338f3b29c67b3976449bdc84690c69fe35ae912d923b9bbe",
+      "text": "[REDACTED_TRAINING_REVIEW_TEXT]"
+    },
+    {
+      "position": 3,
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5693",
+      "label": 0,
+      "original_text_sha256": "a8bd9b658868b251ed447c63c356227ad0350d8ea701f7332ffe4b0b3af974c0",
+      "text": "[REDACTED_TRAINING_REVIEW_TEXT]"
+    },
+    {
+      "position": 4,
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4407",
+      "label": 1,
+      "original_text_sha256": "6cc3c1ac91ab8f20454bb77b189dffe323c23894d054baafa4ed400589850827",
+      "text": "[REDACTED_TRAINING_REVIEW_TEXT]"
+    }
+  ],
+  "prompt_id": "qwen3_1p7b_few_shot_4_v1",
+  "template_sha256": "a3ca5bf3a65486d39345948ad16201332ef8573acb8e8ba0c753849f9259ac3c",
+  "package_sanitization": {
+    "status": "sanitized",
+    "original_examples_sha256": "a16d409c1bd9d473bb9627a75f99d0e0d19e1e5788a3472b2244f834aed5bd61"
+  }
+}

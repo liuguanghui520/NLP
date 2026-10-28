@@ -1,0 +1,180 @@
+{
+  "sources": [
+    "original NLP workspace scripts",
+    "prompt member delivery code; sanitized evidence kept separate",
+    "baseline source package retained in original workspace"
+  ],
+  "received_date": "2026-10-28",
+  "files": [
+    {
+      "sha256": "d2eae4ce14f6c03e6bd2a416fe4c89baebf73c3968ae7cb2b35676fc0e0090e6",
+      "bytes": 3927,
+      "path": "src/legacy/baselines/finish_bert_tfidf.py"
+    },
+    {
+      "sha256": "bde1bc46f530a6baae8e012956bda3c15fe829aae1e59a788e62d04bf02f3a07",
+      "bytes": 16384,
+      "path": "src/legacy/baselines/run_bert_tfidf.py"
+    },
+    {
+      "sha256": "cb1524bbd8048aec7ed47cc003bad2dd91bc22661ae9b8d0cf44689ebfe84f63",
+      "bytes": 5666,
+      "path": "src/legacy/baselines/test_bert_tfidf.py"
+    },
+    {
+      "sha256": "be4d8abc87140ea99836960e20945be7c15535bb391df4b9ff38254ee1d0d892",
+      "bytes": 8897,
+      "path": "src/legacy/lora/audit_qwen17_seed_repeats.py"
+    },
+    {
+      "sha256": "76119ca1c6015b80156def18fcc2457d18535f95f6b5909a299a1aa0b8db6fb5",
+      "bytes": 12840,
+      "path": "src/legacy/lora/evaluate_qwen06.py"
+    },
+    {
+      "sha256": "fd4b4e07fdd30cba7a4ea3720c63ab282c8be0fa2be4b8112b4f861cb17f8302",
+      "bytes": 6107,
+      "path": "src/legacy/lora/freeze_qwen17_lora.py"
+    },
+    {
+      "sha256": "dfce3b46ceee89e5d720e62a8451da5b7356693e99592361b1c82e24a75f1395",
+      "bytes": 5144,
+      "path": "src/legacy/lora/prepare_qwen06_experience.py"
+    },
+    {
+      "sha256": "3a0ccdb893741f46fd6f4a801b245f570b864dfc55f5935a86371cfeb7b42a28",
+      "bytes": 4802,
+      "path": "src/legacy/lora/prepare_qwen17_seed_repeats.py"
+    },
+    {
+      "sha256": "30598ce7d54d92cefa1e23d866f44a8cb00c6f9b518162d60907fe374c3ff61d",
+      "bytes": 14948,
+      "path": "src/legacy/lora/profile_qwen17.py"
+    },
+    {
+      "sha256": "4989e00efa91fc2b5e97597770159a75f8ff80547bf28e999ed3a31a6e0e16f9",
+      "bytes": 6901,
+      "path": "src/legacy/lora/record_run_resources.py"
+    },
+    {
+      "sha256": "3a37c6954c262f0f05b4050503e5b71e8cc6bed2f8387c91bc21f74a6fc29da8",
+      "bytes": 13157,
+      "path": "src/legacy/lora/run_qwen17_comparisons.py"
+    },
+    {
+      "sha256": "3d94410c334f489baca223f412b55ccfc86c939ce358afd7515da05c4f33bcd8",
+      "bytes": 7900,
+      "path": "src/legacy/lora/summarize_qwen17_comparisons.py"
+    },
+    {
+      "sha256": "ddd5ff8ba2c185c9d19561ceef1a77da1ee0e3bc40c92fca4a823cebb4439605",
+      "bytes": 22697,
+      "path": "src/legacy/prompt/build_delivery_zip.py"
+    },
+    {
+      "sha256": "a45d1e57f14c4be3af7a1a4ed7bae6f8fe5154b00ce357856fc36a259f996368",
+      "bytes": 22268,
+      "path": "src/legacy/prompt/build_frozen_dataset.py"
+    },
+    {
+      "sha256": "7472c00ad5dc018fc0a88a87f9155eb3058eba97fb78390648181de2e3805907",
+      "bytes": 5050,
+      "path": "src/legacy/prompt/build_prompt_registry.py"
+    },
+    {
+      "sha256": "f4a9f362e9d94b36c44688704aea82a895ed37c68635ccb20809b49229a4007c",
+      "bytes": 5878,
+      "path": "src/legacy/prompt/evaluate_predictions.py"
+    },
+    {
+      "sha256": "703d2c980ca584245cb6a08b7b820f37d133f85a0c977e9f7f2496c074f57dd2",
+      "bytes": 6327,
+      "path": "src/legacy/prompt/experiment_contracts.py"
+    },
+    {
+      "sha256": "580e93fbc215c9e6a2316d37a396ae47a4751a8dfe9deceb1480861e1d942e88",
+      "bytes": 15278,
+      "path": "src/legacy/prompt/finalize_preflight_evidence.py"
+    },
+    {
+      "sha256": "16e01bad11a1580a222a106b1e073798def05a90a4296b86c7b5d1cfe8f4f981",
+      "bytes": 1388,
+      "path": "src/legacy/prompt/init_optuna_studies.py"
+    },
+    {
+      "sha256": "c5034769b4362baddcdfaa5dd87ad90121561c6fac0b5cf8bf13d30d756cfaf7",
+      "bytes": 3693,
+      "path": "src/legacy/prompt/lock_experiment_tools.py"
+    },
+    {
+      "sha256": "451d3ceabc8ea0c5369f791f951fb65d229b096de01884cb88a455f0302d6153",
+      "bytes": 7304,
+      "path": "src/legacy/prompt/lock_model.py"
+    },
+    {
+      "sha256": "3dd31ee923d121f38f105e9abfda4e998d95dc6887a025771c5b3353f0e5c0d5",
+      "bytes": 5740,
+      "path": "src/legacy/prompt/preflight_macbert.py"
+    },
+    {
+      "sha256": "8033c860984a9d958bae7cabe98ba21f72d5739631c2d8e982076ee1261a36a8",
+      "bytes": 5395,
+      "path": "src/legacy/prompt/preflight_tfidf.py"
+    },
+    {
+      "sha256": "c113b67b511631aafccb674c465d4104ca9fc71e98c78507e9a13ab37859a4cb",
+      "bytes": 12964,
+      "path": "src/legacy/prompt/prepare_qwen_formal_validation.py"
+    },
+    {
+      "sha256": "9894f72c56b33fd8393434bf57a1efe3a076241affc2b39737f142d6f6a8f13d",
+      "bytes": 32738,
+      "path": "src/legacy/prompt/qwen_prompt_runner.py"
+    },
+    {
+      "sha256": "61cf39aa0b895e33918834ae525066fd04a61bc9924273981bab6bf8d2db346c",
+      "bytes": 328,
+      "path": "src/legacy/prompt/rebuild_run_index.py"
+    },
+    {
+      "sha256": "1b3c06e8dd5b64bb305bdda3a84aa168f8ad4dbaf281c64b284c979c27053cef",
+      "bytes": 1253,
+      "path": "src/legacy/prompt/refresh_run_artifact_hashes.py"
+    },
+    {
+      "sha256": "2cdf90dbadc17cababce076b808430fa79e355fd682e047c3e460017a5f201bb",
+      "bytes": 1916,
+      "path": "src/legacy/prompt/run_logged.py"
+    },
+    {
+      "sha256": "09ea9d779afe37d567c9093d9b308cfbef0a39a2c7e81fcdf52de47d236980bd",
+      "bytes": 1842,
+      "path": "src/legacy/prompt/run_qwen_formal_validation.py"
+    },
+    {
+      "sha256": "71a5c248fe71b16adf311ae0133955e61a447a976ea2cc732fbbcb3cda378482",
+      "bytes": 3912,
+      "path": "src/legacy/prompt/run_with_gpu_monitor.py"
+    },
+    {
+      "sha256": "82188d0b9065f080a7d6e1b019611c165ed766f4b6fea50aa4fff166252169a8",
+      "bytes": 1759,
+      "path": "src/legacy/prompt/summarize_latency.py"
+    },
+    {
+      "sha256": "6ee9b45939d7fc090714a6cf63741c016172b35c62312ea0f632c077dbc9794b",
+      "bytes": 3120,
+      "path": "src/legacy/prompt/wsl_openai_probe.py"
+    },
+    {
+      "sha256": "2842fc1a2f6f72aacc47f38fc2e8ae504638f83e7483bccbd72030d1bfab74ff",
+      "bytes": 3002,
+      "path": "src/legacy/prompt/tests/test_evaluation_contracts.py"
+    },
+    {
+      "sha256": "f9f8fe20dadb369511bbf2aa0a6164cb1e8eeb31fba6bc0153a57f599d220574",
+      "bytes": 3309,
+      "path": "src/legacy/prompt/tests/test_qwen_formal_pipeline.py"
+    }
+  ]
+}
