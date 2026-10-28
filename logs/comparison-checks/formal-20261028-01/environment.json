@@ -1,0 +1,11 @@
+{
+  "recorded_at": "2026-10-28T20:09:59.776605+08:00",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.9",
+    "pillow": "12.2.0"
+  },
+  "dependency_changes": false
+}

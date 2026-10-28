@@ -1,0 +1,182 @@
+[
+  {
+    "file": "reports/figures/bert-ep5-seed42-curves.png",
+    "status": "保留归档，待原始日志后统一重绘",
+    "reason": "训练原始逐步数据部分在外部目录；不从图片伪造逐点数据",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/bert-len128-seed42-curves.png",
+    "status": "保留归档，待原始日志后统一重绘",
+    "reason": "训练原始逐步数据部分在外部目录；不从图片伪造逐点数据",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/bert-len512-seed42-confusion.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/bert-len512-seed42-curves.png",
+    "status": "保留归档，待原始日志后统一重绘",
+    "reason": "训练原始逐步数据部分在外部目录；不从图片伪造逐点数据",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/bert-len512-seed43-confusion.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/bert-len512-seed43-curves.png",
+    "status": "保留归档，待原始日志后统一重绘",
+    "reason": "训练原始逐步数据部分在外部目录；不从图片伪造逐点数据",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/bert-len512-seed44-confusion.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/bert-len512-seed44-curves.png",
+    "status": "保留归档，待原始日志后统一重绘",
+    "reason": "训练原始逐步数据部分在外部目录；不从图片伪造逐点数据",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/bert-lr_1e5-seed42-curves.png",
+    "status": "保留归档，待原始日志后统一重绘",
+    "reason": "训练原始逐步数据部分在外部目录；不从图片伪造逐点数据",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/bert-lr_5e5-seed42-curves.png",
+    "status": "保留归档，待原始日志后统一重绘",
+    "reason": "训练原始逐步数据部分在外部目录；不从图片伪造逐点数据",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/bert-main-seed42-curves.png",
+    "status": "保留归档，待原始日志后统一重绘",
+    "reason": "训练原始逐步数据部分在外部目录；不从图片伪造逐点数据",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/bert-partial-seed42-curves.png",
+    "status": "保留归档，待原始日志后统一重绘",
+    "reason": "训练原始逐步数据部分在外部目录；不从图片伪造逐点数据",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/bert-validation.png",
+    "status": "附录参考",
+    "reason": "保留验证选优证据；正文参数图已按新协议重绘",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/bert-weighted-seed42-curves.png",
+    "status": "保留归档，待原始日志后统一重绘",
+    "reason": "训练原始逐步数据部分在外部目录；不从图片伪造逐点数据",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/C_qwen_few_shot_fixed_prompt_v1_noseed_20261024T154625Z-confusion.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/C_qwen_zero_shot_fixed_prompt_v1_noseed_20261024T154625Z-confusion.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/effect-latency.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/qwen_lora-T01-seed42-validation-confusion.png",
+    "status": "附录参考",
+    "reason": "保留验证选优证据；正文参数图已按新协议重绘",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/qwen_lora-T01-seed43-validation-confusion.png",
+    "status": "附录参考",
+    "reason": "保留验证选优证据；正文参数图已按新协议重绘",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/qwen_lora-T01-seed44-validation-confusion.png",
+    "status": "附录参考",
+    "reason": "保留验证选优证据；正文参数图已按新协议重绘",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/test-lora-seed42-confusion.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/test-lora-seed43-confusion.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/test-lora-seed44-confusion.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/test-methods.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/test-qwen_few_shot-confusion.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/test-qwen_zero_shot-confusion.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/tfidf-char_1_3-seed42-confusion.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/tfidf-char_1_3-seed43-confusion.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/tfidf-char_1_3-seed44-confusion.png",
+    "status": "需替换展示",
+    "reason": "新版提供种子语义、统一矩阵比例、设备与统计范围等更完整说明",
+    "action": "keep original"
+  },
+  {
+    "file": "reports/figures/tfidf-validation.png",
+    "status": "附录参考",
+    "reason": "保留验证选优证据；正文参数图已按新协议重绘",
+    "action": "keep original"
+  }
+]

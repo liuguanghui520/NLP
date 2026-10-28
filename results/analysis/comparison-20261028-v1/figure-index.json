@@ -1,0 +1,119 @@
+[
+  {
+    "id": "01-main-effect",
+    "title": "五种方案：最终测试效果",
+    "caption": "测试777条；训练路线n=3，误差条为种子样本标准差；确定性提示n=1，无误差条。",
+    "data": "methods.json",
+    "role": "正文候选",
+    "png": "01-main-effect.png",
+    "pdf": "01-main-effect.pdf"
+  },
+  {
+    "id": "02-seed-stability",
+    "title": "单次成绩与种子波动",
+    "caption": "测试777条；种子42/43/44逐次展示；提示单次确定性结果不作为训练随机重复。",
+    "data": "methods.json",
+    "role": "正文候选",
+    "png": "02-seed-stability.png",
+    "pdf": "02-seed-stability.pdf"
+  },
+  {
+    "id": "03-confusion",
+    "title": "同一测试集的错误方向",
+    "caption": "测试777条；训练路线固定seed42示例，未按测试成绩选种子；三种子汇总另见主表。",
+    "data": "methods.json / original predictions",
+    "role": "正文候选",
+    "png": "03-confusion.png",
+    "pdf": "03-confusion.pdf"
+  },
+  {
+    "id": "04-bert-learning-rate",
+    "title": "BERT参数对照：学习率",
+    "caption": "验证776条、seed42；长度256、batch16、3轮、全参；每配置按验证F1选最佳轮次。",
+    "data": "parameters.json / training-cost-ledger.json",
+    "role": "正文候选",
+    "png": "04-bert-learning-rate.png",
+    "pdf": "04-bert-learning-rate.pdf"
+  },
+  {
+    "id": "05-lora-parameters",
+    "title": "LoRA参数对照：容量、效果与成本",
+    "caption": "验证776条、seed42；alpha/r固定为2；B00时钟差异保留，运行计时不等于纯训练内核时间。",
+    "data": "parameters.json",
+    "role": "正文候选",
+    "png": "05-lora-parameters.png",
+    "pdf": "05-lora-parameters.pdf"
+  },
+  {
+    "id": "06-latency-ecdf",
+    "title": "固定200条评论：延迟分布与尾延迟",
+    "caption": "各图横轴不同；20条预热、batch1、含分词/传输/推理/解析，不含加载/读盘；训练模型展示seed42。",
+    "data": "latency.json / benchmark detail files",
+    "role": "正文候选",
+    "png": "06-latency-ecdf.png",
+    "pdf": "06-latency-ecdf.pdf"
+  },
+  {
+    "id": "07-effect-latency",
+    "title": "效果与响应时间的取舍",
+    "caption": "实际CPU/GPU部署路线；x为各模型均值再平均，y误差为训练种子SD；不代表相同计算资源排名。",
+    "data": "methods.json / latency.json",
+    "role": "正文候选",
+    "png": "07-effect-latency.png",
+    "pdf": "07-effect-latency.pdf"
+  },
+  {
+    "id": "08-resources-storage",
+    "title": "显存记录与完整部署体积",
+    "caption": "峰值为加载后测试/预热/延迟全阶段；RSS未当峰值。LoRA部署含基座＋适配器；环境另计。",
+    "data": "latency.json / deployment-storage.json",
+    "role": "正文候选",
+    "png": "08-resources-storage.png",
+    "pdf": "08-resources-storage.pdf"
+  },
+  {
+    "id": "09-length-groups",
+    "title": "长度分组：样本构成与错误率",
+    "caption": "训练路线为3次错误率均值；含小样本分组，仅描述；>512组经历共同字符截断，不能单凭相关性确认因果。",
+    "data": "length-and-truncation.json",
+    "role": "正文候选",
+    "png": "09-length-groups.png",
+    "pdf": "09-length-groups.pdf"
+  },
+  {
+    "id": "10-paired-f1-difference",
+    "title": "配对差异：固定模型下的测试样本不确定性",
+    "caption": "5000次按真实类别分层的配对bootstrap、95%逐项百分位区间；种子先分别算F1再平均；事后探索性分析。",
+    "data": "paired-comparisons.json",
+    "role": "正文候选",
+    "png": "10-paired-f1-difference.png",
+    "pdf": "10-paired-f1-difference.pdf"
+  },
+  {
+    "id": "11-corrections-regressions",
+    "title": "同样本对比：改善与退化同时展示",
+    "caption": "测试777条；训练方法固定seed42，不是三种子投票或集成；多数类只作分析参考。",
+    "data": "paired-comparisons.json",
+    "role": "正文候选",
+    "png": "11-corrections-regressions.png",
+    "pdf": "11-corrections-regressions.pdf"
+  },
+  {
+    "id": "12-effect-recorded-training-time",
+    "title": "效果与已记录训练投入",
+    "caption": "训练边界不同：BERT训练＋验证；TF-IDF拟合；LoRA Trainer区间含验证/保存。仅部署方案观测，不能作纯训练算法效率结论。",
+    "data": "training-cost-ledger.json / training-costs.json",
+    "role": "正文候选",
+    "png": "12-effect-recorded-training-time.png",
+    "pdf": "12-effect-recorded-training-time.pdf"
+  },
+  {
+    "id": "13-lora-validation",
+    "title": "LoRA T01：三种子的逐轮验证",
+    "caption": "验证776条；本图不是训练loss；无原始逐步loss不补造曲线。",
+    "data": "LoRA validation_history.json",
+    "role": "附录候选",
+    "png": "13-lora-validation.png",
+    "pdf": "13-lora-validation.pdf"
+  }
+]

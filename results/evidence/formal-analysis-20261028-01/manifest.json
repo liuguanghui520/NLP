@@ -1,0 +1,434 @@
+{
+  "collected_at": "2026-10-28T19:55:20.121496+08:00",
+  "scope": "Existing logs only; no training, inference or model loading",
+  "files": [
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-ep5-seed42/train_steps.jsonl",
+      "copied_to": "bert/bert-ep5-seed42/train_steps.jsonl",
+      "exists": true,
+      "sha256": "fede6f9afc7a9e60e71e3b21b52a19e779296deabcc63d0596cb1a31b2c866fc",
+      "bytes": 227523
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-ep5-seed42/epoch_metrics.jsonl",
+      "copied_to": "bert/bert-ep5-seed42/epoch_metrics.jsonl",
+      "exists": true,
+      "sha256": "e50481c30ef3d9d457056e16cee30fddd3dd6f0c8e91277c776744d7cda5a1f1",
+      "bytes": 4236
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-ep5-seed42/config.json",
+      "copied_to": "bert/bert-ep5-seed42/config.json",
+      "exists": true,
+      "sha256": "ea94ef1720eddeab4d9f452e81fce903d133141e413a5bdb69c130c71648e343",
+      "bytes": 1526
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-ep5-seed42/metrics.json",
+      "copied_to": "bert/bert-ep5-seed42/metrics.json",
+      "exists": false
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len128-seed42/train_steps.jsonl",
+      "copied_to": "bert/bert-len128-seed42/train_steps.jsonl",
+      "exists": true,
+      "sha256": "4ae99e9277b3727075d5283ea6962d74491533cdf87ee8de442107f935ef4e90",
+      "bytes": 135533
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len128-seed42/epoch_metrics.jsonl",
+      "copied_to": "bert/bert-len128-seed42/epoch_metrics.jsonl",
+      "exists": true,
+      "sha256": "a3e823cf200e7a550050a84de8647ef3816c21025986f59268e9327a1dd244f9",
+      "bytes": 2566
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len128-seed42/config.json",
+      "copied_to": "bert/bert-len128-seed42/config.json",
+      "exists": true,
+      "sha256": "9af5d6f3cc4748fd975d108edb342733034c09871cdbdaf3f7ef28aee15c575c",
+      "bytes": 1532
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len128-seed42/metrics.json",
+      "copied_to": "bert/bert-len128-seed42/metrics.json",
+      "exists": false
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed42/train_steps.jsonl",
+      "copied_to": "bert/bert-len512-seed42/train_steps.jsonl",
+      "exists": true,
+      "sha256": "345815548a16f3d6cf5afeea289fe4d3fc9b13dfc5c88aa5db9521ef86f864b7",
+      "bytes": 272956
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed42/epoch_metrics.jsonl",
+      "copied_to": "bert/bert-len512-seed42/epoch_metrics.jsonl",
+      "exists": true,
+      "sha256": "254ebd86b9b9e012fb2bb0a7df786d0d63eb787026188783e04adf976d8fd587",
+      "bytes": 2546
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed42/config.json",
+      "copied_to": "bert/bert-len512-seed42/config.json",
+      "exists": true,
+      "sha256": "87d357dd3bc7a6696abfb1c9c48810937ec67464b2c825d32094a6ecf80bfad6",
+      "bytes": 1531
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed42/metrics.json",
+      "copied_to": "bert/bert-len512-seed42/metrics.json",
+      "exists": false
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed43/train_steps.jsonl",
+      "copied_to": "bert/bert-len512-seed43/train_steps.jsonl",
+      "exists": true,
+      "sha256": "27f9ba97f3117a9ccd72a6224fc3db6076cbb7a5e82d2024682a54eb195f3e7d",
+      "bytes": 272729
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed43/epoch_metrics.jsonl",
+      "copied_to": "bert/bert-len512-seed43/epoch_metrics.jsonl",
+      "exists": true,
+      "sha256": "848bb63de44f3ddd10ea4306def89f2a48066e6479438df53c328a5afdf9b60a",
+      "bytes": 2551
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed43/config.json",
+      "copied_to": "bert/bert-len512-seed43/config.json",
+      "exists": true,
+      "sha256": "8a73226b43025e96ac7c890787694721fe6de866d889c90708e43e5566c5e664",
+      "bytes": 1531
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed43/metrics.json",
+      "copied_to": "bert/bert-len512-seed43/metrics.json",
+      "exists": false
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed44/train_steps.jsonl",
+      "copied_to": "bert/bert-len512-seed44/train_steps.jsonl",
+      "exists": true,
+      "sha256": "bd24ef87cca820195c6673b0220de091c7d9754dd707f13251d87e73b3c28469",
+      "bytes": 272909
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed44/epoch_metrics.jsonl",
+      "copied_to": "bert/bert-len512-seed44/epoch_metrics.jsonl",
+      "exists": true,
+      "sha256": "1cbd2a8d3e74c08928c15175ab87e95683449de759fb604ac8239d2c7d1d739e",
+      "bytes": 2562
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed44/config.json",
+      "copied_to": "bert/bert-len512-seed44/config.json",
+      "exists": true,
+      "sha256": "3685680cd50fd1755c0437ea4398af285d8fe47bd1fb7451174c83a7eae165df",
+      "bytes": 1531
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed44/metrics.json",
+      "copied_to": "bert/bert-len512-seed44/metrics.json",
+      "exists": false
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-lr_1e5-seed42/train_steps.jsonl",
+      "copied_to": "bert/bert-lr_1e5-seed42/train_steps.jsonl",
+      "exists": true,
+      "sha256": "740f21ac61b23ebde0ea702eeddd0b41f63e79c50b9adda9a27761a57e17d176",
+      "bytes": 135070
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-lr_1e5-seed42/epoch_metrics.jsonl",
+      "copied_to": "bert/bert-lr_1e5-seed42/epoch_metrics.jsonl",
+      "exists": true,
+      "sha256": "0f9fb00700e7c986269a0c41d40936a90a3afd05c339fdb77530c492ce42f4fd",
+      "bytes": 2550
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-lr_1e5-seed42/config.json",
+      "copied_to": "bert/bert-lr_1e5-seed42/config.json",
+      "exists": true,
+      "sha256": "42c4ac5316bf22f1636fbc40bd24c2a6bfa1c2f3a1cadccf36e18eaf95d2b118",
+      "bytes": 1532
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-lr_1e5-seed42/metrics.json",
+      "copied_to": "bert/bert-lr_1e5-seed42/metrics.json",
+      "exists": false
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-lr_5e5-seed42/train_steps.jsonl",
+      "copied_to": "bert/bert-lr_5e5-seed42/train_steps.jsonl",
+      "exists": true,
+      "sha256": "4c4488cee03d392a6d5cee511a9c44d51b57c22f7e964f92d3d824e7e093d892",
+      "bytes": 135348
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-lr_5e5-seed42/epoch_metrics.jsonl",
+      "copied_to": "bert/bert-lr_5e5-seed42/epoch_metrics.jsonl",
+      "exists": true,
+      "sha256": "604cacf916dee2dfcc15c1e72701e151e6af3c4d433ad60a7c951bc63b1871fa",
+      "bytes": 2569
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-lr_5e5-seed42/config.json",
+      "copied_to": "bert/bert-lr_5e5-seed42/config.json",
+      "exists": true,
+      "sha256": "3685a8f959f8b0acf2ae0bee5369af7f8517423aaa0986f22c8ff0db7cc87a3f",
+      "bytes": 1532
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-lr_5e5-seed42/metrics.json",
+      "copied_to": "bert/bert-lr_5e5-seed42/metrics.json",
+      "exists": false
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-main-seed42/train_steps.jsonl",
+      "copied_to": "bert/bert-main-seed42/train_steps.jsonl",
+      "exists": true,
+      "sha256": "611e418cb7e74ca8c216ab2f3032d0cf31bcdcae29fb69571e61f61b27a45a1a",
+      "bytes": 135504
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-main-seed42/epoch_metrics.jsonl",
+      "copied_to": "bert/bert-main-seed42/epoch_metrics.jsonl",
+      "exists": true,
+      "sha256": "f7d78f7bc6ec0333056c47112e16f2a71778fb68b6220428c3a4ae30667a6c69",
+      "bytes": 2558
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-main-seed42/config.json",
+      "copied_to": "bert/bert-main-seed42/config.json",
+      "exists": true,
+      "sha256": "f6aa256bf84423838cd55ef24e570e97e6d4e59aa721d08eb14fe8c536c35a1e",
+      "bytes": 1528
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-main-seed42/metrics.json",
+      "copied_to": "bert/bert-main-seed42/metrics.json",
+      "exists": false
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-partial-seed42/train_steps.jsonl",
+      "copied_to": "bert/bert-partial-seed42/train_steps.jsonl",
+      "exists": true,
+      "sha256": "193a84482964c79b664cd79f71a5ad8dd035217bd1d83386c43c1a2c413cfd9d",
+      "bytes": 135687
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-partial-seed42/epoch_metrics.jsonl",
+      "copied_to": "bert/bert-partial-seed42/epoch_metrics.jsonl",
+      "exists": true,
+      "sha256": "98a60e670181e989bf58051da61170ab5245fb9f71f83b1a261ae11505fefc43",
+      "bytes": 2548
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-partial-seed42/config.json",
+      "copied_to": "bert/bert-partial-seed42/config.json",
+      "exists": true,
+      "sha256": "9c4db2e03c8f8234bf27620d221f29a9639fbc74ffbb1834d51c13a75126eb94",
+      "bytes": 1533
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-partial-seed42/metrics.json",
+      "copied_to": "bert/bert-partial-seed42/metrics.json",
+      "exists": false
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-weighted-seed42/train_steps.jsonl",
+      "copied_to": "bert/bert-weighted-seed42/train_steps.jsonl",
+      "exists": true,
+      "sha256": "b585b1e3a7ffb46d549a8cf95a5051734b58bc8144f66748680762a4e244b018",
+      "bytes": 135461
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-weighted-seed42/epoch_metrics.jsonl",
+      "copied_to": "bert/bert-weighted-seed42/epoch_metrics.jsonl",
+      "exists": true,
+      "sha256": "ee07561211150ae4eb3002225657663b097d8c03cf2b4a7a5a5f0771306217c6",
+      "bytes": 2561
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-weighted-seed42/config.json",
+      "copied_to": "bert/bert-weighted-seed42/config.json",
+      "exists": true,
+      "sha256": "e7059b26303a4fae6f39efdd55b01c59f61c26fee4f661fa49e9af715934615d",
+      "bytes": 1535
+    },
+    {
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-weighted-seed42/metrics.json",
+      "copied_to": "bert/bert-weighted-seed42/metrics.json",
+      "exists": false
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-profile/qwen17-full-20261025-231706-ea8173/adapter/trainer_log.jsonl",
+      "copied_to": "lora/B00/trainer_log.jsonl",
+      "exists": true,
+      "sha256": "7d7cacdc15d3cb6edb859a2fa653abf54f5d1b819b5ed964ce53df772982f58b",
+      "bytes": 24207
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-profile/qwen17-full-20261025-231706-ea8173/adapter/trainer_state.json",
+      "copied_to": "lora/B00/trainer_state.json",
+      "exists": true,
+      "sha256": "6d03bdb0080502975c9294b3471b54a003b558f26d999315ff9e7ffcdd25fe72",
+      "bytes": 22987
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/L01/adapter/trainer_log.jsonl",
+      "copied_to": "lora/L01/trainer_log.jsonl",
+      "exists": true,
+      "sha256": "11eef81a51da2903e2e68d4faa99567646223a4548e9bd4e006a63ca716111f9",
+      "bytes": 24190
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/L01/adapter/trainer_state.json",
+      "copied_to": "lora/L01/trainer_state.json",
+      "exists": true,
+      "sha256": "5ebfcc7605fe90bc4fd1a3a5095a3e5e75b9d0ed0a54fe40ff80e5df902583a5",
+      "bytes": 23004
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/L02/adapter/trainer_log.jsonl",
+      "copied_to": "lora/L02/trainer_log.jsonl",
+      "exists": true,
+      "sha256": "19d6c5295b370facc7db78d96cc1cf6618434f96892838a46fca6a359c6633fd",
+      "bytes": 24226
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/L02/adapter/trainer_state.json",
+      "copied_to": "lora/L02/trainer_state.json",
+      "exists": true,
+      "sha256": "91ef3c2dc15d44a2e4318f4066eea68ac60eced56141ae7bcc9d3541e4e9afea",
+      "bytes": 22989
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/L03/adapter/trainer_log.jsonl",
+      "copied_to": "lora/L03/trainer_log.jsonl",
+      "exists": true,
+      "sha256": "b7710b62884a42d9166cff07ed5019f882056588455d318f1faf53bd10924f88",
+      "bytes": 24239
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/L03/adapter/trainer_state.json",
+      "copied_to": "lora/L03/trainer_state.json",
+      "exists": true,
+      "sha256": "813f1d4dd2c8afa122d7d72a413096af490966d105c15f12d9f5f404d48f07f1",
+      "bytes": 23023
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/L04/adapter/trainer_log.jsonl",
+      "copied_to": "lora/L04/trainer_log.jsonl",
+      "exists": true,
+      "sha256": "da73c691ceee3c6345ee0ad9aa1fd232ab3e5300a7681daaede1ac30c5685134",
+      "bytes": 24237
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/L04/adapter/trainer_state.json",
+      "copied_to": "lora/L04/trainer_state.json",
+      "exists": true,
+      "sha256": "1ea1d06da5737243c3845d57dc7d5aefabe801f2caf294706205592ef43ef413",
+      "bytes": 23025
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/L05/adapter/trainer_log.jsonl",
+      "copied_to": "lora/L05/trainer_log.jsonl",
+      "exists": true,
+      "sha256": "e9ca13944c4ee4c8d708279b215ea17a812e560f215cdd30e0761ddd0ce5e467",
+      "bytes": 24236
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/L05/adapter/trainer_state.json",
+      "copied_to": "lora/L05/trainer_state.json",
+      "exists": true,
+      "sha256": "fbaa43773eb62aa9d30821464ac4ea38252b35ccaeef9428c55becdbfe9ed62e",
+      "bytes": 23031
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/R01/adapter/trainer_log.jsonl",
+      "copied_to": "lora/R01/trainer_log.jsonl",
+      "exists": true,
+      "sha256": "314a377add7551b94232791e74e3d274fd9187069d7d0d7e1ce4133d5ae3f77a",
+      "bytes": 24220
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/R01/adapter/trainer_state.json",
+      "copied_to": "lora/R01/trainer_state.json",
+      "exists": true,
+      "sha256": "b124de85b43d04fde3e229c2293f2d340ced7b0cc4cfc2b85b9fa6c77468f3c9",
+      "bytes": 22997
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/D01/adapter/trainer_log.jsonl",
+      "copied_to": "lora/D01/trainer_log.jsonl",
+      "exists": true,
+      "sha256": "49bec1a95992400011095a8e3812e0379adf3688d263c91ff3d6e4a9e645c80c",
+      "bytes": 24212
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/D01/adapter/trainer_state.json",
+      "copied_to": "lora/D01/trainer_state.json",
+      "exists": true,
+      "sha256": "5d0ff073dc3e6ee03b20c2515e3645f34e03354011ec13bbf34ced3489c03b80",
+      "bytes": 22992
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/D02/adapter/trainer_log.jsonl",
+      "copied_to": "lora/D02/trainer_log.jsonl",
+      "exists": true,
+      "sha256": "bab344db68891e5c2e0d18f10539963e82305b7947bd926f9870fec7e68d67f9",
+      "bytes": 24217
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/D02/adapter/trainer_state.json",
+      "copied_to": "lora/D02/trainer_state.json",
+      "exists": true,
+      "sha256": "33d70a9841305f0dcdbfc5998efe2979969e5c857f3e8d3dee94b48f2d370595",
+      "bytes": 23010
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/T01/adapter/trainer_log.jsonl",
+      "copied_to": "lora/T01/trainer_log.jsonl",
+      "exists": true,
+      "sha256": "39850c83461204879ede55627a1edb2f89d814c69d2275500c9e189c5134530b",
+      "bytes": 24221
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/T01/adapter/trainer_state.json",
+      "copied_to": "lora/T01/trainer_state.json",
+      "exists": true,
+      "sha256": "5e3d87dfd6bb3f7d7e88a1fec74078d4422eccfdad4b8d3efefcbfa53522f7be",
+      "bytes": 23028
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S43/adapter/trainer_log.jsonl",
+      "copied_to": "lora/T01-S43/trainer_log.jsonl",
+      "exists": true,
+      "sha256": "38680e3210d1d88c826924d1fc46730794f6dbaeb4f4c4b2d50016ea66268c14",
+      "bytes": 24221
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S43/adapter/trainer_state.json",
+      "copied_to": "lora/T01-S43/trainer_state.json",
+      "exists": true,
+      "sha256": "9c4d5a3b09585c8a68efd7131edffd771ad8ebe51324af01ae5cadda3c25bc50",
+      "bytes": 23015
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S44/adapter/trainer_log.jsonl",
+      "copied_to": "lora/T01-S44/trainer_log.jsonl",
+      "exists": true,
+      "sha256": "41429f8624ef05cf6ba3e44ae0a9d550200bb9d7665a74a1a37130c567333b25",
+      "bytes": 24209
+    },
+    {
+      "source": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S44/adapter/trainer_state.json",
+      "copied_to": "lora/T01-S44/trainer_state.json",
+      "exists": true,
+      "sha256": "f5072f3adce75cb8bfdf0e63112fbac6ee0b7169ec3ee16cedf210d0fd8f88bf",
+      "bytes": 23012
+    }
+  ]
+}

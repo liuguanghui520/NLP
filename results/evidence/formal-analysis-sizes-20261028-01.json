@@ -1,0 +1,349 @@
+{
+  "collected_at": "2026-10-28T20:02:11.010235+08:00",
+  "records": [
+    {
+      "method": "bert",
+      "run_id": "bert-ep5-seed42",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-ep5-seed42/checkpoints/best",
+      "exists": true,
+      "bytes": 409540656,
+      "files": [
+        {
+          "path": "tokenizer.json",
+          "bytes": 439124
+        },
+        {
+          "path": "config.json",
+          "bytes": 915
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 377
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 409100240
+        }
+      ]
+    },
+    {
+      "method": "bert",
+      "run_id": "bert-len128-seed42",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len128-seed42/checkpoints/best",
+      "exists": true,
+      "bytes": 409540656,
+      "files": [
+        {
+          "path": "tokenizer.json",
+          "bytes": 439124
+        },
+        {
+          "path": "config.json",
+          "bytes": 915
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 377
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 409100240
+        }
+      ]
+    },
+    {
+      "method": "bert",
+      "run_id": "bert-len512-seed42",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed42/checkpoints/best",
+      "exists": true,
+      "bytes": 409540656,
+      "files": [
+        {
+          "path": "tokenizer.json",
+          "bytes": 439124
+        },
+        {
+          "path": "config.json",
+          "bytes": 915
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 377
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 409100240
+        }
+      ]
+    },
+    {
+      "method": "bert",
+      "run_id": "bert-len512-seed43",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed43/checkpoints/best",
+      "exists": true,
+      "bytes": 409540656,
+      "files": [
+        {
+          "path": "tokenizer.json",
+          "bytes": 439124
+        },
+        {
+          "path": "config.json",
+          "bytes": 915
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 377
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 409100240
+        }
+      ]
+    },
+    {
+      "method": "bert",
+      "run_id": "bert-len512-seed44",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed44/checkpoints/best",
+      "exists": true,
+      "bytes": 409540656,
+      "files": [
+        {
+          "path": "tokenizer.json",
+          "bytes": 439124
+        },
+        {
+          "path": "config.json",
+          "bytes": 915
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 377
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 409100240
+        }
+      ]
+    },
+    {
+      "method": "bert",
+      "run_id": "bert-lr_1e5-seed42",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-lr_1e5-seed42/checkpoints/best",
+      "exists": true,
+      "bytes": 409540656,
+      "files": [
+        {
+          "path": "tokenizer.json",
+          "bytes": 439124
+        },
+        {
+          "path": "config.json",
+          "bytes": 915
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 377
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 409100240
+        }
+      ]
+    },
+    {
+      "method": "bert",
+      "run_id": "bert-lr_5e5-seed42",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-lr_5e5-seed42/checkpoints/best",
+      "exists": true,
+      "bytes": 409540656,
+      "files": [
+        {
+          "path": "tokenizer.json",
+          "bytes": 439124
+        },
+        {
+          "path": "config.json",
+          "bytes": 915
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 377
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 409100240
+        }
+      ]
+    },
+    {
+      "method": "bert",
+      "run_id": "bert-main-seed42",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-main-seed42/checkpoints/best",
+      "exists": true,
+      "bytes": 409540656,
+      "files": [
+        {
+          "path": "tokenizer.json",
+          "bytes": 439124
+        },
+        {
+          "path": "config.json",
+          "bytes": 915
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 377
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 409100240
+        }
+      ]
+    },
+    {
+      "method": "bert",
+      "run_id": "bert-partial-seed42",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-partial-seed42/checkpoints/best",
+      "exists": true,
+      "bytes": 409540656,
+      "files": [
+        {
+          "path": "tokenizer.json",
+          "bytes": 439124
+        },
+        {
+          "path": "config.json",
+          "bytes": 915
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 377
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 409100240
+        }
+      ]
+    },
+    {
+      "method": "bert",
+      "run_id": "bert-weighted-seed42",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-weighted-seed42/checkpoints/best",
+      "exists": true,
+      "bytes": 409540656,
+      "files": [
+        {
+          "path": "tokenizer.json",
+          "bytes": 439124
+        },
+        {
+          "path": "config.json",
+          "bytes": 915
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 377
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 409100240
+        }
+      ]
+    },
+    {
+      "method": "tfidf",
+      "run_id": "tfidf-char_1_3-seed42",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-char_1_3-seed42/checkpoints/best",
+      "exists": true,
+      "bytes": 5960148,
+      "files": [
+        {
+          "path": "pipeline.joblib",
+          "bytes": 5960148
+        }
+      ]
+    },
+    {
+      "method": "tfidf",
+      "run_id": "tfidf-char_1_3-seed43",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-char_1_3-seed43/checkpoints/best",
+      "exists": true,
+      "bytes": 5960148,
+      "files": [
+        {
+          "path": "pipeline.joblib",
+          "bytes": 5960148
+        }
+      ]
+    },
+    {
+      "method": "tfidf",
+      "run_id": "tfidf-char_1_3-seed44",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-char_1_3-seed44/checkpoints/best",
+      "exists": true,
+      "bytes": 5960148,
+      "files": [
+        {
+          "path": "pipeline.joblib",
+          "bytes": 5960148
+        }
+      ]
+    },
+    {
+      "method": "tfidf",
+      "run_id": "tfidf-char_2_4-seed42",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-char_2_4-seed42/checkpoints/best",
+      "exists": true,
+      "bytes": 9030628,
+      "files": [
+        {
+          "path": "pipeline.joblib",
+          "bytes": 9030628
+        }
+      ]
+    },
+    {
+      "method": "tfidf",
+      "run_id": "tfidf-char_2_5-seed42",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-char_2_5-seed42/checkpoints/best",
+      "exists": true,
+      "bytes": 9559428,
+      "files": [
+        {
+          "path": "pipeline.joblib",
+          "bytes": 9559428
+        }
+      ]
+    },
+    {
+      "method": "tfidf",
+      "run_id": "tfidf-word_1_2-seed42",
+      "scope": "Complete best model/tokenizer folder or sklearn Pipeline; no optimizer/environment",
+      "source": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-word_1_2-seed42/checkpoints/best",
+      "exists": true,
+      "bytes": 2618292,
+      "files": [
+        {
+          "path": "pipeline.joblib",
+          "bytes": 2618292
+        }
+      ]
+    }
+  ]
+}

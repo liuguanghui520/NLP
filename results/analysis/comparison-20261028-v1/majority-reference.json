@@ -1,0 +1,12 @@
+{
+  "source": "training labels only",
+  "train_counts": {
+    "1": 4256,
+    "0": 1954
+  },
+  "label": 1,
+  "n": 777,
+  "accuracy": 0.6846846846846847,
+  "macro_f1": 0.40641711229946526,
+  "cost_ranking": false
+}

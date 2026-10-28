@@ -1,0 +1,211 @@
+[
+  {
+    "run_id": "test-qwen_zero_shot",
+    "method": "qwen_zero_shot",
+    "seed": null,
+    "n": 200,
+    "mean_ms": 97.7055882100001,
+    "p50_ms": 61.87273149998873,
+    "p95_ms": 251.91803410000657,
+    "throughput": 10.234829126156887,
+    "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "resources": {
+      "rss_bytes_at_end": 1941827584,
+      "inference_allocated_peak": 3528565760,
+      "inference_reserved_peak": 3569352704,
+      "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+      "end_to_end_s": 121.77282947
+    },
+    "scope": "preprocess_transfer_inference_parse; excludes disk/model loading; GPU synchronized"
+  },
+  {
+    "run_id": "test-qwen_few_shot",
+    "method": "qwen_few_shot",
+    "seed": null,
+    "n": 200,
+    "mean_ms": 79.41378016500067,
+    "p50_ms": 75.2321029999905,
+    "p95_ms": 100.53560789998242,
+    "throughput": 12.592273002522564,
+    "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "resources": {
+      "rss_bytes_at_end": 1920389120,
+      "inference_allocated_peak": 3574675456,
+      "inference_reserved_peak": 3674210304,
+      "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+      "end_to_end_s": 103.73201665100004
+    },
+    "scope": "preprocess_transfer_inference_parse; excludes disk/model loading; GPU synchronized"
+  },
+  {
+    "run_id": "test-lora-seed42",
+    "method": "qwen_lora",
+    "seed": 42,
+    "n": 200,
+    "mean_ms": 62.868860794999364,
+    "p50_ms": 60.789446000001135,
+    "p95_ms": 76.82275410002148,
+    "throughput": 15.906125661490286,
+    "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "resources": {
+      "rss_bytes_at_end": 2156494848,
+      "inference_allocated_peak": 3536414720,
+      "inference_reserved_peak": 5454692352,
+      "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+      "end_to_end_s": 77.72027788399998
+    },
+    "scope": "preprocess_transfer_inference_parse; excludes disk/model loading; GPU synchronized"
+  },
+  {
+    "run_id": "test-lora-seed43",
+    "method": "qwen_lora",
+    "seed": 43,
+    "n": 200,
+    "mean_ms": 57.88038904499899,
+    "p50_ms": 57.01188050005612,
+    "p95_ms": 65.9364691000121,
+    "throughput": 17.2770089576031,
+    "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "resources": {
+      "rss_bytes_at_end": 2156949504,
+      "inference_allocated_peak": 3536414720,
+      "inference_reserved_peak": 5454692352,
+      "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+      "end_to_end_s": 68.95158985699993
+    },
+    "scope": "preprocess_transfer_inference_parse; excludes disk/model loading; GPU synchronized"
+  },
+  {
+    "run_id": "test-lora-seed44",
+    "method": "qwen_lora",
+    "seed": 44,
+    "n": 200,
+    "mean_ms": 56.41967510000257,
+    "p50_ms": 55.140729000015654,
+    "p95_ms": 68.07076975003382,
+    "throughput": 17.72431333976176,
+    "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "resources": {
+      "rss_bytes_at_end": 2146422784,
+      "inference_allocated_peak": 3536414720,
+      "inference_reserved_peak": 5454692352,
+      "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+      "end_to_end_s": 70.50607514399996
+    },
+    "scope": "preprocess_transfer_inference_parse; excludes disk/model loading; GPU synchronized"
+  },
+  {
+    "run_id": "probe-bert-seed42",
+    "method": "bert",
+    "seed": 42,
+    "n": 200,
+    "mean_ms": 5.83955633500409,
+    "p50_ms": 4.953777499963508,
+    "p95_ms": 9.727041400003564,
+    "throughput": 171.2458862680532,
+    "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "resources": {
+      "rss_bytes_at_end": 1439997952,
+      "inference_allocated_peak": 437126656,
+      "inference_reserved_peak": 492830720,
+      "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+      "end_to_end_s": 6.837809320000019
+    },
+    "scope": "preprocess_transfer_inference_parse; excludes disk/model loading; GPU synchronized"
+  },
+  {
+    "run_id": "probe-bert-seed43",
+    "method": "bert",
+    "seed": 43,
+    "n": 200,
+    "mean_ms": 5.805517934998079,
+    "p50_ms": 4.786961000036172,
+    "p95_ms": 10.227868200007583,
+    "throughput": 172.2499200237732,
+    "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "resources": {
+      "rss_bytes_at_end": 1440595968,
+      "inference_allocated_peak": 437126656,
+      "inference_reserved_peak": 492830720,
+      "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+      "end_to_end_s": 3.5370854320000262
+    },
+    "scope": "preprocess_transfer_inference_parse; excludes disk/model loading; GPU synchronized"
+  },
+  {
+    "run_id": "probe-bert-seed44",
+    "method": "bert",
+    "seed": 44,
+    "n": 200,
+    "mean_ms": 6.7529958350019115,
+    "p50_ms": 5.5643509999754315,
+    "p95_ms": 12.04913665006302,
+    "throughput": 148.08242510928736,
+    "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "resources": {
+      "rss_bytes_at_end": 1441083392,
+      "inference_allocated_peak": 437126656,
+      "inference_reserved_peak": 492830720,
+      "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+      "end_to_end_s": 5.363744265999912
+    },
+    "scope": "preprocess_transfer_inference_parse; excludes disk/model loading; GPU synchronized"
+  },
+  {
+    "run_id": "probe-tfidf-seed42",
+    "method": "tfidf",
+    "seed": 42,
+    "n": 200,
+    "mean_ms": 0.5430576599962933,
+    "p50_ms": 0.4881184999590005,
+    "p95_ms": 0.8594101000710449,
+    "throughput": 1841.4250892010723,
+    "device": "cpu",
+    "resources": {
+      "rss_bytes_at_end": 1011167232,
+      "inference_allocated_peak": null,
+      "inference_reserved_peak": null,
+      "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+      "end_to_end_s": 1.6780696020000505
+    },
+    "scope": "preprocess_transfer_inference_parse; excludes disk/model loading; GPU synchronized"
+  },
+  {
+    "run_id": "probe-tfidf-seed43",
+    "method": "tfidf",
+    "seed": 43,
+    "n": 200,
+    "mean_ms": 0.5513558149988285,
+    "p50_ms": 0.5041585000071791,
+    "p95_ms": 0.9317668999642591,
+    "throughput": 1813.7108066995263,
+    "device": "cpu",
+    "resources": {
+      "rss_bytes_at_end": 1011068928,
+      "inference_allocated_peak": null,
+      "inference_reserved_peak": null,
+      "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+      "end_to_end_s": 2.048010313000077
+    },
+    "scope": "preprocess_transfer_inference_parse; excludes disk/model loading; GPU synchronized"
+  },
+  {
+    "run_id": "probe-tfidf-seed44",
+    "method": "tfidf",
+    "seed": 44,
+    "n": 200,
+    "mean_ms": 0.5700506299996277,
+    "p50_ms": 0.5273715000271295,
+    "p95_ms": 0.8901435499922169,
+    "throughput": 1754.2301461900902,
+    "device": "cpu",
+    "resources": {
+      "rss_bytes_at_end": 1011519488,
+      "inference_allocated_peak": null,
+      "inference_reserved_peak": null,
+      "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+      "end_to_end_s": 1.8233731049999733
+    },
+    "scope": "preprocess_transfer_inference_parse; excludes disk/model loading; GPU synchronized"
+  }
+]

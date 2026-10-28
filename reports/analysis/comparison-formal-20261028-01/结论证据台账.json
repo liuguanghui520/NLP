@@ -1,0 +1,1203 @@
+[
+  {
+    "claim_id": "effect-five",
+    "observation": "五方案和多数类主表；逐种子先算再平均",
+    "split": "test",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": "五方案和多数类主表；逐种子先算再平均",
+    "interval_and_test": null,
+    "figures": [
+      "01-main-effect",
+      "02-seed-stability"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/methods.json",
+        "sha256": "c8d83a2e6d16832943df872064dd4f826d8bc8f38b1149d19e1c5bdb96307bf7"
+      }
+    ],
+    "applicable_scope": "固定测试777条",
+    "limitations": "不同基座/输入/精度，不能全归因微调方法",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  },
+  {
+    "claim_id": "negative-miss",
+    "observation": "负面召回、混淆矩阵与非法FN",
+    "split": "test",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": "负面召回、混淆矩阵与非法FN",
+    "interval_and_test": null,
+    "figures": [
+      "03-confusion"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/methods.json",
+        "sha256": "c8d83a2e6d16832943df872064dd4f826d8bc8f38b1149d19e1c5bdb96307bf7"
+      }
+    ],
+    "applicable_scope": "源标签0负面245条",
+    "limitations": "非法与合法误判分开；源标签未按AI改写",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  },
+  {
+    "claim_id": "format",
+    "observation": "严格0/1输出的非法率",
+    "split": "test",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": "严格0/1输出的非法率",
+    "interval_and_test": null,
+    "figures": [
+      "18-invalid-output"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/methods.json",
+        "sha256": "c8d83a2e6d16832943df872064dd4f826d8bc8f38b1149d19e1c5bdb96307bf7"
+      },
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/annotation-statistics.json",
+        "sha256": "d812efe91cb465b4eff0bef99e7cf514b2cce0d7074368a89a152d0a58f9f856"
+      }
+    ],
+    "applicable_scope": "全部777条为分母",
+    "limitations": "不能用首数字诊断替代正式解析",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  },
+  {
+    "claim_id": "seed-stability",
+    "observation": "种子波动和每评论0/1/2/3次失败",
+    "split": "test",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": "种子波动和每评论0/1/2/3次失败",
+    "interval_and_test": null,
+    "figures": [
+      "02-seed-stability"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/seed-stability.json",
+        "sha256": "c1f843b46dcdd56f6206953dee28cd968a799eefe2a2f3f58cb12d4519b3a7ed"
+      },
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/seed43-44-sensitivity.json",
+        "sha256": "2b4c01fb83e3558a01a112d715df5082090c3d30d516138edee349d0f28c6790"
+      }
+    ],
+    "applicable_scope": "固定模型42/43/44",
+    "limitations": "不是扩大N或训练总体推断",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  },
+  {
+    "claim_id": "parameter-validation",
+    "observation": "BERT学习率与LoRA模块/秩验证表",
+    "split": "validation",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": "BERT学习率与LoRA模块/秩验证表",
+    "interval_and_test": null,
+    "figures": [
+      "04-bert-learning-rate",
+      "05-lora-parameters"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/formal-parameter-tables.json",
+        "sha256": "1169213f95b844bc77efdb339bb0d314e058cc74e2802194e399d52f52ea8fef"
+      }
+    ],
+    "applicable_scope": "validation776 seed42",
+    "limitations": "len512/batch及partial/LR组合变化",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  },
+  {
+    "claim_id": "cost-tradeoff",
+    "observation": "延迟/已记录投入/完整部署体积",
+    "split": "test",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": "延迟/已记录投入/完整部署体积",
+    "interval_and_test": null,
+    "figures": [
+      "07-effect-latency",
+      "08-resources-storage",
+      "12-effect-recorded-training-time"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/latency.json",
+        "sha256": "bcca9b093b63f47240ff0d3c976d7717d7da5de170725812f8f630e19923aedc"
+      },
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/formal-cost-ledger.json",
+        "sha256": "afd53c661a5bc67679ad6a00646003fc1f55f2a953efeee701f33ccda6236152"
+      },
+      {
+        "path": "results/summaries/deployment-storage.json",
+        "sha256": "b96509000b1e7f66c9da01b3219caf8594401bf7164fd5b8c734bb8fedc78ef9"
+      }
+    ],
+    "applicable_scope": "本机实测部署路线",
+    "limitations": "CPU/GPU不同；历史成本为下界，时间边界不同",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  },
+  {
+    "claim_id": "shared-failures",
+    "observation": "改善、退化和共同失败",
+    "split": "test",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": "改善、退化和共同失败",
+    "interval_and_test": null,
+    "figures": [
+      "14-error-types",
+      "17-common-failure"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/paired-comparisons.json",
+        "sha256": "0cb8581be51f896ab28d1cb117edeec2a0993764ba5bdce2ae24c3e7696fa688"
+      },
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/annotation-statistics.json",
+        "sha256": "d812efe91cb465b4eff0bef99e7cf514b2cce0d7074368a89a152d0a58f9f856"
+      }
+    ],
+    "applicable_scope": "代表seed42和确定性提示",
+    "limitations": "20本人确认＋382AI辅助；未复核不作真值",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  },
+  {
+    "claim_id": "pair-1",
+    "observation": "TF-IDF−多数类参考",
+    "split": "test",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": {
+      "a": "tfidf",
+      "b": "majority",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.4546233455337754,
+      "bootstrap_95_percentile": [
+        0.4273588822755799,
+        0.48101285517249687
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 502,
+      "both_wrong": 60,
+      "A_correct_B_wrong": 185,
+      "A_wrong_B_correct": 30,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.1994851994851995,
+      "exact_mcnemar_p": 1.9185525493711588e-28,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 1.1511315296226952e-27
+    },
+    "interval_and_test": {
+      "a": "tfidf",
+      "b": "majority",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.4546233455337754,
+      "bootstrap_95_percentile": [
+        0.4273588822755799,
+        0.48101285517249687
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 502,
+      "both_wrong": 60,
+      "A_correct_B_wrong": 185,
+      "A_wrong_B_correct": 30,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.1994851994851995,
+      "exact_mcnemar_p": 1.9185525493711588e-28,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 1.1511315296226952e-27
+    },
+    "figures": [
+      "10-paired-f1-difference"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/paired-comparisons.json",
+        "sha256": "0cb8581be51f896ab28d1cb117edeec2a0993764ba5bdce2ae24c3e7696fa688"
+      }
+    ],
+    "applicable_scope": "固定模型条件差异",
+    "limitations": "事后探索性，逐项CI；正误McNemar非F1检验",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  },
+  {
+    "claim_id": "pair-2",
+    "observation": "MacBERT−TF-IDF",
+    "split": "test",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": {
+      "a": "bert",
+      "b": "tfidf",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.05414188976298051,
+      "bootstrap_95_percentile": [
+        0.030214032970520704,
+        0.07834507797199777
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 669,
+      "both_wrong": 38,
+      "A_correct_B_wrong": 52,
+      "A_wrong_B_correct": 18,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.04375804375804371,
+      "exact_mcnemar_p": 5.849547318695842e-05,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 0.00017548641956087528
+    },
+    "interval_and_test": {
+      "a": "bert",
+      "b": "tfidf",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.05414188976298051,
+      "bootstrap_95_percentile": [
+        0.030214032970520704,
+        0.07834507797199777
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 669,
+      "both_wrong": 38,
+      "A_correct_B_wrong": 52,
+      "A_wrong_B_correct": 18,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.04375804375804371,
+      "exact_mcnemar_p": 5.849547318695842e-05,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 0.00017548641956087528
+    },
+    "figures": [
+      "10-paired-f1-difference"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/paired-comparisons.json",
+        "sha256": "0cb8581be51f896ab28d1cb117edeec2a0993764ba5bdce2ae24c3e7696fa688"
+      }
+    ],
+    "applicable_scope": "固定模型条件差异",
+    "limitations": "事后探索性，逐项CI；正误McNemar非F1检验",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  },
+  {
+    "claim_id": "pair-3",
+    "observation": "LoRA T01−TF-IDF",
+    "split": "test",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": {
+      "a": "qwen_lora",
+      "b": "tfidf",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.05011974035558009,
+      "bootstrap_95_percentile": [
+        0.025602534048117007,
+        0.0755004518481606
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 666,
+      "both_wrong": 38,
+      "A_correct_B_wrong": 52,
+      "A_wrong_B_correct": 21,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.039897039897039854,
+      "exact_mcnemar_p": 0.0003713401159383162,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 0.0007426802318766324
+    },
+    "interval_and_test": {
+      "a": "qwen_lora",
+      "b": "tfidf",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.05011974035558009,
+      "bootstrap_95_percentile": [
+        0.025602534048117007,
+        0.0755004518481606
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 666,
+      "both_wrong": 38,
+      "A_correct_B_wrong": 52,
+      "A_wrong_B_correct": 21,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.039897039897039854,
+      "exact_mcnemar_p": 0.0003713401159383162,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 0.0007426802318766324
+    },
+    "figures": [
+      "10-paired-f1-difference"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/paired-comparisons.json",
+        "sha256": "0cb8581be51f896ab28d1cb117edeec2a0993764ba5bdce2ae24c3e7696fa688"
+      }
+    ],
+    "applicable_scope": "固定模型条件差异",
+    "limitations": "事后探索性，逐项CI；正误McNemar非F1检验",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  },
+  {
+    "claim_id": "pair-4",
+    "observation": "Qwen少样本−Qwen零样本",
+    "split": "test",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": {
+      "a": "qwen_few_shot",
+      "b": "qwen_zero_shot",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.1354600786829251,
+      "bootstrap_95_percentile": [
+        0.0984505310997691,
+        0.17107900470172344
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 409,
+      "both_wrong": 128,
+      "A_correct_B_wrong": 186,
+      "A_wrong_B_correct": 54,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.16988416988416988,
+      "exact_mcnemar_p": 3.6437670410963765e-18,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 1.4575068164385506e-17
+    },
+    "interval_and_test": {
+      "a": "qwen_few_shot",
+      "b": "qwen_zero_shot",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.1354600786829251,
+      "bootstrap_95_percentile": [
+        0.0984505310997691,
+        0.17107900470172344
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 409,
+      "both_wrong": 128,
+      "A_correct_B_wrong": 186,
+      "A_wrong_B_correct": 54,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.16988416988416988,
+      "exact_mcnemar_p": 3.6437670410963765e-18,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 1.4575068164385506e-17
+    },
+    "figures": [
+      "10-paired-f1-difference"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/paired-comparisons.json",
+        "sha256": "0cb8581be51f896ab28d1cb117edeec2a0993764ba5bdce2ae24c3e7696fa688"
+      }
+    ],
+    "applicable_scope": "固定模型条件差异",
+    "limitations": "事后探索性，逐项CI；正误McNemar非F1检验",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  },
+  {
+    "claim_id": "pair-5",
+    "observation": "LoRA T01−Qwen零样本",
+    "split": "test",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": {
+      "a": "qwen_lora",
+      "b": "qwen_zero_shot",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.2855712586661514,
+      "bootstrap_95_percentile": [
+        0.24728995865551437,
+        0.32337650329251766
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 447,
+      "both_wrong": 43,
+      "A_correct_B_wrong": 271,
+      "A_wrong_B_correct": 16,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.3281853281853282,
+      "exact_mcnemar_p": 5.6517564649200656e-61,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 3.956229525444046e-60
+    },
+    "interval_and_test": {
+      "a": "qwen_lora",
+      "b": "qwen_zero_shot",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.2855712586661514,
+      "bootstrap_95_percentile": [
+        0.24728995865551437,
+        0.32337650329251766
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 447,
+      "both_wrong": 43,
+      "A_correct_B_wrong": 271,
+      "A_wrong_B_correct": 16,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.3281853281853282,
+      "exact_mcnemar_p": 5.6517564649200656e-61,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 3.956229525444046e-60
+    },
+    "figures": [
+      "10-paired-f1-difference"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/paired-comparisons.json",
+        "sha256": "0cb8581be51f896ab28d1cb117edeec2a0993764ba5bdce2ae24c3e7696fa688"
+      }
+    ],
+    "applicable_scope": "固定模型条件差异",
+    "limitations": "事后探索性，逐项CI；正误McNemar非F1检验",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  },
+  {
+    "claim_id": "pair-6",
+    "observation": "LoRA T01−Qwen少样本",
+    "split": "test",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": {
+      "a": "qwen_lora",
+      "b": "qwen_few_shot",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.15011117998322632,
+      "bootstrap_95_percentile": [
+        0.12229998153413531,
+        0.1780071472697959
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 576,
+      "both_wrong": 40,
+      "A_correct_B_wrong": 142,
+      "A_wrong_B_correct": 19,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.15830115830115832,
+      "exact_mcnemar_p": 1.8242950410934214e-24,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 9.121475205467107e-24
+    },
+    "interval_and_test": {
+      "a": "qwen_lora",
+      "b": "qwen_few_shot",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.15011117998322632,
+      "bootstrap_95_percentile": [
+        0.12229998153413531,
+        0.1780071472697959
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 576,
+      "both_wrong": 40,
+      "A_correct_B_wrong": 142,
+      "A_wrong_B_correct": 19,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.15830115830115832,
+      "exact_mcnemar_p": 1.8242950410934214e-24,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 9.121475205467107e-24
+    },
+    "figures": [
+      "10-paired-f1-difference"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/paired-comparisons.json",
+        "sha256": "0cb8581be51f896ab28d1cb117edeec2a0993764ba5bdce2ae24c3e7696fa688"
+      }
+    ],
+    "applicable_scope": "固定模型条件差异",
+    "limitations": "事后探索性，逐项CI；正误McNemar非F1检验",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  },
+  {
+    "claim_id": "pair-7",
+    "observation": "MacBERT−LoRA T01",
+    "split": "test",
+    "runs_or_seeds": [
+      {
+        "run_id": "bert-len512-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "bert-len512-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "bert-len512-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "tfidf-char_1_3-seed44",
+        "seed": 44
+      },
+      {
+        "run_id": "test-qwen_zero_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-qwen_few_shot",
+        "seed": null
+      },
+      {
+        "run_id": "test-lora-seed42",
+        "seed": 42
+      },
+      {
+        "run_id": "test-lora-seed43",
+        "seed": 43
+      },
+      {
+        "run_id": "test-lora-seed44",
+        "seed": 44
+      }
+    ],
+    "metric_or_difference": {
+      "a": "bert",
+      "b": "qwen_lora",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.004022149407400422,
+      "bootstrap_95_percentile": [
+        -0.010697842838681118,
+        0.019264841331774446
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 701,
+      "both_wrong": 39,
+      "A_correct_B_wrong": 20,
+      "A_wrong_B_correct": 17,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.0038610038610038533,
+      "exact_mcnemar_p": 0.7428293587290682,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 0.7428293587290682
+    },
+    "interval_and_test": {
+      "a": "bert",
+      "b": "qwen_lora",
+      "direction": "A minus B",
+      "macro_f1_mean_delta": 0.004022149407400422,
+      "bootstrap_95_percentile": [
+        -0.010697842838681118,
+        0.019264841331774446
+      ],
+      "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+      "both_correct": 701,
+      "both_wrong": 39,
+      "A_correct_B_wrong": 20,
+      "A_wrong_B_correct": 17,
+      "correctness_seed": 42,
+      "accuracy_delta_seed42": 0.0038610038610038533,
+      "exact_mcnemar_p": 0.7428293587290682,
+      "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+      "holm_adjusted_p_seven_pairs": 0.7428293587290682
+    },
+    "figures": [
+      "10-paired-f1-difference"
+    ],
+    "sources": [
+      {
+        "path": "results/analysis/comparison-formal-20261028-01/paired-comparisons.json",
+        "sha256": "0cb8581be51f896ab28d1cb117edeec2a0993764ba5bdce2ae24c3e7696fa688"
+      }
+    ],
+    "applicable_scope": "固定模型条件差异",
+    "limitations": "事后探索性，逐项CI；正误McNemar非F1检验",
+    "confirmation_status": "AI数据观察稿；学生最终解释待确认"
+  }
+]

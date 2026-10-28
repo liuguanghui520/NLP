@@ -1,0 +1,25 @@
+test_three_sources_keep_raw_and_source_immutable (test_adapters.AdapterTests.test_three_sources_keep_raw_and_source_immutable) ... ok
+test_all_and_only_official_errors_are_present (test_formal_annotations.FormalAnnotationTests.test_all_and_only_official_errors_are_present) ... ok
+test_disagreement_does_not_become_confirmed_semantic_model_failure (test_formal_annotations.FormalAnnotationTests.test_disagreement_does_not_become_confirmed_semantic_model_failure) ... ok
+test_frozen_inputs_unchanged (test_formal_annotations.FormalAnnotationTests.test_frozen_inputs_unchanged) ... ok
+test_human_confirmations_are_not_replaced_by_ai (test_formal_annotations.FormalAnnotationTests.test_human_confirmations_are_not_replaced_by_ai) ... ok
+test_bootstrap_rejects_missing_true_class (test_offline_comparison.OfflineComparisonTests.test_bootstrap_rejects_missing_true_class) ... ok
+test_constant_majority_does_not_receive_high_macro_f1 (test_offline_comparison.OfflineComparisonTests.test_constant_majority_does_not_receive_high_macro_f1) ... ok
+test_fixed_label_set_in_single_class_group (test_offline_comparison.OfflineComparisonTests.test_fixed_label_set_in_single_class_group) ... ok
+test_holm_enforces_monotone_adjustment_in_original_order (test_offline_comparison.OfflineComparisonTests.test_holm_enforces_monotone_adjustment_in_original_order) ... ok
+test_identical_models_have_exactly_zero_paired_difference (test_offline_comparison.OfflineComparisonTests.test_identical_models_have_exactly_zero_paired_difference) ... ok
+test_invalid_output_counts_as_true_class_false_negative (test_offline_comparison.OfflineComparisonTests.test_invalid_output_counts_as_true_class_false_negative) ... ok
+test_resampling_reproducible_for_fixed_configuration (test_offline_comparison.OfflineComparisonTests.test_resampling_reproducible_for_fixed_configuration) ... ok
+test_stratified_bootstrap_keeps_perfect_model_f1_one (test_offline_comparison.OfflineComparisonTests.test_stratified_bootstrap_keeps_perfect_model_f1_one) ... ok
+test_all_invalid (test_unified.EvaluationTests.test_all_invalid) ... ok
+test_conflicts_and_failures (test_unified.EvaluationTests.test_conflicts_and_failures) ... ok
+test_illegal_is_false_negative (test_unified.EvaluationTests.test_illegal_is_false_negative) ... ok
+test_missing_duplicate_extra_order (test_unified.EvaluationTests.test_missing_duplicate_extra_order) ... ok
+test_mixed_identity (test_unified.EvaluationTests.test_mixed_identity) ... ok
+test_valid (test_unified.EvaluationTests.test_valid) ... ok
+test_weighted_by_evaluation_support (test_unified.EvaluationTests.test_weighted_by_evaluation_support) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.159s
+
+OK

@@ -1,0 +1,342 @@
+{
+  "unique_runs": [
+    {
+      "identity": "bert-ep5-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 312.520197325,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-len128-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 153.43161548299997,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-len512-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 297.944416993,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-len512-seed43",
+      "method": "bert",
+      "phase": "seed_repeat",
+      "seed": 43,
+      "seconds": 283.25091182799997,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-len512-seed44",
+      "method": "bert",
+      "phase": "seed_repeat",
+      "seed": 44,
+      "seconds": 300.34836085000006,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-lr_1e5-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 196.83916754300003,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-lr_5e5-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 199.81168362300002,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-main-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 201.93594814099998,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-partial-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 131.971568971,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-weighted-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 192.69368775600003,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "tfidf-char_1_3-seed42",
+      "method": "tfidf",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 14.771012215999988,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "CPU"
+    },
+    {
+      "identity": "tfidf-char_1_3-seed43",
+      "method": "tfidf",
+      "phase": "seed_repeat",
+      "seed": 43,
+      "seconds": 16.758389299000015,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "CPU"
+    },
+    {
+      "identity": "tfidf-char_1_3-seed44",
+      "method": "tfidf",
+      "phase": "seed_repeat",
+      "seed": 44,
+      "seconds": 17.498306005000018,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "CPU"
+    },
+    {
+      "identity": "tfidf-char_2_4-seed42",
+      "method": "tfidf",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 15.225214317999999,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "CPU"
+    },
+    {
+      "identity": "tfidf-char_2_5-seed42",
+      "method": "tfidf",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 19.929185149999995,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "CPU"
+    },
+    {
+      "identity": "tfidf-word_1_2-seed42",
+      "method": "tfidf",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 19.602965098999988,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "CPU"
+    },
+    {
+      "identity": "lora-B00-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 3600.169501057999,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 4344.80511,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-L01-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2803.7037568000014,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2803.704204,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-L02-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2869.5973159610003,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2869.597643,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-L03-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2862.091810473001,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2862.092105,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-L04-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2847.0293728469987,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2847.029628,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-L05-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2840.142016566999,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2840.142288,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-R01-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2875.9080046790004,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2875.908291,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-D01-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2870.2112323440015,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2870.211483,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-D02-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2915.415326243994,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2915.415576,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-T01-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 3547.3765133999987,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 3547.376753,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-T01-seed43",
+      "method": "qwen_lora",
+      "seed": 43,
+      "phase": "seed_repeat",
+      "seconds": 3580.167393051,
+      "scope": "Original perf_counter wrapper; excludes already counted seed42 search",
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-T01-seed44",
+      "method": "qwen_lora",
+      "seed": 44,
+      "phase": "seed_repeat",
+      "seconds": 3638.9630607679997,
+      "scope": "Original perf_counter wrapper; excludes already counted seed42 search",
+      "device": "GPU"
+    }
+  ],
+  "totals": [
+    {
+      "method": "tfidf",
+      "phase": "search",
+      "runs": 4,
+      "recorded_seconds": 69.52837678299997,
+      "task_hours": 0.01931343799527777,
+      "interpretation": "recorded successful-task cost only; excludes unknown failed-run and preparation cost"
+    },
+    {
+      "method": "tfidf",
+      "phase": "seed_repeat",
+      "runs": 2,
+      "recorded_seconds": 34.25669530400003,
+      "task_hours": 0.009515748695555565,
+      "interpretation": "recorded successful-task cost only; excludes unknown failed-run and preparation cost"
+    },
+    {
+      "method": "bert",
+      "phase": "search",
+      "runs": 8,
+      "recorded_seconds": 1687.148285835,
+      "task_hours": 0.4686523016208333,
+      "interpretation": "recorded successful-task cost only; excludes unknown failed-run and preparation cost"
+    },
+    {
+      "method": "bert",
+      "phase": "seed_repeat",
+      "runs": 2,
+      "recorded_seconds": 583.599272678,
+      "task_hours": 0.16211090907722223,
+      "interpretation": "recorded successful-task cost only; excludes unknown failed-run and preparation cost"
+    },
+    {
+      "method": "qwen_lora",
+      "phase": "search",
+      "runs": 10,
+      "recorded_seconds": 30031.64485037299,
+      "task_hours": 8.342123569548054,
+      "interpretation": "recorded successful-task cost only; excludes unknown failed-run and preparation cost"
+    },
+    {
+      "method": "qwen_lora",
+      "phase": "seed_repeat",
+      "runs": 2,
+      "recorded_seconds": 7219.130453819,
+      "task_hours": 2.005314014949722,
+      "interpretation": "recorded successful-task cost only; excludes unknown failed-run and preparation cost"
+    }
+  ],
+  "missing": [
+    "Not a complete project cost: failure durations and some load/save components absent",
+    "Precision differs across routes; no isolated training-method efficiency claim",
+    "Prompt routes have inference/preparation cost even without task training"
+  ],
+  "historical_failures": [
+    {
+      "run_id": "smoke-zero-20261028",
+      "stage": "integration_smoke",
+      "reason": "WSL Git ownership metadata read failed before inference",
+      "retry": "smoke-zero-retry1-20261028",
+      "retry_status": "completed"
+    },
+    {
+      "stage": "baseline_smoke",
+      "reason": "Initial single-class subset; retry used both classes; original retained"
+    },
+    {
+      "stage": "baseline_test_setup",
+      "reason": "Frozen warmup IDs came from non-test splits; original retained; fixed ID lookup"
+    },
+    {
+      "stage": "baseline_latency",
+      "reason": "Initial TF-IDF latency overlapped training; replaced by test-isolated"
+    }
+  ]
+}

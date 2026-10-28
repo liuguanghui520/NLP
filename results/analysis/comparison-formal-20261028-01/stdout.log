@@ -1,0 +1,5 @@
+Audited 11 test runs; all main metrics independently reproduced within 1e-12.
+Computed 5000 paired stratified bootstrap samples; seven separate exploratory comparisons.
+Audited all 11 fixed-200 latency distributions, frozen IDs and 20 warmup IDs; cost ledger deduplicated.
+Created 13 figure pairs (PNG/PDF) from real records.
+Formal annotation coverage verified:20 human-confirmed+382 AI, 1118 error runs, 124 pending samples; 21 figure pairs.

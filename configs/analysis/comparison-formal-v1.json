@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "analysis_seed": 67,
+  "bootstrap_resamples": 5000,
+  "bootstrap_batch": 250,
+  "bootstrap_method": "paired, stratified by true class, percentile 95% interval",
+  "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+  "include_majority_reference": true,
+  "majority_authorization": "User confirmed 2026-10-28; separate reference row, excluded from deployment cost ranking",
+  "primary_pair_seed": 42,
+  "comparison_pairs": [
+    [
+      "tfidf",
+      "majority"
+    ],
+    [
+      "bert",
+      "tfidf"
+    ],
+    [
+      "qwen_lora",
+      "tfidf"
+    ],
+    [
+      "qwen_few_shot",
+      "qwen_zero_shot"
+    ],
+    [
+      "qwen_lora",
+      "qwen_zero_shot"
+    ],
+    [
+      "qwen_lora",
+      "qwen_few_shot"
+    ],
+    [
+      "bert",
+      "qwen_lora"
+    ]
+  ],
+  "pair_direction": "first minus second",
+  "mcnemar": "exploratory two-sided exact, seed42 representatives; Holm across all seven comparisons; tests correctness, not F1",
+  "length_bins": [
+    [
+      1,
+      50
+    ],
+    [
+      51,
+      128
+    ],
+    [
+      129,
+      256
+    ],
+    [
+      257,
+      512
+    ],
+    [
+      513,
+      null
+    ]
+  ],
+  "small_group_warning_n": 30,
+  "plot_seed": 42,
+  "latency_n": 200,
+  "latency_percentile_method": "linear",
+  "human_pilot": "results/error-review/review-20261028-v1/pilot_ids.json",
+  "scope": "Offline analysis of existing records only; no model loading, training, or inference",
+  "history": "Post-hoc exploratory analysis; test results have already been inspected",
+  "human_error_attribution": "20 human-confirmed +382 AI-assisted; unresolved retained",
+  "formal_version": 1,
+  "annotations": "results/error-review/review-formal-20261028-01",
+  "training_log_evidence": "results/evidence/formal-analysis-20261028-01",
+  "p_value_format": "scientific notation below 1e-4",
+  "confirmed_handoff": "docs/协作与融合交接/正式对比分析与错例标注执行交接.md",
+  "candidate_sizes": "results/evidence/formal-analysis-sizes-20261028-01.json"
+}

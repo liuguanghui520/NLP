@@ -1,0 +1,830 @@
+{
+  "training_unique_runs": [
+    {
+      "identity": "bert-ep5-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 312.520197325,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-len128-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 153.43161548299997,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-len512-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 297.944416993,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-len512-seed43",
+      "method": "bert",
+      "phase": "seed_repeat",
+      "seed": 43,
+      "seconds": 283.25091182799997,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-len512-seed44",
+      "method": "bert",
+      "phase": "seed_repeat",
+      "seed": 44,
+      "seconds": 300.34836085000006,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-lr_1e5-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 196.83916754300003,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-lr_5e5-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 199.81168362300002,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-main-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 201.93594814099998,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-partial-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 131.971568971,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "bert-weighted-seed42",
+      "method": "bert",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 192.69368775600003,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "GPU"
+    },
+    {
+      "identity": "tfidf-char_1_3-seed42",
+      "method": "tfidf",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 14.771012215999988,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "CPU"
+    },
+    {
+      "identity": "tfidf-char_1_3-seed43",
+      "method": "tfidf",
+      "phase": "seed_repeat",
+      "seed": 43,
+      "seconds": 16.758389299000015,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "CPU"
+    },
+    {
+      "identity": "tfidf-char_1_3-seed44",
+      "method": "tfidf",
+      "phase": "seed_repeat",
+      "seed": 44,
+      "seconds": 17.498306005000018,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "CPU"
+    },
+    {
+      "identity": "tfidf-char_2_4-seed42",
+      "method": "tfidf",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 15.225214317999999,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "CPU"
+    },
+    {
+      "identity": "tfidf-char_2_5-seed42",
+      "method": "tfidf",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 19.929185149999995,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "CPU"
+    },
+    {
+      "identity": "tfidf-word_1_2-seed42",
+      "method": "tfidf",
+      "phase": "search",
+      "seed": 42,
+      "seconds": 19.602965098999988,
+      "scope": "Historical baseline wrapper: loading/training/validation/saving boundary; details not all separated",
+      "device": "CPU"
+    },
+    {
+      "identity": "lora-B00-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 3600.169501057999,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 4344.80511,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-L01-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2803.7037568000014,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2803.704204,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-L02-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2869.5973159610003,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2869.597643,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-L03-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2862.091810473001,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2862.092105,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-L04-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2847.0293728469987,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2847.029628,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-L05-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2840.142016566999,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2840.142288,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-R01-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2875.9080046790004,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2875.908291,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-D01-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2870.2112323440015,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2870.211483,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-D02-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 2915.415326243994,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 2915.415576,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-T01-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "phase": "search",
+      "seconds": 3547.3765133999987,
+      "scope": "Original perf_counter wrapper; separate from trainer-only interval; B00 clock discrepancy retained",
+      "utc_span_seconds": 3547.376753,
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-T01-seed43",
+      "method": "qwen_lora",
+      "seed": 43,
+      "phase": "seed_repeat",
+      "seconds": 3580.167393051,
+      "scope": "Original perf_counter wrapper; excludes already counted seed42 search",
+      "device": "GPU"
+    },
+    {
+      "identity": "lora-T01-seed44",
+      "method": "qwen_lora",
+      "seed": 44,
+      "phase": "seed_repeat",
+      "seconds": 3638.9630607679997,
+      "scope": "Original perf_counter wrapper; excludes already counted seed42 search",
+      "device": "GPU"
+    }
+  ],
+  "training_run_count": 28,
+  "winners_seed42_already_in_search": true,
+  "LoRA_B00_counted_once": true,
+  "inference_and_benchmarks": [
+    {
+      "run_id": "test-qwen_zero_shot",
+      "method": "qwen_zero_shot",
+      "seed": null,
+      "loaded_process_end_to_end_s": 121.77282947,
+      "benchmark_measured_seconds": 19.54111764200002,
+      "benchmark_n": 200,
+      "scope": "Process resource timer and 200-item latency timer are nested; never add them together. Baseline probes are benchmark-only, Qwen test jobs include full test/warmup/benchmark.",
+      "full_test_only_s": null,
+      "missing_reason": "Full-test-only interval not separately retained",
+      "resources": {
+        "rss_bytes_at_end": 1941827584,
+        "inference_allocated_peak": 3528565760,
+        "inference_reserved_peak": 3569352704,
+        "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+        "end_to_end_s": 121.77282947
+      }
+    },
+    {
+      "run_id": "test-qwen_few_shot",
+      "method": "qwen_few_shot",
+      "seed": null,
+      "loaded_process_end_to_end_s": 103.73201665100004,
+      "benchmark_measured_seconds": 15.882756033000136,
+      "benchmark_n": 200,
+      "scope": "Process resource timer and 200-item latency timer are nested; never add them together. Baseline probes are benchmark-only, Qwen test jobs include full test/warmup/benchmark.",
+      "full_test_only_s": null,
+      "missing_reason": "Full-test-only interval not separately retained",
+      "resources": {
+        "rss_bytes_at_end": 1920389120,
+        "inference_allocated_peak": 3574675456,
+        "inference_reserved_peak": 3674210304,
+        "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+        "end_to_end_s": 103.73201665100004
+      }
+    },
+    {
+      "run_id": "test-lora-seed42",
+      "method": "qwen_lora",
+      "seed": 42,
+      "loaded_process_end_to_end_s": 77.72027788399998,
+      "benchmark_measured_seconds": 12.573772158999873,
+      "benchmark_n": 200,
+      "scope": "Process resource timer and 200-item latency timer are nested; never add them together. Baseline probes are benchmark-only, Qwen test jobs include full test/warmup/benchmark.",
+      "full_test_only_s": null,
+      "missing_reason": "Full-test-only interval not separately retained",
+      "resources": {
+        "rss_bytes_at_end": 2156494848,
+        "inference_allocated_peak": 3536414720,
+        "inference_reserved_peak": 5454692352,
+        "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+        "end_to_end_s": 77.72027788399998
+      }
+    },
+    {
+      "run_id": "test-lora-seed43",
+      "method": "qwen_lora",
+      "seed": 43,
+      "loaded_process_end_to_end_s": 68.95158985699993,
+      "benchmark_measured_seconds": 11.576077808999798,
+      "benchmark_n": 200,
+      "scope": "Process resource timer and 200-item latency timer are nested; never add them together. Baseline probes are benchmark-only, Qwen test jobs include full test/warmup/benchmark.",
+      "full_test_only_s": null,
+      "missing_reason": "Full-test-only interval not separately retained",
+      "resources": {
+        "rss_bytes_at_end": 2156949504,
+        "inference_allocated_peak": 3536414720,
+        "inference_reserved_peak": 5454692352,
+        "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+        "end_to_end_s": 68.95158985699993
+      }
+    },
+    {
+      "run_id": "test-lora-seed44",
+      "method": "qwen_lora",
+      "seed": 44,
+      "loaded_process_end_to_end_s": 70.50607514399996,
+      "benchmark_measured_seconds": 11.283935020000515,
+      "benchmark_n": 200,
+      "scope": "Process resource timer and 200-item latency timer are nested; never add them together. Baseline probes are benchmark-only, Qwen test jobs include full test/warmup/benchmark.",
+      "full_test_only_s": null,
+      "missing_reason": "Full-test-only interval not separately retained",
+      "resources": {
+        "rss_bytes_at_end": 2146422784,
+        "inference_allocated_peak": 3536414720,
+        "inference_reserved_peak": 5454692352,
+        "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+        "end_to_end_s": 70.50607514399996
+      }
+    },
+    {
+      "run_id": "probe-bert-seed42",
+      "method": "bert",
+      "seed": 42,
+      "loaded_process_end_to_end_s": 6.837809320000019,
+      "benchmark_measured_seconds": 1.167911267000818,
+      "benchmark_n": 200,
+      "scope": "Process resource timer and 200-item latency timer are nested; never add them together. Baseline probes are benchmark-only, Qwen test jobs include full test/warmup/benchmark.",
+      "full_test_only_s": null,
+      "missing_reason": "Full-test-only interval not separately retained",
+      "resources": {
+        "rss_bytes_at_end": 1439997952,
+        "inference_allocated_peak": 437126656,
+        "inference_reserved_peak": 492830720,
+        "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+        "end_to_end_s": 6.837809320000019
+      }
+    },
+    {
+      "run_id": "probe-bert-seed43",
+      "method": "bert",
+      "seed": 43,
+      "loaded_process_end_to_end_s": 3.5370854320000262,
+      "benchmark_measured_seconds": 1.1611035869996158,
+      "benchmark_n": 200,
+      "scope": "Process resource timer and 200-item latency timer are nested; never add them together. Baseline probes are benchmark-only, Qwen test jobs include full test/warmup/benchmark.",
+      "full_test_only_s": null,
+      "missing_reason": "Full-test-only interval not separately retained",
+      "resources": {
+        "rss_bytes_at_end": 1440595968,
+        "inference_allocated_peak": 437126656,
+        "inference_reserved_peak": 492830720,
+        "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+        "end_to_end_s": 3.5370854320000262
+      }
+    },
+    {
+      "run_id": "probe-bert-seed44",
+      "method": "bert",
+      "seed": 44,
+      "loaded_process_end_to_end_s": 5.363744265999912,
+      "benchmark_measured_seconds": 1.3505991670003823,
+      "benchmark_n": 200,
+      "scope": "Process resource timer and 200-item latency timer are nested; never add them together. Baseline probes are benchmark-only, Qwen test jobs include full test/warmup/benchmark.",
+      "full_test_only_s": null,
+      "missing_reason": "Full-test-only interval not separately retained",
+      "resources": {
+        "rss_bytes_at_end": 1441083392,
+        "inference_allocated_peak": 437126656,
+        "inference_reserved_peak": 492830720,
+        "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+        "end_to_end_s": 5.363744265999912
+      }
+    },
+    {
+      "run_id": "probe-tfidf-seed42",
+      "method": "tfidf",
+      "seed": 42,
+      "loaded_process_end_to_end_s": 1.6780696020000505,
+      "benchmark_measured_seconds": 0.10861153199925866,
+      "benchmark_n": 200,
+      "scope": "Process resource timer and 200-item latency timer are nested; never add them together. Baseline probes are benchmark-only, Qwen test jobs include full test/warmup/benchmark.",
+      "full_test_only_s": null,
+      "missing_reason": "Full-test-only interval not separately retained",
+      "resources": {
+        "rss_bytes_at_end": 1011167232,
+        "inference_allocated_peak": null,
+        "inference_reserved_peak": null,
+        "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+        "end_to_end_s": 1.6780696020000505
+      }
+    },
+    {
+      "run_id": "probe-tfidf-seed43",
+      "method": "tfidf",
+      "seed": 43,
+      "loaded_process_end_to_end_s": 2.048010313000077,
+      "benchmark_measured_seconds": 0.11027116299976569,
+      "benchmark_n": 200,
+      "scope": "Process resource timer and 200-item latency timer are nested; never add them together. Baseline probes are benchmark-only, Qwen test jobs include full test/warmup/benchmark.",
+      "full_test_only_s": null,
+      "missing_reason": "Full-test-only interval not separately retained",
+      "resources": {
+        "rss_bytes_at_end": 1011068928,
+        "inference_allocated_peak": null,
+        "inference_reserved_peak": null,
+        "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+        "end_to_end_s": 2.048010313000077
+      }
+    },
+    {
+      "run_id": "probe-tfidf-seed44",
+      "method": "tfidf",
+      "seed": 44,
+      "loaded_process_end_to_end_s": 1.8233731049999733,
+      "benchmark_measured_seconds": 0.11401012599992555,
+      "benchmark_n": 200,
+      "scope": "Process resource timer and 200-item latency timer are nested; never add them together. Baseline probes are benchmark-only, Qwen test jobs include full test/warmup/benchmark.",
+      "full_test_only_s": null,
+      "missing_reason": "Full-test-only interval not separately retained",
+      "resources": {
+        "rss_bytes_at_end": 1011519488,
+        "inference_allocated_peak": null,
+        "inference_reserved_peak": null,
+        "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+        "end_to_end_s": 1.8233731049999733
+      }
+    }
+  ],
+  "historical_lifecycle": [
+    {
+      "run_id": "bert-ep5-seed42",
+      "method": "bert",
+      "seed": 42,
+      "stage": "search",
+      "status": "completed",
+      "source_key": "bert_results",
+      "relative_path": "bert-ep5-seed42"
+    },
+    {
+      "run_id": "bert-len128-seed42",
+      "method": "bert",
+      "seed": 42,
+      "stage": "search",
+      "status": "completed",
+      "source_key": "bert_results",
+      "relative_path": "bert-len128-seed42"
+    },
+    {
+      "run_id": "bert-len512-seed42",
+      "method": "bert",
+      "seed": 42,
+      "stage": "search",
+      "status": "completed",
+      "source_key": "bert_results",
+      "relative_path": "bert-len512-seed42"
+    },
+    {
+      "run_id": "bert-len512-seed43",
+      "method": "bert",
+      "seed": 43,
+      "stage": "seed_repeat",
+      "status": "completed",
+      "source_key": "bert_results",
+      "relative_path": "bert-len512-seed43"
+    },
+    {
+      "run_id": "bert-len512-seed44",
+      "method": "bert",
+      "seed": 44,
+      "stage": "seed_repeat",
+      "status": "completed",
+      "source_key": "bert_results",
+      "relative_path": "bert-len512-seed44"
+    },
+    {
+      "run_id": "bert-lr_1e5-seed42",
+      "method": "bert",
+      "seed": 42,
+      "stage": "search",
+      "status": "completed",
+      "source_key": "bert_results",
+      "relative_path": "bert-lr_1e5-seed42"
+    },
+    {
+      "run_id": "bert-lr_5e5-seed42",
+      "method": "bert",
+      "seed": 42,
+      "stage": "search",
+      "status": "completed",
+      "source_key": "bert_results",
+      "relative_path": "bert-lr_5e5-seed42"
+    },
+    {
+      "run_id": "bert-main-seed42",
+      "method": "bert",
+      "seed": 42,
+      "stage": "search",
+      "status": "completed",
+      "source_key": "bert_results",
+      "relative_path": "bert-main-seed42"
+    },
+    {
+      "run_id": "bert-partial-seed42",
+      "method": "bert",
+      "seed": 42,
+      "stage": "search",
+      "status": "completed",
+      "source_key": "bert_results",
+      "relative_path": "bert-partial-seed42"
+    },
+    {
+      "run_id": "bert-weighted-seed42",
+      "method": "bert",
+      "seed": 42,
+      "stage": "search",
+      "status": "completed",
+      "source_key": "bert_results",
+      "relative_path": "bert-weighted-seed42"
+    },
+    {
+      "run_id": "tfidf-char_1_3-seed42",
+      "method": "tfidf",
+      "seed": 42,
+      "stage": "search",
+      "status": "completed",
+      "source_key": "baseline_results",
+      "relative_path": "tfidf-char_1_3-seed42"
+    },
+    {
+      "run_id": "tfidf-char_1_3-seed43",
+      "method": "tfidf",
+      "seed": 43,
+      "stage": "seed_repeat",
+      "status": "completed",
+      "source_key": "baseline_results",
+      "relative_path": "tfidf-char_1_3-seed43"
+    },
+    {
+      "run_id": "tfidf-char_1_3-seed44",
+      "method": "tfidf",
+      "seed": 44,
+      "stage": "seed_repeat",
+      "status": "completed",
+      "source_key": "baseline_results",
+      "relative_path": "tfidf-char_1_3-seed44"
+    },
+    {
+      "run_id": "tfidf-char_2_4-seed42",
+      "method": "tfidf",
+      "seed": 42,
+      "stage": "search",
+      "status": "completed",
+      "source_key": "baseline_results",
+      "relative_path": "tfidf-char_2_4-seed42"
+    },
+    {
+      "run_id": "tfidf-char_2_5-seed42",
+      "method": "tfidf",
+      "seed": 42,
+      "stage": "search",
+      "status": "completed",
+      "source_key": "baseline_results",
+      "relative_path": "tfidf-char_2_5-seed42"
+    },
+    {
+      "run_id": "tfidf-word_1_2-seed42",
+      "method": "tfidf",
+      "seed": 42,
+      "stage": "search",
+      "status": "completed",
+      "source_key": "baseline_results",
+      "relative_path": "tfidf-word_1_2-seed42"
+    },
+    {
+      "run_id": "A_qwen3_lora_r8_preflight_s42_20261024T132300Z",
+      "method": "qwen_lora",
+      "stage": "preflight_smoke",
+      "status": "success_with_nonfatal_swanlab_dashboard_warning",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/A_qwen3_lora_r8_preflight_s42_20261024T132300Z"
+    },
+    {
+      "run_id": "A_qwen3_lora_r8_preflight_s42_20261024T132400Z",
+      "method": "qwen_lora",
+      "stage": "preflight_smoke",
+      "status": "success_superseded",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/A_qwen3_lora_r8_preflight_s42_20261024T132400Z"
+    },
+    {
+      "run_id": "A_qwen3_lora_r8_preflight_s42_20261024T132700Z",
+      "method": "qwen_lora",
+      "stage": "preflight_smoke",
+      "status": "success_superseded",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/A_qwen3_lora_r8_preflight_s42_20261024T132700Z"
+    },
+    {
+      "run_id": "A_qwen3_lora_r8_preflight_s42_20261024T132800Z",
+      "method": "qwen_lora",
+      "stage": "preflight_smoke",
+      "status": "success",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/A_qwen3_lora_r8_preflight_s42_20261024T132800Z"
+    },
+    {
+      "run_id": "A_random_macbert_preflight_lr1e-4_wd0_s42_20261024T132000Z",
+      "method": "random_macbert",
+      "stage": "preflight_smoke",
+      "status": "failed",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/A_random_macbert_preflight_lr1e-4_wd0_s42_20261024T132000Z"
+    },
+    {
+      "run_id": "A_random_macbert_preflight_lr1e-4_wd0_s42_20261024T132200Z",
+      "method": "random_macbert",
+      "stage": "preflight_smoke",
+      "status": "success",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/A_random_macbert_preflight_lr1e-4_wd0_s42_20261024T132200Z"
+    },
+    {
+      "run_id": "B_tfidf_lr_c1_md1_preflight_s42_20261024T132000Z",
+      "method": "tfidf_lr",
+      "stage": "preflight_smoke",
+      "status": "failed",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/B_tfidf_lr_c1_md1_preflight_s42_20261024T132000Z"
+    },
+    {
+      "run_id": "B_tfidf_lr_c1_md1_preflight_s42_20261024T132100Z",
+      "method": "tfidf_lr",
+      "stage": "preflight_smoke",
+      "status": "success",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/B_tfidf_lr_c1_md1_preflight_s42_20261024T132100Z"
+    },
+    {
+      "run_id": "C_qwen3_1p7b_api_connection_smoke_20261024T133000Z",
+      "method": "windows_to_wsl_openai_api",
+      "stage": "preflight_connection_smoke",
+      "status": "success_superseded",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/C_qwen3_1p7b_api_connection_smoke_20261024T133000Z"
+    },
+    {
+      "run_id": "C_qwen3_1p7b_api_connection_smoke_v2_20261024T133100Z",
+      "method": "windows_to_wsl_openai_api",
+      "stage": "preflight_connection_smoke",
+      "status": "success",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/C_qwen3_1p7b_api_connection_smoke_v2_20261024T133100Z"
+    },
+    {
+      "run_id": "C_qwen_few_shot_fixed_prompt_v1_newrunner_smoke_noseed_20261024T135357Z",
+      "method": "qwen_few_shot",
+      "stage": "preflight_smoke",
+      "status": "success",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/C_qwen_few_shot_fixed_prompt_v1_newrunner_smoke_noseed_20261024T135357Z"
+    },
+    {
+      "run_id": "C_qwen_few_shot_fixed_prompt_v1_noseed_20261024T154625Z",
+      "method": "qwen_few_shot",
+      "stage": "formal_validation",
+      "status": "success",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/C_qwen_few_shot_fixed_prompt_v1_noseed_20261024T154625Z"
+    },
+    {
+      "run_id": "C_qwen_few_shot_preflight_v1_noseed_20261024T131600Z",
+      "method": "qwen_few_shot",
+      "stage": "preflight_smoke",
+      "status": "success",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/C_qwen_few_shot_preflight_v1_noseed_20261024T131600Z"
+    },
+    {
+      "run_id": "C_qwen_few_shot_preflight_v2_noseed_20261024T132600Z",
+      "method": "qwen_few_shot",
+      "stage": "preflight_smoke",
+      "status": "success",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/C_qwen_few_shot_preflight_v2_noseed_20261024T132600Z"
+    },
+    {
+      "run_id": "C_qwen_formal_validation_readiness_noseed_20261024T135126Z",
+      "method": "qwen_prompt",
+      "stage": "formal_validation_readiness",
+      "status": "success_superseded",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/C_qwen_formal_validation_readiness_noseed_20261024T135126Z"
+    },
+    {
+      "run_id": "C_qwen_formal_validation_readiness_noseed_20261024T135225Z",
+      "method": "qwen_prompt",
+      "stage": "formal_validation_readiness",
+      "status": "success",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/C_qwen_formal_validation_readiness_noseed_20261024T135225Z"
+    },
+    {
+      "run_id": "C_qwen_zero_shot_fixed_prompt_v1_newrunner_smoke_noseed_20261024T135311Z",
+      "method": "qwen_zero_shot",
+      "stage": "preflight_smoke",
+      "status": "failed",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/C_qwen_zero_shot_fixed_prompt_v1_newrunner_smoke_noseed_20261024T135311Z"
+    },
+    {
+      "run_id": "C_qwen_zero_shot_fixed_prompt_v1_newrunner_smoke_noseed_20261024T135331Z",
+      "method": "qwen_zero_shot",
+      "stage": "preflight_smoke",
+      "status": "success",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/C_qwen_zero_shot_fixed_prompt_v1_newrunner_smoke_noseed_20261024T135331Z"
+    },
+    {
+      "run_id": "C_qwen_zero_shot_fixed_prompt_v1_noseed_20261024T154625Z",
+      "method": "qwen_zero_shot",
+      "stage": "formal_validation",
+      "status": "success",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/C_qwen_zero_shot_fixed_prompt_v1_noseed_20261024T154625Z"
+    },
+    {
+      "run_id": "C_qwen_zero_shot_preflight_v1_noseed_20261024T131500Z",
+      "method": "qwen_zero_shot",
+      "stage": "preflight_smoke",
+      "status": "success",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/C_qwen_zero_shot_preflight_v1_noseed_20261024T131500Z"
+    },
+    {
+      "run_id": "C_qwen_zero_shot_preflight_v2_noseed_20261024T132500Z",
+      "method": "qwen_zero_shot",
+      "stage": "preflight_smoke",
+      "status": "success",
+      "source_key": "prompt_delivery",
+      "relative_path": "run_evidence/C_qwen_zero_shot_preflight_v2_noseed_20261024T132500Z"
+    },
+    {
+      "source_key": "baseline_batch",
+      "relative_path": "tfidf-smoke/tfidf-char_2_4-seed42/status.json",
+      "stage": "smoke",
+      "status": "failed"
+    },
+    {
+      "source_key": "baseline_batch",
+      "relative_path": "tfidf-smoke-retry1/status.json",
+      "stage": "smoke",
+      "status": "training_complete"
+    },
+    {
+      "source_key": "baseline_batch",
+      "relative_path": "tfidf-smoke-retry1/tfidf-char_2_4-seed42/status.json",
+      "stage": "smoke",
+      "status": "completed"
+    }
+  ],
+  "failures": [
+    {
+      "run_id": "smoke-zero-20261028",
+      "stage": "integration_smoke",
+      "reason": "WSL Git ownership metadata read failed before inference",
+      "retry": "smoke-zero-retry1-20261028",
+      "retry_status": "completed"
+    },
+    {
+      "stage": "baseline_smoke",
+      "reason": "Initial single-class subset; retry used both classes; original retained"
+    },
+    {
+      "stage": "baseline_test_setup",
+      "reason": "Frozen warmup IDs came from non-test splits; original retained; fixed ID lookup"
+    },
+    {
+      "stage": "baseline_latency",
+      "reason": "Initial TF-IDF latency overlapped training; replaced by test-isolated"
+    }
+  ],
+  "failures_seconds": null,
+  "interpretation": "Known recorded cost lower bound only; failures/preparation/timing gaps unknown. No energy/currency estimate. Baseline original test-only interval unavailable.",
+  "totals_by_method": {
+    "tfidf": 103.785072087,
+    "bert": 2270.747558513,
+    "qwen_lora": 37250.77530419199
+  },
+  "phase_units": "Successful search includes winner42; repeat phase only43/44. Do not add winner42 again."
+}

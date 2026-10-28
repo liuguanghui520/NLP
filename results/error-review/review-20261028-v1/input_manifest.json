@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "review_id": "review-20261028-v1",
+  "generated_at": "2026-10-28T18:55:35.937294+08:00",
+  "test_count": 777,
+  "run_count": 11,
+  "shuffle_seed": 67,
+  "source_manifest": {
+    "data/processed/v1-20261023/test.jsonl": "3df19229abb59d1868a7735b98f42fd799883c22ec37aa8a1760cc2266fb1996",
+    "results/predictions/bert-len512-seed42.jsonl": "7cff3d8399e030fda4e70cebb3237c512243a48d5dbb9f7a0fc3d51a639fbfbb",
+    "results/predictions/bert-len512-seed43.jsonl": "d9c55f7a8d46259cfe8d01bc40aec35912cb9ad25f2bc0108373c8d585e4d5f9",
+    "results/predictions/bert-len512-seed44.jsonl": "82aff1b9256a906a988e0f42fb2707e0e4c75510c8fe82a73a56576c2eb2e165",
+    "results/predictions/tfidf-char_1_3-seed42.jsonl": "f60bc8296966b99108d1cb6c684b760b96a258a8a385b725e1f23e81759c3942",
+    "results/predictions/tfidf-char_1_3-seed43.jsonl": "d1f9ef7a3ac4332adcd8423425c81889e264f050fd27e2e7c406b7b7ba42ba28",
+    "results/predictions/tfidf-char_1_3-seed44.jsonl": "3f1c3e040ead32db0f0a748a95ff3822e6392e4ed8b745be396e9d24bc58618d",
+    "results/predictions/test-qwen_zero_shot.jsonl": "50705a8eb1ffd886b3c8512f73c49704ddb048ec9a2712c1a902aedaa4f5d9e0",
+    "results/predictions/test-qwen_few_shot.jsonl": "870c2ce591a15c40c0150d4ab37799c14be306e48b9cd1a3087643a20e8b112d",
+    "results/predictions/test-lora-seed42.jsonl": "dd9b735e6d1d3b69a361edb4dfdfc8f40a374accd8d98fe0b380a27e4e484fa2",
+    "results/predictions/test-lora-seed43.jsonl": "01680ba5e3e0c2035bb67e840ed8afa3d95572eed2fbc336bd49e22a87c7fec5",
+    "results/predictions/test-lora-seed44.jsonl": "7fc809516dd55c9e941b6a74672099efdae14d602740a341d4fd71e5af6f4de5"
+  }
+}

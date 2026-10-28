@@ -1,0 +1,178 @@
+{
+  "audit": {
+    "status": "coverage_and_provenance_verified",
+    "sample_count": 402,
+    "human_confirmed": 20,
+    "ai_assisted": 382,
+    "unique_error_runs": 1118,
+    "origin_counts": {
+      "human_confirmed_in_design_chat": 20,
+      "ai_assisted_under_confirmed_rules": 382
+    },
+    "sample_review_status": {
+      "human_confirmed": 19,
+      "label_disagreement_pending": 73,
+      "ai_assisted_completed": 265,
+      "pending_review": 45
+    },
+    "pending_unique_samples": 124,
+    "run_type_counts": {
+      "T1": 132,
+      "T5": 160,
+      "T2": 216,
+      "T6": 509,
+      "T3": 77,
+      "T4": 24
+    },
+    "pilot_full_ids_and_error_sets_checked": true,
+    "source_truth_unchanged": true,
+    "all_quotes_exact_substrings": true,
+    "all_11_prediction_sources_unchanged": true,
+    "input_sha256": {
+      "data/processed/v1-20261023/test.jsonl": "3df19229abb59d1868a7735b98f42fd799883c22ec37aa8a1760cc2266fb1996",
+      "results/predictions/bert-len512-seed42.jsonl": "7cff3d8399e030fda4e70cebb3237c512243a48d5dbb9f7a0fc3d51a639fbfbb",
+      "results/predictions/bert-len512-seed43.jsonl": "d9c55f7a8d46259cfe8d01bc40aec35912cb9ad25f2bc0108373c8d585e4d5f9",
+      "results/predictions/bert-len512-seed44.jsonl": "82aff1b9256a906a988e0f42fb2707e0e4c75510c8fe82a73a56576c2eb2e165",
+      "results/predictions/tfidf-char_1_3-seed42.jsonl": "f60bc8296966b99108d1cb6c684b760b96a258a8a385b725e1f23e81759c3942",
+      "results/predictions/tfidf-char_1_3-seed43.jsonl": "d1f9ef7a3ac4332adcd8423425c81889e264f050fd27e2e7c406b7b7ba42ba28",
+      "results/predictions/tfidf-char_1_3-seed44.jsonl": "3f1c3e040ead32db0f0a748a95ff3822e6392e4ed8b745be396e9d24bc58618d",
+      "results/predictions/test-qwen_zero_shot.jsonl": "50705a8eb1ffd886b3c8512f73c49704ddb048ec9a2712c1a902aedaa4f5d9e0",
+      "results/predictions/test-qwen_few_shot.jsonl": "870c2ce591a15c40c0150d4ab37799c14be306e48b9cd1a3087643a20e8b112d",
+      "results/predictions/test-lora-seed42.jsonl": "dd9b735e6d1d3b69a361edb4dfdfc8f40a374accd8d98fe0b380a27e4e484fa2",
+      "results/predictions/test-lora-seed43.jsonl": "01680ba5e3e0c2035bb67e840ed8afa3d95572eed2fbc336bd49e22a87c7fec5",
+      "results/predictions/test-lora-seed44.jsonl": "7fc809516dd55c9e941b6a74672099efdae14d602740a341d4fd71e5af6f4de5",
+      "results/error-review/review-20261028-v1/candidates.jsonl": "3143f037fdccd09f94c0ea6f5f5e0ba7cb9152ab563a95e837c1996a03cb11fb",
+      "results/error-review/review-20261028-v1/pilot_ids.json": "f30b4ecabe384cfce302db3bc44677fcbc4f3fc7d5bcfae7acd2500a52548551",
+      "docs/协作与融合交接/正式对比分析与错例标注执行交接.md": "e38c8f316f4b178574caa73edfa7399bf4bcc4d1a88d6886a868b7e87c9b7903",
+      "results/error-review/semantic-decisions-20261028.tsv": "0af9405e0d761c5235a960ea010443c4a099a758fc599e48377b5021778f4ebf",
+      "scripts/build_formal_annotations.py": "99b42c010bac430f69d33d7f01ecd8a632f188f5333aefa3531c92fdc937163e"
+    },
+    "ai_model_version": null,
+    "started_at": "2026-10-28T19:54:18.068976+08:00",
+    "completed_at": "2026-10-28T19:54:18.265943+08:00",
+    "elapsed_semantic_review_seconds": null,
+    "elapsed_note": "逐批会话语义阅读已发生；没有精确逐条计时，不用脚本耗时冒充标注耗时",
+    "git_commit": "f908fdea511d4fd253744119990dacd5fc30149c",
+    "annotation_method": "AI逐条阅读全文，先形成独立情感和证据，再核对源标签/前缀/各运行；脚本只转录、展开和校验。非关键词情感分类器。",
+    "human_agreement_with_source": "19/20 purposive pilot; not inter-rater agreement or accuracy",
+    "output_sha256": {
+      "ai-remaining382.jsonl": "963521ec7b3cf6217611bf6c79d2ec0ca2167562d960f542b807149a47777905",
+      "needs-review.jsonl": "be6db08d5d87beed5899337f6ae49ba5349648b12fe0cc7b8664bd8dc74b3821",
+      "pilot-human-confirmed.jsonl": "2b71ac9ba479787bbfea0ca8e86d8e39e607b5370235192e6da0e338e7679ae7",
+      "run-error-attributions.jsonl": "b731fe1bd3dd53c58cab05259e93e3b9fec293acfb2f2aa3e3d76b1b3ebe6ad4",
+      "samples-all402.jsonl": "452a574eef7e0249df1fdcd3d42307be0383b790267519bb69449fc994759b3c"
+    }
+  },
+  "representative_error_types": [
+    {
+      "method": "tfidf",
+      "unit": "one erroneous comment per method, seed42 or deterministic prompt",
+      "denominator": 90,
+      "type_counts": {
+        "T1": 18,
+        "T2": 22,
+        "T3": 11,
+        "T4": 4,
+        "T5": 0,
+        "T6": 35
+      },
+      "classified_non_T6": 55,
+      "classified_fraction": 0.6111111111111112,
+      "origin_counts": {
+        "human_confirmed_in_design_chat": 5,
+        "ai_assisted_under_confirmed_rules": 85
+      },
+      "scope": "402-comment error union only; AI labels are not independent human truth"
+    },
+    {
+      "method": "bert",
+      "unit": "one erroneous comment per method, seed42 or deterministic prompt",
+      "denominator": 56,
+      "type_counts": {
+        "T1": 4,
+        "T2": 14,
+        "T3": 1,
+        "T4": 1,
+        "T5": 0,
+        "T6": 36
+      },
+      "classified_non_T6": 20,
+      "classified_fraction": 0.35714285714285715,
+      "origin_counts": {
+        "human_confirmed_in_design_chat": 3,
+        "ai_assisted_under_confirmed_rules": 53
+      },
+      "scope": "402-comment error union only; AI labels are not independent human truth"
+    },
+    {
+      "method": "qwen_zero_shot",
+      "unit": "one erroneous comment per method, seed42 or deterministic prompt",
+      "denominator": 314,
+      "type_counts": {
+        "T1": 54,
+        "T2": 30,
+        "T3": 16,
+        "T4": 0,
+        "T5": 158,
+        "T6": 56
+      },
+      "classified_non_T6": 258,
+      "classified_fraction": 0.821656050955414,
+      "origin_counts": {
+        "human_confirmed_in_design_chat": 16,
+        "ai_assisted_under_confirmed_rules": 298
+      },
+      "scope": "402-comment error union only; AI labels are not independent human truth"
+    },
+    {
+      "method": "qwen_few_shot",
+      "unit": "one erroneous comment per method, seed42 or deterministic prompt",
+      "denominator": 182,
+      "type_counts": {
+        "T1": 3,
+        "T2": 49,
+        "T3": 14,
+        "T4": 5,
+        "T5": 2,
+        "T6": 109
+      },
+      "classified_non_T6": 73,
+      "classified_fraction": 0.4010989010989011,
+      "origin_counts": {
+        "human_confirmed_in_design_chat": 7,
+        "ai_assisted_under_confirmed_rules": 175
+      },
+      "scope": "402-comment error union only; AI labels are not independent human truth"
+    },
+    {
+      "method": "qwen_lora",
+      "unit": "one erroneous comment per method, seed42 or deterministic prompt",
+      "denominator": 59,
+      "type_counts": {
+        "T1": 3,
+        "T2": 11,
+        "T3": 3,
+        "T4": 1,
+        "T5": 0,
+        "T6": 41
+      },
+      "classified_non_T6": 18,
+      "classified_fraction": 0.3050847457627119,
+      "origin_counts": {
+        "human_confirmed_in_design_chat": 3,
+        "ai_assisted_under_confirmed_rules": 56
+      },
+      "scope": "402-comment error union only; AI labels are not independent human truth"
+    }
+  ],
+  "all_seed_type_counts": {
+    "T1": 132,
+    "T5": 160,
+    "T2": 216,
+    "T6": 509,
+    "T3": 77,
+    "T4": 24
+  },
+  "pending_unique_samples": 124,
+  "denominator_warning": "Do not infer error rates for all comments containing a phenomenon from error-only annotations"
+}

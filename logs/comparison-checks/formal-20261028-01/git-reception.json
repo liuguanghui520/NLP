@@ -1,0 +1,7 @@
+{
+  "recorded_at": "2026-10-28T20:01:04.387080+08:00",
+  "branch": "codex/integration",
+  "head": "f908fdea511d4fd253744119990dacd5fc30149c",
+  "status": " M docs/README.md\n M \"docs/\\345\\215\\217\\344\\275\\234\\344\\270\\216\\350\\236\\215\\345\\220\\210\\344\\272\\244\\346\\216\\245/README.md\"\n?? configs/analysis/\n?? \"docs/\\345\\215\\217\\344\\275\\234\\344\\270\\216\\350\\236\\215\\345\\220\\210\\344\\272\\244\\346\\216\\245/\\346\\255\\243\\345\\274\\217\\345\\257\\271\\346\\257\\224\\345\\210\\206\\346\\236\\220\\344\\270\\216\\351\\224\\231\\344\\276\\213\\346\\240\\207\\346\\263\\250\\346\\211\\247\\350\\241\\214\\344\\272\\244\\346\\216\\245.md\"\n?? \"docs/\\345\\257\\271\\346\\257\\224\\345\\256\\236\\351\\252\\214\\344\\270\\216\\351\\224\\231\\350\\257\\257\\345\\210\\206\\346\\236\\220\\346\\226\\271\\346\\241\\210.md\"\n?? logs/comparison-checks/\n?? reports/analysis/\n?? reports/figures/comparison-20261028-v1/\n?? results/analysis/\n?? results/error-review/\n?? results/evidence/\n?? scripts/build_comparison_report.py\n?? scripts/build_formal_annotations.py\n?? scripts/collect_analysis_logs.py\n?? scripts/formal_comparison.py\n?? scripts/prepare_error_review.py\n?? tests/test_formal_annotations.py\n?? tests/test_offline_comparison.py\n",
+  "note": "Pre-existing untracked comparison-v1 and documentation edits preserved; no commit/push/clean"
+}

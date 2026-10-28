@@ -1,0 +1,32 @@
+[
+  {
+    "method": "tfidf",
+    "error_count_histogram": {
+      "0": 687,
+      "1": 0,
+      "2": 0,
+      "3": 90
+    },
+    "n": 777
+  },
+  {
+    "method": "bert",
+    "error_count_histogram": {
+      "0": 694,
+      "1": 29,
+      "2": 19,
+      "3": 35
+    },
+    "n": 777
+  },
+  {
+    "method": "qwen_lora",
+    "error_count_histogram": {
+      "0": 712,
+      "1": 5,
+      "2": 5,
+      "3": 55
+    },
+    "n": 777
+  }
+]

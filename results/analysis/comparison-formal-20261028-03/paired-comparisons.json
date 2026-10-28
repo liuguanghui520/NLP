@@ -1,0 +1,142 @@
+[
+  {
+    "a": "tfidf",
+    "b": "majority",
+    "direction": "A minus B",
+    "macro_f1_mean_delta": 0.4546233455337754,
+    "bootstrap_95_percentile": [
+      0.4273588822755799,
+      0.48101285517249687
+    ],
+    "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+    "both_correct": 502,
+    "both_wrong": 60,
+    "A_correct_B_wrong": 185,
+    "A_wrong_B_correct": 30,
+    "correctness_seed": 42,
+    "accuracy_delta_seed42": 0.1994851994851995,
+    "exact_mcnemar_p": 1.9185525493711588e-28,
+    "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+    "holm_adjusted_p_seven_pairs": 1.1511315296226952e-27
+  },
+  {
+    "a": "bert",
+    "b": "tfidf",
+    "direction": "A minus B",
+    "macro_f1_mean_delta": 0.05414188976298051,
+    "bootstrap_95_percentile": [
+      0.030214032970520704,
+      0.07834507797199777
+    ],
+    "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+    "both_correct": 669,
+    "both_wrong": 38,
+    "A_correct_B_wrong": 52,
+    "A_wrong_B_correct": 18,
+    "correctness_seed": 42,
+    "accuracy_delta_seed42": 0.04375804375804371,
+    "exact_mcnemar_p": 5.849547318695842e-05,
+    "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+    "holm_adjusted_p_seven_pairs": 0.00017548641956087528
+  },
+  {
+    "a": "qwen_lora",
+    "b": "tfidf",
+    "direction": "A minus B",
+    "macro_f1_mean_delta": 0.05011974035558009,
+    "bootstrap_95_percentile": [
+      0.025602534048117007,
+      0.0755004518481606
+    ],
+    "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+    "both_correct": 666,
+    "both_wrong": 38,
+    "A_correct_B_wrong": 52,
+    "A_wrong_B_correct": 21,
+    "correctness_seed": 42,
+    "accuracy_delta_seed42": 0.039897039897039854,
+    "exact_mcnemar_p": 0.0003713401159383162,
+    "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+    "holm_adjusted_p_seven_pairs": 0.0007426802318766324
+  },
+  {
+    "a": "qwen_few_shot",
+    "b": "qwen_zero_shot",
+    "direction": "A minus B",
+    "macro_f1_mean_delta": 0.1354600786829251,
+    "bootstrap_95_percentile": [
+      0.0984505310997691,
+      0.17107900470172344
+    ],
+    "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+    "both_correct": 409,
+    "both_wrong": 128,
+    "A_correct_B_wrong": 186,
+    "A_wrong_B_correct": 54,
+    "correctness_seed": 42,
+    "accuracy_delta_seed42": 0.16988416988416988,
+    "exact_mcnemar_p": 3.6437670410963765e-18,
+    "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+    "holm_adjusted_p_seven_pairs": 1.4575068164385506e-17
+  },
+  {
+    "a": "qwen_lora",
+    "b": "qwen_zero_shot",
+    "direction": "A minus B",
+    "macro_f1_mean_delta": 0.2855712586661514,
+    "bootstrap_95_percentile": [
+      0.24728995865551437,
+      0.32337650329251766
+    ],
+    "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+    "both_correct": 447,
+    "both_wrong": 43,
+    "A_correct_B_wrong": 271,
+    "A_wrong_B_correct": 16,
+    "correctness_seed": 42,
+    "accuracy_delta_seed42": 0.3281853281853282,
+    "exact_mcnemar_p": 5.6517564649200656e-61,
+    "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+    "holm_adjusted_p_seven_pairs": 3.956229525444046e-60
+  },
+  {
+    "a": "qwen_lora",
+    "b": "qwen_few_shot",
+    "direction": "A minus B",
+    "macro_f1_mean_delta": 0.15011117998322632,
+    "bootstrap_95_percentile": [
+      0.12229998153413531,
+      0.1780071472697959
+    ],
+    "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+    "both_correct": 576,
+    "both_wrong": 40,
+    "A_correct_B_wrong": 142,
+    "A_wrong_B_correct": 19,
+    "correctness_seed": 42,
+    "accuracy_delta_seed42": 0.15830115830115832,
+    "exact_mcnemar_p": 1.8242950410934214e-24,
+    "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+    "holm_adjusted_p_seven_pairs": 9.121475205467107e-24
+  },
+  {
+    "a": "bert",
+    "b": "qwen_lora",
+    "direction": "A minus B",
+    "macro_f1_mean_delta": 0.004022149407400422,
+    "bootstrap_95_percentile": [
+      -0.010697842838681118,
+      0.019264841331774446
+    ],
+    "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+    "both_correct": 701,
+    "both_wrong": 39,
+    "A_correct_B_wrong": 20,
+    "A_wrong_B_correct": 17,
+    "correctness_seed": 42,
+    "accuracy_delta_seed42": 0.0038610038610038533,
+    "exact_mcnemar_p": 0.7428293587290682,
+    "statistical_scope": "post-hoc exploratory; correctness test is not an F1 test; CI is pointwise",
+    "holm_adjusted_p_seven_pairs": 0.7428293587290682
+  }
+]

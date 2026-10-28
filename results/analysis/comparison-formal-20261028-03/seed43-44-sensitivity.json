@@ -1,0 +1,240 @@
+[
+  {
+    "seed": 43,
+    "a": "tfidf",
+    "b": "majority",
+    "n": 777,
+    "macro_f1_delta": 0.4546233455337754,
+    "bootstrap_95_percentile": [
+      0.4273588822755799,
+      0.48101285517249687
+    ],
+    "A_correct_B_wrong": 185,
+    "A_wrong_B_correct": 30,
+    "both_wrong": 60,
+    "exact_mcnemar_p": 1.9185525493711588e-28,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 1.1511315296226952e-27
+  },
+  {
+    "seed": 43,
+    "a": "bert",
+    "b": "tfidf",
+    "n": 777,
+    "macro_f1_delta": 0.05020659993285248,
+    "bootstrap_95_percentile": [
+      0.024265967357519607,
+      0.07730517192702398
+    ],
+    "A_correct_B_wrong": 55,
+    "A_wrong_B_correct": 26,
+    "both_wrong": 35,
+    "exact_mcnemar_p": 0.001688638072721023,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 0.003377276145442046
+  },
+  {
+    "seed": 43,
+    "a": "qwen_lora",
+    "b": "tfidf",
+    "n": 777,
+    "macro_f1_delta": 0.048736082201670694,
+    "bootstrap_95_percentile": [
+      0.023933914132591407,
+      0.07411520198967683
+    ],
+    "A_correct_B_wrong": 50,
+    "A_wrong_B_correct": 21,
+    "both_wrong": 40,
+    "exact_mcnemar_p": 0.0007667649897412908,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 0.0023002949692238726
+  },
+  {
+    "seed": 43,
+    "a": "qwen_few_shot",
+    "b": "qwen_zero_shot",
+    "n": 777,
+    "macro_f1_delta": 0.1354600786829251,
+    "bootstrap_95_percentile": [
+      0.0984505310997691,
+      0.17107900470172344
+    ],
+    "A_correct_B_wrong": 186,
+    "A_wrong_B_correct": 54,
+    "both_wrong": 128,
+    "exact_mcnemar_p": 3.6437670410963765e-18,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 1.4575068164385506e-17
+  },
+  {
+    "seed": 43,
+    "a": "qwen_lora",
+    "b": "qwen_zero_shot",
+    "n": 777,
+    "macro_f1_delta": 0.284187600512242,
+    "bootstrap_95_percentile": [
+      0.2452804854134629,
+      0.3218320376463179
+    ],
+    "A_correct_B_wrong": 270,
+    "A_wrong_B_correct": 17,
+    "both_wrong": 44,
+    "exact_mcnemar_p": 9.046930165989902e-60,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 6.332851116192931e-59
+  },
+  {
+    "seed": 43,
+    "a": "qwen_lora",
+    "b": "qwen_few_shot",
+    "n": 777,
+    "macro_f1_delta": 0.14872752182931692,
+    "bootstrap_95_percentile": [
+      0.12047157222439474,
+      0.17645637875670592
+    ],
+    "A_correct_B_wrong": 140,
+    "A_wrong_B_correct": 19,
+    "both_wrong": 42,
+    "exact_mcnemar_p": 5.6838346170666065e-24,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 2.8419173085333033e-23
+  },
+  {
+    "seed": 43,
+    "a": "bert",
+    "b": "qwen_lora",
+    "n": 777,
+    "macro_f1_delta": 0.0014705177311817863,
+    "bootstrap_95_percentile": [
+      -0.017162001631825054,
+      0.020177136365681508
+    ],
+    "A_correct_B_wrong": 22,
+    "A_wrong_B_correct": 22,
+    "both_wrong": 39,
+    "exact_mcnemar_p": 1.0,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 1.0
+  },
+  {
+    "seed": 44,
+    "a": "tfidf",
+    "b": "majority",
+    "n": 777,
+    "macro_f1_delta": 0.4546233455337754,
+    "bootstrap_95_percentile": [
+      0.4273588822755799,
+      0.48101285517249687
+    ],
+    "A_correct_B_wrong": 185,
+    "A_wrong_B_correct": 30,
+    "both_wrong": 60,
+    "exact_mcnemar_p": 1.9185525493711588e-28,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 1.1511315296226952e-27
+  },
+  {
+    "seed": 44,
+    "a": "bert",
+    "b": "tfidf",
+    "n": 777,
+    "macro_f1_delta": 0.056718173805871075,
+    "bootstrap_95_percentile": [
+      0.03201575113047725,
+      0.08080679397249332
+    ],
+    "A_correct_B_wrong": 50,
+    "A_wrong_B_correct": 15,
+    "both_wrong": 40,
+    "exact_mcnemar_p": 1.5717029852739467e-05,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 4.71510895582184e-05
+  },
+  {
+    "seed": 44,
+    "a": "qwen_lora",
+    "b": "tfidf",
+    "n": 777,
+    "macro_f1_delta": 0.04992891043503522,
+    "bootstrap_95_percentile": [
+      0.02523681369888073,
+      0.07586773948108956
+    ],
+    "A_correct_B_wrong": 50,
+    "A_wrong_B_correct": 20,
+    "both_wrong": 40,
+    "exact_mcnemar_p": 0.00044028500651396835,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 0.0008805700130279367
+  },
+  {
+    "seed": 44,
+    "a": "qwen_few_shot",
+    "b": "qwen_zero_shot",
+    "n": 777,
+    "macro_f1_delta": 0.1354600786829251,
+    "bootstrap_95_percentile": [
+      0.0984505310997691,
+      0.17107900470172344
+    ],
+    "A_correct_B_wrong": 186,
+    "A_wrong_B_correct": 54,
+    "both_wrong": 128,
+    "exact_mcnemar_p": 3.6437670410963765e-18,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 1.4575068164385506e-17
+  },
+  {
+    "seed": 44,
+    "a": "qwen_lora",
+    "b": "qwen_zero_shot",
+    "n": 777,
+    "macro_f1_delta": 0.28538042874560654,
+    "bootstrap_95_percentile": [
+      0.2466447732769509,
+      0.32365527061922256
+    ],
+    "A_correct_B_wrong": 271,
+    "A_wrong_B_correct": 17,
+    "both_wrong": 43,
+    "exact_mcnemar_p": 4.8060529062409523e-60,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 3.3642370343686665e-59
+  },
+  {
+    "seed": 44,
+    "a": "qwen_lora",
+    "b": "qwen_few_shot",
+    "n": 777,
+    "macro_f1_delta": 0.14992035006268145,
+    "bootstrap_95_percentile": [
+      0.12177399558849594,
+      0.17823890687410568
+    ],
+    "A_correct_B_wrong": 143,
+    "A_wrong_B_correct": 21,
+    "both_wrong": 39,
+    "exact_mcnemar_p": 1.6688970678401393e-23,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 8.344485339200697e-23
+  },
+  {
+    "seed": 44,
+    "a": "bert",
+    "b": "qwen_lora",
+    "n": 777,
+    "macro_f1_delta": 0.006789263370835852,
+    "bootstrap_95_percentile": [
+      -0.012189126322134064,
+      0.02545706432560625
+    ],
+    "A_correct_B_wrong": 23,
+    "A_wrong_B_correct": 18,
+    "both_wrong": 37,
+    "exact_mcnemar_p": 0.5327092552361137,
+    "scope": "Sensitivity only; same 777 comments, fixed trained seed; not extra independent observations",
+    "holm_adjusted_p_within_seed_seven_pairs": 0.5327092552361137
+  }
+]

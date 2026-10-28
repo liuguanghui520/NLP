@@ -1,5 +1,19 @@
 # 中文评论情感分析：统一工程入口
 
+## 正式离线对比与辅助标注（2026-10-28）
+
+本次正式交付见[对比交付索引](reports/analysis/comparison-formal-20261028-03/README.md)、[图表总览](reports/analysis/comparison-formal-20261028-03/图表总览.html)和[集中待复核清单](reports/analysis/comparison-formal-20261028-03/待复核清单.md)。11份测试运行已重算，完成七组条件配对区间、43/44敏感性、验证参数和成本核验，提供22组PNG/PDF及数据JSON。
+
+402条去重错例保留20条本人确认与382条AI辅助的来源差异；1118条错误运行全部对应，124条涉及分歧、不确定或证据可见性，仍待复核。原始真值和预测未改，学生最终解释和课程报告尚待确认。标注材料见[标注索引](results/error-review/review-formal-20261028-01/README.md)。本次没有训练或新增模型推理。
+
+纯离线复跑（使用全新批次名，不加载模型，无需外部模型目录）：
+
+```powershell
+python scripts/build_comparison_report.py --config configs/analysis/comparison-formal-v1.json --run-id my-new-comparison
+```
+
+软件检查：20项unittest通过；[软件检查记录](logs/comparison-checks/formal-20261028-01/unittest-final.log)、[视觉审查](reports/analysis/comparison-formal-20261028-03/图表审查清单.md)和[最终交付哈希审计](logs/comparison-checks/delivery-comparison-formal-20261028-03/audit.json)均已保存，另保留本次代码快照。comparison-v1及formal-01/02均保留为历史/审查中间版本，当前交付为formal-03。
+
 ## 单一仓库与发布方式（2026-10-28更新）
 
 唯一正式工作目录为NLP仓库根目录，已保留原发布工作副本的提交历史。此前`.publication/data-processing-v1`仅为迁移前来源，不再用于开发或后续提交。
@@ -10,7 +24,7 @@
 
 仓库中的本机路径配置用于追溯，新机须填写自己的资源位置。历史文档中“不含正文”“仅本地”“未获发布授权”等描述保留为当时状态，本节为当前发布口径。数据许可证据的历史限制继续披露，不能因选择公开就宣称已完成许可核验。详见[单目录统一记录](docs/单目录统一与发布记录.md)。
 
-文档入口：[项目最新进度表](docs/项目最新进度表.md) · [分类文档导航](docs/README.md)。当前工程结果已生成，正式对比解释、人工错例归因、资源外链、新机真实复现及最终交付仍需完成；自动生成图表不等于分析完成。
+文档入口：[项目最新进度表](docs/项目最新进度表.md) · [分类文档导航](docs/README.md)。正式离线统计与AI辅助标注已生成，待本人裁定分歧并确认最终解释；资源外链、新机真实复现及最终课程交付仍需完成。
 
 本项目接入TF-IDF、预训练MacBERT全参微调、Qwen零样本、Qwen少样本和普通生成式SFT LoRA。融合以既有模型与证据为基础，不重新划分数据或重复训练。当前最终状态见 `artifacts/final-acceptance.json`，各路线成绩由预测独立重算，不能把历史验证成绩当测试成绩。
 

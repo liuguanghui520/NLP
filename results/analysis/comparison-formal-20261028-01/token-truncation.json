@@ -1,0 +1,266 @@
+[
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed42",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed42",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 90,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed42",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed43",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed43",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 90,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed43",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed44",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed44",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 90,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed44",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed42",
+    "token_truncated": true,
+    "n": 4,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed42",
+    "token_truncated": false,
+    "n": 773,
+    "errors": 56,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed42",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed43",
+    "token_truncated": true,
+    "n": 4,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed43",
+    "token_truncated": false,
+    "n": 773,
+    "errors": 61,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed43",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed44",
+    "token_truncated": true,
+    "n": 4,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed44",
+    "token_truncated": false,
+    "n": 773,
+    "errors": 55,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed44",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_zero_shot",
+    "run_id": "test-qwen_zero_shot",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_zero_shot",
+    "run_id": "test-qwen_zero_shot",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 314,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_zero_shot",
+    "run_id": "test-qwen_zero_shot",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_few_shot",
+    "run_id": "test-qwen_few_shot",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_few_shot",
+    "run_id": "test-qwen_few_shot",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 182,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_few_shot",
+    "run_id": "test-qwen_few_shot",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed42",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed42",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 59,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed42",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed43",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed43",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 61,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed43",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed44",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed44",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 60,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed44",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  }
+]

@@ -1,0 +1,180 @@
+{
+  "analysis_id": "comparison-20261028-v1",
+  "status": "completed",
+  "error": null,
+  "completed_at": "2026-10-28T19:07:47.597159+08:00",
+  "command": [
+    "scripts/build_comparison_report.py",
+    "--run-id",
+    "comparison-20261028-v1"
+  ],
+  "git_commit": "f908fdea511d4fd253744119990dacd5fc30149c",
+  "working_tree_dirty": true,
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.3.5",
+  "config": {
+    "version": 1,
+    "analysis_seed": 67,
+    "bootstrap_resamples": 5000,
+    "bootstrap_batch": 250,
+    "bootstrap_method": "paired, stratified by true class, percentile 95% interval",
+    "bootstrap_scope": "fixed fitted models and fixed observed class composition; not training-population uncertainty",
+    "include_majority_reference": true,
+    "majority_authorization": "User confirmed 2026-10-28; separate reference row, excluded from deployment cost ranking",
+    "primary_pair_seed": 42,
+    "comparison_pairs": [
+      [
+        "tfidf",
+        "majority"
+      ],
+      [
+        "bert",
+        "tfidf"
+      ],
+      [
+        "qwen_lora",
+        "tfidf"
+      ],
+      [
+        "qwen_few_shot",
+        "qwen_zero_shot"
+      ],
+      [
+        "qwen_lora",
+        "qwen_zero_shot"
+      ],
+      [
+        "qwen_lora",
+        "qwen_few_shot"
+      ],
+      [
+        "bert",
+        "qwen_lora"
+      ]
+    ],
+    "pair_direction": "first minus second",
+    "mcnemar": "exploratory two-sided exact, seed42 representatives; Holm across all seven comparisons; tests correctness, not F1",
+    "length_bins": [
+      [
+        1,
+        50
+      ],
+      [
+        51,
+        128
+      ],
+      [
+        129,
+        256
+      ],
+      [
+        257,
+        512
+      ],
+      [
+        513,
+        null
+      ]
+    ],
+    "small_group_warning_n": 30,
+    "plot_seed": 42,
+    "latency_n": 200,
+    "latency_percentile_method": "linear",
+    "human_pilot": "results/error-review/review-20261028-v1/pilot_ids.json",
+    "scope": "Offline analysis of existing records only; no model loading, training, or inference",
+    "history": "Post-hoc exploratory analysis; test results have already been inspected",
+    "human_error_attribution": "pending; do not infer causes from keywords"
+  },
+  "plot_font": "Microsoft YaHei",
+  "elapsed_seconds": 6.233085200001369,
+  "input_sha256": {
+    "configs/analysis/comparison-20261028-v1.json": "7af14730d80834674b702cd0a3c57f09cf7efe3f02069b96d2053ec8945ba0d4",
+    "data/processed/v1-20261023/test.jsonl": "3df19229abb59d1868a7735b98f42fd799883c22ec37aa8a1760cc2266fb1996",
+    "results/run_index.jsonl": "7d4ff7d58b7864fe48fb5eae09ec9a6adc13b77c3c7948efe61015d3692fd64d",
+    "results/predictions/bert-len512-seed42.jsonl": "7cff3d8399e030fda4e70cebb3237c512243a48d5dbb9f7a0fc3d51a639fbfbb",
+    "results/predictions/bert-len512-seed43.jsonl": "d9c55f7a8d46259cfe8d01bc40aec35912cb9ad25f2bc0108373c8d585e4d5f9",
+    "results/predictions/bert-len512-seed44.jsonl": "82aff1b9256a906a988e0f42fb2707e0e4c75510c8fe82a73a56576c2eb2e165",
+    "results/predictions/tfidf-char_1_3-seed42.jsonl": "f60bc8296966b99108d1cb6c684b760b96a258a8a385b725e1f23e81759c3942",
+    "results/predictions/tfidf-char_1_3-seed43.jsonl": "d1f9ef7a3ac4332adcd8423425c81889e264f050fd27e2e7c406b7b7ba42ba28",
+    "results/predictions/tfidf-char_1_3-seed44.jsonl": "3f1c3e040ead32db0f0a748a95ff3822e6392e4ed8b745be396e9d24bc58618d",
+    "results/predictions/test-qwen_zero_shot.jsonl": "50705a8eb1ffd886b3c8512f73c49704ddb048ec9a2712c1a902aedaa4f5d9e0",
+    "results/predictions/test-qwen_few_shot.jsonl": "870c2ce591a15c40c0150d4ab37799c14be306e48b9cd1a3087643a20e8b112d",
+    "results/predictions/test-lora-seed42.jsonl": "dd9b735e6d1d3b69a361edb4dfdfc8f40a374accd8d98fe0b380a27e4e484fa2",
+    "results/predictions/test-lora-seed43.jsonl": "01680ba5e3e0c2035bb67e840ed8afa3d95572eed2fbc336bd49e22a87c7fec5",
+    "results/predictions/test-lora-seed44.jsonl": "7fc809516dd55c9e941b6a74672099efdae14d602740a341d4fd71e5af6f4de5",
+    "data/processed/v1-20261023/train.jsonl": "a37fa5d7139c68fa2fc39bbcff0a9ae3d2beb3e7268fbd25a646b4aa65a3e22f",
+    "results/summaries/validation_searches.json": "ec4645a5038dfbbe5b660699c42adbc9c8b6dee94ad2222406e45918c409b505",
+    "results/summaries/training-costs.json": "70d15db8b6ee704f9e8026bf3b184ef493951530b9f6975052a6d0c39a7f7dad",
+    "reports/qwen17-comparisons-20261026-012117-9e8e51/audit-20261026-142734/summary.json": "716864f5aecab2311ae7d3b4bf744ac0786b233473278200d0dea18dd1792cee",
+    "reports/qwen17-comparisons-20261026-200544-750ecb/audit-20261026-221123/summary.json": "27d21a2aee292e9324c0b51716fd74ad8d71a606a334e6d2d33580b2827577fe",
+    "results/benchmarks/integration.json": "d9818e80b8865913926ebe657c04ebef21bef7169a624fdc8cc050c52485cd13",
+    "data/manifests/latency_ids.json": "b6c17098c5d28e42fbfd2594951875da0d0f66a12596e08998b91970e7a8c4b2",
+    "data/manifests/smoke_ids.json": "5dd63156d0de61fcda1dadeab485d1c38124d3cebc5162e3358734dd6c118155",
+    "results/benchmarks/details/test-qwen_zero_shot.jsonl": "e22ead1de5ea031905bafa5cad8e83f7012d56cab185eed06ec146f540007e76",
+    "results/benchmarks/details/test-qwen_few_shot.jsonl": "8c09e3f8becebc818592cc9a5dd232a6369841e4aec2b0e5fed46857c95d3616",
+    "results/benchmarks/details/test-lora-seed42.jsonl": "b898bc23225fef0451b1f1bc6d8f61253542e5f3e83e174e1b1d1acbcb255b03",
+    "results/benchmarks/details/test-lora-seed43.jsonl": "a9dabbf4a146170daedf22ba6c9f5138a528db0cf2b5a7682f6d2a30fc66e2a0",
+    "results/benchmarks/details/test-lora-seed44.jsonl": "2a49000a37bb61bbe56eca04389e154fd0bd23b2da2e20c16a054c82cf1a07b3",
+    "results/benchmarks/details/probe-bert-seed42.jsonl": "4fad9081550db4785531053e927c121c773218f7507ad9acf8529d7b9e7edc07",
+    "results/benchmarks/details/probe-bert-seed43.jsonl": "07849fce4dc58e96e36ba40e52b9ca18a188d88cdd6656fde29ba92c0283afbc",
+    "results/benchmarks/details/probe-bert-seed44.jsonl": "075d795a46f470efb66d5702d377c8faee5cd0bcce8860cbd372f533f389f9fb",
+    "results/benchmarks/details/probe-tfidf-seed42.jsonl": "52d815f111b9a2f6315ac2a4eedfd2d087cb0e53a48dd5c5b4cf61f94ebe3fd0",
+    "results/benchmarks/details/probe-tfidf-seed43.jsonl": "2b42818f8d710c1a02f24319944863cfcf86e52b48bc157aa70dabd54ff5382d",
+    "results/benchmarks/details/probe-tfidf-seed44.jsonl": "ed50576986ce8046be183401a6219aa6093b7bc2ed63b2f4d57a9555be09342e",
+    "results/summaries/deployment-storage.json": "b96509000b1e7f66c9da01b3219caf8594401bf7164fd5b8c734bb8fedc78ef9",
+    "reports/audits/failures.json": "3ae95fba50e0908d9bf6d1529faaca7d92b8d2029e89574bc696f0e396c1a733",
+    "results/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/T01/validation_history.json": "aead6f2f8127bbffe5d7a55353e146dcfccc89d05a8c56240973fa9bed0cf81e",
+    "results/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S43/validation_history.json": "d4edc45e98a8b36c8dbbb59d906d641858e728312052f87b7b6f43581c38df8d",
+    "results/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S44/validation_history.json": "5b1f3e4bc08e79126b2782879de43e2ba71e146dc28b93e66aeb160c05c4ca6e",
+    "scripts/build_comparison_report.py": "dfc8966b89a39205fee4aa76ff48e274605ae52aca8d5ba10af556e06e057114",
+    "src/evaluation/metrics.py": "cba91e8b4c43b7c01788c6d32b56f088844776b69e7f5a44db858f1ad7450efa"
+  },
+  "output_sha256": {
+    "results/analysis/comparison-20261028-v1/existing-figure-audit.json": "3c4f1517cf10e385913c5e9346fa3341087484698d137c26b0a26ef061459f4e",
+    "results/analysis/comparison-20261028-v1/figure-index.json": "d1a30048514c6d85453c79eb7e48fbe2a79d06fe3a76aa59cfac00c3b8d547fe",
+    "results/analysis/comparison-20261028-v1/latency.json": "bcca9b093b63f47240ff0d3c976d7717d7da5de170725812f8f630e19923aedc",
+    "results/analysis/comparison-20261028-v1/length-and-truncation.json": "8feb1798d66933f4f6a7bfd7d83ad1388110a3d0908db1f471809e1cdc10a1cb",
+    "results/analysis/comparison-20261028-v1/majority-reference.json": "02b345db2867f4ad9b775589d2e85fc5ea0b2b693b4623b469ca8092d82356a6",
+    "results/analysis/comparison-20261028-v1/methods.json": "eb729801647b72700b0d3d7f7bb9d6cc806ef24c76b4ddb2a45f7cf5f90f7382",
+    "results/analysis/comparison-20261028-v1/paired-comparisons.json": "0cb8581be51f896ab28d1cb117edeec2a0993764ba5bdce2ae24c3e7696fa688",
+    "results/analysis/comparison-20261028-v1/parameters.json": "272572c925177e24f58e1697d28bef754375348d2c0340403cde37c74f41fc9e",
+    "results/analysis/comparison-20261028-v1/seed-stability.json": "c1f843b46dcdd56f6206953dee28cd968a799eefe2a2f3f58cb12d4519b3a7ed",
+    "results/analysis/comparison-20261028-v1/token-truncation.json": "460949d5f90dc231a0f634d3b0f1ac111c83b4e1eee934fe073efea66c642d41",
+    "results/analysis/comparison-20261028-v1/training-cost-ledger.json": "4ddab625a49a488c291c853827be5083f520224cafdae0399d01a13e0cad3505",
+    "reports/figures/comparison-20261028-v1/01-main-effect.pdf": "38a8220dd28728a11c9947c0ea7b62f7fb361aaffcf8803513b567ffee7738d9",
+    "reports/figures/comparison-20261028-v1/01-main-effect.png": "a028f50baaf74ac8c2ba37b24c4e74be82ee2c534c6d27f84f8bd1646a0bbbed",
+    "reports/figures/comparison-20261028-v1/02-seed-stability.pdf": "470df5b212bf09667bc8bc3b429cf47ae6b10a647d3e11714b65590e60aaf119",
+    "reports/figures/comparison-20261028-v1/02-seed-stability.png": "d7bef8f93789fd0c15b67263526e1c685f838135e13b7c1029cc7982bfc74005",
+    "reports/figures/comparison-20261028-v1/03-confusion.pdf": "6efc23cca50a7b0a53055789c9779fb0a8987ff7ba68c30eb9e2cde9dfe672b4",
+    "reports/figures/comparison-20261028-v1/03-confusion.png": "1b06cac26dec1b25ac66e8812d4bee49c35b3fc1b001e659c34deb4afd9a9460",
+    "reports/figures/comparison-20261028-v1/04-bert-learning-rate.pdf": "ae71fa84df33790c503fadf602bb683be2c297e7b0ac3995290749e5cc64af14",
+    "reports/figures/comparison-20261028-v1/04-bert-learning-rate.png": "611712d51c073fb110ce20b4e27d8d1671018d1a60d8acdb3ee1bdd98f210ccd",
+    "reports/figures/comparison-20261028-v1/05-lora-parameters.pdf": "192eae87a1907564d144ae5f11cb9b121d094313bb6b6146815dd31162596c86",
+    "reports/figures/comparison-20261028-v1/05-lora-parameters.png": "c8c3c7978e421d5d760fdc849cd18b284e4fea7a83eccc305a41c0b9f6ef855a",
+    "reports/figures/comparison-20261028-v1/06-latency-ecdf.pdf": "30f8bb3711ea990d0aabb5882f296c0612e3fdbc0ce1cbe7075cc18adafc488a",
+    "reports/figures/comparison-20261028-v1/06-latency-ecdf.png": "04d9140314c21dabeb1ed841ad0a2a47c4d90bd81f9b1759288e155e7a5aa04f",
+    "reports/figures/comparison-20261028-v1/07-effect-latency.pdf": "2ceb7ae35c45eb56a15f88122d9272f2c7851d787533199a576ccef27a1d7095",
+    "reports/figures/comparison-20261028-v1/07-effect-latency.png": "58c4884ab6f33286e39b8b0ba620ee88ad66d95e09faaccfc362d90053808955",
+    "reports/figures/comparison-20261028-v1/08-resources-storage.pdf": "aa5d9750d3a01c7f0f0b1b2d9acb014f49d42c5314410837a8b2c2de7075192a",
+    "reports/figures/comparison-20261028-v1/08-resources-storage.png": "0e7603087717208f0693aca60fc96fcffee6154b8541d25cb7dbba8c915348f0",
+    "reports/figures/comparison-20261028-v1/09-length-groups.pdf": "9b0024b671e4f959d04bd8649127d7ef0bcb23e46a12701b893536d44b52e5e1",
+    "reports/figures/comparison-20261028-v1/09-length-groups.png": "dc9c0abd0210379625e01b671803b0afb6ecc23eebb77799503e03af97610131",
+    "reports/figures/comparison-20261028-v1/10-paired-f1-difference.pdf": "6f459a96c4138e53221b078bf77efa39d952eef9076902ef7d8acf855658b8fc",
+    "reports/figures/comparison-20261028-v1/10-paired-f1-difference.png": "7d6b4d11083e1cce39a3f28c249773cc34a0594d720e874e28cda1da1187fdb8",
+    "reports/figures/comparison-20261028-v1/11-corrections-regressions.pdf": "af3b10c11c4ad9129fe1036dc834914bb720f006f5cc9c0083f63a97bb622452",
+    "reports/figures/comparison-20261028-v1/11-corrections-regressions.png": "9bf7af66d0b025f8737374931d7abc69206a31f0fe113d3f522bcc3eac6bf2c5",
+    "reports/figures/comparison-20261028-v1/12-effect-recorded-training-time.pdf": "2c1dd58b4b2edd0ca4782f91d1ef48a19febb2579c6830ba4dbe9b9f4490ecbf",
+    "reports/figures/comparison-20261028-v1/12-effect-recorded-training-time.png": "cc602049a5744be84493804a348812d19542ef296207e1f3219411590e3b445b",
+    "reports/figures/comparison-20261028-v1/13-lora-validation.pdf": "eb85ace9eda175a9113a5c113901c29a178cc4e89e6da44fd789c0d1e2e9733c",
+    "reports/figures/comparison-20261028-v1/13-lora-validation.png": "12d3ef50fd9a3ab2aa2d0954648486798df8afb342d9e93ef2d8c5f408b76928",
+    "reports/analysis/comparison-20261028-v1/AI使用记录.md": "58516a8d2654e1ed832a30c017fbc69f87ee6795b31e963b8164802f74a63319",
+    "reports/analysis/comparison-20261028-v1/图表审查清单.md": "b88a17c7e4598077b0c52901b56e09680227e6b90dc96bf0bd89d009ed8f78d8",
+    "reports/analysis/comparison-20261028-v1/图表总览.html": "4c13d9e9162aa0fa164b971cfc3305d5a76227fb2d506ab9b324845ec462cddb",
+    "reports/analysis/comparison-20261028-v1/数据对比与待办.md": "5a2dd402a43502368cafc28a4644c812ebf64263d4e08d368523f32f09ca0f86"
+  },
+  "model_loading": false,
+  "training": false,
+  "inference": false,
+  "human_causes_filled": 0
+}
