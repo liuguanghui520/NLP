@@ -16,8 +16,13 @@
       "run_id": "bert-len512-seed42",
       "checkpoint_sha256": "d8e15d741d95bb01a33b3fff035041fe5b960c600905613545d9aef7db3e52ee",
       "download_url": null,
-      "archive_sha256": null,
-      "status": "download_not_published_or_verified"
+      "archive_sha256": "bbb9001a10d1e7603ae43311dd9827fc1e092b8194268f70c448a0aa3c448268",
+      "status": "packaged_locally_not_uploaded",
+      "archive": "bert-len512-seed42.zip",
+      "archive_bytes": 381052561,
+      "package_directory": "artifacts/packages/trained-20261029-01",
+      "model_payload_bytes": 409540656,
+      "verification": "WSL creation plus Windows CRC/member SHA256 verification; no model loading"
     },
     {
       "method": "bert",
@@ -25,8 +30,13 @@
       "run_id": "bert-len512-seed43",
       "checkpoint_sha256": "9a250db604deb2f416d3fc7795965e9788dee8ca59aa039349a5a7a29d558c27",
       "download_url": null,
-      "archive_sha256": null,
-      "status": "download_not_published_or_verified"
+      "archive_sha256": "5cf7f3769fe9ea13c4bce2f8c52f41241050c3784eb113f1103064eb44a8b576",
+      "status": "packaged_locally_not_uploaded",
+      "archive": "bert-len512-seed43.zip",
+      "archive_bytes": 381053504,
+      "package_directory": "artifacts/packages/trained-20261029-01",
+      "model_payload_bytes": 409540656,
+      "verification": "WSL creation plus Windows CRC/member SHA256 verification; no model loading"
     },
     {
       "method": "bert",
@@ -34,8 +44,13 @@
       "run_id": "bert-len512-seed44",
       "checkpoint_sha256": "04f778b144d3cd1ad2140019568d207350fcb7b1061a51a73526aa6ee34040ad",
       "download_url": null,
-      "archive_sha256": null,
-      "status": "download_not_published_or_verified"
+      "archive_sha256": "a56bde23114291070a46e88c4a0eafbcfd185af0017c809bce35176192cac078",
+      "status": "packaged_locally_not_uploaded",
+      "archive": "bert-len512-seed44.zip",
+      "archive_bytes": 381051263,
+      "package_directory": "artifacts/packages/trained-20261029-01",
+      "model_payload_bytes": 409540656,
+      "verification": "WSL creation plus Windows CRC/member SHA256 verification; no model loading"
     },
     {
       "method": "tfidf",
@@ -43,8 +58,13 @@
       "run_id": "tfidf-char_1_3-seed42",
       "checkpoint_sha256": "0e1d76c5990925df6de24ce68d73dd193954c5f849b348996f506d372cf35f6c",
       "download_url": null,
-      "archive_sha256": null,
-      "status": "download_not_published_or_verified"
+      "archive_sha256": "a50738066234a3e8c77d4429c34e84cb2aea3667d4bae64f39af6d3b268b1d7b",
+      "status": "packaged_locally_not_uploaded",
+      "archive": "tfidf-char_1_3-seed42.zip",
+      "archive_bytes": 2353995,
+      "package_directory": "artifacts/packages/trained-20261029-01",
+      "model_payload_bytes": 5960148,
+      "verification": "WSL creation plus Windows CRC/member SHA256 verification; no model loading"
     },
     {
       "method": "tfidf",
@@ -52,8 +72,13 @@
       "run_id": "tfidf-char_1_3-seed43",
       "checkpoint_sha256": "b7c84a4f5519103c90c6ade007a821642931faa5dccbd851e489e52425169675",
       "download_url": null,
-      "archive_sha256": null,
-      "status": "download_not_published_or_verified"
+      "archive_sha256": "b514f7a3100fb54c430adc4d4d7c1e0dd69fc6e9a6d725437704f8eaf52cf2d5",
+      "status": "packaged_locally_not_uploaded",
+      "archive": "tfidf-char_1_3-seed43.zip",
+      "archive_bytes": 2353999,
+      "package_directory": "artifacts/packages/trained-20261029-01",
+      "model_payload_bytes": 5960148,
+      "verification": "WSL creation plus Windows CRC/member SHA256 verification; no model loading"
     },
     {
       "method": "tfidf",
@@ -61,8 +86,13 @@
       "run_id": "tfidf-char_1_3-seed44",
       "checkpoint_sha256": "ba3ce042b26d303731f91f2fd9834d8088070e98b1fbe744f3bdd72f64081348",
       "download_url": null,
-      "archive_sha256": null,
-      "status": "download_not_published_or_verified"
+      "archive_sha256": "feed61cb825a45d81a5dc29f5ea286a11e9b7220bf84547ebdc2d83e5fa8d897",
+      "status": "packaged_locally_not_uploaded",
+      "archive": "tfidf-char_1_3-seed44.zip",
+      "archive_bytes": 2353999,
+      "package_directory": "artifacts/packages/trained-20261029-01",
+      "model_payload_bytes": 5960148,
+      "verification": "WSL creation plus Windows CRC/member SHA256 verification; no model loading"
     },
     {
       "method": "qwen_lora",
@@ -70,8 +100,13 @@
       "run_id": "test-lora-seed42",
       "checkpoint_sha256": "6baed5a97d4549011a8da6f3212a38772531081adf8995176583120b3c82fcf5",
       "download_url": null,
-      "archive_sha256": null,
-      "status": "download_not_published_or_verified"
+      "archive_sha256": "7cd36afc5cb73c0fe97c6778b7025550d8bb1dcd428afcd887bb5d8d25ca88eb",
+      "status": "packaged_locally_not_uploaded",
+      "archive": "qwen-lora-T01-seed42.zip",
+      "archive_bytes": 11937864,
+      "package_directory": "artifacts/packages/trained-20261029-01",
+      "model_payload_bytes": 12875648,
+      "verification": "WSL creation plus Windows CRC/member SHA256 verification; no model loading"
     },
     {
       "method": "qwen_lora",
@@ -79,8 +114,13 @@
       "run_id": "test-lora-seed43",
       "checkpoint_sha256": "39436195aa545351e6f0787f20ecf507e3e33045eb4f3aa0bc7483cc9d9aa4aa",
       "download_url": null,
-      "archive_sha256": null,
-      "status": "download_not_published_or_verified"
+      "archive_sha256": "aa6c031ab1c141e4d9fe893e430ab5afe473e3077611789473b6396f90b15b61",
+      "status": "packaged_locally_not_uploaded",
+      "archive": "qwen-lora-T01-seed43.zip",
+      "archive_bytes": 11938781,
+      "package_directory": "artifacts/packages/trained-20261029-01",
+      "model_payload_bytes": 12875648,
+      "verification": "WSL creation plus Windows CRC/member SHA256 verification; no model loading"
     },
     {
       "method": "qwen_lora",
@@ -88,10 +128,16 @@
       "run_id": "test-lora-seed44",
       "checkpoint_sha256": "f5b21a7ba292c9365e83a4cc898459c7751e90b4436df6279fcaff75af01d422",
       "download_url": null,
-      "archive_sha256": null,
-      "status": "download_not_published_or_verified"
+      "archive_sha256": "c055494976535c8a0850ac18b8ace695ed9dfcc825157b29da60a9bc2a203cae",
+      "status": "packaged_locally_not_uploaded",
+      "archive": "qwen-lora-T01-seed44.zip",
+      "archive_bytes": 11938846,
+      "package_directory": "artifacts/packages/trained-20261029-01",
+      "model_payload_bytes": 12875648,
+      "verification": "WSL creation plus Windows CRC/member SHA256 verification; no model loading"
     }
   ],
   "real_model_reproduction": "not_executed_this_stage",
-  "download_policy": "Fill only URLs actually uploaded and checked; source ZIP does not include every trained model"
+  "download_policy": "Local ZIPs are verified; upload and public URL verification remain pending. Download URLs stay null until actually published.",
+  "local_packaging_report": "reports/packaging/trained-20261029-01/windows-verification.json"
 }

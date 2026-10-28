@@ -1,0 +1,120 @@
+{
+  "created_at": "2026-10-29T05:32:57.116583+08:00",
+  "revision": "20261029-v2",
+  "previous_manifest": "docs/报告初稿/20261029-v1/manifest.json",
+  "previous_manifest_sha256": "f3851c3a466d6c006a063a3235473fe32f6f78cec1d1301d6204939cc6c5b9c5",
+  "git_commit_at_creation": "2ef5457f2b77ce1f5c50861a13c8034e04b5e041",
+  "confirmation_source": "User explicitly supplied names, leader identity and division of responsibilities in current design conversation on 2026-10-29",
+  "members": [
+    {
+      "name": "刘广徽",
+      "role": "组长",
+      "responsibilities": [
+        "技术选型、具体任务分析和方案初步设计。",
+        "LoRA部分的数据输入适配、参数对比方案、具体调参与训练、配置和日志记录。",
+        "不同模型代码与工程接口的融合，统一模型对比分析和错例分析。",
+        "报告撰写、成果总结、提交统筹；最终发布和打包状态按实际验收记录。"
+      ]
+    },
+    {
+      "name": "杨函齐",
+      "role": "组员",
+      "responsibilities": [
+        "MacBERT预训练全参数微调部分。",
+        "TF-IDF特征与逻辑回归传统基线部分。",
+        "两条路线的数据输入适配、参数对比方案设计、训练／拟合执行、配置和运行日志记录、结果交付。"
+      ]
+    },
+    {
+      "name": "李嘉谊林",
+      "role": "组员",
+      "responsibilities": [
+        "Qwen零样本与少样本方案部分。",
+        "提示格式和示例的数据输入适配、提示／配置对照方案设计、推理评估执行、配置与日志记录、结果交付。",
+        "两种提示路线不更新模型权重，具体执行表述为推理而非模型训练；已运行范围以固定提示和固定四条示例记录为准。"
+      ]
+    }
+  ],
+  "pending_fields": [
+    "student IDs",
+    "personal hours",
+    "agreed workload percentages",
+    "individual commit mapping",
+    "AI use details",
+    "peer confirmation",
+    "signatures and dates"
+  ],
+  "previous_outputs_unchanged": true,
+  "evaluation_and_error_analysis_text_unchanged_except_AI_contribution_reference": true,
+  "local_links_checked": 31,
+  "input_sha256": {
+    "configs/methods/lora-frozen.json": "14dc05c22ab5e5abfb74204d6de682e19b50edd5a92021aac2a1b0a57038f962",
+    "configs/methods/prompt_registry.json": "9ff2bb6c1dbdbae33ff2b5a160e9b9939dd1460bd3e0f5e8448ef4534b7f3f0c",
+    "data/manifests/manifest.json": "68843c0a873598db4171e54e5f4e2f3e15bffb819b4fee5d623aaf212f8539dd",
+    "docs/environment/实验运行环境与延迟口径.md": "3a38f24992c8ce8071d8943ef5ffa39c65237093b7c9cc31d1ae83d73746388d",
+    "docs/报告素材/九案例至技术选型结论与证据汇总-20261029.manifest.json": "3d2b555527f6c4f8e701e3a65c032d449f45562352e727c0705c657c3d688b4f",
+    "docs/报告素材/九案例至技术选型结论与证据汇总-20261029.md": "93949e2350fac8851b11acef678da740a47df1f65ed27e938e6e907746af511b",
+    "README.md": "d6e4318c2377a78c736be36447a787f62b642bfe0d4d5ba068209784ae1c1f28",
+    "reports/analysis/case-confirmed-20261029-01/status.json": "3b1dc8233cdaf3f98cb51b38b5bdce295c156d9fd233521fed20b0c1bf52a008",
+    "reports/analysis/case-confirmed-20261029-01/正文案例与局限定稿.md": "b92595856700e2bc0a60a00690f6d9b04551e28c942f0271aa37309da2804677",
+    "reports/analysis/comparison-formal-20261028-03/README.md": "744edc6986779a326531acc6db723dd6d1d455efbb22123246e89de00a5e19eb",
+    "reports/analysis/comparison-formal-20261028-03/图表总览.html": "53b211225f25c961f39dd4fb77d805541aec2ba3e71c65b8bcb8efe75a6c2104",
+    "reports/analysis/conclusions-confirmed-20261029-01/manifest.json": "b4c016e8743c8ba3d0878b9e32e5926d0ae79b22a148207f9c1fd47632dd6d7b",
+    "reports/analysis/conclusions-confirmed-20261029-01/参数对比结论.md": "cbb3a5aac6616aa1a8fad0b23cedd58601a0d873e7c9ad37c07df0f5f9985aaf",
+    "reports/analysis/conclusions-confirmed-20261029-01/贝叶斯概率估计.json": "c0b5f6d2a6cc075eb6c917dc965e080bf17d5df08017b75e3d0e2ce1449c0ee4",
+    "reports/data/v1-20261023/validation_report.md": "0264b9eb2562d9653310f8153c388d6f166e41d6faf87d3e81081c2f8a4fd829",
+    "reports/figures/comparison-formal-20261028-03/03-confusion.png": "1b06cac26dec1b25ac66e8812d4bee49c35b3fc1b001e659c34deb4afd9a9460",
+    "reports/figures/comparison-formal-20261028-03/05-lora-parameters.png": "c8c3c7978e421d5d760fdc849cd18b284e4fea7a83eccc305a41c0b9f6ef855a",
+    "reports/figures/comparison-formal-20261028-03/07-effect-latency.png": "58c4884ab6f33286e39b8b0ba620ee88ad66d95e09faaccfc362d90053808955",
+    "reports/figures/comparison-formal-20261028-03/15-bert-training-loss.png": "badf0fa85b33bba283c03f386a7a64f1313fab6bac4ca2dbcd6927ce750a2b5f",
+    "reports/figures/comparison-formal-20261028-03/16-lora-training-loss.png": "f798fc845875ad7b66609453afd382bb6ef210642fc2232d4936eb3d7ce18626",
+    "reports/figures/resources-adapter-20261029-01/resource-breakdown.json": "451b28d63890a6a70edd6ad908831578911dc27996c3f0da22e1b813c0b5cdc8",
+    "reports/figures/resources-adapter-20261029-01/resources-with-adapter.png": "147a2ad793ac5cde4df7a5130f20754a7da9ac5a71d583cde1091ed7d9e300e1",
+    "results/analysis/comparison-formal-20261028-03/annotation-statistics.json": "d812efe91cb465b4eff0bef99e7cf514b2cce0d7074368a89a152d0a58f9f856",
+    "results/analysis/comparison-formal-20261028-03/bert-epoch-metrics.json": "6cb51f1f7b18e54441c8a3e012e0ff048f74518995b48dd44e31f34e8b47b349",
+    "results/analysis/comparison-formal-20261028-03/casebook.json": "ce597b377a0b6ed16706341dd5aa7dc45a52530103f5d71fce77ca9ec0c14f9b",
+    "results/analysis/comparison-formal-20261028-03/figure-index.json": "a2988de63a31c88e58953febf446910913333a8b184bd784187e6ee1edd89166",
+    "results/analysis/comparison-formal-20261028-03/formal-cost-ledger.json": "982f7edb06a2e09c095e4367131e6f8610bbe4c87c70bd7d1f2fbc14f359a6c7",
+    "results/analysis/comparison-formal-20261028-03/formal-parameter-tables.json": "dfdc45cb0e8af39fbdcbe6197b3a97f93f0c4384bd4f2fbfd54ae3594248ec04",
+    "results/analysis/comparison-formal-20261028-03/latency.json": "bcca9b093b63f47240ff0d3c976d7717d7da5de170725812f8f630e19923aedc",
+    "results/analysis/comparison-formal-20261028-03/length-and-truncation.json": "8feb1798d66933f4f6a7bfd7d83ad1388110a3d0908db1f471809e1cdc10a1cb",
+    "results/analysis/comparison-formal-20261028-03/majority-reference.json": "d2d66ef399ee8b8a90ec67f793a112633b6a0d878791b94794c67ee60ed5652c",
+    "results/analysis/comparison-formal-20261028-03/methods.json": "c8d83a2e6d16832943df872064dd4f826d8bc8f38b1149d19e1c5bdb96307bf7",
+    "results/analysis/comparison-formal-20261028-03/model-parameter-counts.json": "49d362c58b6cbd19ed556f5f0d721fc1e8146143580abb9e75be56c50b6805f5",
+    "results/analysis/comparison-formal-20261028-03/paired-comparisons.json": "0cb8581be51f896ab28d1cb117edeec2a0993764ba5bdce2ae24c3e7696fa688",
+    "results/analysis/comparison-formal-20261028-03/parameters.json": "272572c925177e24f58e1697d28bef754375348d2c0340403cde37c74f41fc9e",
+    "results/analysis/comparison-formal-20261028-03/seed-stability.json": "c1f843b46dcdd56f6206953dee28cd968a799eefe2a2f3f58cb12d4519b3a7ed",
+    "results/analysis/comparison-formal-20261028-03/seed43-44-sensitivity.json": "2b4c01fb83e3558a01a112d715df5082090c3d30d516138edee349d0f28c6790",
+    "results/analysis/comparison-formal-20261028-03/status.json": "bd85242dd4cae42c9dbc069096ac8a07597973423908870961fb437c7e9ef456",
+    "results/analysis/comparison-formal-20261028-03/token-truncation.json": "591d35630f84103fb262e9775be04e8ea6bd5dff62d623cbfa6e229f7dfc97a6",
+    "results/analysis/comparison-formal-20261028-03/training-cost-ledger.json": "4ddab625a49a488c291c853827be5083f520224cafdae0399d01a13e0cad3505",
+    "results/analysis/comparison-formal-20261028-03/training-curves.json": "d986f88c7166deef5e66e5184a802586d76846a1c406b9e47ab2fef75844bcd2",
+    "results/evidence/formal-analysis-20261028-01/bert/bert-len512-seed42/config.json": "87d357dd3bc7a6696abfb1c9c48810937ec67464b2c825d32094a6ecf80bfad6",
+    "results/evidence/formal-analysis-20261028-01/bert/bert-len512-seed42/epoch_metrics.jsonl": "254ebd86b9b9e012fb2bb0a7df786d0d63eb787026188783e04adf976d8fd587",
+    "results/evidence/formal-analysis-20261028-01/lora/T01/trainer_log.jsonl": "39850c83461204879ede55627a1edb2f89d814c69d2275500c9e189c5134530b",
+    "results/predictions/test-lora-seed42.jsonl": "dd9b735e6d1d3b69a361edb4dfdfc8f40a374accd8d98fe0b380a27e4e484fa2",
+    "results/predictions/test-lora-seed43.jsonl": "01680ba5e3e0c2035bb67e840ed8afa3d95572eed2fbc336bd49e22a87c7fec5",
+    "results/predictions/test-lora-seed44.jsonl": "7fc809516dd55c9e941b6a74672099efdae14d602740a341d4fd71e5af6f4de5",
+    "results/predictions/test-qwen_few_shot.jsonl": "870c2ce591a15c40c0150d4ab37799c14be306e48b9cd1a3087643a20e8b112d",
+    "results/predictions/test-qwen_zero_shot.jsonl": "50705a8eb1ffd886b3c8512f73c49704ddb048ec9a2712c1a902aedaa4f5d9e0",
+    "results/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/T01/train.json": "e9e112aa7951f8bbd48d1168eb0236268548422b851eb8fe5cb984a544ced220"
+  },
+  "output_sha256": {
+    "docs/报告初稿/20261029-v2/assets/系统架构.svg": "0cd389927bb1fd747ada8a468862b2937005481f636dc6aef38f002f270f25c3",
+    "docs/报告初稿/20261029-v2/README.md": "4affa80e46bc993b8c0e7641e4a01506b02ab1b220ef904ae011b647bbb72fda",
+    "docs/报告初稿/20261029-v2/templates/贡献声明表模板.md": "12ae99ddf09f42356517a8822df89869d12a2ada21e388da3f09682922fc939c",
+    "docs/报告初稿/20261029-v2/templates/项目报告模板.md": "2cf2ac69f2f2aa99780467951a20b62580e91a9cf6d19934f147d27f321632e7",
+    "docs/报告初稿/20261029-v2/token用量核查.json": "fd2abacca63a4d6dadda259c47324b3b463ab5949b0ce37819335ce24ed81fb4",
+    "docs/报告初稿/20261029-v2/修订记录.md": "22a0e72926e598642ac20c24db02571f882ce43a815c518975b3a8b19385df41",
+    "docs/报告初稿/20261029-v2/缺失信息清单.md": "02fc60057d64ce7b8f72a798d284f431ea5b4af0e31634b00fbfa6dd3aedc6b3",
+    "docs/报告初稿/20261029-v2/贡献声明_刘广徽_初稿.md": "b9a945166b1df30e6b9510d24d10732dbc75edcecc66d457c17caedeeb6c7e2e",
+    "docs/报告初稿/20261029-v2/贡献声明_李嘉谊林_初稿.md": "2a31bd59b156b61c9b35a18b40f6ee6c5278cc7973a1fa24a41802a6355f74f4",
+    "docs/报告初稿/20261029-v2/贡献声明_杨函齐_初稿.md": "6c6a2d32b0a06dcbd28ffc9d5a69a4d1679a6b4416d614144546eb71676c1dfb",
+    "docs/报告初稿/20261029-v2/项目报告.md": "d5ba6807c7b540fa5f1345d96ebd1de838b4a8a9f91e11d2e92c5320900c0af2"
+  },
+  "training": false,
+  "inference": false,
+  "pdf_generated": false,
+  "git_commit_created": false,
+  "AI_assistance": "Transcribe student-supplied contributor identities and scope; attach module-level existing evidence; no signature, workload or authorship inferred"
+}

@@ -1,0 +1,20 @@
+Verified nine artifact identities; model bytes=1285129356
+[1/9] Packaging tfidf-char_1_3-seed42
+[1/9] Verified tfidf-char_1_3-seed42: 2353995 bytes
+[2/9] Packaging tfidf-char_1_3-seed43
+[2/9] Verified tfidf-char_1_3-seed43: 2353999 bytes
+[3/9] Packaging tfidf-char_1_3-seed44
+[3/9] Verified tfidf-char_1_3-seed44: 2353999 bytes
+[4/9] Packaging bert-len512-seed42
+[4/9] Verified bert-len512-seed42: 381052561 bytes
+[5/9] Packaging bert-len512-seed43
+[5/9] Verified bert-len512-seed43: 381053504 bytes
+[6/9] Packaging bert-len512-seed44
+[6/9] Verified bert-len512-seed44: 381051263 bytes
+[7/9] Packaging qwen-lora-T01-seed42
+[7/9] Verified qwen-lora-T01-seed42: 11937864 bytes
+[8/9] Packaging qwen-lora-T01-seed43
+[8/9] Verified qwen-lora-T01-seed43: 11938781 bytes
+[9/9] Packaging qwen-lora-T01-seed44
+[9/9] Verified qwen-lora-T01-seed44: 11938846 bytes
+Ready: /mnt/c/Users/lgh/Documents/ChatGPT/NLP/artifacts/packages/trained-20261029-01

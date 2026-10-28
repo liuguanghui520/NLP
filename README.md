@@ -92,4 +92,6 @@ GitHub自动核查配置位于.github/workflows/reproduction.yml，只运行无�
 
 阅读材料：[完整复现指南](docs/reproduction/README.md)、[环境E01](docs/environment/实验运行环境与延迟口径.md)、[模型结论](reports/analysis/conclusions-confirmed-20261029-01/模型方案对比结论.md)、[参数结论](reports/analysis/conclusions-confirmed-20261029-01/参数对比结论.md)、[九例确认稿](reports/analysis/case-confirmed-20261029-01/正文案例与局限定稿.md)、[图表总览](reports/analysis/comparison-formal-20261028-03/图表总览.html)。
 
+课程报告素材见[证据汇总](docs/报告素材/九案例至技术选型结论与证据汇总-20261029.md)，当前[报告草稿v3](docs/报告初稿/20261029-v3/项目报告.md)及[三人贡献声明](docs/报告初稿/20261029-v3/README.md)仍保留待补与待审核标记。
+
 本轮AI用于工程入口、依赖和文档整理及被授权的离线验证。已确认的学生分析保留，382条AI辅助标注与20条本人试标来源分开，124条待复核不改正式标签。旧README原字节保存在 docs/history/README-before-reproduction-20261029.md，便于追溯历史哈希。

@@ -1,0 +1,81 @@
+{
+  "scope": "Local packaging delivery only; no upload or inference",
+  "archives": {
+    "tfidf-char_1_3-seed42.zip": {
+      "bytes": 2353995,
+      "sha256": "a50738066234a3e8c77d4429c34e84cb2aea3667d4bae64f39af6d3b268b1d7b",
+      "method": "tfidf",
+      "seed": 42,
+      "weight_sha256": "0e1d76c5990925df6de24ce68d73dd193954c5f849b348996f506d372cf35f6c"
+    },
+    "tfidf-char_1_3-seed43.zip": {
+      "bytes": 2353999,
+      "sha256": "b514f7a3100fb54c430adc4d4d7c1e0dd69fc6e9a6d725437704f8eaf52cf2d5",
+      "method": "tfidf",
+      "seed": 43,
+      "weight_sha256": "b7c84a4f5519103c90c6ade007a821642931faa5dccbd851e489e52425169675"
+    },
+    "tfidf-char_1_3-seed44.zip": {
+      "bytes": 2353999,
+      "sha256": "feed61cb825a45d81a5dc29f5ea286a11e9b7220bf84547ebdc2d83e5fa8d897",
+      "method": "tfidf",
+      "seed": 44,
+      "weight_sha256": "ba3ce042b26d303731f91f2fd9834d8088070e98b1fbe744f3bdd72f64081348"
+    },
+    "bert-len512-seed42.zip": {
+      "bytes": 381052561,
+      "sha256": "bbb9001a10d1e7603ae43311dd9827fc1e092b8194268f70c448a0aa3c448268",
+      "method": "bert",
+      "seed": 42,
+      "weight_sha256": "d8e15d741d95bb01a33b3fff035041fe5b960c600905613545d9aef7db3e52ee"
+    },
+    "bert-len512-seed43.zip": {
+      "bytes": 381053504,
+      "sha256": "5cf7f3769fe9ea13c4bce2f8c52f41241050c3784eb113f1103064eb44a8b576",
+      "method": "bert",
+      "seed": 43,
+      "weight_sha256": "9a250db604deb2f416d3fc7795965e9788dee8ca59aa039349a5a7a29d558c27"
+    },
+    "bert-len512-seed44.zip": {
+      "bytes": 381051263,
+      "sha256": "a56bde23114291070a46e88c4a0eafbcfd185af0017c809bce35176192cac078",
+      "method": "bert",
+      "seed": 44,
+      "weight_sha256": "04f778b144d3cd1ad2140019568d207350fcb7b1061a51a73526aa6ee34040ad"
+    },
+    "qwen-lora-T01-seed42.zip": {
+      "bytes": 11937864,
+      "sha256": "7cd36afc5cb73c0fe97c6778b7025550d8bb1dcd428afcd887bb5d8d25ca88eb",
+      "method": "qwen_lora",
+      "seed": 42,
+      "weight_sha256": "6baed5a97d4549011a8da6f3212a38772531081adf8995176583120b3c82fcf5"
+    },
+    "qwen-lora-T01-seed43.zip": {
+      "bytes": 11938781,
+      "sha256": "aa6c031ab1c141e4d9fe893e430ab5afe473e3077611789473b6396f90b15b61",
+      "method": "qwen_lora",
+      "seed": 43,
+      "weight_sha256": "39436195aa545351e6f0787f20ecf507e3e33045eb4f3aa0bc7483cc9d9aa4aa"
+    },
+    "qwen-lora-T01-seed44.zip": {
+      "bytes": 11938846,
+      "sha256": "c055494976535c8a0850ac18b8ace695ed9dfcc825157b29da60a9bc2a203cae",
+      "method": "qwen_lora",
+      "seed": 44,
+      "weight_sha256": "f5b21a7ba292c9365e83a4cc898459c7751e90b4436df6279fcaff75af01d422"
+    }
+  },
+  "evidence_sha256": {
+    "reports/packaging/trained-20261029-01/catalog.json": "823b1198c95429e6221f8fd0eac77fd186d6821033f69ba5bb619fec44320a65",
+    "reports/packaging/trained-20261029-01/SHA256SUMS": "9abbb572874ce642640228f3ff73e95ed56c887bbcaafff75ab9e5070fad313f",
+    "reports/packaging/trained-20261029-01/status.json": "823b1198c95429e6221f8fd0eac77fd186d6821033f69ba5bb619fec44320a65",
+    "reports/packaging/trained-20261029-01/windows-verification.json": "278a81062afe8d9e2a9cef6f2017eafa92b9839805f32573125f2bc2ca6f53c9",
+    "reports/packaging/trained-20261029-01/打包交付说明.md": "562339d8b59b408cea04ddf6063f1f775972b8c13a4848a6a37f6519ed6baffa"
+  },
+  "script_sha256": "140c1c272cdaf935afc026b3bd88ddb484adf3129b56f1aca7a232c82130df35",
+  "updated_download_manifest_sha256": "3c5ffbfac50dec577cd23cc7966037fe86250fef9a4167a5b29dbb37f22a2c3d",
+  "training": false,
+  "model_loading": false,
+  "inference": false,
+  "uploaded": false
+}

@@ -1,0 +1,242 @@
+{
+  "scope": "Report drafts, evidence summary, trained-artifact packaging and release-upload implementation; ZIPs go to Release, not Git",
+  "files": {
+    ".gitignore": {
+      "sha256": "5bbcba20d28a8ca9f6b2cd9abcfe5674f7934e8ecc0623cfcea248af56d51f24",
+      "bytes": 557
+    },
+    "README.md": {
+      "sha256": "650f1caa3138b56088b5fd5237a148e948abf1622dee31c5009c8845dda5b5bf",
+      "bytes": 7611
+    },
+    "artifacts/reproduction-downloads.json": {
+      "sha256": "3c5ffbfac50dec577cd23cc7966037fe86250fef9a4167a5b29dbb37f22a2c3d",
+      "bytes": 6784
+    },
+    "docs/README.md": {
+      "sha256": "6473f4e8513d06e137d22776f48078229c8172c098eaecfa8474c9eff887c0ca",
+      "bytes": 4541
+    },
+    "docs/报告初稿/20261029-v1/README.md": {
+      "sha256": "5828d65a852adae53950f271881aeaf0adf9bd0f78acd1198d5018004b212ed5",
+      "bytes": 1169
+    },
+    "docs/报告初稿/20261029-v1/assets/系统架构.svg": {
+      "sha256": "0cd389927bb1fd747ada8a468862b2937005481f636dc6aef38f002f270f25c3",
+      "bytes": 3582
+    },
+    "docs/报告初稿/20261029-v1/manifest.json": {
+      "sha256": "f3851c3a466d6c006a063a3235473fe32f6f78cec1d1301d6204939cc6c5b9c5",
+      "bytes": 10462
+    },
+    "docs/报告初稿/20261029-v1/templates/贡献声明表模板.md": {
+      "sha256": "12ae99ddf09f42356517a8822df89869d12a2ada21e388da3f09682922fc939c",
+      "bytes": 1410
+    },
+    "docs/报告初稿/20261029-v1/templates/项目报告模板.md": {
+      "sha256": "2cf2ac69f2f2aa99780467951a20b62580e91a9cf6d19934f147d27f321632e7",
+      "bytes": 3557
+    },
+    "docs/报告初稿/20261029-v1/token用量核查.json": {
+      "sha256": "fd2abacca63a4d6dadda259c47324b3b463ab5949b0ce37819335ce24ed81fb4",
+      "bytes": 2467
+    },
+    "docs/报告初稿/20261029-v1/缺失信息清单.md": {
+      "sha256": "4d02032cffd944976ff6181d000ea1c941560bac9891fe8a9b6ea7e2a520f4a1",
+      "bytes": 4680
+    },
+    "docs/报告初稿/20261029-v1/贡献声明_成员一_初稿.md": {
+      "sha256": "77df810fb650dfd50cbc3f2fa9a67e2c2ec328ce21c32d2c864c002716f397ca",
+      "bytes": 2521
+    },
+    "docs/报告初稿/20261029-v1/贡献声明_成员三_待填写.md": {
+      "sha256": "1575b2f4235ae2f934acf2eb9e73d81e75d2874c41308486b482a33a7f836fb2",
+      "bytes": 1933
+    },
+    "docs/报告初稿/20261029-v1/贡献声明_成员二_待填写.md": {
+      "sha256": "8f632d6b0e077ae094b2bdbd556f50b0fd2cd9ebcd219e7725731cf336505a09",
+      "bytes": 1933
+    },
+    "docs/报告初稿/20261029-v1/项目报告.md": {
+      "sha256": "520fee6c5ce4a9336e286da5993d0e88c15bae93a109023035c5eac81cadf922",
+      "bytes": 34661
+    },
+    "docs/报告初稿/20261029-v2/README.md": {
+      "sha256": "4affa80e46bc993b8c0e7641e4a01506b02ab1b220ef904ae011b647bbb72fda",
+      "bytes": 1361
+    },
+    "docs/报告初稿/20261029-v2/assets/系统架构.svg": {
+      "sha256": "0cd389927bb1fd747ada8a468862b2937005481f636dc6aef38f002f270f25c3",
+      "bytes": 3582
+    },
+    "docs/报告初稿/20261029-v2/manifest.json": {
+      "sha256": "440b2b1a0caccb84b3079471fc2aa1f366cb687d8491bef2724d55dec865272c",
+      "bytes": 10982
+    },
+    "docs/报告初稿/20261029-v2/templates/贡献声明表模板.md": {
+      "sha256": "12ae99ddf09f42356517a8822df89869d12a2ada21e388da3f09682922fc939c",
+      "bytes": 1410
+    },
+    "docs/报告初稿/20261029-v2/templates/项目报告模板.md": {
+      "sha256": "2cf2ac69f2f2aa99780467951a20b62580e91a9cf6d19934f147d27f321632e7",
+      "bytes": 3557
+    },
+    "docs/报告初稿/20261029-v2/token用量核查.json": {
+      "sha256": "fd2abacca63a4d6dadda259c47324b3b463ab5949b0ce37819335ce24ed81fb4",
+      "bytes": 2467
+    },
+    "docs/报告初稿/20261029-v2/修订记录.md": {
+      "sha256": "22a0e72926e598642ac20c24db02571f882ce43a815c518975b3a8b19385df41",
+      "bytes": 1453
+    },
+    "docs/报告初稿/20261029-v2/缺失信息清单.md": {
+      "sha256": "02fc60057d64ce7b8f72a798d284f431ea5b4af0e31634b00fbfa6dd3aedc6b3",
+      "bytes": 4869
+    },
+    "docs/报告初稿/20261029-v2/贡献声明_刘广徽_初稿.md": {
+      "sha256": "b9a945166b1df30e6b9510d24d10732dbc75edcecc66d457c17caedeeb6c7e2e",
+      "bytes": 3039
+    },
+    "docs/报告初稿/20261029-v2/贡献声明_李嘉谊林_初稿.md": {
+      "sha256": "2a31bd59b156b61c9b35a18b40f6ee6c5278cc7973a1fa24a41802a6355f74f4",
+      "bytes": 3074
+    },
+    "docs/报告初稿/20261029-v2/贡献声明_杨函齐_初稿.md": {
+      "sha256": "6c6a2d32b0a06dcbd28ffc9d5a69a4d1679a6b4416d614144546eb71676c1dfb",
+      "bytes": 2860
+    },
+    "docs/报告初稿/20261029-v2/项目报告.md": {
+      "sha256": "d5ba6807c7b540fa5f1345d96ebd1de838b4a8a9f91e11d2e92c5320900c0af2",
+      "bytes": 36670
+    },
+    "docs/报告初稿/20261029-v3/README.md": {
+      "sha256": "77c3adbf4abd53431bbcdc1175b383d04ae3f8cec6e7e06efca676c546ba01ab",
+      "bytes": 1446
+    },
+    "docs/报告初稿/20261029-v3/assets/系统架构.svg": {
+      "sha256": "0cd389927bb1fd747ada8a468862b2937005481f636dc6aef38f002f270f25c3",
+      "bytes": 3582
+    },
+    "docs/报告初稿/20261029-v3/manifest.json": {
+      "sha256": "b59170b875dcec0455c6288409e047882d6d316804c0d9606b5b3b7f2fd02efb",
+      "bytes": 13900
+    },
+    "docs/报告初稿/20261029-v3/templates/贡献声明表模板.md": {
+      "sha256": "12ae99ddf09f42356517a8822df89869d12a2ada21e388da3f09682922fc939c",
+      "bytes": 1410
+    },
+    "docs/报告初稿/20261029-v3/templates/项目报告模板.md": {
+      "sha256": "2cf2ac69f2f2aa99780467951a20b62580e91a9cf6d19934f147d27f321632e7",
+      "bytes": 3557
+    },
+    "docs/报告初稿/20261029-v3/token用量核查.json": {
+      "sha256": "fd2abacca63a4d6dadda259c47324b3b463ab5949b0ce37819335ce24ed81fb4",
+      "bytes": 2467
+    },
+    "docs/报告初稿/20261029-v3/修订记录.md": {
+      "sha256": "f491c4df0a2b195af037c361dd75b4e46796e10bcb6520f97ea93c30e01610fb",
+      "bytes": 2534
+    },
+    "docs/报告初稿/20261029-v3/缺失信息清单.md": {
+      "sha256": "9581f9f19299c0670a318f15ae19dda267f52aa579a02120d1aea480dc171dc4",
+      "bytes": 5039
+    },
+    "docs/报告初稿/20261029-v3/评估补充数据.json": {
+      "sha256": "dc5fde4876c6d7294b5e87bbbaf6af928008a40678c433881e394bb74804fba1",
+      "bytes": 3909
+    },
+    "docs/报告初稿/20261029-v3/贡献声明_刘广徽_初稿.md": {
+      "sha256": "b9a945166b1df30e6b9510d24d10732dbc75edcecc66d457c17caedeeb6c7e2e",
+      "bytes": 3039
+    },
+    "docs/报告初稿/20261029-v3/贡献声明_李嘉谊林_初稿.md": {
+      "sha256": "2a31bd59b156b61c9b35a18b40f6ee6c5278cc7973a1fa24a41802a6355f74f4",
+      "bytes": 3074
+    },
+    "docs/报告初稿/20261029-v3/贡献声明_杨函齐_初稿.md": {
+      "sha256": "6c6a2d32b0a06dcbd28ffc9d5a69a4d1679a6b4416d614144546eb71676c1dfb",
+      "bytes": 2860
+    },
+    "docs/报告初稿/20261029-v3/项目报告.md": {
+      "sha256": "39b55281c7713d724ab6a36a09cb956256530ed8a9cdd217d929a2e162db5aae",
+      "bytes": 56909
+    },
+    "docs/报告初稿/README.md": {
+      "sha256": "49b89c705208c503cdb27e75fa67373444ab5fd0b9ca6fde35bb809eeffa7ae3",
+      "bytes": 577
+    },
+    "docs/报告素材/九案例至技术选型结论与证据汇总-20261029.manifest.json": {
+      "sha256": "3d2b555527f6c4f8e701e3a65c032d449f45562352e727c0705c657c3d688b4f",
+      "bytes": 7540
+    },
+    "docs/报告素材/九案例至技术选型结论与证据汇总-20261029.md": {
+      "sha256": "93949e2350fac8851b11acef678da740a47df1f65ed27e938e6e907746af511b",
+      "bytes": 29080
+    },
+    "logs/artifact-packaging/trained-20261029-01/packaging-stderr.log": {
+      "sha256": "e816706cd44ce0c6c65a7a7938be8103514f7c899694c8240d844f74319b7f98",
+      "bytes": 153
+    },
+    "logs/artifact-packaging/trained-20261029-01/packaging-stdout.log": {
+      "sha256": "01ef5d92c54b68be76a600a47caada8319a0ae6df8bbb424a71b4a1a11b20627",
+      "bytes": 938
+    },
+    "logs/artifact-packaging/trained-20261029-01/release-checks.log": {
+      "sha256": "3764d56af6c1c00f7c49da70d92bb31c55875176d22d4d24c2e1540ec4fdb011",
+      "bytes": 6501
+    },
+    "logs/artifact-packaging/trained-20261029-01/software-checks.log": {
+      "sha256": "2e725f8195953f7fb9774b63bf96f4baf7fecac554b0253eb96976ba8b002e33",
+      "bytes": 6104
+    },
+    "reports/packaging/trained-20261029-01/Release说明.md": {
+      "sha256": "575d358417c146c8259773803da1318392484a0ef4824584c33d886afd61bc26",
+      "bytes": 1135
+    },
+    "reports/packaging/trained-20261029-01/SHA256SUMS": {
+      "sha256": "9abbb572874ce642640228f3ff73e95ed56c887bbcaafff75ab9e5070fad313f",
+      "bytes": 816
+    },
+    "reports/packaging/trained-20261029-01/catalog.json": {
+      "sha256": "823b1198c95429e6221f8fd0eac77fd186d6821033f69ba5bb619fec44320a65",
+      "bytes": 13368
+    },
+    "reports/packaging/trained-20261029-01/delivery-manifest.json": {
+      "sha256": "9fe3e5fad498aaee36b90ee1c85d350a4bc4787e04d75aa7a00096f993adec70",
+      "bytes": 3684
+    },
+    "reports/packaging/trained-20261029-01/status.json": {
+      "sha256": "823b1198c95429e6221f8fd0eac77fd186d6821033f69ba5bb619fec44320a65",
+      "bytes": 13368
+    },
+    "reports/packaging/trained-20261029-01/windows-verification.json": {
+      "sha256": "278a81062afe8d9e2a9cef6f2017eafa92b9839805f32573125f2bc2ca6f53c9",
+      "bytes": 3440
+    },
+    "reports/packaging/trained-20261029-01/打包交付说明.md": {
+      "sha256": "562339d8b59b408cea04ddf6063f1f775972b8c13a4848a6a37f6519ed6baffa",
+      "bytes": 4354
+    },
+    "scripts/package_trained_artifacts.py": {
+      "sha256": "140c1c272cdaf935afc026b3bd88ddb484adf3129b56f1aca7a232c82130df35",
+      "bytes": 20627
+    },
+    "scripts/upload_trained_release.py": {
+      "sha256": "b09974165b5f1a0403f0bf7f24c05ff6c0e30b9475a436a54d26a2d0f00bec67",
+      "bytes": 15108
+    },
+    "tests/test_release_upload.py": {
+      "sha256": "71cc603f845453a5dd45b679f61c63652d96c185c39fedbc620629a6b4a1b697",
+      "bytes": 1516
+    },
+    "tests/test_trained_artifacts.py": {
+      "sha256": "84ce1ce8cedab19737959aef8f9e420a0909e5cd86e98304a0b8aa370459b26f",
+      "bytes": 3282
+    }
+  },
+  "software_tests": 45,
+  "training": false,
+  "inference": false,
+  "zip_count": 9,
+  "zip_bytes": 1186034812
+}

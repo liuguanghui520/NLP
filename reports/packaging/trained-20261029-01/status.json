@@ -1,0 +1,328 @@
+{
+  "status": "completed",
+  "run_id": "trained-20261029-01",
+  "artifacts": [
+    {
+      "artifact_id": "tfidf-char_1_3-seed42",
+      "members": 6,
+      "weight_sha256": "0e1d76c5990925df6de24ce68d73dd193954c5f849b348996f506d372cf35f6c",
+      "verified": true,
+      "archive": "tfidf-char_1_3-seed42.zip",
+      "archive_bytes": 2353995,
+      "archive_sha256": "a50738066234a3e8c77d4429c34e84cb2aea3667d4bae64f39af6d3b268b1d7b",
+      "model_bytes": 5960148,
+      "source_files": {
+        "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-char_1_3-seed42/checkpoints/best/pipeline.joblib": {
+          "bytes": 5960148,
+          "sha256": "0e1d76c5990925df6de24ce68d73dd193954c5f849b348996f506d372cf35f6c"
+        }
+      },
+      "method": "tfidf",
+      "seed": 42,
+      "selection": {
+        "split": "validation",
+        "primary": "macro_f1",
+        "epoch": 1,
+        "macro_f1": 0.8837480682499133
+      },
+      "requires_base_model": false,
+      "elapsed_seconds": 0.47431910800000043
+    },
+    {
+      "artifact_id": "tfidf-char_1_3-seed43",
+      "members": 6,
+      "weight_sha256": "b7c84a4f5519103c90c6ade007a821642931faa5dccbd851e489e52425169675",
+      "verified": true,
+      "archive": "tfidf-char_1_3-seed43.zip",
+      "archive_bytes": 2353999,
+      "archive_sha256": "b514f7a3100fb54c430adc4d4d7c1e0dd69fc6e9a6d725437704f8eaf52cf2d5",
+      "model_bytes": 5960148,
+      "source_files": {
+        "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-char_1_3-seed43/checkpoints/best/pipeline.joblib": {
+          "bytes": 5960148,
+          "sha256": "b7c84a4f5519103c90c6ade007a821642931faa5dccbd851e489e52425169675"
+        }
+      },
+      "method": "tfidf",
+      "seed": 43,
+      "selection": {
+        "split": "validation",
+        "primary": "macro_f1",
+        "epoch": 1,
+        "macro_f1": 0.8837480682499133
+      },
+      "requires_base_model": false,
+      "elapsed_seconds": 0.4709859130000007
+    },
+    {
+      "artifact_id": "tfidf-char_1_3-seed44",
+      "members": 6,
+      "weight_sha256": "ba3ce042b26d303731f91f2fd9834d8088070e98b1fbe744f3bdd72f64081348",
+      "verified": true,
+      "archive": "tfidf-char_1_3-seed44.zip",
+      "archive_bytes": 2353999,
+      "archive_sha256": "feed61cb825a45d81a5dc29f5ea286a11e9b7220bf84547ebdc2d83e5fa8d897",
+      "model_bytes": 5960148,
+      "source_files": {
+        "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-char_1_3-seed44/checkpoints/best/pipeline.joblib": {
+          "bytes": 5960148,
+          "sha256": "ba3ce042b26d303731f91f2fd9834d8088070e98b1fbe744f3bdd72f64081348"
+        }
+      },
+      "method": "tfidf",
+      "seed": 44,
+      "selection": {
+        "split": "validation",
+        "primary": "macro_f1",
+        "epoch": 1,
+        "macro_f1": 0.8837480682499133
+      },
+      "requires_base_model": false,
+      "elapsed_seconds": 0.5174045070000002
+    },
+    {
+      "artifact_id": "bert-len512-seed42",
+      "members": 9,
+      "weight_sha256": "d8e15d741d95bb01a33b3fff035041fe5b960c600905613545d9aef7db3e52ee",
+      "verified": true,
+      "archive": "bert-len512-seed42.zip",
+      "archive_bytes": 381052561,
+      "archive_sha256": "bbb9001a10d1e7603ae43311dd9827fc1e092b8194268f70c448a0aa3c448268",
+      "model_bytes": 409540656,
+      "source_files": {
+        "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed42/checkpoints/best/model.safetensors": {
+          "bytes": 409100240,
+          "sha256": "d8e15d741d95bb01a33b3fff035041fe5b960c600905613545d9aef7db3e52ee"
+        },
+        "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed42/checkpoints/best/config.json": {
+          "bytes": 915,
+          "sha256": "94054cd263ce980063a70cf37e0907a1aaf912314526d92a1bd0cd0ab317d5c6"
+        },
+        "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed42/checkpoints/best/tokenizer.json": {
+          "bytes": 439124,
+          "sha256": "7dfbf1966ebf99d471c3796e9b457329d2b2182b817e144f1e904b957745c839"
+        },
+        "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed42/checkpoints/best/tokenizer_config.json": {
+          "bytes": 377,
+          "sha256": "86edfbd1d109094d4ea6a04c83822681bd05e495ced8de2cbcd6fea518da3440"
+        }
+      },
+      "method": "bert",
+      "seed": 42,
+      "selection": {
+        "split": "validation",
+        "primary": "macro_f1",
+        "epoch": 3,
+        "macro_f1": 0.908733165591771
+      },
+      "requires_base_model": false,
+      "elapsed_seconds": 23.505202199
+    },
+    {
+      "artifact_id": "bert-len512-seed43",
+      "members": 9,
+      "weight_sha256": "9a250db604deb2f416d3fc7795965e9788dee8ca59aa039349a5a7a29d558c27",
+      "verified": true,
+      "archive": "bert-len512-seed43.zip",
+      "archive_bytes": 381053504,
+      "archive_sha256": "5cf7f3769fe9ea13c4bce2f8c52f41241050c3784eb113f1103064eb44a8b576",
+      "model_bytes": 409540656,
+      "source_files": {
+        "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed43/checkpoints/best/model.safetensors": {
+          "bytes": 409100240,
+          "sha256": "9a250db604deb2f416d3fc7795965e9788dee8ca59aa039349a5a7a29d558c27"
+        },
+        "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed43/checkpoints/best/config.json": {
+          "bytes": 915,
+          "sha256": "94054cd263ce980063a70cf37e0907a1aaf912314526d92a1bd0cd0ab317d5c6"
+        },
+        "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed43/checkpoints/best/tokenizer.json": {
+          "bytes": 439124,
+          "sha256": "7dfbf1966ebf99d471c3796e9b457329d2b2182b817e144f1e904b957745c839"
+        },
+        "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed43/checkpoints/best/tokenizer_config.json": {
+          "bytes": 377,
+          "sha256": "86edfbd1d109094d4ea6a04c83822681bd05e495ced8de2cbcd6fea518da3440"
+        }
+      },
+      "method": "bert",
+      "seed": 43,
+      "selection": {
+        "split": "validation",
+        "primary": "macro_f1",
+        "epoch": 1,
+        "macro_f1": 0.9089119108203078
+      },
+      "requires_base_model": false,
+      "elapsed_seconds": 25.025895989000002
+    },
+    {
+      "artifact_id": "bert-len512-seed44",
+      "members": 9,
+      "weight_sha256": "04f778b144d3cd1ad2140019568d207350fcb7b1061a51a73526aa6ee34040ad",
+      "verified": true,
+      "archive": "bert-len512-seed44.zip",
+      "archive_bytes": 381051263,
+      "archive_sha256": "a56bde23114291070a46e88c4a0eafbcfd185af0017c809bce35176192cac078",
+      "model_bytes": 409540656,
+      "source_files": {
+        "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed44/checkpoints/best/model.safetensors": {
+          "bytes": 409100240,
+          "sha256": "04f778b144d3cd1ad2140019568d207350fcb7b1061a51a73526aa6ee34040ad"
+        },
+        "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed44/checkpoints/best/config.json": {
+          "bytes": 915,
+          "sha256": "94054cd263ce980063a70cf37e0907a1aaf912314526d92a1bd0cd0ab317d5c6"
+        },
+        "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed44/checkpoints/best/tokenizer.json": {
+          "bytes": 439124,
+          "sha256": "7dfbf1966ebf99d471c3796e9b457329d2b2182b817e144f1e904b957745c839"
+        },
+        "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal/bert-len512-seed44/checkpoints/best/tokenizer_config.json": {
+          "bytes": 377,
+          "sha256": "86edfbd1d109094d4ea6a04c83822681bd05e495ced8de2cbcd6fea518da3440"
+        }
+      },
+      "method": "bert",
+      "seed": 44,
+      "selection": {
+        "split": "validation",
+        "primary": "macro_f1",
+        "epoch": 3,
+        "macro_f1": 0.908733165591771
+      },
+      "requires_base_model": false,
+      "elapsed_seconds": 23.001031878999996
+    },
+    {
+      "artifact_id": "qwen-lora-T01-seed42",
+      "members": 8,
+      "weight_sha256": "6baed5a97d4549011a8da6f3212a38772531081adf8995176583120b3c82fcf5",
+      "verified": true,
+      "archive": "qwen-lora-T01-seed42.zip",
+      "archive_bytes": 11937864,
+      "archive_sha256": "7cd36afc5cb73c0fe97c6778b7025550d8bb1dcd428afcd887bb5d8d25ca88eb",
+      "model_bytes": 12875648,
+      "source_files": {
+        "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/T01/adapter/checkpoint-1167/adapter_model.safetensors": {
+          "bytes": 12874640,
+          "sha256": "6baed5a97d4549011a8da6f3212a38772531081adf8995176583120b3c82fcf5"
+        },
+        "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/T01/adapter/checkpoint-1167/adapter_config.json": {
+          "bytes": 1008,
+          "sha256": "0228196001909e1746743f574323119c3a1c7ae2882d97e2a19ea8312dcb323a"
+        },
+        "/home/lgh/models/Qwen3-1.7B/LICENSE": {
+          "bytes": 11343,
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        }
+      },
+      "method": "qwen_lora",
+      "seed": 42,
+      "selection": {
+        "split": "validation",
+        "primary": "macro_f1",
+        "epoch": 3.0,
+        "global_step": 1167,
+        "macro_f1": 0.913885338619196
+      },
+      "requires_base_model": true,
+      "elapsed_seconds": 0.8287421329999916
+    },
+    {
+      "artifact_id": "qwen-lora-T01-seed43",
+      "members": 8,
+      "weight_sha256": "39436195aa545351e6f0787f20ecf507e3e33045eb4f3aa0bc7483cc9d9aa4aa",
+      "verified": true,
+      "archive": "qwen-lora-T01-seed43.zip",
+      "archive_bytes": 11938781,
+      "archive_sha256": "aa6c031ab1c141e4d9fe893e430ab5afe473e3077611789473b6396f90b15b61",
+      "model_bytes": 12875648,
+      "source_files": {
+        "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S43/adapter/checkpoint-1167/adapter_model.safetensors": {
+          "bytes": 12874640,
+          "sha256": "39436195aa545351e6f0787f20ecf507e3e33045eb4f3aa0bc7483cc9d9aa4aa"
+        },
+        "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S43/adapter/checkpoint-1167/adapter_config.json": {
+          "bytes": 1008,
+          "sha256": "e1bd2c097c894298536a1ca6e1051f46dd78f6c2f29053271732596ee870608a"
+        },
+        "/home/lgh/models/Qwen3-1.7B/LICENSE": {
+          "bytes": 11343,
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        }
+      },
+      "method": "qwen_lora",
+      "seed": 43,
+      "selection": {
+        "split": "validation",
+        "primary": "macro_f1",
+        "epoch": 3.0,
+        "global_step": 1167,
+        "macro_f1": 0.9107225034514497
+      },
+      "requires_base_model": true,
+      "elapsed_seconds": 0.8652739949999955
+    },
+    {
+      "artifact_id": "qwen-lora-T01-seed44",
+      "members": 8,
+      "weight_sha256": "f5b21a7ba292c9365e83a4cc898459c7751e90b4436df6279fcaff75af01d422",
+      "verified": true,
+      "archive": "qwen-lora-T01-seed44.zip",
+      "archive_bytes": 11938846,
+      "archive_sha256": "c055494976535c8a0850ac18b8ace695ed9dfcc825157b29da60a9bc2a203cae",
+      "model_bytes": 12875648,
+      "source_files": {
+        "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S44/adapter/checkpoint-1167/adapter_model.safetensors": {
+          "bytes": 12874640,
+          "sha256": "f5b21a7ba292c9365e83a4cc898459c7751e90b4436df6279fcaff75af01d422"
+        },
+        "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S44/adapter/checkpoint-1167/adapter_config.json": {
+          "bytes": 1008,
+          "sha256": "c37add5b52191029538eeaf520d1d87a1fd7908f8acc0fc17bd133a8a078a835"
+        },
+        "/home/lgh/models/Qwen3-1.7B/LICENSE": {
+          "bytes": 11343,
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        }
+      },
+      "method": "qwen_lora",
+      "seed": 44,
+      "selection": {
+        "split": "validation",
+        "primary": "macro_f1",
+        "epoch": 3.0,
+        "global_step": 1167,
+        "macro_f1": 0.9105269226334601
+      },
+      "requires_base_model": true,
+      "elapsed_seconds": 0.8202958840000036
+    }
+  ],
+  "created_at": "2026-10-29T06:41:21.822170+08:00",
+  "command": [
+    "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/scripts/package_trained_artifacts.py",
+    "--run-id",
+    "trained-20261029-01",
+    "--paths",
+    "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/configs/paths.local.json"
+  ],
+  "python": "3.11.17",
+  "script_sha256": "140c1c272cdaf935afc026b3bd88ddb484adf3129b56f1aca7a232c82130df35",
+  "training": false,
+  "model_loading": false,
+  "inference": false,
+  "uploaded": false,
+  "compression": {
+    "format": "zip",
+    "method": "deflate",
+    "level": 1,
+    "zlib": "1.3.2"
+  },
+  "git_commit": null,
+  "working_tree_dirty": false,
+  "model_payload_bytes": 1285129356,
+  "elapsed_seconds": 77.677335216,
+  "archive_total_bytes": 1186034812
+}

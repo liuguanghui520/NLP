@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="640" viewBox="0 0 1160 640" role="img" aria-labelledby="title desc">
+  <title id="title">中文酒店评论情感分析统一实验系统架构</title>
+  <desc id="desc">CSV数据经清洗和冻结划分后进入TF-IDF、MacBERT和Qwen各路线。训练路线按验证集选优，最终测试统一解析与评估，再生成日志、图表和错误分析。工具工作区保存大权重，项目仓库保留关联与证据。</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#49627b"/></marker></defs>
+  <rect width="1160" height="640" fill="white"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" text-anchor="middle" fill="#16324f">
+    <text x="580" y="40" font-size="26" font-weight="bold">共享冻结数据 · 验证选优 · 统一评估</text>
+    <g fill="#edf4fa" stroke="#49739a" stroke-width="2">
+      <rect x="35" y="75" width="260" height="105" rx="10"/>
+      <rect x="365" y="75" width="430" height="105" rx="10"/>
+      <rect x="865" y="75" width="260" height="105" rx="10"/>
+    </g>
+    <text x="165" y="112" font-size="23">ChnSentiCorp CSV</text><text x="165" y="148" font-size="19">原文、标签、来源哈希</text>
+    <text x="580" y="111" font-size="23">最小清洗、去重、512字符前缀</text><text x="580" y="148" font-size="19">冻结 train / validation / test 与ID</text>
+    <text x="995" y="111" font-size="23">统一数据导出</text><text x="995" y="148" font-size="19">JSONL ＋ Alpaca</text>
+    <g fill="#f7fafc" stroke="#49739a" stroke-width="2">
+      <rect x="35" y="255" width="240" height="130" rx="10"/>
+      <rect x="315" y="255" width="240" height="130" rx="10"/>
+      <rect x="595" y="255" width="240" height="130" rx="10"/>
+      <rect x="875" y="255" width="250" height="130" rx="10"/>
+    </g>
+    <text x="155" y="290" font-size="23">TF-IDF ＋ LR</text><text x="155" y="325" font-size="19">训练拟合／验证选参</text><text x="155" y="358" font-size="19">三种子保留</text>
+    <text x="435" y="290" font-size="23">MacBERT 全参</text><text x="435" y="325" font-size="19">预训练权重／验证选优</text><text x="435" y="358" font-size="19">三种子保留</text>
+    <text x="715" y="290" font-size="23">Qwen 零／少样本</text><text x="715" y="325" font-size="19">固定提示／四条训练例</text><text x="715" y="358" font-size="19">权重不更新</text>
+    <text x="1000" y="290" font-size="23">Qwen 普通LoRA</text><text x="1000" y="325" font-size="19">答案loss／验证选优</text><text x="1000" y="358" font-size="19">三种子保留</text>
+    <rect x="255" y="455" width="650" height="92" rx="10" fill="#e9f3ef" stroke="#3d7963" stroke-width="2"/>
+    <text x="580" y="489" font-size="23">冻结测试预测 → 严格解析 → 统一指标与成本</text><text x="580" y="524" font-size="19">样本ID／原始输出／非法状态／输入长度／延迟</text>
+    <text x="580" y="597" font-size="21">日志与运行索引 → 图表、参数对照、人工审核错例 → 报告</text>
+  </g>
+  <g fill="none" stroke="#49627b" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M295 127 H365"/><path d="M795 127 H865"/>
+    <path d="M995 180 V215 H155 V255"/><path d="M435 215 V255"/><path d="M715 215 V255"/><path d="M1000 215 V255"/>
+    <path d="M155 385 V420 H580 V455"/><path d="M435 385 V420"/><path d="M715 385 V420"/><path d="M1000 385 V420 H580"/>
+    <path d="M580 547 V570"/>
+  </g>
+</svg>
