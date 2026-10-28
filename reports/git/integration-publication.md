@@ -1,5 +1,13 @@
 # 融合发布状态
 
+## 最新实际结果（2026-10-28）
+
+已在NLP根目录完成统一提交`6ff484a`，并成功推送至`https://github.com/liuguanghui520/NLP`的`codex/integration`分支，设置远程跟踪。已有main未合并、未强制推送，也未建立课程最终标签。
+
+草稿PR创建调用返回GitHub API 403（Resource not accessible by integration），因此尚未创建PR；分支推送已独立成功，不受此影响。可在GitHub从codex/integration向main手动建立PR。没有将API权限错误描述成推送失败。
+
+本次提交包含统一目录、文档归档及已有数据/预测/日志，常见密钥扫描与文件字节核验通过。后续仅补充本段状态记录，不改变模型或实验结果。旧发布目录被其他进程占用，仍是停用的迁移前副本。
+
 ## 2026-10-28 后续明确授权与目录统一
 
 用户已在当前会话明确要求“统一开放，并提交到gitHub，不做公开私有的区分”。本次沿用目的地`liuguanghui520/NLP`，准备将`codex/integration`推送并建立草稿PR，不强制覆盖main，不打课程最终标签。
