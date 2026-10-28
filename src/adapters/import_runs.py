@@ -107,8 +107,17 @@ def import_all(root, paths):
         adapter = Path(paths['lora_adapters'][str(item['seed'])])
         assert digest(adapter/'adapter_model.safetensors') == item['adapter_sha256']
         assert digest(adapter/'adapter_config.json') == item['adapter_config_sha256']
+        source = adapter.parents[1]/'validation-step-1167/predictions.jsonl'
+        metadata = dict(method='qwen_lora',run_id=f'qwen_lora-T01-seed{item["seed"]}-validation',
+                        config_id='T01',seed=item['seed'],split='validation',model_id='Qwen/Qwen3-1.7B',
+                        checkpoint_id=item['adapter_sha256'])
+        index.append(import_one(root, paths, source, metadata, expected['validation'],
+                                f'lora_adapter_{item["seed"]}', '../../validation-step-1167/predictions.jsonl'))
     save(root/'artifacts/lora-lock.json', dict(protocol_sha256=digest(Path(paths['lora_freeze'])/'protocol.json'),
         base_model_files=private['base_model_files'], adapters=[{k:v for k,v in x.items() if k!='checkpoint'} for x in private['adapters']]))
+    existing = rows(root/'results/run_index.jsonl') if (root/'results/run_index.jsonl').exists() else []
+    names = {r['run_id'] for r in index}
+    index.extend(r for r in existing if r['run_id'] not in names)
     save_rows(root/'results/run_index.jsonl', index)
     save(root/'reports/audits/baselines.json', audit)
     save(root/'results/summaries/validation_searches.json', searches)
