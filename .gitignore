@@ -17,6 +17,7 @@ node_modules/
 configs/paths.local.json
 .venv-analysis/
 artifacts/packages/
+artifacts/downloaded/
 results/reproduction/**/source-copy/
 results/reproduction/**/mpl-cache/
 results/reproduction/**/venv/

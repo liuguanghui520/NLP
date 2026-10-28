@@ -2,7 +2,7 @@
 
 本项目比较TF-IDF＋逻辑回归、预训练MacBERT全参数微调、Qwen3-1.7B零样本、固定四样本和普通LoRA T01。统一数据、种子与评分口径，保留原始预测、日志和失败记录。
 
-**当前完成的是离线复现准备。默认命令重算已有预测，不加载模型。真实模型新机复现和教师验收单独记录。** “48小时补交”是复现失败后的补救期限，不能代替资源和环境准备。
+**已完成离线复现与9个训练产物的公开发布。默认命令重算已有预测，不加载模型。真实模型新机复现和教师验收单独记录。** “48小时补交”是复现失败后的补救期限，不能代替资源和环境准备。
 
 ## 下载后，一条命令核查主结果
 
@@ -50,9 +50,9 @@ Linux将解释器路径改为.venv-analysis/bin/python。完整模式还需Git�
 
 ## 真实模型复现：资源齐备后另验收
 
-真实预测需要Qwen基座、三个BERT最佳模型、三个TF-IDF Pipeline及三个普通LoRA适配器。当前全部训练产物的可下载链接与新机加载流程尚未验收，不能只下载公开基座便认定主结果可重新预测。
+真实预测需要Qwen基座、三个BERT最佳模型、三个TF-IDF Pipeline及三个普通LoRA适配器。9个训练产物现已发布至[GitHub Release](https://github.com/liuguanghui520/NLP/releases/tag/trained-artifacts-20261029-01)，压缩包共约1.19GB，GitHub服务端SHA256与本地一致，匿名下载可达。Qwen基座另从官方来源获取；实际模型加载、路径对接与新机预测仍待验收。
 
-代码、配置和小型证据随仓库下载；大权重可通过GitHub Release分发，需补实际下载URL、大小、SHA256及解压结构。资源身份见[模型资源说明](artifacts/README.md)、artifacts/lora-lock.json及基线运行记录；历史说明中的发布状态以本README和[最新复现说明](docs/reproduction/README.md)为准。
+代码、配置和小型证据随仓库下载；训练产物按[下载说明](docs/reproduction/训练产物下载说明-20261029.md)获取，[机器可读清单](artifacts/reproduction-downloads.json)列出9个ZIP的URL、大小和SHA256。模型包含相对目录及配置，不包含Qwen基座和Python环境。资源身份见[模型资源说明](artifacts/README.md)、artifacts/lora-lock.json及基线记录；历史说明以本README和最新复现说明为准。
 
 高级入口 src/cli.py 支持check、import、predict、evaluate、benchmark、summarize等；这些历史命令依赖外部工具资源，不能替代上面的无模型一键核查。真实预测在资源齐备的独立副本进行，复制 configs/paths.example.json，填写自己的路径，按实际环境和资源清单验收。重新训练不属于默认复现操作。
 

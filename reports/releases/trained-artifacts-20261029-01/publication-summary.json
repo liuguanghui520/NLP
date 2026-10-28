@@ -1,0 +1,147 @@
+{
+  "release_url": "https://github.com/liuguanghui520/NLP/releases/tag/trained-artifacts-20261029-01",
+  "release_id": 427282325,
+  "tag": "trained-artifacts-20261029-01",
+  "target_commit": "6df8ae03d4b1fc852b33f05c03f6028370538469",
+  "published": true,
+  "assets": [
+    {
+      "name": "tfidf-char_1_3-seed42.zip",
+      "asset_id": 686622099,
+      "bytes": 2353995,
+      "sha256": "a50738066234a3e8c77d4429c34e84cb2aea3667d4bae64f39af6d3b268b1d7b",
+      "server_digest": "sha256:a50738066234a3e8c77d4429c34e84cb2aea3667d4bae64f39af6d3b268b1d7b",
+      "verified_by": "github_server_sha256",
+      "download_url": "https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/tfidf-char_1_3-seed42.zip",
+      "anonymous_get_status": 206,
+      "content_range": "bytes 0-0/2353995"
+    },
+    {
+      "name": "tfidf-char_1_3-seed43.zip",
+      "asset_id": 686622204,
+      "bytes": 2353999,
+      "sha256": "b514f7a3100fb54c430adc4d4d7c1e0dd69fc6e9a6d725437704f8eaf52cf2d5",
+      "server_digest": "sha256:b514f7a3100fb54c430adc4d4d7c1e0dd69fc6e9a6d725437704f8eaf52cf2d5",
+      "verified_by": "github_server_sha256",
+      "download_url": "https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/tfidf-char_1_3-seed43.zip",
+      "anonymous_get_status": 206,
+      "content_range": "bytes 0-0/2353999"
+    },
+    {
+      "name": "tfidf-char_1_3-seed44.zip",
+      "asset_id": 686622329,
+      "bytes": 2353999,
+      "sha256": "feed61cb825a45d81a5dc29f5ea286a11e9b7220bf84547ebdc2d83e5fa8d897",
+      "server_digest": "sha256:feed61cb825a45d81a5dc29f5ea286a11e9b7220bf84547ebdc2d83e5fa8d897",
+      "verified_by": "github_server_sha256",
+      "download_url": "https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/tfidf-char_1_3-seed44.zip",
+      "anonymous_get_status": 206,
+      "content_range": "bytes 0-0/2353999"
+    },
+    {
+      "name": "bert-len512-seed42.zip",
+      "asset_id": 686622451,
+      "bytes": 381052561,
+      "sha256": "bbb9001a10d1e7603ae43311dd9827fc1e092b8194268f70c448a0aa3c448268",
+      "server_digest": "sha256:bbb9001a10d1e7603ae43311dd9827fc1e092b8194268f70c448a0aa3c448268",
+      "verified_by": "github_server_sha256",
+      "download_url": "https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/bert-len512-seed42.zip",
+      "anonymous_get_status": 206,
+      "content_range": "bytes 0-0/381052561"
+    },
+    {
+      "name": "bert-len512-seed43.zip",
+      "asset_id": 686623759,
+      "bytes": 381053504,
+      "sha256": "5cf7f3769fe9ea13c4bce2f8c52f41241050c3784eb113f1103064eb44a8b576",
+      "server_digest": "sha256:5cf7f3769fe9ea13c4bce2f8c52f41241050c3784eb113f1103064eb44a8b576",
+      "verified_by": "github_server_sha256",
+      "download_url": "https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/bert-len512-seed43.zip",
+      "anonymous_get_status": 206,
+      "content_range": "bytes 0-0/381053504"
+    },
+    {
+      "name": "bert-len512-seed44.zip",
+      "asset_id": 686625250,
+      "bytes": 381051263,
+      "sha256": "a56bde23114291070a46e88c4a0eafbcfd185af0017c809bce35176192cac078",
+      "server_digest": "sha256:a56bde23114291070a46e88c4a0eafbcfd185af0017c809bce35176192cac078",
+      "verified_by": "github_server_sha256",
+      "download_url": "https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/bert-len512-seed44.zip",
+      "anonymous_get_status": 206,
+      "content_range": "bytes 0-0/381051263"
+    },
+    {
+      "name": "qwen-lora-T01-seed42.zip",
+      "asset_id": 686626600,
+      "bytes": 11937864,
+      "sha256": "7cd36afc5cb73c0fe97c6778b7025550d8bb1dcd428afcd887bb5d8d25ca88eb",
+      "server_digest": "sha256:7cd36afc5cb73c0fe97c6778b7025550d8bb1dcd428afcd887bb5d8d25ca88eb",
+      "verified_by": "github_server_sha256",
+      "download_url": "https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/qwen-lora-T01-seed42.zip",
+      "anonymous_get_status": 206,
+      "content_range": "bytes 0-0/11937864"
+    },
+    {
+      "name": "qwen-lora-T01-seed43.zip",
+      "asset_id": 686626790,
+      "bytes": 11938781,
+      "sha256": "aa6c031ab1c141e4d9fe893e430ab5afe473e3077611789473b6396f90b15b61",
+      "server_digest": "sha256:aa6c031ab1c141e4d9fe893e430ab5afe473e3077611789473b6396f90b15b61",
+      "verified_by": "github_server_sha256",
+      "download_url": "https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/qwen-lora-T01-seed43.zip",
+      "anonymous_get_status": 206,
+      "content_range": "bytes 0-0/11938781"
+    },
+    {
+      "name": "qwen-lora-T01-seed44.zip",
+      "asset_id": 686626933,
+      "bytes": 11938846,
+      "sha256": "c055494976535c8a0850ac18b8ace695ed9dfcc825157b29da60a9bc2a203cae",
+      "server_digest": "sha256:c055494976535c8a0850ac18b8ace695ed9dfcc825157b29da60a9bc2a203cae",
+      "verified_by": "github_server_sha256",
+      "download_url": "https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/qwen-lora-T01-seed44.zip",
+      "anonymous_get_status": 206,
+      "content_range": "bytes 0-0/11938846"
+    },
+    {
+      "name": "README.md",
+      "asset_id": 686627081,
+      "bytes": 3922,
+      "sha256": "e0cdd05c50ad459005d08176f11815957c55139c8e3c71883399c527dbf34093",
+      "server_digest": "sha256:e0cdd05c50ad459005d08176f11815957c55139c8e3c71883399c527dbf34093",
+      "verified_by": "github_server_sha256",
+      "download_url": "https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/README.md",
+      "anonymous_get_status": 206,
+      "content_range": "bytes 0-0/3922"
+    },
+    {
+      "name": "SHA256SUMS",
+      "asset_id": 686627153,
+      "bytes": 816,
+      "sha256": "9abbb572874ce642640228f3ff73e95ed56c887bbcaafff75ab9e5070fad313f",
+      "server_digest": "sha256:9abbb572874ce642640228f3ff73e95ed56c887bbcaafff75ab9e5070fad313f",
+      "verified_by": "github_server_sha256",
+      "download_url": "https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/SHA256SUMS",
+      "anonymous_get_status": 206,
+      "content_range": "bytes 0-0/816"
+    },
+    {
+      "name": "catalog.json",
+      "asset_id": 686627268,
+      "bytes": 13368,
+      "sha256": "823b1198c95429e6221f8fd0eac77fd186d6821033f69ba5bb619fec44320a65",
+      "server_digest": "sha256:823b1198c95429e6221f8fd0eac77fd186d6821033f69ba5bb619fec44320a65",
+      "verified_by": "github_server_sha256",
+      "download_url": "https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/catalog.json",
+      "anonymous_get_status": 206,
+      "content_range": "bytes 0-0/13368"
+    }
+  ],
+  "zip_count": 9,
+  "zip_bytes": 1186034812,
+  "verification": "GitHub computed SHA256 and exact size for all12 assets; anonymous one-byte GET reachability for all12",
+  "training": false,
+  "model_loading": false,
+  "inference": false
+}

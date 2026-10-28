@@ -75,7 +75,7 @@ python -m venv .venv-analysis
 
 真实预测需要原始基座、3个BERT最佳模型、3个TF-IDF Pipeline、3个普通LoRA T01适配器和对应tokenizer／配置。资源身份清单见`artifacts/lora-lock.json`、`qwen-prompt-model-lock.json`、基线审计与逐运行检查点哈希；[下载状态清单](../../artifacts/reproduction-downloads.json)明确区分已随仓库发布与尚未发布的产物。
 
-源码、配置、小型证据适合随仓库下载；训练权重可另放GitHub Release并在README列下载链接、字节大小、SHA256、解压结构和路径配置。**当前尚无验收通过的全部训练产物下载链接，不能据此宣布真实模型复现通过。** 下载原始基座也不能替代已经训练的BERT、Pipeline和适配器。
+9个已训练产物已发布至[GitHub Release](https://github.com/liuguanghui520/NLP/releases/tag/trained-artifacts-20261029-01)，服务端SHA256、字节大小与匿名下载可达性均已核对。完整列表及下载／校验步骤见[训练产物下载说明](训练产物下载说明-20261029.md)。下载完成不等于模型已加载或完成真实预测；Qwen原始基座仍需另取，原始基座也不能替代已训练产物。
 
 `configs/paths.example.json`供各成员填写自己的位置，`configs/paths.local.json`为个人运行配置。高级历史CLI依赖外部工具工作区；本轮默认入口已移除此类前置依赖。真实预测应在资源齐备的独立工作副本执行，使用全新run_id，并核对样本数、模型／数据／提示哈希、逐样本输出和指标。重新训练另行授权，不属于默认验收。
 
