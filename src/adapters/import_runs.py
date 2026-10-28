@@ -141,8 +141,10 @@ def import_all(root, paths):
     save(root/'reports/audits/baselines.json', audit)
     save(root/'results/summaries/validation_searches.json', searches)
     save(root/'results/benchmarks/baselines.json', benchmarks)
-    save(root/'artifacts/final-acceptance.json', dict(status='baseline_audited_qwen_pending',
-         data_files=manifest['files'], baseline_runs=audit, prompt_formats='Preserved complete-method comparison',
-         lora_protocol_sha256=digest(Path(paths['lora_freeze'])/'protocol.json'),
-         source_history_note='Historical train-stage pending statuses preserved'))
+    acceptance=root/'artifacts/final-acceptance.json'
+    if not acceptance.exists() or load(acceptance).get('status')=='baseline_audited_qwen_pending':
+        save(acceptance, dict(status='baseline_audited_qwen_pending',
+             data_files=manifest['files'], baseline_runs=audit, prompt_formats='Preserved complete-method comparison',
+             lora_protocol_sha256=digest(Path(paths['lora_freeze'])/'protocol.json'),
+             source_history_note='Historical train-stage pending statuses preserved'))
     return index

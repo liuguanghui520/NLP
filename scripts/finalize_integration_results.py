@@ -51,6 +51,32 @@ def main():
         accepted.append(dict(run_id=r['run_id'],split=r['split'],n=result['metrics']['n'],
                             derived_predictions_sha256=digest(p),source_sha256=r['source_sha256']))
     save(root/'reports/audits/final-predictions.json',accepted)
+    deployments=[]
+    base_lock=load(root/'artifacts/lora-lock.json')
+    base_bytes=sum((Path(paths['qwen_model'])/name).stat().st_size for name in base_lock['base_model_files'])
+    for b in bench:
+        c=load(queue/b['run_id']/'config.json')
+        if b['method'].startswith('qwen'):
+            adapter_bytes=0
+            if b['method']=='qwen_lora':
+                directory=Path(paths['lora_adapters'][str(b['seed'])])
+                adapter_bytes=sum((directory/name).stat().st_size for name in ['adapter_model.safetensors','adapter_config.json'])
+            size=base_bytes+adapter_bytes
+            scope='All frozen base files incl tokenizer plus adapter weights/config; excludes training optimizer state and Python environment'
+        else:
+            base=Path(paths['bert_results' if b['method']=='bert' else 'baseline_results'])
+            winner=load(base/'frozen_winner.json')['config']['config_id']
+            selected=load(base/f'{b["method"]}-{winner}-seed{b["seed"]}'/'selection.json')
+            directory=Path(selected['model'])
+            size=sum(p.stat().st_size for p in directory.rglob('*') if p.is_file()) if directory.is_dir() else directory.stat().st_size
+            scope='Complete saved best model/tokenizer folder or Pipeline; excludes Python environment'
+        deployments.append(dict(method=b['method'],seed=b['seed'],deployment_bytes=size,scope=scope))
+    save(root/'results/summaries/deployment-storage.json',deployments)
+    save(root/'artifacts/final-acceptance.json',dict(status='code_and_existing_artifact_inference_audited',
+         queue_id=queue.name,freeze_sha256=digest(root/'artifacts/evaluation-freeze.json'),
+         accepted_predictions=accepted,normalized_benchmarks=len(bench),
+         new_machine_reproduction='not_executed',human_error_analysis='pending_student_review',
+         public_artifact_downloads='not_yet_uploaded',historical_training_pending_statuses='preserved'))
     save(root/'reports/audits/failures.json',[
         dict(run_id='smoke-zero-20261028',stage='integration_smoke',reason='WSL Git ownership metadata read failed before inference',
              retry='smoke-zero-retry1-20261028',retry_status='completed'),

@@ -105,7 +105,9 @@ def plot(root):
             latency=[b['benchmark']['mean_ms'] for b in benchmarks if b['method']==r['method']]
             if latency:
                 x=statistics.mean(latency); y=r['metrics']['macro_f1']['mean']
-                ax.scatter(x,y); ax.annotate(r['method'],(x,y))
+                ax.scatter(x,y); ax.annotate(r['method'],(x,y),xytext=(-5,6) if x>60 else (4,6),
+                                            textcoords='offset points',ha='right' if x>60 else 'left')
+        ax.margins(x=.12,y=.15)
         ax.set_xlabel('Mean serial end-to-end latency (ms), actual CPU/GPU routes')
         ax.set_ylabel('Test Macro-F1 mean'); fig.tight_layout()
         fig.savefig(target/'effect-latency.png',dpi=140); plt.close(fig)
