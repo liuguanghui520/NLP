@@ -17,3 +17,11 @@ results/**/swanlog*/
 *.pt
 *.pth
 *.ckpt
+# Integration private/local resources
+configs/paths.local.json
+results/predictions/
+results/errors/
+results/local/
+artifacts/*local*
+*.joblib
+*.sqlite*
