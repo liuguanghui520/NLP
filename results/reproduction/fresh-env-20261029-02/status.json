@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "stage": "fresh_dependency_install_and_independent_offline_replay",
+  "python": "3.13.9",
+  "system_site_packages": false,
+  "venv_created_with_project_writable_temp": true,
+  "install": "12 pinned packages from public PyPI, binary wheels only, existing environments unchanged",
+  "pip_check": "passed",
+  "proxy_used_for_this_host": "http://127.0.0.1:7897",
+  "analysis_evidence": "results/reproduction/independent-20261029-02/full-analysis/status.json",
+  "training": false,
+  "inference": false,
+  "new_machine_model_reproduction": "not_executed"
+}

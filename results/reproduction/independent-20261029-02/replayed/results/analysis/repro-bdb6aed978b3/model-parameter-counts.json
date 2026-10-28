@@ -1,0 +1,137 @@
+[
+  {
+    "method": "bert",
+    "base_or_total_parameters": 102269186,
+    "trainable_parameters": 102269186,
+    "trainable_fraction": 1.0,
+    "meaning": "MacBERT classification model all parameters trained"
+  },
+  {
+    "method": "qwen_lora",
+    "config_id": "B00",
+    "base_parameters": 1720574976,
+    "total_with_adapter": 1722180608,
+    "trainable_parameters": 1605632,
+    "trainable_fraction": 0.0009323249794716072,
+    "adapter_bytes": 6437272,
+    "meaning": "base configuration count plus additional LoRA matrices; training uses adapter matrices only"
+  },
+  {
+    "method": "qwen_lora",
+    "config_id": "L01",
+    "base_parameters": 1720574976,
+    "total_with_adapter": 1722180608,
+    "trainable_parameters": 1605632,
+    "trainable_fraction": 0.0009323249794716072,
+    "adapter_bytes": 6437272,
+    "meaning": "base configuration count plus additional LoRA matrices; training uses adapter matrices only"
+  },
+  {
+    "method": "qwen_lora",
+    "config_id": "L02",
+    "base_parameters": 1720574976,
+    "total_with_adapter": 1722180608,
+    "trainable_parameters": 1605632,
+    "trainable_fraction": 0.0009323249794716072,
+    "adapter_bytes": 6437272,
+    "meaning": "base configuration count plus additional LoRA matrices; training uses adapter matrices only"
+  },
+  {
+    "method": "qwen_lora",
+    "config_id": "L03",
+    "base_parameters": 1720574976,
+    "total_with_adapter": 1722180608,
+    "trainable_parameters": 1605632,
+    "trainable_fraction": 0.0009323249794716072,
+    "adapter_bytes": 6437272,
+    "meaning": "base configuration count plus additional LoRA matrices; training uses adapter matrices only"
+  },
+  {
+    "method": "qwen_lora",
+    "config_id": "L04",
+    "base_parameters": 1720574976,
+    "total_with_adapter": 1722180608,
+    "trainable_parameters": 1605632,
+    "trainable_fraction": 0.0009323249794716072,
+    "adapter_bytes": 6437272,
+    "meaning": "base configuration count plus additional LoRA matrices; training uses adapter matrices only"
+  },
+  {
+    "method": "qwen_lora",
+    "config_id": "L05",
+    "base_parameters": 1720574976,
+    "total_with_adapter": 1722180608,
+    "trainable_parameters": 1605632,
+    "trainable_fraction": 0.0009323249794716072,
+    "adapter_bytes": 6437272,
+    "meaning": "base configuration count plus additional LoRA matrices; training uses adapter matrices only"
+  },
+  {
+    "method": "qwen_lora",
+    "config_id": "R01",
+    "base_parameters": 1720574976,
+    "total_with_adapter": 1723786240,
+    "trainable_parameters": 3211264,
+    "trainable_fraction": 0.001862913118508244,
+    "adapter_bytes": 12859984,
+    "meaning": "base configuration count plus additional LoRA matrices; training uses adapter matrices only"
+  },
+  {
+    "method": "qwen_lora",
+    "config_id": "D01",
+    "base_parameters": 1720574976,
+    "total_with_adapter": 1722180608,
+    "trainable_parameters": 1605632,
+    "trainable_fraction": 0.0009323249794716072,
+    "adapter_bytes": 6437272,
+    "meaning": "base configuration count plus additional LoRA matrices; training uses adapter matrices only"
+  },
+  {
+    "method": "qwen_lora",
+    "config_id": "D02",
+    "base_parameters": 1720574976,
+    "total_with_adapter": 1722180608,
+    "trainable_parameters": 1605632,
+    "trainable_fraction": 0.0009323249794716072,
+    "adapter_bytes": 6437272,
+    "meaning": "base configuration count plus additional LoRA matrices; training uses adapter matrices only"
+  },
+  {
+    "method": "qwen_lora",
+    "config_id": "T01",
+    "base_parameters": 1720574976,
+    "total_with_adapter": 1723786240,
+    "trainable_parameters": 3211264,
+    "trainable_fraction": 0.001862913118508244,
+    "adapter_bytes": 12874640,
+    "meaning": "base configuration count plus additional LoRA matrices; training uses adapter matrices only"
+  },
+  {
+    "method": "tfidf",
+    "config_id": "char_2_4",
+    "features": 192406,
+    "fitted_coefficients": 192407,
+    "meaning": "binary logistic coefficients plus intercept; not neural parameter count"
+  },
+  {
+    "method": "tfidf",
+    "config_id": "char_1_3",
+    "features": 130996,
+    "fitted_coefficients": 130997,
+    "meaning": "binary logistic coefficients plus intercept; not neural parameter count"
+  },
+  {
+    "method": "tfidf",
+    "config_id": "char_2_5",
+    "features": 200000,
+    "fitted_coefficients": 200001,
+    "meaning": "binary logistic coefficients plus intercept; not neural parameter count"
+  },
+  {
+    "method": "tfidf",
+    "config_id": "word_1_2",
+    "features": 55013,
+    "fitted_coefficients": 55014,
+    "meaning": "binary logistic coefficients plus intercept; not neural parameter count"
+  }
+]

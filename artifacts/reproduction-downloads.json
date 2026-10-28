@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/liuguanghui520/NLP",
+  "source_ref": "codex/integration",
+  "source_zip": "https://github.com/liuguanghui520/NLP/archive/refs/heads/codex/integration.zip",
+  "offline_evidence": "Included in repository; exact inputs listed by configs/reproduction.json",
+  "qwen_base": {
+    "source": "https://modelscope.cn/models/Qwen/Qwen3-1.7B",
+    "identity": "artifacts/lora-lock.json and artifacts/qwen-prompt-model-lock.json",
+    "weights_bundled": false
+  },
+  "trained_artifacts": [
+    {
+      "method": "bert",
+      "seed": 42,
+      "run_id": "bert-len512-seed42",
+      "checkpoint_sha256": "d8e15d741d95bb01a33b3fff035041fe5b960c600905613545d9aef7db3e52ee",
+      "download_url": null,
+      "archive_sha256": null,
+      "status": "download_not_published_or_verified"
+    },
+    {
+      "method": "bert",
+      "seed": 43,
+      "run_id": "bert-len512-seed43",
+      "checkpoint_sha256": "9a250db604deb2f416d3fc7795965e9788dee8ca59aa039349a5a7a29d558c27",
+      "download_url": null,
+      "archive_sha256": null,
+      "status": "download_not_published_or_verified"
+    },
+    {
+      "method": "bert",
+      "seed": 44,
+      "run_id": "bert-len512-seed44",
+      "checkpoint_sha256": "04f778b144d3cd1ad2140019568d207350fcb7b1061a51a73526aa6ee34040ad",
+      "download_url": null,
+      "archive_sha256": null,
+      "status": "download_not_published_or_verified"
+    },
+    {
+      "method": "tfidf",
+      "seed": 42,
+      "run_id": "tfidf-char_1_3-seed42",
+      "checkpoint_sha256": "0e1d76c5990925df6de24ce68d73dd193954c5f849b348996f506d372cf35f6c",
+      "download_url": null,
+      "archive_sha256": null,
+      "status": "download_not_published_or_verified"
+    },
+    {
+      "method": "tfidf",
+      "seed": 43,
+      "run_id": "tfidf-char_1_3-seed43",
+      "checkpoint_sha256": "b7c84a4f5519103c90c6ade007a821642931faa5dccbd851e489e52425169675",
+      "download_url": null,
+      "archive_sha256": null,
+      "status": "download_not_published_or_verified"
+    },
+    {
+      "method": "tfidf",
+      "seed": 44,
+      "run_id": "tfidf-char_1_3-seed44",
+      "checkpoint_sha256": "ba3ce042b26d303731f91f2fd9834d8088070e98b1fbe744f3bdd72f64081348",
+      "download_url": null,
+      "archive_sha256": null,
+      "status": "download_not_published_or_verified"
+    },
+    {
+      "method": "qwen_lora",
+      "seed": 42,
+      "run_id": "test-lora-seed42",
+      "checkpoint_sha256": "6baed5a97d4549011a8da6f3212a38772531081adf8995176583120b3c82fcf5",
+      "download_url": null,
+      "archive_sha256": null,
+      "status": "download_not_published_or_verified"
+    },
+    {
+      "method": "qwen_lora",
+      "seed": 43,
+      "run_id": "test-lora-seed43",
+      "checkpoint_sha256": "39436195aa545351e6f0787f20ecf507e3e33045eb4f3aa0bc7483cc9d9aa4aa",
+      "download_url": null,
+      "archive_sha256": null,
+      "status": "download_not_published_or_verified"
+    },
+    {
+      "method": "qwen_lora",
+      "seed": 44,
+      "run_id": "test-lora-seed44",
+      "checkpoint_sha256": "f5b21a7ba292c9365e83a4cc898459c7751e90b4436df6279fcaff75af01d422",
+      "download_url": null,
+      "archive_sha256": null,
+      "status": "download_not_published_or_verified"
+    }
+  ],
+  "real_model_reproduction": "not_executed_this_stage",
+  "download_policy": "Fill only URLs actually uploaded and checked; source ZIP does not include every trained model"
+}

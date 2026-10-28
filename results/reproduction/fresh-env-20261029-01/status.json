@@ -1,0 +1,13 @@
+{
+  "stage": "venv_creation",
+  "status": "failed",
+  "command": [
+    "python",
+    "-m",
+    "venv",
+    "results\\reproduction\\fresh-env-20261029-01\\venv"
+  ],
+  "error": "ensurepip returned non-zero exit status 1; original failed environment retained",
+  "training": false,
+  "inference": false
+}

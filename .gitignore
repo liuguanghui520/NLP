@@ -14,3 +14,10 @@ node_modules/
 !.env.example
 *.pem
 *.key
+configs/paths.local.json
+.venv-analysis/
+results/reproduction/**/source-copy/
+results/reproduction/**/mpl-cache/
+results/reproduction/**/venv/
+results/reproduction/**/pip-cache/
+results/reproduction/**/temp/

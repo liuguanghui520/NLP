@@ -1,0 +1,7 @@
+{
+  "changed_file": "README.md",
+  "previous_sha256": "d6e4318c2377a78c736be36447a787f62b642bfe0d4d5ba068209784ae1c1f28",
+  "preserved_previous_bytes": "docs/history/README-before-reproduction-20261029.md",
+  "new_sha256": "890940eca32bbfff60a903fbe17a1df8a9a7cece2386f2db9e478b16e86ffe52",
+  "reason": "Intentional reproducibility entry rewrite; prior report manifests retain their historical README input hash"
+}

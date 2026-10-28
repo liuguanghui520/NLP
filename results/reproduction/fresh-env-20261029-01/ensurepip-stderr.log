@@ -1,0 +1,61 @@
+Traceback (most recent call last):
+  File "Z:\miniconda\Lib\ensurepip\__init__.py", line 159, in _bootstrap
+    copy2(bundled_wheel_path, tmp_wheel_path)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\miniconda\Lib\shutil.py", line 468, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\miniconda\Lib\shutil.py", line 262, in copyfile
+    with open(dst, 'wb') as fdst:
+         ~~~~^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\lgh\\AppData\\Local\\Packages\\sandbox.{db1b02a1-d72e-418b-9b7d-0d8cbf140534}\\AC\\Temp\\tmp6vek0841\\pip-25.2-py3-none-any.whl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Z:\miniconda\Lib\shutil.py", line 631, in _rmtree_unsafe
+    os.rmdir(path)
+    ~~~~~~~~^^^^^^
+PermissionError: [WinError 5] �ܾ����ʡ�: 'C:\\Users\\lgh\\AppData\\Local\\Packages\\sandbox.{db1b02a1-d72e-418b-9b7d-0d8cbf140534}\\AC\\Temp\\tmp6vek0841'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "Z:\miniconda\Lib\ensurepip\__main__.py", line 5, in <module>
+    sys.exit(ensurepip._main())
+             ~~~~~~~~~~~~~~~^^
+  File "Z:\miniconda\Lib\ensurepip\__init__.py", line 257, in _main
+    return _bootstrap(
+        root=args.root,
+    ...<4 lines>...
+        default_pip=args.default_pip,
+    )
+  File "Z:\miniconda\Lib\ensurepip\__init__.py", line 153, in _bootstrap
+    with tempfile.TemporaryDirectory() as tmpdir:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "Z:\miniconda\Lib\tempfile.py", line 951, in __exit__
+    self.cleanup()
+    ~~~~~~~~~~~~^^
+  File "Z:\miniconda\Lib\tempfile.py", line 955, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\miniconda\Lib\tempfile.py", line 935, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "Z:\miniconda\Lib\shutil.py", line 790, in rmtree
+    return _rmtree_unsafe(path, onexc)
+  File "Z:\miniconda\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.rmdir, path, err)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\miniconda\Lib\tempfile.py", line 907, in onexc
+    _resetperms(path)
+    ~~~~~~~~~~~^^^^^^
+  File "Z:\miniconda\Lib\tempfile.py", line 287, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\miniconda\Lib\tempfile.py", line 276, in _dont_follow_symlinks
+    func(path, *args, follow_symlinks=False)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] �ܾ����ʡ�: 'C:\\Users\\lgh\\AppData\\Local\\Packages\\sandbox.{db1b02a1-d72e-418b-9b7d-0d8cbf140534}\\AC\\Temp\\tmp6vek0841'

@@ -1,0 +1,45 @@
+name: Saved-result reproduction
+
+on:
+  push:
+    branches: [main, codex/integration]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-audit:
+    name: Standard-library audit (${{ matrix.os }}, Python ${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.13']
+    env:
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Recompute frozen results without third-party site packages
+        run: python -S reproduce.py --output results/reproduction/ci
+      - name: Show scope and main results
+        if: always()
+        shell: python
+        run: |
+          import os
+          from pathlib import Path
+          directory = Path('results/reproduction/ci')
+          status = directory / 'status.json'
+          if status.exists():
+              print(status.read_text(encoding='utf-8'))
+          result = directory / '结果核查.md'
+          if result.exists():
+              with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as stream:
+                  stream.write(result.read_text(encoding='utf-8'))

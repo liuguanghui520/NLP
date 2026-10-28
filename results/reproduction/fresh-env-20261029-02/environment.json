@@ -1,0 +1,9 @@
+{
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\reproduction\\fresh-env-20261029-02\\venv\\Scripts\\python.exe",
+  "prefix": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\reproduction\\fresh-env-20261029-02\\venv",
+  "base_prefix": "Z:\\miniconda",
+  "numpy": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\reproduction\\fresh-env-20261029-02\\venv\\Lib\\site-packages\\numpy\\__init__.py",
+  "scipy": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\reproduction\\fresh-env-20261029-02\\venv\\Lib\\site-packages\\scipy\\__init__.py",
+  "matplotlib": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\reproduction\\fresh-env-20261029-02\\venv\\Lib\\site-packages\\matplotlib\\__init__.py"
+}

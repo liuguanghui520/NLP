@@ -1,0 +1,21 @@
+{
+  "completed_at": "2026-10-29T06:22:37.847817+08:00",
+  "scope": "Same Windows machine, fresh isolated venv and independent Unicode/space source directory; not a second machine or true-model replay",
+  "source_snapshot": "source-snapshot.json",
+  "stdlib_status": "stdlib-check/status.json",
+  "analysis_status": "full-analysis/status.json",
+  "replayed_analysis_id": "repro-bdb6aed978b3",
+  "replayed_result_root": "replayed",
+  "audited_runs": 16,
+  "metric_max_difference": 0.0,
+  "software_checks": {
+    "tests": 36,
+    "failures": 0,
+    "errors": 0
+  },
+  "figure_pairs": 22,
+  "fresh_environment": "results/reproduction/fresh-env-20261029-02/environment.json",
+  "new_machine_model_reproduction": "not_executed",
+  "teacher_acceptance": "not_recorded",
+  "AI_assistance": "Implemented reproduction delivery and ran authorized offline verification only"
+}

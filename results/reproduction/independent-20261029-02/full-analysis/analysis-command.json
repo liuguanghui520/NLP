@@ -1,0 +1,8 @@
+[
+  "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\reproduction\\fresh-env-20261029-02\\venv\\Scripts\\python.exe",
+  "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\reproduction\\independent-20261029-02\\source-copy\\独立源码 含空格\\scripts\\build_comparison_report.py",
+  "--config",
+  "configs/analysis/comparison-formal-v1.json",
+  "--run-id",
+  "repro-bdb6aed978b3"
+]

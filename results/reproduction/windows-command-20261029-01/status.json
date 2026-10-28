@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "mode": "saved_predictions_audit",
+  "command": [
+    "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\reproduce.py",
+    "--output",
+    "results/reproduction/windows-command-20261029-01"
+  ],
+  "environment": {
+    "python": "3.13.9",
+    "executable": "Z:\\miniconda\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "site_disabled": false,
+    "git_commit": "2ef5457f2b77ce1f5c50861a13c8034e04b5e041",
+    "working_tree_dirty": true
+  },
+  "training": false,
+  "model_loading": false,
+  "inference": false,
+  "new_machine_model_reproduction": "not_executed",
+  "teacher_acceptance": "not_recorded",
+  "entry_source_sha256": {
+    "reproduce.py": "2e3a5849dbb98fe5c23492531c7679a54e2c11f47a6ef29e68003cb2bfe97b2b",
+    "src/reproduction.py": "76fb9d09e507e093840b9eac004667aff966bc089eb56e5e8f04de1eecacf862",
+    "configs/reproduction.json": "f05a0d08a1774ad30359f7f8f5596d8517c0a35ed6104b26a35a80de225dec78"
+  },
+  "seed_registry": {
+    "data_split": 67,
+    "few_shot_sampling": 67,
+    "latency_sampling": 67,
+    "smoke_sampling": 67,
+    "training": [
+      42,
+      43,
+      44
+    ],
+    "bootstrap": 67,
+    "plot_representative": 42,
+    "prompt_decoding": "deterministic; not independent training repeats"
+  },
+  "audited_runs": 16,
+  "max_metric_difference": 0.0,
+  "elapsed_seconds": 1.0904735000003711,
+  "completed_at": "2026-10-28T22:24:29.616130+00:00",
+  "output_sha256": {
+    "config.json": "f05a0d08a1774ad30359f7f8f5596d8517c0a35ed6104b26a35a80de225dec78",
+    "input-sha256.json": "fad6074dd1b162d37f82ca13680c24159794fa82c111df81dacf3615741724a2",
+    "metrics.json": "f132957001c9cf92eed3af161d682f691af8a409009bd36feb93a2ab58d2a515",
+    "结果核查.md": "24239c74ce385f131499d7114c989956819fa3fa8420b8f88861b4d3282ada1b"
+  }
+}

@@ -1,0 +1,431 @@
+[
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed42",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed42",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 90,
+    "support": {
+      "0": 245,
+      "1": 532
+    },
+    "warning": null,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed42",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed43",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed43",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 90,
+    "support": {
+      "0": 245,
+      "1": 532
+    },
+    "warning": null,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed43",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed44",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed44",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 90,
+    "support": {
+      "0": 245,
+      "1": 532
+    },
+    "warning": null,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "tfidf",
+    "run_id": "tfidf-char_1_3-seed44",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed42",
+    "token_truncated": true,
+    "n": 4,
+    "errors": 0,
+    "support": {
+      "0": 1,
+      "1": 3
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed42",
+    "token_truncated": false,
+    "n": 773,
+    "errors": 56,
+    "support": {
+      "0": 244,
+      "1": 529
+    },
+    "warning": null,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed42",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed43",
+    "token_truncated": true,
+    "n": 4,
+    "errors": 0,
+    "support": {
+      "0": 1,
+      "1": 3
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed43",
+    "token_truncated": false,
+    "n": 773,
+    "errors": 61,
+    "support": {
+      "0": 244,
+      "1": 529
+    },
+    "warning": null,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed43",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed44",
+    "token_truncated": true,
+    "n": 4,
+    "errors": 0,
+    "support": {
+      "0": 1,
+      "1": 3
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed44",
+    "token_truncated": false,
+    "n": 773,
+    "errors": 55,
+    "support": {
+      "0": 244,
+      "1": 529
+    },
+    "warning": null,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "bert",
+    "run_id": "bert-len512-seed44",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_zero_shot",
+    "run_id": "test-qwen_zero_shot",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_zero_shot",
+    "run_id": "test-qwen_zero_shot",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 314,
+    "support": {
+      "0": 245,
+      "1": 532
+    },
+    "warning": null,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_zero_shot",
+    "run_id": "test-qwen_zero_shot",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_few_shot",
+    "run_id": "test-qwen_few_shot",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_few_shot",
+    "run_id": "test-qwen_few_shot",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 182,
+    "support": {
+      "0": 245,
+      "1": 532
+    },
+    "warning": null,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_few_shot",
+    "run_id": "test-qwen_few_shot",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed42",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed42",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 59,
+    "support": {
+      "0": 245,
+      "1": 532
+    },
+    "warning": null,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed42",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed43",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed43",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 61,
+    "support": {
+      "0": 245,
+      "1": 532
+    },
+    "warning": null,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed43",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed44",
+    "token_truncated": true,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed44",
+    "token_truncated": false,
+    "n": 777,
+    "errors": 60,
+    "support": {
+      "0": 245,
+      "1": 532
+    },
+    "warning": null,
+    "scope": "route-specific subgroup; unknown metadata retained"
+  },
+  {
+    "method": "qwen_lora",
+    "run_id": "test-lora-seed44",
+    "token_truncated": null,
+    "n": 0,
+    "errors": 0,
+    "support": {
+      "0": 0,
+      "1": 0
+    },
+    "warning": "small or single-class subgroup: descriptive only",
+    "scope": "route-specific subgroup; unknown metadata retained"
+  }
+]
