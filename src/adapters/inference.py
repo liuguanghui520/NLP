@@ -37,8 +37,8 @@ def run(root, paths, args):
     state = dict(method=method, split=split, seed=args.seed if method in ['bert','tfidf','qwen_lora'] else None,
                  run_id=out.name, batch=1, threads=4, precision='fp32' if method in ['bert','tfidf'] else 'bfloat16',
                  data_sha256=digest(data/f'{split}.jsonl'), freeze_sha256=digest(root/'artifacts/evaluation-freeze.json'),
-                 git_commit=subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'], text=True).strip(),
-                 git_dirty=bool(subprocess.check_output(['git','-C',str(root),'status','--porcelain'], text=True).strip()),
+                 git_commit=subprocess.check_output(['git','-c',f'safe.directory={root}','-C',str(root),'rev-parse','HEAD'], text=True).strip(),
+                 git_dirty=bool(subprocess.check_output(['git','-c',f'safe.directory={root}','-C',str(root),'status','--porcelain'], text=True).strip()),
                  source_sha256=digest(__file__), versions={n:importlib.metadata.version(n) for n in ['torch','transformers','peft','scikit-learn']})
     try:
         if method in ['bert','tfidf']:
