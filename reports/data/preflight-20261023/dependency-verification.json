@@ -1,0 +1,10 @@
+{
+  "existing_version_changes": {},
+  "new_packages": {
+    "scikit-learn": "1.9.1",
+    "narwhals": "2.27.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "pip_check": "No broken requirements found.\n",
+  "pip_check_exit": 0
+}

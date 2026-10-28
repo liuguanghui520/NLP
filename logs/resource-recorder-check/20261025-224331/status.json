@@ -1,0 +1,25 @@
+{
+  "status": "completed",
+  "command": [
+    "/home/lgh/.venvs/llamafactory/bin/python",
+    "-c",
+    "import time; print(\"software child check\", flush=True); time.sleep(2)"
+  ],
+  "sample_interval_seconds": 0.25,
+  "started_utc": "2026-10-25T14:43:31.344817+00:00",
+  "wall_boundary": "Child process start through exit, including loading, training, validation and saves",
+  "rss_boundary": "Sampled sum of process-tree RSS; shared pages may be counted more than once",
+  "gpu_boundary": "Sampled whole-device NVIDIA readings; includes other processes; not exact CUDA process peaks",
+  "energy_boundary": "Trapezoidal integral of device power samples only; not whole-laptop wall energy or monetary cost",
+  "exit_code": 0,
+  "ended_utc": "2026-10-25T14:43:33.380665+00:00",
+  "wall_seconds": 2.032278308000059,
+  "allocated_gpu_hours": 0.0005645217522222386,
+  "sampled_peaks": {
+    "process_tree_rss_bytes": 17104896,
+    "device_memory_mib": 1124.0
+  },
+  "power_samples": 6,
+  "sampled_device_energy_wh": 0.001244085475033128,
+  "sampling_errors": []
+}

@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "errors": [],
+  "metrics": {
+    "n": 4,
+    "accuracy": 0.75,
+    "macro_f1": 0.42857142857142855,
+    "weighted_f1": 0.8571428571428571,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "1": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ]
+    ],
+    "matrix_rows": [
+      0,
+      1
+    ],
+    "matrix_columns": [
+      0,
+      1,
+      "invalid"
+    ],
+    "status_counts": {
+      "ok": 4
+    }
+  }
+}

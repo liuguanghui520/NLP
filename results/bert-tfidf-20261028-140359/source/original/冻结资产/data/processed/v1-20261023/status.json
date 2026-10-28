@@ -1,0 +1,43 @@
+{
+  "status": "ok",
+  "frozen": true,
+  "version": "v1-20261023",
+  "built_by": "rebuild_data.py（纯 Python 实现，复刻 scripts/process_data.py 的清洗规则；本机 sklearn 的 C 扩展被 Windows 应用控制策略拦截，故不依赖 sklearn）",
+  "split_source": "_repo/NLP-codex-data-processing-v1/reports/data/v1-20261023/split_ids.json（组里已冻结的划分归属，直接复用，未重新抽样）",
+  "split_seed": 67,
+  "model_training_seed": 42,
+  "max_chars": 512,
+  "source_sha256": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0",
+  "total_records": 7766,
+  "valid_records": 7763,
+  "splits": {
+    "train": 6210,
+    "validation": 776,
+    "test": 777
+  },
+  "verification": {
+    "compared_against": "_repo/NLP-codex-data-processing-v1/reports/data/v1-20261023/statistics.json",
+    "matched_fields": [
+      "source_sha256",
+      "total_records",
+      "valid_records",
+      "raw_labels",
+      "exclusions",
+      "conflict_records",
+      "truncated_count",
+      "truncated_ratio",
+      "length_distribution",
+      "splits"
+    ],
+    "matched_fields_count": 10,
+    "mismatched_fields_count": 0,
+    "cross_split_id_unique": true,
+    "cross_split_text_unique": true
+  },
+  "fixed_subsets": {
+    "fewshot_ids.json": "组里冻结的 4 条少样本示例，顺序为 负/正/负/正",
+    "latency_ids.json": "测试集分层抽样 200 条，用于延迟计时（batch=1，预热 20 条）",
+    "smoke_ids.json": "训练集 20 条，正负各 10 条，种子 67，仅用于工程验收"
+  },
+  "license_note": "原仓库仅有模板式 Apache-2.0 标记，未找到能核实评论正文再分发权利的独立依据；redistribution_verified=false。因此本数据包只在 Kaggle session 内以 Add Input 方式使用，不建公开 Dataset，评论正文不进入课程提交包。"
+}

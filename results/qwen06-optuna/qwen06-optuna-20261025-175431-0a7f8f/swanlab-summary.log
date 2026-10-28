@@ -1,0 +1,28 @@
+/home/lgh/.venvs/llamafactory/lib/python3.11/site-packages/swanlab/data/run/metadata/hardware/gpu/nvidia.py:10: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml
+
+[1m[34mswanlab[0m[0m: \ Waiting for the swanlab cloud response.
+                                                                                                    
+[1m[34mswanlab[0m[0m: swanlab version 0.10.2 is available!  Upgrade: `pip install -U swanlab`
+
+[1m[34mswanlab[0m[0m: \ Getting project...
+                                                                                                    
+
+[1m[34mswanlab[0m[0m: \ Creating experiment...
+[1m[34mswanlab[0m[0m: | Creating experiment...
+                                                                                                    
+[1m[34mswanlab[0m[0m: Tracking run with swanlab version 0.6.4
+[1m[34mswanlab[0m[0m: Run data will be saved locally in [35m[1m/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/qwen06-optuna/qwen06-optuna-20261025-175431-0a7f8f/swanlog-summary/run-20261025_175647-320cfb7e[0m[0m
+[1m[34mswanlab[0m[0m: 👋 Hi [1m[39mliuguanghui520[0m[0m, welcome to swanlab!
+[1m[34mswanlab[0m[0m: Syncing run [33mqwen06-optuna-20261025-175431-0a7f8f-summary[0m to the cloud
+[1m[34mswanlab[0m[0m: 🏠 View project at [34m[4mhttps://swanlab.cn/@liuguanghui520/nlp-qwen06-experience[0m[0m
+[1m[34mswanlab[0m[0m: 🚀 View run at [34m[4mhttps://swanlab.cn/@liuguanghui520/nlp-qwen06-experience/runs/7fy30hfkqocq83nm86n01[0m[0m
+[1m[34mswanlab[0m[0m: 🏠 View project at [34m[4mhttps://swanlab.cn/@liuguanghui520/nlp-qwen06-experience[0m[0m
+[1m[34mswanlab[0m[0m: 🚀 View run at [34m[4mhttps://swanlab.cn/@liuguanghui520/nlp-qwen06-experience/runs/7fy30hfkqocq83nm86n01[0m[0m
+[1m[34mswanlab[0m[0m: Waiting for uploading complete
+
+[1m[34mswanlab[0m[0m: \ Updating experiment status...
+                                                                                                    
+
+[1m[34mswanlab[0m[0m: \ Updating experiment status...
+                                                                                                    

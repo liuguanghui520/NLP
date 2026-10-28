@@ -1,0 +1,9 @@
+{
+  "config": "lr_1e5",
+  "val_acc": 0.9162371134020618,
+  "rule": "验证集准确率最高（最后一个 epoch），与 TF-IDF/LoRA/提示臂同一规则",
+  "test_acc": 0.9228,
+  "macro_f1": 0.9108,
+  "weighted_f1": 0.9229,
+  "seconds": 8325
+}

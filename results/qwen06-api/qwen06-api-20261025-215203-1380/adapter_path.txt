@@ -1,0 +1,1 @@
+/home/lgh/LLaMA-Factory/project-workspaces/qwen06-optuna/qwen06-optuna-20261025-175431-0a7f8f/trial-001/adapter

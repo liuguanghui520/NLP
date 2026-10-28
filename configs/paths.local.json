@@ -1,0 +1,15 @@
+{
+  "lora_adapters": {
+    "43": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S43/adapter/checkpoint-1167",
+    "42": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/T01/adapter/checkpoint-1167",
+    "44": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S44/adapter/checkpoint-1167"
+  },
+  "qwen_model": "/home/lgh/models/Qwen3-1.7B",
+  "bert_results": "/home/lgh/experiments/bert-tfidf-20261028-140359/bert-formal",
+  "data": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/data/processed/v1-20261023",
+  "prompt_delivery": "/mnt/c/Users/lgh/Desktop/NLP融合/零样本少样本",
+  "lora_freeze": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/qwen17-freeze/qwen17-lora-freeze-20261026-221453-a2c83b",
+  "macbert_model": "/home/lgh/models/chinese-macbert-base",
+  "baseline_results": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal",
+  "factory_root": "/home/lgh/LLaMA-Factory"
+}

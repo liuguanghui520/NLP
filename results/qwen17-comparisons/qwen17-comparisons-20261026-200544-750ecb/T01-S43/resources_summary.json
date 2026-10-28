@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "command": [
+    "/home/lgh/.venvs/llamafactory/bin/python",
+    "-u",
+    "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/profile_qwen17.py",
+    "--worker",
+    "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S43/train.json",
+    "--data",
+    "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/data/processed/v1-20261023"
+  ],
+  "sample_interval_seconds": 1.0,
+  "started_utc": "2026-10-26T12:08:33.916110+00:00",
+  "wall_boundary": "Legacy wall_seconds uses perf_counter elapsed; includes loading, training, validation and saves; compare utc_elapsed_seconds for clock/suspend discrepancies",
+  "rss_boundary": "Sampled sum of process-tree RSS; shared pages may be counted more than once",
+  "gpu_boundary": "Sampled whole-device NVIDIA readings; includes other processes; not exact CUDA process peaks",
+  "energy_boundary": "Trapezoidal integral of device power samples only; not whole-laptop wall energy or monetary cost",
+  "exit_code": 0,
+  "ended_utc": "2026-10-26T13:08:14.084049+00:00",
+  "wall_seconds": 3580.167393051,
+  "perf_counter_elapsed_seconds": 3580.167393051,
+  "utc_elapsed_seconds": 3580.167939,
+  "clock_difference_seconds": 0.000545948999842949,
+  "gpu_hours_boundary": "Legacy allocated_gpu_hours uses perf_counter elapsed; not utilization-weighted or verified against suspension",
+  "allocated_gpu_hours": 0.9944909425141667,
+  "sampled_peaks": {
+    "process_tree_rss_bytes": 3034390528,
+    "device_memory_mib": 6278.0
+  },
+  "power_samples": 3410,
+  "sampled_device_energy_wh": 48.27294455196207,
+  "sampling_errors": [
+    "CalledProcessError(255, ['nvidia-smi', '--id=0', '--query-gpu=memory.used,utilization.gpu,power.draw', '--format=csv,noheader,nounits'])"
+  ]
+}

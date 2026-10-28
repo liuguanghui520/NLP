@@ -1,0 +1,93 @@
+{
+  "version": "v1-20261023",
+  "model_id": "Qwen/Qwen3-1.7B",
+  "model_revision": "4855588ea1a12789f2e965e5f52a9e4a24c94b2a",
+  "tokenizer_class": "Qwen2Tokenizer",
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "target_marker": "{{comment}}",
+  "generation_config": {
+    "enable_thinking": false,
+    "do_sample": false,
+    "num_beams": 1,
+    "max_new_tokens": 8,
+    "temperature": null,
+    "top_p": null,
+    "top_k": null
+  },
+  "modes": {
+    "qwen_zero_shot": {
+      "prompt_id": "qwen3_1p7b_zero_shot_v1",
+      "messages_template": [
+        {
+          "role": "user",
+          "content": "判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n{{comment}}\n</评论>"
+        }
+      ],
+      "rendered_template": "<|im_start|>user\n判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n{{comment}}\n</评论><|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "template_sha256": "0dcdb7c7fda4a4d8b422e05b4278da1c5b0ed9d3bf78d3228d09209d7b47df17"
+    },
+    "qwen_few_shot": {
+      "prompt_id": "qwen3_1p7b_few_shot_4_v1",
+      "messages_template": [
+        {
+          "role": "user",
+          "content": "[REDACTED_FROZEN_FEW_SHOT_EXAMPLE]\noriginal_content_sha256=10501456189bad460321477d60cb0ca929ba7ef11e87656a5eae8a42cc5d0acc"
+        },
+        {
+          "role": "assistant",
+          "content": "0"
+        },
+        {
+          "role": "user",
+          "content": "[REDACTED_FROZEN_FEW_SHOT_EXAMPLE]\noriginal_content_sha256=9057a93959c0effcea1ed599d04a4cb1f3ab2ba27d15580c93b3ac107f39a567"
+        },
+        {
+          "role": "assistant",
+          "content": "1"
+        },
+        {
+          "role": "user",
+          "content": "[REDACTED_FROZEN_FEW_SHOT_EXAMPLE]\noriginal_content_sha256=3366ce549ae8df1bf6e58409ce07431287507f35cd550875fd892e51359697a4"
+        },
+        {
+          "role": "assistant",
+          "content": "0"
+        },
+        {
+          "role": "user",
+          "content": "[REDACTED_FROZEN_FEW_SHOT_EXAMPLE]\noriginal_content_sha256=0ea3d38d9f17dc2a979c1836f6b1379a8530bd47e1411c7a1a74e9019e767c87"
+        },
+        {
+          "role": "assistant",
+          "content": "1"
+        },
+        {
+          "role": "user",
+          "content": "判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n{{comment}}\n</评论>"
+        }
+      ],
+      "rendered_template": "[REDACTED: rendered few-shot prompt contains training review text; original_registry_sha256=0a3d58b676d9d5fdcf5d0ebe26bf1840ae5bb0d8c0394865705a2ae18653bfa6]",
+      "example_ids": [
+        "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5542",
+        "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3812",
+        "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5693",
+        "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4407"
+      ],
+      "example_order": [
+        "negative",
+        "positive",
+        "negative",
+        "positive"
+      ],
+      "template_sha256": "a3ca5bf3a65486d39345948ad16201332ef8573acb8e8ba0c753849f9259ac3c"
+    }
+  },
+  "package_sanitization": {
+    "status": "sanitized",
+    "original_registry_sha256": "0a3d58b676d9d5fdcf5d0ebe26bf1840ae5bb0d8c0394865705a2ae18653bfa6",
+    "redacted": [
+      "qwen_few_shot.messages_template example bodies",
+      "qwen_few_shot.rendered_template"
+    ]
+  }
+}

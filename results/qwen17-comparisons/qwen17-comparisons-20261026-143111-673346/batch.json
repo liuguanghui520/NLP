@@ -1,0 +1,82 @@
+{
+  "run_id": "qwen17-comparisons-20261026-143111-673346",
+  "status": "interrupted",
+  "project_index": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/qwen17-comparisons/qwen17-comparisons-20261026-143111-673346",
+  "training_workspace": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-143111-673346",
+  "data_directory": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/data/processed/v1-20261023",
+  "reference_run_id": "qwen17-full-20261025-231706-ea8173",
+  "baseline_retrained": false,
+  "jobs": [
+    {
+      "id": "T01-S43",
+      "state": "interrupted",
+      "training_directory": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-143111-673346/T01-S43",
+      "config_sha256": "1dc95418783e852ef19f01de2af5c228b89d9e4bdedc8acbd75aa88ac1480970",
+      "swanlab_experiment": "qwen17-comparisons-20261026-143111-673346-T01-S43",
+      "seed": 43,
+      "selected_configuration": "T01",
+      "started_utc": "2026-10-26T06:32:28.978039+00:00",
+      "ended_utc": "2026-10-26T06:32:31.891043+00:00"
+    },
+    {
+      "id": "T01-S44",
+      "state": "pending",
+      "training_directory": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-143111-673346/T01-S44",
+      "config_sha256": "88521338fd642c0c2ac3053450a624a1b41513745f8f04a3c8808ec5c5a75c2f",
+      "swanlab_experiment": "qwen17-comparisons-20261026-143111-673346-T01-S44",
+      "seed": 44,
+      "selected_configuration": "T01"
+    }
+  ],
+  "scripts": {
+    "profile_qwen17.py": "30598ce7d54d92cefa1e23d866f44a8cb00c6f9b518162d60907fe374c3ff61d",
+    "evaluate_qwen06.py": "76119ca1c6015b80156def18fcc2457d18535f95f6b5909a299a1aa0b8db6fb5",
+    "record_run_resources.py": "4989e00efa91fc2b5e97597770159a75f8ff80547bf28e999ed3a31a6e0e16f9",
+    "run_qwen17_comparisons.py": "3a37c6954c262f0f05b4050503e5b71e8cc6bed2f8387c91bc21f74a6fc29da8",
+    "prepare_qwen17_seed_repeats.py": "9fd04ad8707156dc3f92fa15c3d349a6fb7cff717406d037036efccbc035cb74"
+  },
+  "baseline_model_files": {
+    ".gitattributes": "088e25d6bceaa8943f4f292006210358292349cc36e7578f80c62fce75535f46",
+    "LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "README.md": "257e52c419dac2258852643f18af6c974f21f8c6c1b6f371b6cca6201cf29091",
+    "config.json": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197",
+    "configuration.json": "f888421726665e8a84b738eed42a64875aed79de8be7daade851ac8bf4c0cef9",
+    "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+    "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "model-00001-of-00002.safetensors": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5",
+    "model-00002-of-00002.safetensors": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9",
+    "model.safetensors.index.json": "0d660e94b165eb912669a5249dff44b83188c4777a07ddb9611fb78d91b0578d",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "packages": {
+    "torch": "2.14.1",
+    "transformers": "5.8.0",
+    "peft": "0.18.1",
+    "llamafactory": "0.9.6.dev0",
+    "swanlab": "0.6.4"
+  },
+  "factory_commit": "c683e59edd8f893abc5e1403184a1d0644817d2a",
+  "ai_assistance": "Engineer prepares previously confirmed seed43/44 repeats; selected settings fixed; user manually runs and interprets.",
+  "purpose": "selected_configuration_seed_repeats",
+  "parent_batch_id": "qwen17-comparisons-20261026-012117-9e8e51",
+  "selected_configuration": "T01",
+  "existing_seed42": {
+    "id": "T01",
+    "state": "completed",
+    "training_directory": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/T01",
+    "config_sha256": "e9e112aa7951f8bbd48d1168eb0236268548422b851eb8fe5cb984a544ced220",
+    "swanlab_experiment": "qwen17-comparisons-20261026-012117-9e8e51-T01",
+    "started_utc": "2026-10-25T23:46:21.438936+00:00",
+    "best_checkpoint": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/T01/adapter/checkpoint-1167",
+    "validation_accuracy": 0.9252577319587629,
+    "validation_macro_f1": 0.913885338619196,
+    "invalid_rate": 0.0,
+    "best_adapter_sha256": "6baed5a97d4549011a8da6f3212a38772531081adf8995176583120b3c82fcf5",
+    "ended_utc": "2026-10-26T00:45:28.919380+00:00"
+  },
+  "started_utc": "2026-10-26T06:32:28.968320+00:00",
+  "error": "KeyboardInterrupt()",
+  "ended_utc": "2026-10-26T06:32:31.938446+00:00"
+}

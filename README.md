@@ -1,10 +1,20 @@
 # 中文评论情感分析：统一工程入口
 
+## 单一仓库与发布方式（2026-10-28更新）
+
+唯一正式工作目录为NLP仓库根目录，已保留原发布工作副本的提交历史。此前`.publication/data-processing-v1`仅为迁移前来源，不再用于开发或后续提交。
+
+根据本人本次明确要求，项目源码、配置、已有数据、预测、错误清单和运行日志统一公开，不再维护公开包/私有包两套项目。账户凭据、可重建缓存、迁移回滚副本不上传。模型基座及工具目录中的大权重仍通过资源清单定位，不因本次目录统一自动搬入Git。
+
+仓库中的本机路径配置用于追溯，新机须填写自己的资源位置。历史文档中“不含正文”“仅本地”“未获发布授权”等描述保留为当时状态，本节为当前发布口径。数据许可证据的历史限制继续披露，不能因选择公开就宣称已完成许可核验。详见[单目录统一记录](docs/单目录统一与发布记录.md)。
+
+文档入口：[项目最新进度表](docs/项目最新进度表.md) · [分类文档导航](docs/README.md)。当前工程结果已生成，正式对比解释、人工错例归因、资源外链、新机真实复现及最终交付仍需完成；自动生成图表不等于分析完成。
+
 本项目接入TF-IDF、预训练MacBERT全参微调、Qwen零样本、Qwen少样本和普通生成式SFT LoRA。融合以既有模型与证据为基础，不重新划分数据或重复训练。当前最终状态见 `artifacts/final-acceptance.json`，各路线成绩由预测独立重算，不能把历史验证成绩当测试成绩。
 
 ## 配置与数据
 
-复制 `configs/paths.example.json` 为 `configs/paths.local.json`，按本人资源位置填写。Linux运行时使用Linux路径；缺失资源直接报错。个人配置不提交。资源校验和见 `data/manifests/`、`artifacts/` 和 `results/imported/`。基座、适配器、Pipeline、原始日志及评论正文留在本地工具工作区，外链尚未上传核验。
+复制 `configs/paths.example.json` 为 `configs/paths.local.json`，按本人资源位置填写。Linux运行时使用Linux路径；缺失资源直接报错。本机配置不得包含账户密钥。资源校验和见 `data/manifests/`、`artifacts/` 和 `results/imported/`。外部工具工作区中的大权重仍需单独获取，其外链尚未上传核验；仓库内已有数据、日志及预测按本次要求一并公开。
 
 冻结数据：train6210、validation776、test777，划分种子67，0=负面、1=正面。BERT/TF-IDF按验证Macro-F1选配置与最佳轮次；训练种子42/43/44全部保留。普通LoRA沿用T01，绝不替换为分类头LoRA或QLoRA。提示包与LoRA原提示格式保留，按完整方案比较。
 
@@ -52,7 +62,7 @@ LoRA重新训练仍用已归档的工具端编排，见src/legacy/lora及接收�
 - `results/metrics/`、`results/summaries/`：重算指标、种子汇总、验证对照及训练成本。
 - `results/benchmarks/`：计时协议及推理资源摘要。
 - `reports/audits/`、`reports/figures/`：审计、曲线、混淆矩阵及比较图。
-- `results/predictions/`、`results/errors/`、`results/local/`：本地派生产物，不公开提交。
+- `results/predictions/`、`results/errors/`、`results/local/`：逐样本预测、错例和派生产物，本次统一公开。
 - `results/imported/`：成员交付和源码接收索引；接收日期不冒充原开发日期。
 
 训练loss按路线分图，不比较不同loss原始数值。历史设备结果分组；CPU与GPU执行位置均标明。基线曾使用测试集，本次不以测试分数改参数、换种子或重新划分。

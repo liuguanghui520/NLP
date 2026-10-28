@@ -1,0 +1,194 @@
+Collecting swanlab
+  Downloading swanlab-0.10.2-py3-none-any.whl.metadata (50 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.8/50.8 kB 72.8 kB/s eta 0:00:00
+Collecting optuna
+  Downloading optuna-5.0.0-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: click in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from swanlab) (8.5.0)
+Collecting nvidia-ml-py (from swanlab)
+  Downloading nvidia_ml_py-13.615.71-py3-none-any.whl.metadata (9.7 kB)
+Requirement already satisfied: orjson in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from swanlab) (3.13.0)
+Collecting platformdirs>=4.2.0 (from swanlab)
+  Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+INFO: pip is looking at multiple versions of swanlab to determine which version is compatible with other requirements. This could take a while.
+Collecting swanlab
+  Downloading swanlab-0.10.1-py3-none-any.whl.metadata (50 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.8/50.8 kB 10.8 kB/s eta 0:00:00
+  Downloading swanlab-0.10.0-py3-none-any.whl.metadata (50 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.8/50.8 kB 11.4 kB/s eta 0:00:00
+  Downloading swanlab-0.9.8-py3-none-any.whl.metadata (50 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.7/50.7 kB 5.4 kB/s eta 0:00:00
+  Downloading swanlab-0.9.7-py3-none-any.whl.metadata (50 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.7/50.7 kB 35.0 kB/s eta 0:00:00
+  Downloading swanlab-0.9.6-py3-none-any.whl.metadata (50 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.7/50.7 kB 52.8 kB/s eta 0:00:00
+  Downloading swanlab-0.9.5-py3-none-any.whl.metadata (50 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.6/50.6 kB 67.0 kB/s eta 0:00:00
+  Downloading swanlab-0.9.4-py3-none-any.whl.metadata (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.5/48.5 kB 75.1 kB/s eta 0:00:00
+INFO: pip is still looking at multiple versions of swanlab to determine which version is compatible with other requirements. This could take a while.
+  Downloading swanlab-0.9.3-py3-none-any.whl.metadata (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.5/48.5 kB 80.7 kB/s eta 0:00:00
+  Downloading swanlab-0.9.2-py3-none-any.whl.metadata (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.5/48.5 kB 96.9 kB/s eta 0:00:00
+  Downloading swanlab-0.9.1-py3-none-any.whl.metadata (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.5/48.5 kB 57.7 kB/s eta 0:00:00
+  Downloading swanlab-0.9.0-py3-none-any.whl.metadata (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.1/48.1 kB 99.3 kB/s eta 0:00:00
+  Downloading swanlab-0.8.5-py3-none-any.whl.metadata (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.1/48.1 kB 176.3 kB/s eta 0:00:00
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+  Downloading swanlab-0.8.4-py3-none-any.whl.metadata (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.1/48.1 kB 72.9 kB/s eta 0:00:00
+  Downloading swanlab-0.8.3-py3-none-any.whl.metadata (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.1/48.1 kB 89.9 kB/s eta 0:00:00
+  Downloading swanlab-0.8.2-py3-none-any.whl.metadata (46 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.7/46.7 kB 78.8 kB/s eta 0:00:00
+  Downloading swanlab-0.8.1-py3-none-any.whl.metadata (46 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.7/46.7 kB 88.5 kB/s eta 0:00:00
+  Downloading swanlab-0.8.0-py3-none-any.whl.metadata (46 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.0/47.0 kB 112.7 kB/s eta 0:00:00
+  Downloading swanlab-0.7.20-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.5/45.5 kB 105.0 kB/s eta 0:00:00
+  Downloading swanlab-0.7.19-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.5/45.5 kB 112.5 kB/s eta 0:00:00
+  Downloading swanlab-0.7.18-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.5/45.5 kB 110.2 kB/s eta 0:00:00
+  Downloading swanlab-0.7.17-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.5/45.5 kB 150.4 kB/s eta 0:00:00
+  Downloading swanlab-0.7.16-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.5/45.5 kB 139.4 kB/s eta 0:00:00
+  Downloading swanlab-0.7.15-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.5/45.5 kB 156.7 kB/s eta 0:00:00
+  Downloading swanlab-0.7.14-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.5/45.5 kB 203.6 kB/s eta 0:00:00
+  Downloading swanlab-0.7.13-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.5/45.5 kB 234.4 kB/s eta 0:00:00
+  Downloading swanlab-0.7.12-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.5/45.5 kB 260.2 kB/s eta 0:00:00
+  Downloading swanlab-0.7.11-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.5/45.5 kB 227.1 kB/s eta 0:00:00
+  Downloading swanlab-0.7.10-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 kB 275.4 kB/s eta 0:00:00
+  Downloading swanlab-0.7.9-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 kB 311.7 kB/s eta 0:00:00
+  Downloading swanlab-0.7.8-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.1/45.1 kB 279.6 kB/s eta 0:00:00
+  Downloading swanlab-0.7.7-py3-none-any.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.0/45.0 kB 278.7 kB/s eta 0:00:00
+  Downloading swanlab-0.7.6-py3-none-any.whl.metadata (44 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.5/44.5 kB 143.7 kB/s eta 0:00:00
+  Downloading swanlab-0.7.5-py3-none-any.whl.metadata (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.8/43.8 kB 132.1 kB/s eta 0:00:00
+  Downloading swanlab-0.7.4-py3-none-any.whl.metadata (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 145.2 kB/s eta 0:00:00
+  Downloading swanlab-0.7.3-py3-none-any.whl.metadata (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.4/43.4 kB 62.0 kB/s eta 0:00:00
+Collecting boto3>=1.35.49 (from swanlab)
+  Downloading boto3-1.43.117-py3-none-any.whl.metadata (6.6 kB)
+Collecting botocore (from swanlab)
+  Downloading botocore-1.43.117-py3-none-any.whl.metadata (5.6 kB)
+Collecting swanlab
+  Downloading swanlab-0.7.2-py3-none-any.whl.metadata (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.8/42.8 kB 145.5 kB/s eta 0:00:00
+  Downloading swanlab-0.7.1-py3-none-any.whl.metadata (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.7/42.7 kB 139.0 kB/s eta 0:00:00
+  Downloading swanlab-0.7.0-py3-none-any.whl.metadata (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.5/42.5 kB 181.6 kB/s eta 0:00:00
+  Downloading swanlab-0.6.13-py3-none-any.whl.metadata (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.2/42.2 kB 154.6 kB/s eta 0:00:00
+  Downloading swanlab-0.6.12-py3-none-any.whl.metadata (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.2/42.2 kB 146.5 kB/s eta 0:00:00
+  Downloading swanlab-0.6.11-py3-none-any.whl.metadata (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.1/42.1 kB 139.8 kB/s eta 0:00:00
+  Downloading swanlab-0.6.10-py3-none-any.whl.metadata (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.8/41.8 kB 150.3 kB/s eta 0:00:00
+  Downloading swanlab-0.6.9-py3-none-any.whl.metadata (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.8/41.8 kB 159.2 kB/s eta 0:00:00
+  Downloading swanlab-0.6.8-py3-none-any.whl.metadata (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.2/40.2 kB 129.4 kB/s eta 0:00:00
+  Downloading swanlab-0.6.7-py3-none-any.whl.metadata (39 kB)
+  Downloading swanlab-0.6.6-py3-none-any.whl.metadata (35 kB)
+  Downloading swanlab-0.6.5-py3-none-any.whl.metadata (35 kB)
+  Downloading swanlab-0.6.4-py3-none-any.whl.metadata (33 kB)
+Requirement already satisfied: psutil>=5.0.0 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from swanlab) (7.2.2)
+Requirement already satisfied: pydantic>=2.9.0 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from swanlab) (2.12.3)
+Collecting pyecharts>=2.0.0 (from swanlab)
+  Downloading pyecharts-2.1.0-py3-none-any.whl.metadata (1.5 kB)
+Collecting pynvml (from swanlab)
+  Downloading pynvml-13.0.1-py3-none-any.whl.metadata (5.6 kB)
+Requirement already satisfied: pyyaml in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from swanlab) (6.0.3)
+Requirement already satisfied: requests>=2.25.0 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from swanlab) (2.34.2)
+Requirement already satisfied: setuptools in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from swanlab) (84.2.1)
+Collecting swankit==0.2.4 (from swanlab)
+  Downloading swankit-0.2.4-py3-none-any.whl.metadata (552 bytes)
+Requirement already satisfied: urllib3>=1.26.0 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from swanlab) (2.8.0)
+Collecting wrapt>=1.17.0 (from swanlab)
+  Downloading wrapt-2.5.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (7.6 kB)
+Collecting alembic>=1.5.0 (from optuna)
+  Downloading alembic-1.20.1-py3-none-any.whl.metadata (7.3 kB)
+Collecting colorlog (from optuna)
+  Downloading colorlog-6.12.0-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: numpy in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from optuna) (2.4.6)
+Requirement already satisfied: packaging>=20.0 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from optuna) (26.3)
+Collecting sqlalchemy>=1.4.2 (from optuna)
+  Downloading sqlalchemy-2.1.6-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.7 kB)
+Requirement already satisfied: tqdm in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from optuna) (4.70.1)
+Collecting Mako (from alembic>=1.5.0->optuna)
+  Downloading mako-1.4.3-py3-none-any.whl.metadata (2.9 kB)
+Requirement already satisfied: typing-extensions>=4.12 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from alembic>=1.5.0->optuna) (4.16.0)
+Collecting jmespath<2.0.0,>=0.7.1 (from boto3>=1.35.49->swanlab)
+  Downloading jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting s3transfer<0.20.0,>=0.19.0 (from boto3>=1.35.49->swanlab)
+  Downloading s3transfer-0.19.3-py3-none-any.whl.metadata (1.7 kB)
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from botocore->swanlab) (2.9.0.post0)
+Requirement already satisfied: annotated-types>=0.6.0 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from pydantic>=2.9.0->swanlab) (0.8.0)
+Requirement already satisfied: pydantic-core==2.41.4 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from pydantic>=2.9.0->swanlab) (2.41.4)
+Requirement already satisfied: typing-inspection>=0.4.2 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from pydantic>=2.9.0->swanlab) (0.4.4)
+Requirement already satisfied: jinja2 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from pyecharts>=2.0.0->swanlab) (3.1.6)
+Collecting prettytable (from pyecharts>=2.0.0->swanlab)
+  Downloading prettytable-3.18.0-py3-none-any.whl.metadata (37 kB)
+Collecting simplejson (from pyecharts>=2.0.0->swanlab)
+  Downloading simplejson-4.2.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.8 kB)
+Requirement already satisfied: charset_normalizer<4,>=2 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from requests>=2.25.0->swanlab) (3.5.2)
+Requirement already satisfied: idna<4,>=2.5 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from requests>=2.25.0->swanlab) (3.20)
+Requirement already satisfied: certifi>=2023.5.7 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from requests>=2.25.0->swanlab) (2026.10.19)
+Requirement already satisfied: six>=1.5 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from python-dateutil<3.0.0,>=2.1->botocore->swanlab) (1.17.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from jinja2->pyecharts>=2.0.0->swanlab) (3.0.4)
+Collecting wcwidth>=0.3.5 (from prettytable->pyecharts>=2.0.0->swanlab)
+  Downloading wcwidth-0.9.3-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (23 kB)
+Downloading swanlab-0.6.4-py3-none-any.whl (261 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 261.9/261.9 kB 82.5 kB/s eta 0:00:00
+Downloading swankit-0.2.4-py3-none-any.whl (23 kB)
+Downloading optuna-5.0.0-py3-none-any.whl (442 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 442.4/442.4 kB 92.2 kB/s eta 0:00:00
+Downloading alembic-1.20.1-py3-none-any.whl (270 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 270.4/270.4 kB 73.0 kB/s eta 0:00:00
+Downloading boto3-1.43.117-py3-none-any.whl (140 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.0/140.0 kB 76.6 kB/s eta 0:00:00
+Downloading botocore-1.43.117-py3-none-any.whl (16.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.1/16.1 MB 274.9 kB/s eta 0:00:00
+Downloading pyecharts-2.1.0-py3-none-any.whl (161 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 161.1/161.1 kB 272.8 kB/s eta 0:00:00
+Downloading sqlalchemy-2.1.6-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 230.9 kB/s eta 0:00:00
+Downloading wrapt-2.5.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (240 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 240.1/240.1 kB 246.8 kB/s eta 0:00:00
+Downloading colorlog-6.12.0-py3-none-any.whl (12 kB)
+Downloading pynvml-13.0.1-py3-none-any.whl (28 kB)
+Downloading jmespath-1.1.0-py3-none-any.whl (20 kB)
+Downloading nvidia_ml_py-13.615.71-py3-none-any.whl (58 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.1/58.1 kB 311.5 kB/s eta 0:00:00
+Downloading s3transfer-0.19.3-py3-none-any.whl (90 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.3/90.3 kB 247.6 kB/s eta 0:00:00
+Downloading mako-1.4.3-py3-none-any.whl (80 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 kB 282.7 kB/s eta 0:00:00
+Downloading prettytable-3.18.0-py3-none-any.whl (37 kB)
+Downloading simplejson-4.2.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (191 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 191.1/191.1 kB 252.3 kB/s eta 0:00:00
+Downloading wcwidth-0.9.3-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (770 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.0/770.0 kB 277.9 kB/s eta 0:00:00
+Installing collected packages: nvidia-ml-py, wrapt, wcwidth, swankit, sqlalchemy, simplejson, pynvml, Mako, jmespath, colorlog, prettytable, botocore, alembic, s3transfer, pyecharts, optuna, boto3, swanlab
+Successfully installed Mako-1.4.3 alembic-1.20.1 boto3-1.43.117 botocore-1.43.117 colorlog-6.12.0 jmespath-1.1.0 nvidia-ml-py-13.615.71 optuna-5.0.0 prettytable-3.18.0 pyecharts-2.1.0 pynvml-13.0.1 s3transfer-0.19.3 simplejson-4.2.0 sqlalchemy-2.1.6 swankit-0.2.4 swanlab-0.6.4 wcwidth-0.9.3 wrapt-2.5.1
+
+[notice] A new release of pip is available: 24.0 -> 26.2.2
+[notice] To update, run: /home/lgh/.venvs/llamafactory/bin/python -m pip install --upgrade pip

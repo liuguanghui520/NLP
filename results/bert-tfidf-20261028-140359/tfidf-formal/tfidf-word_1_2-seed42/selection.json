@@ -1,0 +1,55 @@
+{
+  "macro_f1": 0.8720193081255028,
+  "accuracy": 0.8943298969072165,
+  "weighted_f1": 0.8918509425981371,
+  "report": {
+    "0": {
+      "precision": 0.8894230769230769,
+      "recall": 0.7581967213114754,
+      "f1-score": 0.8185840707964602,
+      "support": 244.0
+    },
+    "1": {
+      "precision": 0.8961267605633803,
+      "recall": 0.956766917293233,
+      "f1-score": 0.9254545454545454,
+      "support": 532.0
+    },
+    "accuracy": 0.8943298969072165,
+    "macro avg": {
+      "precision": 0.8927749187432286,
+      "recall": 0.8574818193023542,
+      "f1-score": 0.8720193081255028,
+      "support": 776.0
+    },
+    "weighted avg": {
+      "precision": 0.8940189012744189,
+      "recall": 0.8943298969072165,
+      "f1-score": 0.8918509425981371,
+      "support": 776.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      185,
+      59
+    ],
+    [
+      23,
+      509
+    ]
+  ],
+  "epoch": 1,
+  "fit_s": 8.568465255000007,
+  "warnings": [],
+  "iterations": [
+    44
+  ],
+  "features": 55013,
+  "train_log_loss": 0.14565400156910532,
+  "validation_log_loss": 0.27517030087892713,
+  "trainable_parameters": 55014,
+  "model": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-word_1_2-seed42/checkpoints/best/pipeline.joblib",
+  "model_sha256": "4137542b086a9d9e6cb15dc540fa1eee4674953547a835fb45fa0dd6474c97a2",
+  "config_id": "word_1_2"
+}

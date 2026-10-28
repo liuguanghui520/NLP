@@ -1,0 +1,18 @@
+{
+  "mean_ms": 60.96586899999797,
+  "p50_ms": 59.277048999994975,
+  "p95_ms": 68.28162189999745,
+  "max_ms": 69.28212999999772,
+  "throughput": 16.402620292348058,
+  "warmup_ids": [
+    "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5514",
+    "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5622"
+  ],
+  "n": 3,
+  "batch": 1,
+  "numpy": "2.4.6",
+  "percentile_method": "linear",
+  "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "threads": 4,
+  "timing_scope": "preprocess_transfer_inference_parse; excludes disk/model loading; GPU synchronized"
+}

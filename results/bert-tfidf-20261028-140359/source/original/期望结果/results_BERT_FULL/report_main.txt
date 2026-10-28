@@ -1,0 +1,7 @@
+hfl/chinese-macbert-base 全参微调 [main]
+超参: lr=2e-05 epochs=3 batch=8 maxlen=256 freeze_lower=0 class_weight=False seed=42
+训练参数: 102,269,186 / 102,269,186 (100.00%)
+测试集 acc=0.9189 macroF1=0.9066 weightedF1=0.9191
+negative: F1=0.8727
+positive: F1=0.9405
+逐条预测: E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL/predictions_main.csv

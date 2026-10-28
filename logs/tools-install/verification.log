@@ -1,0 +1,24 @@
+/home/lgh/.venvs/llamafactory/lib/python3.11/site-packages/torch/cuda/__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Existing package version changes: {}
+swanlab 0.6.4
+optuna 5.0.0
+torch 2.14.1
+transformers 5.8.0
+peft 0.18.1
+llamafactory 0.9.6.dev0
+Integration imports: PASS
+pip check: 0 No broken requirements found.
+ 
+CUDA smoke: PASS
+[1m[34mswanlab[0m[0m: Tracking run with swanlab version 0.6.4
+[1m[34mswanlab[0m[0m: Run data will be saved locally in [35m[1m/mnt/c/Users/lgh/Documents/ChatGPT/NLP/logs/tools-install/swanlog/run-20261022_200617-b7f4bace[0m[0m
+[1m[34mswanlab[0m[0m: Backing up run [33msoftware-check[0m locally
+[1m[34mswanlab[0m[0m: ☁️ Run `[1mswanlab sync /mnt/c/Users/lgh/Documents/ChatGPT/NLP/logs/tools-install/swanlog/run-20261022_200617-b7f4bace[0m` to sync logs to remote server
+[1m[34mswanlab[0m[0m: ☁️ Run `[1mswanlab sync /mnt/c/Users/lgh/Documents/ChatGPT/NLP/logs/tools-install/swanlog/run-20261022_200617-b7f4bace[0m` to sync logs to remote server
+SwanLab offline write: PASS
+[I 2026-10-22 20:06:18,559] A new study created in RDB with name: no-name-68e88fda-19a8-4471-99c8-1df81cd435eb
+[I 2026-10-22 20:06:18,658] Trial 0 finished with value: 0.16260203520531452 and parameters: {'x': -0.4032394266503643}. Best is trial 0 with value: 0.16260203520531452.
+[I 2026-10-22 20:06:18,744] Trial 1 finished with value: 0.12236986863785125 and parameters: {'x': 0.34981404865707044}. Best is trial 1 with value: 0.12236986863785125.
+Optuna synthetic trials: 2
+PASS: software checks only; no training or course results

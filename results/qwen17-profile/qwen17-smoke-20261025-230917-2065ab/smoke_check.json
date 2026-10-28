@@ -1,0 +1,7 @@
+{
+  "epoch": 0.05,
+  "global_step": 1,
+  "checkpoint": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-profile/qwen17-smoke-20261025-230917-2065ab/adapter/checkpoint-1",
+  "preceding_train_peak_allocated_bytes": 3627425792,
+  "preceding_train_peak_reserved_bytes": 4116709376
+}

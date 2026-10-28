@@ -1,0 +1,20 @@
+Collecting scikit-learn
+  Downloading scikit_learn-1.9.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.3 kB)
+Requirement already satisfied: numpy>=1.24.1 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from scikit-learn) (2.4.6)
+Requirement already satisfied: scipy>=1.10.0 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from scikit-learn) (1.17.1)
+Requirement already satisfied: joblib>=1.4.0 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from scikit-learn) (1.6.0)
+Collecting narwhals>=2.0.1 (from scikit-learn)
+  Downloading narwhals-2.27.1-py3-none-any.whl.metadata (15 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn)
+  Downloading threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+Requirement already satisfied: cloudpickle>=3.0 in /home/lgh/.venvs/llamafactory/lib/python3.11/site-packages (from joblib>=1.4.0->scikit-learn) (3.1.2)
+Downloading scikit_learn-1.9.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 472.8 kB/s eta 0:00:00
+Downloading narwhals-2.27.1-py3-none-any.whl (483 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 483.2/483.2 kB 4.4 MB/s eta 0:00:00
+Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+Installing collected packages: threadpoolctl, narwhals, scikit-learn
+Successfully installed narwhals-2.27.1 scikit-learn-1.9.1 threadpoolctl-3.7.0
+
+[notice] A new release of pip is available: 24.0 -> 26.2.2
+[notice] To update, run: /home/lgh/.venvs/llamafactory/bin/python -m pip install --upgrade pip

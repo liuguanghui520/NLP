@@ -1,0 +1,2 @@
+﻿variant,n,mean_ms,p50_ms,p95_ms,max_ms,batch,warmup
+MacBERT 全参,200,103.519,81.034,207.391,284.492,1,20

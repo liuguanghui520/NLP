@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "command": [
+    "/home/lgh/.venvs/llamafactory/bin/python",
+    "-u",
+    "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-profile/qwen17-full-20261025-231706-ea8173/profile_qwen17.py",
+    "--worker",
+    "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-profile/qwen17-full-20261025-231706-ea8173/train.json",
+    "--data",
+    "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/data/processed/v1-20261023",
+    "--model",
+    "/home/lgh/models/Qwen3-1.7B"
+  ],
+  "sample_interval_seconds": 1.0,
+  "started_utc": "2026-10-25T15:17:12.398413+00:00",
+  "wall_boundary": "Child process start through exit, including loading, training, validation and saves",
+  "rss_boundary": "Sampled sum of process-tree RSS; shared pages may be counted more than once",
+  "gpu_boundary": "Sampled whole-device NVIDIA readings; includes other processes; not exact CUDA process peaks",
+  "energy_boundary": "Trapezoidal integral of device power samples only; not whole-laptop wall energy or monetary cost",
+  "exit_code": 0,
+  "ended_utc": "2026-10-25T16:29:37.203523+00:00",
+  "wall_seconds": 3600.169501057999,
+  "allocated_gpu_hours": 1.000047083627222,
+  "sampled_peaks": {
+    "process_tree_rss_bytes": 4346343424,
+    "device_memory_mib": 6457.0
+  },
+  "power_samples": 3391,
+  "sampled_device_energy_wh": 43.194674234232956,
+  "sampling_errors": [
+    "CalledProcessError(255, ['nvidia-smi', '--id=0', '--query-gpu=memory.used,utilization.gpu,power.draw', '--format=csv,noheader,nounits'])",
+    "CalledProcessError(255, ['nvidia-smi', '--id=0', '--query-gpu=memory.used,utilization.gpu,power.draw', '--format=csv,noheader,nounits'])",
+    "TimeoutExpired(['nvidia-smi', '--id=0', '--query-gpu=memory.used,utilization.gpu,power.draw', '--format=csv,noheader,nounits'], 5)"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "completed": [
+    "smoke-qwen_few_shot",
+    "smoke-qwen_lora",
+    "smoke-bert",
+    "smoke-tfidf",
+    "test-qwen_zero_shot",
+    "test-qwen_few_shot",
+    "test-lora-seed42",
+    "test-lora-seed43",
+    "test-lora-seed44",
+    "probe-bert-seed42",
+    "probe-bert-seed43",
+    "probe-bert-seed44",
+    "probe-tfidf-seed42",
+    "probe-tfidf-seed43",
+    "probe-tfidf-seed44"
+  ]
+}

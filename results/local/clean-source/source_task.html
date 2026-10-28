@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="zh-CN"><head><script>var __mr='all',__md='6ccfkuh9.qwenwork.host';document.addEventListener('DOMContentLoaded', function () {
+  var BAR_HEIGHT = 48;
+
+  // --- detect page theme ---
+  var isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  // fallback: sample body/html background color
+  if (!isDark) {
+    try {
+      var sample = getComputedStyle(document.body).backgroundColor;
+      if (sample === 'rgba(0, 0, 0, 0)' || sample === 'transparent') {
+        sample = getComputedStyle(document.documentElement).backgroundColor;
+      }
+      if (sample && sample !== 'rgba(0, 0, 0, 0)' && sample !== 'transparent') {
+        var m = sample.match(/\d+/g);
+        if (m) {
+          var brightness = (parseInt(m[0]) * 299 + parseInt(m[1]) * 587 + parseInt(m[2]) * 114) / 1000;
+          isDark = brightness < 128;
+        }
+      }
+    } catch (e) {}
+  }
+
+  // --- shared CSS (always injected into <head>) ---
+  var SHARED_CSS = '<style>' +
+    '@keyframes mulepage-svg-glow-dark{0%,100%{color:#ffffff}50%{color:#3b82f6}}' +
+    '@keyframes mulepage-svg-glow-light{0%,100%{color:#000000}50%{color:#3b82f6}}' +
+    '.mulepage-anim-dark{animation:mulepage-svg-glow-dark 2.5s ease-in-out infinite}' +
+    '.mulepage-anim-light{animation:mulepage-svg-glow-light 2.5s ease-in-out infinite}' +
+    '.mulepage-close-dark{color:rgba(255,255,255,0.3);transition:color 0.2s ease}' +
+    '.mulepage-close-dark:hover{color:#ffffff}' +
+    '.mulepage-close-light{color:rgba(0,0,0,0.3);transition:color 0.2s ease}' +
+    '.mulepage-close-light:hover{color:#000000}' +
+    '#mulepage-footer-link{display:inline-flex;align-items:center;line-height:0;outline:none}' +
+    '.mulepage-footer-brand{display:inline-flex;align-items:center;box-sizing:border-box;height:32px;max-width:104px;overflow:hidden;padding:6px 12px;border-radius:999px;background:' + (isDark ? 'rgba(26,26,26,0.85)' : 'rgba(255,255,255,0.85)') + ';backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 0 0 0.5px ' + (isDark ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.12)') + ',0 8px 24px -4px ' + (isDark ? 'rgba(0,0,0,0.28)' : 'rgba(0,0,0,0.07)') + ';transition:max-width 260ms cubic-bezier(0.22,1,0.36,1);will-change:max-width;white-space:nowrap}' +
+    '.mulepage-footer-brand-hint{display:inline-block;max-width:0;margin-left:0;overflow:hidden;opacity:0;color:' + (isDark ? 'rgba(255,255,255,0.72)' : 'rgba(0,0,0,0.64)') + ';font-size:14px;font-weight:400;line-height:20px;transition:max-width 260ms cubic-bezier(0.22,1,0.36,1),margin-left 260ms cubic-bezier(0.22,1,0.36,1),opacity 180ms ease-out;will-change:max-width,opacity}' +
+    '#mulepage-footer:hover .mulepage-footer-brand,#mulepage-footer:focus-within .mulepage-footer-brand{max-width:246px}' +
+    '#mulepage-footer:hover .mulepage-footer-brand-hint,#mulepage-footer:focus-within .mulepage-footer-brand-hint{max-width:126px;margin-left:8px;opacity:1}' +
+    '.mulepage-float-close{display:inline-flex;align-items:center;justify-content:center;max-width:0;margin-left:0;overflow:hidden;opacity:0;transition:max-width 0.2s ease,margin-left 0.2s ease,opacity 0.15s ease;padding:0;border:none;background:none;cursor:pointer;font-size:16px;line-height:1;font-weight:300;height:16px;will-change:max-width,opacity}' +
+    '.mulepage-float:hover .mulepage-float-close{max-width:14px;margin-left:4px;opacity:1}' +
+    '</style>';
+
+  // always inject shared CSS into <head> so it survives banner removal
+  document.head.insertAdjacentHTML('beforeend', SHARED_CSS);
+
+  // --- SVG icon (shared, rx=0 for sharp corners) ---
+  var ICON16 = '<svg width="16" height="16" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+    '<rect width="36" height="36" rx="0" fill="#FBF9F6"/><g clip-path="url(#c_top)">' +
+    '<path d="M6.387 21.732v8.895H18.762V28.5h2.32v1.16h8.121V28.5h1.16v-7.928h-1.16v-1.16h-4.64v-1.16h-1.16v-1.16h-1.16v-1.16h-1.16v-1.16h-1.16v-1.16h3.287v-1.934h3.48V9.357H16.442v3.48h-2.128V6.07h-2.32v2.127H9.674v3.48H7.547v10.055H6.387Z" fill="#000"/>' +
+    '<path d="M13.154 21.732v-4.447h1.16v-1.16h4.448v4.447h-1.16v1.16h-4.448Z" fill="#fff"/>' +
+    '<rect x="15.281" y="18.252" width="2.32" height="2.32" fill="#000"/>' +
+    '<path d="M21.082 27.34v-5.608h1.16v-1.16h5.801v1.16h1.16v5.608h-1.16V28.5h-5.801v-1.16h-1.16Z" fill="#fff"/>' +
+    '<path d="M26.883 21.732h-2.32v1.16h1.16v1.16h1.16v-2.32Z" fill="#000"/>' +
+    '<path d="M22.242 24.053v2.32h1.16v1.16h3.48v-1.16h-2.32v-1.16h-1.16v-1.16h-1.16Z" fill="#000"/>' +
+    '</g><defs><clipPath id="c_top"><rect width="24.75" height="24.75" fill="#fff" transform="translate(6 6)"/></clipPath></defs></svg>';
+
+  var ICON16_FOOT = ICON16.replace(/c_top/g, 'c_foot');
+
+  // --- 品牌标志：浅色主题使用原始深色 SVG，深色主题反相为白色。 ---
+  var brandAssetFilter = isDark ? 'filter:invert(1);' : '';
+  var BRAND_MARK = '<span style="display:inline-flex;align-items:center;gap:4px;line-height:0;">' +
+    '<img src="https://gw.alicdn.com/imgextra/i3/O1CN01KjiMsP20F9vea7rMy_!!6000000006819-55-tps-20-20.svg" alt="" width="20" height="20" style="display:block;user-select:none;' + brandAssetFilter + '" />' +
+    '<img src="https://gw.alicdn.com/imgextra/i2/O1CN01Hn0m411NLmdtyiXpF_!!6000000001554-55-tps-56-14.svg" alt="千问办公" width="56" height="14" style="display:block;user-select:none;' + brandAssetFilter + '" />' +
+    '</span>';
+  // 20 + 4 + 56 + 24 = 104px，与设计稿的 104 × 32 品牌胶囊一致。
+  var TOP_BRAND_LOGO = '<span style="display:inline-flex;align-items:center;justify-content:center;width:104px;height:32px;padding:6px 12px;box-sizing:border-box;border-radius:999px;' +
+    'background:' + (isDark ? 'rgba(255,255,255,0.12)' : '#f5f5f5') + ';">' + BRAND_MARK + '</span>';
+  // 右下角入口默认只展示品牌；悬浮或键盘聚焦时在同一胶囊中平滑展开提示语。
+  var FOOTER_BRAND_LOGO = '<span class="mulepage-footer-brand">' + BRAND_MARK +
+    '<span class="mulepage-footer-brand-hint">AI 生成，请注意核实</span></span>';
+
+  // --- banner (adapts to page theme) ---
+  var bannerBg = isDark ? '#050505' : '#ffffff';
+  var bannerBorder = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
+  var bannerColor = isDark ? '#fff' : '#000';
+  var bannerDividerColor = isDark ? 'rgba(255,255,255,0.24)' : 'rgba(0,0,0,0.16)';
+  var bannerCloseClass = isDark ? 'mulepage-close-dark' : 'mulepage-close-light';
+
+  var BANNER = '<div id="mulepage-bar" dir="ltr" style="position:fixed;top:0;left:0;width:100%;height:' + BAR_HEIGHT + 'px;' +
+    'background:' + bannerBg + ';border-bottom:1px solid ' + bannerBorder + ';color:' + bannerColor + ';' +
+    'box-sizing:border-box;display:flex;align-items:center;gap:8px;padding:8px;' +
+    'font-family:\'PingFang SC\',Inter,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;' +
+    'font-size:14px;font-weight:500;line-height:20px;z-index:2147483647;">' +
+    '<span aria-hidden="true" style="flex:1 1 0;height:32px;"></span>' +
+    '<div style="display:flex;align-items:center;gap:8px;white-space:nowrap;">' +
+    '<span>由</span>' +
+    '<span id="mulepage-bar-link" role="link" tabindex="0" aria-label="打开千问办公" style="display:inline-flex;align-items:center;cursor:pointer;line-height:0;">' +
+    TOP_BRAND_LOGO + '</span>' +
+    '<span>创建</span>' +
+    '<span aria-hidden="true" style="width:1px;height:16px;margin:0 4px;background:' + bannerDividerColor + ';"></span>' +
+    '<span id="mulepage-bar-cta" role="link" tabindex="0" aria-label="用千问办公创建网站" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;border-radius:999px;cursor:pointer;">' +
+    '<span>一句话创建你的网站</span><span aria-hidden="true" style="font-size:16px;line-height:16px;">\u2192</span></span>' +
+    '</div>' +
+    '<span style="flex:1 1 0;display:flex;justify-content:flex-end;align-items:center;">' +
+    '<button id="mulepage-bar-close" class="' + bannerCloseClass + '" aria-label="关闭千问办公品牌栏" style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;padding:8px;background:none;border:none;border-radius:999px;' +
+    'font-size:18px;cursor:pointer;line-height:16px;font-weight:300;">\u00d7</button></span>' +
+    '</div>';
+
+  // --- 右下角品牌入口 ---
+  var floatCloseColor = isDark ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.3)';
+  var floatCloseHover = isDark ? '#ffffff' : '#000000';
+  var byColor = isDark ? 'rgba(255,255,255,0.6)' : 'rgba(0,0,0,0.6)';
+
+  var FOOTER = '<div id="mulepage-footer" dir="ltr" class="mulepage-float" style="position:fixed !important;bottom:16px !important;right:16px !important;z-index:2147483646;' +
+    'display:inline-flex;align-items:center;padding:0;cursor:pointer;background:transparent;border:0;box-shadow:none;' +
+    'font-family:Inter,-apple-system,BlinkMacSystemFont,\'Segoe UI\',\'Helvetica Neue\',sans-serif;">' +
+    '<span id="mulepage-footer-link" role="link" tabindex="0" aria-label="打开千问办公" style="display:inline-flex;align-items:center;line-height:0;">' +
+    FOOTER_BRAND_LOGO +
+    '</span>' +
+    '</div>';
+
+  // --- insert banner (only when mode is "all") ---
+  if (__mr === 'all') {
+    document.body.insertAdjacentHTML('afterbegin', BANNER);
+
+    // 顶栏品牌标志和行动文案均跳转至千问办公。
+    var openQwenWork = function () {
+      window.open('https://qwenwork.cn?utm_source=pages&utm_medium=banner&utm_campaign=pages_branding&utm_content=top_bar', '_blank', 'noopener');
+    };
+    var topBrandLink = document.getElementById('mulepage-bar-link');
+    var topBrandCta = document.getElementById('mulepage-bar-cta');
+    topBrandLink.addEventListener('click', openQwenWork);
+    topBrandCta.addEventListener('click', openQwenWork);
+    topBrandLink.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openQwenWork();
+      }
+    });
+    topBrandCta.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openQwenWork();
+      }
+    });
+
+    // Use the QwenWork favicon only as a fallback. Preserve favicons generated
+    // by the page itself so published sites can keep their own branding.
+    var existingIcon = document.querySelector('link[rel="icon"],link[rel="shortcut icon"]');
+    if (!existingIcon) {
+      var fi = document.createElement('link');
+      fi.rel = 'icon';
+      fi.type = 'image/svg+xml';
+      fi.href = 'https://qwenwork.cn/app/favicon.svg';
+      document.head.appendChild(fi);
+    }
+
+    // push down normal-flow content (accumulate on existing padding-top)
+    var origPT = parseFloat(getComputedStyle(document.body).paddingTop) || 0;
+    document.body.style.paddingTop = (origPT + BAR_HEIGHT) + 'px';
+
+    // push down all existing position:fixed elements
+    var all = document.querySelectorAll('*');
+    var shifted = [];
+    for (var i = 0; i < all.length; i++) {
+      var el = all[i];
+      if (el.id && el.id.indexOf('mulepage') === 0) continue;
+      var cs = getComputedStyle(el);
+      if (cs.position === 'fixed') {
+        var t = parseFloat(cs.top);
+        if (isNaN(t)) t = 0;
+        el.style.top = (t + BAR_HEIGHT) + 'px';
+        shifted.push({ el: el, orig: t });
+      }
+    }
+
+    // close handler: restore everything
+    document.getElementById('mulepage-bar-close').addEventListener('click', function () {
+      document.getElementById('mulepage-bar').remove();
+      document.body.style.paddingTop = origPT + 'px';
+      for (var j = 0; j < shifted.length; j++) {
+        shifted[j].el.style.top = shifted[j].orig + 'px';
+      }
+    });
+  }
+
+  // --- insert floating widget (only when __mr is set) ---
+  if (__mr) {
+    document.body.insertAdjacentHTML('beforeend', FOOTER);
+
+    // 底部品牌标志点击后打开官网
+    var footerLink = document.getElementById('mulepage-footer-link');
+    if (footerLink) {
+      footerLink.addEventListener('click', function () {
+        window.open('https://qwenwork.cn?utm_source=pages&utm_medium=banner&utm_campaign=pages_branding&utm_content=bottom_bar', '_blank', 'noopener');
+      });
+      footerLink.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          footerLink.click();
+        }
+      });
+    }
+
+    // paid users (footer-only mode): add close button on hover
+    if (__mr === 'footer') {
+      var floatEl = document.getElementById('mulepage-footer');
+      if (floatEl) {
+        var closeBtn = document.createElement('button');
+        closeBtn.className = 'mulepage-float-close';
+        closeBtn.style.color = floatCloseColor;
+        closeBtn.textContent = '\u00d7';
+        closeBtn.addEventListener('mouseenter', function () { closeBtn.style.color = floatCloseHover; });
+        closeBtn.addEventListener('mouseleave', function () { closeBtn.style.color = floatCloseColor; });
+        closeBtn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          floatEl.remove();
+        });
+        floatEl.appendChild(closeBtn);
+      }
+    }
+  }
+
+  // --- inject canonical link (all users) ---
+  var canon = document.createElement('link');
+  canon.rel = 'canonical';
+  canon.href = 'https://' + location.hostname + '/';
+  document.head.appendChild(canon);
+
+  // --- inject og meta tags (all users) ---
+  var ogDomain = __md;
+  var ogTitle = document.title || ogDomain;
+  var ogTags = [
+    ['og:title', ogTitle],
+    ['og:url', 'https://' + location.hostname + '/'],
+    ['og:type', 'website'],
+    ['og:image', 'https://mule.page/og/' + ogDomain + '.webp']
+  ];
+  for (var n = 0; n < ogTags.length; n++) {
+    var existing = document.querySelector('meta[property="' + ogTags[n][0] + '"]');
+    if (existing) existing.remove();
+    var meta = document.createElement('meta');
+    meta.setAttribute('property', ogTags[n][0]);
+    meta.setAttribute('content', ogTags[n][1]);
+    document.head.appendChild(meta);
+  }
+});
+</script><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《自然语言处理》课程项目任务书</title>
+<style>
+:root{--navy:#12305c;--ink:#1d2b3a;--sub:#5b6b7c;--line:#d7e0ec;--blue:#2f6fd0;--bg:#f4f7fb}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.8}
+.bar{position:sticky;top:0;z-index:9;background:var(--navy);color:#fff;padding:10px 18px;
+  display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.bar b{font-weight:600}
+.bar button{border:1px solid rgba(255,255,255,.5);background:transparent;color:#fff;border-radius:8px;
+  padding:6px 12px;cursor:pointer;font-size:13px}
+.bar button:hover{background:rgba(255,255,255,.12)}
+.page{max-width:900px;margin:22px auto 60px;background:#fff;padding:44px 52px 60px;border-radius:12px;
+  box-shadow:0 10px 30px rgba(18,48,92,.08)}
+h1{font-size:26px;margin:0 0 18px;padding-bottom:12px;border-bottom:3px solid var(--navy);color:var(--navy)}
+h2{font-size:19px;margin:34px 0 12px;color:var(--navy);border-left:5px solid var(--blue);padding-left:10px}
+h3{font-size:16px;margin:22px 0 8px;color:var(--navy)}
+p,li{font-size:15px}
+strong{color:#0f2a52}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top}
+th{background:#eff5fd;color:var(--navy);font-weight:600;text-align:left}
+tr:nth-child(even) td{background:#fbfdff}
+code{background:#f2f6fc;border:1px solid var(--line);border-radius:5px;padding:1px 5px;
+  font-family:Consolas,Menlo,monospace;font-size:13.5px}
+pre{background:#0f2748;color:#e8f1ff;padding:14px 16px;border-radius:10px;overflow:auto}
+pre code{background:none;border:none;color:inherit;padding:0}
+blockquote{margin:14px 0;padding:10px 16px;background:#f7fafd;border-left:4px solid var(--blue);color:var(--sub)}
+hr{border:none;border-top:1px dashed var(--line);margin:26px 0}
+@media print{
+  .bar{display:none}
+  body{background:#fff}
+  .page{box-shadow:none;margin:0;max-width:none;padding:0 6mm}
+  h2{break-after:avoid}
+  table,pre,blockquote{break-inside:avoid}
+}
+@media(max-width:760px){.page{padding:24px 18px}}
+</style></head>
+<body>
+<div class="bar">
+  <b>《自然语言处理》课程项目任务书</b>
+  <span>
+    <button id="btnEdit">编辑模式</button>
+    <button id="btnPrint">打印 / 导出 PDF</button>
+  </span>
+</div>
+<div class="page" id="page">
+<h1>《自然语言处理》课程项目任务书</h1>
+<p><strong>课程</strong>：自然语言处理　<strong>学期</strong>：2026—2027 秋季学期　<strong>授课对象</strong>：软件工程专业三年级本科生　<strong>主讲</strong>：郭贵冰</p>
+<p><strong>项目分值</strong>：45 分（占总评 45%）　<strong>组队</strong>：2—4 人/组，建议 3—4 人　<strong>公布</strong>：2026-10-16（第 2 次随堂测验当天）</p>
+<p><strong>提交截止</strong>：<strong>2026-10-30（周五）24:00</strong>　<strong>考核方式</strong>：不设答辩</p>
+<p><strong>提交链接</strong>：<a href="https://f.kdocs.cn/g/5htZQGSM" target="_blank" rel="noopener">https://f.kdocs.cn/g/5htZQGSM</a>　（金山文档收集表）</p>
+<hr>
+<h2>一、项目定位</h2>
+<p>用一条<strong>完整的小型 NLP 流水线</strong>，把课程里学过的方法真正用起来：<strong>数据 → 方法 → 评估 → 错误分析</strong>。</p>
+<p>外壳是大模型应用，内核是课程方法：每个项目都必须包含 <strong>① 一个非大模型基线　② 一个大模型方案　③ 两者的对比评估</strong>。</p>
+<p>评分不看模型多大，只看四件事：<strong>有没有基线对比、有没有评估数据、有没有把失败讲清楚、别人能不能复现</strong>。</p>
+<blockquote>一句话：用 7B 模型 + 完整评估 + 诚实分析，得分会高于用 70B 模型但只给一个分数的项目。</blockquote>
+<hr>
+<h2>二、选题方向（四选一）</h2>
+<table>
+<tr><th>方向</th><th>大模型方案</th><th>参考基线（考课程前段）</th><th>主要覆盖讲次</th></tr>
+<tr><td><strong>A. 领域 RAG 问答</strong></td><td>检索 + 提示约束 + 引用校验</td><td>关键词 / BM25 检索、词向量平均检索，与向量检索对比</td><td>2、5、14、15</td></tr>
+<tr><td><strong>B. 信息抽取 / 序列标注</strong></td><td>LLM 提示抽取，或 BERT 微调（逐位置分类，可接 CRF）</td><td>规则 / 词典基线 + 小模型；逐 token 指标与<strong>实体级</strong> P/R/F1 对比</td><td>6、9、12</td></tr>
+<tr><td><strong>C. 提示 vs 微调对比</strong></td><td>零样本 / 少样本提示、LoRA 轻量微调</td><td>TF-IDF、n-gram 或小模型全参微调</td><td>5、7、12、13</td></tr>
+<tr><td><strong>D. 大模型评测</strong></td><td>幻觉检测、鲁棒性测试、指标设计</td><td>传统指标（P/R/F1、BLEU/ROUGE）的局限实证</td><td>6、10、14、15</td></tr>
+</table>
+<p><strong>说明</strong>：</p>
+<ol><li>鼓励结合学院特色方向：<strong>金融科技</strong>（上市公司公告、研报问答、公告要素抽取）、<strong>智慧健康</strong>（医学知识问答、病历要素抽取）。</li><li>也可以自选题目，但选题确认时必须写清：问题定义、成功判据、与课程方法的对应关系。</li></ol>
+<hr>
+<h2>三、每个项目必须回答的 3 个原理点</h2>
+<p>报告中必须<strong>用自己实验的证据</strong>解释至少 <strong>3 个</strong>课程原理点（只复述概念不算，必须给出实验或数据支撑）：</p>
+<ol><li>分词 / 子词与词表选择对检索或抽取效果的影响（第 2 讲）</li><li>词向量与句向量的表示能力差异（第 5 讲）</li><li>N-gram 与神经网络语言模型的取舍、困惑度（PPL）与生成质量的关系（第 7—8 讲）</li><li>序列标注的标签约束与实体级评测口径（第 9 讲）</li><li>注意力机制为什么能缓解信息瓶颈（第 10 讲）</li><li>Transformer 的位置编码、缩放点积与复杂度取舍（第 11 讲）</li><li>预训练目标（AR 与 MLM）对下游任务的影响（第 12 讲）</li><li>SFT / LoRA / 提示的本质差别与适用边界（第 13—14 讲）</li><li>RAG 的"召回是上限"、重排与引用校验的作用（第 15 讲）</li><li>评测指标与评测协议的选择依据（第 14—15 讲）</li></ol>
+<hr>
+<h2>四、数据与工具</h2>
+<ol><li><strong>数据优先用公开数据</strong>，并在报告中写明来源、规模、许可与清洗规则。可参考（使用前请自行确认许可与下载可用性）：中文新闻分类（THUCNews）、情感分析（ChnSentiCorp）、中文 NER（MSRA、人民日报、CLUENER2020）、中文阅读理解（CMRC2018）、医学与健康方向（CBLUE 类基准任务）、英文（SQuAD 等）。金融方向可自行从公开披露渠道（如上市公司公告）构造数据。</li><li><strong>允许调用外部 API</strong>（这是本课程的工程现实），但必须做到：<ul><li>费用自负，报告里写明<strong>所用模型、调用量、单价与总花费估算</strong>；</li><li><strong>API Key 一律不得写进代码或提交到仓库</strong>（用环境变量），提交前自查；</li><li><strong>不得把隐私数据、未授权的个人数据上传给任何外部服务</strong>；医学、金融数据必须脱敏。</li></ul></li><li><strong>允许本地小模型 / CPU 方案</strong>：预算或算力受限的小组，可缩小数据规模，只要在报告中说明降级原因与影响即可，<strong>不因此扣分</strong>。</li><li>允许使用 AI 辅助（边界见第九节），但报告必须附<strong>AI 使用声明</strong>。</li></ol>
+<hr>
+<h2>五、交付物与提交规范</h2>
+<table>
+<tr><th>交付物</th><th>要求</th><th>提交形式</th></tr>
+<tr><td>① 源码与 README</td><td>README（环境、依赖、<strong>一条可执行命令</strong>、预期输出、随机种子）+ 完整代码</td><td><strong>上传压缩包</strong>（打进同一个 zip 包）</td></tr>
+<tr><td>② 项目报告</td><td>按第八节八节结构，正文 8—12 页（不含附录），PDF</td><td>上传压缩包（打进同一个 zip 包）</td></tr>
+<tr><td>③ 演示录屏</td><td><strong>≤2 分钟</strong>，真实跑一遍系统，至少展示一个"难例"；画面中可见本人学号与姓名</td><td>填网盘链接</td></tr>
+<tr><td>④ 个人贡献声明</td><td><strong>每人单独一份</strong>（模板见附件），写清负责模块、产出证据、工作量自评、对队友的确认</td><td>上传压缩包（打进同一个 zip 包）</td></tr>
+<tr><td>⑤ AI 使用声明</td><td>工具名、使用环节、如何验证 AI 输出（可写在报告附录）</td><td>包含在报告内</td></tr>
+<tr><td>⑥ 项目摘要</td><td>300 字以内：问题、方法、主要结果（给出具体数字）、结论；不含图表</td><td>上传压缩包（放进同一个 zip 包，文件名 <code>项目摘要.md</code>）</td></tr>
+</table>
+<p><strong>压缩包规范</strong>：</p>
+<ul><li>格式与数量：<strong>仅限 zip 格式，只交 1 个压缩包</strong>（不收 rar / 7z / 分卷压缩，也不要把材料拆成多个包）</li><li>体积：<strong>单个文件 ≤ 50MB</strong>；模型权重、录屏、数据集一律不进包，只给链接</li><li>命名：<code>组长学号_姓名_项目名.zip</code>（例：<code>20246130_张三_公告要素抽取.zip</code>）</li><li>包内结构建议：<code>报告.pdf</code>、<code>项目摘要.md</code>、<code>README.md</code>、<code>src/</code>（全部源码）、<code>贡献声明_学号_姓名.md</code>（每人一份）</li><li>严禁打进包：虚拟环境、<code>checkpoint</code>、API Key、个人隐私数据</li></ul>
+<p><strong>提交渠道</strong>：金山文档收集表 <a href="https://f.kdocs.cn/g/5htZQGSM" target="_blank" rel="noopener">https://f.kdocs.cn/g/5htZQGSM</a>。截止前可修改，<strong>以最后一次提交为准</strong>。</p>
+<hr>
+<h2>六、逾期提交扣分（从项目总分 45 分中扣除）</h2>
+<table>
+<tr><th>逾期时长</th><th>扣分</th></tr>
+<tr><td>&lt; 24 小时（10-31 24:00 前）</td><td>−1</td></tr>
+<tr><td>&lt; 48 小时（11-01 24:00 前）</td><td>−2</td></tr>
+<tr><td>&lt; 72 小时（11-02 24:00 前）</td><td>−3</td></tr>
+<tr><td>≥ 72 小时</td><td>−5</td></tr>
+</table>
+<hr>
+<h2>七、评分表（项目总分 45 分）</h2>
+<table>
+<tr><th>评分项</th><th>分值</th><th>评分要点</th></tr>
+<tr><td>① 选题与方案设计</td><td>5</td><td>问题定义清楚、成功判据可检验、技术路线有依据、分工到人</td></tr>
+<tr><td>② 进度与工作量证明</td><td>5</td><td>有可核查的推进证据：数据就绪、基线跑通、迭代记录、运行日志/截图</td></tr>
+<tr><td>③ 源码与可复现性</td><td>12</td><td>一键可跑、README 完整、依赖与种子齐全、教师/AI 复现通过、代码可读</td></tr>
+<tr><td>④ 实验与评估分析</td><td>12</td><td>有基线对比、指标口径清楚、≥3 类错误归因、≥1 组参数对比、结论有数据支撑</td></tr>
+<tr><td>⑤ 报告与演示录屏</td><td>6</td><td>报告结构规范、图表完整（4 分）；录屏真实可跑通、含难例（2 分）</td></tr>
+<tr><td>⑥ 个人贡献与工作量核验</td><td>5</td><td>每人一份贡献声明，模块、产出证据、工作量自评齐全且相互一致（3 分）；报告第⑧节分工与实际产出对得上（2 分）</td></tr>
+</table>
+<h3>两条硬门槛</h3>
+<ol><li><strong>跑不通 = 项目不及格</strong>：教师或 AI 按 README 无法复现主结果的，允许 <strong>48 小时内补交环境说明或修复</strong>；补交后仍无法跑通的，第 ③ 项记 0 分，总分不超过 25 分。</li><li><strong>报告与代码/日志对不上</strong>：报告中的关键数字在代码、日志或输出文件中找不到出处的，第 ④ 项<strong>减半</strong>；编造实验数据按学术不诚信处理。</li></ol>
+<h3>三个拉开分差的地方</h3>
+<ul><li>主动写出<strong>失败案例与局限</strong>（≥3 个，逐一归因）；</li><li>有<strong>参数对比实验</strong>并给出结论（如 top-k、chunk 大小、LoRA 秩、不同模型）；</li><li>能说清<strong>成本与延迟</strong>（token 花费、响应时间），而不是只说"效果好"。</li></ul>
+<hr>
+<h2>八、项目报告结构（八节）</h2>
+<table>
+<tr><th>节</th><th>内容要点</th><th>建议篇幅</th></tr>
+<tr><td>① 问题定义与背景</td><td>解决什么问题、给谁用、成功判据是什么、为什么值得做</td><td>0.5—1 页</td></tr>
+<tr><td>② 相关工作与方案选型</td><td>对比了哪些替代方案，为什么选这个（须回应"为什么不用微调 / 为什么不用 RAG"这类问题）</td><td>1—1.5 页</td></tr>
+<tr><td>③ 系统设计</td><td>架构图（必配）、模块划分、数据流</td><td>1—1.5 页</td></tr>
+<tr><td>④ 实现细节</td><td>关键技术点、踩过的坑与解法——<strong>这部分最能体现工作量</strong></td><td>2—3 页</td></tr>
+<tr><td>⑤ 评估</td><td>测试集来源与规模、指标定义、结果表、与基线对比、参数对比实验</td><td>2—3 页</td></tr>
+<tr><td>⑥ 错误分析与局限</td><td>失败样例 ≥3 个，逐一归因（数据噪声 / 过拟合 / 指令歧义 / 检索失败等）</td><td>1—2 页</td></tr>
+<tr><td>⑦ 工程与伦理</td><td>成本、延迟、权限与隐私、数据许可、<strong>AI 使用声明</strong></td><td>0.5—1 页</td></tr>
+<tr><td>⑧ 分工与贡献</td><td>每人负责的模块与产出证据（与个人贡献声明一致）</td><td>0.5 页</td></tr>
+</table>
+<p>图表要求：坐标轴、单位、图例齐全；loss / 指标曲线必须来自真实运行日志。</p>
+<hr>
+<h2>九、学术诚信与 AI 使用边界</h2>
+<p><strong>鼓励</strong>：用 AI 查文档、调试代码、生成样板、润色文字、做对比实验、互查错误。</p>
+<p><strong>禁止</strong>：</p>
+<ul><li>用 AI 代写实验设计与结果分析；</li><li>编造数据、伪造日志或截图；</li><li>抄袭他人代码与报告；</li><li>把 API Key、隐私数据交给外部服务或写进提交物。</li></ul>
+<p><strong>硬性要求</strong>：报告必须声明 AI 的使用范围与人工修改部分；每人的贡献声明必须写明自己负责的模块与对应产出证据，与报告第⑧节分工一致；贡献声明相互矛盾且无法解释的，第 ⑥ 项相应扣分。</p>
+<hr>
+<h2>附件（同目录文件）</h2>
+<table>
+<tr><th>文件</th><th>用途</th></tr>
+<tr><td><code>项目报告模板_20261013_codex.md</code></td><td>八节结构的写作骨架，可直接复制填写</td></tr>
+<tr><td><code>贡献声明表_20261013_codex.md</code></td><td>每人单独填写一份</td></tr>
+</table>
+<hr>
+<p><strong>一句话总结</strong>：把问题定义清楚、把实验测明白、让别人能复现——这比追求一个漂亮数字重要得多。</p>
+</div>
+<script>
+document.getElementById('btnEdit').addEventListener('click', () => {
+  const page = document.getElementById('page');
+  const editing = page.isContentEditable;
+  page.contentEditable = editing ? 'false' : 'true';
+  page.style.outline = editing ? 'none' : '2px dashed #2f6fd0';
+  document.getElementById('btnEdit').textContent = editing ? '编辑模式' : '退出编辑';
+});
+document.getElementById('btnPrint').addEventListener('click', () => window.print());
+</script>
+</body></html>

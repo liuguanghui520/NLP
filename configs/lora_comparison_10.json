@@ -1,0 +1,27 @@
+{
+  "status": "user_defined_configurations_recorded_not_started",
+  "date": "2026-10-26",
+  "reference_file": "configs/lora_reference.json",
+  "baseline_id": "B00",
+  "reference_run_id": "qwen17-full-20261025-231706-ea8173",
+  "comparison_rule": "Each configuration compares directly to the same reference; no accumulated changes; all adapters start from the same original base model.",
+  "configurations": [
+    {"id": "B00", "previous_id": "LR00", "group": "reference", "overrides": {}},
+    {"id": "L01", "previous_id": "LR01", "group": "learning_rate_policy", "overrides": {"learning_rate": 0.0003}},
+    {"id": "L02", "previous_id": "LR02", "group": "learning_rate_policy", "overrides": {"learning_rate": 0.00005}},
+    {"id": "L03", "previous_id": "LR03", "group": "learning_rate_policy", "overrides": {"warmup_ratio": 0.2}},
+    {"id": "L04", "previous_id": "LR04", "group": "learning_rate_policy", "overrides": {"warmup_ratio": 0.05}},
+    {"id": "L05", "previous_id": "LR05", "group": "learning_rate_policy", "overrides": {"lr_scheduler_type": "cosine"}},
+    {"id": "R01", "group": "rank", "overrides": {"lora_rank": 16, "lora_alpha": 32}},
+    {"id": "D01", "group": "dropout", "overrides": {"lora_dropout": 0.1}},
+    {"id": "D02", "group": "dropout", "overrides": {"lora_dropout": 0.02}},
+    {"id": "T01", "group": "target_modules", "overrides": {"lora_target": "q_proj,k_proj,v_proj,o_proj"}}
+  ],
+  "counting": {"including_reference": 10, "new_candidates_excluding_reference": 9},
+  "transcription_notes": [
+    "Changed rank recorded as 16 using preceding discussion of ranks 8/16; alpha follows previously confirmed 2r rule.",
+    "User's module list interpreted as q/v/k/o attention projections, normalized ordering to q/k/v/o.",
+    "New candidate configurations not executed; reference completed separately. Final repeated-seed budget remains separate."
+  ],
+  "ai_assistance": "Transcription and engineering checks of user-defined configurations, not generated research questions or results."
+}

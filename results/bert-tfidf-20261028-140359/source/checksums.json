@@ -1,0 +1,430 @@
+[
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\项目报告_终版.md",
+    "SHA256": "6E8CF5E64BE97F0CC2FC5836F192A9F23BC330ABF2FD8E609EC6D8BAA803A70F"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\项目报告.md",
+    "SHA256": "2CA7605BF8DF7F183EFC100B68B8AEDB39CFA9C93FB63E57F3772AC67A7EC343"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\项目摘要_模板.md",
+    "SHA256": "D3E52EAFF231524C6B89B351F034266191DF94F7BEF566698166D1D34FD81EB9"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\项目摘要.md",
+    "SHA256": "B40F7A5870A26D13EFFB5DD55D7B6F693180FCC4743101E531CA08EF579CECF5"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\README.md",
+    "SHA256": "5EC96166D375B4A9794F9D18D6C8D36DD44D1B9DCF240AC0860A5304B175C25B"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\冻结资产\\data\\processed\\v1-20261023\\fewshot_ids.json",
+    "SHA256": "2CDED8D68DCCAE3874482ADC9DB1DC765FB94DF35D5EE8DEAB9EC102A75DE84C"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\冻结资产\\data\\processed\\v1-20261023\\latency_ids.json",
+    "SHA256": "B6C17098C5D28E42FBFD2594951875DA0D0F66A12596E08998B91970E7A8C4B2"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\冻结资产\\data\\processed\\v1-20261023\\smoke_ids.json",
+    "SHA256": "5DD63156D0DE61FCDA1DADEAB485D1C38124D3CEBC5162E3358734DD6C118155"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\冻结资产\\data\\processed\\v1-20261023\\split_ids.json",
+    "SHA256": "D5C49ACD3F6F79CEB632DD33AC5389AB1C65638A32FCC6E3E636C825D7871122"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\冻结资产\\data\\processed\\v1-20261023\\statistics.json",
+    "SHA256": "BBBABCAE5D4838B04489C15FDD726FCC4126A63D15AB1B9360680DD79FFE222E"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\冻结资产\\data\\processed\\v1-20261023\\status.json",
+    "SHA256": "8623B38B5317C65A531B2F96AED2B161BD36249F5F711A05561C9DEB1C74AC60"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\冻结资产\\src\\configs\\data_processing.json",
+    "SHA256": "18D7130D558EB2DCC98C2B26454CD0C3FFEED7FDC3267D9E6AB212C70316DBD0"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\paired_tests_key.json",
+    "SHA256": "6B0AD33A3C9B69B73925AE5BDB1A0E4E5B60766D2E29700B4F52F652D9336EEA"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\paired_tests.csv",
+    "SHA256": "91E34F6A31C8144644DD86B44841EB56546F6AAA7DDD3B7021F4180829C9B874"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\paired_tests.md",
+    "SHA256": "D950B2D6DC022E4320FD79DFF6BBEB5A454E7B6BD446D1B1CC9552EF6F099871"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\ablation_compare.png",
+    "SHA256": "FBB5B26C9C200D2856CF67C1055005C7A873A8E19056D8E539E9EE4B732D72E9"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\ablation_results.csv",
+    "SHA256": "DA8DF090933AFAE689D840F3F4184F17D3EB10C13BB940DB79A00633F35EACBD"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\ablation_summary.txt",
+    "SHA256": "C0A8A33F5C914967083C7D1A4E355AAFD8C3C5AC4212138A11547B4B9D54D7DF"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_ctrl_len_group.csv",
+    "SHA256": "AA9264DA7F38ACA0E47B8717D1FCD75BD0A6DE45B566C5D8B71CAF74A7AAB576"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_ctrl_random.csv",
+    "SHA256": "DEB629A28DAD95E3213B5F95B6D410D9D4D8BB4210523BDC6703D1F15CBEF333"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_curve_n100.csv",
+    "SHA256": "9A1DA8AD0744AEF713AC106DFD4EB8A016A554F1E0FF6104AFBA6BA36895A9F1"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_curve_n1000.csv",
+    "SHA256": "AA9264DA7F38ACA0E47B8717D1FCD75BD0A6DE45B566C5D8B71CAF74A7AAB576"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_curve_n2000.csv",
+    "SHA256": "67ED93A469936FB744EDF6ED2C3E79A63BECFE6ADC505AD9B47AB523B8BD543C"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_curve_n3000.csv",
+    "SHA256": "B10A81FD89F0FC142B709AA7CDA5E00D3F0F874560DF7AD3F22BB64991A5BCD2"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_curve_n500.csv",
+    "SHA256": "9BD422DBA348B85A73016CFF7ABD6982D21C75D557ED0C3C9E55B40CCE5C1945"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_ep5.csv",
+    "SHA256": "9D179D50D3AEE2C606A0411B4BF8F0688A58CE34CE414E5D73CF110E9F04779A"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_len128.csv",
+    "SHA256": "9A02C132CBEED5E5F33A5BE0D6D199E2DC8A3C968C6A758879FA057B3D896533"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_len512.csv",
+    "SHA256": "0221B7A84B7A7731148442E4B4E3AC02CC1954B4172C270DC87FAE8371C694F0"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_lr_1e5.csv",
+    "SHA256": "A7D86723535920BA83AD9E0ADF68B08824226AE653D0B8A24C6D9F5E601792C6"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_lr_5e5.csv",
+    "SHA256": "396A33C8E7264E8B3C801A6442FF07C726C2473E022D8802487B89DFC740B883"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_main.csv",
+    "SHA256": "8E05F27BD147C18CBF41811990DC7E364A1DD3AEF09561730EB3F64FDA42BDF9"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_partial.csv",
+    "SHA256": "459DA9E9F2BFDD9637A913EC1802E2C4E172D94430463AAD22B4DE6CBF3B04FF"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length_weighted.csv",
+    "SHA256": "041A95021F86A1D4D02E18B7CB311B753B8C2003303B9614A456091FCD0B73CC"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\acc_by_length.csv",
+    "SHA256": "7A057CB3F63D5A46DFAAD7E773F492DEF92E00098251B11F0AD96DFD09F28051"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\batching_control.csv",
+    "SHA256": "AE8624AA282C53C1E9366084058A05B1B825B7542A229E7FF4466C7144E828AB"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\bert_report.txt",
+    "SHA256": "6DAC7DC6EF674E4A8D4CEC4BD270C4ECE1552169F2420FADA63E2C3CA9F0A2DC"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\confusion_matrix.png",
+    "SHA256": "968CBBDD78EC450808A0C50031EA0D13C91B213A45887879D4FF99056482F5DB"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\data_curve_repred.csv",
+    "SHA256": "119490DBAB538F7CDF0B22F13E6A9E40552AE1462EDD336E774EB8A8C1A1B880"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\data_curve.csv",
+    "SHA256": "119490DBAB538F7CDF0B22F13E6A9E40552AE1462EDD336E774EB8A8C1A1B880"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\data_curve.png",
+    "SHA256": "E4A0D87B477667345E71E13CCF30452C8D0FA1BA419B387BE0C52DA8568B5B94"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\error_samples.csv",
+    "SHA256": "2F0A35BDD1BB344398BCF2EDDF5055E05D84F0DBA3998F870D2021BAAF9222B2"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\errors_by_class.csv",
+    "SHA256": "E63FA7E3333986D164589EF89F06A1B4BA1C9B00B9DA97AD4F3AE8EC6C240099"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\latency_baseline.csv",
+    "SHA256": "A0EAD157CCDB5762C66828C545A6FC194134FB9F8427124F1B1823592877B66D"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\latency_bert.csv",
+    "SHA256": "4914C789D297CD1A2AC0FD7B1271459BD844DA9FE3FCB379046A678865DDE40B"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\latency_tfidf.csv",
+    "SHA256": "56B8CF2C43AE60DB88A5F586317DC3C663CCB95019364BA1E4151BE7A1F20E1B"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\loss_curve.png",
+    "SHA256": "81E9FBF8539686E363F739FCBCF302C4A705EEAF2E80B8B48D5C3FD110A168F6"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_ctrl_len_group.csv",
+    "SHA256": "79A3BA5BC49FFB6159E0F1967FD4E08ACD1F7FC9CF1617FB4FABEA0C298124B3"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_ctrl_random.csv",
+    "SHA256": "7C8826911AEFEC30E9C1A1236420A083C9164D0200E90FDC595602A54CD1845D"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_curve_n100.csv",
+    "SHA256": "C0A6F3822830525DCC302C732C21C5FAD2AEFA8E545E58EC383FB7D7662BA9D7"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_curve_n1000.csv",
+    "SHA256": "79A3BA5BC49FFB6159E0F1967FD4E08ACD1F7FC9CF1617FB4FABEA0C298124B3"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_curve_n2000.csv",
+    "SHA256": "C843678DF886854320BCCFC0C9A5CEEE29D7C83E4DFF1EA29A7E6E4A62B695E5"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_curve_n3000.csv",
+    "SHA256": "7322FDE6955834397B2F24A06436287A0CCEBEBE25B098CC0FD74B523DEB7B3B"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_curve_n500.csv",
+    "SHA256": "6A11BE0D09E4026587AF69B5D90D5B768B5062C5DB5170E6A9307F62DC8108C5"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_ep5.csv",
+    "SHA256": "AFAF06A8D520EF00BA21D35AF2FC47D4118AEF10616735C30DC0C0FC816237F5"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_len128.csv",
+    "SHA256": "FB4F7BF7E4254B785C94C7A64E4DB7C7F3B78E0D25A792134E4E02DC4C75D613"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_len512.csv",
+    "SHA256": "22184784211CEE91EA182FF43861DEF7E57284C9DE2996E435F93ACA3B0EB232"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_lr_1e5.csv",
+    "SHA256": "9F6CA7F4B892E6AB5F668756B508EB7FEA29DD813C7E64E0529760F80522062D"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_lr_5e5.csv",
+    "SHA256": "9686808C75348062923471E0997D241A10B8C90C0F97E290BABDF9055B507E60"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_main.csv",
+    "SHA256": "F4AFE57B9FE2412DC4CC9BB16A5F7D59785F77A1C249A71B88E63CCA3E6B49D1"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_partial.csv",
+    "SHA256": "AB96AAA992EC952E3C8E7904B0D29FF39B4E49CA69DC17B72C2829D73EF164A6"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions_weighted.csv",
+    "SHA256": "E3D2E34FF28A421D51F8FD2C72A30B6D8CBC0EF02B3943CD8649E4FC93217097"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\predictions.csv",
+    "SHA256": "9F6CA7F4B892E6AB5F668756B508EB7FEA29DD813C7E64E0529760F80522062D"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\report_main.txt",
+    "SHA256": "ECEFF56E60262DADC40D36129DF89B8D533F2C8B6A9D8BB5FE62D878BD83A043"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\representative.json",
+    "SHA256": "ACC3CE8D9220B481B4C710E9907C4F7CF47630CA8BD96B1CB58382527D62075F"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\run_log.txt",
+    "SHA256": "503D5F14749B977906CE91AFFA95EB7F1759A9ACA38F7570C08A70067595478B"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\train_log.csv",
+    "SHA256": "4C1D6EB8E6240DF9324FD8A3D89831AFDFD8E9C52A84D484F52E0CB16469666C"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_BERT_FULL\\val_log.csv",
+    "SHA256": "71B2C3A9A426C2B0D868791B9E25D88A1075B7C31942D5EE05679E49E1BC7B39"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_TFIDF\\errors_by_class.csv",
+    "SHA256": "F0956AF355E0440CC8EFC2D9004B0DD027269A92DAAB596DC4C46E402A9148A1"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_TFIDF\\predictions.csv",
+    "SHA256": "AC9F5FF84BB792178231F75BDC4F204983D2517D05B97ED9DBC12C3321D1B421"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_TFIDF\\tfidf_ablation.csv",
+    "SHA256": "63B3A40065BC26510504EC61678B840F96694D17193AA2A4C24911791845F074"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_TFIDF\\tfidf_compare.png",
+    "SHA256": "FB6CAB7AF9C417FAA3DF7D750B2F3A6BC51269E4FDA6210C7A25EA1B1FB61A57"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\期望结果\\results_TFIDF\\tfidf_report.txt",
+    "SHA256": "36DE0FF43EF8BD7BBFF8AF095A1E81A7D00D48141650D0BA6A8A79EBD12C26E3"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\环境\\requirements.txt",
+    "SHA256": "91FF519C34E32A3020759A29F14427DBB874758CD31E99785FE5DCF36AE20D70"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\_extract_md_code.py",
+    "SHA256": "A525F377C0BE355C40F0E290471B24274C97578E4AEC19B5B9295FDDCF7572E6"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\run_bert_local.bat",
+    "SHA256": "A4EDC520993400769365C2B833C9053789ACA2D06307D2A9939BA6452C31CEE9"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\train_bert.md",
+    "SHA256": "0903CEE3EA5757EA05E7128911961928FE3579BD852EF41FCDE9E1AF8E6BEF45"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\train_lora.md",
+    "SHA256": "AE4144D018DDAE07CDCAE5C9CA553D4B965CBE29B96B74407859395C95834FBF"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\train_prompt.md",
+    "SHA256": "06369D9F536D4464D528D6E3C43D34AFB288558D0144CA35D0FE437E3338B46E"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\train_tfidf.md",
+    "SHA256": "BD2CA8A33C21A71AB49A5B6B510AECD6915571DFFFBB2EF43E6CDA04E63C153B"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\requirements.txt",
+    "SHA256": "91FF519C34E32A3020759A29F14427DBB874758CD31E99785FE5DCF36AE20D70"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\configs\\data_processing.json",
+    "SHA256": "18D7130D558EB2DCC98C2B26454CD0C3FFEED7FDC3267D9E6AB212C70316DBD0"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\data\\process_data.py",
+    "SHA256": "D69F9DD354EDFD189CE05E7B4D16644B231925AA1DFC10B9D200CDB2FD0176F3"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\data\\rebuild_data.py",
+    "SHA256": "3986E03714CF3DC695D0185FEF16779C6F6C72250B7AC24112195FF7C37AB2E5"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\eval\\evaluate.py",
+    "SHA256": "FB9281DCF772F12A05649D4DEEE1D7CC2E6E07D3BF6DA402145A111C61E3F63C"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\eval\\latency_baseline.py",
+    "SHA256": "145A49D7D7E73FD29882C5541B6438FD372081FB359388310BEE610959A8A193"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\eval\\latency_model.py",
+    "SHA256": "FF445CF122C0658D16C6F18E78EEEDE27962A9BF47AA5333B4B2C447C0F80AA7"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\eval\\paired_tests.py",
+    "SHA256": "D929A775C140FCECF07E07C6574CFF0571E9474CDDB78E96B7EF57F52DBFD3B1"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\eval\\relink_predictions.py",
+    "SHA256": "D1FA69148BBF7A99DE84A179FC7D128A3C51D72E22D27AB26DDFD6825D284A83"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\eval\\representative.py",
+    "SHA256": "2FBA5ECFA3002048853FAD7807F8512477CD474C3845A1CF368EC1F031E61AC1"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\models\\bert_full.py",
+    "SHA256": "3772D8B954143FF393E178678278D247DA2CFA8AEE17C5A19D3B86F4824ECF42"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\models\\qwen_lora.py",
+    "SHA256": "23017720A03C4C692E7D615015DD963C7AAB91804E77E5A55F08F4C3B804FD2C"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\models\\qwen_prompt.py",
+    "SHA256": "5FADD8534E0C361C4171D361E998B04417111968B66B34129FEBC7AD7B556B6B"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\models\\tfidf_baseline.py",
+    "SHA256": "562253E94F24680230ED99DB4F1A500CE99B334229D778C9212EBEC3B0D91AE2"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\scripts\\collect_results.py",
+    "SHA256": "FD38B5EB70EBC320BEA07D8EE67CD2D8FF5DC75DAACF5A4A0E82F30C128E6607"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\src\\scripts\\fill_report.py",
+    "SHA256": "E1CAA6CC9B5C515D40DB97F869E3BBCF6CE1439BA7216A93FCD8BF224AEE66DF"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\tools\\_make_notebooks.py",
+    "SHA256": "1E1311DF89A5A0780A4895DE8BA2167A3AFFA9408554F89FA1C11D9E0ECDFF52"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\tools\\_pack_zip.py",
+    "SHA256": "99907F6F327A0AC1FD1C84D2157A5717EFFACA85116F76CE19D05D71279788CC"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\tools\\check_no_other_run.ps1",
+    "SHA256": "B36FA25FA14FFCA980E5A3096E88D7F21C5EA65E6160F39E1FDA54678997FF69"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\tools\\check_summary_length.py",
+    "SHA256": "410177709C3C394379722818A5D24A8BBF85197E7CF48E9947B66AC78A9A4439"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\tools\\fix_log_pollution.py",
+    "SHA256": "88CDE2657E97E667EC29E81DD5748AD18CC146BCA5E0028A753FD0C7CA9F9714"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\tools\\make_bert_plots.py",
+    "SHA256": "D87CCFA403861FB790C37E40CF9806BE231522523767E982A33C4408F4A8B479"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\tools\\md2pdf.py",
+    "SHA256": "B5E40D75FD00202C542C124D9C22FF932AEB94360F1128C259B7991419C6CBD5"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\tools\\merge_latency.py",
+    "SHA256": "3E28C56A048E6C8523A72E0BFFBB17041B09BDD093174B095C8A780490411FCF"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\tools\\preflight_check.py",
+    "SHA256": "2BBC38876436A9180520098E66E3D73D510D201E3B0AD4ED4300AB6B2EAA3DF3"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\tools\\switch_representative.py",
+    "SHA256": "43F43D8458D58CD009B860926A5C890A160521BF45C5C789A7F941B8A8A94C91"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\tools\\verify_repro.py",
+    "SHA256": "62E017E67259C506837464D6A1D9BCACCE7332D60BF0AB672580474AA76B3811"
+  },
+  {
+    "Path": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\bert-tfidf-20261028-140359\\source\\original\\脚本\\tools\\watch_progress.py",
+    "SHA256": "92E13949065A3D282EF679FBA5772D79B15E9AF566A080155AD6A98590BCC992"
+  }
+]

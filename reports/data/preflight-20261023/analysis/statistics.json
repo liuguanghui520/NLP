@@ -1,0 +1,38 @@
+{
+  "source_sha256": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0",
+  "encoding": "utf-8-sig (strict)",
+  "total_records": 7766,
+  "valid_records": 7765,
+  "raw_labels": {
+    "1": 5322,
+    "0": 2444
+  },
+  "invalid_records": 0,
+  "exclusions": {
+    "empty_text": 1
+  },
+  "conflict_records": 0,
+  "missing_body_records": 0,
+  "empty_string_records": 1,
+  "truncated_count": 205,
+  "truncated_ratio": 0.026400515132002575,
+  "prefix_collision_groups": [
+    [
+      "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3070",
+      "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3071"
+    ],
+    [
+      "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3728",
+      "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3729"
+    ]
+  ],
+  "approximate_deduplication": false,
+  "length_distribution": {
+    "0": 2,
+    "0.25": 45,
+    "0.5": 84,
+    "0.75": 154,
+    "0.95": 383,
+    "1": 2924
+  }
+}

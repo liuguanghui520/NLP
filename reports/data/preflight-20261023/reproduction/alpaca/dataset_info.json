@@ -1,0 +1,18 @@
+{
+  "sentiment_train": {
+    "file_name": "train.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "sentiment_validation": {
+    "file_name": "validation.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}

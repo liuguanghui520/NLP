@@ -1,0 +1,2 @@
+# Preserve exact artifact bytes so dataset, prediction and evidence SHA256 remain reproducible.
+* -text

@@ -1,0 +1,407 @@
+[
+  {
+    "seed": 42,
+    "epoch": 1.0,
+    "step": 389,
+    "prediction_sha256": "587f8416ba130fe79f7af1cf8e54e5e4994679d69de0aea2886383338294fc30",
+    "count": 776,
+    "accuracy": 0.9175257731958762,
+    "macro_f1": 0.9041376168747443,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "0": {
+        "precision": 0.871900826446281,
+        "recall": 0.8647540983606558,
+        "f1": 0.8683127572016461,
+        "support": 244
+      },
+      "1": {
+        "precision": 0.9382022471910112,
+        "recall": 0.9417293233082706,
+        "f1": 0.9399624765478424,
+        "support": 532
+      }
+    },
+    "confusion_matrix": [
+      [
+        211,
+        33,
+        0
+      ],
+      [
+        31,
+        501,
+        0
+      ]
+    ],
+    "matrix_rows": [
+      0,
+      1
+    ],
+    "matrix_columns": [
+      0,
+      1,
+      "invalid"
+    ]
+  },
+  {
+    "seed": 42,
+    "epoch": 2.0,
+    "step": 778,
+    "prediction_sha256": "103b361fbffcc7f105ddf2d9898a507f62a25e0f31d70a5bf4d66aa744ede3eb",
+    "count": 776,
+    "accuracy": 0.9201030927835051,
+    "macro_f1": 0.9087232024283818,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "0": {
+        "precision": 0.8527131782945736,
+        "recall": 0.9016393442622951,
+        "f1": 0.8764940239043825,
+        "support": 244
+      },
+      "1": {
+        "precision": 0.9536679536679536,
+        "recall": 0.9285714285714286,
+        "f1": 0.940952380952381,
+        "support": 532
+      }
+    },
+    "confusion_matrix": [
+      [
+        220,
+        24,
+        0
+      ],
+      [
+        38,
+        494,
+        0
+      ]
+    ],
+    "matrix_rows": [
+      0,
+      1
+    ],
+    "matrix_columns": [
+      0,
+      1,
+      "invalid"
+    ]
+  },
+  {
+    "seed": 42,
+    "epoch": 3.0,
+    "step": 1167,
+    "prediction_sha256": "bd994297ccf498f894ed849af608cd0c905f085e589bd8bb0211228ccac7312e",
+    "count": 776,
+    "accuracy": 0.9252577319587629,
+    "macro_f1": 0.913885338619196,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "0": {
+        "precision": 0.872,
+        "recall": 0.8934426229508197,
+        "f1": 0.8825910931174089,
+        "support": 244
+      },
+      "1": {
+        "precision": 0.9505703422053232,
+        "recall": 0.9398496240601504,
+        "f1": 0.945179584120983,
+        "support": 532
+      }
+    },
+    "confusion_matrix": [
+      [
+        218,
+        26,
+        0
+      ],
+      [
+        32,
+        500,
+        0
+      ]
+    ],
+    "matrix_rows": [
+      0,
+      1
+    ],
+    "matrix_columns": [
+      0,
+      1,
+      "invalid"
+    ]
+  },
+  {
+    "seed": 43,
+    "epoch": 1.0,
+    "step": 389,
+    "prediction_sha256": "6f1a5b14d42c91401854237748058e229e650e24a1afd9d7418b73b20c14851b",
+    "count": 776,
+    "accuracy": 0.904639175257732,
+    "macro_f1": 0.8929934406678592,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "0": {
+        "precision": 0.8079710144927537,
+        "recall": 0.9139344262295082,
+        "f1": 0.8576923076923076,
+        "support": 244
+      },
+      "1": {
+        "precision": 0.958,
+        "recall": 0.900375939849624,
+        "f1": 0.9282945736434108,
+        "support": 532
+      }
+    },
+    "confusion_matrix": [
+      [
+        223,
+        21,
+        0
+      ],
+      [
+        53,
+        479,
+        0
+      ]
+    ],
+    "matrix_rows": [
+      0,
+      1
+    ],
+    "matrix_columns": [
+      0,
+      1,
+      "invalid"
+    ]
+  },
+  {
+    "seed": 43,
+    "epoch": 2.0,
+    "step": 778,
+    "prediction_sha256": "85314b862370938a03e55dda354c6f60f619f34778c3a5f21ff8c3261d587070",
+    "count": 776,
+    "accuracy": 0.9201030927835051,
+    "macro_f1": 0.9092828913627176,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "0": {
+        "precision": 0.8446969696969697,
+        "recall": 0.9139344262295082,
+        "f1": 0.8779527559055118,
+        "support": 244
+      },
+      "1": {
+        "precision": 0.958984375,
+        "recall": 0.9229323308270677,
+        "f1": 0.9406130268199234,
+        "support": 532
+      }
+    },
+    "confusion_matrix": [
+      [
+        223,
+        21,
+        0
+      ],
+      [
+        41,
+        491,
+        0
+      ]
+    ],
+    "matrix_rows": [
+      0,
+      1
+    ],
+    "matrix_columns": [
+      0,
+      1,
+      "invalid"
+    ]
+  },
+  {
+    "seed": 43,
+    "epoch": 3.0,
+    "step": 1167,
+    "prediction_sha256": "cfda35dc19db01845f0335cbd44179cb51aae78492aa48b316e10f1061e6f4d6",
+    "count": 776,
+    "accuracy": 0.9226804123711341,
+    "macro_f1": 0.9107225034514497,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "0": {
+        "precision": 0.8709677419354839,
+        "recall": 0.8852459016393442,
+        "f1": 0.8780487804878049,
+        "support": 244
+      },
+      "1": {
+        "precision": 0.946969696969697,
+        "recall": 0.9398496240601504,
+        "f1": 0.9433962264150944,
+        "support": 532
+      }
+    },
+    "confusion_matrix": [
+      [
+        216,
+        28,
+        0
+      ],
+      [
+        32,
+        500,
+        0
+      ]
+    ],
+    "matrix_rows": [
+      0,
+      1
+    ],
+    "matrix_columns": [
+      0,
+      1,
+      "invalid"
+    ]
+  },
+  {
+    "seed": 44,
+    "epoch": 1.0,
+    "step": 389,
+    "prediction_sha256": "5c803ca5c463636113215fce2bad3e5f2d31c544834fcb3415b0dea56a369e58",
+    "count": 776,
+    "accuracy": 0.9201030927835051,
+    "macro_f1": 0.9083392393101819,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "0": {
+        "precision": 0.8582677165354331,
+        "recall": 0.8934426229508197,
+        "f1": 0.8755020080321285,
+        "support": 244
+      },
+      "1": {
+        "precision": 0.9501915708812261,
+        "recall": 0.9323308270676691,
+        "f1": 0.9411764705882353,
+        "support": 532
+      }
+    },
+    "confusion_matrix": [
+      [
+        218,
+        26,
+        0
+      ],
+      [
+        36,
+        496,
+        0
+      ]
+    ],
+    "matrix_rows": [
+      0,
+      1
+    ],
+    "matrix_columns": [
+      0,
+      1,
+      "invalid"
+    ]
+  },
+  {
+    "seed": 44,
+    "epoch": 2.0,
+    "step": 778,
+    "prediction_sha256": "491be62a630ba82222de03cae859cc76c47f3517ca9a1366b200eaaffaecc7f8",
+    "count": 776,
+    "accuracy": 0.9188144329896907,
+    "macro_f1": 0.9075378024908508,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "0": {
+        "precision": 0.8467432950191571,
+        "recall": 0.9057377049180327,
+        "f1": 0.8752475247524752,
+        "support": 244
+      },
+      "1": {
+        "precision": 0.9553398058252427,
+        "recall": 0.924812030075188,
+        "f1": 0.9398280802292264,
+        "support": 532
+      }
+    },
+    "confusion_matrix": [
+      [
+        221,
+        23,
+        0
+      ],
+      [
+        40,
+        492,
+        0
+      ]
+    ],
+    "matrix_rows": [
+      0,
+      1
+    ],
+    "matrix_columns": [
+      0,
+      1,
+      "invalid"
+    ]
+  },
+  {
+    "seed": 44,
+    "epoch": 3.0,
+    "step": 1167,
+    "prediction_sha256": "8abd04ccd98a36e9008d765052099d95811fb806bf95c3c1b2be133079383d27",
+    "count": 776,
+    "accuracy": 0.9226804123711341,
+    "macro_f1": 0.9105269226334601,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "0": {
+        "precision": 0.8739837398373984,
+        "recall": 0.8811475409836066,
+        "f1": 0.8775510204081632,
+        "support": 244
+      },
+      "1": {
+        "precision": 0.9452830188679245,
+        "recall": 0.9417293233082706,
+        "f1": 0.943502824858757,
+        "support": 532
+      }
+    },
+    "confusion_matrix": [
+      [
+        215,
+        29,
+        0
+      ],
+      [
+        31,
+        501,
+        0
+      ]
+    ],
+    "matrix_rows": [
+      0,
+      1
+    ],
+    "matrix_columns": [
+      0,
+      1,
+      "invalid"
+    ]
+  }
+]

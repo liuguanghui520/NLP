@@ -1,0 +1,354 @@
+/home/lgh/.venvs/llamafactory/lib/python3.11/site-packages/torch/cuda/__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[INFO|hub.py:364] 2026-10-25 17:54:55,853 >> Offline mode: forcing local_files_only=True
+[INFO|configuration_utils.py:778] 2026-10-25 17:54:55,853 >> loading configuration file /home/lgh/models/Qwen3-0.6B/config.json
+[INFO|configuration_utils.py:856] 2026-10-25 17:54:55,855 >> Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 40960,
+  "max_window_layers": 28,
+  "model_type": "qwen3",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 8,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.8.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|hub.py:364] 2026-10-25 17:54:55,855 >> Offline mode: forcing local_files_only=True
+[INFO|tokenization_utils_base.py:1595] 2026-10-25 17:54:55,856 >> Offline mode: forcing local_files_only=True
+[INFO|hub.py:364] 2026-10-25 17:54:56,179 >> Offline mode: forcing local_files_only=True
+[INFO|hub.py:364] 2026-10-25 17:54:56,180 >> Offline mode: forcing local_files_only=True
+[INFO|hub.py:364] 2026-10-25 17:54:56,180 >> Offline mode: forcing local_files_only=True
+[INFO|hub.py:364] 2026-10-25 17:54:56,180 >> Offline mode: forcing local_files_only=True
+[INFO|hub.py:364] 2026-10-25 17:54:56,180 >> Offline mode: forcing local_files_only=True
+[INFO|hub.py:364] 2026-10-25 17:54:56,180 >> Offline mode: forcing local_files_only=True
+[INFO|configuration_utils.py:778] 2026-10-25 17:54:56,180 >> loading configuration file /home/lgh/models/Qwen3-0.6B/config.json
+[INFO|configuration_utils.py:856] 2026-10-25 17:54:56,181 >> Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 40960,
+  "max_window_layers": 28,
+  "model_type": "qwen3",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 8,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.8.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|hub.py:364] 2026-10-25 17:54:56,181 >> Offline mode: forcing local_files_only=True
+[INFO|configuration_utils.py:778] 2026-10-25 17:54:56,181 >> loading configuration file /home/lgh/models/Qwen3-0.6B/config.json
+[INFO|configuration_utils.py:856] 2026-10-25 17:54:56,182 >> Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 40960,
+  "max_window_layers": 28,
+  "model_type": "qwen3",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 8,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.8.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|hub.py:364] 2026-10-25 17:54:56,182 >> Offline mode: forcing local_files_only=True
+[INFO|tokenization_utils_base.py:1595] 2026-10-25 17:54:56,182 >> Offline mode: forcing local_files_only=True
+[WARNING|2026-10-25 17:54:56] llamafactory.data.template:149 >> You are using reasoning template. If the base model is NOT a reasoning model (i.e., it has a separate Instruct variant), please add `_nothink` suffix to disable thinking. For reasoning-only model families (e.g., Qwen3.6), the suffix is not needed. e.g., qwen3_vl_nothink
+[INFO|hub.py:364] 2026-10-25 17:54:56,515 >> Offline mode: forcing local_files_only=True
+[INFO|configuration_utils.py:778] 2026-10-25 17:54:56,515 >> loading configuration file /home/lgh/models/Qwen3-0.6B/config.json
+[INFO|configuration_utils.py:856] 2026-10-25 17:54:56,516 >> Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 40960,
+  "max_window_layers": 28,
+  "model_type": "qwen3",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 8,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.8.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2026-10-25 17:54:56] llamafactory.model.model_utils.kv_cache:144 >> KV cache is enabled for faster generation.
+[INFO|modeling_utils.py:766] 2026-10-25 17:54:56,883 >> loading weights file /home/lgh/models/Qwen3-0.6B/model.safetensors
+[INFO|modeling_utils.py:839] 2026-10-25 17:54:56,883 >> Will use dtype=torch.bfloat16 as defined in model's config object
+[INFO|configuration_utils.py:1086] 2026-10-25 17:54:56,884 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "use_cache": true
+}
+
+[INFO|accelerate.py:285] 2026-10-25 17:54:56,999 >> We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]
+Loading weights:  18%|█▊        | 55/311 [00:00<00:00, 549.95it/s]
+Loading weights:  83%|████████▎ | 258/311 [00:00<00:00, 1414.20it/s]
+Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1373.70it/s]
+[INFO|configuration_utils.py:1037] 2026-10-25 17:54:57,326 >> loading configuration file /home/lgh/models/Qwen3-0.6B/generation_config.json
+[INFO|configuration_utils.py:1086] 2026-10-25 17:54:57,326 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": true,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "pad_token_id": 151643,
+  "temperature": 0.6,
+  "top_k": 20,
+  "top_p": 0.95
+}
+
+[INFO|2026-10-25 17:54:57] llamafactory.model.model_utils.attention:144 >> Using torch SDPA for faster training and inference.
+[INFO|2026-10-25 17:54:58] llamafactory.model.adapter:144 >> Merged 1 adapter(s).
+[INFO|2026-10-25 17:54:58] llamafactory.model.adapter:144 >> Loaded adapter(s): /home/lgh/LLaMA-Factory/project-workspaces/qwen06-optuna/qwen06-optuna-20261025-175431-0a7f8f/trial-000/adapter
+[INFO|2026-10-25 17:54:58] llamafactory.model.loader:144 >> all params: 596,049,920
+[WARNING|logging.py:340] 2026-10-25 17:54:58,107 >> The following generation flags are not valid and may be ignored: ['temperature', 'top_p'].
+[INFO|logging.py:355] 2026-10-25 17:54:58,107 >> - `temperature`: `do_sample` is not set to `True`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+- `top_p`: `do_sample` is not set to `True`. However, `top_p` is set to `0.95` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+If you're using a pretrained model, note that some of these attributes may be set through the model's `generation_config.json` file.
+[WARNING|logging.py:340] 2026-10-25 17:54:58,926 >> Ignoring clean_up_tokenization_spaces=True for BPE tokenizer Qwen2Tokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+lora: 25/776
+lora: 50/776
+lora: 75/776
+lora: 100/776
+lora: 125/776
+lora: 150/776
+lora: 175/776
+lora: 200/776
+lora: 225/776
+lora: 250/776
+lora: 275/776
+lora: 300/776
+lora: 325/776
+lora: 350/776
+lora: 375/776
+lora: 400/776
+lora: 425/776
+lora: 450/776
+lora: 475/776
+lora: 500/776
+lora: 525/776
+lora: 550/776
+lora: 575/776
+lora: 600/776
+lora: 625/776
+lora: 650/776
+lora: 675/776
+lora: 700/776
+lora: 725/776
+lora: 750/776
+lora: 775/776
+lora: 776/776
+{
+  "count": 776,
+  "accuracy": 0.6572164948453608,
+  "macro_f1": 0.6564771668219944,
+  "invalid_rate": 0.0
+}

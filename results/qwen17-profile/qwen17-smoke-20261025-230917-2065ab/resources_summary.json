@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "command": [
+    "/home/lgh/.venvs/llamafactory/bin/python",
+    "-u",
+    "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-profile/qwen17-smoke-20261025-230917-2065ab/profile_qwen17.py",
+    "--worker",
+    "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-profile/qwen17-smoke-20261025-230917-2065ab/train.json",
+    "--data",
+    "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/data/processed/v1-20261023",
+    "--model",
+    "/home/lgh/models/Qwen3-1.7B",
+    "--smoke"
+  ],
+  "sample_interval_seconds": 1.0,
+  "started_utc": "2026-10-25T15:09:28.565684+00:00",
+  "wall_boundary": "Child process start through exit, including loading, training, validation and saves",
+  "rss_boundary": "Sampled sum of process-tree RSS; shared pages may be counted more than once",
+  "gpu_boundary": "Sampled whole-device NVIDIA readings; includes other processes; not exact CUDA process peaks",
+  "energy_boundary": "Trapezoidal integral of device power samples only; not whole-laptop wall energy or monetary cost",
+  "exit_code": 0,
+  "ended_utc": "2026-10-25T15:10:12.954485+00:00",
+  "wall_seconds": 44.387741785998514,
+  "allocated_gpu_hours": 0.012329928273888477,
+  "sampled_peaks": {
+    "process_tree_rss_bytes": 5191184384,
+    "device_memory_mib": 6529.0
+  },
+  "power_samples": 39,
+  "sampled_device_energy_wh": 0.10221865274181725,
+  "sampling_errors": []
+}

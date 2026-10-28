@@ -1,0 +1,3 @@
+﻿variant,n,mean_ms,p50_ms,p95_ms,max_ms,batch,warmup,measured_on
+MacBERT 全参,200,103.519,81.034,207.391,284.492,1,20,Windows (torch)
+TF-IDF + LR,200,0.748,0.632,1.184,5.648,1,20,WSL (sklearn)

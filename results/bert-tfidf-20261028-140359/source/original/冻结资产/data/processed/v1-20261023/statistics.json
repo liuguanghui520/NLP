@@ -1,0 +1,48 @@
+{
+  "source_sha256": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0",
+  "total_records": 7766,
+  "valid_records": 7763,
+  "raw_labels": {
+    "1": 5322,
+    "0": 2444
+  },
+  "invalid_records": 0,
+  "exclusions": {
+    "empty_text": 1,
+    "duplicate_truncated_prefix": 2
+  },
+  "conflict_records": 0,
+  "truncated_count": 203,
+  "truncated_ratio": 0.026149684400360685,
+  "length_distribution": {
+    "0": 2,
+    "0.25": 45,
+    "0.5": 84,
+    "0.75": 154,
+    "0.95": 381,
+    "1": 2924
+  },
+  "splits": {
+    "train": {
+      "count": 6210,
+      "labels": {
+        "1": 4256,
+        "0": 1954
+      }
+    },
+    "validation": {
+      "count": 776,
+      "labels": {
+        "1": 532,
+        "0": 244
+      }
+    },
+    "test": {
+      "count": 777,
+      "labels": {
+        "1": 532,
+        "0": 245
+      }
+    }
+  }
+}

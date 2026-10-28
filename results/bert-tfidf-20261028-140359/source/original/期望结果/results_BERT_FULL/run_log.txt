@@ -1,0 +1,1024 @@
+=== [0/8] 环境 ===
+  ⚠ 无 GPU → CPU 模式（12 线程）。全量跑完约需 40 小时，建议挂机或改用 Kaggle。
+  torch 2.10.0+cpu  seed=42
+  ✓ 日志同时写入: E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL\run_log.txt
+
+=== [1/8] 找数据集 ===
+  ✓ 数据目录: E:\2026秋季学期\自然语言处理\最终作业\project\data\processed\v1-20261023
+  train 6210  val 776  test 777
+
+=== [2/8] 准备模型 ===
+W1026 01:50:26.573000 18536 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  27%|##6       | 54/201 [00:00<00:00, 525.06it/s]Loading weights:  54%|#####4    | 109/201 [00:00<00:00, 513.86it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 812.49it/s]
+  ✓ 直接用本地已有模型 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  ✓ 模型就绪 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  类别权重: [1.589, 0.7296]
+
+=== [3/8] 定义训练函数 ===
+
+=== [4/8] 超参对比实验 ===
+
+======================================================================
+  配置 1/8: main  (lr=2e-05 ep=3 freeze=0 w=False len=256)
+======================================================================
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  42%|####1     | 84/201 [00:00<00:00, 788.12it/s]Loading weights:  81%|########1 | 163/201 [00:00<00:00, 673.26it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 845.75it/s]
+    [main] Ep1 0/777 loss=0.6686
+    [main] Ep1 100/777 loss=0.4847
+    [main] Ep1 200/777 loss=0.1726
+    [main] Ep1 300/777 loss=1.2697
+    [main] Ep1 400/777 loss=0.7007
+    [main] Ep1 500/777 loss=0.0093
+    [main] Ep1 600/777 loss=0.0767
+    [main] Ep1 700/777 loss=0.0324
+  >>> [main] Epoch 1 loss=0.336 val_acc=0.9111
+    [main] Ep2 0/777 loss=0.2849
+    [main] Ep2 100/777 loss=0.9912
+    [main] Ep2 200/777 loss=0.9653
+    [main] Ep2 300/777 loss=0.232
+    [main] Ep2 400/777 loss=0.0021
+    [main] Ep2 500/777 loss=0.0158
+    [main] Ep2 600/777 loss=0.3978
+    [main] Ep2 700/777 loss=0.5395
+  >>> [main] Epoch 2 loss=0.2034 val_acc=0.9149
+    [main] Ep3 0/777 loss=0.0037
+    [main] Ep3 100/777 loss=0.0008
+    [main] Ep3 200/777 loss=0.6597
+    [main] Ep3 300/777 loss=0.0021
+    [main] Ep3 400/777 loss=0.3988
+    [main] Ep3 500/777 loss=0.0027
+    [main] Ep3 600/777 loss=0.0031
+    [main] Ep3 700/777 loss=0.0015
+  >>> [main] Epoch 3 loss=0.1145 val_acc=0.9124
+
+  ===== main =====
+     negative: F1=0.8727  测试集支持数=245
+     positive: F1=0.9405  测试集支持数=532
+  acc=0.9189  macroF1=0.9066  weightedF1=0.9191  训练参数=102,269,186 (100.00%)  用时=6770s
+  ✓ 权重已存 E:\2026秋季学期\自然语言处理\最终作业\project\/bert_FULL.pt
+  ✓ 已落盘 E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL/ablation_results.csv（1 行）
+
+======================================================================
+  配置 2/8: partial  (lr=3e-05 ep=3 freeze=6 w=False len=256)
+======================================================================
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  40%|###9      | 80/201 [00:00<00:00, 775.62it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 1038.06it/s]
+    [partial] Ep1 0/777 loss=0.6686
+    [partial] Ep1 100/777 loss=0.4541
+    [partial] Ep1 200/777 loss=0.0835
+    [partial] Ep1 300/777 loss=1.2005
+    [partial] Ep1 400/777 loss=0.7578
+    [partial] Ep1 500/777 loss=0.0056
+    [partial] Ep1 600/777 loss=0.0572
+    [partial] Ep1 700/777 loss=0.0243
+  >>> [partial] Epoch 1 loss=0.3373 val_acc=0.8969
+    [partial] Ep2 0/777 loss=0.1775
+    [partial] Ep2 100/777 loss=0.5176
+    [partial] Ep2 200/777 loss=0.7302
+    [partial] Ep2 300/777 loss=0.0833
+    [partial] Ep2 400/777 loss=0.0062
+    [partial] Ep2 500/777 loss=0.4556
+    [partial] Ep2 600/777 loss=0.4407
+    [partial] Ep2 700/777 loss=0.4594
+  >>> [partial] Epoch 2 loss=0.2257 val_acc=0.9098
+    [partial] Ep3 0/777 loss=0.0026
+    [partial] Ep3 100/777 loss=0.0011
+    [partial] Ep3 200/777 loss=0.7614
+    [partial] Ep3 300/777 loss=0.0015
+    [partial] Ep3 400/777 loss=0.0041
+    [partial] Ep3 500/777 loss=0.0043
+    [partial] Ep3 600/777 loss=0.0043
+    [partial] Ep3 700/777 loss=0.003
+  >>> [partial] Epoch 3 loss=0.1549 val_acc=0.9111
+
+  ===== partial =====
+     negative: F1=0.8696  测试集支持数=245
+     positive: F1=0.9412  测试集支持数=532
+  acc=0.9189  macroF1=0.9054  weightedF1=0.9186  训练参数=43,119,362 (42.16%)  用时=4687s
+  ✓ 已落盘 E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL/ablation_results.csv（2 行）
+
+======================================================================
+  配置 3/8: weighted  (lr=2e-05 ep=3 freeze=0 w=True len=256)
+======================================================================
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  49%|####9     | 99/201 [00:00<00:00, 974.96it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 1043.43it/s]
+    [weighted] Ep1 0/777 loss=0.5763
+    [weighted] Ep1 100/777 loss=0.4927
+    [weighted] Ep1 200/777 loss=0.568
+    [weighted] Ep1 300/777 loss=1.5418
+    [weighted] Ep1 400/777 loss=0.5433
+    [weighted] Ep1 500/777 loss=0.0048
+    [weighted] Ep1 600/777 loss=0.0764
+    [weighted] Ep1 700/777 loss=0.0508
+  >>> [weighted] Epoch 1 loss=0.371 val_acc=0.9046
+    [weighted] Ep2 0/777 loss=0.1536
+    [weighted] Ep2 100/777 loss=1.3749
+    [weighted] Ep2 200/777 loss=0.5526
+    [weighted] Ep2 300/777 loss=0.3081
+    [weighted] Ep2 400/777 loss=0.0033
+    [weighted] Ep2 500/777 loss=0.0556
+    [weighted] Ep2 600/777 loss=0.5179
+    [weighted] Ep2 700/777 loss=0.537
+  >>> [weighted] Epoch 2 loss=0.2362 val_acc=0.9098
+    [weighted] Ep3 0/777 loss=0.003
+    [weighted] Ep3 100/777 loss=0.0007
+    [weighted] Ep3 200/777 loss=1.1029
+    [weighted] Ep3 300/777 loss=0.004
+    [weighted] Ep3 400/777 loss=0.0022
+    [weighted] Ep3 500/777 loss=0.0024
+    [weighted] Ep3 600/777 loss=0.0028
+    [weighted] Ep3 700/777 loss=0.0021
+  >>> [weighted] Epoch 3 loss=0.1257 val_acc=0.9059
+
+  ===== weighted =====
+     negative: F1=0.8808  测试集支持数=245
+     positive: F1=0.9443  测试集支持数=532
+  acc=0.9241  macroF1=0.9125  weightedF1=0.9243  训练参数=102,269,186 (100.00%)  用时=6788s
+  ✓ 已落盘 E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL/ablation_results.csv（3 行）
+
+======================================================================
+  配置 4/8: lr_5e5  (lr=5e-05 ep=3 freeze=0 w=False len=256)
+======================================================================
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  47%|####7     | 95/201 [00:00<00:00, 919.60it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 1083.82it/s]
+    [lr_5e5] Ep1 0/777 loss=0.6686
+    [lr_5e5] Ep1 100/777 loss=0.635
+    [lr_5e5] Ep1 200/777 loss=0.0198
+    [lr_5e5] Ep1 300/777 loss=1.7927
+    [lr_5e5] Ep1 400/777 loss=0.2429
+    [lr_5e5] Ep1 500/777 loss=0.0104
+    [lr_5e5] Ep1 600/777 loss=0.213
+    [lr_5e5] Ep1 700/777 loss=0.1544
+  >>> [lr_5e5] Epoch 1 loss=0.4001 val_acc=0.8982
+    [lr_5e5] Ep2 0/777 loss=0.0517
+    [lr_5e5] Ep2 100/777 loss=0.402
+    [lr_5e5] Ep2 200/777 loss=0.4989
+    [lr_5e5] Ep2 300/777 loss=0.8431
+    [lr_5e5] Ep2 400/777 loss=0.0101
+    [lr_5e5] Ep2 500/777 loss=0.3288
+    [lr_5e5] Ep2 600/777 loss=0.2362
+    [lr_5e5] Ep2 700/777 loss=0.9161
+  >>> [lr_5e5] Epoch 2 loss=0.2531 val_acc=0.8982
+    [lr_5e5] Ep3 0/777 loss=0.0163
+    [lr_5e5] Ep3 100/777 loss=0.0018
+    [lr_5e5] Ep3 200/777 loss=0.8135
+    [lr_5e5] Ep3 300/777 loss=0.0014
+    [lr_5e5] Ep3 400/777 loss=0.0028
+    [lr_5e5] Ep3 500/777 loss=0.0034
+    [lr_5e5] Ep3 600/777 loss=0.0063
+    [lr_5e5] Ep3 700/777 loss=0.003
+  >>> [lr_5e5] Epoch 3 loss=0.1399 val_acc=0.9059
+
+  ===== lr_5e5 =====
+     negative: F1=0.8699  测试集支持数=245
+     positive: F1=0.9397  测试集支持数=532
+  acc=0.9176  macroF1=0.9048  weightedF1=0.9177  训练参数=102,269,186 (100.00%)  用时=6993s
+  ✓ 已落盘 E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL/ablation_results.csv（4 行）
+
+======================================================================
+  配置 5/8: len128  (lr=2e-05 ep=3 freeze=0 w=False len=128)
+======================================================================
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  19%|#9        | 39/201 [00:00<00:00, 384.40it/s]Loading weights:  39%|###8      | 78/201 [00:00<00:00, 345.12it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 825.50it/s]
+    [len128] Ep1 0/777 loss=0.7203
+    [len128] Ep1 100/777 loss=0.4317
+    [len128] Ep1 200/777 loss=0.0347
+    [len128] Ep1 300/777 loss=0.9197
+    [len128] Ep1 400/777 loss=1.5381
+    [len128] Ep1 500/777 loss=0.3205
+    [len128] Ep1 600/777 loss=0.5633
+    [len128] Ep1 700/777 loss=0.0189
+  >>> [len128] Epoch 1 loss=0.359 val_acc=0.8995
+    [len128] Ep2 0/777 loss=0.014
+    [len128] Ep2 100/777 loss=0.9843
+    [len128] Ep2 200/777 loss=0.0058
+    [len128] Ep2 300/777 loss=0.5313
+    [len128] Ep2 400/777 loss=0.004
+    [len128] Ep2 500/777 loss=0.0069
+    [len128] Ep2 600/777 loss=0.0449
+    [len128] Ep2 700/777 loss=0.4274
+  >>> [len128] Epoch 2 loss=0.2208 val_acc=0.9034
+    [len128] Ep3 0/777 loss=0.0057
+    [len128] Ep3 100/777 loss=0.0012
+    [len128] Ep3 200/777 loss=0.8274
+    [len128] Ep3 300/777 loss=0.0007
+    [len128] Ep3 400/777 loss=0.6623
+    [len128] Ep3 500/777 loss=0.0029
+    [len128] Ep3 600/777 loss=0.0038
+    [len128] Ep3 700/777 loss=0.002
+  >>> [len128] Epoch 3 loss=0.1265 val_acc=0.9085
+
+  ===== len128 =====
+     negative: F1=0.8839  测试集支持数=245
+     positive: F1=0.9464  测试集支持数=532
+  acc=0.9266  macroF1=0.9151  weightedF1=0.9267  训练参数=102,269,186 (100.00%)  用时=5650s
+  ✓ 已落盘 E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL/ablation_results.csv（5 行）
+
+======================================================================
+  配置 6/8: len512  (lr=2e-05 ep=3 freeze=0 w=False len=512)
+======================================================================
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  14%|#3        | 28/201 [00:00<00:00, 267.39it/s]Loading weights:  27%|##7       | 55/201 [00:00<00:00, 251.06it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 723.19it/s]
+    [len512] Ep1 0/1553 loss=0.6539
+    [len512] Ep1 100/1553 loss=0.3002
+    [len512] Ep1 200/1553 loss=0.0247
+    [len512] Ep1 300/1553 loss=0.7231
+    [len512] Ep1 400/1553 loss=0.1725
+    [len512] Ep1 500/1553 loss=0.0594
+    [len512] Ep1 600/1553 loss=0.0083
+    [len512] Ep1 700/1553 loss=0.0147
+    [len512] Ep1 800/1553 loss=0.0037
+    [len512] Ep1 900/1553 loss=0.007
+    [len512] Ep1 1000/1553 loss=0.0182
+    [len512] Ep1 1100/1553 loss=1.2106
+    [len512] Ep1 1200/1553 loss=1.0826
+    [len512] Ep1 1300/1553 loss=0.8671
+    [len512] Ep1 1400/1553 loss=1.5618
+    [len512] Ep1 1500/1553 loss=0.0109
+  >>> [len512] Epoch 1 loss=0.4058 val_acc=0.9072
+    [len512] Ep2 0/1553 loss=0.0128
+    [len512] Ep2 100/1553 loss=0.0056
+    [len512] Ep2 200/1553 loss=2.4185
+    [len512] Ep2 300/1553 loss=0.0039
+    [len512] Ep2 400/1553 loss=0.0008
+    [len512] Ep2 500/1553 loss=0.0359
+    [len512] Ep2 600/1553 loss=0.0031
+    [len512] Ep2 700/1553 loss=0.0036
+    [len512] Ep2 800/1553 loss=0.0013
+    [len512] Ep2 900/1553 loss=0.0044
+    [len512] Ep2 1000/1553 loss=0.0019
+    [len512] Ep2 1100/1553 loss=0.0017
+    [len512] Ep2 1200/1553 loss=0.0012
+    [len512] Ep2 1300/1553 loss=0.0035
+    [len512] Ep2 1400/1553 loss=1.0135
+    [len512] Ep2 1500/1553 loss=0.0136
+  >>> [len512] Epoch 2 loss=0.2714 val_acc=0.9214
+    [len512] Ep3 0/1553 loss=0.004
+    [len512] Ep3 100/1553 loss=0.0008
+    [len512] Ep3 200/1553 loss=0.0005
+    [len512] Ep3 300/1553 loss=0.0019
+    [len512] Ep3 400/1553 loss=0.0012
+    [len512] Ep3 500/1553 loss=0.0005
+    [len512] Ep3 600/1553 loss=0.0004
+    [len512] Ep3 700/1553 loss=0.0013
+    [len512] Ep3 800/1553 loss=0.0105
+    [len512] Ep3 900/1553 loss=0.0002
+    [len512] Ep3 1000/1553 loss=1.121
+=== [0/8] 环境 ===
+  ⚠ 无 GPU → CPU 模式（12 线程）。实测吞吐约 2.6 样本/秒（batch=8, len=256），全量 8 组 + 曲线预计 24~30 小时，建议挂机。
+  torch 2.10.0+cpu  seed=42
+  ✓ 日志同时写入: E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL\run_log.txt
+
+=== [1/8] 找数据集 ===
+  ✓ 数据目录: E:\2026秋季学期\自然语言处理\最终作业\project\data\processed\v1-20261023
+  train 6210  val 776  test 777
+
+=== [2/8] 准备模型 ===
+W1026 14:00:17.457000 13100 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  25%|##5       | 51/201 [00:00<00:00, 490.75it/s]Loading weights:  50%|#####     | 101/201 [00:00<00:00, 398.62it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 590.03it/s]
+  ✓ 直接用本地已有模型 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  ✓ 模型就绪 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  类别权重: [1.589, 0.7296]
+
+=== [3/8] 定义训练函数 ===
+  ✓ 断点续跑：已有 5 个配置结果 → ['len128', 'lr_5e5', 'main', 'partial', 'weighted']
+  ✓ 已读回历史日志 11655 行 / 15 行
+
+=== [4/8] 超参对比实验 ===
+  ⏭ [main] 已有结果，跳过
+  ⏭ [partial] 已有结果，跳过
+  ⏭ [weighted] 已有结果，跳过
+  ⏭ [lr_5e5] 已有结果，跳过
+  ⏭ [len128] 已有结果，跳过
+
+======================================================================
+  配置 6/8: len512  (lr=2e-05 ep=3 freeze=0 w=False len=512)
+======================================================================
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  41%|####      | 82/201 [00:00<00:00, 721.44it/s]Loading weights:  77%|#######7  | 155/201 [00:00<00:00, 615.50it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 808.74it/s]
+    [len512] Ep1 0/1553 loss=0.6539
+    [len512] Ep1 100/1553 loss=0.3002
+    [len512] Ep1 200/1553 loss=0.0247
+    [len512] Ep1 300/1553 loss=0.7231
+    [len512] Ep1 400/1553 loss=0.1725
+    [len512] Ep1 500/1553 loss=0.0594
+    [len512] Ep1 600/1553 loss=0.0083
+    [len512] Ep1 700/1553 loss=0.0147
+    [len512] Ep1 800/1553 loss=0.0037
+    [len512] Ep1 900/1553 loss=0.007
+    [len512] Ep1 1000/1553 loss=0.0182
+    [len512] Ep1 1100/1553 loss=1.2106
+    [len512] Ep1 1200/1553 loss=1.0826
+    [len512] Ep1 1300/1553 loss=0.8671
+    [len512] Ep1 1400/1553 loss=1.5618
+    [len512] Ep1 1500/1553 loss=0.0109
+  >>> [len512] Epoch 1 loss=0.4058 val_acc=0.9072
+    [len512] Ep2 0/1553 loss=0.0128
+    [len512] Ep2 100/1553 loss=0.0056
+    [len512] Ep2 200/1553 loss=2.4185
+    [len512] Ep2 300/1553 loss=0.0039
+    [len512] Ep2 400/1553 loss=0.0008
+    [len512] Ep2 500/1553 loss=0.0359
+    [len512] Ep2 600/1553 loss=0.0031
+    [len512] Ep2 700/1553 loss=0.0036
+=== [0/8] 环境 ===
+  ⚠ 无 GPU → CPU 模式（12 线程）。实测吞吐约 2.6 样本/秒（batch=8, len=256），全量 8 组 + 曲线预计 24~30 小时，建议挂机。
+  torch 2.10.0+cpu  seed=42
+  ✓ 日志同时写入: E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL\run_log.txt
+
+=== [1/8] 找数据集 ===
+  ✓ 数据目录: E:\2026秋季学期\自然语言处理\最终作业\project\data\processed\v1-20261023
+  train 6210  val 776  test 777
+
+=== [2/8] 准备模型 ===
+W1026 16:14:53.926000 18980 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  22%|##1       | 44/201 [00:00<00:00, 432.30it/s]Loading weights:  46%|####5     | 92/201 [00:00<00:00, 456.88it/s]Loading weights:  69%|######9   | 139/201 [00:00<00:00, 421.43it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 553.59it/s]
+  ✓ 直接用本地已有模型 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  ✓ 模型就绪 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  类别权重: [1.589, 0.7296]
+
+=== [3/8] 定义训练函数 ===
+  ✓ 断点续跑：已有 5 个配置结果 → ['len128', 'lr_5e5', 'main', 'partial', 'weighted']
+  ✓ 已读回历史日志 11655 行 / 15 行
+
+=== [4/8] 超参对比实验 ===
+  ⏭ [main] 已有结果，跳过
+  ⏭ [partial] 已有结果，跳过
+  ⏭ [weighted] 已有结果，跳过
+  ⏭ [lr_5e5] 已有结果，跳过
+  ⏭ [len128] 已有结果，跳过
+
+======================================================================
+  配置 6/8: len512  (lr=2e-05 ep=3 freeze=0 w=False len=512)
+======================================================================
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  30%|###       | 61/201 [00:00<00:00, 585.09it/s]Loading weights:  60%|#####9    | 120/201 [00:00<00:00, 467.14it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 667.80it/s]
+    [len512] Ep1 0/1553 loss=0.6539
+    [len512] Ep1 100/1553 loss=0.3002
+    [len512] Ep1 200/1553 loss=0.0247
+    [len512] Ep1 300/1553 loss=0.7231
+    [len512] Ep1 400/1553 loss=0.1725
+    [len512] Ep1 500/1553 loss=0.0594
+    [len512] Ep1 600/1553 loss=0.0083
+    [len512] Ep1 700/1553 loss=0.0147
+    [len512] Ep1 800/1553 loss=0.0037
+    [len512] Ep1 900/1553 loss=0.007
+    [len512] Ep1 1000/1553 loss=0.0182
+    [len512] Ep1 1100/1553 loss=1.2106
+    [len512] Ep1 1200/1553 loss=1.0826
+    [len512] Ep1 1300/1553 loss=0.8671
+    [len512] Ep1 1400/1553 loss=1.5618
+    [len512] Ep1 1500/1553 loss=0.0109
+  >>> [len512] Epoch 1 loss=0.4058 val_acc=0.9072
+    [len512] Ep2 0/1553 loss=0.0128
+    [len512] Ep2 100/1553 loss=0.0056
+    [len512] Ep2 200/1553 loss=2.4185
+    [len512] Ep2 300/1553 loss=0.0039
+    [len512] Ep2 400/1553 loss=0.0008
+    [len512] Ep2 500/1553 loss=0.0359
+    [len512] Ep2 600/1553 loss=0.0031
+    [len512] Ep2 700/1553 loss=0.0036
+    [len512] Ep2 800/1553 loss=0.0013
+    [len512] Ep2 900/1553 loss=0.0044
+    [len512] Ep2 1000/1553 loss=0.0019
+    [len512] Ep2 1100/1553 loss=0.0017
+    [len512] Ep2 1200/1553 loss=0.0012
+    [len512] Ep2 1300/1553 loss=0.0035
+    [len512] Ep2 1400/1553 loss=1.0135
+    [len512] Ep2 1500/1553 loss=0.0136
+  >>> [len512] Epoch 2 loss=0.2714 val_acc=0.9214
+    [len512] Ep3 0/1553 loss=0.004
+    [len512] Ep3 100/1553 loss=0.0008
+    [len512] Ep3 200/1553 loss=0.0005
+    [len512] Ep3 300/1553 loss=0.0019
+    [len512] Ep3 400/1553 loss=0.0012
+    [len512] Ep3 500/1553 loss=0.0005
+    [len512] Ep3 600/1553 loss=0.0004
+    [len512] Ep3 700/1553 loss=0.0013
+    [len512] Ep3 800/1553 loss=0.0105
+    [len512] Ep3 900/1553 loss=0.0002
+    [len512] Ep3 1000/1553 loss=1.121
+    [len512] Ep3 1100/1553 loss=0.0004
+    [len512] Ep3 1200/1553 loss=0.0046
+    [len512] Ep3 1300/1553 loss=0.0003
+    [len512] Ep3 1400/1553 loss=0.7764
+    [len512] Ep3 1500/1553 loss=0.0009
+  >>> [len512] Epoch 3 loss=0.138 val_acc=0.9124
+
+  ===== len512 =====
+     negative: F1=0.8866  测试集支持数=245
+     positive: F1=0.9472  测试集支持数=532
+  acc=0.9279  macroF1=0.9169  weightedF1=0.9281  训练参数=102,269,186 (100.00%)  用时=12150s
+  ✓ 已落盘 E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL/ablation_results.csv（6 行）
+
+======================================================================
+  配置 7/8: lr_1e5  (lr=1e-05 ep=3 freeze=0 w=False len=256)
+======================================================================
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:   8%|8         | 17/201 [00:00<00:01, 145.57it/s]Loading weights:  20%|##        | 41/201 [00:00<00:00, 191.93it/s]Loading weights:  33%|###2      | 66/201 [00:00<00:00, 197.68it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 477.14it/s]
+    [lr_1e5] Ep1 0/777 loss=0.6686
+    [lr_1e5] Ep1 100/777 loss=0.5483
+    [lr_1e5] Ep1 200/777 loss=0.1394
+    [lr_1e5] Ep1 300/777 loss=1.244
+    [lr_1e5] Ep1 400/777 loss=0.6473
+    [lr_1e5] Ep1 500/777 loss=0.0099
+    [lr_1e5] Ep1 600/777 loss=0.0789
+    [lr_1e5] Ep1 700/777 loss=0.0384
+  >>> [lr_1e5] Epoch 1 loss=0.3531 val_acc=0.9008
+    [lr_1e5] Ep2 0/777 loss=0.2436
+    [lr_1e5] Ep2 100/777 loss=0.3683
+    [lr_1e5] Ep2 200/777 loss=0.7876
+    [lr_1e5] Ep2 300/777 loss=0.1004
+    [lr_1e5] Ep2 400/777 loss=0.0027
+    [lr_1e5] Ep2 500/777 loss=0.148
+    [lr_1e5] Ep2 600/777 loss=0.4385
+    [lr_1e5] Ep2 700/777 loss=0.4857
+  >>> [lr_1e5] Epoch 2 loss=0.2215 val_acc=0.9201
+    [lr_1e5] Ep3 0/777 loss=0.0036
+    [lr_1e5] Ep3 100/777 loss=0.0012
+    [lr_1e5] Ep3 200/777 loss=0.7418
+    [lr_1e5] Ep3 300/777 loss=0.0014
+    [lr_1e5] Ep3 400/777 loss=0.0038
+    [lr_1e5] Ep3 500/777 loss=0.0028
+    [lr_1e5] Ep3 600/777 loss=0.004
+    [lr_1e5] Ep3 700/777 loss=0.0019
+  >>> [lr_1e5] Epoch 3 loss=0.154 val_acc=0.9162
+
+  ===== lr_1e5 =====
+     negative: F1=0.8780  测试集支持数=245
+     positive: F1=0.9435  测试集支持数=532
+  acc=0.9228  macroF1=0.9108  weightedF1=0.9229  训练参数=102,269,186 (100.00%)  用时=8325s
+  ✓ 已落盘 E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL/ablation_results.csv（7 行）
+
+======================================================================
+  配置 8/8: ep5  (lr=2e-05 ep=5 freeze=0 w=False len=256)
+======================================================================
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  13%|#3        | 27/201 [00:00<00:00, 237.01it/s]Loading weights:  25%|##5       | 51/201 [00:00<00:00, 201.86it/s]Loading weights:  88%|########7 | 176/201 [00:00<00:00, 621.51it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 576.96it/s]
+    [ep5] Ep1 0/777 loss=0.6686
+    [ep5] Ep1 100/777 loss=0.5403
+    [ep5] Ep1 200/777 loss=0.1434
+    [ep5] Ep1 300/777 loss=0.8904
+    [ep5] Ep1 400/777 loss=0.416
+    [ep5] Ep1 500/777 loss=0.0077
+    [ep5] Ep1 600/777 loss=0.0385
+    [ep5] Ep1 700/777 loss=0.0525
+  >>> [ep5] Epoch 1 loss=0.3545 val_acc=0.8995
+    [ep5] Ep2 0/777 loss=0.0905
+    [ep5] Ep2 100/777 loss=0.7814
+    [ep5] Ep2 200/777 loss=0.6306
+    [ep5] Ep2 300/777 loss=0.3829
+    [ep5] Ep2 400/777 loss=0.0238
+    [ep5] Ep2 500/777 loss=0.019
+    [ep5] Ep2 600/777 loss=0.4205
+    [ep5] Ep2 700/777 loss=0.4359
+  >>> [ep5] Epoch 2 loss=0.2268 val_acc=0.9046
+    [ep5] Ep3 0/777 loss=0.0031
+    [ep5] Ep3 100/777 loss=0.0014
+    [ep5] Ep3 200/777 loss=0.7885
+    [ep5] Ep3 300/777 loss=0.0012
+    [ep5] Ep3 400/777 loss=0.002
+    [ep5] Ep3 500/777 loss=0.0024
+    [ep5] Ep3 600/777 loss=0.0074
+    [ep5] Ep3 700/777 loss=0.0039
+  >>> [ep5] Epoch 3 loss=0.1378 val_acc=0.8982
+    [ep5] Ep4 0/777 loss=0.0048
+    [ep5] Ep4 100/777 loss=0.0019
+    [ep5] Ep4 200/777 loss=0.0029
+    [ep5] Ep4 300/777 loss=0.0009
+    [ep5] Ep4 400/777 loss=0.0026
+    [ep5] Ep4 500/777 loss=0.0012
+    [ep5] Ep4 600/777 loss=0.0276
+    [ep5] Ep4 700/777 loss=0.0005
+  >>> [ep5] Epoch 4 loss=0.0803 val_acc=0.9149
+    [ep5] Ep5 0/777 loss=0.0011
+    [ep5] Ep5 100/777 loss=0.0012
+    [ep5] Ep5 200/777 loss=0.0011
+    [ep5] Ep5 300/777 loss=0.0006
+    [ep5] Ep5 400/777 loss=0.0003
+    [ep5] Ep5 500/777 loss=0.7112
+    [ep5] Ep5 600/777 loss=0.0013
+    [ep5] Ep5 700/777 loss=0.0009
+  >>> [ep5] Epoch 5 loss=0.0416 val_acc=0.9137
+
+  ===== ep5 =====
+     negative: F1=0.8768  测试集支持数=245
+     positive: F1=0.9424  测试集支持数=532
+  acc=0.9215  macroF1=0.9096  weightedF1=0.9217  训练参数=102,269,186 (100.00%)  用时=13456s
+  ✓ 已落盘 E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL/ablation_results.csv（8 行）
+  ✓ main 走的是断点续跑，曲线用历史日志重建
+
+=== [5/8] 数据量曲线 ===
+  ✓ 全量点直接复用 main: acc=0.9189
+
+  --- 数据量 100 条 ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  12%|#1        | 24/201 [00:00<00:00, 211.93it/s]Loading weights:  26%|##6       | 53/201 [00:00<00:00, 251.22it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 640.22it/s]
+    [main] Ep1 0/13 loss=1.0102
+  >>> [main] Epoch 1 loss=0.7229 val_acc=0.7101
+    [main] Ep2 0/13 loss=0.4666
+  >>> [main] Epoch 2 loss=0.4702 val_acc=0.759
+    [main] Ep3 0/13 loss=0.3141
+  >>> [main] Epoch 3 loss=0.3467 val_acc=0.8106
+
+  ===== main =====
+     negative: F1=0.5753  测试集支持数=245
+     positive: F1=0.8696  测试集支持数=532
+  acc=0.8005  macroF1=0.7225  weightedF1=0.7768  训练参数=102,269,186 (100.00%)  用时=525s
+  ✓ n=100  acc=0.8005  macroF1=0.7225
+
+  --- 数据量 500 条 ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  22%|##1       | 44/201 [00:00<00:00, 425.65it/s]Loading weights:  43%|####3     | 87/201 [00:00<00:00, 387.97it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 876.10it/s]
+    [main] Ep1 0/63 loss=0.6154
+  >>> [main] Epoch 1 loss=0.4487 val_acc=0.9008
+    [main] Ep2 0/63 loss=0.0907
+  >>> [main] Epoch 2 loss=0.1907 val_acc=0.8363
+    [main] Ep3 0/63 loss=0.1221
+  >>> [main] Epoch 3 loss=0.1164 val_acc=0.9021
+
+  ===== main =====
+     negative: F1=0.8750  测试集支持数=245
+     positive: F1=0.9414  测试集支持数=532
+  acc=0.9202  macroF1=0.9082  weightedF1=0.9205  训练参数=102,269,186 (100.00%)  用时=956s
+  ✓ n=500  acc=0.9202  macroF1=0.9082
+
+  --- 数据量 1000 条 ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  24%|##4       | 49/201 [00:00<00:00, 469.26it/s]Loading weights:  48%|####7     | 96/201 [00:00<00:00, 442.32it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 903.65it/s]
+    [main] Ep1 0/125 loss=0.9372
+    [main] Ep1 100/125 loss=1.0456
+  >>> [main] Epoch 1 loss=0.4123 val_acc=0.9124
+    [main] Ep2 0/125 loss=0.1683
+    [main] Ep2 100/125 loss=0.0074
+  >>> [main] Epoch 2 loss=0.1999 val_acc=0.9059
+    [main] Ep3 0/125 loss=0.0042
+    [main] Ep3 100/125 loss=0.0037
+  >>> [main] Epoch 3 loss=0.0931 val_acc=0.9046
+
+  ===== main =====
+     negative: F1=0.8810  测试集支持数=245
+     positive: F1=0.9429  测试集支持数=532
+  acc=0.9228  macroF1=0.9119  weightedF1=0.9233  训练参数=102,269,186 (100.00%)  用时=1439s
+  ✓ n=1000  acc=0.9228  macroF1=0.9119
+
+  --- 数据量 2000 条 ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  17%|#7        | 35/201 [00:00<00:00, 348.83it/s]Loading weights:  82%|########2 | 165/201 [00:00<00:00, 905.92it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 994.63it/s]
+    [main] Ep1 0/250 loss=0.8055
+    [main] Ep1 100/250 loss=0.3448
+    [main] Ep1 200/250 loss=0.3602
+  >>> [main] Epoch 1 loss=0.3861 val_acc=0.9059
+    [main] Ep2 0/250 loss=0.8576
+    [main] Ep2 100/250 loss=0.0069
+    [main] Ep2 200/250 loss=0.749
+  >>> [main] Epoch 2 loss=0.2136 val_acc=0.8905
+    [main] Ep3 0/250 loss=0.0038
+    [main] Ep3 100/250 loss=0.0019
+    [main] Ep3 200/250 loss=0.0023
+  >>> [main] Epoch 3 loss=0.1187 val_acc=0.9085
+
+  ===== main =====
+     negative: F1=0.8844  测试集支持数=245
+     positive: F1=0.9463  测试集支持数=532
+  acc=0.9266  macroF1=0.9153  weightedF1=0.9268  训练参数=102,269,186 (100.00%)  用时=2444s
+  ✓ n=2000  acc=0.9266  macroF1=0.9153
+
+  --- 数据量 3000 条 ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  17%|#7        | 35/201 [00:00<00:00, 342.45it/s]Loading weights:  71%|#######1  | 143/201 [00:00<00:00, 768.68it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 980.32it/s]
+    [main] Ep1 0/375 loss=0.7933
+    [main] Ep1 100/375 loss=0.437
+    [main] Ep1 200/375 loss=0.0101
+    [main] Ep1 300/375 loss=0.1995
+  >>> [main] Epoch 1 loss=0.3887 val_acc=0.8956
+    [main] Ep2 0/375 loss=0.4161
+    [main] Ep2 100/375 loss=0.023
+    [main] Ep2 200/375 loss=0.4013
+    [main] Ep2 300/375 loss=0.0341
+  >>> [main] Epoch 2 loss=0.2315 val_acc=0.9046
+    [main] Ep3 0/375 loss=0.0064
+    [main] Ep3 100/375 loss=0.0044
+    [main] Ep3 200/375 loss=0.003
+    [main] Ep3 300/375 loss=0.0032
+  >>> [main] Epoch 3 loss=0.1256 val_acc=0.9072
+
+  ===== main =====
+     negative: F1=0.8737  测试集支持数=245
+     positive: F1=0.9403  测试集支持数=532
+  acc=0.9189  macroF1=0.9070  weightedF1=0.9193  训练参数=102,269,186 (100.00%)  用时=3465s
+  ✓ n=3000  acc=0.9189  macroF1=0.907
+
+===== 数据量曲线 =====
+ n_train  test_acc  macro_f1  weighted_f1
+     100    0.8005    0.7225       0.7768
+     500    0.9202    0.9082       0.9205
+    1000    0.9228    0.9119       0.9233
+    2000    0.9266    0.9153       0.9268
+    3000    0.9189    0.9070       0.9193
+    6210    0.9189    0.9066       0.9191
+
+=== [5b/8] 分组方式对照（长度分桶 vs 随机组 batch）===
+
+  --- 对照: n=1000  分组方式=len_group ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  17%|#6        | 34/201 [00:00<00:00, 329.59it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 1013.47it/s]
+    [main] Ep1 0/125 loss=0.9372
+    [main] Ep1 100/125 loss=1.0456
+  >>> [main] Epoch 1 loss=0.4123 val_acc=0.9124
+    [main] Ep2 0/125 loss=0.1683
+    [main] Ep2 100/125 loss=0.0074
+  >>> [main] Epoch 2 loss=0.1999 val_acc=0.9059
+    [main] Ep3 0/125 loss=0.0042
+    [main] Ep3 100/125 loss=0.0037
+  >>> [main] Epoch 3 loss=0.0931 val_acc=0.9046
+
+  ===== main =====
+     negative: F1=0.8810  测试集支持数=245
+     positive: F1=0.9429  测试集支持数=532
+  acc=0.9228  macroF1=0.9119  weightedF1=0.9233  训练参数=102,269,186 (100.00%)  用时=1421s
+Traceback (most recent call last):
+  File "E:\2026秋季学期\自然语言处理\最终作业\project\_bert_run.py", line 734, in <module>
+    __atomic_csv(pd.DataFrame(CTRL), _ctrl_csv)
+    ^^^^^^^^^^^^
+NameError: name '__atomic_csv' is not defined. Did you mean: '_atomic_csv'?
+=== [0/8] 环境 ===
+  ⚠ 无 GPU → CPU 模式（12 线程）。实测吞吐约 2.6 样本/秒（batch=8, len=256），全量 8 组 + 曲线预计 24~30 小时，建议挂机。
+  torch 2.10.0+cpu  seed=42
+  ✓ 日志同时写入: E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL\run_log.txt
+
+=== [1/8] 找数据集 ===
+  ✓ 数据目录: E:\2026秋季学期\自然语言处理\最终作业\project\data\processed\v1-20261023
+  train 6210  val 776  test 777
+
+=== [2/8] 准备模型 ===
+W1027 08:13:54.456000 18128 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  11%|#         | 22/201 [00:00<00:00, 212.93it/s]Loading weights:  22%|##1       | 44/201 [00:00<00:00, 194.99it/s]Loading weights:  32%|###1      | 64/201 [00:00<00:00, 166.87it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 526.04it/s]
+  ✓ 直接用本地已有模型 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  ✓ 模型就绪 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  类别权重: [1.589, 0.7296]
+
+=== [3/8] 定义训练函数 ===
+  ✓ 断点续跑：已有 8 个配置结果 → ['ep5', 'len128', 'len512', 'lr_1e5', 'lr_5e5', 'main', 'partial', 'weighted']
+  ✓ 已读回历史日志 22530 行 / 26 行
+
+=== [4/8] 超参对比实验 ===
+  ⏭ [main] 已有结果，跳过
+  ⏭ [partial] 已有结果，跳过
+  ⏭ [weighted] 已有结果，跳过
+  ⏭ [lr_5e5] 已有结果，跳过
+  ⏭ [len128] 已有结果，跳过
+  ⏭ [len512] 已有结果，跳过
+  ⏭ [lr_1e5] 已有结果，跳过
+  ⏭ [ep5] 已有结果，跳过
+  ✓ main 走的是断点续跑，曲线用历史日志重建
+  ✓ 断点续跑：数据量曲线已有 6 个点
+
+=== [5/8] 数据量曲线 ===
+  ✓ 全量点直接复用 main: acc=0.9189
+  ⏭ 数据量 100 条已有结果，跳过
+  ⏭ 数据量 500 条已有结果，跳过
+  ⏭ 数据量 1000 条已有结果，跳过
+  ⏭ 数据量 2000 条已有结果，跳过
+  ⏭ 数据量 3000 条已有结果，跳过
+
+===== 数据量曲线 =====
+ n_train  test_acc  macro_f1  weighted_f1
+   100.0    0.8005    0.7225       0.7768
+   500.0    0.9202    0.9082       0.9205
+  1000.0    0.9228    0.9119       0.9233
+  2000.0    0.9266    0.9153       0.9268
+  3000.0    0.9189    0.9070       0.9193
+  6210.0    0.9189    0.9066       0.9191
+
+=== [5b/8] 分组方式对照（长度分桶 vs 随机组 batch）===
+
+  --- 对照: n=1000  分组方式=len_group ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  19%|#8        | 38/201 [00:00<00:00, 371.52it/s]Loading weights:  53%|#####3    | 107/201 [00:00<00:00, 547.06it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 708.98it/s]
+    [ctrl_len_group] Ep1 0/125 loss=0.9372
+    [ctrl_len_group] Ep1 100/125 loss=1.0456
+  >>> [ctrl_len_group] Epoch 1 loss=0.4123 val_acc=0.9124
+    [ctrl_len_group] Ep2 0/125 loss=0.1683
+    [ctrl_len_group] Ep2 100/125 loss=0.0074
+  >>> [ctrl_len_group] Epoch 2 loss=0.1999 val_acc=0.9059
+    [ctrl_len_group] Ep3 0/125 loss=0.0042
+    [ctrl_len_group] Ep3 100/125 loss=0.0037
+  >>> [ctrl_len_group] Epoch 3 loss=0.0931 val_acc=0.9046
+
+  ===== ctrl_len_group =====
+     negative: F1=0.8810  测试集支持数=245
+     positive: F1=0.9429  测试集支持数=532
+  acc=0.9228  macroF1=0.9119  weightedF1=0.9233  训练参数=102,269,186 (100.00%)  用时=1585s
+  ✓ len_group: acc=0.9228  macroF1=0.9119  用时=1585s
+
+  --- 对照: n=1000  分组方式=random ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  14%|#4        | 29/201 [00:00<00:00, 251.86it/s]Loading weights:  34%|###3      | 68/201 [00:00<00:00, 327.48it/s]Loading weights:  51%|#####     | 102/201 [00:00<00:00, 320.60it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 607.28it/s]
+    [ctrl_random] Ep1 0/125 loss=0.8611
+    [ctrl_random] Ep1 100/125 loss=0.1202
+  >>> [ctrl_random] Epoch 1 loss=0.4425 val_acc=0.893
+    [ctrl_random] Ep2 0/125 loss=0.0185
+    [ctrl_random] Ep2 100/125 loss=0.677
+  >>> [ctrl_random] Epoch 2 loss=0.2286 val_acc=0.9059
+    [ctrl_random] Ep3 0/125 loss=0.0051
+    [ctrl_random] Ep3 100/125 loss=0.0031
+  >>> [ctrl_random] Epoch 3 loss=0.0999 val_acc=0.9111
+
+  ===== ctrl_random =====
+     negative: F1=0.8660  测试集支持数=245
+     positive: F1=0.9336  测试集支持数=532
+  acc=0.9112  macroF1=0.8998  weightedF1=0.9123  训练参数=102,269,186 (100.00%)  用时=2517s
+  ✓ random: acc=0.9112  macroF1=0.8998  用时=2517s
+
+  ★ 长度分桶 vs 随机组 batch: 精度差 +1.16 个百分点，省时 -15.5 分钟
+
+=== [6/8] 汇总 ===
+  config      lr  epochs  freeze_lower  class_weight  maxlen  trainable_params  trainable_pct  test_acc  macro_f1  weighted_f1  seconds
+    main 0.00002       3             0         False     256         102269186       100.0000    0.9189    0.9066       0.9191     6770
+ partial 0.00003       3             6         False     256          43119362        42.1626    0.9189    0.9054       0.9186     4687
+weighted 0.00002       3             0          True     256         102269186       100.0000    0.9241    0.9125       0.9243     6788
+  lr_5e5 0.00005       3             0         False     256         102269186       100.0000    0.9176    0.9048       0.9177     6993
+  len128 0.00002       3             0         False     128         102269186       100.0000    0.9266    0.9151       0.9267     5650
+  len512 0.00002       3             0         False     512         102269186       100.0000    0.9279    0.9169       0.9281    12150
+  lr_1e5 0.00001       3             0         False     256         102269186       100.0000    0.9228    0.9108       0.9229     8325
+     ep5 0.00002       5             0         False     256         102269186       100.0000    0.9215    0.9096       0.9217    13456
+
+=== [7/8] 画图 ===
+  ✓ 图已保存
+
+=== [8/8] 存档 ===
+
+======================================================================
+★ 主实验(main):  acc=0.9189  macroF1=0.9066  weightedF1=0.9191
+★ 训练参数: 102,269,186 (100.0%)  总参数 102,269,186
+★ 最佳(macroF1): len512  macroF1=0.9169
+★ 结果包: E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL.zip  (0.7 MB)
+======================================================================
+DONE
+=== [0/8] 环境 ===
+  ⚠ 无 GPU → CPU 模式（12 线程）。实测吞吐约 2.6 样本/秒（batch=8, len=256），全量 8 组 + 曲线预计 24~30 小时，建议挂机。
+  torch 2.10.0+cpu  seed=42
+  ✓ 日志同时写入: E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL\run_log.txt
+
+=== [1/8] 找数据集 ===
+  ✓ 数据目录: E:\2026秋季学期\自然语言处理\最终作业\project\data\processed\v1-20261023
+  train 6210  val 776  test 777
+
+=== [2/8] 准备模型 ===
+W1027 21:47:35.287000 12636 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  16%|#6        | 33/201 [00:00<00:00, 329.52it/s]Loading weights:  33%|###2      | 66/201 [00:00<00:00, 326.31it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 863.72it/s]
+  ✓ 直接用本地已有模型 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  ✓ 模型就绪 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  类别权重: [1.589, 0.7296]
+
+=== [3/8] 定义训练函数 ===
+  ✓ 断点续跑：已有 8 个配置结果 → ['ep5', 'len128', 'len512', 'lr_1e5', 'lr_5e5', 'main', 'partial', 'weighted']
+  ✓ 已读回历史日志 23280 行 / 32 行
+
+=== [4/8] 超参对比实验 ===
+  ⏭ [main] 已有结果，跳过
+  ⏭ [partial] 已有结果，跳过
+  ⏭ [weighted] 已有结果，跳过
+  ⏭ [lr_5e5] 已有结果，跳过
+  ⏭ [len128] 已有结果，跳过
+  ⏭ [len512] 已有结果，跳过
+  ⏭ [lr_1e5] 已有结果，跳过
+  ⏭ [ep5] 已有结果，跳过
+  ✓ main 走的是断点续跑，曲线用历史日志重建
+  ✓ 断点续跑：数据量曲线已有 6 个点
+
+=== [5/8] 数据量曲线 ===
+  ★ BERT_CURVE_FORCE=1：强制重跑全部曲线点（结果写入 data_curve_repred.csv）
+  ✓ 全量点直接复用 main: acc=0.9189
+
+  --- 数据量 100 条 ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  19%|#8        | 38/201 [00:00<00:00, 369.11it/s]Loading weights:  42%|####2     | 85/201 [00:00<00:00, 427.15it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 890.34it/s]
+    [curve_n100] Ep1 0/13 loss=1.0102
+  >>> [curve_n100] Epoch 1 loss=0.7229 val_acc=0.7101
+    [curve_n100] Ep2 0/13 loss=0.4666
+  >>> [curve_n100] Epoch 2 loss=0.4702 val_acc=0.759
+    [curve_n100] Ep3 0/13 loss=0.3141
+  >>> [curve_n100] Epoch 3 loss=0.3467 val_acc=0.8106
+
+  ===== curve_n100 =====
+     negative: F1=0.5753  测试集支持数=245
+     positive: F1=0.8696  测试集支持数=532
+  acc=0.8005  macroF1=0.7225  weightedF1=0.7768  训练参数=102,269,186 (100.00%)  用时=580s
+  ✓ n=100  acc=0.8005  macroF1=0.7225
+
+  --- 数据量 500 条 ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  15%|#5        | 31/201 [00:00<00:00, 295.24it/s]Loading weights:  31%|###       | 62/201 [00:00<00:00, 295.66it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 809.57it/s]
+    [curve_n500] Ep1 0/63 loss=0.6154
+  >>> [curve_n500] Epoch 1 loss=0.4487 val_acc=0.9008
+    [curve_n500] Ep2 0/63 loss=0.0907
+  >>> [curve_n500] Epoch 2 loss=0.1907 val_acc=0.8363
+    [curve_n500] Ep3 0/63 loss=0.1221
+=== [0/8] 环境 ===
+  ⚠ 无 GPU → CPU 模式（12 线程）。实测吞吐约 2.6 样本/秒（batch=8, len=256），全量 8 组 + 曲线预计 24~30 小时，建议挂机。
+  torch 2.10.0+cpu  seed=42
+  ✓ 日志同时写入: E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL\run_log.txt
+
+=== [1/8] 找数据集 ===
+  ✓ 数据目录: E:\2026秋季学期\自然语言处理\最终作业\project\data\processed\v1-20261023
+  train 6210  val 776  test 777
+
+=== [2/8] 准备模型 ===
+W1028 00:09:39.609000 6456 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:   9%|8         | 18/201 [00:00<00:01, 171.19it/s]Loading weights:  21%|##1       | 43/201 [00:00<00:00, 207.55it/s]Loading weights:  32%|###1      | 64/201 [00:00<00:00, 182.37it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 555.72it/s]
+  ✓ 直接用本地已有模型 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  ✓ 模型就绪 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  类别权重: [1.589, 0.7296]
+
+=== [3/8] 定义训练函数 ===
+  ✓ 断点续跑：已有 8 个配置结果 → ['ep5', 'len128', 'len512', 'lr_1e5', 'lr_5e5', 'main', 'partial', 'weighted']
+  ✓ 已读回历史日志 23319 行 / 35 行
+
+=== [4/8] 超参对比实验 ===
+  ⏭ [main] 已有结果，跳过
+  ⏭ [partial] 已有结果，跳过
+  ⏭ [weighted] 已有结果，跳过
+  ⏭ [lr_5e5] 已有结果，跳过
+  ⏭ [len128] 已有结果，跳过
+  ⏭ [len512] 已有结果，跳过
+  ⏭ [lr_1e5] 已有结果，跳过
+  ⏭ [ep5] 已有结果，跳过
+  ✓ main 走的是断点续跑，曲线用历史日志重建
+  ✓ 断点续跑：数据量曲线已有 6 个点
+
+=== [5/8] 数据量曲线 ===
+  ✓ 全量点直接复用 main: acc=0.9189
+  ⏭ 数据量 100 条已有结果，跳过
+  ⏭ 数据量 500 条已有结果，跳过
+  ⏭ 数据量 1000 条已有结果，跳过
+  ⏭ 数据量 2000 条已有结果，跳过
+  ⏭ 数据量 3000 条已有结果，跳过
+
+===== 数据量曲线 =====
+ n_train  test_acc  macro_f1  weighted_f1
+   100.0    0.8005    0.7225       0.7768
+   500.0    0.9202    0.9082       0.9205
+  1000.0    0.9228    0.9119       0.9233
+  2000.0    0.9266    0.9153       0.9268
+  3000.0    0.9189    0.9070       0.9193
+  6210.0    0.9189    0.9066       0.9191
+
+=== [5b/8] 分组方式对照（长度分桶 vs 随机组 batch）===
+  ✓ 断点续跑：对照组已有 2 行
+
+=== [6/8] 汇总 ===
+  config      lr  epochs  freeze_lower  class_weight  maxlen  trainable_params  trainable_pct  test_acc  macro_f1  weighted_f1  seconds
+    main 0.00002       3             0         False     256         102269186       100.0000    0.9189    0.9066       0.9191     6770
+ partial 0.00003       3             6         False     256          43119362        42.1626    0.9189    0.9054       0.9186     4687
+weighted 0.00002       3             0          True     256         102269186       100.0000    0.9241    0.9125       0.9243     6788
+  lr_5e5 0.00005       3             0         False     256         102269186       100.0000    0.9176    0.9048       0.9177     6993
+  len128 0.00002       3             0         False     128         102269186       100.0000    0.9266    0.9151       0.9267     5650
+  len512 0.00002       3             0         False     512         102269186       100.0000    0.9279    0.9169       0.9281    12150
+  lr_1e5 0.00001       3             0         False     256         102269186       100.0000    0.9228    0.9108       0.9229     8325
+     ep5 0.00002       5             0         False     256         102269186       100.0000    0.9215    0.9096       0.9217    13456
+
+=== [7/8] 画图 ===
+  ✓ 图已保存
+
+=== [8/8] 存档 ===
+
+======================================================================
+★ 主实验(main):  acc=0.9189  macroF1=0.9066  weightedF1=0.9191
+★ 训练参数: 102,269,186 (100.0%)  总参数 102,269,186
+★ 最佳(macroF1): len512  macroF1=0.9169
+★ 结果包: E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL.zip  (0.7 MB)
+======================================================================
+DONE
+=== [0/8] 环境 ===
+  ⚠ 无 GPU → CPU 模式（12 线程）。实测吞吐约 2.6 样本/秒（batch=8, len=256），全量 8 组 + 曲线预计 24~30 小时，建议挂机。
+  torch 2.10.0+cpu  seed=42
+  ✓ 日志同时写入: E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL\run_log.txt
+
+=== [1/8] 找数据集 ===
+  ✓ 数据目录: E:\2026秋季学期\自然语言处理\最终作业\project\data\processed\v1-20261023
+  train 6210  val 776  test 777
+
+=== [2/8] 准备模型 ===
+W1028 00:27:39.463000 23648 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  19%|#8        | 38/201 [00:00<00:00, 372.28it/s]Loading weights:  38%|###7      | 76/201 [00:00<00:00, 360.68it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 862.54it/s]
+  ✓ 直接用本地已有模型 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  ✓ 模型就绪 -> E:\2026秋季学期\自然语言处理\最终作业\project\macbert_base
+  类别权重: [1.589, 0.7296]
+
+=== [3/8] 定义训练函数 ===
+  ✓ 断点续跑：已有 8 个配置结果 → ['ep5', 'len128', 'len512', 'lr_1e5', 'lr_5e5', 'main', 'partial', 'weighted']
+  ✓ 已读回历史日志 23319 行 / 35 行
+
+=== [4/8] 超参对比实验 ===
+  ⏭ [main] 已有结果，跳过
+  ⏭ [partial] 已有结果，跳过
+  ⏭ [weighted] 已有结果，跳过
+  ⏭ [lr_5e5] 已有结果，跳过
+  ⏭ [len128] 已有结果，跳过
+  ⏭ [len512] 已有结果，跳过
+  ⏭ [lr_1e5] 已有结果，跳过
+  ⏭ [ep5] 已有结果，跳过
+  ✓ main 走的是断点续跑，曲线用历史日志重建
+  ✓ 断点续跑：数据量曲线已有 6 个点
+
+=== [5/8] 数据量曲线 ===
+  ✓ data_curve_repred.csv 已有 2 个点，跳过它们
+  ★ BERT_CURVE_FORCE=1：补跑数据量曲线（结果写入 data_curve_repred.csv）
+  ✓ 全量点直接复用 main: acc=0.9189
+  ⏭ 数据量 100 条已有结果，跳过
+
+  --- 数据量 500 条 ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  21%|##        | 42/201 [00:00<00:00, 411.26it/s]Loading weights:  42%|####1     | 84/201 [00:00<00:00, 416.09it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 972.62it/s]
+    [curve_n500] Ep1 0/63 loss=0.6154
+  >>> [curve_n500] Epoch 1 loss=0.4487 val_acc=0.9008
+    [curve_n500] Ep2 0/63 loss=0.0907
+  >>> [curve_n500] Epoch 2 loss=0.1907 val_acc=0.8363
+    [curve_n500] Ep3 0/63 loss=0.1221
+  >>> [curve_n500] Epoch 3 loss=0.1164 val_acc=0.9021
+
+  ===== curve_n500 =====
+     negative: F1=0.8750  测试集支持数=245
+     positive: F1=0.9414  测试集支持数=532
+  acc=0.9202  macroF1=0.9082  weightedF1=0.9205  训练参数=102,269,186 (100.00%)  用时=1151s
+  ✓ n=500  acc=0.9202  macroF1=0.9082
+
+  --- 数据量 1000 条 ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  13%|#2        | 26/201 [00:00<00:00, 259.12it/s]Loading weights:  29%|##9       | 59/201 [00:00<00:00, 289.93it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 817.61it/s]
+    [curve_n1000] Ep1 0/125 loss=0.9372
+    [curve_n1000] Ep1 100/125 loss=1.0456
+  >>> [curve_n1000] Epoch 1 loss=0.4123 val_acc=0.9124
+    [curve_n1000] Ep2 0/125 loss=0.1683
+    [curve_n1000] Ep2 100/125 loss=0.0074
+  >>> [curve_n1000] Epoch 2 loss=0.1999 val_acc=0.9059
+    [curve_n1000] Ep3 0/125 loss=0.0042
+    [curve_n1000] Ep3 100/125 loss=0.0037
+  >>> [curve_n1000] Epoch 3 loss=0.0931 val_acc=0.9046
+
+  ===== curve_n1000 =====
+     negative: F1=0.8810  测试集支持数=245
+     positive: F1=0.9429  测试集支持数=532
+  acc=0.9228  macroF1=0.9119  weightedF1=0.9233  训练参数=102,269,186 (100.00%)  用时=1790s
+  ✓ n=1000  acc=0.9228  macroF1=0.9119
+
+  --- 数据量 2000 条 ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  19%|#9        | 39/201 [00:00<00:00, 374.50it/s]Loading weights:  43%|####3     | 87/201 [00:00<00:00, 428.76it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 768.73it/s]
+    [curve_n2000] Ep1 0/250 loss=0.8055
+    [curve_n2000] Ep1 100/250 loss=0.3448
+    [curve_n2000] Ep1 200/250 loss=0.3602
+  >>> [curve_n2000] Epoch 1 loss=0.3861 val_acc=0.9059
+    [curve_n2000] Ep2 0/250 loss=0.8576
+    [curve_n2000] Ep2 100/250 loss=0.0069
+    [curve_n2000] Ep2 200/250 loss=0.749
+  >>> [curve_n2000] Epoch 2 loss=0.2136 val_acc=0.8905
+    [curve_n2000] Ep3 0/250 loss=0.0038
+    [curve_n2000] Ep3 100/250 loss=0.0019
+    [curve_n2000] Ep3 200/250 loss=0.0023
+  >>> [curve_n2000] Epoch 3 loss=0.1187 val_acc=0.9085
+
+  ===== curve_n2000 =====
+     negative: F1=0.8844  测试集支持数=245
+     positive: F1=0.9463  测试集支持数=532
+  acc=0.9266  macroF1=0.9153  weightedF1=0.9268  训练参数=102,269,186 (100.00%)  用时=2747s
+  ✓ n=2000  acc=0.9266  macroF1=0.9153
+
+  --- 数据量 3000 条 ---
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  39%|###9      | 79/201 [00:00<00:00, 784.25it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 1006.86it/s]
+    [curve_n3000] Ep1 0/375 loss=0.7933
+    [curve_n3000] Ep1 100/375 loss=0.437
+    [curve_n3000] Ep1 200/375 loss=0.0101
+    [curve_n3000] Ep1 300/375 loss=0.1995
+  >>> [curve_n3000] Epoch 1 loss=0.3887 val_acc=0.8956
+    [curve_n3000] Ep2 0/375 loss=0.4161
+    [curve_n3000] Ep2 100/375 loss=0.023
+    [curve_n3000] Ep2 200/375 loss=0.4013
+    [curve_n3000] Ep2 300/375 loss=0.0341
+  >>> [curve_n3000] Epoch 2 loss=0.2315 val_acc=0.9046
+    [curve_n3000] Ep3 0/375 loss=0.0064
+    [curve_n3000] Ep3 100/375 loss=0.0044
+    [curve_n3000] Ep3 200/375 loss=0.003
+    [curve_n3000] Ep3 300/375 loss=0.0032
+  >>> [curve_n3000] Epoch 3 loss=0.1256 val_acc=0.9072
+
+  ===== curve_n3000 =====
+     negative: F1=0.8737  测试集支持数=245
+     positive: F1=0.9403  测试集支持数=532
+  acc=0.9189  macroF1=0.9070  weightedF1=0.9193  训练参数=102,269,186 (100.00%)  用时=3878s
+  ✓ n=3000  acc=0.9189  macroF1=0.907
+
+===== 数据量曲线 =====
+ n_train  test_acc  macro_f1  weighted_f1
+   100.0    0.8005    0.7225       0.7768
+   500.0    0.9202    0.9082       0.9205
+  1000.0    0.9228    0.9119       0.9233
+  2000.0    0.9266    0.9153       0.9268
+  3000.0    0.9189    0.9070       0.9193
+  6210.0    0.9189    0.9066       0.9191
+
+=== [5b/8] 分组方式对照（长度分桶 vs 随机组 batch）===
+  ✓ 断点续跑：对照组已有 2 行
+
+=== [6/8] 汇总 ===
+  config      lr  epochs  freeze_lower  class_weight  maxlen  trainable_params  trainable_pct  test_acc  macro_f1  weighted_f1  seconds
+    main 0.00002       3             0         False     256         102269186       100.0000    0.9189    0.9066       0.9191     6770
+ partial 0.00003       3             6         False     256          43119362        42.1626    0.9189    0.9054       0.9186     4687
+weighted 0.00002       3             0          True     256         102269186       100.0000    0.9241    0.9125       0.9243     6788
+  lr_5e5 0.00005       3             0         False     256         102269186       100.0000    0.9176    0.9048       0.9177     6993
+  len128 0.00002       3             0         False     128         102269186       100.0000    0.9266    0.9151       0.9267     5650
+  len512 0.00002       3             0         False     512         102269186       100.0000    0.9279    0.9169       0.9281    12150
+  lr_1e5 0.00001       3             0         False     256         102269186       100.0000    0.9228    0.9108       0.9229     8325
+     ep5 0.00002       5             0         False     256         102269186       100.0000    0.9215    0.9096       0.9217    13456
+
+=== [7/8] 画图 ===
+  ✓ 图已保存
+
+=== [8/8] 存档 ===
+
+======================================================================
+★ 主实验(main):  acc=0.9189  macroF1=0.9066  weightedF1=0.9191
+★ 训练参数: 102,269,186 (100.0%)  总参数 102,269,186
+★ 最佳(macroF1): len512  macroF1=0.9169
+★ 结果包: E:\2026秋季学期\自然语言处理\最终作业\project\src\results\results_BERT_FULL.zip  (0.8 MB)
+======================================================================
+DONE

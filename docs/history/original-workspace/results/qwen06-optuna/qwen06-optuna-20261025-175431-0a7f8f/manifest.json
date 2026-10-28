@@ -1,0 +1,53 @@
+{
+  "run_id": "qwen06-optuna-20261025-175431-0a7f8f",
+  "training_workspace": "/home/lgh/LLaMA-Factory/project-workspaces/qwen06-optuna/qwen06-optuna-20261025-175431-0a7f8f",
+  "command": [
+    "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/scripts/tune_qwen06.py"
+  ],
+  "purpose": "Student-confirmed 0.6B tool exercise; not formal 1.7B experiments",
+  "confirmation": "2026-10-25 user: rank 8/16, 2 trials, alpha=2*rank",
+  "search": {
+    "lora_rank": [
+      8,
+      16
+    ]
+  },
+  "objective": "maximize validation macro_f1",
+  "fixed": {
+    "max_steps": 20,
+    "learning_rate": 0.0001,
+    "seed": 42,
+    "smoke_count": 20,
+    "validation_count": 776
+  },
+  "script_sha256": "d45a7b48389d6b56cd9bb4d6b64face46fade52d3db01721df9eef2ed61d9888",
+  "evaluator_sha256": "76119ca1c6015b80156def18fcc2457d18535f95f6b5909a299a1aa0b8db6fb5",
+  "validation_sha256": "eae1c55c43f7121c4e24b4fb4634e0ea3406cbd99fe9cd05ca9151c253c7fe64",
+  "smoke_sha256": "7464573b04f27788fe4b45b45f1106b29ebd6954db1d285af6ea103889afe181",
+  "packages": {
+    "torch": "2.14.1",
+    "transformers": "5.8.0",
+    "peft": "0.18.1",
+    "llamafactory": "0.9.6.dev0",
+    "swanlab": "0.6.4",
+    "optuna": "5.0.0"
+  },
+  "model_files": {
+    ".gitattributes": "088e25d6bceaa8943f4f292006210358292349cc36e7578f80c62fce75535f46",
+    "LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "README.md": "1ab64a26fcb3b461423b89a433a8c858f1bf8d4086f979cbb3ff878d47cf20e9",
+    "config.json": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd",
+    "configuration.json": "f888421726665e8a84b738eed42a64875aed79de8be7daade851ac8bf4c0cef9",
+    "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+    "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "model.safetensors": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "model_revision": null,
+  "model_revision_note": "Downloaded revision unknown; SHA256 records local model",
+  "factory_commit": "c683e59edd8f893abc5e1403184a1d0644817d2a",
+  "hardware": "Sun Oct 25 17:54:32 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 615.71.08              KMD Version: 616.92        CUDA UMD Version: 13.4     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 4070 ...    On  |   00000000:01:00.0  On |                  N/A |\n| N/A   44C    P0             15W /  137W |    1499MiB /   8188MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A              24      G   /Xwayland                             N/A      |\n|    0   N/A  N/A             100      C   /python3.11                           N/A      |\n|    0   N/A  N/A             857      C   /python3.11                           N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+  "ai_assistance": "AI engineering implementation and checks; user chose search scope, executes and interprets results."
+}

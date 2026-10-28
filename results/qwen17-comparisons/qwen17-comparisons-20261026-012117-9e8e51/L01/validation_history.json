@@ -1,0 +1,149 @@
+[
+  {
+    "epoch": 1.0,
+    "global_step": 389,
+    "checkpoint": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/L01/adapter/checkpoint-389",
+    "preceding_train_peak_allocated_bytes": 4278505472,
+    "preceding_train_peak_reserved_bytes": 4884267008,
+    "count": 776,
+    "accuracy": 0.9110824742268041,
+    "macro_f1": 0.8948366987396666,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "0": {
+        "precision": 0.8854625550660793,
+        "recall": 0.8237704918032787,
+        "f1": 0.8535031847133758,
+        "support": 244
+      },
+      "1": {
+        "precision": 0.9216757741347905,
+        "recall": 0.9511278195488722,
+        "f1": 0.9361702127659575,
+        "support": 532
+      }
+    },
+    "confusion_matrix": [
+      [
+        201,
+        43,
+        0
+      ],
+      [
+        26,
+        506,
+        0
+      ]
+    ],
+    "matrix_rows": [
+      0,
+      1
+    ],
+    "matrix_columns": [
+      0,
+      1,
+      "invalid"
+    ],
+    "validation_seconds": 51.346532491999824,
+    "validation_peak_allocated_bytes": 3542728704,
+    "validation_peak_reserved_bytes": 4901044224
+  },
+  {
+    "epoch": 2.0,
+    "global_step": 778,
+    "checkpoint": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/L01/adapter/checkpoint-778",
+    "preceding_train_peak_allocated_bytes": 4278531584,
+    "preceding_train_peak_reserved_bytes": 4901044224,
+    "count": 776,
+    "accuracy": 0.9123711340206185,
+    "macro_f1": 0.9007037747920665,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "0": {
+        "precision": 0.8308270676691729,
+        "recall": 0.9057377049180327,
+        "f1": 0.8666666666666667,
+        "support": 244
+      },
+      "1": {
+        "precision": 0.9549019607843138,
+        "recall": 0.9154135338345865,
+        "f1": 0.9347408829174664,
+        "support": 532
+      }
+    },
+    "confusion_matrix": [
+      [
+        221,
+        23,
+        0
+      ],
+      [
+        45,
+        487,
+        0
+      ]
+    ],
+    "matrix_rows": [
+      0,
+      1
+    ],
+    "matrix_columns": [
+      0,
+      1,
+      "invalid"
+    ],
+    "validation_seconds": 52.56734747099836,
+    "validation_peak_allocated_bytes": 3542728704,
+    "validation_peak_reserved_bytes": 4901044224
+  },
+  {
+    "epoch": 3.0,
+    "global_step": 1167,
+    "checkpoint": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/L01/adapter/checkpoint-1167",
+    "preceding_train_peak_allocated_bytes": 4278511616,
+    "preceding_train_peak_reserved_bytes": 4901044224,
+    "count": 776,
+    "accuracy": 0.9097938144329897,
+    "macro_f1": 0.8956147430723702,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "0": {
+        "precision": 0.8536585365853658,
+        "recall": 0.860655737704918,
+        "f1": 0.8571428571428571,
+        "support": 244
+      },
+      "1": {
+        "precision": 0.9358490566037736,
+        "recall": 0.9323308270676691,
+        "f1": 0.9340866290018832,
+        "support": 532
+      }
+    },
+    "confusion_matrix": [
+      [
+        210,
+        34,
+        0
+      ],
+      [
+        36,
+        496,
+        0
+      ]
+    ],
+    "matrix_rows": [
+      0,
+      1
+    ],
+    "matrix_columns": [
+      0,
+      1,
+      "invalid"
+    ],
+    "validation_seconds": 51.19441317000019,
+    "validation_peak_allocated_bytes": 3542724096,
+    "validation_peak_reserved_bytes": 4901044224
+  }
+]

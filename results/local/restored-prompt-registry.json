@@ -1,0 +1,85 @@
+{
+  "version": "v1-20261023",
+  "model_id": "Qwen/Qwen3-1.7B",
+  "model_revision": "4855588ea1a12789f2e965e5f52a9e4a24c94b2a",
+  "tokenizer_class": "Qwen2Tokenizer",
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "target_marker": "{{comment}}",
+  "generation_config": {
+    "enable_thinking": false,
+    "do_sample": false,
+    "num_beams": 1,
+    "max_new_tokens": 8,
+    "temperature": null,
+    "top_p": null,
+    "top_k": null
+  },
+  "modes": {
+    "qwen_zero_shot": {
+      "prompt_id": "qwen3_1p7b_zero_shot_v1",
+      "messages_template": [
+        {
+          "role": "user",
+          "content": "判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n{{comment}}\n</评论>"
+        }
+      ],
+      "rendered_template": "<|im_start|>user\n判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n{{comment}}\n</评论><|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "template_sha256": "0dcdb7c7fda4a4d8b422e05b4278da1c5b0ed9d3bf78d3228d09209d7b47df17"
+    },
+    "qwen_few_shot": {
+      "prompt_id": "qwen3_1p7b_few_shot_4_v1",
+      "messages_template": [
+        {
+          "role": "user",
+          "content": "判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n8月份为签证，入住该旅馆，也许是首都北京吧，260元一夜，只会想住一次的，一切都是那么旧，好像260元钱不是钱似的。\n</评论>"
+        },
+        {
+          "role": "assistant",
+          "content": "0"
+        },
+        {
+          "role": "user",
+          "content": "判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n定的高级房，免费升级到豪华房，不错的。海景不错，就是电视差了点，最起码也应该弄个液晶嘛；价格没竞争力，与前台一个价，所谓的果盘也没见到。\n</评论>"
+        },
+        {
+          "role": "assistant",
+          "content": "1"
+        },
+        {
+          "role": "user",
+          "content": "判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n房间真差啊，我住的是高级大床间，结果房间里一股油漆味...房间的卫浴系统太差了，都没能洗好澡，空调基本属于没有....\n</评论>"
+        },
+        {
+          "role": "assistant",
+          "content": "0"
+        },
+        {
+          "role": "user",
+          "content": "判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n很有温馨感,价格也不错.行政房的服务好,酒店管理有水准.\n</评论>"
+        },
+        {
+          "role": "assistant",
+          "content": "1"
+        },
+        {
+          "role": "user",
+          "content": "判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n{{comment}}\n</评论>"
+        }
+      ],
+      "rendered_template": "<|im_start|>user\n判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n8月份为签证，入住该旅馆，也许是首都北京吧，260元一夜，只会想住一次的，一切都是那么旧，好像260元钱不是钱似的。\n</评论><|im_end|>\n<|im_start|>assistant\n0<|im_end|>\n<|im_start|>user\n判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n定的高级房，免费升级到豪华房，不错的。海景不错，就是电视差了点，最起码也应该弄个液晶嘛；价格没竞争力，与前台一个价，所谓的果盘也没见到。\n</评论><|im_end|>\n<|im_start|>assistant\n1<|im_end|>\n<|im_start|>user\n判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n房间真差啊，我住的是高级大床间，结果房间里一股油漆味...房间的卫浴系统太差了，都没能洗好澡，空调基本属于没有....\n</评论><|im_end|>\n<|im_start|>assistant\n0<|im_end|>\n<|im_start|>user\n判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n很有温馨感,价格也不错.行政房的服务好,酒店管理有水准.\n</评论><|im_end|>\n<|im_start|>assistant\n1<|im_end|>\n<|im_start|>user\n判断评论整体情感，仅输出0表示负面、1表示正面。\n\n<评论>\n{{comment}}\n</评论><|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "example_ids": [
+        "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5542",
+        "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3812",
+        "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5693",
+        "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4407"
+      ],
+      "example_order": [
+        "negative",
+        "positive",
+        "negative",
+        "positive"
+      ],
+      "template_sha256": "a3ca5bf3a65486d39345948ad16201332ef8573acb8e8ba0c753849f9259ac3c"
+    }
+  }
+}

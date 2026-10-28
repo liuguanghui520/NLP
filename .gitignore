@@ -1,27 +1,16 @@
+# One repository: source, data, predictions, errors and logs are published together.
+# Exclude only credentials, reproducible caches and migration rollback copies.
+.migration-backup/
 .publication/
+.vscode/
 __pycache__/
 *.pyc
-data/processed/
-reports/data/preflight-*/
-logs/
+.pytest_cache/
+.venv/
+venv/
+node_modules/
 .env
-*.safetensors
-*.bin
-# Keep source review text and local runtime artifacts out of public commits.
-results/**/predictions.jsonl
-results/**/*.log
-results/**/*.db
-results/**/swanlog*/
 .env.*
 !.env.example
-*.pt
-*.pth
-*.ckpt
-# Integration private/local resources
-configs/paths.local.json
-results/predictions/
-results/errors/
-results/local/
-artifacts/*local*
-*.joblib
-*.sqlite*
+*.pem
+*.key

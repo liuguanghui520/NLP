@@ -1,0 +1,222 @@
+[
+  {
+    "macro_f1": 0.8808978506519005,
+    "accuracy": 0.9007731958762887,
+    "weighted_f1": 0.8989549466286316,
+    "report": {
+      "0": {
+        "precision": 0.8883720930232558,
+        "recall": 0.7827868852459017,
+        "f1-score": 0.8322440087145969,
+        "support": 244.0
+      },
+      "1": {
+        "precision": 0.9055258467023173,
+        "recall": 0.9548872180451128,
+        "f1-score": 0.929551692589204,
+        "support": 532.0
+      },
+      "accuracy": 0.9007731958762887,
+      "macro avg": {
+        "precision": 0.8969489698627866,
+        "recall": 0.8688370516455073,
+        "f1-score": 0.8808978506519005,
+        "support": 776.0
+      },
+      "weighted avg": {
+        "precision": 0.9001321406485918,
+        "recall": 0.9007731958762887,
+        "f1-score": 0.8989549466286316,
+        "support": 776.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        191,
+        53
+      ],
+      [
+        24,
+        508
+      ]
+    ],
+    "epoch": 1,
+    "fit_s": 5.802662464000008,
+    "warnings": [],
+    "iterations": [
+      27
+    ],
+    "features": 192406,
+    "train_log_loss": 0.15440446139058828,
+    "validation_log_loss": 0.2881963153099199,
+    "trainable_parameters": 192407,
+    "model": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-char_2_4-seed42/checkpoints/best/pipeline.joblib",
+    "model_sha256": "b44faf7b7ce0ea5d3f00bab39f7bc99d71416bb60e941f022f8a8197b7ed9fb9",
+    "config_id": "char_2_4"
+  },
+  {
+    "macro_f1": 0.8837480682499133,
+    "accuracy": 0.9020618556701031,
+    "weighted_f1": 0.9008726486947661,
+    "report": {
+      "0": {
+        "precision": 0.875,
+        "recall": 0.8032786885245902,
+        "f1-score": 0.8376068376068376,
+        "support": 244.0
+      },
+      "1": {
+        "precision": 0.9130434782608695,
+        "recall": 0.9473684210526315,
+        "f1-score": 0.9298892988929889,
+        "support": 532.0
+      },
+      "accuracy": 0.9020618556701031,
+      "macro avg": {
+        "precision": 0.8940217391304348,
+        "recall": 0.8753235547886109,
+        "f1-score": 0.8837480682499133,
+        "support": 776.0
+      },
+      "weighted avg": {
+        "precision": 0.9010813536530703,
+        "recall": 0.9020618556701031,
+        "f1-score": 0.9008726486947661,
+        "support": 776.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        196,
+        48
+      ],
+      [
+        28,
+        504
+      ]
+    ],
+    "epoch": 1,
+    "fit_s": 6.0281716329999995,
+    "warnings": [],
+    "iterations": [
+      36
+    ],
+    "features": 130996,
+    "train_log_loss": 0.14355597636450781,
+    "validation_log_loss": 0.2759400468936336,
+    "trainable_parameters": 130997,
+    "model": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-char_1_3-seed42/checkpoints/best/pipeline.joblib",
+    "model_sha256": "0e1d76c5990925df6de24ce68d73dd193954c5f849b348996f506d372cf35f6c",
+    "config_id": "char_1_3"
+  },
+  {
+    "macro_f1": 0.8774936802453963,
+    "accuracy": 0.8981958762886598,
+    "weighted_f1": 0.8961840641339853,
+    "report": {
+      "0": {
+        "precision": 0.8873239436619719,
+        "recall": 0.7745901639344263,
+        "f1-score": 0.8271334792122538,
+        "support": 244.0
+      },
+      "1": {
+        "precision": 0.9023090586145648,
+        "recall": 0.9548872180451128,
+        "f1-score": 0.9278538812785389,
+        "support": 532.0
+      },
+      "accuracy": 0.8981958762886598,
+      "macro avg": {
+        "precision": 0.8948165011382683,
+        "recall": 0.8647386909897695,
+        "f1-score": 0.8774936802453963,
+        "support": 776.0
+      },
+      "weighted avg": {
+        "precision": 0.8975972441191619,
+        "recall": 0.8981958762886598,
+        "f1-score": 0.8961840641339853,
+        "support": 776.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        189,
+        55
+      ],
+      [
+        24,
+        508
+      ]
+    ],
+    "epoch": 1,
+    "fit_s": 8.662249080999999,
+    "warnings": [],
+    "iterations": [
+      25
+    ],
+    "features": 200000,
+    "train_log_loss": 0.15552291902892917,
+    "validation_log_loss": 0.2884328146521788,
+    "trainable_parameters": 200001,
+    "model": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-char_2_5-seed42/checkpoints/best/pipeline.joblib",
+    "model_sha256": "e672577a62c4ec72dec9129bdcdcc4572561c1f761fec99a45d859029a8237bd",
+    "config_id": "char_2_5"
+  },
+  {
+    "macro_f1": 0.8720193081255028,
+    "accuracy": 0.8943298969072165,
+    "weighted_f1": 0.8918509425981371,
+    "report": {
+      "0": {
+        "precision": 0.8894230769230769,
+        "recall": 0.7581967213114754,
+        "f1-score": 0.8185840707964602,
+        "support": 244.0
+      },
+      "1": {
+        "precision": 0.8961267605633803,
+        "recall": 0.956766917293233,
+        "f1-score": 0.9254545454545454,
+        "support": 532.0
+      },
+      "accuracy": 0.8943298969072165,
+      "macro avg": {
+        "precision": 0.8927749187432286,
+        "recall": 0.8574818193023542,
+        "f1-score": 0.8720193081255028,
+        "support": 776.0
+      },
+      "weighted avg": {
+        "precision": 0.8940189012744189,
+        "recall": 0.8943298969072165,
+        "f1-score": 0.8918509425981371,
+        "support": 776.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        185,
+        59
+      ],
+      [
+        23,
+        509
+      ]
+    ],
+    "epoch": 1,
+    "fit_s": 8.568465255000007,
+    "warnings": [],
+    "iterations": [
+      44
+    ],
+    "features": 55013,
+    "train_log_loss": 0.14565400156910532,
+    "validation_log_loss": 0.27517030087892713,
+    "trainable_parameters": 55014,
+    "model": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-word_1_2-seed42/checkpoints/best/pipeline.joblib",
+    "model_sha256": "4137542b086a9d9e6cb15dc540fa1eee4674953547a835fb45fa0dd6474c97a2",
+    "config_id": "word_1_2"
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "reason": "WSL Git ownership check blocked metadata capture before inference",
+  "retry": "smoke-zero-retry1-20261028",
+  "status": "failed"
+}

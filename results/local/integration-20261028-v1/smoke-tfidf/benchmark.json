@@ -1,0 +1,18 @@
+{
+  "mean_ms": 0.6689809999897989,
+  "p50_ms": 0.6095539999932953,
+  "p95_ms": 0.8122042999900714,
+  "max_ms": 0.8347209999897132,
+  "throughput": 1494.8107644540707,
+  "warmup_ids": [
+    "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5514",
+    "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5622"
+  ],
+  "n": 3,
+  "batch": 1,
+  "numpy": "2.4.6",
+  "percentile_method": "linear",
+  "device": "cpu",
+  "threads": 4,
+  "timing_scope": "preprocess_transfer_inference_parse; excludes disk/model loading; GPU synchronized"
+}

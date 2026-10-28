@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-28",
+  "canonical_root": "NLP",
+  "preserved_head": "863ac3e5b2537c633b2ff86eeab01ebee5540183",
+  "checked_files_excluding_this_report": 1125,
+  "total_bytes": 118361703,
+  "largest_file": {
+    "path": "results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-char_2_5-seed42/checkpoints/best/pipeline.joblib",
+    "bytes": 9559428
+  },
+  "index_byte_issues": [],
+  "credential_pattern_hits": [],
+  "unittest_passed": 8,
+  "resource_check": "passed",
+  "retired_publication_directory": "locked_by_another_process; preserved and ignored",
+  "training_rerun": false,
+  "publish_scope": "existing source, config, docs, data, predictions, errors and logs; credentials, caches and rollback copies excluded"
+}

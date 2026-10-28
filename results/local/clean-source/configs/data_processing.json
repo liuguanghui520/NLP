@@ -1,0 +1,17 @@
+{
+  "source_repository": "https://modelscope.cn/datasets/AiNiklaus/ChnSentiCorp",
+  "expected_sha256": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0",
+  "split_seed": 67,
+  "smoke_seed": 67,
+  "fewshot_seed": 67,
+  "latency_seed": 67,
+  "max_chars": 512,
+  "instruction": "判断评论整体情感，仅输出0表示负面、1表示正面。",
+  "input_boundary": "none",
+  "decisions_confirmed": true,
+  "prefix_collision_policy": "keep_first_source_row",
+  "prefix_confirmation": "2026-10-23 用户确认：对碰撞组仅保留源记录序号最小者；重新分层划分",
+  "confirmation": "2026-10-23 用户确认：直接放正文；冒烟67；少样本67",
+  "label_evidence": "https://github.com/SophonPlus/ChineseNlpCorpus/blob/master/datasets/ChnSentiCorp_htl_all/intro.ipynb",
+  "redistribution_verified": false
+}

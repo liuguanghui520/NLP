@@ -1,0 +1,20 @@
+.publication/
+__pycache__/
+*.pyc
+data/processed/
+reports/data/preflight-*/
+logs/
+.env
+*.safetensors
+*.bin
+# Keep source review text and local runtime artifacts out of public commits.
+results/**/predictions.jsonl
+results/**/*.log
+results/**/*.db
+results/**/swanlog*/
+.env.*
+!.env.example
+*.pt
+*.pth
+*.ckpt
+results/qwen17-freeze/**/local_manifest.json

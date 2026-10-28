@@ -1,0 +1,6 @@
+API_HOST=127.0.0.1
+API_PORT=8000
+API_MODEL_NAME=qwen3-0.6b-lora
+template=qwen3
+enable_thinking=False
+infer_dtype=bfloat16

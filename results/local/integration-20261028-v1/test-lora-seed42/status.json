@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "method": "qwen_lora",
+  "split": "test",
+  "smoke": false
+}

@@ -1,0 +1,60 @@
+{
+  "status": "candidate_analysis_only_not_frozen",
+  "splits": {
+    "train": {
+      "count": 6212,
+      "labels": {
+        "0": 1954,
+        "1": 4258
+      }
+    },
+    "validation": {
+      "count": 776,
+      "labels": {
+        "0": 244,
+        "1": 532
+      }
+    },
+    "test": {
+      "count": 777,
+      "labels": {
+        "0": 245,
+        "1": 532
+      }
+    }
+  },
+  "prefix_collisions": [
+    [
+      {
+        "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3070",
+        "source_row": 3070,
+        "label": 1,
+        "split": "train",
+        "normalized_char_count": 1018
+      },
+      {
+        "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3071",
+        "source_row": 3071,
+        "label": 1,
+        "split": "validation",
+        "normalized_char_count": 985
+      }
+    ],
+    [
+      {
+        "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3728",
+        "source_row": 3728,
+        "label": 1,
+        "split": "train",
+        "normalized_char_count": 588
+      },
+      {
+        "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3729",
+        "source_row": 3729,
+        "label": 1,
+        "split": "train",
+        "normalized_char_count": 552
+      }
+    ]
+  ]
+}

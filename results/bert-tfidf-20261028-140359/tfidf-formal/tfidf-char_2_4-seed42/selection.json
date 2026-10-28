@@ -1,0 +1,55 @@
+{
+  "macro_f1": 0.8808978506519005,
+  "accuracy": 0.9007731958762887,
+  "weighted_f1": 0.8989549466286316,
+  "report": {
+    "0": {
+      "precision": 0.8883720930232558,
+      "recall": 0.7827868852459017,
+      "f1-score": 0.8322440087145969,
+      "support": 244.0
+    },
+    "1": {
+      "precision": 0.9055258467023173,
+      "recall": 0.9548872180451128,
+      "f1-score": 0.929551692589204,
+      "support": 532.0
+    },
+    "accuracy": 0.9007731958762887,
+    "macro avg": {
+      "precision": 0.8969489698627866,
+      "recall": 0.8688370516455073,
+      "f1-score": 0.8808978506519005,
+      "support": 776.0
+    },
+    "weighted avg": {
+      "precision": 0.9001321406485918,
+      "recall": 0.9007731958762887,
+      "f1-score": 0.8989549466286316,
+      "support": 776.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      191,
+      53
+    ],
+    [
+      24,
+      508
+    ]
+  ],
+  "epoch": 1,
+  "fit_s": 5.802662464000008,
+  "warnings": [],
+  "iterations": [
+    27
+  ],
+  "features": 192406,
+  "train_log_loss": 0.15440446139058828,
+  "validation_log_loss": 0.2881963153099199,
+  "trainable_parameters": 192407,
+  "model": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-formal/tfidf-char_2_4-seed42/checkpoints/best/pipeline.joblib",
+  "model_sha256": "b44faf7b7ce0ea5d3f00bab39f7bc99d71416bb60e941f022f8a8197b7ed9fb9",
+  "config_id": "char_2_4"
+}

@@ -1,0 +1,26 @@
+{
+  "method": "tfidf",
+  "split": "test",
+  "seed": 42,
+  "run_id": "probe-tfidf-seed42",
+  "batch": 1,
+  "threads": 4,
+  "precision": "fp32",
+  "data_sha256": "3df19229abb59d1868a7735b98f42fd799883c22ec37aa8a1760cc2266fb1996",
+  "freeze_sha256": "42375947cc4bab180fc8ad165fbc7a23c0fbcf3469d5c425d40ad50c99494bba",
+  "git_commit": "8c359d2e95ed3a07ee21cae5e89c17a24403cf93",
+  "git_dirty": true,
+  "source_sha256": "49168fcd87f72dc6bf3ccd4b22d5c9854526aca149d8606e07f8fc4d41e2c071",
+  "versions": {
+    "torch": "2.14.1",
+    "transformers": "5.8.0",
+    "peft": "0.18.1",
+    "scikit-learn": "1.9.1"
+  },
+  "model_load_and_setup_s": 1.3968928540000434,
+  "config_id": "char_1_3",
+  "model_id": "TF-IDF+LogisticRegression",
+  "checkpoint_id": "0e1d76c5990925df6de24ce68d73dd193954c5f849b348996f506d372cf35f6c",
+  "prompt_id": null,
+  "prompt_sha256": null
+}

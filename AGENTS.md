@@ -8,13 +8,15 @@ This repository supports a Chinese sentiment-analysis course project comparing p
 - `start-llamafactory.ps1`: launches the local WebUI on port 7860.
 - `verify_llamafactory.py` and `verify_tools.py`: environment smoke checks.
 - `logs/tools-install/`: dependency snapshots and installation/verification evidence.
-- Root Markdown documents: setup instructions, source records, and project handoff. Consult the latest dated corrections in `项目交接-本机.md`.
+- `docs/README.md`: classified documentation; `docs/项目最新进度表.md`: current progress. Historical workspace records are archived under `docs/history/`.
+- `src/cli.py`: unified check, import, prediction, evaluation, benchmark and summary entry point.
+- The canonical checkout is this repository root. Do not continue development in the retired `.publication` copy or migration backups.
 
 Upstream source lives at `/home/lgh/LLaMA-Factory`; the virtual environment is `/home/lgh/.venvs/llamafactory`. Model weights and datasets reside outside this repository under `/home/lgh/models/` and `/home/lgh/datasets/`.
 
 ## Build, Test, and Development Commands
 
-No repository build step is configured. From Windows CMD:
+No repository build step is configured. Run the integration tests with `python -m unittest discover -s tests -v` and validate local resources with `python -m src.cli check`. These do not start training. From Windows CMD:
 
 ```cmd
 open-llamafactory.cmd
@@ -36,11 +38,11 @@ Use four-space indentation and `snake_case` for Python. Keep platform launchers 
 
 ## Testing Guidelines
 
-Checks use Python assertions; no pytest suite or coverage threshold exists. CUDA checks require the NVIDIA GPU. The framework check briefly binds port 7860. The tools check overwrites verification snapshots/logs and adds offline runs and SQLite studies; preserve previous evidence before rerunning. Report these as software checks, never model-quality results.
+Integration checks use unittest; no coverage threshold exists. Legacy checks use Python assertions and some require CUDA. The framework check briefly binds port 7860. The tools check overwrites verification snapshots/logs and adds offline runs and SQLite studies; preserve previous evidence before rerunning. Report these as software checks, never model-quality results.
 
 ## Commit & Pull Request Guidelines
 
-There are no commits yet, so no historical convention exists. Use concise imperative subjects, such as `docs: clarify WSL startup`. PRs should describe changes, validation, environment assumptions, and evidence files; include screenshots for UI changes. Exclude credentials, model weights, and bulk datasets.
+Preserve the existing integration history and use concise imperative subjects, such as `docs: clarify WSL startup`. PRs should describe changes, validation, environment assumptions, and evidence files. The user authorized publishing the existing project data, predictions and logs on 2026-10-28; do not maintain duplicate public/private source packages. Exclude account credentials, reproducible caches and rollback copies. Large model assets remain in external tool workspaces unless separately packaged.
 
 ## Experiment & Configuration Boundaries
 

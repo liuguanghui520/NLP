@@ -1,0 +1,1367 @@
+[
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:27",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:35",
+    "true_label": 1,
+    "a": 1,
+    "b": null,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:57",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:68",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:81",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:212",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:276",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:315",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:318",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:319",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:392",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:497",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:555",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:608",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:609",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:647",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:658",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:662",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:674",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:830",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:851",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:869",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:873",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:905",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:909",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:963",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1004",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1047",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1146",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1163",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1167",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1260",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1282",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1343",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1373",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1395",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1401",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1439",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1467",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1489",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1491",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1496",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1535",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1539",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1547",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1563",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1600",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1699",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1714",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1719",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1751",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1754",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1786",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1816",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1828",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1881",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1883",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:1893",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2053",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2070",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2077",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2166",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2181",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2206",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2231",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2277",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2286",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2365",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2366",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2374",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2399",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2415",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2416",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2421",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2426",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2456",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2463",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2490",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2493",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2547",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2568",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2594",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2628",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2635",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2650",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2661",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2670",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2690",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2699",
+    "true_label": 1,
+    "a": 0,
+    "b": 1,
+    "category": "B_corrects_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2732",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2771",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2784",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2800",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2834",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2850",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2864",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2891",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2914",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2927",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2936",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2937",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2939",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2979",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3097",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3116",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3144",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3164",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3206",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3235",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3270",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3271",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3339",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3340",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3356",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3393",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3397",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3509",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3523",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3534",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3546",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3550",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3552",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3598",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3607",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3641",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3653",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3672",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3686",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3757",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3791",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3810",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3847",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3875",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3876",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3905",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4004",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4065",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4086",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4094",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4097",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4143",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4185",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4228",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4230",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4253",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4312",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4336",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4350",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4364",
+    "true_label": 1,
+    "a": 1,
+    "b": null,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4368",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4384",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4421",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4456",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4466",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4487",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4552",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4573",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4617",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4622",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4659",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4664",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4674",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4692",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4884",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4896",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4943",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4948",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4968",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4970",
+    "true_label": 1,
+    "a": 0,
+    "b": 0,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5041",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5083",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5103",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5149",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5229",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5320",
+    "true_label": 1,
+    "a": 1,
+    "b": 0,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5510",
+    "true_label": 0,
+    "a": 1,
+    "b": 1,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5615",
+    "true_label": 0,
+    "a": 0,
+    "b": 1,
+    "category": "B_regresses_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5789",
+    "true_label": 0,
+    "a": 1,
+    "b": 0,
+    "category": "B_corrects_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5804",
+    "true_label": 0,
+    "a": 1,
+    "b": 0,
+    "category": "B_corrects_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6040",
+    "true_label": 0,
+    "a": 1,
+    "b": 0,
+    "category": "B_corrects_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6197",
+    "true_label": 0,
+    "a": 1,
+    "b": 1,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6271",
+    "true_label": 0,
+    "a": 1,
+    "b": 0,
+    "category": "B_corrects_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6337",
+    "true_label": 0,
+    "a": 1,
+    "b": 0,
+    "category": "B_corrects_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6384",
+    "true_label": 0,
+    "a": 1,
+    "b": 1,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6461",
+    "true_label": 0,
+    "a": 1,
+    "b": 1,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6568",
+    "true_label": 0,
+    "a": 1,
+    "b": 1,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6622",
+    "true_label": 0,
+    "a": 1,
+    "b": 0,
+    "category": "B_corrects_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6848",
+    "true_label": 0,
+    "a": 1,
+    "b": 1,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6863",
+    "true_label": 0,
+    "a": 1,
+    "b": 0,
+    "category": "B_corrects_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6869",
+    "true_label": 0,
+    "a": 1,
+    "b": 0,
+    "category": "B_corrects_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6925",
+    "true_label": 0,
+    "a": 1,
+    "b": 1,
+    "category": "both_failed"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6992",
+    "true_label": 0,
+    "a": 1,
+    "b": 0,
+    "category": "B_corrects_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7354",
+    "true_label": 0,
+    "a": 1,
+    "b": 0,
+    "category": "B_corrects_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7554",
+    "true_label": 0,
+    "a": 1,
+    "b": 0,
+    "category": "B_corrects_A"
+  },
+  {
+    "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7642",
+    "true_label": 0,
+    "a": 1,
+    "b": 0,
+    "category": "B_corrects_A"
+  }
+]

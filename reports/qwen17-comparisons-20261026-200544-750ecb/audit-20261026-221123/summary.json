@@ -1,0 +1,82 @@
+{
+  "configuration": "T01",
+  "batch_id": "qwen17-comparisons-20261026-200544-750ecb",
+  "results": [
+    {
+      "seed": 42,
+      "accuracy": 0.9252577319587629,
+      "macro_f1": 0.913885338619196,
+      "invalid_rate": 0.0,
+      "best_epoch": 3.0,
+      "best_checkpoint": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/T01/adapter/checkpoint-1167",
+      "adapter_sha256": "6baed5a97d4549011a8da6f3212a38772531081adf8995176583120b3c82fcf5",
+      "perf_counter_seconds": 3547.3765133999987,
+      "utc_span_seconds": 3547.376753,
+      "clock_difference_seconds": 0.00023960000135048176,
+      "device_sample_peak_mib": 6326.0,
+      "power_samples": 3372,
+      "sampling_errors": [
+        "TimeoutExpired(['nvidia-smi', '--id=0', '--query-gpu=memory.used,utilization.gpu,power.draw', '--format=csv,noheader,nounits'], 5)",
+        "CalledProcessError(255, ['nvidia-smi', '--id=0', '--query-gpu=memory.used,utilization.gpu,power.draw', '--format=csv,noheader,nounits'])",
+        "CalledProcessError(255, ['nvidia-smi', '--id=0', '--query-gpu=memory.used,utilization.gpu,power.draw', '--format=csv,noheader,nounits'])",
+        "CalledProcessError(255, ['nvidia-smi', '--id=0', '--query-gpu=memory.used,utilization.gpu,power.draw', '--format=csv,noheader,nounits'])",
+        "CalledProcessError(255, ['nvidia-smi', '--id=0', '--query-gpu=memory.used,utilization.gpu,power.draw', '--format=csv,noheader,nounits'])",
+        "CalledProcessError(255, ['nvidia-smi', '--id=0', '--query-gpu=memory.used,utilization.gpu,power.draw', '--format=csv,noheader,nounits'])"
+      ]
+    },
+    {
+      "seed": 43,
+      "accuracy": 0.9226804123711341,
+      "macro_f1": 0.9107225034514497,
+      "invalid_rate": 0.0,
+      "best_epoch": 3.0,
+      "best_checkpoint": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S43/adapter/checkpoint-1167",
+      "adapter_sha256": "39436195aa545351e6f0787f20ecf507e3e33045eb4f3aa0bc7483cc9d9aa4aa",
+      "perf_counter_seconds": 3580.167393051,
+      "utc_span_seconds": 3580.167939,
+      "clock_difference_seconds": 0.000545948999842949,
+      "device_sample_peak_mib": 6278.0,
+      "power_samples": 3410,
+      "sampling_errors": [
+        "CalledProcessError(255, ['nvidia-smi', '--id=0', '--query-gpu=memory.used,utilization.gpu,power.draw', '--format=csv,noheader,nounits'])"
+      ]
+    },
+    {
+      "seed": 44,
+      "accuracy": 0.9226804123711341,
+      "macro_f1": 0.9105269226334601,
+      "invalid_rate": 0.0,
+      "best_epoch": 3.0,
+      "best_checkpoint": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S44/adapter/checkpoint-1167",
+      "adapter_sha256": "f5b21a7ba292c9365e83a4cc898459c7751e90b4436df6279fcaff75af01d422",
+      "perf_counter_seconds": 3638.9630607679997,
+      "utc_span_seconds": 3638.963431,
+      "clock_difference_seconds": 0.00037023200047769933,
+      "device_sample_peak_mib": 6450.0,
+      "power_samples": 3446,
+      "sampling_errors": [
+        "CalledProcessError(255, ['nvidia-smi', '--id=0', '--query-gpu=memory.used,utilization.gpu,power.draw', '--format=csv,noheader,nounits'])"
+      ]
+    }
+  ],
+  "aggregate": {
+    "accuracy": {
+      "mean": 0.9235395189003437,
+      "sample_std": 0.0014880161577052158
+    },
+    "macro_f1": {
+      "mean": 0.9117115882347019,
+      "sample_std": 0.0018850612761014843
+    },
+    "invalid_rate": {
+      "mean": 0.0,
+      "sample_std": 0.0
+    }
+  },
+  "std_definition": "sample standard deviation, n-1 denominator",
+  "audited_epoch_records": 9,
+  "audited_predictions": 6984,
+  "test_evaluated": false,
+  "retry_of": "qwen17-comparisons-20261026-143111-673346",
+  "note": "Validation scores only; do not choose a seed by its score. Factual audit, no student result interpretation."
+}

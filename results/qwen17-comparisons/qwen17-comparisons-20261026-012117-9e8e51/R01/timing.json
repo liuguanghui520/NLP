@@ -1,0 +1,9 @@
+{
+  "trainer_interval_seconds": 2861.3006651039977,
+  "classification_validation_seconds": 161.14153166599863,
+  "trainer_interval_minus_classification_validation_seconds": 2700.159133437999,
+  "boundary": "Trainer begin through end, includes checkpoint saves and logging; excludes initial model load. Subtracted classification intervals include generation, input encoding and prediction IO; not a pure CUDA kernel timing.",
+  "memory_boundary": "CUDA peaks reset after model load and each validation; per segment, includes allocator reservations.",
+  "global_step": 1167,
+  "epoch": 3.0
+}

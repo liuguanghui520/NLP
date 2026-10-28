@@ -1,0 +1,55 @@
+{
+  "macro_f1": 0.5607843137254902,
+  "accuracy": 0.5625,
+  "weighted_f1": 0.5607843137254902,
+  "report": {
+    "0": {
+      "precision": 0.5555555555555556,
+      "recall": 0.625,
+      "f1-score": 0.5882352941176471,
+      "support": 8.0
+    },
+    "1": {
+      "precision": 0.5714285714285714,
+      "recall": 0.5,
+      "f1-score": 0.5333333333333333,
+      "support": 8.0
+    },
+    "accuracy": 0.5625,
+    "macro avg": {
+      "precision": 0.5634920634920635,
+      "recall": 0.5625,
+      "f1-score": 0.5607843137254902,
+      "support": 16.0
+    },
+    "weighted avg": {
+      "precision": 0.5634920634920635,
+      "recall": 0.5625,
+      "f1-score": 0.5607843137254902,
+      "support": 16.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      5,
+      3
+    ],
+    [
+      4,
+      4
+    ]
+  ],
+  "epoch": 1,
+  "fit_s": 0.01931836800000042,
+  "warnings": [],
+  "iterations": [
+    6
+  ],
+  "features": 530,
+  "train_log_loss": 0.2665645569147026,
+  "validation_log_loss": 0.6532125145225417,
+  "trainable_parameters": 531,
+  "model": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/bert-tfidf-20261028-140359/tfidf-smoke-retry1/tfidf-char_2_4-seed42/checkpoints/best/pipeline.joblib",
+  "model_sha256": "a8a5a3598f0c705c9ce4f056f59a0a98c5e40148a379e48fa48818a2708b5b14",
+  "config_id": "char_2_4"
+}

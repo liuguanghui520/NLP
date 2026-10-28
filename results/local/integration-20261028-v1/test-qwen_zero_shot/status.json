@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "method": "qwen_zero_shot",
+  "split": "test",
+  "smoke": false
+}

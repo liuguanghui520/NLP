@@ -1,0 +1,37 @@
+{
+  "run_id": "qwen06-optuna-20261025-175431-0a7f8f",
+  "trials": [
+    {
+      "number": 0,
+      "state": "COMPLETE",
+      "rank": 8,
+      "macro_f1": 0.6564771668219944,
+      "accuracy": 0.6572164948453608,
+      "invalid_rate": 0.0,
+      "result_directory": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/qwen06-optuna/qwen06-optuna-20261025-175431-0a7f8f/trial-000",
+      "run_id": "qwen06-optuna-20261025-175431-0a7f8f-trial-000-r8"
+    },
+    {
+      "number": 1,
+      "state": "COMPLETE",
+      "rank": 16,
+      "macro_f1": 0.7646883783012085,
+      "accuracy": 0.7719072164948454,
+      "invalid_rate": 0.001288659793814433,
+      "result_directory": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/qwen06-optuna/qwen06-optuna-20261025-175431-0a7f8f/trial-001",
+      "run_id": "qwen06-optuna-20261025-175431-0a7f8f-trial-001-r16"
+    }
+  ],
+  "best": {
+    "number": 1,
+    "state": "COMPLETE",
+    "rank": 16,
+    "macro_f1": 0.7646883783012085,
+    "accuracy": 0.7719072164948454,
+    "invalid_rate": 0.001288659793814433,
+    "result_directory": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/results/qwen06-optuna/qwen06-optuna-20261025-175431-0a7f8f/trial-001",
+    "run_id": "qwen06-optuna-20261025-175431-0a7f8f-trial-001-r16"
+  },
+  "selection_rule": "Higher validation Macro-F1; ties prefer smaller rank",
+  "complete_comparison": true
+}
