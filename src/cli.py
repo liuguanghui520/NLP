@@ -43,6 +43,8 @@ def main():
     elif args.command=='train':
         if args.method not in ['bert','tfidf'] or not args.output:
             p.error('train requires --method bert/tfidf and new --output directory')
+        if args.method=='bert' and (not paths.get('macbert_model') or not Path(paths['macbert_model']).exists()):
+            p.error('Configure existing macbert_model resource in --paths')
         cmd = [sys.executable, str(ROOT/'src/legacy/baselines/run_bert_tfidf.py'),
                '--root', args.output, '--data', paths['data'], '--model', paths.get('macbert_model',''), '--method',args.method]
         if args.smoke:
