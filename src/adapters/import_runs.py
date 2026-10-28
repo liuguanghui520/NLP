@@ -31,6 +31,19 @@ def import_all(root, paths):
         assert digest(data/f'{s}.jsonl') == manifest['files'][f'{s}.jsonl']
     prompt = Path(paths['prompt_delivery'])
     assert load(prompt/'data_manifest/split_ids.json') == ids
+    member_checksums=load(prompt/'data_manifest/checksums.json')
+    for split in ['train','validation','test']:
+        name=f'alpaca/{split}.json'
+        assert digest(data/name)==member_checksums[name]['sha256']
+    for name in ['fewshot_ids.json','latency_ids.json','smoke_ids.json']:
+        member_ids=load(prompt/'data_manifest'/name)
+        if isinstance(member_ids,dict):
+            member_ids=member_ids['sample_ids']
+        assert member_ids==load(data/name)
+    save(root/'reports/audits/data-alignment.json',dict(split_ids_equal=True,
+         fewshot_latency_smoke_id_order_equal=True,alpaca_body_hashes_equal=['train','validation','test'],
+         generic_jsonl='Different serialization; original corpus not modified',
+         normalized_text='Full prompt-side generic JSONL not supplied; validation input and few-shot text hashes verified separately'))
     # Different JSON serialization is allowed; reconstruct the exact prompt-side
     # row content hashes from its per-sample rendered-input hashes during restore.
     index, audit, benchmarks, searches = [], [], [], []
