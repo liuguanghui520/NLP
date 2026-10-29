@@ -1,0 +1,7 @@
+
+Now           : 2026-10-29 16:18:01 +08:00
+CoreLimit     : 60
+CoreRemaining : 48
+CoreUsed      : 12
+ResetLocal    : 2026-10-29 16:18:29 +08:00
+

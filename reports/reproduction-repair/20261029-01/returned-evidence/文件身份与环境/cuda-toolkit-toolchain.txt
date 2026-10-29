@@ -1,0 +1,12 @@
+recorded_at=2026-10-29 15:36:55 +08:00
+command=vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath; nvcc --version; nvidia-smi --query-gpu=name,memory.total,driver_version,compute_cap --format=csv,noheader
+vswhere not found
+nvcc: 
+Line |
+   8 |    nvcc --version 2>&1
+     |    ~~~~
+     | The term 'nvcc' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+nvcc_exit_code=
+NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 537.70, 8.9
+gpu_query_exit_code=0

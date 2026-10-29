@@ -1,0 +1,23 @@
+uv_path=/home/yilin/.local/bin/uv
+python311_path=/home/yilin/.local/bin/python3.11
+git_path=/usr/bin/git
+curl_path=/usr/bin/curl
+local_bin
+total 37032
+drwxr-xr-x 2 yilin yilin     4096 Oct 21 21:08 .
+drwxr-xr-x 4 yilin yilin     4096 Oct 21 21:07 ..
+-rw-r--r-- 1 yilin yilin      328 Oct 21 21:07 env
+-rw-r--r-- 1 yilin yilin      165 Oct 21 21:07 env.fish
+lrwxrwxrwx 1 yilin yilin       79 Oct 21 21:08 python3.11 -> /home/yilin/.local/share/uv/python/cpython-3.11-linux-x86_64-gnu/bin/python3.11
+-rwxr-xr-x 1 yilin yilin 37565376 Oct 20 22:55 uv
+-rwxr-xr-x 1 yilin yilin   330448 Oct 20 22:55 uvx
+factory_python
+Python 3.11.17
+factory_pip
+/home/yilin/LLaMA-Factory/.venv/bin/python: No module named pip
+factory_git_head
+c683e59edd8f893abc5e1403184a1d0644817d2a
+factory_version
+c683e59
+factory_package
+0.9.6.dev0 /home/yilin/LLaMA-Factory/src/llamafactory/__init__.py

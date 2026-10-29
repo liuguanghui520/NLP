@@ -1,0 +1,1 @@
+/home/yilin/LLaMA-Factory/.venv/bin/python -c "import datasets,accelerate; from llamafactory.chat import ChatModel; print(datasets.__version__,accelerate.__version__)"

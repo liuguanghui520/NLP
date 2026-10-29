@@ -1,0 +1,20 @@
+[
+  {
+    "index": 4,
+    "range": "95263140-127017519",
+    "expected_length": 31754380,
+    "actual_length": 31754380,
+    "exit_code": 0,
+    "duration_seconds": 16.477,
+    "output": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.resume-001.segments\\004.part"
+  },
+  {
+    "index": 11,
+    "range": "349298180-381052560",
+    "expected_length": 31754381,
+    "actual_length": 31754381,
+    "exit_code": 0,
+    "duration_seconds": 16.246,
+    "output": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.resume-001.segments\\011.part"
+  }
+]

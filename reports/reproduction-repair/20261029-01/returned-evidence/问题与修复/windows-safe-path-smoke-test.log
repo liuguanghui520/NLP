@@ -1,0 +1,5 @@
+rejected=../outside.json
+rejected=C:/outside.json
+rejected=/outside.json
+syntax=ok
+safe_path_smoke=passed

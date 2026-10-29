@@ -1,0 +1,18 @@
+cache_modelscope
+/home/yilin/.cache/modelscope
+/home/yilin/.cache/modelscope/.lock
+/home/yilin/.modelscope
+/home/yilin/.modelscope/credentials
+cache_huggingface
+/home/yilin/.cache/huggingface
+/home/yilin/.cache/huggingface/datasets
+/home/yilin/.cache/huggingface/datasets/json
+/home/yilin/.cache/huggingface/datasets/json/default-d685a462e9c524e8
+/home/yilin/.cache/huggingface/datasets/json/default-d685a462e9c524e8/0.0.0
+candidate_model_paths
+/mnt/d/NLP/models/Qwen3-1.7B
+cache_sizes
+8.0K	/home/yilin/.cache/modelscope
+12K	/home/yilin/.modelscope
+2.7M	/home/yilin/.cache/huggingface
+6.2G	/home/yilin/LLaMA-Factory/.venv

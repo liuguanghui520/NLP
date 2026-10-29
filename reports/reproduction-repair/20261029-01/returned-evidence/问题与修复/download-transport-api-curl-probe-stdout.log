@@ -1,0 +1,11 @@
+command=curl.exe -fL --retry 2 --connect-timeout 20 --max-time 180 -H Accept:application/vnd.github.raw+json -o <fresh-temp> https://api.github.com/repos/liuguanghui520/NLP/contents/results/predictions/tfidf-char_1_3-seed42.jsonl?ref=106cdbed8db84057dba6b9c980d3a2f914856dd0
+curl_exit_code=0
+
+Length   : 643474
+FullName : D:\NLPP\reproduction-runs\api-curl-probe-tfidf-attempt-01.jsonl
+
+
+Algorithm : SHA256
+Hash      : F60BC8296966B99108D1CB6C684B760B96A258A8A385B725E1F23E81759C3942
+Path      : D:\NLPP\reproduction-runs\api-curl-probe-tfidf-attempt-01.jsonl
+

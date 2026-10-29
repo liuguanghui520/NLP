@@ -1,0 +1,4 @@
+command=python -c 'urllib.request.urlopen(<fixed-url>, timeout=90).read()'
+864
+037ce00319664cbe2b7cb241a081045da24a7d62e61dbe5990c59b0db76cd2de
+python_exit_code=0

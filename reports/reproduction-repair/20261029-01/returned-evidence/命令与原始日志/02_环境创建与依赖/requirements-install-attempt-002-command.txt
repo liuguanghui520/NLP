@@ -1,0 +1,2 @@
+command=wsl.exe -d Ubuntu -- bash <requirements-install-attempt-002.sh>
+index_url=https://pypi.tuna.tsinghua.edu.cn/simple

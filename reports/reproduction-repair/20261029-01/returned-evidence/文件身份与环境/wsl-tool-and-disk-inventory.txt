@@ -1,0 +1,66 @@
+COMMANDS
+========DISK
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G   11G  946G   2% /
+/dev/sdd       1007G   11G  946G   2% /
+D:\             652G  231G  421G  36% /mnt/d
+HOME_TOP
+d /home/yilin/.cache
+d /home/yilin/.cache/huggingface
+d /home/yilin/.cache/matplotlib
+d /home/yilin/.cache/modelscope
+d /home/yilin/.cache/uv
+d /home/yilin/.config
+d /home/yilin/.config/fish
+d /home/yilin/.config/matplotlib
+d /home/yilin/.config/uv
+d /home/yilin/.docker
+d /home/yilin/.docker/desktop
+d /home/yilin/.docker/run
+d /home/yilin/.local
+d /home/yilin/.local/bin
+d /home/yilin/.local/share
+d /home/yilin/.modelscope
+d /home/yilin/.modelscope/credentials
+d /home/yilin/.nv
+d /home/yilin/.nv/ComputeCache
+d /home/yilin/LLaMA-Factory
+d /home/yilin/LLaMA-Factory/.ai
+d /home/yilin/LLaMA-Factory/.claude
+d /home/yilin/LLaMA-Factory/.git
+d /home/yilin/LLaMA-Factory/.github
+d /home/yilin/LLaMA-Factory/.venv
+d /home/yilin/LLaMA-Factory/assets
+d /home/yilin/LLaMA-Factory/data
+d /home/yilin/LLaMA-Factory/docker
+d /home/yilin/LLaMA-Factory/docs
+d /home/yilin/LLaMA-Factory/examples
+d /home/yilin/LLaMA-Factory/requirements
+d /home/yilin/LLaMA-Factory/scripts
+d /home/yilin/LLaMA-Factory/src
+d /home/yilin/LLaMA-Factory/tests
+d /home/yilin/LLaMA-Factory/tests_v1
+f /home/yilin/.bash_logout
+f /home/yilin/.bashrc
+f /home/yilin/.docker/config.json
+f /home/yilin/.motd_shown
+f /home/yilin/.profile
+f /home/yilin/.zshrc
+f /home/yilin/LLaMA-Factory/.dockerignore
+f /home/yilin/LLaMA-Factory/.env.local
+f /home/yilin/LLaMA-Factory/.gitattributes
+f /home/yilin/LLaMA-Factory/.gitignore
+f /home/yilin/LLaMA-Factory/.pre-commit-config.yaml
+f /home/yilin/LLaMA-Factory/CITATION.cff
+f /home/yilin/LLaMA-Factory/LICENSE
+f /home/yilin/LLaMA-Factory/MANIFEST.in
+f /home/yilin/LLaMA-Factory/Makefile
+f /home/yilin/LLaMA-Factory/README.md
+f /home/yilin/LLaMA-Factory/README_zh.md
+f /home/yilin/LLaMA-Factory/pyproject.toml
+l /home/yilin/.aws
+l /home/yilin/.azure
+l /home/yilin/.docker/contexts
+l /home/yilin/.docker/features.json
+l /home/yilin/LLaMA-Factory/CLAUDE.md
+PIP_CACHE

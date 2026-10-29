@@ -1,0 +1,11 @@
+recorded_at=2026-10-29 16:47:29 +08:00
+zip_sha256=8d5f6265d8063598e5c7116b9ea018f1cf422b3b00e590ed56b3a1767b4c7b8a
+zip_hash_expected_ok=True
+copy_match=True source=D:\NLPP\reproduction-runs\L1-attempt-009-20261029T1629\submission-status.json copy=D:\NLPP\复现证据\命令与原始日志\03_第一层已有预测重算\成功运行-L1-attempt-009\submission-status.json
+copy_match=True source=D:\NLPP\reproduction-runs\L1-attempt-009-20261029T1629\stdout.log copy=D:\NLPP\复现证据\命令与原始日志\03_第一层已有预测重算\成功运行-L1-attempt-009\stdout.log
+copy_match=True source=D:\NLPP\reproduction-runs\L2-attempt-001-20261029T1648\submission-status.json copy=D:\NLPP\复现证据\命令与原始日志\04_第二层模型重新预测\失败运行-L2-attempt-001\submission-status.json
+copy_match=True source=D:\NLPP\reproduction-runs\L2-attempt-001-20261029T1648\model-stderr.log copy=D:\NLPP\复现证据\命令与原始日志\04_第二层模型重新预测\失败运行-L2-attempt-001\model-stderr.log
+copy_match=True source=D:\NLPP\reproduction-runs\L2-attempt-001-20261029T1648\results\model-reproduction\status.json copy=D:\NLPP\复现证据\命令与原始日志\04_第二层模型重新预测\失败运行-L2-attempt-001\results-model-reproduction\status.json
+json_files_checked=32
+json_parse_failures=0
+model_weight_or_dataset_extension_count=0

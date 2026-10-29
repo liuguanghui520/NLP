@@ -1,0 +1,1 @@
+command=powershell -File download_official_bert_seed42_segment3.ps1 -Attempt 001; 8 official Range requests for archive bytes 95263140-127017519

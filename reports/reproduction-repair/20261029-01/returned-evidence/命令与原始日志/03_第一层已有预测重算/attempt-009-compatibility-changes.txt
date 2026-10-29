@@ -1,0 +1,1 @@
+changes=safe_path lexical containment; fixed-commit ghfast raw with fixed-commit direct-raw fallback; SHA256 gate before write; serial Windows fetch

@@ -1,25 +1,29 @@
-# 中文评论情感分析课程提交版
+# 中文评论情感分析：复现修复版
 
-提交日期：2026年10月29日。代码主分支：main。
+日期：2026-10-29。此版替代原课程提交ZIP；旧版Release保留用于追溯。
 
-本Release提供唯一课程提交ZIP：`20245726_刘广徽_中文评论情感分析.zip`。报告摘要与独立项目摘要统一为同一份300字文本；三份贡献声明补充具体步骤、实验核查、协作边界、工时与姓名文字署名。
+依据组员回传日志修复：补齐原机158项依赖、固定LLaMA-Factory commit，增加CUDA/BF16与导入预检，修复Windows路径与WSL文件复制，加入下载重试、本地缓存、损坏文件隔离和完整哈希校验，区分环境失败与完成后指标差异，输出逐种子及逐样本对照。
 
-GitHub会规范化非ASCII附件名称，因此Release镜像使用`20245726_liuguanghui_chinese_sentiment.zip`；其文件内容和SHA256与main中中文命名的ZIP完全一致。下载Release镜像后，将文件名改为`20245726_刘广徽_中文评论情感分析.zip`再提交课程收集表。也可直接从main的`deliverables/`下载已按课程要求命名的文件。
+复现机驱动537.70只支持CUDA12.2，不能运行锁定的PyTorch2.14.1+cu130。须先安装与显卡匹配的CUDA13兼容驱动并重启，按包内README建立独立Python3.11环境；不自动换模型、精度或依赖版本。新机已有预测重算已通过、指标差0；真实模型在该机上完成0/11次，须修复环境后重跑。原机修复验证与组员新机验收分别留证。
 
-包内根目录保持任务书建议结构：`报告.pdf`、`项目摘要.md`、`README.md`、`src/`及三份`贡献声明_学号_姓名.md`。PDF正文12页、附录8页，7张图片已内嵌。工时分别40h、20h、15h，综合贡献40%、30%、30%。
+下载`20245726_liuguanghui_chinese_sentiment.zip`，按课程要求改名为`20245726_刘广徽_中文评论情感分析.zip`。镜像与main下中文文件字节一致，用SHA256SUMS验证。包内仅报告PDF、300字摘要、README、全部工程源码及三份实名贡献声明；数据、权重和录屏均只提供链接。
 
-解压后运行：
+快速环境检查（不加载模型）：
 
 ```text
-python src/run.py
+python src/run.py --preflight --paths src/project/configs/reproduce-models.local.json
 ```
 
-默认从固定提交下载47份实验输入，校验SHA256并重算五方案主表，不加载模型。完整模型环境和外部资源配置见包内README，可使用其`--models`入口重跑11份测试。原始训练／测试结果不更改，非法生成保持严格计错。
+环境和外部路径准备好后，一条命令重跑11个真实测试运行：
 
-数据集、模型权重、录屏不进入提交ZIP，只提供链接：
+```text
+python src/run.py --models --paths src/project/configs/reproduce-models.local.json
+```
 
-- [9份已训练产物](https://github.com/liuguanghui520/NLP/releases/tag/trained-artifacts-20261029-01)：原文件及校验和保持不变。
-- [数据来源](https://modelscope.cn/datasets/AiNiklaus/ChnSentiCorp)；固定划分、预测与日志通过仓库链接下载。
-- [演示视频](https://pan.baidu.com/s/12nyNQJliIKabozmBmfuR-g?pwd=9vxp)，提取码`9vxp`，111.317秒。
+可加`--input-cache /已有成功工作目录`复用47份冻结输入；输出始终使用新目录。默认`python src/run.py`仅重算已有预测。
 
-附带`SHA256SUMS`用于核对ZIP身份；课程收集表只上传ZIP并填写视频链接。当前课程包地址：[course-submission-20261029-01](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-01)。
+9份[原训练产物](https://github.com/liuguanghui520/NLP/releases/tag/trained-artifacts-20261029-01)、基座、数据划分、提示、种子、模型协议与参考指标不变。损坏下载须重取并通过原始SHA256，不修改参考值或锁文件来凑结果。
+
+[完整修复说明](https://github.com/liuguanghui520/NLP/blob/main/docs/reproduction/复现失败定位与修复-20261029.md)。[演示视频](https://pan.baidu.com/s/12nyNQJliIKabozmBmfuR-g?pwd=9vxp)，提取码9vxp。
+
+验证结果：完整仓库65项检查、随包48项检查及Windows解压核查通过；原机11次真实预测各777条，逐种子及主表指标差0、逐样本输出差0。原机验证不替代组员更新驱动后的新机验收。

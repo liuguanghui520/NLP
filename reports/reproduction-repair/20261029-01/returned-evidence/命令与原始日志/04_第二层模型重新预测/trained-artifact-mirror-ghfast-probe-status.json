@@ -1,0 +1,12 @@
+{
+  "asset": "tfidf-char_1_3-seed44.zip",
+  "mirror": "ghfast.top",
+  "command": "curl.exe -fL --retry 3 --retry-all-errors --connect-timeout 20 --max-time 300 -o \"D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\tfidf-char_1_3-seed44.zip.mirror-ghfast-attempt-001.partial\" \"https://ghfast.top/https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/tfidf-char_1_3-seed44.zip\"",
+  "started_at": "2026-10-29 16:03:53 +08:00",
+  "finished_at": "2026-10-29 16:04:02 +08:00",
+  "duration_seconds": 9.123,
+  "curl_exit_code": 0,
+  "actual_sha256": "feed61cb825a45d81a5dc29f5ea286a11e9b7220bf84547ebdc2d83e5fa8d897",
+  "expected_sha256": "feed61cb825a45d81a5dc29f5ea286a11e9b7220bf84547ebdc2d83e5fa8d897",
+  "hash_match": true
+}

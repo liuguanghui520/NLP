@@ -15,6 +15,7 @@ node_modules/
 *.pem
 *.key
 configs/paths.local.json
+configs/*.local.json
 .venv-analysis/
 artifacts/packages/
 artifacts/downloaded/

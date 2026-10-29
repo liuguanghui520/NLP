@@ -1,0 +1,20 @@
+{
+  "exit_code": 0,
+  "command": [
+    "wsl",
+    "-d",
+    "Ubuntu",
+    "-u",
+    "lgh",
+    "--cd",
+    "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/tmp/reproduction-repair-20261029/final-extracted-06/src/project",
+    "--",
+    "/home/lgh/.venvs/llamafactory/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ]
+}

@@ -1,0 +1,2 @@
+command=powershell -File download-release-asset-segmented.ps1 -ArchiveName bert-len512-seed42.zip -SegmentCount 12 -Attempt 002
+previous_attempt=D:\NLPP\复现证据\命令与原始日志\04_第二层模型重新预测\segmented-downloads\bert-len512-seed42.zip.attempt-001.status.json

@@ -1,0 +1,8 @@
+recorded_at=2026-10-29 16:06:31 +08:00
+attempt=/home/yilin/.venvs/nlp-reproduction-20261029
+result=interrupted_after_about_12_minutes
+cause=PyPI endpoints remained SYN_SENT; WSL reported Windows localhost proxy was not mirrored
+partial_cache=/home/yilin/.cache/uv
+stdout_log=D:\NLPP\复现证据\命令与原始日志\02_环境创建与依赖\requirements-install.stdout.log (zero bytes)
+stderr_log=D:\NLPP\复现证据\命令与原始日志\02_环境创建与依赖\requirements-install.stderr.log (zero bytes)
+versioning_unchanged=yes

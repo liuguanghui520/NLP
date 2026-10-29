@@ -1,0 +1,47 @@
+{
+  "execution_date": "2026-10-29",
+  "executor": "Codex agent",
+  "ai_tool": "Codex Desktop (GPT-5-based Codex; server build not exposed)",
+  "overall_status": "partial",
+  "submission_zip": {
+    "name": "20245726_刘广徽_中文评论情感分析.zip",
+    "bytes": 1429669,
+    "sha256": "8d5f6265d8063598e5c7116b9ea018f1cf422b3b00e590ed56b3a1767b4c7b8a"
+  },
+  "layer1_saved_prediction_audit": {
+    "status": "passed",
+    "attempt": 9,
+    "work_dir": "D:\\NLPP\\reproduction-runs\\L1-attempt-009-20261029T1629",
+    "exit_code": 0,
+    "input_hashes_matched": 47,
+    "input_hashes_expected": 47,
+    "split_counts": {
+      "train": 6210,
+      "validation": 776,
+      "test": 777
+    },
+    "formal_run_records": 16,
+    "final_test_runs": 11,
+    "predictions_per_final_test_run": 777,
+    "maximum_metric_difference": 0.0
+  },
+  "layer2_real_model_reproduction": {
+    "status": "failed",
+    "attempt": 1,
+    "work_dir": "D:\\NLPP\\reproduction-runs\\L2-attempt-001-20261029T1648",
+    "exit_code": 1,
+    "completed_runs": 0,
+    "planned_runs": 11,
+    "predicted_test_records": 0,
+    "planned_test_records": 8547,
+    "model_loading": false,
+    "failure_stage": "CUDA/BF16 precondition before model preparation",
+    "error": "The full suite requires CUDA with BF16 support; no precision/model substitution is made"
+  },
+  "prediction_differences": {
+    "status": "not_computable",
+    "new_predictions": 0,
+    "reason": "No real-model predictions were produced"
+  },
+  "required_next_action": "Update the NVIDIA driver to a CUDA 13.0-compatible version, fix LLaMA-Factory dependency completeness, verify all trained artifacts, and rerun all 11 jobs in a fresh directory"
+}

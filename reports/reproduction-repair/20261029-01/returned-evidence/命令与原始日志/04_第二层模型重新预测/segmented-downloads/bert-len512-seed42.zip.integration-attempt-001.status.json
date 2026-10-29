@@ -1,0 +1,101 @@
+{
+  "status": "failed",
+  "archive": "bert-len512-seed42.zip",
+  "attempt": "001",
+  "recorded_at": "2026-10-29 16:14:43 +08:00",
+  "segment_count": 12,
+  "expected_bytes": 381052561,
+  "actual_bytes": 381052561,
+  "expected_sha256": "bbb9001a10d1e7603ae43311dd9827fc1e092b8194268f70c448a0aa3c448268",
+  "actual_sha256": "49d6d6e4b9544971fa3232d78e6e6d9ce442bc6e3edb20bc8b9e957797f345b5",
+  "hash_match": false,
+  "primary_segment_dir": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments",
+  "resume_segment_dir": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.resume-001.segments",
+  "segments": [
+    {
+      "index": 0,
+      "range": "0-31754379",
+      "expected_length": 31754380,
+      "actual_length": 31754380,
+      "source_path": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\000.part"
+    },
+    {
+      "index": 1,
+      "range": "31754380-63508759",
+      "expected_length": 31754380,
+      "actual_length": 31754380,
+      "source_path": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\001.part"
+    },
+    {
+      "index": 2,
+      "range": "63508760-95263139",
+      "expected_length": 31754380,
+      "actual_length": 31754380,
+      "source_path": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\002.part"
+    },
+    {
+      "index": 3,
+      "range": "95263140-127017519",
+      "expected_length": 31754380,
+      "actual_length": 31754380,
+      "source_path": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\003.part"
+    },
+    {
+      "index": 4,
+      "range": "127017520-158771899",
+      "expected_length": 31754380,
+      "actual_length": 31754380,
+      "source_path": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.resume-001.segments\\004.part"
+    },
+    {
+      "index": 5,
+      "range": "158771900-190526279",
+      "expected_length": 31754380,
+      "actual_length": 31754380,
+      "source_path": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\005.part"
+    },
+    {
+      "index": 6,
+      "range": "190526280-222280659",
+      "expected_length": 31754380,
+      "actual_length": 31754380,
+      "source_path": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\006.part"
+    },
+    {
+      "index": 7,
+      "range": "222280660-254035039",
+      "expected_length": 31754380,
+      "actual_length": 31754380,
+      "source_path": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\007.part"
+    },
+    {
+      "index": 8,
+      "range": "254035040-285789419",
+      "expected_length": 31754380,
+      "actual_length": 31754380,
+      "source_path": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\008.part"
+    },
+    {
+      "index": 9,
+      "range": "285789420-317543799",
+      "expected_length": 31754380,
+      "actual_length": 31754380,
+      "source_path": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\009.part"
+    },
+    {
+      "index": 10,
+      "range": "317543800-349298179",
+      "expected_length": 31754380,
+      "actual_length": 31754380,
+      "source_path": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\010.part"
+    },
+    {
+      "index": 11,
+      "range": "349298180-381052560",
+      "expected_length": 31754381,
+      "actual_length": 31754381,
+      "source_path": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.resume-001.segments\\011.part"
+    }
+  ],
+  "combined_path_before_publish": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.integrate-attempt-001.partial"
+}

@@ -1,0 +1,20 @@
+Verifying/downloading trained artifact: bert-len512-seed42.zip
+Verifying/downloading trained artifact: bert-len512-seed43.zip
+Verifying/downloading trained artifact: bert-len512-seed44.zip
+Verifying/downloading trained artifact: tfidf-char_1_3-seed42.zip
+Verifying/downloading trained artifact: tfidf-char_1_3-seed43.zip
+Verifying/downloading trained artifact: tfidf-char_1_3-seed44.zip
+Verifying/downloading trained artifact: qwen-lora-T01-seed42.zip
+Verifying/downloading trained artifact: qwen-lora-T01-seed43.zip
+Verifying/downloading trained artifact: qwen-lora-T01-seed44.zip
+Starting: reproduced-tfidf-seed42
+Starting: reproduced-tfidf-seed43
+Starting: reproduced-tfidf-seed44
+Starting: reproduced-bert-seed42
+Starting: reproduced-bert-seed43
+Starting: reproduced-bert-seed44
+Starting: reproduced-qwen_lora-seed42
+Starting: reproduced-qwen_lora-seed43
+Starting: reproduced-qwen_lora-seed44
+Starting: reproduced-qwen_zero_shot
+Starting: reproduced-qwen_few_shot

@@ -1,0 +1,11 @@
+{
+  "asset": "tfidf-char_1_3-seed42.zip",
+  "command": "curl.exe -fL --retry 3 --retry-all-errors --connect-timeout 20 --max-time 1800 --output \"D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\tfidf-char_1_3-seed42.zip.attempt-001.partial\" \"https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/tfidf-char_1_3-seed42.zip\"",
+  "started_at": "2026-10-29 16:00:50 +08:00",
+  "finished_at": "2026-10-29 16:02:16 +08:00",
+  "duration_seconds": 85.848,
+  "curl_exit_code": 0,
+  "actual_sha256": "a50738066234a3e8c77d4429c34e84cb2aea3667d4bae64f39af6d3b268b1d7b",
+  "expected_sha256": "a50738066234a3e8c77d4429c34e84cb2aea3667d4bae64f39af6d3b268b1d7b",
+  "hash_match": true
+}

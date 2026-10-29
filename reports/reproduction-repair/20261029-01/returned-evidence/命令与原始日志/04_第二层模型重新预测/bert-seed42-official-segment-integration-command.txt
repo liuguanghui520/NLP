@@ -1,0 +1,1 @@
+command=powershell -File integrate_official_bert_seed42_segment3.ps1; reuse eight official subranges, output segment-003.part

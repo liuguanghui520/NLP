@@ -1,0 +1,7 @@
+{
+  "status": "failed_evidence_script",
+  "reason": "Combined output path collided with subrange 003.part",
+  "subrange_count": 8,
+  "retry": "integrate downloaded subranges to segment-003.part without redownload",
+  "recorded_at": "2026-10-29 16:39:38 +08:00"
+}

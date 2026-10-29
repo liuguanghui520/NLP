@@ -1,0 +1,3 @@
+command=curl.exe -fL --retry 2 --connect-timeout 20 --max-time 90 -o <fresh-temp> https://raw.githubusercontent.com/liuguanghui520/NLP/106cdbed8db84057dba6b9c980d3a2f914856dd0/data/processed/v1-20261023/alpaca/test.json
+curl: (35) Recv failure: Connection was reset
+curl_exit_code=35

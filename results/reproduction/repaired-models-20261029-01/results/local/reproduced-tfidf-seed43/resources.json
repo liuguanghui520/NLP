@@ -1,0 +1,7 @@
+{
+  "rss_bytes_at_end": 1008324608,
+  "inference_allocated_peak": null,
+  "inference_reserved_peak": null,
+  "scope": "after model load through test/warmup/latency; RSS at end is not sampled peak",
+  "end_to_end_s": 8.263548444000037
+}

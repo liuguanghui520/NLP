@@ -1,10 +1,23 @@
 {
   "date": "2026-10-29",
-  "status": "completed_reported_by_group_leader",
-  "source": "Direct user confirmation in this conversation",
-  "independently_executed_by_this_editing_turn": false,
-  "new_machine_hardware": null,
-  "exact_commands": null,
-  "result_metrics": null,
-  "statement": "New-machine reproduction completed; no hardware, commands or numbers invented."
+  "status": "partial_saved_prediction_audit_passed_models_blocked",
+  "source": "User-supplied reproduction evidence ZIP; replaces the earlier group-leader completion statement",
+  "evidence": "reports/reproduction-repair/20261029-01/returned-evidence/reproduction-summary.json",
+  "saved_predictions": {
+    "status": "passed",
+    "input_count": 47,
+    "test_runs": 11,
+    "n_per_run": 777,
+    "max_metric_difference": 0.0
+  },
+  "real_models_on_teammate_machine": {
+    "status": "failed",
+    "completed_runs": 0,
+    "expected_runs": 11,
+    "driver": "537.70",
+    "driver_cuda_support": "12.2",
+    "torch_cuda_build": "13.0",
+    "reason": "CUDA initialization failed before model loading"
+  },
+  "repair": "See docs/reproduction/复现失败定位与修复-20261029.md; new-machine driver update and a fresh full-model run are required"
 }

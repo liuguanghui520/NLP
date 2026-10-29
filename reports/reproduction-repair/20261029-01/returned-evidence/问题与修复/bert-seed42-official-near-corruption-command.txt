@@ -1,0 +1,1 @@
+curl.exe -fL --connect-timeout 20 --max-time 300 --range 126990000-127040000 -o <fresh> https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/bert-len512-seed42.zip

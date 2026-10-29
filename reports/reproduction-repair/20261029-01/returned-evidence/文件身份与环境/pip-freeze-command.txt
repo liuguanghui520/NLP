@@ -1,0 +1,1 @@
+/home/yilin/.local/bin/uv pip freeze --python /home/yilin/.venvs/nlp-reproduction-20261029-a02/bin/python

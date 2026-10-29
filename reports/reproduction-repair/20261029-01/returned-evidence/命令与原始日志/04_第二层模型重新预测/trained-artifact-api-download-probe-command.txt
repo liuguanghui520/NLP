@@ -1,0 +1,1 @@
+curl.exe -fL --retry 3 --retry-all-errors --connect-timeout 20 --max-time 900 -H "Accept: application/octet-stream" -o "D:\NLPP\resource-cache\trained-artifacts-20261029\tfidf-char_1_3-seed43.zip.api-attempt-001.partial" "https://api.github.com/repos/liuguanghui520/NLP/releases/assets/686622204"

@@ -1,0 +1,17 @@
+[
+  "wsl",
+  "-d",
+  "Ubuntu",
+  "-u",
+  "lgh",
+  "--",
+  "/home/lgh/.venvs/llamafactory/bin/python",
+  "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/tmp/reproduction-repair-20261029/extracted/src/run.py",
+  "--models",
+  "--paths",
+  "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/tmp/reproduction-repair-20261029/model-paths.json",
+  "--input-cache",
+  "/mnt/c/Users/lgh/Documents/ChatGPT/NLP",
+  "--work-dir",
+  "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/tmp/reproduction-repair-20261029/model-run-001"
+]

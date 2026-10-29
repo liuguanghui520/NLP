@@ -1,0 +1,8 @@
+download_transport=github_contents_api path=artifacts/evaluation-freeze.json
+Failed: Download transport failed (22) for artifacts/evaluation-freeze.json: curl: (22) The requested URL returned error: 403
+
+curl: (22) The requested URL returned error: 403
+
+curl: (22) The requested URL returned error: 403
+
+curl: (22) The requested URL returned error: 403. Evidence retained: D:\NLPP\reproduction-runs\L1-attempt-007-20261029T1621

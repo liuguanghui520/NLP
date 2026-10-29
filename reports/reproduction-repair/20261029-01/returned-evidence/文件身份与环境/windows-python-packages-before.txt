@@ -1,0 +1,12 @@
+python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]
+torch NOT_AVAILABLE ModuleNotFoundError("No module named 'torch'")
+transformers NOT_AVAILABLE ModuleNotFoundError("No module named 'transformers'")
+peft NOT_AVAILABLE ModuleNotFoundError("No module named 'peft'")
+sklearn NOT_AVAILABLE ModuleNotFoundError("No module named 'sklearn'")
+numpy NOT_AVAILABLE ModuleNotFoundError("No module named 'numpy'")
+scipy NOT_AVAILABLE ModuleNotFoundError("No module named 'scipy'")
+jieba NOT_AVAILABLE ModuleNotFoundError("No module named 'jieba'")
+joblib NOT_AVAILABLE ModuleNotFoundError("No module named 'joblib'")
+psutil NOT_AVAILABLE ModuleNotFoundError("No module named 'psutil'")
+matplotlib NOT_AVAILABLE ModuleNotFoundError("No module named 'matplotlib'")
+torch_probe_error ModuleNotFoundError("No module named 'torch'")

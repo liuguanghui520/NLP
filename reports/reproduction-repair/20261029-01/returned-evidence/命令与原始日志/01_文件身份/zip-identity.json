@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-10-29 15:36:27 +08:00",
+  "command": "Get-Item; Get-FileHash -Algorithm SHA256; [System.IO.Compression.ZipFile]::OpenRead; Expand-Archive",
+  "zip_file_name": "20245726_刘广徽_中文评论情感分析.zip",
+  "size_bytes": 1429669,
+  "size_mib": 1.363439,
+  "sha256": "8d5f6265d8063598e5c7116b9ea018f1cf422b3b00e590ed56b3a1767b4c7b8a",
+  "expanded_path": "D:\\NLPP\\复现证据\\独立工作副本\\提交包原始解压",
+  "exit_code": 0
+}

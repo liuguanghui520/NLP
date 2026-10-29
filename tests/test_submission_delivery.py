@@ -18,8 +18,9 @@ class SubmissionDownloadTests(unittest.TestCase):
     def test_hash_mismatch_is_not_written(self):
         with tempfile.TemporaryDirectory() as temporary:
             root=Path(temporary)
-            with patch.object(entry,'urlopen',return_value=io.BytesIO(b'wrong file')):
-                with self.assertRaisesRegex(ValueError,'hash mismatch'):
+            with patch('src.common.downloads.shutil.which',return_value=None), patch(
+                    'src.common.downloads.urlopen',side_effect=lambda *a,**k: io.BytesIO(b'wrong file')):
+                with self.assertRaisesRegex(RuntimeError,'SHA256 mismatch'):
                     entry.fetch(root,'data/file.json','0'*64)
             self.assertFalse((root/'data/file.json').exists())
 
@@ -28,7 +29,7 @@ class SubmissionDownloadTests(unittest.TestCase):
             root=Path(temporary)
             content=b'{"verified": true}\n'
             expected=hashlib.sha256(content).hexdigest()
-            with patch.object(entry,'urlopen',return_value=io.BytesIO(content)) as request:
+            with patch('src.common.downloads.urlopen',return_value=io.BytesIO(content)) as request:
                 self.assertEqual(entry.fetch(root,'data/file.json',expected),'data/file.json')
                 entry.fetch(root,'data/file.json',expected)
                 self.assertEqual(request.call_count,1)
@@ -37,7 +38,7 @@ class SubmissionDownloadTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root=Path(temporary)
             (root/'file.json').write_bytes(b'changed')
-            with patch.object(entry,'urlopen') as request:
+            with patch('src.common.downloads.urlopen') as request:
                 with self.assertRaisesRegex(ValueError,'conflicts'):
                     entry.fetch(root,'file.json','0'*64)
                 request.assert_not_called()

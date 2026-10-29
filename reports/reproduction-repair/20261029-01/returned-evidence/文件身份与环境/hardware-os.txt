@@ -1,0 +1,48 @@
+recorded_at=2026-10-29 15:36:52 +08:00
+command=Get-ComputerInfo; Get-CimInstance Win32_Processor/Win32_ComputerSystem/Win32_PhysicalMemory/Win32_VideoController
+
+WindowsProductName    : Windows 10 Home China
+WindowsVersion        : 2009
+OsBuildNumber         : 26200
+OsArchitecture        : 64 位
+CsName                : LAPTOP-DUSHL3MG
+CsManufacturer        : LENOVO
+CsModel               : 82Y3
+CsTotalPhysicalMemory : 34070388736
+
+
+
+Name                      : 13th Gen Intel(R) Core(TM) i9-13900H
+Manufacturer              : GenuineIntel
+NumberOfCores             : 14
+NumberOfLogicalProcessors : 20
+MaxClockSpeed             : 2600
+
+
+
+Manufacturer        : LENOVO
+Model               : 82Y3
+TotalPhysicalMemory : 34070388736
+
+
+
+Manufacturer PartNumber              Capacity Speed ConfiguredClockSpeed
+------------ ----------              -------- ----- --------------------
+Samsung      M425R2GA3BB0-CWMOD   17179869184  5600                 5200
+Samsung      M425R2GA3BB0-CWMOL   17179869184  5600                 5200
+
+
+
+Name           : NVIDIA GeForce RTX 4060 Laptop GPU
+AdapterRAM     : 4293918720
+DriverVersion  : 31.0.15.3770
+DriverDate     : 2023/10/18 8:00:00
+VideoProcessor : NVIDIA GeForce RTX 4060 Laptop GPU
+
+Name           : Intel(R) Iris(R) Xe Graphics
+AdapterRAM     : 2147479552
+DriverVersion  : 31.0.101.5590
+DriverDate     : 2024/6/10 8:00:00
+VideoProcessor : Intel(R) Iris(R) Xe Graphics Family
+
+

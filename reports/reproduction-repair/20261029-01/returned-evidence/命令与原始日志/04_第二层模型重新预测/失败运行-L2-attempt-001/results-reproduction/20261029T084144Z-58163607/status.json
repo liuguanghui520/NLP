@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "mode": "saved_predictions_audit",
+  "command": [
+    "/mnt/d/NLPP/reproduction-runs/L2-attempt-001-20261029T1648/reproduce.py"
+  ],
+  "environment": {
+    "python": "3.11.17",
+    "executable": "/home/yilin/.venvs/nlp-reproduction-20261029-a02/bin/python",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "site_disabled": true
+  },
+  "training": false,
+  "model_loading": false,
+  "inference": false,
+  "new_machine_model_reproduction": "not_executed",
+  "teacher_acceptance": "not_recorded",
+  "entry_source_sha256": {
+    "reproduce.py": "2e3a5849dbb98fe5c23492531c7679a54e2c11f47a6ef29e68003cb2bfe97b2b",
+    "src/reproduction.py": "76fb9d09e507e093840b9eac004667aff966bc089eb56e5e8f04de1eecacf862",
+    "configs/reproduction.json": "f05a0d08a1774ad30359f7f8f5596d8517c0a35ed6104b26a35a80de225dec78"
+  },
+  "seed_registry": {
+    "data_split": 67,
+    "few_shot_sampling": 67,
+    "latency_sampling": 67,
+    "smoke_sampling": 67,
+    "training": [
+      42,
+      43,
+      44
+    ],
+    "bootstrap": 67,
+    "plot_representative": 42,
+    "prompt_decoding": "deterministic; not independent training repeats"
+  },
+  "audited_runs": 16,
+  "max_metric_difference": 0.0,
+  "elapsed_seconds": 1.249876204999964,
+  "completed_at": "2026-10-29T08:41:45.626933+00:00",
+  "output_sha256": {
+    "config.json": "77ea5113e24151c8c84e940219cd8684f6d75a460a440486e002d403105a87b6",
+    "input-sha256.json": "6744f0ea8b99ab060065f10052d03fb3bfba3513f2eb022b877d9d7b08e3465c",
+    "metrics.json": "d92cd147a670a4b884974ab26af3276c35a1576b253688c56ebe5f1b9a769883",
+    "结果核查.md": "021fe50e2c3be45872074086d06333ac196c23d375053ea1c46665ea543406bb"
+  }
+}

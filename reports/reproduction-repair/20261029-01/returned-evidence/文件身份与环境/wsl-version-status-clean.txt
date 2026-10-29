@@ -1,0 +1,32 @@
+command=wsl.exe --version; wsl.exe --status; wsl.exe --list --verbose
+WSL Hr,g: 2.6.3.0
+
+�Q8hHr,g: 6.6.87.2-1
+
+WSLg Hr,g: 1.0.71
+
+MSRDC Hr,g: 1.2.6353
+
+Direct3D Hr,g: 1.611.1-81528511
+
+DXCore Hr,g: 10.0.26100.1-240331-1435.ge-release
+
+Windows: 10.0.26200.9711
+
+
+wsl_version_exit_code=0
+؞��R�S: Ubuntu
+
+؞��Hr,g: 2
+
+
+wsl_status_exit_code=0
+  NAME              STATE           VERSION
+
+* Ubuntu            Stopped         2
+
+  docker-desktop    Stopped         2
+
+
+wsl_list_exit_code=0
+

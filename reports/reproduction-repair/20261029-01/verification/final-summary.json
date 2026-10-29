@@ -1,0 +1,28 @@
+{
+  "status": "passed_original_machine_repair_verification",
+  "date": "2026-10-29",
+  "training": false,
+  "core_inference_sha256": {
+    "src/adapters/inference.py": "f238311d368c9d3a6431aa0861cf1deebd7e46da07759311a86e01e83150e842",
+    "src/model_reproduction.py": "e456b1c4d3c7fc50388f8d1884aa31c623e43abb4bd354389037bc913c9c3192",
+    "src/model_preflight.py": "1d675bd3d61ef534e8e08a4cd632ce299595a20bf2187b296e67d9c47451d9e7"
+  },
+  "test_runs": 11,
+  "n_per_run": 777,
+  "total_test_predictions": 8547,
+  "maximum_metric_difference": 0.0,
+  "prediction_difference_count": 0,
+  "repository_software_checks": 65,
+  "packaged_software_checks": 48,
+  "final_zip_windows_stdlib_audit": "passed",
+  "official_download_9390475_bytes": "passed",
+  "frozen_47_inputs_unchanged": true,
+  "original_machine_gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "verification_driver": "621.01",
+  "original_historical_environment_E01_driver": "616.92",
+  "torch_build": "2.14.1+cu130",
+  "bf16_execution": "passed",
+  "teammate_machine_status": "Still needs driver update and rerun; not validated remotely",
+  "retained_outputs": "results\\reproduction\\repaired-models-20261029-01",
+  "no_weights_or_dataset_in_retained_outputs": true
+}

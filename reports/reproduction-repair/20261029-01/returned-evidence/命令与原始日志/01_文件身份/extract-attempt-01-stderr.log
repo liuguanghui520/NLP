@@ -1,0 +1,6 @@
+Expand-Archive: 
+Line |
+   8 |  … teralPath $zipPath -DestinationPath $target -CompressionLevel Optimal
+     |                                                ~~~~~~~~~~~~~~~~~
+     | A parameter cannot be found that matches parameter name 'CompressionLevel'.
+

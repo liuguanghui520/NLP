@@ -1,0 +1,1 @@
+command=source /home/yilin/.venvs/nlp-reproduction-20261029-a02/bin/activate; cd <independent-copy>; python src/run.py --models --paths src/project/configs/reproduce-models.local.json --work-dir "/mnt/d/NLPP/reproduction-runs/L2-attempt-001-20261029T1648"

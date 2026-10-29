@@ -1,0 +1,1 @@
+command=two sequential curl range downloads for failed segments 4 and 11; mirror=https://ghfast.top; retry=10; range preserved; previous attempt=segmented attempt-002

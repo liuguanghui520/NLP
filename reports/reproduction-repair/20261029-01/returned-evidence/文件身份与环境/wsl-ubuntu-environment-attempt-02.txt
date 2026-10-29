@@ -1,0 +1,31 @@
+WSL_USER=yilin
+WSL_KERNEL=6.6.87.2-microsoft-standard-WSL2
+WSL_ARCH=x86_64
+PRETTY_NAME="Ubuntu 22.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.1 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+PYTHON=Python 3.10.12
+PIP=/usr/bin/python3: No module named pip
+NVCC=bash: line 7: nvcc: command not found
+NVIDIA_SMI=NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 537.70, 8.9
+MEM_INFO
+MemTotal:       16235676 kB
+MemAvailable:   15699760 kB
+CPU_INFO
+Architecture:                         x86_64
+CPU(s):                               20
+On-line CPU(s) list:                  0-19
+Model name:                           13th Gen Intel(R) Core(TM) i9-13900H
+Thread(s) per core:                   2
+Core(s) per socket:                   10
+Socket(s):                            1
+NUMA node0 CPU(s):                    0-19

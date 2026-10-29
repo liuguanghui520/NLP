@@ -1,0 +1,19 @@
+warning: in the working copy of 'D:\NLPP\复现证据\问题与修复\submission_reproduce.before.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'D:\NLPP\复现证据\独立工作副本\提交包复现副本\src\project\submission_reproduce.py', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/D:\\NLPP\\\345\244\215\347\216\260\350\257\201\346\215\256\\\351\227\256\351\242\230\344\270\216\344\277\256\345\244\215\\submission_reproduce.before.py" "b/D:\\NLPP\\\345\244\215\347\216\260\350\257\201\346\215\256\\\347\213\254\347\253\213\345\267\245\344\275\234\345\211\257\346\234\254\\\346\217\220\344\272\244\345\214\205\345\244\215\347\216\260\345\211\257\346\234\254\\src\\project\\submission_reproduce.py"
+index 307a24c..fd50021 100644
+--- "a/D:\\NLPP\\\345\244\215\347\216\260\350\257\201\346\215\256\\\351\227\256\351\242\230\344\270\216\344\277\256\345\244\215\\submission_reproduce.before.py"
++++ "b/D:\\NLPP\\\345\244\215\347\216\260\350\257\201\346\215\256\\\347\213\254\347\253\213\345\267\245\344\275\234\345\211\257\346\234\254\\\346\217\220\344\272\244\345\214\205\345\244\215\347\216\260\345\211\257\346\234\254\\src\\project\\submission_reproduce.py"
+@@ -26,10 +26,9 @@ BASE_URL = f"https://raw.githubusercontent.com/liuguanghui520/NLP/{REVISION}/"
+ 
+ def safe_path(root, relative):
+     name = Path(relative)
+-    path = (root / name).resolve()
+-    if name.is_absolute() or not path.is_relative_to(root.resolve()):
++    if name.is_absolute() or name.drive or name.anchor or ".." in name.parts:
+         raise ValueError(f"Path outside working directory: {relative}")
+-    return path
++    return root.resolve().joinpath(*name.parts)
+ 
+ 
+ def fetch(root, relative, expected):

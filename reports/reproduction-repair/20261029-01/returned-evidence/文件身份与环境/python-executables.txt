@@ -1,0 +1,16 @@
+recorded_at=2026-10-29 15:36:53 +08:00
+command=where python; py -0p; python --version; python -m pip --version
+--- where python ---
+D:\Python\python.exe
+C:\Users\LJYL0\AppData\Local\Microsoft\WindowsApps\python.exe
+where_exit_code=0
+--- py -0p ---
+ -V:3.11 *        D:\Python\python.exe
+py_launcher_exit_code=0
+--- python --version ---
+Python 3.11.4
+python_exit_code=0
+--- pip --version ---
+pip 26.2.1 from D:\Python\Lib\site-packages\pip (python 3.11)
+
+pip_exit_code=0

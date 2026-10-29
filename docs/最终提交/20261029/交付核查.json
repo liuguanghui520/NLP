@@ -1,28 +1,9 @@
 {
-  "date": "2026-10-29",
   "status": "passed",
-  "abstract_characters": 300,
-  "report_abstract_characters": 300,
-  "abstracts_identical": true,
-  "statements": {
-    "贡献声明_20245726_刘广徽.md": {
-      "characters": 2239,
-      "sha256": "22dce19dfbf855c686e9991aa9f19e232591933337c613e4f0e5fe23b292d88e",
-      "signature_type": "typed_name_requested_by_group_leader"
-    },
-    "贡献声明_20246005_杨函齐.md": {
-      "characters": 2084,
-      "sha256": "084592c9867cce285a89ea9f90f30d426c8777dd8b7b269f2835404f60b18f01",
-      "signature_type": "typed_name_requested_by_group_leader"
-    },
-    "贡献声明_20245816_李嘉谊林.md": {
-      "characters": 2029,
-      "sha256": "ffeb6894f65afcb58b2e18eb6537274d7fe2e590c7073703d1c800c919c28ba4",
-      "signature_type": "typed_name_requested_by_group_leader"
-    }
-  },
-  "archive_sha256": "8d5f6265d8063598e5c7116b9ea018f1cf422b3b00e590ed56b3a1767b4c7b8a",
-  "archive_bytes": 1429669,
+  "date": "2026-10-29",
+  "edition": "reproduction-fix-20261029-01",
+  "archive_sha256": "f69acc2793a36fd8e1328110ad7efb9b404de93a20c7e494e0e6c3182d236922",
+  "archive_bytes": 1438231,
   "archive_root": [
     "README.md",
     "src",
@@ -32,22 +13,27 @@
     "贡献声明_20246005_杨函齐.md",
     "项目摘要.md"
   ],
-  "matching_runtime_files_to_verified_package": 76,
-  "core_runtime_changed": false,
+  "crc_check": "passed",
   "frozen_47_inputs_unchanged": true,
-  "previous_software_checks": 56,
-  "previous_extracted_entry_execution": "passed",
-  "previous_main_metric_difference": 0,
+  "software_checks_passed": 65,
+  "windows_extracted_entry_stdlib_audit": "passed",
+  "network_9390475_byte_frozen_input": "passed",
   "pdf_body_pages": 12,
   "pdf_appendix_pages": 8,
   "pdf_rendered_pages_reviewed": 20,
-  "pdf_sha256": "bcc2e57ce5e3469038f59dac7dfb3c1cf912b85cf6a9d143b384df6f64a929b2",
-  "signature_representation": "typed names at explicit request; no handwriting simulated",
+  "pdf_sha256": "4f826239902607e77378d6e2502ae13e38fb986292ffde4402f322af7f1b7a1a",
+  "abstracts_identical": true,
+  "abstract_characters": 300,
+  "real_models_on_teammate_machine": "blocked_pending_driver_update",
+  "real_models_on_original_machine": "passed_11_runs_777_each",
+  "release_status": "repair_prepared_not_yet_published",
+  "release_url": "https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-02",
   "training": false,
-  "inference": false,
-  "release_status": "published_anonymous_download_verified",
-  "release_url": "https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-01",
-  "release_zip_name": "20245726_liuguanghui_chinese_sentiment.zip",
-  "release_zip_sha256_matches_main": true,
-  "original_trained_assets_unchanged": true
+  "inference_verification": true,
+  "packaged_software_checks_passed": 48,
+  "final_extracted_archive": "artifacts/packages/final-20261029-06",
+  "pdf_extracted_abstract_matches_standalone": true,
+  "original_machine_max_metric_difference": 0.0,
+  "original_machine_prediction_difference_count": 0,
+  "original_machine_evidence": "results\\reproduction\\repaired-models-20261029-01"
 }

@@ -1,0 +1,14 @@
+编号,阶段,尝试/运行目录,退出码,原始错误摘要,状态有无保留,关联证据
+L1-001,第一层冻结输入下载,D:\NLPP\reproduction-runs\L1-attempt-001-20261029T1542,1,urlopen WinError 10054,是,命令与原始日志/03_第一层已有预测重算/attempt-001-*
+L1-002,第一层路径校验,D:\NLPP\reproduction-runs\L1-attempt-002-20261029T1544,1,Path outside working directory,是,命令与原始日志/03_第一层已有预测重算/attempt-002-*
+L1-003,第一层冻结输入下载,D:\NLPP\reproduction-runs\L1-attempt-003-20261029T1550,1,urlopen WinError 10054,是,命令与原始日志/03_第一层已有预测重算/attempt-003-*
+L1-004,第一层冻结输入下载,D:\NLPP\reproduction-runs\L1-attempt-004-20261029T1553,1,urlopen WinError 10054,是,命令与原始日志/03_第一层已有预测重算/attempt-004-*
+L1-005,第一层冻结输入下载,D:\NLPP\reproduction-runs\L1-attempt-005-20261029T1600,1,IncompleteRead 642468/651110,是,命令与原始日志/03_第一层已有预测重算/attempt-005-*
+L1-006,第一层冻结输入下载,D:\NLPP\reproduction-runs\L1-attempt-006-20261029T1617,1,GitHub Contents API 403 secondary limit,是,命令与原始日志/03_第一层已有预测重算/attempt-006-*
+L1-007,第一层冻结输入下载,D:\NLPP\reproduction-runs\L1-attempt-007-20261029T1621,1,GitHub Contents API 403 secondary limit,是,命令与原始日志/03_第一层已有预测重算/attempt-007-*
+L1-008,第一层冻结输入下载,D:\NLPP\reproduction-runs\L1-attempt-008-20261029T1623,1,ghfast 504 后直连超时,是,命令与原始日志/03_第一层已有预测重算/attempt-008-*
+L1-009,第一层成功,D:\NLPP\reproduction-runs\L1-attempt-009-20261029T1629,0,无,是,命令与原始日志/03_第一层已有预测重算/成功运行-L1-attempt-009
+ENV-001,依赖安装,/home/yilin/.venvs/nlp-reproduction-20261029,1,官方 PyPI 连接持续 SYN_SENT 后人工中断,是,命令与原始日志/02_环境创建与依赖/requirements-install*
+ENV-002,依赖安装,/home/yilin/.venvs/nlp-reproduction-20261029-a02,0,无,是,命令与原始日志/02_环境创建与依赖/requirements-install-attempt-002*
+L2-001,第二层真实模型,D:\NLPP\reproduction-runs\L2-attempt-001-20261029T1648,1,NVIDIA driver too old found version 12020; completed empty,是,命令与原始日志/04_第二层模型重新预测/失败运行-L2-attempt-001
+ART-BERT42-001,训练产物资源下载,D:\NLPP\resource-cache\trained-artifacts-20261029,1,分段拼接完整 SHA256 不匹配且 ZIP 解压失败,是,问题与修复/bert-seed42-*

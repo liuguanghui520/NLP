@@ -1,0 +1,1 @@
+powershell -NoProfile -File "D:\NLPP\复现证据\问题与修复\download-release-asset-segmented.ps1" -ArchiveName bert-len512-seed42.zip -SegmentCount 12 -Attempt 001

@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Python\Lib\zipfile.py", line 2566, in <module>
+    main()
+  File "D:\Python\Lib\zipfile.py", line 2520, in main
+    badfile = zf.testzip()
+              ^^^^^^^^^^^^
+  File "D:\Python\Lib\zipfile.py", line 1467, in testzip
+    while f.read(chunk_size):     # Check CRC-32
+          ^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\zipfile.py", line 955, in read
+    data = self._read1(n)
+           ^^^^^^^^^^^^^^
+  File "D:\Python\Lib\zipfile.py", line 1031, in _read1
+    data = self._decompressor.decompress(data, n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+zlib.error: Error -3 while decompressing data: invalid code lengths set
+exit_code=1

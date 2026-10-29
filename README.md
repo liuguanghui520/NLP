@@ -46,13 +46,24 @@ python -m venv .venv-analysis
 
 Linux将解释器路径改为.venv-analysis/bin/python。完整模式还需Git及中文字体Microsoft YaHei、Noto Sans CJK SC或SimHei。版本不匹配会明确报错；默认轻量核查不要求这些依赖。
 
-完整模式生成新ID的22组PNG/PDF、参数、统计和错误材料，同时运行软件检查；仍然不训练或推理。日志和新分析位置写入本次status.json。requirements.analysis.lock对应离线分析；requirements.integration.lock是WSL历史模型环境快照，不能混用。
+完整模式生成新ID的22组PNG/PDF、参数、统计和错误材料，同时运行软件检查；仍然不训练或推理。日志和新分析位置写入本次status.json。requirements.analysis.lock对应离线分析；requirements.integration.lock现已补为原机158个包的完整冻结清单，适用于Python3.11的WSL/Linux模型环境，不能与Windows绘图环境混用。
 
 ## 真实模型复现：资源齐备后另验收
 
-真实预测需要Qwen基座、三个BERT最佳模型、三个TF-IDF Pipeline及三个普通LoRA适配器。9个训练产物现已发布至[GitHub Release](https://github.com/liuguanghui520/NLP/releases/tag/trained-artifacts-20261029-01)，压缩包共约1.19GB，GitHub服务端SHA256与本地一致，匿名下载可达。Qwen基座另从官方来源获取。新机复现已由组长于2026年10月29日确认完成；再次执行可使用提交包内的11运行串行入口。
+真实预测需要Qwen基座、三个BERT最佳模型、三个TF-IDF Pipeline及三个普通LoRA适配器。9个训练产物现已发布至[GitHub Release](https://github.com/liuguanghui520/NLP/releases/tag/trained-artifacts-20261029-01)，压缩包共约1.19GB，GitHub服务端SHA256与本地一致，匿名下载可达。Qwen基座另从官方来源获取。2026年10月29日回传表明已有预测重算通过，指标差0；真实模型模式因复现机537.70驱动不支持cu130而中止，完成0/11次。修复说明见[复现失败定位与修复](docs/reproduction/复现失败定位与修复-20261029.md)。
 
 代码、配置和小型证据随仓库下载；训练产物按[下载说明](docs/reproduction/训练产物下载说明-20261029.md)获取，[机器可读清单](artifacts/reproduction-downloads.json)列出9个ZIP的URL、大小和SHA256。模型包含相对目录及配置，不包含Qwen基座和Python环境。资源身份见[模型资源说明](artifacts/README.md)、artifacts/lora-lock.json及基线记录；历史说明以本README和最新复现说明为准。
+
+修复版已在原机完成11次真实预测，各777条，逐种子及主表指标差0；完整仓库65项、随包48项检查通过。新机仍须更新驱动后重跑。验证证据见[修复说明](docs/reproduction/复现失败定位与修复-20261029.md)。
+
+原模型环境完整冻结为158个包，另固定LLaMA-Factory commit。首次搭建按[提交包README的模型环境步骤](docs/最终提交/20261029/README.md)安装。CUDA13构建需要兼容驱动；完整入口先预检再下载。仓库根目录也可执行：
+
+```text
+python submission_reproduce.py --preflight --paths configs/reproduce-models.local.json
+python submission_reproduce.py --models --paths configs/reproduce-models.local.json --input-cache .
+```
+
+路径JSON由`configs/reproduce-models.example.json`复制并填写各人的地址。两个命令分别建立新目录；前一条只检查环境，后一条完整执行11次预测。输入缓存只读并逐文件校验，避免重复下载。
 
 高级入口 src/cli.py 支持check、import、predict、evaluate、benchmark、summarize等；这些历史命令依赖外部工具资源，不能替代上面的无模型一键核查。真实预测在资源齐备的独立副本进行，复制 configs/paths.example.json，填写自己的路径，按实际环境和资源清单验收。重新训练不属于默认复现操作。
 
@@ -94,7 +105,7 @@ GitHub自动核查配置位于.github/workflows/reproduction.yml，只运行无�
 
 ## 正式提交材料
 
-最新版ZIP见[课程提交版Release](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-01)；报告摘要和三份实名贡献声明已同步扩写，独立项目摘要300字。训练产物仍使用原固定Release链接。
+最新版ZIP见[课程提交版Release](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-02)；报告摘要和三份实名贡献声明已同步扩写，独立项目摘要300字。训练产物仍使用原固定Release链接。
 
 报告、PDF与独立摘要使用同一份300字文本。GitHub Release镜像文件名为`20245726_liuguanghui_chinese_sentiment.zip`；内容及SHA256与下方中文命名的课程ZIP相同。下载镜像后按Release说明改为课程要求的中文名称提交。
 
@@ -102,7 +113,7 @@ GitHub自动核查配置位于.github/workflows/reproduction.yml，只运行无�
 - [报告PDF](output/pdf/报告-20261029.pdf)：正文12页，附录8页；图片随PDF内嵌。
 - [课程提交ZIP](deliverables/20245726_刘广徽_中文评论情感分析.zip)：根目录仅报告、摘要、README、src及三份个人声明。权重、录屏、数据集不入包。
 - 解压提交ZIP后执行`python src/run.py`重算主表；配置模型环境与资源后执行`python src/run.py --models --paths src/project/configs/reproduce-models.local.json`重新预测11个测试运行。
-- 新机复现已完成，状态由组长确认；当前编辑轮次没有重复运行模型。默认指标核查与真实预测分开记录。
+- 新机回传：已有预测核查通过，模型预测因旧驱动失败；修复版本增加预检、完整依赖、缓存及下载校验。原机复验与组员新机验收分别留证。
 
 交互演示使用Cherry Studio连接本地服务，说明见[演示材料](docs/demo/README.md)。[演示录屏](https://pan.baidu.com/s/12nyNQJliIKabozmBmfuR-g?pwd=9vxp)，提取码`9vxp`，111.317秒。
 

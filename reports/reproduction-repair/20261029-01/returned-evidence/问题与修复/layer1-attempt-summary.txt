@@ -1,0 +1,8 @@
+
+Attempt                      Files      Bytes Status
+-------                      -----      ----- ------
+L1-attempt-001-20261029T1542    78  528322.00 failed
+L1-attempt-002-20261029T1544    81 4129433.00 failed
+L1-attempt-003-20261029T1550    86 1639627.00 failed
+L1-attempt-004-20261029T1553    81 3939635.00 failed
+

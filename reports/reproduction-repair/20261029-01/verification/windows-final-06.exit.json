@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "command": [
+    "C:\\Users\\lgh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-S",
+    "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\tmp\\reproduction-repair-20261029\\final-extracted-06\\src\\run.py",
+    "--input-cache",
+    "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP",
+    "--work-dir",
+    "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\tmp\\reproduction-repair-20261029\\windows-final-audit-06"
+  ]
+}

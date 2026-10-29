@@ -1,0 +1,7 @@
+command=Invoke-RestMethod https://api.github.com/rate_limit
+
+CoreLimit      : 60
+CoreRemaining  : 57
+CoreResetUnix  : 1793262176
+CoreResetLocal : 2026-10-29 16:22:56 +08:00
+

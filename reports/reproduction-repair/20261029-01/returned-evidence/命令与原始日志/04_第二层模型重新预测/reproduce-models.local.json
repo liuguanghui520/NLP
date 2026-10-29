@@ -1,0 +1,5 @@
+{
+  "qwen_model": "/mnt/d/NLP/models/Qwen3-1.7B",
+  "factory_root": "/home/yilin/LLaMA-Factory",
+  "trained_artifacts_root": "/mnt/d/NLPP/resource-cache/trained-artifacts-20261029"
+}

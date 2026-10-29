@@ -1,0 +1,235 @@
+artifacts/evaluation-freeze.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\artifacts\\evaluation-freeze.json'
+  is_relative_to = True
+  exists = True
+configs/analysis/comparison-formal-v1.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\configs\\analysis\\comparison-formal-v1.json'
+  is_relative_to = True
+  exists = True
+configs/data_processing.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\configs\\data_processing.json'
+  is_relative_to = True
+  exists = True
+configs/evaluation/protocol.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\configs\\evaluation\\protocol.json'
+  is_relative_to = True
+  exists = True
+configs/methods/few_shot_examples.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\configs\\methods\\few_shot_examples.json'
+  is_relative_to = True
+  exists = True
+configs/methods/lora-frozen.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\configs\\methods\\lora-frozen.json'
+  is_relative_to = True
+  exists = True
+configs/methods/prompt_registry.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\configs\\methods\\prompt_registry.json'
+  is_relative_to = True
+  exists = True
+configs/reproduction-analysis-environment.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\configs\\reproduction-analysis-environment.json'
+  is_relative_to = True
+  exists = True
+data/manifests/manifest.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\manifests\\manifest.json'
+  is_relative_to = True
+  exists = True
+data/processed/v1-20261023/alpaca/dataset_info.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\alpaca\\dataset_info.json'
+  is_relative_to = True
+  exists = True
+data/processed/v1-20261023/alpaca/test.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\alpaca\\test.json'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/alpaca/test_index.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\alpaca\\test_index.jsonl'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/alpaca/train.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\alpaca\\train.json'
+  is_relative_to = True
+  exists = True
+data/processed/v1-20261023/alpaca/train_index.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\alpaca\\train_index.jsonl'
+  is_relative_to = True
+  exists = True
+data/processed/v1-20261023/alpaca/validation.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\alpaca\\validation.json'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/alpaca/validation_index.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\alpaca\\validation_index.jsonl'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/conflicts.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\conflicts.jsonl'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/excluded.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\excluded.jsonl'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/fewshot_ids.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\fewshot_ids.json'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/invalid_records.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\invalid_records.jsonl'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/latency_ids.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\latency_ids.json'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/manual_decisions.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\manual_decisions.jsonl'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/smoke_ids.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\smoke_ids.json'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/split_ids.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\split_ids.json'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/statistics.json
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\statistics.json'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/test.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\test.jsonl'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/train.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\train.jsonl'
+  is_relative_to = True
+  exists = False
+data/processed/v1-20261023/validation.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\data\\processed\\v1-20261023\\validation.jsonl'
+  is_relative_to = True
+  exists = False
+requirements.analysis.lock
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\requirements.analysis.lock'
+  is_relative_to = True
+  exists = False
+results/predictions/C_qwen_few_shot_fixed_prompt_v1_noseed_20261024T154625Z.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\C_qwen_few_shot_fixed_prompt_v1_noseed_20261024T154625Z.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/C_qwen_zero_shot_fixed_prompt_v1_noseed_20261024T154625Z.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\C_qwen_zero_shot_fixed_prompt_v1_noseed_20261024T154625Z.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/bert-len512-seed42.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\bert-len512-seed42.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/bert-len512-seed43.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\bert-len512-seed43.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/bert-len512-seed44.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\bert-len512-seed44.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/qwen_lora-T01-seed42-validation.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\qwen_lora-T01-seed42-validation.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/qwen_lora-T01-seed43-validation.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\qwen_lora-T01-seed43-validation.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/qwen_lora-T01-seed44-validation.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\qwen_lora-T01-seed44-validation.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/test-lora-seed42.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\test-lora-seed42.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/test-lora-seed43.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\test-lora-seed43.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/test-lora-seed44.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\test-lora-seed44.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/test-qwen_few_shot.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\test-qwen_few_shot.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/test-qwen_zero_shot.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\test-qwen_zero_shot.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/tfidf-char_1_3-seed42.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\tfidf-char_1_3-seed42.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/tfidf-char_1_3-seed43.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\tfidf-char_1_3-seed43.jsonl'
+  is_relative_to = True
+  exists = False
+results/predictions/tfidf-char_1_3-seed44.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\predictions\\tfidf-char_1_3-seed44.jsonl'
+  is_relative_to = True
+  exists = False
+results/run_index.jsonl
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\results\\run_index.jsonl'
+  is_relative_to = True
+  exists = False
+src/evaluation/metrics.py
+  root = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544'
+  path = 'D:\\NLPP\\reproduction-runs\\L1-attempt-002-20261029T1544\\src\\evaluation\\metrics.py'
+  is_relative_to = True
+  exists = True

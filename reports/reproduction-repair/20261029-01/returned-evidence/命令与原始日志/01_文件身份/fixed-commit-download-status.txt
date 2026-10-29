@@ -1,0 +1,2 @@
+started_at=2026-10-29 15:44:24 +08:00
+interruption_status=interrupted_by_operator_after_more_than_3_minutes_with_zero_byte_tmp_pack

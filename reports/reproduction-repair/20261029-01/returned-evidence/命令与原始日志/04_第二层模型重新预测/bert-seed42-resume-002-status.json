@@ -1,0 +1,11 @@
+{
+  "segment": 3,
+  "range": "95263140-127017519",
+  "exit_code": 0,
+  "duration_seconds": 21.394,
+  "new_length": 31754380,
+  "old_length": 31754380,
+  "new_sha256": "535bf42d9fb204a37f5ee05f0620063832d30a3c18016686c2a8c27b775cb16e",
+  "old_sha256": "535bf42d9fb204a37f5ee05f0620063832d30a3c18016686c2a8c27b775cb16e",
+  "same_as_old": true
+}

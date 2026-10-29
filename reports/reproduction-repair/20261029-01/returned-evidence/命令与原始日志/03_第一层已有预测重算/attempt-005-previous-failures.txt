@@ -1,0 +1,1 @@
+linked_previous_attempts=001 network; 002 path; 003 network; 004 network; fixed-commit git fetch interrupted after hang

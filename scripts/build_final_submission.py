@@ -16,6 +16,10 @@ EXCLUDED_SCRIPTS={
     'audit_data_usage.py','audit_swanlab_records.py','collect_benchmark_environment.ps1',
 }
 FORBIDDEN={'.mp4','.mkv','.safetensors','.pt','.pth','.bin','.joblib','.pkl','.pyc','.pem','.key'}
+REPOSITORY_ONLY_TESTS={
+    'test_case_analysis.py','test_formal_annotations.py','test_resource_figure.py',
+    'test_release_upload.py',
+}
 
 
 def build(output):
@@ -33,7 +37,8 @@ def build(output):
     for directory in ('src','tests','configs'):
         for source in sorted((ROOT/directory).rglob('*')):
             if not source.is_file() or '__pycache__' in source.parts or source.suffix=='.pyc':continue
-            if directory=='configs' and (source.name=='paths.local.json' or 'demo' in source.relative_to(ROOT/'configs').parts):
+            if directory=='tests' and source.name in REPOSITORY_ONLY_TESTS:continue
+            if directory=='configs' and ('.local.' in source.name or 'demo' in source.relative_to(ROOT/'configs').parts):
                 continue
             target=project/source.relative_to(ROOT)
             target.parent.mkdir(parents=True,exist_ok=True)
@@ -58,10 +63,10 @@ if __name__=='__main__':
 ''',encoding='utf-8')
     (stage/'src/一键复现.cmd').write_text('@echo off\r\npython "%~dp0run.py" %*\r\nexit /b %errorlevel%\r\n',encoding='utf-8')
     manifest={
-        'date':'2026-10-29','status':'submission_edition','entry':'python src/run.py',
+        'date':'2026-10-29','status':'submission_edition','edition':'reproduction-fix-20261029-01','entry':'python src/run.py',
         'model_entry':'python src/run.py --models --paths src/project/configs/reproduce-models.local.json',
         'data_and_weights_and_video_in_zip':False,'files':{},
-        'new_machine_reproduction_status':'completed_reported_by_group_leader',
+        'new_machine_reproduction_status':'saved_prediction_audit_passed_real_models_blocked_on_returned_machine',
         'signature_representation':'typed member names entered at the group leader request; no simulated handwriting'}
     for path in sorted(stage.rglob('*')):
         if path.is_file():manifest['files'][path.relative_to(stage).as_posix()]=hashlib.sha256(path.read_bytes()).hexdigest()

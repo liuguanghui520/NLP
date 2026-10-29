@@ -1,0 +1,1 @@
+command=powershell -File integrate-release-asset-segments.ps1 -ArchiveName bert-len512-seed42.zip -PrimarySegmentDir <attempt-002> -ResumeSegmentDir <resume-001> -SegmentCount 12 -Attempt 001

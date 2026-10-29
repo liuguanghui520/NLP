@@ -1,0 +1,142 @@
+{
+  "status": "passed",
+  "source_revision": "106cdbed8db84057dba6b9c980d3a2f914856dd0",
+  "working_directory": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/tmp/reproduction-repair-20261029/model-run-002",
+  "model_loading": true,
+  "inference": true,
+  "training": false,
+  "teacher_acceptance": "not_recorded",
+  "preflight": {
+    "status": "passed",
+    "python": "3.11.17 (main, Oct 14 2026, 01:05:33) [Clang 23.1.3 ]",
+    "executable": "/home/lgh/.venvs/llamafactory/bin/python",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "errors": [],
+    "packages": {
+      "torch": "2.14.1",
+      "transformers": "5.8.0",
+      "peft": "0.18.1",
+      "scikit-learn": "1.9.1",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "jieba": "0.42.1",
+      "joblib": "1.6.0",
+      "psutil": "7.2.2",
+      "accelerate": "1.11.0",
+      "datasets": "4.0.0",
+      "trl": "0.24.0",
+      "torchdata": "0.11.0",
+      "sentencepiece": "0.2.2",
+      "modelscope": "1.40.2",
+      "tokenizers": "0.22.2",
+      "safetensors": "0.8.0",
+      "huggingface_hub": "1.33.0",
+      "gradio": "5.50.0"
+    },
+    "model_loading": false,
+    "inference": false,
+    "training": false,
+    "nvidia_smi": {
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 4070 Laptop GPU, 621.01, 8188 MiB",
+      "stderr": ""
+    },
+    "torch_build": "2.14.1+cu130",
+    "torch_cuda": "13.0",
+    "cuda_available": true,
+    "bf16_matmul": [
+      [
+        2.0,
+        2.0
+      ],
+      [
+        2.0,
+        2.0
+      ]
+    ],
+    "factory_commit": "c683e59edd8f893abc5e1403184a1d0644817d2a",
+    "factory_import": {
+      "returncode": 0,
+      "stdout": "ChatModel import passed\n",
+      "stderr": "/home/lgh/.venvs/llamafactory/lib/python3.11/site-packages/torch/cuda/__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.\n  import pynvml  # type: ignore[import]\n"
+    },
+    "pip_check": {
+      "returncode": 0,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    }
+  },
+  "downloaded_or_verified": [
+    "artifacts/evaluation-freeze.json",
+    "configs/analysis/comparison-formal-v1.json",
+    "configs/data_processing.json",
+    "configs/evaluation/protocol.json",
+    "configs/methods/few_shot_examples.json",
+    "configs/methods/lora-frozen.json",
+    "configs/methods/prompt_registry.json",
+    "configs/reproduction-analysis-environment.json",
+    "data/manifests/manifest.json",
+    "data/processed/v1-20261023/alpaca/dataset_info.json",
+    "data/processed/v1-20261023/alpaca/test.json",
+    "data/processed/v1-20261023/alpaca/test_index.jsonl",
+    "data/processed/v1-20261023/alpaca/train.json",
+    "data/processed/v1-20261023/alpaca/train_index.jsonl",
+    "data/processed/v1-20261023/alpaca/validation.json",
+    "data/processed/v1-20261023/alpaca/validation_index.jsonl",
+    "data/processed/v1-20261023/conflicts.jsonl",
+    "data/processed/v1-20261023/excluded.jsonl",
+    "data/processed/v1-20261023/fewshot_ids.json",
+    "data/processed/v1-20261023/invalid_records.jsonl",
+    "data/processed/v1-20261023/latency_ids.json",
+    "data/processed/v1-20261023/manual_decisions.jsonl",
+    "data/processed/v1-20261023/smoke_ids.json",
+    "data/processed/v1-20261023/split_ids.json",
+    "data/processed/v1-20261023/statistics.json",
+    "data/processed/v1-20261023/test.jsonl",
+    "data/processed/v1-20261023/train.jsonl",
+    "data/processed/v1-20261023/validation.jsonl",
+    "requirements.analysis.lock",
+    "results/predictions/C_qwen_few_shot_fixed_prompt_v1_noseed_20261024T154625Z.jsonl",
+    "results/predictions/C_qwen_zero_shot_fixed_prompt_v1_noseed_20261024T154625Z.jsonl",
+    "results/predictions/bert-len512-seed42.jsonl",
+    "results/predictions/bert-len512-seed43.jsonl",
+    "results/predictions/bert-len512-seed44.jsonl",
+    "results/predictions/qwen_lora-T01-seed42-validation.jsonl",
+    "results/predictions/qwen_lora-T01-seed43-validation.jsonl",
+    "results/predictions/qwen_lora-T01-seed44-validation.jsonl",
+    "results/predictions/test-lora-seed42.jsonl",
+    "results/predictions/test-lora-seed43.jsonl",
+    "results/predictions/test-lora-seed44.jsonl",
+    "results/predictions/test-qwen_few_shot.jsonl",
+    "results/predictions/test-qwen_zero_shot.jsonl",
+    "results/predictions/tfidf-char_1_3-seed42.jsonl",
+    "results/predictions/tfidf-char_1_3-seed43.jsonl",
+    "results/predictions/tfidf-char_1_3-seed44.jsonl",
+    "results/run_index.jsonl",
+    "src/evaluation/metrics.py"
+  ],
+  "command": [
+    "/home/lgh/.venvs/llamafactory/bin/python",
+    "-S",
+    "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/tmp/reproduction-repair-20261029/model-run-002/reproduce.py"
+  ],
+  "model_command": [
+    "/home/lgh/.venvs/llamafactory/bin/python",
+    "-m",
+    "src.model_reproduction",
+    "--specification",
+    "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/tmp/reproduction-repair-20261029/model-paths.json"
+  ],
+  "model_result": {
+    "status": "passed",
+    "model_loading": true,
+    "inference": true,
+    "training": false,
+    "run_count": 11,
+    "n_per_run": 777,
+    "maximum_metric_difference": 0.0,
+    "prediction_difference_count": 0,
+    "comparison": "each seed and method mean; frozen reference is not overwritten"
+  },
+  "downloaded_input_count": 47
+}

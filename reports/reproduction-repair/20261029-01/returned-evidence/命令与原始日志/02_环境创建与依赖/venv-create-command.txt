@@ -1,0 +1,1 @@
+command=uv venv --python 3.11.17 /home/yilin/.venvs/nlp-reproduction-20261029; target python --version

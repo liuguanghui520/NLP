@@ -1,0 +1,1 @@
+command=curl.exe -fL --retry 10 --retry-all-errors --connect-timeout 20 --max-time 3600 --range 95263140-127017519 -o <resume-002/003.part> <ghfast asset URL>

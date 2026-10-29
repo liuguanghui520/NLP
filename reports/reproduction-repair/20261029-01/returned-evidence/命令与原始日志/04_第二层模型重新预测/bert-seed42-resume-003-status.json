@@ -1,0 +1,9 @@
+{
+  "status": "interrupted",
+  "reason": "ghproxy.net produced zero bytes for the 31.76MB range after more than 10 minutes",
+  "segment": 3,
+  "range": "95263140-127017519",
+  "output_bytes": 0,
+  "retry_note": "No usable independent segment obtained from this mirror",
+  "recorded_at": "2026-10-29 16:31:21 +08:00"
+}

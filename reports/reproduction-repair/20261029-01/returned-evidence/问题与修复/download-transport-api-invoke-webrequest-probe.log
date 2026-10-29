@@ -1,0 +1,13 @@
+command=Invoke-WebRequest -OutFile <fresh-temp> -Headers Accept=raw https://api.github.com/repos/liuguanghui520/NLP/contents/results/predictions/test-lora-seed42.jsonl?ref=106cdbed8db84057dba6b9c980d3a2f914856dd0
+exit_code=0
+
+Length   : 840532
+FullName : D:\NLPP\reproduction-runs\api-invoke-webrequest-probe-test-lora-seed42.jsonl
+
+
+
+Algorithm : SHA256
+Hash      : DD9B735E6D1D3B69A361EDB4DFDFC8F40A374ACCD8D98FE0B380A27E4E484FA2
+Path      : D:\NLPP\reproduction-runs\api-invoke-webrequest-probe-test-lora-seed42.jsonl
+
+

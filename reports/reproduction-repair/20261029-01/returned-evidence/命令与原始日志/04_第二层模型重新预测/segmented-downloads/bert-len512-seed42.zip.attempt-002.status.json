@@ -1,0 +1,34 @@
+{
+  "status": "failed",
+  "archive": "bert-len512-seed42.zip",
+  "attempt": "002",
+  "started_at": "2026-10-29 16:11:38 +08:00",
+  "finished_at": "2026-10-29 16:13:47 +08:00",
+  "duration_seconds": 128.697,
+  "segment_count": 12,
+  "failed_segments": [
+    {
+      "index": 4,
+      "range": "127017520-158771899",
+      "expected_length": 31754380,
+      "output": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\004.part",
+      "stderr": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\004.stderr.log",
+      "process_id": 49364,
+      "exit_code": 22,
+      "actual_length": -1,
+      "length_match": false
+    },
+    {
+      "index": 11,
+      "range": "349298180-381052560",
+      "expected_length": 31754381,
+      "output": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\011.part",
+      "stderr": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments\\011.stderr.log",
+      "process_id": 38772,
+      "exit_code": 22,
+      "actual_length": -1,
+      "length_match": false
+    }
+  ],
+  "segment_dir": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-002.segments"
+}

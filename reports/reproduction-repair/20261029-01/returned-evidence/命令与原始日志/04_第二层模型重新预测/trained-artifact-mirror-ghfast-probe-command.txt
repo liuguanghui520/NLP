@@ -1,0 +1,1 @@
+curl.exe -fL --retry 3 --retry-all-errors --connect-timeout 20 --max-time 300 -o "D:\NLPP\resource-cache\trained-artifacts-20261029\tfidf-char_1_3-seed44.zip.mirror-ghfast-attempt-001.partial" "https://ghfast.top/https://github.com/liuguanghui520/NLP/releases/download/trained-artifacts-20261029-01/tfidf-char_1_3-seed44.zip"

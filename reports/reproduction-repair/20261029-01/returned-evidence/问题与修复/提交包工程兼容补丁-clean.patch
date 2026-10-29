@@ -1,0 +1,74 @@
+diff --git a/src/project/submission_reproduce.py b/src/project/submission_reproduce.py
+--- a/src/project/submission_reproduce.py
++++ b/src/project/submission_reproduce.py
+@@ -15,7 +15,6 @@ import subprocess
+ import sys
+ import tempfile
+ from urllib.parse import quote
+-from urllib.request import urlopen
+ from uuid import uuid4
+ 
+ 
+@@ -26,10 +25,9 @@ BASE_URL = f"https://raw.githubusercontent.com/liuguanghui520/NLP/{REVISION}/"
+ 
+ def safe_path(root, relative):
+     name = Path(relative)
+-    path = (root / name).resolve()
+-    if name.is_absolute() or not path.is_relative_to(root.resolve()):
++    if name.is_absolute() or name.drive or name.anchor or ".." in name.parts:
+         raise ValueError(f"Path outside working directory: {relative}")
+-    return path
++    return root.resolve().joinpath(*name.parts)
+ 
+ 
+ def fetch(root, relative, expected):
+@@ -37,9 +35,37 @@ def fetch(root, relative, expected):
+     target = safe_path(root, relative)
+     if not target.exists():
+         target.parent.mkdir(parents=True, exist_ok=True)
+-        url = BASE_URL + quote(relative, safe="/")
+-        with urlopen(url, timeout=90) as response:
+-            content = response.read()
++        raw_url = BASE_URL + quote(relative, safe="/")
++        transports = (
++            ("ghfast_raw_mirror", "https://ghfast.top/" + raw_url),
++            ("github_raw", raw_url),
++        )
++        curl = "curl.exe" if sys.platform == "win32" else "curl"
++        failures = []
++        for transport, url in transports:
++            print(f"download_transport={transport} path={relative}", file=sys.stderr, flush=True)
++            result = subprocess.run(
++                [
++                    curl, "-fsSL", "--retry", "2", "--retry-all-errors",
++                    "--connect-timeout", "20", "--max-time", "120",
++                    url,
++                ],
++                capture_output=True,
++            )
++            if result.returncode:
++                failures.append(
++                    f"{transport} exit {result.returncode}: "
++                    f"{result.stderr.decode('utf-8', errors='replace').strip()}"
++                )
++                continue
++            content = result.stdout
++            if hashlib.sha256(content).hexdigest() == expected:
++                break
++            failures.append(f"{transport} returned a SHA256 mismatch")
++        else:
++            raise RuntimeError(
++                f"Download transport failed for {relative}: {'; '.join(failures)}"
++            )
+         if hashlib.sha256(content).hexdigest() != expected:
+             raise ValueError(f"Downloaded evidence hash mismatch: {relative}")
+         target.write_bytes(content)
+@@ -83,7 +109,7 @@ def main(argv=None):
+         (work/'submission-source.json').write_text(json.dumps(dict(source_revision=REVISION),indent=2),encoding='utf-8')
+         config = json.loads((work / "configs/reproduction.json").read_text(encoding="utf-8"))
+         items = list(config["input_sha256"].items())
+-        with ThreadPoolExecutor(max_workers=4) as pool:
++        with ThreadPoolExecutor(max_workers=1) as pool:
+             receipt["downloaded_or_verified"] = list(pool.map(lambda item: fetch(work, *item), items))
+         command = [sys.executable, "-S", str(work / "reproduce.py")]
+         receipt["command"] = command

@@ -1,0 +1,1 @@
+linked_previous_attempts=D:\NLPP\reproduction-runs\L1-attempt-001-20261029T1542 (network WinError 10054); D:\NLPP\reproduction-runs\L1-attempt-002-20261029T1544 (windows safe_path race/compatibility)

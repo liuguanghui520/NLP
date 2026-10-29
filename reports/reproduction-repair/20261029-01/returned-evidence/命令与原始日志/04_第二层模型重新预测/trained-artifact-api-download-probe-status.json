@@ -1,0 +1,11 @@
+{
+  "asset": "tfidf-char_1_3-seed43.zip",
+  "command": "curl.exe -fL --retry 3 --retry-all-errors --connect-timeout 20 --max-time 900 -H \"Accept: application/octet-stream\" -o \"D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\tfidf-char_1_3-seed43.zip.api-attempt-001.partial\" \"https://api.github.com/repos/liuguanghui520/NLP/releases/assets/686622204\"",
+  "started_at": "2026-10-29 16:02:25 +08:00",
+  "finished_at": "2026-10-29 16:03:46 +08:00",
+  "duration_seconds": 80.72,
+  "curl_exit_code": 0,
+  "actual_sha256": "b514f7a3100fb54c430adc4d4d7c1e0dd69fc6e9a6d725437704f8eaf52cf2d5",
+  "expected_sha256": "b514f7a3100fb54c430adc4d4d7c1e0dd69fc6e9a6d725437704f8eaf52cf2d5",
+  "hash_match": true
+}

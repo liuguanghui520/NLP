@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "source_file": "data/processed/v1-20261023/train.jsonl",
+  "bytes": 9390475,
+  "sha256": "a37fa5d7139c68fa2fc39bbcff0a9ae3d2beb3e7268fbd25a646b4aa65a3e22f",
+  "transport": "Official fixed-revision raw URL through the existing local HTTPS proxy; no API or third-party mirror",
+  "seconds": 3.101597547531128
+}

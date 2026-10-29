@@ -1,0 +1,1 @@
+git init <fresh>; git remote add origin https://github.com/liuguanghui520/NLP.git; git fetch --depth=1 origin 106cdbed8db84057dba6b9c980d3a2f914856dd0; git checkout --detach FETCH_HEAD

@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "error": "The full suite requires CUDA with BF16 support; no precision/model substitution is made",
+  "completed": [],
+  "inference": true,
+  "training": false
+}

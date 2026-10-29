@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "reason": "Start-Process split header values with spaces, adding identity and nlp-course-reproduction as bogus URLs; no segment data received",
+  "archive": "bert-len512-seed42.zip",
+  "attempt": "001",
+  "segment_dir": "D:\\NLPP\\resource-cache\\trained-artifacts-20261029\\bert-len512-seed42.zip.attempt-001.segments",
+  "data_files_downloaded": 0,
+  "parent_interrupted_by_operator": true,
+  "all_child_curl_processes_gone": true,
+  "recorded_at": "2026-10-29 16:11:34 +08:00",
+  "retry": "attempt-002 after removing the two nonessential headers"
+}

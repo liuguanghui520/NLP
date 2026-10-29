@@ -1,0 +1,9 @@
+{"file": "bert-len512-seed42.zip", "transport": "existing", "status": "verified", "time_utc": "2026-10-29T10:18:26.087985+00:00"}
+{"file": "bert-len512-seed43.zip", "transport": "existing", "status": "verified", "time_utc": "2026-10-29T10:19:17.917608+00:00"}
+{"file": "bert-len512-seed44.zip", "transport": "existing", "status": "verified", "time_utc": "2026-10-29T10:20:05.614479+00:00"}
+{"file": "tfidf-char_1_3-seed42.zip", "transport": "existing", "status": "verified", "time_utc": "2026-10-29T10:20:48.089940+00:00"}
+{"file": "tfidf-char_1_3-seed43.zip", "transport": "existing", "status": "verified", "time_utc": "2026-10-29T10:20:48.999779+00:00"}
+{"file": "tfidf-char_1_3-seed44.zip", "transport": "existing", "status": "verified", "time_utc": "2026-10-29T10:20:50.049480+00:00"}
+{"file": "qwen-lora-T01-seed42.zip", "transport": "existing", "status": "verified", "time_utc": "2026-10-29T10:20:51.230791+00:00"}
+{"file": "qwen-lora-T01-seed43.zip", "transport": "existing", "status": "verified", "time_utc": "2026-10-29T10:20:53.539444+00:00"}
+{"file": "qwen-lora-T01-seed44.zip", "transport": "existing", "status": "verified", "time_utc": "2026-10-29T10:20:55.856411+00:00"}

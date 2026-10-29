@@ -1,0 +1,1 @@
+curl.exe -fL --connect-timeout 20 --max-time 300 --range 127012000-127020000 -H "Accept: application/octet-stream" -H "User-Agent: nlp-course-reproduction" -o <fresh> https://api.github.com/repos/liuguanghui520/NLP/releases/assets/686622451

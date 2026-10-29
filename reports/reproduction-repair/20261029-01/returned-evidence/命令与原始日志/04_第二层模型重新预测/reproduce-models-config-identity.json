@@ -1,0 +1,5 @@
+{
+  "ExampleSHA256": "2d5ee2116d77d8dcc1a64ad8e30ccb68a468f97fbc1edb213d9f0ecfd55e842a",
+  "LocalSHA256": "46bfed32b186691ee84f22ef840dad7851466b2cea38673d117b85f398bae811",
+  "LocalContent": "{\n  \"qwen_model\": \"/mnt/d/NLP/models/Qwen3-1.7B\",\n  \"factory_root\": \"/home/yilin/LLaMA-Factory\",\n  \"trained_artifacts_root\": \"/mnt/d/NLPP/resource-cache/trained-artifacts-20261029\"\n}\n"
+}

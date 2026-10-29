@@ -1,0 +1,7 @@
+error error('Error -3 while decompressing data: invalid code lengths set')
+data_start 3981
+processed_compressed_bytes 127012864
+error_archive_offset_range 127016845 127020941
+total_bytes 381052561
+segment_12 3
+exit_code=0

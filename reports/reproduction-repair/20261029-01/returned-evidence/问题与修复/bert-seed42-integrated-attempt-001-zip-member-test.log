@@ -1,0 +1,11 @@
+entry_count 9
+OK bert-len512-seed42/README.md compressed 908 uncompressed 1315 header_offset 0
+OK bert-len512-seed42/SHA256SUMS compressed 421 uncompressed 700 header_offset 966
+OK bert-len512-seed42/manifest.json compressed 987 uncompressed 2124 header_offset 1446
+OK bert-len512-seed42/metadata/test-metrics.json compressed 291 uncompressed 700 header_offset 2495
+OK bert-len512-seed42/metadata/training-config.json compressed 479 uncompressed 850 header_offset 2861
+OK bert-len512-seed42/model/config.json compressed 425 uncompressed 915 header_offset 3418
+FAIL bert-len512-seed42/model/model.safetensors compressed 380917714 uncompressed_expected 409100240 header_offset 3909 error error('Error -3 while decompressing data: invalid code lengths set')
+OK bert-len512-seed42/model/tokenizer.json compressed 129724 uncompressed 439124 header_offset 380921695
+OK bert-len512-seed42/model/tokenizer_config.json compressed 216 uncompressed 377 header_offset 381051488
+exit_code=0

@@ -1,0 +1,1 @@
+command: Expand-Archive -LiteralPath <zip> -DestinationPath <target>

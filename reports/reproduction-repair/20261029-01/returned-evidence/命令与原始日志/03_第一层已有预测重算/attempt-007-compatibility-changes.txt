@@ -1,0 +1,1 @@
+changes=safe_path lexical containment; Windows curl GitHub Contents API; Windows serial fetch
