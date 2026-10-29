@@ -1,0 +1,442 @@
+{
+  "checked_at": "2026-10-29T07:22:34.637793+08:00",
+  "scope": "Existing local backup mirrors for selected LoRA seeds42/43/44, installed integration code; no cloud login, upload or deletion.",
+  "sources_sha256": {
+    "/home/lgh/LLaMA-Factory/src/llamafactory/train/trainer_utils.py": "ff726b2be4a7c24e4c09eb22b0336481dea3a35631076e35bb63a571bf3c9111",
+    "/home/lgh/LLaMA-Factory/src/llamafactory/data/loader.py": "f5f59ae8dcb65f95f16052d3c79645adbb02304ba3425682036a41728d0340d0",
+    "/home/lgh/.venvs/llamafactory/lib/python3.11/site-packages/swanlab/integration/transformers.py": "440b58718eb94cb0ae662190984c10617d3b1f0d9cede4c3176a9552352e67ac",
+    "/home/lgh/.venvs/llamafactory/lib/python3.11/site-packages/swanlab/log/backup/datastore.py": "94fe983bf3baf73bf6ee3bec97b99edac78224b44d9b0f48889029b4a03e7a09"
+  },
+  "script_sha256": "3e43bdce5774918b41ec25ca13676e636c4f9903e2b4ef3d55370e90f6be1c2b",
+  "backups": [
+    {
+      "path": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-012117-9e8e51/T01/swanlog/run-20261026_074633-a3b1799d/backup.swanlab",
+      "sha256": "af40993f2a041b417caf8d397e0cc3c42d5cb2948c09b01c3023e05524fff3de",
+      "bytes": 497946,
+      "crc_and_records_valid": true,
+      "records": 2529,
+      "record_types": {
+        "Header": 1,
+        "Project": 1,
+        "Experiment": 1,
+        "Log": 444,
+        "Runtime": 6,
+        "Column": 31,
+        "Scalar": 2044,
+        "Footer": 1
+      },
+      "metric_keys": [
+        "__swanlab__.cpu.pct",
+        "__swanlab__.cpu.thds",
+        "__swanlab__.disk.read",
+        "__swanlab__.disk.usage",
+        "__swanlab__.disk.write",
+        "__swanlab__.gpu.0.mem.pct",
+        "__swanlab__.gpu.0.mem.time",
+        "__swanlab__.gpu.0.mem.value",
+        "__swanlab__.gpu.0.pct",
+        "__swanlab__.gpu.0.power",
+        "__swanlab__.gpu.0.temp",
+        "__swanlab__.mem.pct",
+        "__swanlab__.mem.proc",
+        "__swanlab__.mem.proc.avail",
+        "__swanlab__.mem.proc.pct",
+        "__swanlab__.network.recv",
+        "__swanlab__.network.sent",
+        "classification/accuracy",
+        "classification/invalid_rate",
+        "classification/macro_f1",
+        "classification/validation_seconds",
+        "single_value/total_flos",
+        "single_value/train_loss",
+        "single_value/train_runtime",
+        "single_value/train_samples_per_second",
+        "single_value/train_steps_per_second",
+        "train/epoch",
+        "train/global_step",
+        "train/grad_norm",
+        "train/learning_rate",
+        "train/loss"
+      ],
+      "data_field_names_by_type": {
+        "Header": [
+          "backup_type",
+          "create_time"
+        ],
+        "Project": [
+          "name",
+          "public",
+          "workspace"
+        ],
+        "Experiment": [
+          "description",
+          "name",
+          "tags"
+        ],
+        "Log": [
+          "create_time",
+          "epoch",
+          "level",
+          "message"
+        ],
+        "Runtime": [
+          "conda_filename",
+          "config_filename",
+          "metadata_filename",
+          "requirements_filename"
+        ],
+        "Column": [
+          "chart_index",
+          "chart_name",
+          "chart_reference",
+          "cls",
+          "column_type",
+          "error",
+          "key",
+          "kid",
+          "metric_color",
+          "metric_name",
+          "name",
+          "section_name",
+          "section_sort",
+          "section_type",
+          "y_range"
+        ],
+        "Scalar": [
+          "create_time",
+          "data",
+          "epoch",
+          "index",
+          "key",
+          "metric",
+          "step"
+        ],
+        "Footer": [
+          "create_time",
+          "success"
+        ]
+      },
+      "dataset_text_matches": [],
+      "config_dataset_text_match_ids": [],
+      "visible_comment_contact_match_ids": [],
+      "sample_text_matching_scope": "Exact full visible text >=16 characters; otherwise exact first 32 characters. No fuzzy matching, truncation reconstruction or cloud-account inspection.",
+      "has_training_example_marker": false,
+      "config_yaml_sha256": "1f17775ddc7216230d00760b9236d36198561cd53a9e7ff2471923f5912559fd",
+      "metadata_sha256": "e67d227312cd968ee20fff8c49f083377614978f337afab309d504bb9ab45985",
+      "metadata_field_names": [
+        "command",
+        "cpu",
+        "cwd",
+        "executable",
+        "git_info",
+        "git_remote",
+        "gpu",
+        "hostname",
+        "memory",
+        "os",
+        "os_pretty_name",
+        "pid",
+        "python",
+        "python_verbose",
+        "swanlab"
+      ],
+      "credential_field_presence_only": [
+        {
+          "field": "finetuning_args.value.swanlab_api_key",
+          "value_state": "placeholder"
+        },
+        {
+          "field": "finetuning_args.value.swanlab_lark_secret",
+          "value_state": "empty"
+        }
+      ]
+    },
+    {
+      "path": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S43/swanlog/run-20261026_200844-09de8895/backup.swanlab",
+      "sha256": "d2eb6be0e49dfa63d4d6d9d6d8c9db9de3a878dccc8aee8ee76aff4cb1f6c86c",
+      "bytes": 501444,
+      "crc_and_records_valid": true,
+      "records": 2546,
+      "record_types": {
+        "Header": 1,
+        "Project": 1,
+        "Experiment": 1,
+        "Log": 444,
+        "Runtime": 6,
+        "Column": 31,
+        "Scalar": 2061,
+        "Footer": 1
+      },
+      "metric_keys": [
+        "__swanlab__.cpu.pct",
+        "__swanlab__.cpu.thds",
+        "__swanlab__.disk.read",
+        "__swanlab__.disk.usage",
+        "__swanlab__.disk.write",
+        "__swanlab__.gpu.0.mem.pct",
+        "__swanlab__.gpu.0.mem.time",
+        "__swanlab__.gpu.0.mem.value",
+        "__swanlab__.gpu.0.pct",
+        "__swanlab__.gpu.0.power",
+        "__swanlab__.gpu.0.temp",
+        "__swanlab__.mem.pct",
+        "__swanlab__.mem.proc",
+        "__swanlab__.mem.proc.avail",
+        "__swanlab__.mem.proc.pct",
+        "__swanlab__.network.recv",
+        "__swanlab__.network.sent",
+        "classification/accuracy",
+        "classification/invalid_rate",
+        "classification/macro_f1",
+        "classification/validation_seconds",
+        "single_value/total_flos",
+        "single_value/train_loss",
+        "single_value/train_runtime",
+        "single_value/train_samples_per_second",
+        "single_value/train_steps_per_second",
+        "train/epoch",
+        "train/global_step",
+        "train/grad_norm",
+        "train/learning_rate",
+        "train/loss"
+      ],
+      "data_field_names_by_type": {
+        "Header": [
+          "backup_type",
+          "create_time"
+        ],
+        "Project": [
+          "name",
+          "public",
+          "workspace"
+        ],
+        "Experiment": [
+          "description",
+          "name",
+          "tags"
+        ],
+        "Log": [
+          "create_time",
+          "epoch",
+          "level",
+          "message"
+        ],
+        "Runtime": [
+          "conda_filename",
+          "config_filename",
+          "metadata_filename",
+          "requirements_filename"
+        ],
+        "Column": [
+          "chart_index",
+          "chart_name",
+          "chart_reference",
+          "cls",
+          "column_type",
+          "error",
+          "key",
+          "kid",
+          "metric_color",
+          "metric_name",
+          "name",
+          "section_name",
+          "section_sort",
+          "section_type",
+          "y_range"
+        ],
+        "Scalar": [
+          "create_time",
+          "data",
+          "epoch",
+          "index",
+          "key",
+          "metric",
+          "step"
+        ],
+        "Footer": [
+          "create_time",
+          "success"
+        ]
+      },
+      "dataset_text_matches": [],
+      "config_dataset_text_match_ids": [],
+      "visible_comment_contact_match_ids": [],
+      "sample_text_matching_scope": "Exact full visible text >=16 characters; otherwise exact first 32 characters. No fuzzy matching, truncation reconstruction or cloud-account inspection.",
+      "has_training_example_marker": false,
+      "config_yaml_sha256": "cdd6410c821ae528600d327821bf580654843d017dea582e3f40daf2e6e6374a",
+      "metadata_sha256": "7706e7bd30a020de8fc2eb4a41c19f90d7c87e43ac399eca4fc35ceec282a450",
+      "metadata_field_names": [
+        "command",
+        "cpu",
+        "cwd",
+        "executable",
+        "git_info",
+        "git_remote",
+        "gpu",
+        "hostname",
+        "memory",
+        "os",
+        "os_pretty_name",
+        "pid",
+        "python",
+        "python_verbose",
+        "swanlab"
+      ],
+      "credential_field_presence_only": [
+        {
+          "field": "finetuning_args.value.swanlab_api_key",
+          "value_state": "placeholder"
+        },
+        {
+          "field": "finetuning_args.value.swanlab_lark_secret",
+          "value_state": "empty"
+        }
+      ]
+    },
+    {
+      "path": "/home/lgh/LLaMA-Factory/project-workspaces/qwen17-comparisons/qwen17-comparisons-20261026-200544-750ecb/T01-S44/swanlog/run-20261026_210832-dcae6e9f/backup.swanlab",
+      "sha256": "aa3df8e993fcfee7818b44f56d1735184a1f78ecf9538a3e3cfa8b2964e362a5",
+      "bytes": 504494,
+      "crc_and_records_valid": true,
+      "records": 2563,
+      "record_types": {
+        "Header": 1,
+        "Project": 1,
+        "Experiment": 1,
+        "Log": 444,
+        "Runtime": 6,
+        "Column": 31,
+        "Scalar": 2078,
+        "Footer": 1
+      },
+      "metric_keys": [
+        "__swanlab__.cpu.pct",
+        "__swanlab__.cpu.thds",
+        "__swanlab__.disk.read",
+        "__swanlab__.disk.usage",
+        "__swanlab__.disk.write",
+        "__swanlab__.gpu.0.mem.pct",
+        "__swanlab__.gpu.0.mem.time",
+        "__swanlab__.gpu.0.mem.value",
+        "__swanlab__.gpu.0.pct",
+        "__swanlab__.gpu.0.power",
+        "__swanlab__.gpu.0.temp",
+        "__swanlab__.mem.pct",
+        "__swanlab__.mem.proc",
+        "__swanlab__.mem.proc.avail",
+        "__swanlab__.mem.proc.pct",
+        "__swanlab__.network.recv",
+        "__swanlab__.network.sent",
+        "classification/accuracy",
+        "classification/invalid_rate",
+        "classification/macro_f1",
+        "classification/validation_seconds",
+        "single_value/total_flos",
+        "single_value/train_loss",
+        "single_value/train_runtime",
+        "single_value/train_samples_per_second",
+        "single_value/train_steps_per_second",
+        "train/epoch",
+        "train/global_step",
+        "train/grad_norm",
+        "train/learning_rate",
+        "train/loss"
+      ],
+      "data_field_names_by_type": {
+        "Header": [
+          "backup_type",
+          "create_time"
+        ],
+        "Project": [
+          "name",
+          "public",
+          "workspace"
+        ],
+        "Experiment": [
+          "description",
+          "name",
+          "tags"
+        ],
+        "Log": [
+          "create_time",
+          "epoch",
+          "level",
+          "message"
+        ],
+        "Runtime": [
+          "conda_filename",
+          "config_filename",
+          "metadata_filename",
+          "requirements_filename"
+        ],
+        "Column": [
+          "chart_index",
+          "chart_name",
+          "chart_reference",
+          "cls",
+          "column_type",
+          "error",
+          "key",
+          "kid",
+          "metric_color",
+          "metric_name",
+          "name",
+          "section_name",
+          "section_sort",
+          "section_type",
+          "y_range"
+        ],
+        "Scalar": [
+          "create_time",
+          "data",
+          "epoch",
+          "index",
+          "key",
+          "metric",
+          "step"
+        ],
+        "Footer": [
+          "create_time",
+          "success"
+        ]
+      },
+      "dataset_text_matches": [],
+      "config_dataset_text_match_ids": [],
+      "visible_comment_contact_match_ids": [],
+      "sample_text_matching_scope": "Exact full visible text >=16 characters; otherwise exact first 32 characters. No fuzzy matching, truncation reconstruction or cloud-account inspection.",
+      "has_training_example_marker": false,
+      "config_yaml_sha256": "a3178a330ad699f251710b3d3a78a86252fbbb5ab3bb6849b3652b85e1a639e9",
+      "metadata_sha256": "cff73d3d039012040c8f83aa60824161960a2d5d87bdc270265f1bfe7dec34c2",
+      "metadata_field_names": [
+        "command",
+        "cpu",
+        "cwd",
+        "executable",
+        "git_info",
+        "git_remote",
+        "gpu",
+        "hostname",
+        "memory",
+        "os",
+        "os_pretty_name",
+        "pid",
+        "python",
+        "python_verbose",
+        "swanlab"
+      ],
+      "credential_field_presence_only": [
+        {
+          "field": "finetuning_args.value.swanlab_api_key",
+          "value_state": "placeholder"
+        },
+        {
+          "field": "finetuning_args.value.swanlab_lark_secret",
+          "value_state": "empty"
+        }
+      ]
+    }
+  ],
+  "training": false,
+  "model_loading": false,
+  "inference": false
+}

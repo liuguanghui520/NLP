@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-29T13:16:09.804185+08:00",
+  "date": "2026-10-29",
+  "status": "share_access_confirmed_by_student",
+  "source": "Student message in current conversation",
+  "student_statement": "测试是可以的",
+  "share_url": "https://pan.baidu.com/s/12nyNQJliIKabozmBmfuR-g?pwd=9vxp",
+  "extraction_code": "9vxp",
+  "access_confirmed": true,
+  "confirmed_by": "student",
+  "ai_independent_access_verification": false,
+  "individual_playback_or_download_steps": "not separately specified in student confirmation",
+  "cloud_file_hash_verified": false,
+  "share_expiry": null,
+  "previous_record": "reports/demo/video-delivery-20261029-01/share-check.json",
+  "earlier_tool_attempts_preserved": true
+}

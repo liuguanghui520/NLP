@@ -1,18 +1,20 @@
 # 复现交付与验收
 
+最新课程提交说明见[最终提交README](../最终提交/20261029/README.md)，新机复现已由组长于2026-10-29确认完成；本页其余内容保留此前离线核查的执行范围。
+
 本说明区分“核对已有结果”“真实模型预测”“重新训练”。本轮本人选择先完成交付准备和离线复现，没有授权本轮启动模型预测或训练。教师／AI最终验收仍需记录其实际执行范围。
 
 ## 1. 从GitHub取得文件
 
-仓库：[liuguanghui520/NLP](https://github.com/liuguanghui520/NLP/tree/codex/integration)，当前工作分支为`codex/integration`。
+仓库：[liuguanghui520/NLP](https://github.com/liuguanghui520/NLP/tree/main)，当前工作分支为`codex/integration`。
 
 ```text
-git clone --branch codex/integration --single-branch https://github.com/liuguanghui520/NLP.git
+git clone --branch main --single-branch https://github.com/liuguanghui520/NLP.git
 cd NLP
 python reproduce.py
 ```
 
-也可下载[融合分支ZIP](https://github.com/liuguanghui520/NLP/archive/refs/heads/codex/integration.zip)，解压到自己的目录后执行相同命令。分支会继续变化；每次验收应保存具体提交号或源码清单，不能只写“下载最新版”。
+也可下载[融合分支ZIP](https://github.com/liuguanghui520/NLP/archive/refs/heads/main.zip)，解压到自己的目录后执行相同命令。分支会继续变化；每次验收应保存具体提交号或源码清单，不能只写“下载最新版”。
 
 默认命令只用Python标准库，支持Python3.11及以上，已测解释器3.13.9。不需要CUDA、模型权重、作者的WSL目录或`configs/paths.local.json`。运行目录可以包含中文和空格。Windows也可在命令行执行`reproduce.cmd`。
 

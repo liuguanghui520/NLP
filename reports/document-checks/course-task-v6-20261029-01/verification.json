@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-29",
+  "status": "passed_for_report_preparation_and_offline_delivery",
+  "chapters": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤",
+    "⑥",
+    "⑦",
+    "⑧"
+  ],
+  "principles_with_own_evidence": 3,
+  "cost_latency_in_chapter": 7,
+  "members": [
+    {
+      "id": "20245726",
+      "name": "刘广徽",
+      "share": 40
+    },
+    {
+      "id": "20246005",
+      "name": "杨函齐",
+      "share": 30
+    },
+    {
+      "id": "20245816",
+      "name": "李嘉谊林",
+      "share": 30
+    }
+  ],
+  "main_category_seed_tables_unchanged": true,
+  "all_47_frozen_inputs_unchanged": true,
+  "local_markdown_links_checked": 63,
+  "broken_links": [],
+  "abstract_characters": 275,
+  "software_tests": 53,
+  "pdf": {
+    "body_pages": 12,
+    "total_pages": 20,
+    "body_page_shrink_factors": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1.0079617402551346,
+      "6": 1.0457155970001353,
+      "7": 1.1033695946791091,
+      "8": 1.0227983436075556,
+      "9": 1,
+      "10": 1,
+      "11": 1.1102079859942886,
+      "12": 1
+    },
+    "minimum_effective_body_font_pt": 9.187467689547383,
+    "visual_review": "passed",
+    "reviewed_rendered_pages": 20,
+    "figures_and_tables_checked": true,
+    "math_font_glyphs_fixed": true,
+    "appendix_pages": 8,
+    "pdf_sha256": "e249a8bde7d100abaa676eee8fab30738744ffaf1398c694521cb06024dfa915"
+  },
+  "downloaded_input_count": 47,
+  "audited_runs": 16,
+  "formal_test_runs": 11,
+  "maximum_metric_difference": 0,
+  "extracted_zip_entry_execution": "passed",
+  "network_restricted_first_failure_retained": true,
+  "training": false,
+  "inference": false,
+  "new_machine_real_model_acceptance": "pending",
+  "teacher_acceptance": "not_recorded",
+  "personal_signatures": "pending"
+}

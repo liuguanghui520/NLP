@@ -1,0 +1,15 @@
+{
+  "status": "audit_completed_findings_require_context",
+  "started_at": "2026-10-29T07:22:28.311584+08:00",
+  "completed_at": "2026-10-29T07:22:28.556365+08:00",
+  "git_commit": "106cdbed8db84057dba6b9c980d3a2f914856dd0",
+  "script_sha256": "891e83b07bd33b4d6a89af1cfe52bda1862d8c2f4b463986024ca2094d2893ef",
+  "input_data_unchanged": true,
+  "training": false,
+  "model_loading": false,
+  "inference": false,
+  "outputs": {
+    "annotation-scope.json": "1d150188d886b81149d3237f9f95596824642868f6c116e455738fc2b672660e",
+    "contact-candidates.json": "fef2d028b1e4cf45198d4e6559662dfbcdd86ed3d97587906278dc29ecb2e965"
+  }
+}

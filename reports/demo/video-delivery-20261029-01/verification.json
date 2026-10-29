@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-10-29T13:01:59.307809+08:00",
+  "status": "local_file_verified_share_registered",
+  "validation": {
+    "report_sections_1_to_6_unchanged": true,
+    "other_two_contribution_forms_unchanged": true,
+    "leader_student_id": "20245726",
+    "video_duration_seconds": 111.317,
+    "video_under_120_seconds": true,
+    "local_video_sha256_verified": true,
+    "video_copied_to_repository": false,
+    "audio_track_present": true,
+    "audio_listening": false,
+    "visual_content_review": false,
+    "external_share_access_verified": false,
+    "local_links_checked": 72
+  },
+  "user_reported_uploaded": true,
+  "cloud_file_verified_identical": false,
+  "share_expiry": null,
+  "source_files_sha256": {
+    "scripts/inspect_demo_video.py": "3f040a073b633bbab919bcae421afd1ab81dbf6accea6e88d9f635190f0be974",
+    "artifacts/demo-video.json": "beba62b77ea7d00380910207d0924127537feece6e6f807ecd79ec8b8b870b34",
+    "README.md": "935f82915f4e25f3cba5f60a5b9d6e304f0ea09f742867e43f6ec7954681d3c5",
+    "docs/最终交付清单.md": "9c900f569b5fc381216bc9b595533c8ec59704474f72ff20fc2e83f583ccda38",
+    "docs/demo/录屏交付记录-20261029.md": "f0fe01dac784f7c92f1e2c0e8b0fd5daaac25e776f6f123e8e3bee90c60f2a4a",
+    "docs/报告初稿/20261029-v5/manifest.json": "9cee5f8363c794f499f62479dba16272a4420929107bfaa826b7435c4c48bfe3"
+  },
+  "evidence_sha256": {
+    "local-video.json": "c0a1a3cbde5fcb1fd3d0df51bbf0e16d268fc0dbfb80dfcff851577493893e14",
+    "share-check.json": "eab6aa3de54a64a068acea1933529f74d83a6a85d8ba1d7a96494493be1cee76",
+    "previous-materials/README.md": "9bfdda4a82a1791e0a9e3bb23cf1715c919dbe83f75e3b5110eadba343290161",
+    "previous-materials/两分钟演示讲稿.md": "2fa5126d60b13beadb3be60c4e9a86ed75a74ae78f24ede1d0a4a48f7367607a",
+    "previous-materials/测试记录-20261029.md": "7286a85bf54510d9a7e92f90d87dc4259bd14fd341f91ad95f675e517a54ff69"
+  },
+  "training": false,
+  "inference": false
+}

@@ -12,6 +12,20 @@ from src.evaluation.metrics import parse, evaluate
 from src.adapters.prompts import render, restore, text_sha
 
 
+def source_context(root):
+    """Record Git when available; ZIP-based reproduction is also supported."""
+    try:
+        top = subprocess.check_output(['git', '-C', str(root), 'rev-parse', '--show-toplevel'],
+                                      text=True, stderr=subprocess.DEVNULL).strip()
+        if Path(top).resolve() == Path(root).resolve():
+            return dict(git_commit=subprocess.check_output(['git', '-C', str(root), 'rev-parse', 'HEAD'], text=True).strip(),
+                        git_dirty=bool(subprocess.check_output(['git', '-C', str(root), 'status', '--porcelain'], text=True).strip()))
+    except (OSError, subprocess.CalledProcessError):
+        pass
+    return dict(git_commit=None, git_dirty=None, source_kind='extracted_submission',
+                source_manifest='submission-source.json')
+
+
 def run(root, paths, args):
     import numpy as np
     import psutil
@@ -37,8 +51,7 @@ def run(root, paths, args):
     state = dict(method=method, split=split, seed=args.seed if method in ['bert','tfidf','qwen_lora'] else None,
                  run_id=out.name, batch=1, threads=4, precision='fp32' if method in ['bert','tfidf'] else 'bfloat16',
                  data_sha256=digest(data/f'{split}.jsonl'), freeze_sha256=digest(root/'artifacts/evaluation-freeze.json'),
-                 git_commit=subprocess.check_output(['git','-c',f'safe.directory={root}','-C',str(root),'rev-parse','HEAD'], text=True).strip(),
-                 git_dirty=bool(subprocess.check_output(['git','-c',f'safe.directory={root}','-C',str(root),'status','--porcelain'], text=True).strip()),
+                 **source_context(root),
                  source_sha256=digest(__file__), versions={n:importlib.metadata.version(n) for n in ['torch','transformers','peft','scikit-learn']})
     try:
         if method.startswith('qwen'):
@@ -76,7 +89,14 @@ def run(root, paths, args):
         elif method in ['qwen_zero_shot','qwen_few_shot']:
             model_id, config_id = 'Qwen/Qwen3-1.7B', 'fixed_prompt_v1'
             tok = AutoTokenizer.from_pretrained(paths['qwen_model'], local_files_only=True)
-            registry = restore(root, paths, tok)
+            if paths.get('portable_reproduction'):
+                # The released ZIP has frozen examples and template identities,
+                # but not the original author's external prompt-delivery folder.
+                from src.demo.backend import prompt_registry
+                registry = prompt_registry(root, data, tok)
+                state['prompt_identity_verification'] = 'frozen chat template, four training examples and both message-template SHA256s'
+            else:
+                registry = restore(root, paths, tok)
             mode = registry['modes'][method]
             prompt_id, prompt_hash = mode['prompt_id'], mode['template_sha256']
             model = AutoModelForCausalLM.from_pretrained(paths['qwen_model'], local_files_only=True,

@@ -1,0 +1,62 @@
+{
+  "created_at": "2026-10-29T07:30:09.789395+08:00",
+  "revision": "20261029-v4",
+  "status": "Markdown draft, error-scope and data-use audit incorporated; not final PDF",
+  "base_version": "20261029-v3",
+  "git_commit_at_creation": "106cdbed8db84057dba6b9c980d3a2f914856dd0",
+  "user_decisions": [
+    "Use already approved nine cases; preserve 124 pending records without repeated approvals; explicitly document scope",
+    "Use public dataset unchanged; no additional anonymization"
+  ],
+  "validation": {
+    "sections_1_to_5_unchanged": true,
+    "three_contribution_forms_unchanged": true,
+    "confirmed_cases": 9,
+    "body_categories": 5,
+    "pending_review_unchanged": 124,
+    "nine_case_evidence_quotes_contact_rule_matches": 0,
+    "scanned_comments": 7763,
+    "candidate_comments": 9,
+    "candidate_occurrences": 11,
+    "original_contact_values_copied_into_new_report_or_final_audit": false,
+    "swanlab_backup_records": 7638,
+    "swanlab_local_matches": 0,
+    "local_markdown_links_checked": 50,
+    "frozen_data_unchanged": true,
+    "software_checks": {
+      "first_attempt": "failed: default temp directory permissions, retained software-checks.log",
+      "retry": "passed: 45 tests, process-only TEMP/TMP under project, software-checks-retry1.log"
+    },
+    "offline_metrics_audit": "results/reproduction/data-usage-closeout-20261029-01/status.json",
+    "new_machine_model_reproduction": "not_executed"
+  },
+  "input_sha256": {
+    "docs/报告初稿/20261029-v3/manifest.json": "b59170b875dcec0455c6288409e047882d6d316804c0d9606b5b3b7f2fd02efb",
+    "docs/报告初稿/20261029-v3/项目报告.md": "39b55281c7713d724ab6a36a09cb956256530ed8a9cdd217d929a2e162db5aae",
+    "docs/报告素材/错例范围与数据使用核查-20261029.md": "ab6a33ec784678f3be7fd473a9c35bcdd7e43fda0bd4ea813b4a76377681fcf0",
+    "reports/data/data-usage-audit-20261029-04/annotation-scope.json": "1d150188d886b81149d3237f9f95596824642868f6c116e455738fc2b672660e",
+    "reports/data/data-usage-audit-20261029-04/contact-candidates.json": "fef2d028b1e4cf45198d4e6559662dfbcdd86ed3d97587906278dc29ecb2e965",
+    "reports/data/data-usage-audit-20261029-04/contact-context-review.json": "8fa53dd43537807ee4077d0a3b1502ec58ff28f83157a4c4c4426cb9ef995e16",
+    "reports/data/data-usage-audit-20261029-04/swanlab-audit.json": "65fb3edf357501c793d512e4ac580e080ea3555d87d35e03bbb7d215a78905de",
+    "reports/data/data-usage-audit-20261029-04/upstream-evidence.json": "ab8fa908d5169082c8dbd1ce242a3e6a0774161282f60bf15fad8497180bb603"
+  },
+  "output_sha256": {
+    "README.md": "3f1a940344502a9096819e8a73436cdd9de9e9006cd93a95039671f54cfe02d6",
+    "token用量核查.json": "fd2abacca63a4d6dadda259c47324b3b463ab5949b0ce37819335ce24ed81fb4",
+    "修订记录.md": "e4fdd6a1f4402cfb2b274cd429395ea82dc20f441591201bac3e7c64d252c5bb",
+    "缺失信息清单.md": "981ed344a4a798de22e97876cd8b7a38b1423ec41b7e7be95a678d63c763b031",
+    "评估补充数据.json": "dc5fde4876c6d7294b5e87bbbaf6af928008a40678c433881e394bb74804fba1",
+    "贡献声明_刘广徽_初稿.md": "b9a945166b1df30e6b9510d24d10732dbc75edcecc66d457c17caedeeb6c7e2e",
+    "贡献声明_李嘉谊林_初稿.md": "2a31bd59b156b61c9b35a18b40f6ee6c5278cc7973a1fa24a41802a6355f74f4",
+    "贡献声明_杨函齐_初稿.md": "6c6a2d32b0a06dcbd28ffc9d5a69a4d1679a6b4416d614144546eb71676c1dfb",
+    "项目报告.md": "10a9f78f6370c1363c5c2a2a5d52d6e541efe99431ae3ee421fe5dedc4d009d0",
+    "assets/系统架构.svg": "0cd389927bb1fd747ada8a468862b2937005481f636dc6aef38f002f270f25c3",
+    "templates/贡献声明表模板.md": "12ae99ddf09f42356517a8822df89869d12a2ada21e388da3f09682922fc939c",
+    "templates/项目报告模板.md": "2cf2ac69f2f2aa99780467951a20b62580e91a9cf6d19934f147d27f321632e7"
+  },
+  "AI_assistance": "Codex read-only source, data and existing log audits; scripts, document revision and validation. No new human sentiment labels or causal intervention. Student approved scope and chose no additional anonymization.",
+  "training": false,
+  "model_loading": false,
+  "inference": false,
+  "pdf_generated": false
+}

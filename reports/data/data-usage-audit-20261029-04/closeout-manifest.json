@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-10-29T07:30:09.789395+08:00",
+  "status": "completed_for_documented_scope",
+  "validation": {
+    "sections_1_to_5_unchanged": true,
+    "three_contribution_forms_unchanged": true,
+    "confirmed_cases": 9,
+    "body_categories": 5,
+    "pending_review_unchanged": 124,
+    "nine_case_evidence_quotes_contact_rule_matches": 0,
+    "scanned_comments": 7763,
+    "candidate_comments": 9,
+    "candidate_occurrences": 11,
+    "original_contact_values_copied_into_new_report_or_final_audit": false,
+    "swanlab_backup_records": 7638,
+    "swanlab_local_matches": 0,
+    "local_markdown_links_checked": 50,
+    "frozen_data_unchanged": true,
+    "software_checks": {
+      "first_attempt": "failed: default temp directory permissions, retained software-checks.log",
+      "retry": "passed: 45 tests, process-only TEMP/TMP under project, software-checks-retry1.log"
+    },
+    "offline_metrics_audit": "results/reproduction/data-usage-closeout-20261029-01/status.json",
+    "new_machine_model_reproduction": "not_executed"
+  },
+  "student_approved_nine_case_scope": true,
+  "student_requested_no_extra_anonymization": true,
+  "redistribution_permission_chain": "not_independently_verified",
+  "remote_swanlab_account_audit": "not_performed",
+  "source_sha256": {
+    "scripts/audit_data_usage.py": "891e83b07bd33b4d6a89af1cfe52bda1862d8c2f4b463986024ca2094d2893ef",
+    "scripts/audit_swanlab_records.py": "3e43bdce5774918b41ec25ca13676e636c4f9903e2b4ef3d55370e90f6be1c2b",
+    "docs/报告素材/错例范围与数据使用核查-20261029.md": "ab6a33ec784678f3be7fd473a9c35bcdd7e43fda0bd4ea813b4a76377681fcf0",
+    "docs/报告初稿/20261029-v4/manifest.json": "2da38055010ed192996668e41b9576a1137ccdfdffab228ae11ea6879ca10b3d"
+  },
+  "outputs_sha256": {
+    "annotation-scope.json": "1d150188d886b81149d3237f9f95596824642868f6c116e455738fc2b672660e",
+    "contact-candidates.json": "fef2d028b1e4cf45198d4e6559662dfbcdd86ed3d97587906278dc29ecb2e965",
+    "contact-context-review.json": "8fa53dd43537807ee4077d0a3b1502ec58ff28f83157a4c4c4426cb9ef995e16",
+    "modelscope-dataset-card.md": "adfb9524d65461f7a45006310fbb525034303859b020f8c9a6b7746239b8161f",
+    "README.md": "eb56f9e1294b1b8e3f04e1a9429152a0dd1c620992463b15e8263abb11a7914f",
+    "software-checks-retry1.log": "700cf36f982d9f82cfb52790005fa797172de2e3158b668c1e9b6ec54af920f9",
+    "software-checks.log": "292869a999b018098f6f32b673651d45845d87d80ef294948f21a2b5b93dbd7d",
+    "status.json": "1e9605e5ea0477d52130cf41130affb344f3ce1513f4d387ea0a9eecf40ff6c1",
+    "swanlab-audit.json": "65fb3edf357501c793d512e4ac580e080ea3555d87d35e03bbb7d215a78905de",
+    "upstream-evidence.json": "ab8fa908d5169082c8dbd1ce242a3e6a0774161282f60bf15fad8497180bb603",
+    "upstream-origin-summary.md": "b218cbd8b5cc9880bde868c1c2b3ab18c5bea10a84e0029aa2c2ad908530aa49"
+  },
+  "training": false,
+  "model_loading": false,
+  "inference": false
+}

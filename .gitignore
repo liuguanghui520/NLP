@@ -18,6 +18,12 @@ configs/paths.local.json
 .venv-analysis/
 artifacts/packages/
 artifacts/downloaded/
+*.mp4
+tmp/
+reports/**/previous-files/
+docs/demo/debug.log
+results/reproduction/course-package-*/extracted/
+results/reproduction/course-package-*/downloaded-work/
 results/reproduction/**/source-copy/
 results/reproduction/**/mpl-cache/
 results/reproduction/**/venv/

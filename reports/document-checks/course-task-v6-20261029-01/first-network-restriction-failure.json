@@ -1,0 +1,10 @@
+{
+  "status": "failed",
+  "source_revision": "106cdbed8db84057dba6b9c980d3a2f914856dd0",
+  "working_directory": "C:\\Users\\lgh\\Documents\\ChatGPT\\NLP\\results\\reproduction\\course-package-20261029-01\\downloaded-work",
+  "model_loading": false,
+  "inference": false,
+  "training": false,
+  "teacher_acceptance": "not_recorded",
+  "error": "<urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>"
+}

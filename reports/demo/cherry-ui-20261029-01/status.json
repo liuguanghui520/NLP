@@ -1,0 +1,31 @@
+{
+  "verified_at": "2026-10-29T11:38:45.914464+08:00",
+  "status": "cherry_ui_verified",
+  "provider_name": "NLP课程实验｜本地五方案",
+  "endpoint": "http://127.0.0.1:8017/v1",
+  "models_added": 5,
+  "assistant": "刘广徽 20245726｜情感分析",
+  "mode": "ordinary chat; no agent, tools, knowledge base or additional system prompt",
+  "normal_lora_output": "1",
+  "same_frozen_case": "6353",
+  "same_case_outputs": {
+    "nlp-qwen-lora-t01-seed42": "0",
+    "nlp-tfidf-seed42": "1"
+  },
+  "requests": [
+    "demo-3f08e8e4de2847038d810e7cab502c2e",
+    "demo-1dc64b37bbb943cab158c1498cf8023c",
+    "demo-6976e7e5985d4616a0dc6d1ef9f0cbbf"
+  ],
+  "history_isolation": "Only last user comment classified; ignored client history recorded in requests",
+  "initial_launch_timeout": "Earlier preparation attempt retained; resolved after existing window became available",
+  "screenshot": "Cherry同题模型对比.jpg",
+  "training": false,
+  "real_inference": true,
+  "new_machine_reproduction": false,
+  "final_mp4_created": false,
+  "sha256": {
+    "Cherry同题模型对比.jpg": "4959a5817f849fea9f712c1a5a8c7deab7d688bb60f056e94271529329d3e8d2",
+    "requests.jsonl": "88b16bb0ad1240bfcde9442b953805b798b13ac1ccdf6cea9d2526ac23dd9df3"
+  }
+}

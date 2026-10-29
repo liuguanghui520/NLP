@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "repository": "https://github.com/liuguanghui520/NLP",
-  "source_ref": "codex/integration",
-  "source_zip": "https://github.com/liuguanghui520/NLP/archive/refs/heads/codex/integration.zip",
+  "source_ref": "main",
+  "source_zip": "https://github.com/liuguanghui520/NLP/archive/refs/heads/main.zip",
   "offline_evidence": "Included in repository; exact inputs listed by configs/reproduction.json",
   "qwen_base": {
     "source": "https://modelscope.cn/models/Qwen/Qwen3-1.7B",

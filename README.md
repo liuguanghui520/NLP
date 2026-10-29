@@ -9,12 +9,12 @@
 安装Python 3.11及以上（已测3.13.9），取得本分支：
 
 ~~~text
-git clone --branch codex/integration --single-branch https://github.com/liuguanghui520/NLP.git
+git clone --branch main --single-branch https://github.com/liuguanghui520/NLP.git
 cd NLP
 python reproduce.py
 ~~~
 
-也可下载[分支ZIP](https://github.com/liuguanghui520/NLP/archive/refs/heads/codex/integration.zip)再解压运行。Windows支持命令行调用reproduce.cmd。默认核查无需pip安装、CUDA、模型、作者的WSL目录或个人路径配置。
+也可下载[分支ZIP](https://github.com/liuguanghui520/NLP/archive/refs/heads/main.zip)再解压运行。Windows支持命令行调用reproduce.cmd。默认核查无需pip安装、CUDA、模型、作者的WSL目录或个人路径配置。
 
 每次自动建立全新 results/reproduction/<批次>/，成功时退出码0且status.json为passed。它检查冻结数据哈希、划分与标签、16份验证／测试记录、11份测试及种子覆盖，并独立重算主指标；不改原始预测或运行索引。
 
@@ -50,7 +50,7 @@ Linux将解释器路径改为.venv-analysis/bin/python。完整模式还需Git�
 
 ## 真实模型复现：资源齐备后另验收
 
-真实预测需要Qwen基座、三个BERT最佳模型、三个TF-IDF Pipeline及三个普通LoRA适配器。9个训练产物现已发布至[GitHub Release](https://github.com/liuguanghui520/NLP/releases/tag/trained-artifacts-20261029-01)，压缩包共约1.19GB，GitHub服务端SHA256与本地一致，匿名下载可达。Qwen基座另从官方来源获取；实际模型加载、路径对接与新机预测仍待验收。
+真实预测需要Qwen基座、三个BERT最佳模型、三个TF-IDF Pipeline及三个普通LoRA适配器。9个训练产物现已发布至[GitHub Release](https://github.com/liuguanghui520/NLP/releases/tag/trained-artifacts-20261029-01)，压缩包共约1.19GB，GitHub服务端SHA256与本地一致，匿名下载可达。Qwen基座另从官方来源获取。新机复现已由组长于2026年10月29日确认完成；再次执行可使用提交包内的11运行串行入口。
 
 代码、配置和小型证据随仓库下载；训练产物按[下载说明](docs/reproduction/训练产物下载说明-20261029.md)获取，[机器可读清单](artifacts/reproduction-downloads.json)列出9个ZIP的URL、大小和SHA256。模型包含相对目录及配置，不包含Qwen基座和Python环境。资源身份见[模型资源说明](artifacts/README.md)、artifacts/lora-lock.json及基线记录；历史说明以本README和最新复现说明为准。
 
@@ -62,7 +62,7 @@ Linux将解释器路径改为.venv-analysis/bin/python。完整模式还需Git�
 
 数据划分、少样本、预热与延迟子集种子67；训练42／43／44；bootstrap67；图中代表运行42。提示为固定四条示例、关闭思考、贪心解码，最多8个新token。三种子按均值和样本SD报告，不按测试挑种子。完整种子索引见 configs/reproduction.json。
 
-已有数据、预测和日志按本人2026-10-28的授权统一公开。来源许可核验的历史限制继续披露于数据清单和报告；账户密钥、个人路径配置及可重建缓存不属于交付文件。模型大权重保留在个人工具工作区，另行打包时核对身份。
+已有数据、预测和日志按2026-10-28的授权统一公开。来源许可核验的历史限制继续披露于数据清单和报告；账户密钥、个人路径配置及可重建缓存不属于交付文件。模型大权重保留在个人工具工作区，另行打包时核对身份。
 
 ## 如何判断“复现通过”
 
@@ -92,6 +92,14 @@ GitHub自动核查配置位于.github/workflows/reproduction.yml，只运行无�
 
 阅读材料：[完整复现指南](docs/reproduction/README.md)、[环境E01](docs/environment/实验运行环境与延迟口径.md)、[模型结论](reports/analysis/conclusions-confirmed-20261029-01/模型方案对比结论.md)、[参数结论](reports/analysis/conclusions-confirmed-20261029-01/参数对比结论.md)、[九例确认稿](reports/analysis/case-confirmed-20261029-01/正文案例与局限定稿.md)、[图表总览](reports/analysis/comparison-formal-20261028-03/图表总览.html)。
 
-课程报告素材见[证据汇总](docs/报告素材/九案例至技术选型结论与证据汇总-20261029.md)，当前[报告草稿v3](docs/报告初稿/20261029-v3/项目报告.md)及[三人贡献声明](docs/报告初稿/20261029-v3/README.md)仍保留待补与待审核标记。
+## 正式提交材料
 
-本轮AI用于工程入口、依赖和文档整理及被授权的离线验证。已确认的学生分析保留，382条AI辅助标注与20条本人试标来源分开，124条待复核不改正式标签。旧README原字节保存在 docs/history/README-before-reproduction-20261029.md，便于追溯历史哈希。
+- [最终项目报告及三份贡献声明](docs/最终提交/20261029/README.md)，提交日期2026年10月29日。
+- [报告PDF](output/pdf/报告-20261029.pdf)：正文12页，附录8页；图片随PDF内嵌。
+- [课程提交ZIP](deliverables/20245726_刘广徽_中文评论情感分析.zip)：根目录仅报告、摘要、README、src及三份个人声明。权重、录屏、数据集不入包。
+- 解压提交ZIP后执行`python src/run.py`重算主表；配置模型环境与资源后执行`python src/run.py --models --paths src/project/configs/reproduce-models.local.json`重新预测11个测试运行。
+- 新机复现已完成，状态由组长确认；当前编辑轮次没有重复运行模型。默认指标核查与真实预测分开记录。
+
+交互演示使用Cherry Studio连接本地服务，说明见[演示材料](docs/demo/README.md)。[演示录屏](https://pan.baidu.com/s/12nyNQJliIKabozmBmfuR-g?pwd=9vxp)，提取码`9vxp`，111.317秒。
+
+当前协作与交付入口为main，保留融合分支和原有提交历史；历史过程文档不进入课程ZIP。

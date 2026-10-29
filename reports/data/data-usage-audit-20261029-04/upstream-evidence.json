@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-29T07:27:04.975861+08:00",
+  "sources": [
+    {
+      "name": "modelscope-readme",
+      "url": "https://modelscope.cn/api/v1/datasets/AiNiklaus/ChnSentiCorp/repo?Revision=eec2cd0294bbd8711cbbbaab13ec4c2320d7f815&FilePath=README.md",
+      "status": 200,
+      "sha256": "adfb9524d65461f7a45006310fbb525034303859b020f8c9a6b7746239b8161f",
+      "bytes": 406
+    },
+    {
+      "name": "github-readme",
+      "url": "https://raw.githubusercontent.com/SophonPlus/ChineseNlpCorpus/master/README.md",
+      "status": 200,
+      "sha256": "b1bae6d5f60016f04b20b6589a757e317c4d255074e87354fdb819809cbc9e6f",
+      "bytes": 4377
+    },
+    {
+      "name": "github-intro",
+      "url": "https://raw.githubusercontent.com/SophonPlus/ChineseNlpCorpus/master/datasets/ChnSentiCorp_htl_all/intro.ipynb",
+      "status": 200,
+      "sha256": "880b506ad898885acc64d71f38cad3ea5d2af9e61538cd4e096ac86299fe2a5c",
+      "bytes": 30036
+    },
+    {
+      "name": "github-tree",
+      "url": "https://api.github.com/repos/SophonPlus/ChineseNlpCorpus/git/trees/master?recursive=1",
+      "status": 200,
+      "sha256": "a6fe3b282174e7517e7ba310cbfe16e999715d0cc845bda12387f73bf8d5a4e0",
+      "bytes": 12036,
+      "license_like_paths": [],
+      "api_reported_ref_sha": "a0b781d72158bde242c0626c9e354d2b328865ff",
+      "truncated": false
+    },
+    {
+      "name": "github-csv",
+      "url": "https://raw.githubusercontent.com/SophonPlus/ChineseNlpCorpus/master/datasets/ChnSentiCorp_htl_all/ChnSentiCorp_htl_all.csv",
+      "status": 200,
+      "sha256": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0",
+      "bytes": 2904858
+    }
+  ],
+  "github_reference_lookup": {
+    "commit_sha": "a0b781d72158bde242c0626c9e354d2b328865ff",
+    "tree_sha_from_commit": "3c3a9fa7c83954b3c9fc8f99cd3d7455857fbb02",
+    "content_downloads_used": "master URLs as recorded above; no claim of separate immutable-URL verification"
+  },
+  "interpretation": "ModelScope card explicitly marks Apache License 2.0; upstream origin and same CSV hash verified. No license-like file found in complete inspected GitHub tree. Independent author permission chain for individual reviews not verified; no legal clearance claimed.",
+  "followup_checks": [
+    {
+      "status": "failed",
+      "operation": "Cross-check branch-resolved tree SHA against commit tree SHA",
+      "reason": "API reported ref SHA differs from commit.tree.sha; distinguish fields rather than equate them."
+    },
+    {
+      "status": "failed",
+      "operation": "Fetch immutable tree and content for additional verification",
+      "reason": "Network WinError10048 before retrieval; original successful source receipts retained."
+    }
+  ]
+}

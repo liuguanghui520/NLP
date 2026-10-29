@@ -1,0 +1,17 @@
+{
+  "archive": "artifacts\\packages\\course-task-v6-20261029-02\\20245726_刘广徽_中文评论情感分析.zip",
+  "bytes": 2405498,
+  "sha256": "8e096b54e12a8a7c8bffd098e18197977391eab1432310264670de4ba4f5af4c",
+  "file_count": 175,
+  "runtime_files_identical_to_extracted_executed_package": 74,
+  "package_report_broken_links": [],
+  "credential_pattern_findings": [],
+  "crc": null,
+  "single_course_zip": true,
+  "body_pages": 12,
+  "appendix_pages": 8,
+  "offline_actual_execution_passed": true,
+  "new_machine_model_acceptance": "pending",
+  "signatures": "pending",
+  "crc_check": "passed"
+}

@@ -1,0 +1,45 @@
+{
+  "filename": "20245726_刘广徽_中文评论情感分析_演示.mp4",
+  "bytes": 15398737,
+  "tracks": [
+    {
+      "width": 1728.0,
+      "height": 1080.0,
+      "duration": {
+        "timescale": 15360,
+        "ticks": 1709568,
+        "seconds": 111.3
+      },
+      "handler": "vide",
+      "codec_fourcc": "avc1"
+    },
+    {
+      "width": 0.0,
+      "height": 0.0,
+      "duration": {
+        "timescale": 44100,
+        "ticks": 4910090,
+        "seconds": 111.33990929705216
+      },
+      "handler": "soun",
+      "codec_fourcc": "mp4a"
+    }
+  ],
+  "movie_duration": {
+    "timescale": 1000,
+    "ticks": 111317,
+    "seconds": 111.317
+  },
+  "has_video_track": true,
+  "has_audio_track": true,
+  "duration_seconds": 111.317,
+  "within_120_seconds": true,
+  "size_mb_decimal": 15.398737,
+  "sha256": "fe1a719a78b8112223bdad8bb78ff86ca707a07a6cc333bfd9cb56438a482daa",
+  "checked_at": "2026-10-29T12:57:11.593810+08:00",
+  "local_source": "C:\\Users\\lgh\\Videos\\作业视频\\20245726_刘广徽_中文评论情感分析_演示.mp4",
+  "source_unchanged": true,
+  "method": "MP4 moov/mvhd/trak/mdhd/tkhd/stsd metadata; streaming SHA256",
+  "visual_review": false,
+  "audio_listening": false
+}

@@ -1,0 +1,86 @@
+{
+  "scope": "offline aggregation of all 777 test predictions per run; no new inference",
+  "output_tokens_note": "recorded generated token length; may include termination markers",
+  "runs": [
+    {
+      "run_id": "test-qwen_zero_shot",
+      "n": 777,
+      "source": "results/predictions/test-qwen_zero_shot.jsonl",
+      "source_sha256": "50705a8eb1ffd886b3c8512f73c49704ddb048ec9a2712c1a902aedaa4f5d9e0",
+      "input_tokens": {
+        "count": 777,
+        "total": 86423,
+        "mean": 111.22651222651223
+      },
+      "output_tokens": {
+        "count": 777,
+        "total": 2502,
+        "mean": 3.22007722007722
+      }
+    },
+    {
+      "run_id": "test-qwen_few_shot",
+      "n": 777,
+      "source": "results/predictions/test-qwen_few_shot.jsonl",
+      "source_sha256": "870c2ce591a15c40c0150d4ab37799c14be306e48b9cd1a3087643a20e8b112d",
+      "input_tokens": {
+        "count": 777,
+        "total": 295436,
+        "mean": 380.2265122265122
+      },
+      "output_tokens": {
+        "count": 777,
+        "total": 1566,
+        "mean": 2.0154440154440154
+      }
+    },
+    {
+      "run_id": "test-lora-seed42",
+      "n": 777,
+      "source": "results/predictions/test-lora-seed42.jsonl",
+      "source_sha256": "dd9b735e6d1d3b69a361edb4dfdfc8f40a374accd8d98fe0b380a27e4e484fa2",
+      "input_tokens": {
+        "count": 777,
+        "total": 81462,
+        "mean": 104.84169884169884
+      },
+      "output_tokens": {
+        "count": 777,
+        "total": 1554,
+        "mean": 2
+      }
+    },
+    {
+      "run_id": "test-lora-seed43",
+      "n": 777,
+      "source": "results/predictions/test-lora-seed43.jsonl",
+      "source_sha256": "01680ba5e3e0c2035bb67e840ed8afa3d95572eed2fbc336bd49e22a87c7fec5",
+      "input_tokens": {
+        "count": 777,
+        "total": 81462,
+        "mean": 104.84169884169884
+      },
+      "output_tokens": {
+        "count": 777,
+        "total": 1554,
+        "mean": 2
+      }
+    },
+    {
+      "run_id": "test-lora-seed44",
+      "n": 777,
+      "source": "results/predictions/test-lora-seed44.jsonl",
+      "source_sha256": "7fc809516dd55c9e941b6a74672099efdae14d602740a341d4fd71e5af6f4de5",
+      "input_tokens": {
+        "count": 777,
+        "total": 81462,
+        "mean": 104.84169884169884
+      },
+      "output_tokens": {
+        "count": 777,
+        "total": 1554,
+        "mean": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "scope": "Context review of nine rule-flagged comments only; no exhaustive name/address audit",
+  "comments": [
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:358",
+      "split": "train",
+      "source_row": 358,
+      "rule_match_occurrences": 1,
+      "context_kind": "self_disclosed_account",
+      "context_summary_without_identifiers": "本人公开留下QQ联系方式",
+      "reviewer": "AI context review, not independent human annotation",
+      "decision": "retain frozen data unchanged; no additional redaction as explicitly requested by student"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2838",
+      "split": "train",
+      "source_row": 2838,
+      "rule_match_occurrences": 1,
+      "context_kind": "business_contact",
+      "context_summary_without_identifiers": "酒店回复中的订房电话",
+      "reviewer": "AI context review, not independent human annotation",
+      "decision": "retain frozen data unchanged; no additional redaction as explicitly requested by student"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3155",
+      "split": "train",
+      "source_row": 3155,
+      "rule_match_occurrences": 1,
+      "context_kind": "business_contact",
+      "context_summary_without_identifiers": "推荐餐饮场所时提供固定电话",
+      "reviewer": "AI context review, not independent human annotation",
+      "decision": "retain frozen data unchanged; no additional redaction as explicitly requested by student"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7466",
+      "split": "train",
+      "source_row": 7466,
+      "rule_match_occurrences": 1,
+      "context_kind": "named_business_contact",
+      "context_summary_without_identifiers": "酒店回复中的具名经理联系电话",
+      "reviewer": "AI context review, not independent human annotation",
+      "decision": "retain frozen data unchanged; no additional redaction as explicitly requested by student"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3099",
+      "split": "validation",
+      "source_row": 3099,
+      "rule_match_occurrences": 1,
+      "context_kind": "named_individual_contact",
+      "context_summary_without_identifiers": "推荐出租车人员时提供姓名与手机号",
+      "reviewer": "AI context review, not independent human annotation",
+      "decision": "retain frozen data unchanged; no additional redaction as explicitly requested by student"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4717",
+      "split": "validation",
+      "source_row": 4717,
+      "rule_match_occurrences": 1,
+      "context_kind": "business_or_individual_contact",
+      "context_summary_without_identifiers": "住宿服务或接送的联系号码",
+      "reviewer": "AI context review, not independent human annotation",
+      "decision": "retain frozen data unchanged; no additional redaction as explicitly requested by student"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3097",
+      "split": "test",
+      "source_row": 3097,
+      "rule_match_occurrences": 1,
+      "context_kind": "individual_contact",
+      "context_summary_without_identifiers": "包车人员联系号码",
+      "reviewer": "AI context review, not independent human annotation",
+      "decision": "retain frozen data unchanged; no additional redaction as explicitly requested by student"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4521",
+      "split": "test",
+      "source_row": 4521,
+      "rule_match_occurrences": 1,
+      "context_kind": "business_contact",
+      "context_summary_without_identifiers": "餐饮场所的手机号式联系电话",
+      "reviewer": "AI context review, not independent human annotation",
+      "decision": "retain frozen data unchanged; no additional redaction as explicitly requested by student"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5041",
+      "split": "test",
+      "source_row": 5041,
+      "rule_match_occurrences": 3,
+      "context_kind": "staff_contact_repeated",
+      "context_summary_without_identifiers": "酒店工作人员手机号，正文还含重复或异常编码段",
+      "reviewer": "AI context review, not independent human annotation",
+      "decision": "retain frozen data unchanged; no additional redaction as explicitly requested by student"
+    }
+  ],
+  "user_decision": {
+    "date": "2026-10-29",
+    "source": "Current design conversation",
+    "instruction": "但这是官方的数据集啊，我觉得不需要进行脱敏处理",
+    "adopted_scope": "Use the public dataset unchanged; document source, scan findings and absence of additional redaction. No extra raw contact values in audit output."
+  },
+  "matched_occurrences": 11,
+  "unique_comments": 9,
+  "frozen_inputs_changed": false
+}

@@ -1,0 +1,96 @@
+{
+  "error_union_comments": 402,
+  "origins": {
+    "human_confirmed_in_design_chat": 20,
+    "ai_assisted_under_confirmed_rules": 382
+  },
+  "pending_unique_comments": 124,
+  "pending_set_not_changed": true,
+  "confirmed_cases": [
+    "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5546",
+    "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6353",
+    "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6865",
+    "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6197",
+    "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6957",
+    "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5773",
+    "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:647",
+    "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4086",
+    "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7015"
+  ],
+  "report_selection": [
+    {
+      "title": "原始模型的任务适应性",
+      "case_numbers": [
+        1
+      ],
+      "placement": "正文",
+      "approved_summary": "原始模型在当前提示条件下仍会误判明确情感，少样本与LoRA修正了本例；这一结果不能外推为所有错误均可消除。",
+      "approved_recommendation": "核查标签与提示，引入有代表性的训练示例或任务适配，在验证集同时检查两类错误和整体F1。"
+    },
+    {
+      "title": "混合评价的整体判断",
+      "case_numbers": [
+        2,
+        8
+      ],
+      "placement": "正文",
+      "approved_summary": "案例2展示TF-IDF将主要负面投诉判成正面，案例8展示原始提示模型将弱正面判成负面；两条属同一类，固定少样本也未修正案例8。",
+      "approved_recommendation": "核查TF-IDF特征贡献，考虑分句或方面特征及上下文模型；用正负两个方向的混合评价样本验证，零样本格式失败另行处理。"
+    },
+    {
+      "title": "多评价对象与比较",
+      "case_numbers": [
+        3,
+        5
+      ],
+      "placement": "正文",
+      "approved_summary": "案例3作为主例，说明多个监督训练运行在复杂比较中仍失败；案例5作为补充，展示只有TF-IDF将另一酒店的正面推荐关联到目标酒店。对象混淆是可能解释，尚无机制验证。",
+      "approved_recommendation": "明确评价对象口径，核查特征贡献或对象边界标记，在单对象和多对象材料上同时验证改善与退化。"
+    },
+    {
+      "title": "多说话者文本",
+      "case_numbers": [
+        4
+      ],
+      "placement": "正文",
+      "approved_summary": "住客评论与酒店回复表达不同立场；多个运行误判可能涉及说话者混淆，也可能受住客开头肯定影响，尚未区分。",
+      "approved_recommendation": "先标明说话者边界，未来分别比较原文、角色标记和仅住客正文；不直接删除回复后认定问题已解决。"
+    },
+    {
+      "title": "输出格式与指令遵循",
+      "case_numbers": [
+        6
+      ],
+      "placement": "正文",
+      "approved_summary": "零样本表达了正确负面判断，却未遵守数字输出要求；语义判断和接口合规性应分开讨论。",
+      "approved_recommendation": "未来验证限定0/1完整序列的解码约束，同时检查非法率、分类效果和延迟；保留原严格评分。"
+    },
+    {
+      "title": "数据与标注歧义",
+      "case_numbers": [
+        7
+      ],
+      "placement": "局限或附录",
+      "approved_summary": "本人负面判断与源正面标签存在分歧，多方面取舍可能涉及评价标准差异；不能确认原标签错误，也不将源标签下错误全归因于模型。",
+      "approved_recommendation": "明确标准并独立复核；保留歧义与原标签，复核版如有需要单独报告。"
+    },
+    {
+      "title": "训练随机性与稳定性",
+      "case_numbers": [
+        9
+      ],
+      "placement": "局限或附录",
+      "approved_summary": "同配置只有MacBERT种子44误判，反映个别预测随训练运行变化；单例不足以认定整体不稳定。",
+      "approved_recommendation": "保留全部种子，报告均值、SD和逐样本分歧；不按测试挑种子，集成需另验效果及成本。"
+    }
+  ],
+  "proposed_report_scope": "Nine previously student-confirmed examples; five descriptive body groups, two appendix/limitation examples. AI-assisted category distributions remain exploratory, not human-adjudicated prevalence.",
+  "source_labels_unchanged": true,
+  "new_manual_approval_claimed": false,
+  "input_sha256": {
+    "results/error-review/review-formal-20261028-01/samples-all402.jsonl": "452a574eef7e0249df1fdcd3d42307be0383b790267519bb69449fc994759b3c",
+    "results/error-review/review-formal-20261028-01/needs-review.jsonl": "be6db08d5d87beed5899337f6ae49ba5349648b12fe0cc7b8664bd8dc74b3821",
+    "reports/analysis/case-confirmed-20261029-01/status.json": "3b1dc8233cdaf3f98cb51b38b5bdce295c156d9fd233521fed20b0c1bf52a008",
+    "configs/analysis/case-limitations-20261029-v2.json": "9396febd30f9f97bf31e15742c675626fbcac0e80e69566f392b75a3ce1dd366"
+  }
+}

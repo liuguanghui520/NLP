@@ -1,0 +1,23 @@
+{
+  "type": "demo_video",
+  "filename": "20245726_刘广徽_中文评论情感分析_演示.mp4",
+  "share_url": "https://pan.baidu.com/s/12nyNQJliIKabozmBmfuR-g?pwd=9vxp",
+  "extraction_code": "9vxp",
+  "uploader": "student",
+  "bytes": 15398737,
+  "duration_seconds": 111.317,
+  "resolution": [
+    1728,
+    1080
+  ],
+  "sha256_local_file": "fe1a719a78b8112223bdad8bb78ff86ca707a07a6cc333bfd9cb56438a482daa",
+  "has_audio_track": true,
+  "status": "student_confirmed_share_accessible_local_file_verified",
+  "receipt_directory": "reports/demo/video-delivery-20261029-01",
+  "video_in_repository": false,
+  "share_expiry": null,
+  "share_access_confirmed": true,
+  "share_access_confirmation_source": "student",
+  "share_confirmation_record": "reports/demo/video-delivery-20261029-02/student-confirmation.json",
+  "ai_independent_download_verified": false
+}

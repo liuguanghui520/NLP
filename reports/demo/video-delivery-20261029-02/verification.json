@@ -1,0 +1,22 @@
+{
+  "updated_at": "2026-10-29T13:16:09.804185+08:00",
+  "status": "student_confirmation_recorded",
+  "links_checked": 103,
+  "changed_files_sha256": {
+    "README.md": "9b1e63232e70f5b5bc2d50b2bc23250ccb2942dc15b464e30cca9c38849732e9",
+    "docs/README.md": "0230dcb81b1471e8603324ba71a649a724d03286e578a4255775fff34a6a3980",
+    "docs/demo/README.md": "8fb1824b5b3703286a14bd9f25f0462639f73b0d07a3472f51cc67544346f809",
+    "docs/demo/录屏交付记录-20261029.md": "9124d8aa9d458d911a5395881f36941d80025c3b27c26f9180c6487613388747",
+    "docs/最终交付清单.md": "cd9e342866ad6ee7548573fec4fd2b4f19541d7774f2644d759b0e4fcfcbcd0b",
+    "docs/报告初稿/20261029-v5/项目报告.md": "57ff397ba41a19634b6ba6db5985784459f57115a3cd7f08a0a34c573d7a4061",
+    "docs/报告初稿/20261029-v5/README.md": "ff8d2577e196b47d8244091f9d4696a0a444b3de7b501af99da0d39f5c33fb81",
+    "docs/报告初稿/20261029-v5/缺失信息清单.md": "2b4111284e2404e5b226f56423418f75b82b975c4666311975d3542c158f428d",
+    "docs/报告初稿/20261029-v5/修订记录.md": "19d4d598557561732b526402043f9ea0baea2bab2031ac2cf604919e919a619d",
+    "docs/报告初稿/20261029-v5/manifest.json": "52d4b2ae8556f6fe7a4b1e05d191f33a02641e36f2abbbf151f9af444f1bce69",
+    "artifacts/demo-video.json": "92c0d58ca27ca069a38f821da520ab1fe1eb6eb7f9385d7ef62f312fc2b25b9d"
+  },
+  "previous_files_preserved": true,
+  "original_share_check_unchanged": true,
+  "training": false,
+  "inference": false
+}

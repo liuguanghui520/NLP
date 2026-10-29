@@ -1,0 +1,67 @@
+{
+  "created_at": "2026-10-29T13:01:59.307809+08:00",
+  "revision": "20261029-v5",
+  "base_version": "20261029-v4",
+  "status": "Video link and leader ID added; Markdown draft, not final PDF",
+  "git_commit_at_creation": "106cdbed8db84057dba6b9c980d3a2f914856dd0",
+  "validation": {
+    "report_sections_1_to_6_unchanged": false,
+    "other_two_contribution_forms_unchanged": false,
+    "leader_student_id": "20245726",
+    "video_duration_seconds": 111.317,
+    "video_under_120_seconds": true,
+    "local_video_sha256_verified": true,
+    "video_copied_to_repository": false,
+    "audio_track_present": true,
+    "audio_listening": false,
+    "visual_content_review": false,
+    "external_share_access_verified": false,
+    "local_links_checked": 72,
+    "share_access_confirmed_by_student": true,
+    "ai_independent_share_access_verified": false,
+    "external_share_access_verified_scope": "AI independent verification only; student confirmed access in later update",
+    "numeric_tokens_unchanged_by_wording_edit": true,
+    "contribution_changes": "Wording only; no responsibilities, shares, hours or signatures filled",
+    "local_links_checked_after_wording_edit": 121
+  },
+  "input_sha256": {
+    "docs/报告初稿/20261029-v4/manifest.json": "2da38055010ed192996668e41b9576a1137ccdfdffab228ae11ea6879ca10b3d",
+    "docs/报告初稿/20261029-v4/项目报告.md": "10a9f78f6370c1363c5c2a2a5d52d6e541efe99431ae3ee421fe5dedc4d009d0",
+    "reports/demo/video-delivery-20261029-01/local-video.json": "c0a1a3cbde5fcb1fd3d0df51bbf0e16d268fc0dbfb80dfcff851577493893e14",
+    "reports/demo/video-delivery-20261029-01/share-check.json": "eab6aa3de54a64a068acea1933529f74d83a6a85d8ba1d7a96494493be1cee76",
+    "artifacts/demo-video.json": "92c0d58ca27ca069a38f821da520ab1fe1eb6eb7f9385d7ef62f312fc2b25b9d",
+    "reports/demo/video-delivery-20261029-02/student-confirmation.json": "5f3ef6c810dcfb3b515106e249f8103ed0835bb06c7514de798de566ccaada18"
+  },
+  "output_sha256": {
+    "README.md": "3aa746cd90dff42302bcdafc7ddc3f85aea932f2de6aa6e5cc70ebfd4ef58421",
+    "token用量核查.json": "fd2abacca63a4d6dadda259c47324b3b463ab5949b0ce37819335ce24ed81fb4",
+    "修订记录.md": "dd2d8d6c2abbee842a03b4d9f94fd1cb2fad127c854ba4bc2205055b2f6b0078",
+    "缺失信息清单.md": "45be2e999a9caacf98b9030b523819019b5639e0e6e4cb033a2cf2d5ec2fabaf",
+    "评估补充数据.json": "dc5fde4876c6d7294b5e87bbbaf6af928008a40678c433881e394bb74804fba1",
+    "贡献声明_刘广徽_初稿.md": "65a2c2a2053df21b5931a6fd67aae046addfd6555ed375e90908182b902c71fe",
+    "贡献声明_李嘉谊林_初稿.md": "0575e30bd2951dfe0f341b1fcaac8c96116c1b6f7ec20db066b53752c8e921a6",
+    "贡献声明_杨函齐_初稿.md": "d5d2448a0dafbbfd510c410cfef0a2aee728eea10fb1f3a7b94cb15510d7d058",
+    "项目报告.md": "67cd81ff224706a1e77e12e7a070501c17fedaeb7c4e71f5558a20a86c519013",
+    "assets/系统架构.svg": "0cd389927bb1fd747ada8a468862b2937005481f636dc6aef38f002f270f25c3",
+    "templates/贡献声明表模板.md": "12ae99ddf09f42356517a8822df89869d12a2ada21e388da3f09682922fc939c",
+    "templates/项目报告模板.md": "2cf2ac69f2f2aa99780467951a20b62580e91a9cf6d19934f147d27f321632e7"
+  },
+  "AI_assistance": "Read local video metadata and hash; attempted share-page verification; registered student-provided link, extraction code and student ID. No video editing, uploading or new model execution.",
+  "training": false,
+  "model_loading": false,
+  "inference": false,
+  "pdf_generated": false,
+  "updated_at": "2026-10-29T13:22:44.909544+08:00",
+  "share_confirmation": {
+    "status": "student_confirmed_accessible",
+    "record": "reports/demo/video-delivery-20261029-02/student-confirmation.json",
+    "ai_independently_downloaded": false
+  },
+  "previous_manifest_snapshot": "reports/document-checks/direct-wording-20261029-01/previous-files/docs/报告初稿/20261029-v5/manifest.json",
+  "wording_update": {
+    "scope": "Current report, contribution drafts and delivery prose only; original templates and historical evidence unchanged",
+    "request": "Remove first-person prefixes; state facts directly",
+    "provenance": "Human pilot labels and AI-assisted labels remain distinguished; signatures remain pending",
+    "record": "reports/document-checks/direct-wording-20261029-01/verification.json"
+  }
+}

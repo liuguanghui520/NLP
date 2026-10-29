@@ -1,0 +1,172 @@
+{
+  "rules": {
+    "mobile": "(?<![0-9])(?:\\+?86[- ]?)?1[3-9][0-9]{9}(?![0-9])",
+    "landline": "(?<!\\d)0\\d{2,3}[-－ ]?\\d{7,8}(?!\\d)",
+    "email": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}",
+    "identity18_candidate": "(?<![0-9A-Za-z])[1-9]\\d{5}(?:19|20)\\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\\d|3[01])\\d{3}[0-9Xx](?![0-9A-Za-z])",
+    "explicit_account": "(?:微信|weixin|wechat|QQ|身份证|护照)[号碼码]?\\s*[:：=]\\s*[A-Za-z0-9_-]{5,}"
+  },
+  "scope": "All 7763 retained comments: raw_text; model-visible membership recorded. Excluded source rows, Git history and all derived copies not scanned by this step.",
+  "limitations": [
+    "Pattern detection cannot certify absence of names, addresses, obfuscated identifiers or re-identification.",
+    "Numbers are candidates; context review distinguishes contact numbers, public business numbers and numeric-entity artifacts.",
+    "No evaluated text, labels, split IDs or predictions modified.",
+    "No original contact value, linked name, address or raw context is saved in findings."
+  ],
+  "input_sha256": {
+    "data/processed/v1-20261023/train.jsonl": "a37fa5d7139c68fa2fc39bbcff0a9ae3d2beb3e7268fbd25a646b4aa65a3e22f",
+    "data/processed/v1-20261023/validation.jsonl": "eae1c55c43f7121c4e24b4fb4634e0ea3406cbd99fe9cd05ca9151c253c7fe64",
+    "data/processed/v1-20261023/test.jsonl": "3df19229abb59d1868a7735b98f42fd799883c22ec37aa8a1760cc2266fb1996"
+  },
+  "splits": {
+    "train": {
+      "scanned_comments": 6210,
+      "candidate_comments": 4,
+      "candidate_matches": 4,
+      "matches_by_rule": {
+        "explicit_account": 1,
+        "landline": 3
+      }
+    },
+    "validation": {
+      "scanned_comments": 776,
+      "candidate_comments": 2,
+      "candidate_matches": 2,
+      "matches_by_rule": {
+        "mobile": 1,
+        "landline": 1
+      }
+    },
+    "test": {
+      "scanned_comments": 777,
+      "candidate_comments": 3,
+      "candidate_matches": 5,
+      "matches_by_rule": {
+        "mobile": 5
+      }
+    }
+  },
+  "findings": [
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:358",
+      "source_row": 358,
+      "split": "train",
+      "rule": "explicit_account",
+      "raw_start": 259,
+      "raw_end": 271,
+      "masked_match": "[联系方式候选已隐藏]",
+      "matched_span_in_model_visible_prefix": true,
+      "review_status": "candidate_only"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:2838",
+      "source_row": 2838,
+      "split": "train",
+      "rule": "landline",
+      "raw_start": 497,
+      "raw_end": 510,
+      "masked_match": "[联系方式候选已隐藏]",
+      "matched_span_in_model_visible_prefix": true,
+      "review_status": "candidate_only"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3155",
+      "source_row": 3155,
+      "split": "train",
+      "rule": "landline",
+      "raw_start": 135,
+      "raw_end": 147,
+      "masked_match": "[联系方式候选已隐藏]",
+      "matched_span_in_model_visible_prefix": true,
+      "review_status": "candidate_only"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7466",
+      "source_row": 7466,
+      "split": "train",
+      "rule": "landline",
+      "raw_start": 110,
+      "raw_end": 122,
+      "masked_match": "[联系方式候选已隐藏]",
+      "matched_span_in_model_visible_prefix": true,
+      "review_status": "candidate_only"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3099",
+      "source_row": 3099,
+      "split": "validation",
+      "rule": "mobile",
+      "raw_start": 130,
+      "raw_end": 141,
+      "masked_match": "[联系方式候选已隐藏]",
+      "matched_span_in_model_visible_prefix": true,
+      "review_status": "candidate_only"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4717",
+      "source_row": 4717,
+      "split": "validation",
+      "rule": "landline",
+      "raw_start": 450,
+      "raw_end": 462,
+      "masked_match": "[联系方式候选已隐藏]",
+      "matched_span_in_model_visible_prefix": true,
+      "review_status": "candidate_only"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3097",
+      "source_row": 3097,
+      "split": "test",
+      "rule": "mobile",
+      "raw_start": 98,
+      "raw_end": 109,
+      "masked_match": "[联系方式候选已隐藏]",
+      "matched_span_in_model_visible_prefix": true,
+      "review_status": "candidate_only"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4521",
+      "source_row": 4521,
+      "split": "test",
+      "rule": "mobile",
+      "raw_start": 235,
+      "raw_end": 246,
+      "masked_match": "[联系方式候选已隐藏]",
+      "matched_span_in_model_visible_prefix": true,
+      "review_status": "candidate_only"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5041",
+      "source_row": 5041,
+      "split": "test",
+      "rule": "mobile",
+      "raw_start": 358,
+      "raw_end": 369,
+      "masked_match": "[联系方式候选已隐藏]",
+      "matched_span_in_model_visible_prefix": true,
+      "review_status": "candidate_only"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5041",
+      "source_row": 5041,
+      "split": "test",
+      "rule": "mobile",
+      "raw_start": 990,
+      "raw_end": 1001,
+      "masked_match": "[联系方式候选已隐藏]",
+      "matched_span_in_model_visible_prefix": true,
+      "review_status": "candidate_only"
+    },
+    {
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5041",
+      "source_row": 5041,
+      "split": "test",
+      "rule": "mobile",
+      "raw_start": 1130,
+      "raw_end": 1141,
+      "masked_match": "[联系方式候选已隐藏]",
+      "matched_span_in_model_visible_prefix": false,
+      "review_status": "candidate_only"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "scope": "Demonstration only; cases selected using already reviewed test examples; not a new benchmark",
+  "cases": [
+    {
+      "id": "normal-positive",
+      "title": "普通样例：明确正面",
+      "comment": "房间干净，服务热情，下次还会入住。",
+      "expected_label": 1,
+      "source": "constructed_demo_not_benchmark",
+      "note": "人工构造的操作演示输入，不属于正式测试成绩"
+    },
+    {
+      "id": "case-6353",
+      "title": "难例：主要投诉与局部肯定",
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6353",
+      "comment": "我是11月份去住的，当时见网上评价不错。但到了才发现，总体感觉比较脏，11月份的北方天气了，房间内竟然还有苍蝇！下午打死两只，第二天早上，发现房间内竟然还有一只。更可怕的是，晚上睡前打死一只蚊子，到睡时，还有一只一直在骚扰我，一直到半夜才迷迷糊糊睡着，也不知那蚊子到底咬我多少血。补充点评2007年11月20日：房间内有难闻的味道！但前台服务员的服务还是不错的。",
+      "expected_label": 0,
+      "source": "frozen_test_example_previously_student_reviewed",
+      "note": "已确认案例2；用于解释混合评价。历史TF-IDF误判，不能预先替当前预测填答案"
+    },
+    {
+      "id": "case-6197",
+      "title": "失败案例：住客与酒店回复",
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6197",
+      "comment": "酒店服务态度还不错，就是感觉地点比较偏，周围没有什么吃饭的地方。早餐感觉也没有以前好了。宾馆反馈2008年4月5日：酒店离市中心,只有三分钟车程,周围有很多吃饭的地方,欢迎到总台咨询.早餐的品种已调整",
+      "expected_label": 0,
+      "source": "frozen_test_example_previously_student_reviewed",
+      "note": "已确认案例4；历史多个方案误判，用于展示局限"
+    },
+    {
+      "id": "case-5546",
+      "title": "对比案例：明确负面",
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5546",
+      "comment": "很差，相当差，搞得我们的外国客人都发大火了！！！服务不符合四星级的酒店标准！",
+      "expected_label": 0,
+      "source": "frozen_test_example_previously_student_reviewed",
+      "note": "已确认案例1；历史零样本误判，少样本和LoRA修正本例"
+    }
+  ]
+}

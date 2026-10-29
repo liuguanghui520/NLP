@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-10-29T13:00:23.464750+08:00",
+  "filename": "20245726_刘广徽_中文评论情感分析_演示.mp4",
+  "share_url": "https://pan.baidu.com/s/12nyNQJliIKabozmBmfuR-g?pwd=9vxp",
+  "extraction_code": "9vxp",
+  "provided_by": "student in current conversation",
+  "upload_reported_by_student": true,
+  "external_listing_verified": false,
+  "online_playback_verified": false,
+  "download_verified": false,
+  "cloud_file_sha256_verified": false,
+  "valid_until": null,
+  "attempts": [
+    {
+      "tool": "in-app browser create tab",
+      "result": "timed out after42 seconds; runtime reset"
+    },
+    {
+      "tool": "in-app browser retrieve tab",
+      "result": "timed out after36 seconds; runtime reset"
+    },
+    {
+      "tool": "web page read",
+      "result": "non-retryable open failure"
+    }
+  ],
+  "interpretation": "Access verification incomplete; do not conclude link invalid or remote file identical from these failures."
+}

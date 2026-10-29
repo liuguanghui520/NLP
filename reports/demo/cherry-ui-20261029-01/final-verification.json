@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-29T11:40:42.753682+08:00",
+  "status": "passed",
+  "client": "Cherry Studio ordinary chat",
+  "same_frozen_input_chars": 181,
+  "outputs": [
+    "1",
+    "0",
+    "1"
+  ],
+  "local_doc_links_checked": 13,
+  "previous_material_snapshot_hashes_verified": true,
+  "evidence_files_sha256": {
+    "docs/demo/CherryStudio连接与测试.md": "767c1b63d32b18d70e6658291c17bc9351bf58c6ac22f04d4742ad829da61dc1",
+    "docs/demo/README.md": "9bfdda4a82a1791e0a9e3bb23cf1715c919dbe83f75e3b5110eadba343290161",
+    "docs/demo/两分钟演示讲稿.md": "2fa5126d60b13beadb3be60c4e9a86ed75a74ae78f24ede1d0a4a48f7367607a",
+    "docs/demo/测试记录-20261029.md": "7286a85bf54510d9a7e92f90d87dc4259bd14fd341f91ad95f675e517a54ff69",
+    "reports/demo/cherry-ui-20261029-01/README.md": "3acf98e94346a521bec567df9927d90ac2629ed936fa3a68ada9687fd19186d2",
+    "reports/demo/cherry-ui-20261029-01/status.json": "8615598cf219bb8d855b3465dbbf3332bf07e2a9530aa75f81636eb2f0243071",
+    "reports/demo/cherry-ui-20261029-01/requests.jsonl": "88b16bb0ad1240bfcde9442b953805b798b13ac1ccdf6cea9d2526ac23dd9df3",
+    "reports/demo/cherry-ui-20261029-01/Cherry同题模型对比.jpg": "4959a5817f849fea9f712c1a5a8c7deab7d688bb60f056e94271529329d3e8d2"
+  },
+  "software_tests": "49 passed in earlier preparation; no inference-code changes in this client-only continuation",
+  "training": false,
+  "new_machine_reproduction": false,
+  "final_recording": "not_created"
+}

@@ -1,0 +1,125 @@
+{
+  "revision": "20261029-v6",
+  "base_version": "20261029-v5",
+  "date": "2026-10-29",
+  "task_sheet_sha256": "35f572b1a8130d22715ed988b0ea11ecb2d25ce1b02a1de5fe6d0291246ddbb2",
+  "training": false,
+  "inference": false,
+  "frozen_results_modified": false,
+  "members": [
+    {
+      "name": "刘广徽",
+      "id": "20245726",
+      "share": 40
+    },
+    {
+      "name": "杨函齐",
+      "id": "20246005",
+      "share": 30
+    },
+    {
+      "name": "李嘉谊林",
+      "id": "20245816",
+      "share": 30
+    }
+  ],
+  "ai_assistance": "Reorganized existing student-approved findings against task requirements, edited documentation and packaging, validated original numbers; no new experimental design or result conclusions substituted for student review.",
+  "status": "Task-sheet aligned report and candidate delivery; personal signoff and real-model new-machine acceptance pending",
+  "verification_record": "reports\\document-checks\\course-task-v6-20261029-01\\verification.json",
+  "pdf": {
+    "file": "output/pdf/课程项目报告-v6.pdf",
+    "body_pages": 12,
+    "appendix_pages": 8,
+    "visual_review": "passed"
+  },
+  "validation": {
+    "date": "2026-10-29",
+    "status": "passed_for_report_preparation_and_offline_delivery",
+    "chapters": [
+      "①",
+      "②",
+      "③",
+      "④",
+      "⑤",
+      "⑥",
+      "⑦",
+      "⑧"
+    ],
+    "principles_with_own_evidence": 3,
+    "cost_latency_in_chapter": 7,
+    "members": [
+      {
+        "id": "20245726",
+        "name": "刘广徽",
+        "share": 40
+      },
+      {
+        "id": "20246005",
+        "name": "杨函齐",
+        "share": 30
+      },
+      {
+        "id": "20245816",
+        "name": "李嘉谊林",
+        "share": 30
+      }
+    ],
+    "main_category_seed_tables_unchanged": true,
+    "all_47_frozen_inputs_unchanged": true,
+    "local_markdown_links_checked": 63,
+    "broken_links": [],
+    "abstract_characters": 275,
+    "software_tests": 53,
+    "pdf": {
+      "body_pages": 12,
+      "total_pages": 20,
+      "body_page_shrink_factors": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1.0079617402551346,
+        "6": 1.0457155970001353,
+        "7": 1.1033695946791091,
+        "8": 1.0227983436075556,
+        "9": 1,
+        "10": 1,
+        "11": 1.1102079859942886,
+        "12": 1
+      },
+      "minimum_effective_body_font_pt": 9.187467689547383,
+      "visual_review": "passed",
+      "reviewed_rendered_pages": 20,
+      "figures_and_tables_checked": true,
+      "math_font_glyphs_fixed": true,
+      "appendix_pages": 8,
+      "pdf_sha256": "e249a8bde7d100abaa676eee8fab30738744ffaf1398c694521cb06024dfa915"
+    },
+    "downloaded_input_count": 47,
+    "audited_runs": 16,
+    "formal_test_runs": 11,
+    "maximum_metric_difference": 0,
+    "extracted_zip_entry_execution": "passed",
+    "network_restricted_first_failure_retained": true,
+    "training": false,
+    "inference": false,
+    "new_machine_real_model_acceptance": "pending",
+    "teacher_acceptance": "not_recorded",
+    "personal_signatures": "pending"
+  },
+  "output_sha256": {
+    "PDF排版稿.md": "2599c70bf018d09003dec5e5b3942ed59a82bb7444da44edbcb00a85f62338a2",
+    "README.md": "00cd79bfb003179a9df35f1ef2dfb6cf997089ec3d6b474e02e15e5cbc6ae6cb",
+    "token用量核查.json": "fd2abacca63a4d6dadda259c47324b3b463ab5949b0ce37819335ce24ed81fb4",
+    "修订记录.md": "0263f8e74445ae432fdd9fab307048cc0a48f4d918c06e35253aa84a64b2b746",
+    "缺失信息清单.md": "bb65612cb62cae4549e261ca4837b038e1010e2ca1dd495b358b488fe86424a2",
+    "评估补充数据.json": "dc5fde4876c6d7294b5e87bbbaf6af928008a40678c433881e394bb74804fba1",
+    "贡献声明_20245726_刘广徽.md": "6873e0dea6e26a16ac2c1c9e5ff0f4557804345474707ff85fbb624e6dafb076",
+    "贡献声明_20245816_李嘉谊林.md": "7a9fef0f8a9ba061fe7d4867b58fefdcdd8a69631799dbe3a7aaf3d383fe6027",
+    "贡献声明_20246005_杨函齐.md": "c202877245c7bc240049085e83b4aecb44ecee4470e550321b25b119c69d6c94",
+    "项目报告.md": "947bfc73abbb071e1f87bb3afdf6de3d0d4c130e516a6d6f6502e879ff4dfe3a",
+    "项目摘要.md": "0af0b9b0959aaf65624dc4c8987c7c99f7b069271f4a757bb62d85645277cd48",
+    "assets/系统架构.png": "6be8d335fd4a0d84352e94e6dbf57f17282f42677f11ca1af6349c15a58a68b8",
+    "assets/系统架构.svg": "0cd389927bb1fd747ada8a468862b2937005481f636dc6aef38f002f270f25c3"
+  }
+}
