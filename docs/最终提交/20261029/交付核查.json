@@ -20,7 +20,7 @@
   "prediction_engine_unchanged": true,
   "acceptance_strengthened": "equal metrics and zero sample differences both required",
   "unverified_compatibility_shipped": false,
-  "release_status": "prepared",
+  "release_status": "published_verified",
   "release_url": "https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-04",
   "source_scope": "formal original environment only",
   "compute_stack_and_greedy_reason_in_report_and_readme": true,

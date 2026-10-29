@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "created_asset_ids": [
+    688512224,
+    688512337
+  ],
+  "tag": "course-submission-20261029-04",
+  "target_commit": "6793aeaf3a20bb40845e9989b7b0f56627669873",
+  "release_id": 427845230,
+  "release_url": "https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-04",
+  "published": true,
+  "assets": [
+    {
+      "name": "20245726_刘广徽_中文评论情感分析.zip",
+      "release_asset_name": "20245726_liuguanghui_chinese_sentiment.zip",
+      "id": 688512224,
+      "bytes": 1440947,
+      "sha256": "36b3b2a79b34ae2ae2233207d9a65ec52b4fb86569f26c3745de42fec7346e3e",
+      "verified_by": "github_server_sha256",
+      "url": "https://github.com/liuguanghui520/NLP/releases/download/course-submission-20261029-04/20245726_liuguanghui_chinese_sentiment.zip",
+      "anonymous_full_download_sha256_verified": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "release_asset_name": "SHA256SUMS",
+      "id": 688512337,
+      "bytes": 115,
+      "sha256": "9ec2b1e3b3c4a00c25d674ced2cc707a2b092cda8d244591048e50bbbd52f8dd",
+      "verified_by": "github_server_sha256",
+      "url": "https://github.com/liuguanghui520/NLP/releases/download/course-submission-20261029-04/SHA256SUMS",
+      "anonymous_full_download_sha256_verified": true
+    }
+  ],
+  "original_trained_assets_unchanged": true,
+  "original_trained_asset_count": 12,
+  "training": false,
+  "inference": false
+}
