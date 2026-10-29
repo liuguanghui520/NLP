@@ -26,7 +26,7 @@
   "abstract_characters": 300,
   "real_models_on_teammate_machine": "blocked_pending_driver_update",
   "real_models_on_original_machine": "passed_11_runs_777_each",
-  "release_status": "repair_prepared_not_yet_published",
+  "release_status": "published_server_and_anonymous_download_sha256_verified",
   "release_url": "https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-02",
   "training": false,
   "inference_verification": true,
@@ -35,5 +35,8 @@
   "pdf_extracted_abstract_matches_standalone": true,
   "original_machine_max_metric_difference": 0.0,
   "original_machine_prediction_difference_count": 0,
-  "original_machine_evidence": "results\\reproduction\\repaired-models-20261029-01"
+  "original_machine_evidence": "results\\reproduction\\repaired-models-20261029-01",
+  "release_zip_name": "20245726_liuguanghui_chinese_sentiment.zip",
+  "release_zip_sha256_matches_main": true,
+  "original_trained_assets_unchanged": true
 }

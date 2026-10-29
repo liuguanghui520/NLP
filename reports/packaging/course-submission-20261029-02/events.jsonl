@@ -1,0 +1,1 @@
+{"event": "network_read_retry", "method": "GET", "attempt": 1, "error_type": "URLError"}

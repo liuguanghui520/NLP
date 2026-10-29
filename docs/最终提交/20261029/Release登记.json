@@ -1,34 +1,33 @@
 {
   "status": "completed",
   "created_asset_ids": [
-    687699503,
-    687699614
+    688217945,
+    688218155
   ],
-  "tag": "course-submission-20261029-01",
-  "target_commit": "312de4189a0a523cb67c822e79bb4a7c43d2e763",
-  "release_id": 427559749,
-  "release_url": "https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-01",
-  "unused_empty_draft_removed": 427558053,
+  "tag": "course-submission-20261029-02",
+  "target_commit": "40404a69ceb97ec943307e4633f476a27a710bed",
+  "release_id": 427738162,
+  "release_url": "https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-02",
   "published": true,
   "assets": [
     {
       "name": "20245726_刘广徽_中文评论情感分析.zip",
       "release_asset_name": "20245726_liuguanghui_chinese_sentiment.zip",
-      "id": 687699503,
-      "bytes": 1429669,
-      "sha256": "8d5f6265d8063598e5c7116b9ea018f1cf422b3b00e590ed56b3a1767b4c7b8a",
+      "id": 688217945,
+      "bytes": 1438231,
+      "sha256": "f69acc2793a36fd8e1328110ad7efb9b404de93a20c7e494e0e6c3182d236922",
       "verified_by": "github_server_sha256",
-      "url": "https://github.com/liuguanghui520/NLP/releases/download/course-submission-20261029-01/20245726_liuguanghui_chinese_sentiment.zip",
+      "url": "https://github.com/liuguanghui520/NLP/releases/download/course-submission-20261029-02/20245726_liuguanghui_chinese_sentiment.zip",
       "anonymous_full_download_sha256_verified": true
     },
     {
       "name": "SHA256SUMS",
       "release_asset_name": "SHA256SUMS",
-      "id": 687699614,
+      "id": 688218155,
       "bytes": 115,
-      "sha256": "ce15a38d5b51e3d37bfbd4fa8cd5ce5219ad849a16772fab84f601fcc9ef91b9",
+      "sha256": "5bb776f41c2e483906f3b77e4b6f9009579a0b67e9c4b50bfc4be10c45de3a25",
       "verified_by": "github_server_sha256",
-      "url": "https://github.com/liuguanghui520/NLP/releases/download/course-submission-20261029-01/SHA256SUMS",
+      "url": "https://github.com/liuguanghui520/NLP/releases/download/course-submission-20261029-02/SHA256SUMS",
       "anonymous_full_download_sha256_verified": true
     }
   ],
