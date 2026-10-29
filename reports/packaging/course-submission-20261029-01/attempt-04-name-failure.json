@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "created_asset_ids": [
+    687699503,
+    687699614
+  ],
+  "error": "HTTPError: HTTP Error 422: Unprocessable Entity",
+  "tag": "course-submission-20261029-01",
+  "target_commit": "312de4189a0a523cb67c822e79bb4a7c43d2e763",
+  "release_id": 427559749,
+  "release_url": "https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-01"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "created_asset_ids": [],
+  "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>",
+  "tag": "course-submission-20261029-01",
+  "target_commit": "312de4189a0a523cb67c822e79bb4a7c43d2e763",
+  "release_id": 427558053,
+  "release_url": "https://github.com/liuguanghui520/NLP/releases/tag/untagged-d22e4e9a555adbb37c6a"
+}

@@ -44,5 +44,10 @@
   "pdf_sha256": "bcc2e57ce5e3469038f59dac7dfb3c1cf912b85cf6a9d143b384df6f64a929b2",
   "signature_representation": "typed names at explicit request; no handwriting simulated",
   "training": false,
-  "inference": false
+  "inference": false,
+  "release_status": "published_anonymous_download_verified",
+  "release_url": "https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-01",
+  "release_zip_name": "20245726_liuguanghui_chinese_sentiment.zip",
+  "release_zip_sha256_matches_main": true,
+  "original_trained_assets_unchanged": true
 }
