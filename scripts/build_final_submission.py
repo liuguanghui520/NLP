@@ -62,7 +62,7 @@ if __name__=='__main__':
         'model_entry':'python src/run.py --models --paths src/project/configs/reproduce-models.local.json',
         'data_and_weights_and_video_in_zip':False,'files':{},
         'new_machine_reproduction_status':'completed_reported_by_group_leader',
-        'signature_representation':'printed names and signature lines; no handwritten/electronic signature fabricated'}
+        'signature_representation':'typed member names entered at the group leader request; no simulated handwriting'}
     for path in sorted(stage.rglob('*')):
         if path.is_file():manifest['files'][path.relative_to(stage).as_posix()]=hashlib.sha256(path.read_bytes()).hexdigest()
     (stage/'src/提交清单.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

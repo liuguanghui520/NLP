@@ -1,9 +1,28 @@
 {
   "date": "2026-10-29",
   "status": "passed",
-  "archive": "deliverables\\20245726_刘广徽_中文评论情感分析.zip",
-  "archive_sha256": "a6c4b8e70af36aa8ad78d5f03e1b73d80b225051e31c799027ec9178f68d483c",
-  "archive_bytes": 1426293,
+  "abstract_characters": 300,
+  "report_abstract_characters": 300,
+  "abstracts_identical": true,
+  "statements": {
+    "贡献声明_20245726_刘广徽.md": {
+      "characters": 2239,
+      "sha256": "22dce19dfbf855c686e9991aa9f19e232591933337c613e4f0e5fe23b292d88e",
+      "signature_type": "typed_name_requested_by_group_leader"
+    },
+    "贡献声明_20246005_杨函齐.md": {
+      "characters": 2084,
+      "sha256": "084592c9867cce285a89ea9f90f30d426c8777dd8b7b269f2835404f60b18f01",
+      "signature_type": "typed_name_requested_by_group_leader"
+    },
+    "贡献声明_20245816_李嘉谊林.md": {
+      "characters": 2029,
+      "sha256": "ffeb6894f65afcb58b2e18eb6537274d7fe2e590c7073703d1c800c919c28ba4",
+      "signature_type": "typed_name_requested_by_group_leader"
+    }
+  },
+  "archive_sha256": "8d5f6265d8063598e5c7116b9ea018f1cf422b3b00e590ed56b3a1767b4c7b8a",
+  "archive_bytes": 1429669,
   "archive_root": [
     "README.md",
     "src",
@@ -13,23 +32,17 @@
     "贡献声明_20246005_杨函齐.md",
     "项目摘要.md"
   ],
-  "crc": "passed",
-  "image_assets": 7,
+  "matching_runtime_files_to_verified_package": 76,
+  "core_runtime_changed": false,
+  "frozen_47_inputs_unchanged": true,
+  "previous_software_checks": 56,
+  "previous_extracted_entry_execution": "passed",
+  "previous_main_metric_difference": 0,
   "pdf_body_pages": 12,
   "pdf_appendix_pages": 8,
-  "pdf_visual_review": "20 pages rendered and inspected; updated pages rechecked",
-  "software_tests_passed": 56,
-  "actual_extracted_zip_audit": "passed",
-  "matching_runtime_files": 76,
-  "downloaded_inputs": 47,
-  "audited_runs": 16,
-  "final_test_runs": 11,
-  "max_metric_difference": 0,
-  "frozen_47_inputs_unchanged": true,
-  "new_machine_status": "completed_reported_by_group_leader",
-  "model_inference_by_this_turn": false,
-  "training_by_this_turn": false,
-  "model_queue_coverage": 11,
-  "model_queue_validation": "software plan/aggregation/provenance tested; no new model prediction during this editing turn",
-  "signature_status": "printed declarations with blank signature lines; no signature fabricated"
+  "pdf_rendered_pages_reviewed": 20,
+  "pdf_sha256": "bcc2e57ce5e3469038f59dac7dfb3c1cf912b85cf6a9d143b384df6f64a929b2",
+  "signature_representation": "typed names at explicit request; no handwriting simulated",
+  "training": false,
+  "inference": false
 }

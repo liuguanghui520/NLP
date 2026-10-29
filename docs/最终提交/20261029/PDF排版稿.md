@@ -11,7 +11,7 @@
 
 ## 摘要
 
-针对中文酒店评论情感二分类，比较TF-IDF逻辑回归、MacBERT全参微调、Qwen3-1.7B零样本、四样本提示和普通LoRA。清洗后7763条数据按6210/776/777冻结划分，验证Macro-F1选优。五方案测试Macro-F1依次为86.10%、91.52%、62.56%、76.10%、91.12%。MacBERT与LoRA平均GPU延迟分别为6.13ms、59.06ms；LoRA增量权重12.87MB。九例揭示混合评价、多对象、多说话者及格式问题。MacBERT兼顾效果和效率，LoRA改善Qwen任务表现，传统基线适合轻量部署。
+针对酒店评论二分类，比较字符TF-IDF逻辑回归、MacBERT全参微调及Qwen3-1.7B零／四样本、普通LoRA。7763条数据按6210/776/777划分，以验证Macro-F1选优，训练路线重复3种子。五方案测试Macro-F1依次为86.10%、91.52%、62.56%、76.10%、91.12%，非法生成计错。MacBERT、LoRA平均GPU延迟6.13、59.06ms，LoRA增量权重12.87MB。九例归纳任务适应、混合评价、多对象、多说话者及格式错误。MacBERT兼顾效果与效率，LoRA比四样本提高15.01个百分点，TF-IDF适合轻量部署；保存日志与预测供复核。
 
 ## ① 问题定义与背景
 
@@ -451,6 +451,8 @@ MacBERT原论文的中文分类结果仅作研究背景；不同划分、指标�
 
 ### 7.4 资源获取、复现与演示
 
+唯一课程ZIP及对应README发布于[课程提交版Release](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-01)，与main中deliverables文件保持一致。
+
 源码随同一ZIP交付；数据、预测及日志按固定Git提交链接下载并验SHA256；9份训练产物见GitHub Release，Qwen基座另取。包内一条命令`python src/run.py`重算已有预测，新机复现已完成。视频111.317秒，网盘访问已人工确认；链接及提取码见首页，录屏不入ZIP。详见附录F。
 
 ### 7.5 许可、权限与隐私
@@ -470,6 +472,8 @@ Codex等AI用于文档查阅、参数候选和方案整理、工程编写调试�
 | 20245726 刘广徽（组长） | 技术选型与任务分析、初步方案；LoRA数据适配、10组参数训练及T01补种子；融合CLI和统一评估；对比、九例审核、报告、演示与提交统筹 | `src/legacy/lora/`、`configs/methods/lora-frozen.json`、`results/qwen17-comparisons/`；`src/cli.py`、`src/evaluation/`；`reports/analysis/case-confirmed-20261029-01/`、`conclusions-confirmed-20261029-01/`及本报告 | 40h／40% |
 | 20246005 杨函齐 | TF-IDF及MacBERT输入适配；4组特征／8组全参训练配置对照；各自三种子训练／拟合、检查点与日志、验证／测试结果交付 | `src/legacy/baselines/`、`results/bert-tfidf-20261028-140359/`；`results/evidence/formal-analysis-20261028-01/bert/`、`tfidf/`及对应预测 | 20h／30% |
 | 20245816 李嘉谊林 | 零／少样本输入适配；任务提示、固定示例与模板核查；验证／测试批量推理、原始输出、解析状态及日志交付 | `src/legacy/prompt/`、`configs/methods/prompt_registry.json`、`few_shot_examples.json`；零／少样本验证及测试的`results/predictions/`与运行索引 | 15h／30% |
+
+刘广徽负责冻结规则与路线融合，落实普通LoRA十组搜索、T01三种子、统一评估及九例解释；杨函齐负责四组TF-IDF和八组MacBERT参数对照、各路线三种子及训练证据；李嘉谊林负责固定零／四样本提示、示例与模板身份核查，以及验证和测试的原始生成记录。三项职责分别对应训练配置、逐样本预测、运行日志和结论证据。
 
 人工投入合计75小时，综合贡献结合职责和产出评价，不等同于工时占比。三份独立声明列明模块、证据、工时、AI辅助及队友贡献；与本表一致。
 

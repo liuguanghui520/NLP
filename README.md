@@ -94,6 +94,8 @@ GitHub自动核查配置位于.github/workflows/reproduction.yml，只运行无�
 
 ## 正式提交材料
 
+最新版ZIP见[课程提交版Release](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-01)；报告摘要和三份实名贡献声明已同步扩写，独立项目摘要300字。训练产物仍使用原固定Release链接。
+
 - [最终项目报告及三份贡献声明](docs/最终提交/20261029/README.md)，提交日期2026年10月29日。
 - [报告PDF](output/pdf/报告-20261029.pdf)：正文12页，附录8页；图片随PDF内嵌。
 - [课程提交ZIP](deliverables/20245726_刘广徽_中文评论情感分析.zip)：根目录仅报告、摘要、README、src及三份个人声明。权重、录屏、数据集不入包。

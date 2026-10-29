@@ -1,6 +1,6 @@
 # 中文评论情感分析：源码、报告与复现
 
-提交日期：2026年10月29日。组长刘广徽20245726；杨函齐20246005、李嘉谊林20245816。代码主分支为[main](https://github.com/liuguanghui520/NLP)。
+提交日期：2026年10月29日。组长刘广徽20245726；杨函齐20246005、李嘉谊林20245816。代码主分支为[main](https://github.com/liuguanghui520/NLP)。最新版提交ZIP见[课程提交版Release](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-01)。
 
 ## 1. 解压后的一条命令
 
@@ -104,5 +104,7 @@ src/
 - [已训练权重和适配器：GitHub Release](https://github.com/liuguanghui520/NLP/releases/tag/trained-artifacts-20261029-01)。资源链接与SHA256也保存在`src/project/artifacts/reproduction-downloads.json`。
 - [演示录屏：百度网盘](https://pan.baidu.com/s/12nyNQJliIKabozmBmfuR-g?pwd=9vxp)，提取码`9vxp`。文件`20245726_刘广徽_中文评论情感分析_演示.mp4`，111.317秒，Cherry Studio真实运行与难例对照。
 - [完整代码、原始预测、日志及图表](https://github.com/liuguanghui520/NLP)。main为正式协作入口，固定输入仍按历史提交和哈希锁定。
+
+报告摘要与独立项目摘要完全一致，均为300字，涵盖问题、实验协议、效果、成本及错误分析；三份贡献声明列明具体工作、核查步骤、40／20／15小时及对应姓名文字署名。
 
 新机复现已完成，完成信息由组长于2026年10月29日确认。再次复现时请保留实际机器、日期、命令、退出码、输出与指标差异。若教师或AI复现报错，保留首次失败记录，48小时内补交环境说明或修复，并以全新目录重验；不覆盖失败、不换数据、不挑选种子。
