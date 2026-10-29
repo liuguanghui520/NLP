@@ -1,6 +1,23 @@
 # 中文评论情感分析：源码、报告与复现
 
-提交日期：2026年10月29日。组长刘广徽20245726；杨函齐20246005、李嘉谊林20245816。代码主分支为[main](https://github.com/liuguanghui520/NLP)。本包为[复现修订版](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-02)，包含环境、下载及路径兼容修复；以包内`src/提交清单.json`的文件身份为准。[原课程提交版Release](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-01)保留原始发布记录。
+提交日期：2026年10月29日。组长刘广徽20245726；杨函齐20246005、李嘉谊林20245816。代码主分支为[main](https://github.com/liuguanghui520/NLP)。本包为[复现修订版](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-04)，包含环境、下载及路径兼容修复；以包内`src/提交清单.json`的文件身份为准。[原课程提交版Release](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-01)保留原始发布记录。
+
+## 正式复现的限制与验收边界
+
+| 项目 | 本提交版的具体要求或已验证范围 |
+|---|---|
+| 普通CPU核查 | Python3.11以上，可运行`python src/run.py`独立重算已有预测主表；不加载模型，不代表完成真实模型重预测 |
+| 完整真实模型复现 | 只推荐已经通过严格核查的原环境路径：WSL2 Ubuntu22.04.5、Python3.11.17、PyTorch2.14.1+cu130、Transformers5.8.0、PEFT0.18.1，以及158项冻结依赖和固定Factory commit |
+| 已验证硬件 | RTX4070 Laptop、8GB显存、16GiB宿主机内存；单卡串行、batch1。该配置是实际验证范围，不是已证明的最低配置，也不保证任意CPU／显卡可完成全部模型 |
+| 驱动与精度 | 需支持CUDA13运行时及GPU BF16；按预检实算确认。BERT用GPU FP32，Qwen用GPU BF16；不自动改CPU、FP16、量化或更小基座。系统安装Toolkit不能替代兼容驱动 |
+| 资源与网络 | 需取得原Qwen基座约4.08GB及9份训练产物ZIP合计约1.19GB，并另留解压、依赖安装和输出空间；具体文件以SHA256确认。提交ZIP不含这些大文件，首次下载需要网络 |
+| 软件与种子 | 同PyTorch版本或同种子均不能单独证明一致；须同时核查构建、完整依赖、模板、精度、数据和权重，并以实际预测验收 |
+| 尚未通过的兼容方案 | torch2.5.1／CUDA12.1的Qwen结果未达到原主结果一致标准；同PyTorch版本的CUDA12.6候选尚未完成严格验证。它们不进入正式推荐，也不写为复现成功；CPU部分模型或少量样本检查不能替代11次全量测试 |
+| 严格验收 | 11次运行各777条；对应种子及主表指标差不超过1e-12，逐样本原始输出和解析标签无差异，才记`passed`。指标相同但预测不同也不通过；不改原分数或参考预测迁就新环境 |
+
+**计算栈差异与贪心推理的影响。** Qwen采用贪心解码（`do_sample=False`）：每一步选择得分最高的token。即使模型权重、输入和随机种子相同，PyTorch、CUDA、cuDNN等计算栈的变化，也可能改变浮点运算顺序、精度与舍入，进而改变候选token得分。候选分数接近时，最高分token可能改变；自回归生成又会把该token作为后续输入，使后续输出、非法输出率及最终指标发生变化。固定种子控制随机数，不能消除这类浮点计算差异。因此，版本号或种子相同都不能替代实际全量验证，发现差异仍按未通过一致性验收处理。原理依据见[PyTorch数值精度说明](https://docs.pytorch.org/docs/main/notes/numerical_accuracy.html)。
+
+已有原机严格重预测证据为11次×777条、指标差0、逐样本输出差0。另一台机器的回传只完成已有预测核查，真实模型尝试因旧驱动在加载前停止；原机通过不替代教师或组员的新机验收。`completed_with_differences`表示运行完成但主结果未通过一致性验收，不能当作成功提交。
 
 ## 1. 解压后的一条命令
 
@@ -102,13 +119,13 @@ python src/run.py --models --paths src/project/configs/reproduce-models.local.js
 
 下载和损坏文件记录在`download-events.jsonl`；不完整或哈希错误的文件以`.failed-<唯一ID>`保留，绝不作为权重加载。训练产物必须通过整包SHA256、ZIP CRC及成员SHA256，再从临时目录完成解压。禁止把多次Range请求随意拼接后仅按文件大小验收。
 
-额外输出：`model-stdout.log`、`model-stderr.log`、`results/model-reproduction/metrics.json`、`prediction-differences.jsonl`和`status.json`。各模型目录`results/local/reproduced-.../`保存原始输出、777条预测、指标、配置、延迟与资源。逐种子与方案均值均对照冻结参考；`passed`表示完成且指标一致，`completed_with_differences`表示11次预测完整执行但指标不同；两层状态会保留同一状态和实际差值，返回1。`failed`表示流程失败，`interrupted`表示中断；错误信息说明具体原因，不与指标差异混淆。
+额外输出：`model-stdout.log`、`model-stderr.log`、`results/model-reproduction/metrics.json`、`prediction-differences.jsonl`和`status.json`。各模型目录`results/local/reproduced-.../`保存原始输出、777条预测、指标、配置、延迟与资源。逐种子与方案均值均对照冻结参考，逐样本原始输出和解析标签也须一致；`passed`表示两项均通过，`completed_with_differences`表示11次预测完整执行但指标不同；两层状态会保留同一状态和实际差值，返回1。`failed`表示流程失败，`interrupted`表示中断；错误信息说明具体原因，不与指标差异混淆。
 
 ## 4. 完整代码与依赖
 
 `src/project/src/`为统一CLI、模型接入、指标、分析、演示和三条原路线源码；`scripts/`为数据处理、训练及分析工具；`configs/`为冻结参数与路径示例；`tests/`为软件测试。上游框架、模型、数据均为外部依赖。
 
-在已安装依赖的模型环境中，可于`src/project/`运行`python -m unittest discover -s tests -v`。精简包保留可独立构造测试输入的工程检查；依赖整份历史错例／资源证据的检查和发布工具检查留在完整仓库，避免数据不入包却要求本地读取的矛盾。完整仓库本轮65项软件检查通过；这与模型效果及新机验收分别记录。
+在已安装依赖的模型环境中，可于`src/project/`运行`python -m unittest discover -s tests -v`。精简包保留可独立构造测试输入的工程检查；依赖整份历史错例／资源证据的检查和发布工具检查留在完整仓库，避免数据不入包却要求本地读取的矛盾。完整仓库本轮66项软件检查通过；这与模型效果及新机验收分别记录。
 
 默认模式仅标准库。完整图表的已测分析环境为Python3.13.9及`requirements.analysis.lock`，与WSL模型环境分开；不要混装或自动升级原依赖。若需要完整历史图表复算，取得[完整仓库](https://github.com/liuguanghui520/NLP)，按根README在冻结证据齐全时运行`python reproduce.py --analysis`；默认轻量入口不依赖绘图环境。
 
@@ -137,6 +154,6 @@ src/
 
 报告摘要与独立项目摘要完全一致，均为300字，涵盖问题、实验协议、效果、成本及错误分析；三份贡献声明列明具体工作、核查步骤、40／20／15小时及对应姓名文字署名。
 
-2026年10月29日回传证据表明：已有预测核查通过，11份测试各777条、指标最大差0；该组员机器的真实模型复现被旧驱动阻断，完成0/11次。早先“新机复现已完成”的汇报据此更正。当前修复版本补齐依赖、环境预检、Windows／WSL路径和文件复制兼容、下载重试及差异记录；组员按第3节修复环境后重跑完整命令，回传实际结果。
+验证状态：原机已完成11次真实模型预测，各777条，主指标与逐样本输出差异均为0。回传新机只完成已有预测核查；其模型流程因旧驱动在加载前停止，完成0/11次，不记作完整模型通过。教师／组员新机的实际环境、命令、退出码和结果差异须按本README留证。
 
 若教师或AI复现报错，保留首次失败记录，48小时内补交环境说明或修复，并以全新目录重验；不覆盖失败、不换数据、不挑选种子。原机验证与组员新机验证分别记录。

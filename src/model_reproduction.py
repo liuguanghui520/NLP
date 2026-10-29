@@ -111,6 +111,11 @@ def summarize(records,contract):
     return summary
 
 
+def reference_matches(maximum_metric_difference, prediction_difference_count):
+    """An equal aggregate score cannot conceal different sample predictions."""
+    return maximum_metric_difference <= 1e-12 and prediction_difference_count == 0
+
+
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--specification',type=Path,required=True)
@@ -160,12 +165,13 @@ def main(argv=None):
         differences=[abs(item[key]['difference']) for item in summary for key in ('macro_f1','accuracy','weighted_f1','invalid_rate')]
         differences.extend(abs(value) for item in completed for value in item['metric_differences'].values())
         maximum=max(differences)
-        save(output/'status.json',dict(status='passed' if maximum<=1e-12 else 'completed_with_differences',
+        matched=reference_matches(maximum,len(prediction_differences))
+        save(output/'status.json',dict(status='passed' if matched else 'completed_with_differences',
               model_loading=True,
               inference=True,training=False,run_count=len(completed),n_per_run=777,
               maximum_metric_difference=maximum,prediction_difference_count=len(prediction_differences),
               comparison='each seed and method mean; frozen reference is not overwritten'))
-        return 0 if maximum<=1e-12 else 1
+        return 0 if matched else 1
     except BaseException as error:
         save(output/'status.json',dict(status='interrupted' if isinstance(error,KeyboardInterrupt) else 'failed',
               error=str(error),completed=completed,active_run=active_run,

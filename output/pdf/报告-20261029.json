@@ -13,15 +13,12 @@
     "9": 1,
     "10": 1,
     "11": 1.1102079859942886,
-    "12": 1
+    "12": 1.0926098611676103
   },
   "minimum_effective_body_font_pt": 9.187467689547383,
   "visual_review": "passed",
-  "reviewed_pages": 20,
-  "detail_review_pages": [
-    1,
-    12,
-    20
+  "changed_pages_rendered_and_reviewed": [
+    12
   ],
-  "review_images": "tmp/pdfs/reproduction-repair-20261029"
+  "unchanged_layout_pages_previously_reviewed": 19
 }

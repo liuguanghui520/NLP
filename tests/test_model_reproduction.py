@@ -3,12 +3,17 @@ from pathlib import Path
 import unittest
 from unittest.mock import patch
 
-from src.model_reproduction import jobs, summarize
+from src.model_reproduction import jobs, summarize, reference_matches
 from src.common.io import load
 from src.adapters.inference import source_context
 
 
 class ModelReproductionTests(unittest.TestCase):
+    def test_equal_scores_cannot_hide_different_sample_predictions(self):
+        self.assertTrue(reference_matches(0,0))
+        self.assertFalse(reference_matches(0,1))
+        self.assertFalse(reference_matches(.001,0))
+
     def test_covers_all_methods_and_three_training_seeds(self):
         plan=jobs()
         self.assertEqual(len(plan),11)

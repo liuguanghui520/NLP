@@ -4,6 +4,10 @@
 
 **已完成离线复现与9个训练产物的公开发布。默认命令重算已有预测，不加载模型。真实模型新机复现和教师验收单独记录。** “48小时补交”是复现失败后的补救期限，不能代替资源和环境准备。
 
+## 正式复现边界
+
+完整模型复现只推荐已核验的原环境（WSL2、Python3.11.17、torch2.14.1+cu130、原冻结依赖、支持BF16的GPU）；实测RTX4070 Laptop 8GB及宿主机16GiB，不能视作通用最低配置。普通CPU的默认命令只独立重算已有预测。其他CUDA／PyTorch兼容尝试没有达到一致性要求，不作为正式推荐。主结果必须逐种子、主表及逐样本一致，不能靠放宽标准认定通过。Qwen为贪心推理，计算栈的浮点运算与舍入差异可能改变高分token及后续输出；固定种子不能消除该差异。具体限制见[提交包README](docs/最终提交/20261029/README.md)。
+
 ## 下载后，一条命令核查主结果
 
 安装Python 3.11及以上（已测3.13.9），取得本分支：
@@ -105,7 +109,7 @@ GitHub自动核查配置位于.github/workflows/reproduction.yml，只运行无�
 
 ## 正式提交材料
 
-最新版ZIP见[课程提交版Release](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-02)；报告摘要和三份实名贡献声明已同步扩写，独立项目摘要300字。训练产物仍使用原固定Release链接。
+最新版ZIP见[课程提交版Release](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-04)；报告摘要和三份实名贡献声明已同步扩写，独立项目摘要300字。训练产物仍使用原固定Release链接。
 
 报告、PDF与独立摘要使用同一份300字文本。GitHub Release镜像文件名为`20245726_liuguanghui_chinese_sentiment.zip`；内容及SHA256与下方中文命名的课程ZIP相同。下载镜像后按Release说明改为课程要求的中文名称提交。
 

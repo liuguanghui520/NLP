@@ -63,7 +63,7 @@ if __name__=='__main__':
 ''',encoding='utf-8')
     (stage/'src/一键复现.cmd').write_text('@echo off\r\npython "%~dp0run.py" %*\r\nexit /b %errorlevel%\r\n',encoding='utf-8')
     manifest={
-        'date':'2026-10-29','status':'submission_edition','edition':'reproduction-fix-20261029-01','entry':'python src/run.py',
+        'date':'2026-10-29','status':'submission_edition','edition':'reproduction-boundaries-20261029-01','entry':'python src/run.py',
         'model_entry':'python src/run.py --models --paths src/project/configs/reproduce-models.local.json',
         'data_and_weights_and_video_in_zip':False,'files':{},
         'new_machine_reproduction_status':'saved_prediction_audit_passed_real_models_blocked_on_returned_machine',

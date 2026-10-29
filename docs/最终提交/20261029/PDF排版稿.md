@@ -451,9 +451,13 @@ MacBERT原论文的中文分类结果仅作研究背景；不同划分、指标�
 
 ### 7.4 资源获取、复现与演示
 
-唯一课程ZIP及对应README发布于[课程提交版Release](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-01)，与main中deliverables文件保持一致。
+唯一课程ZIP及对应README发布于[课程提交版Release](https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-04)，与main中deliverables文件保持一致。
 
 源码随同一ZIP交付；数据、预测及日志按固定Git提交链接下载并验SHA256；9份训练产物见GitHub Release，Qwen基座另取。包内一条命令`python src/run.py`重算已有预测，新机已有预测重算通过；真实模型预测因驱动不兼容中止，修复后重新验收。视频111.317秒，网盘访问已人工确认；链接及提取码见首页，录屏不入ZIP。详见附录F。
+
+完整模型复现已验证于WSL2／Python3.11.17／torch2.14.1+cu130及冻结依赖，RTX4070 Laptop 8GB、宿主机16GiB；BERT GPU FP32、Qwen GPU BF16。此为实测配置，非已证明的最低配置。CPU可核查既有主表，不能据此声称完成模型重预测。其他PyTorch／CUDA组合未通过一致性验证，不列为正式环境。
+
+完整验收须11次各777条、指标差≤1e-12且逐样本输出无差异。Qwen采用贪心解码：计算栈的浮点运算与舍入差异可改变高分token，候选接近时会改变选择及后续生成；固定种子不能消除该差异。版本号相同不能替代全量验证，命令、资源和验收范围详见README。
 
 ### 7.5 许可、权限与隐私
 
