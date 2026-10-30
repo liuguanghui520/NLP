@@ -1,0 +1,46 @@
+{
+  "nvidia_smi": "NVIDIA GeForce RTX 4070 Laptop GPU, 621.01, 386 MiB, 8188 MiB\n",
+  "runtime": {
+    "python": "3.11.17",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "torch": "2.14.1+cu130",
+    "cuda_runtime": "13.0",
+    "cudnn": 92400,
+    "threads": 4,
+    "deterministic_algorithms": false,
+    "environment": {
+      "CUBLAS_WORKSPACE_CONFIG": null,
+      "NVIDIA_TF32_OVERRIDE": null,
+      "CUDA_VISIBLE_DEVICES": null,
+      "CUBLASLT_WORKSPACE_SIZE": null,
+      "PYTORCH_CUDA_ALLOC_CONF": null
+    },
+    "backend_flags": {
+      "matmul.allow_tf32": false,
+      "matmul.allow_fp16_reduced_precision_reduction": true,
+      "matmul.allow_bf16_reduced_precision_reduction": true,
+      "cudnn.benchmark": false,
+      "cudnn.deterministic": false,
+      "cudnn.allow_tf32": false,
+      "flash_sdp_enabled": true,
+      "mem_efficient_sdp_enabled": true,
+      "math_sdp_enabled": true,
+      "cudnn_sdp_enabled": true
+    },
+    "gpu": {
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "capability": [
+        8,
+        9
+      ],
+      "multiprocessors": 36,
+      "total_memory": 8585216000
+    },
+    "gpu_memory": {
+      "free_bytes": 7396655104,
+      "total_bytes": 8585216000,
+      "process_allocated_bytes": 0,
+      "process_reserved_bytes": 0
+    }
+  }
+}

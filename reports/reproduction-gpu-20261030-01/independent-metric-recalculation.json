@@ -1,0 +1,101 @@
+[
+  {
+    "run_id": "reproduced-tfidf-seed42",
+    "differences": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "weighted_f1": 0.0,
+      "invalid_rate": 0.0
+    }
+  },
+  {
+    "run_id": "reproduced-tfidf-seed43",
+    "differences": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "weighted_f1": 0.0,
+      "invalid_rate": 0.0
+    }
+  },
+  {
+    "run_id": "reproduced-tfidf-seed44",
+    "differences": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "weighted_f1": 0.0,
+      "invalid_rate": 0.0
+    }
+  },
+  {
+    "run_id": "reproduced-bert-seed42",
+    "differences": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "weighted_f1": 0.0,
+      "invalid_rate": 0.0
+    }
+  },
+  {
+    "run_id": "reproduced-bert-seed43",
+    "differences": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "weighted_f1": 0.0,
+      "invalid_rate": 0.0
+    }
+  },
+  {
+    "run_id": "reproduced-bert-seed44",
+    "differences": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "weighted_f1": 0.0,
+      "invalid_rate": 0.0
+    }
+  },
+  {
+    "run_id": "reproduced-qwen_lora-seed42",
+    "differences": {
+      "accuracy": -0.0012870012870012104,
+      "macro_f1": -0.0015739447546464502,
+      "weighted_f1": -0.0013222108348406314,
+      "invalid_rate": 0.0
+    }
+  },
+  {
+    "run_id": "reproduced-qwen_lora-seed43",
+    "differences": {
+      "accuracy": -0.002574002574002532,
+      "macro_f1": -0.0027606124451347025,
+      "weighted_f1": -0.0024815634703007072,
+      "invalid_rate": 0.0
+    }
+  },
+  {
+    "run_id": "reproduced-qwen_lora-seed44",
+    "differences": {
+      "accuracy": -0.0012870012870013214,
+      "macro_f1": -0.0013862853140881315,
+      "weighted_f1": -0.0012427675696973228,
+      "invalid_rate": 0.0
+    }
+  },
+  {
+    "run_id": "reproduced-qwen_zero_shot",
+    "differences": {
+      "accuracy": 0.020592020592020588,
+      "macro_f1": 0.01821295147023283,
+      "weighted_f1": 0.01678488990069571,
+      "invalid_rate": -0.015444015444015441
+    }
+  },
+  {
+    "run_id": "reproduced-qwen_few_shot",
+    "differences": {
+      "accuracy": -0.0012870012870012104,
+      "macro_f1": -0.0017752193639271052,
+      "weighted_f1": -0.0016147478652405178,
+      "invalid_rate": -0.001287001287001287
+    }
+  }
+]

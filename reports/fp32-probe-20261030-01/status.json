@@ -1,0 +1,11 @@
+{
+  "status": "interrupted_for_memory_cleanup_retry",
+  "precision": "float32",
+  "split": "validation",
+  "training": false,
+  "formal_results_modified": false,
+  "cpu_offload": false,
+  "quantization": false,
+  "predictions_completed": 10,
+  "reason": "FP32 load retained ~8.49GB CUDA cache, reported free memory zero; long prediction observed at 177.86s. Retry will release only unused CUDA allocator cache, keeping FP32/CUDA-only."
+}

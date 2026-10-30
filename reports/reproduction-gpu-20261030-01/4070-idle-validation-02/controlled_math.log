@@ -1,0 +1,49 @@
+/home/lgh/.venvs/llamafactory/lib/python3.11/site-packages/torch/cuda/__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Checking locked model file: .gitattributes
+Checking locked model file: LICENSE
+Checking locked model file: README.md
+Checking locked model file: config.json
+Checking locked model file: configuration.json
+Checking locked model file: generation_config.json
+Checking locked model file: merges.txt
+Checking locked model file: model-00001-of-00002.safetensors
+Checking locked model file: model-00002-of-00002.safetensors
+Checking locked model file: model.safetensors.index.json
+Checking locked model file: tokenizer.json
+Checking locked model file: tokenizer_config.json
+Checking locked model file: vocab.json
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 88/311 [00:00<00:00, 870.72it/s]Loading weights:  57%|█████▋    | 178/311 [00:00<00:00, 886.39it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1279.26it/s]
+Model loaded; collecting validation evidence
+Starting sample: qwen_zero_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5500
+controlled_math qwen_zero_shot 1
+Starting sample: qwen_zero_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5582
+controlled_math qwen_zero_shot 2
+Starting sample: qwen_zero_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7267
+controlled_math qwen_zero_shot 3
+Starting sample: qwen_zero_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6322
+controlled_math qwen_zero_shot 4
+Starting sample: qwen_zero_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:597
+controlled_math qwen_zero_shot 5
+Starting sample: qwen_zero_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4889
+controlled_math qwen_zero_shot 6
+Starting sample: qwen_zero_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3713
+controlled_math qwen_zero_shot 7
+Starting sample: qwen_zero_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5053
+controlled_math qwen_zero_shot 8
+Starting sample: qwen_few_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5500
+controlled_math qwen_few_shot 9
+Starting sample: qwen_few_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5582
+controlled_math qwen_few_shot 10
+Starting sample: qwen_few_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7267
+controlled_math qwen_few_shot 11
+Starting sample: qwen_few_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6322
+controlled_math qwen_few_shot 12
+Starting sample: qwen_few_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:597
+controlled_math qwen_few_shot 13
+Starting sample: qwen_few_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4889
+controlled_math qwen_few_shot 14
+Starting sample: qwen_few_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3713
+controlled_math qwen_few_shot 15
+Starting sample: qwen_few_shot 1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5053
+controlled_math qwen_few_shot 16

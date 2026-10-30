@@ -1,6 +1,6 @@
 {
   "body_pages": 12,
-  "total_pages": 20,
+  "total_pages": 21,
   "body_page_shrink_factors": {
     "1": 1,
     "2": 1,
@@ -8,17 +8,15 @@
     "4": 1,
     "5": 1.0079617402551346,
     "6": 1.0257126764089242,
-    "7": 1.1033695946791091,
-    "8": 1.0227983436075556,
+    "7": 1.108685644534823,
+    "8": 1.0657154368086637,
     "9": 1,
     "10": 1,
     "11": 1.1102079859942886,
-    "12": 1.0926098611676103
+    "12": 1.1126127817588216
   },
-  "minimum_effective_body_font_pt": 9.187467689547383,
+  "minimum_effective_body_font_pt": 9.167609942315968,
   "visual_review": "passed",
-  "changed_pages_rendered_and_reviewed": [
-    12
-  ],
-  "unchanged_layout_pages_previously_reviewed": 19
+  "all_pages_reviewed": 21,
+  "latest_changed_page_reviewed": 7
 }

@@ -6,9 +6,13 @@
 
 ## 正式复现边界
 
-完整模型复现只推荐已核验的原环境（WSL2、Python3.11.17、torch2.14.1+cu130、原冻结依赖、支持BF16的GPU）；实测RTX4070 Laptop 8GB及宿主机16GiB，不能视作通用最低配置。普通CPU的默认命令只独立重算已有预测。其他CUDA／PyTorch兼容尝试没有达到一致性要求，不作为正式推荐。主结果必须逐种子、主表及逐样本一致，不能靠放宽标准认定通过。Qwen为贪心推理，计算栈的浮点运算与舍入差异可能改变高分token及后续输出；固定种子不能消除该差异。具体限制见[提交包README](docs/最终提交/20261029/README.md)。
+完整模型复现只推荐已核验的原环境（WSL2、Python3.11.17、torch2.14.1+cu130、原冻结依赖、支持BF16的GPU）；实测RTX4070 Laptop 8GB及宿主机16GiB，不能视作通用最低配置。普通CPU的默认命令只独立重算已有预测。其他CUDA／PyTorch兼容尝试没有达到一致性要求，不作为正式推荐。主结果以4070／4060两机实测为基准：TF-IDF、MacBERT逐样本一致，Qwen按硬件分别报告成绩与偏差；不把跨硬件逐token一致作为全部实验结论成立的前提。Qwen为贪心推理，计算栈的浮点运算与舍入差异可能改变高分token及后续输出；固定种子不能消除该差异。具体限制见[提交包README](docs/最终提交/20261029/README.md)。
 
 ## 下载后，一条命令核查主结果
+
+2026-10-30回传更新：RTX4060 Laptop已完成11次全量预测，TF-IDF及MacBERT逐样本一致；Qwen零样本72条、四样本7条、LoRA合计6条输出不同，按硬件分别报告。验证诊断中输入token、权重、buffer一致，已观察到首步得分及token排序变化；4060同机重复一致，受控后端未消除跨机分歧。主报告已将跨机差异与BF16局限纳入主结果；FP32仅有小规模试测，不替换正式成绩。见[定位与诊断](docs/reproduction/4060复现差异定位与诊断-20261030.md)。
+
+WSL安装注意：虚拟环境和LLaMA-Factory放在`/home/用户名/`等原生目录。预检会提前拒绝位于Windows挂载目录的环境或框架，并给出重建说明；提交包源码可留在Windows目录。若曾出现导入超时，按[提交包README的处理步骤](docs/最终提交/20261029/README.md#Windows挂载目录超时处理)重建环境，不直接移动虚拟环境。
 
 安装Python 3.11及以上（已测3.13.9），取得本分支：
 
@@ -114,11 +118,11 @@ GitHub自动核查配置位于.github/workflows/reproduction.yml，只运行无�
 报告、PDF与独立摘要使用同一份300字文本。GitHub Release镜像文件名为`20245726_liuguanghui_chinese_sentiment.zip`；内容及SHA256与下方中文命名的课程ZIP相同。下载镜像后按Release说明改为课程要求的中文名称提交。
 
 - [最终项目报告及三份贡献声明](docs/最终提交/20261029/README.md)，提交日期2026年10月29日。
-- [报告PDF](output/pdf/报告-20261029.pdf)：正文12页，附录8页；图片随PDF内嵌。
+- [报告PDF](output/pdf/报告-20261030.pdf)：正文12页，附录10页；图片随PDF内嵌。
 - [课程提交ZIP](deliverables/20245726_刘广徽_中文评论情感分析.zip)：根目录仅报告、摘要、README、src及三份个人声明。权重、录屏、数据集不入包。
 - 解压提交ZIP后执行`python src/run.py`重算主表；配置模型环境与资源后执行`python src/run.py --models --paths src/project/configs/reproduce-models.local.json`重新预测11个测试运行。
 - 新机回传：已有预测核查通过，模型预测因旧驱动失败；修复版本增加预检、完整依赖、缓存及下载校验。原机复验与组员新机验收分别留证。
 
-交互演示使用Cherry Studio连接本地服务，说明见[演示材料](docs/demo/README.md)。[演示录屏](https://pan.baidu.com/s/12nyNQJliIKabozmBmfuR-g?pwd=9vxp)，提取码`9vxp`，111.317秒。
+交互演示使用Cherry Studio连接本地服务，说明见[演示材料](docs/demo/README.md)。[演示录屏](https://pan.baidu.com/s/10l-SBqKrzkCp4hh3KQ8XAA?pwd=668w)，提取码`668w`，111.317秒。
 
 当前协作与交付入口为main，保留融合分支和原有提交历史；历史过程文档不进入课程ZIP。

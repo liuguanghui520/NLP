@@ -1,0 +1,49 @@
+{
+  "filename": "20245726_刘广徽_中文评论情感分析_演示.mp4",
+  "bytes": 15398737,
+  "tracks": [
+    {
+      "width": 1728.0,
+      "height": 1080.0,
+      "duration": {
+        "timescale": 15360,
+        "ticks": 1709568,
+        "seconds": 111.3
+      },
+      "handler": "vide",
+      "codec_fourcc": "avc1"
+    },
+    {
+      "width": 0.0,
+      "height": 0.0,
+      "duration": {
+        "timescale": 44100,
+        "ticks": 4910090,
+        "seconds": 111.33990929705216
+      },
+      "handler": "soun",
+      "codec_fourcc": "mp4a"
+    }
+  ],
+  "movie_duration": {
+    "timescale": 1000,
+    "ticks": 111317,
+    "seconds": 111.317
+  },
+  "has_video_track": true,
+  "has_audio_track": true,
+  "duration_seconds": 111.317,
+  "within_120_seconds": true,
+  "size_mb_decimal": 15.398737,
+  "sha256": "fe1a719a78b8112223bdad8bb78ff86ca707a07a6cc333bfd9cb56438a482daa",
+  "review_method": "Decoded sampled frames at 0,15,35,55,75,95,108 seconds; inspected 55/75 seconds at full resolution",
+  "sampled_frames_reviewed": 7,
+  "name_and_student_id_visible": true,
+  "visible_identity": "刘广徽 20245726",
+  "hard_example_visible": true,
+  "hard_example_type": "卫生与前台服务混合评价；住客评价与店家反馈",
+  "live_demo_evidence": "Cherry model selection and returned outputs visible, with existing service request logs",
+  "full_continuous_video_review": false,
+  "audio_listening": false,
+  "source_unchanged": true
+}

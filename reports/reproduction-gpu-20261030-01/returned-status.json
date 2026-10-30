@@ -1,0 +1,11 @@
+{
+  "status": "completed_with_differences",
+  "model_loading": true,
+  "inference": true,
+  "training": false,
+  "run_count": 11,
+  "n_per_run": 777,
+  "maximum_metric_difference": 0.020592020592020588,
+  "prediction_difference_count": 85,
+  "comparison": "each seed and method mean; frozen reference is not overwritten"
+}

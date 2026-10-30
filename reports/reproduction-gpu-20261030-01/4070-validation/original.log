@@ -1,0 +1,19 @@
+/home/lgh/.venvs/llamafactory/lib/python3.11/site-packages/torch/cuda/__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  16%|█▌        | 49/311 [00:00<00:00, 479.58it/s]Loading weights:  40%|███▉      | 123/311 [00:00<00:00, 622.53it/s]Loading weights:  60%|█████▉    | 186/311 [00:00<00:00, 564.00it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 804.04it/s]
+original qwen_zero_shot 1
+original qwen_zero_shot 2
+original qwen_zero_shot 3
+original qwen_zero_shot 4
+original qwen_zero_shot 5
+original qwen_zero_shot 6
+original qwen_zero_shot 7
+original qwen_zero_shot 8
+original qwen_few_shot 9
+original qwen_few_shot 10
+original qwen_few_shot 11
+original qwen_few_shot 12
+original qwen_few_shot 13
+original qwen_few_shot 14
+original qwen_few_shot 15
+original qwen_few_shot 16

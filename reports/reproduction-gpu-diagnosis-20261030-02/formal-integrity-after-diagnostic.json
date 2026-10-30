@@ -1,0 +1,24 @@
+{
+  "diagnostic_only": true,
+  "formal_files_modified": false,
+  "files": [
+    {
+      "file": "status.json",
+      "prior_evidence_sha256": "b6cb7faa5a6a7d1a3b851c68f8c1a848cab57bfd20120e897d76c10b0cb2cdf4",
+      "current_sha256": "b6cb7faa5a6a7d1a3b851c68f8c1a848cab57bfd20120e897d76c10b0cb2cdf4",
+      "match": true
+    },
+    {
+      "file": "metrics.json",
+      "prior_evidence_sha256": "251a06635eb58ed9bd837f03575a3fb69956aa20a7e4866e6acf73aa66e84fea",
+      "current_sha256": "251a06635eb58ed9bd837f03575a3fb69956aa20a7e4866e6acf73aa66e84fea",
+      "match": true
+    },
+    {
+      "file": "prediction-differences.jsonl",
+      "prior_evidence_sha256": "6bf5c9e9a682fe2d683fd12d0b3996fff108785175c7f85e6cd4038b41f7f1c5",
+      "current_sha256": "6bf5c9e9a682fe2d683fd12d0b3996fff108785175c7f85e6cd4038b41f7f1c5",
+      "match": true
+    }
+  ]
+}

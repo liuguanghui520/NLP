@@ -149,6 +149,8 @@ def run(root, paths, args):
         actual_model = model.engine.model if method=='qwen_lora' else model
         if hasattr(actual_model,'parameters'):
             state['total_parameters'] = sum(p.numel() for p in actual_model.parameters())
+            from src.common.runtime import runtime_snapshot
+            state['numerical_runtime'] = runtime_snapshot(torch, actual_model)
         if hasattr(actual_model,'generation_config'):
             state['model_generation_defaults'] = actual_model.generation_config.to_dict()
             state['explicit_call_overrides'] = dict(do_sample=False,max_new_tokens=8,repetition_penalty=1.0) if method=='qwen_lora' else dict(do_sample=False,num_beams=1,max_new_tokens=8,use_cache=True,pad_token_id=tok.pad_token_id or tok.eos_token_id)

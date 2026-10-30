@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "date": "2026-10-30",
+  "edition": "wsl-native-storage-20261030-01",
+  "archive_bytes": 1444746,
+  "archive_sha256": "129a6f6ec4ae54ab6eb7b1066dda47b22160697bf39aa1c9addc0e4699f2b5f8",
+  "software_checks_passed": 73,
+  "packaged_software_checks_passed": 56,
+  "real_wsl_storage_probe": "passed",
+  "frozen_47_inputs_unchanged": true,
+  "pdf_unchanged": true,
+  "all_manifest_hashes_verified": true,
+  "changed_zip_entries": [
+    "README.md",
+    "src/project/src/model_preflight.py",
+    "src/project/tests/test_preflight_storage.py",
+    "src/提交清单.json"
+  ],
+  "training": false,
+  "inference": false,
+  "release_status": "local_updated_not_uploaded",
+  "base_release_url": "https://github.com/liuguanghui520/NLP/releases/tag/course-submission-20261029-04",
+  "acceptance_threshold_unchanged": true,
+  "initial_windows_check": "failed due to restricted temporary-directory permissions and missing analysis dependencies; WSL full suite passed"
+}

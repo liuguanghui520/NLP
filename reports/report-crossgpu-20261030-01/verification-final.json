@@ -1,0 +1,23 @@
+{
+  "status": "passed_document_and_package_checks",
+  "date": "2026-10-30",
+  "edition": "cross-machine-study-20261030-01",
+  "archive_sha256": "8be0c3a2170305e8bf9aa70879632a204cfdfc04457885787a341f3036e791a2",
+  "archive_bytes": 1559713,
+  "pdf_body_pages": 12,
+  "pdf_total_pages": 21,
+  "pdf_visual_review": "passed",
+  "abstract_characters": 300,
+  "abstract_identical_in_report_standalone_pdf": true,
+  "readme_reproduction_command_blocks_unchanged": 8,
+  "frozen_47_inputs_unchanged": true,
+  "manifest_hashes_passed": true,
+  "result_basis": "Two-machine measured results; TF-IDF/MacBERT identical, Qwen per-hardware results included",
+  "legacy_exact_comparison_exit_behavior_unchanged": true,
+  "reference_predictions_overwritten": false,
+  "latest_formal_model_runs_added": false,
+  "fp32_full_test": false,
+  "additional_model_testing_stopped_at_user_request": true,
+  "fp32_probe_16_validation_samples_completed_before_stop": true,
+  "release_status": "local_updated_not_uploaded"
+}

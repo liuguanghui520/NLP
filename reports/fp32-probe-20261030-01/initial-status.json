@@ -1,0 +1,10 @@
+{
+  "status": "running",
+  "precision": "float32",
+  "split": "validation",
+  "training": false,
+  "formal_results_modified": false,
+  "cpu_offload": false,
+  "quantization": false,
+  "predictions_completed": 0
+}

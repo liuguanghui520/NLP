@@ -1,0 +1,233 @@
+{
+  "original": {
+    "n": 16,
+    "input_differences": 0,
+    "output_differences": 1,
+    "first_step_score_differences": 16,
+    "same_machine_all_steps_identical": 16,
+    "same_non_device_runtime": true,
+    "differing_sample": {
+      "method": "qwen_zero_shot",
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5500",
+      "reference_first_step": {
+        "step": 0,
+        "scores_sha256": "fb801ccfec43668e54df7369731abd224afaf633f521532f5c54da67416c86a7",
+        "score_dtype": "torch.float32",
+        "selected_token": 16,
+        "top10_ids": [
+          16,
+          100345,
+          15,
+          104210,
+          17,
+          18,
+          19,
+          23,
+          24,
+          101892
+        ],
+        "top10_scores": [
+          36.5,
+          36.25,
+          34.25,
+          28.375,
+          27.5,
+          27.25,
+          26.875,
+          26.625,
+          26.375,
+          26.25
+        ],
+        "top1_top2_margin": 0.25
+      },
+      "current_first_step": {
+        "step": 0,
+        "scores_sha256": "4e0f6b2aaf4f9dc1f25b5374b3963fe12bfc9640442c0c3eb0659b3b321cd097",
+        "score_dtype": "torch.float32",
+        "selected_token": 15,
+        "top10_ids": [
+          15,
+          100345,
+          16,
+          104210,
+          17,
+          18,
+          19,
+          23,
+          24,
+          101892
+        ],
+        "top10_scores": [
+          35.75,
+          35.5,
+          35.25,
+          27.875,
+          27.375,
+          27.125,
+          26.75,
+          26.5,
+          26.0,
+          25.875
+        ],
+        "top1_top2_margin": 0.25
+      },
+      "reference_raw": "1",
+      "current_raw": "0\n\n说明：评论整体表达了强烈的"
+    }
+  },
+  "controlled_flash": {
+    "n": 16,
+    "input_differences": 0,
+    "output_differences": 1,
+    "first_step_score_differences": 14,
+    "same_machine_all_steps_identical": 16,
+    "same_non_device_runtime": true,
+    "differing_sample": {
+      "method": "qwen_zero_shot",
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5500",
+      "reference_first_step": {
+        "step": 0,
+        "scores_sha256": "f9cec182a01740a300428c454d11ac2af7e0d5c8da172a133f7506644710b449",
+        "score_dtype": "torch.float32",
+        "selected_token": 100345,
+        "top10_ids": [
+          100345,
+          16,
+          15,
+          104210,
+          17,
+          18,
+          19,
+          23,
+          101892,
+          24
+        ],
+        "top10_scores": [
+          36.25,
+          35.75,
+          34.5,
+          28.625,
+          27.25,
+          27.25,
+          26.75,
+          26.75,
+          26.375,
+          26.25
+        ],
+        "top1_top2_margin": 0.5
+      },
+      "current_first_step": {
+        "step": 0,
+        "scores_sha256": "90f645337a5e95b58b2d2036ecdd6f176918b03a7baed4cd3c4037c46d03821a",
+        "score_dtype": "torch.float32",
+        "selected_token": 16,
+        "top10_ids": [
+          16,
+          100345,
+          15,
+          104210,
+          17,
+          18,
+          19,
+          23,
+          101892,
+          24
+        ],
+        "top10_scores": [
+          37.75,
+          35.5,
+          33.75,
+          28.125,
+          26.875,
+          26.625,
+          26.125,
+          26.0,
+          25.75,
+          25.625
+        ],
+        "top1_top2_margin": 2.25
+      },
+      "reference_raw": "根据评论内容，整体情感是**",
+      "current_raw": "1"
+    }
+  },
+  "controlled_math": {
+    "n": 16,
+    "input_differences": 0,
+    "output_differences": 1,
+    "first_step_score_differences": 14,
+    "same_machine_all_steps_identical": 16,
+    "same_non_device_runtime": true,
+    "differing_sample": {
+      "method": "qwen_zero_shot",
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5500",
+      "reference_first_step": {
+        "step": 0,
+        "scores_sha256": "855de856abe6e4fdaf92a808e6686de5c99105a44b2fb08f1811b6f903eabd3f",
+        "score_dtype": "torch.float32",
+        "selected_token": 15,
+        "top10_ids": [
+          15,
+          100345,
+          16,
+          104210,
+          18,
+          17,
+          19,
+          23,
+          101892,
+          24
+        ],
+        "top10_scores": [
+          36.5,
+          35.75,
+          33.75,
+          27.75,
+          26.75,
+          26.625,
+          26.5,
+          26.5,
+          26.25,
+          26.0
+        ],
+        "top1_top2_margin": 0.75
+      },
+      "current_first_step": {
+        "step": 0,
+        "scores_sha256": "17a7ec6541312bc8a204d3dc5b6a31e485586792efb9efb451940bfb61f816f3",
+        "score_dtype": "torch.float32",
+        "selected_token": 16,
+        "top10_ids": [
+          16,
+          100345,
+          15,
+          104210,
+          17,
+          18,
+          19,
+          23,
+          24,
+          101892
+        ],
+        "top10_scores": [
+          36.75,
+          36.0,
+          34.0,
+          28.25,
+          27.125,
+          27.0,
+          26.625,
+          26.5,
+          26.125,
+          26.125
+        ],
+        "top1_top2_margin": 0.75
+      },
+      "reference_raw": "0\n\n说明：评论整体表达了强烈的",
+      "current_raw": "1"
+    }
+  },
+  "incoming_zip_sha256": "082d56096f500c79c842d8509f84827474fb9f541af7406448b407145c5de763",
+  "status": "independently_verified",
+  "formal_acceptance_unchanged": true
+}

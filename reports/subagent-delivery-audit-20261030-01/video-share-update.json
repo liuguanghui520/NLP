@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-30",
+  "filename": "演示视频.mp4",
+  "share_url": "https://pan.baidu.com/s/10l-SBqKrzkCp4hh3KQ8XAA?pwd=668w",
+  "extraction_code": "668w",
+  "source": "User-provided replacement share",
+  "previous_share_url": "https://pan.baidu.com/s/12nyNQJliIKabozmBmfuR-g?pwd=9vxp",
+  "historical_share_checks_preserved": true,
+  "local_keyframe_review": "reports/subagent-delivery-audit-20261030-01/video-keyframe-review.json",
+  "new_share_web_check": "tool_could_not_open; not evidence of unavailability",
+  "new_share_download_performed": false
+}

@@ -1,0 +1,519 @@
+{
+  "first": "/home/yilin/nlp-course-repro-20261030/gpu-diagnostic-001",
+  "second": "/home/yilin/nlp-course-repro-20261030/gpu-diagnostic-002",
+  "profiles": {
+    "original": {
+      "n": 16,
+      "same_input_ids": 16,
+      "same_generated_ids": 16,
+      "same_first_step_scores": 16,
+      "same_all_score_steps": 16,
+      "same_model_files": true,
+      "same_buffers": true,
+      "samples": [
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3713",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4889",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5053",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5500",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5582",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:597",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6322",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7267",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3713",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4889",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1\n\n说明：评论整体表达了对",
+          "second_raw_output": "1\n\n说明：评论整体表达了对"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5053",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5500",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0\n\n说明：评论整体表达了强烈的",
+          "second_raw_output": "0\n\n说明：评论整体表达了强烈的"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5582",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:597",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6322",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7267",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0\n\n说明：评论中表达了强烈的",
+          "second_raw_output": "0\n\n说明：评论中表达了强烈的"
+        }
+      ]
+    },
+    "controlled_flash": {
+      "n": 16,
+      "same_input_ids": 16,
+      "same_generated_ids": 16,
+      "same_first_step_scores": 16,
+      "same_all_score_steps": 16,
+      "same_model_files": true,
+      "same_buffers": true,
+      "samples": [
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3713",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4889",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5053",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5500",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5582",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:597",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6322",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7267",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3713",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4889",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1\n\n说明：评论整体表达了对",
+          "second_raw_output": "1\n\n说明：评论整体表达了对"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5053",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5500",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5582",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:597",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6322",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7267",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0\n\n说明：评论中表达了强烈的",
+          "second_raw_output": "0\n\n说明：评论中表达了强烈的"
+        }
+      ]
+    },
+    "controlled_math": {
+      "n": 16,
+      "same_input_ids": 16,
+      "same_generated_ids": 16,
+      "same_first_step_scores": 16,
+      "same_all_score_steps": 16,
+      "same_model_files": true,
+      "same_buffers": true,
+      "samples": [
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3713",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4889",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5053",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5500",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5582",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:597",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6322",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_few_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7267",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:3713",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:4889",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1\n\n说明：评论整体表达了对",
+          "second_raw_output": "1\n\n说明：评论整体表达了对"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5053",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5500",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5582",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "1",
+          "second_raw_output": "1"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:597",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:6322",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0",
+          "second_raw_output": "0"
+        },
+        {
+          "method": "qwen_zero_shot",
+          "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:7267",
+          "same_input_ids": true,
+          "same_generated_ids": true,
+          "same_first_step_scores": true,
+          "same_all_score_steps": true,
+          "first_raw_output": "0\n\n说明：评论中表达了强烈的",
+          "second_raw_output": "0\n\n说明：评论中表达了强烈的"
+        }
+      ]
+    }
+  }
+}

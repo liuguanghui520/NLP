@@ -1,0 +1,57 @@
+{
+  "package": "C:\\Users\\LJYL0\\Downloads\\RTX4060复现差异诊断包_20261030.zip",
+  "package_sha256": "6a40e15ac7053d83d9688cc649e46a98d246936ed57cc331aa26cdecff4625ea",
+  "manifest_entries": 8,
+  "manifest_matches": 8,
+  "all_match": true,
+  "files": [
+    {
+      "path": "README.md",
+      "expected_sha256": "efdbb49e67dbca47a46f2240f11c170a60b8170f1a74cf412c68d11d371425cf",
+      "actual_sha256": "efdbb49e67dbca47a46f2240f11c170a60b8170f1a74cf412c68d11d371425cf",
+      "match": true
+    },
+    {
+      "path": "diagnose_gpu.py",
+      "expected_sha256": "a392681a0cac98f9925935dc65282b3a28f2a27e32aa50a214d364962f26aafd",
+      "actual_sha256": "a392681a0cac98f9925935dc65282b3a28f2a27e32aa50a214d364962f26aafd",
+      "match": true
+    },
+    {
+      "path": "reference-4070/controlled_flash.json",
+      "expected_sha256": "e60d85be07db6983e68e027c0f3a9332c9018d6a4c182db1106a3cb0f0b87a9c",
+      "actual_sha256": "e60d85be07db6983e68e027c0f3a9332c9018d6a4c182db1106a3cb0f0b87a9c",
+      "match": true
+    },
+    {
+      "path": "reference-4070/controlled_math.json",
+      "expected_sha256": "84c1f1df26724d2765e4a3c191fe98f6c3d2bdd7a8f99299cb1452960918b16d",
+      "actual_sha256": "84c1f1df26724d2765e4a3c191fe98f6c3d2bdd7a8f99299cb1452960918b16d",
+      "match": true
+    },
+    {
+      "path": "reference-4070/original.json",
+      "expected_sha256": "b6867a078ef1afef27611bdfaedb65aa05618108ad5945471d9b888f7b03dcbc",
+      "actual_sha256": "b6867a078ef1afef27611bdfaedb65aa05618108ad5945471d9b888f7b03dcbc",
+      "match": true
+    },
+    {
+      "path": "reference-4070/status.json",
+      "expected_sha256": "e3c45ee3dcb38d396a7c78b869ed1134e1653664b0b79d2d1d42770df615ef15",
+      "actual_sha256": "e3c45ee3dcb38d396a7c78b869ed1134e1653664b0b79d2d1d42770df615ef15",
+      "match": true
+    },
+    {
+      "path": "runtime_fingerprint.py",
+      "expected_sha256": "9051c64a1e4f81435f46ceee86f353962c13cbb6d9709b371a8f4c89ff978445",
+      "actual_sha256": "9051c64a1e4f81435f46ceee86f353962c13cbb6d9709b371a8f4c89ff978445",
+      "match": true
+    },
+    {
+      "path": "定位说明.md",
+      "expected_sha256": "ce3ddf4319f2eb725d477a209426086ee0c3ef87811cbb68b67eed4f668f71d7",
+      "actual_sha256": "ce3ddf4319f2eb725d477a209426086ee0c3ef87811cbb68b67eed4f668f71d7",
+      "match": true
+    }
+  ]
+}

@@ -48,6 +48,22 @@ def fetch(root, relative, expected, *, cache=None, prefix=""):
     return relative
 
 
+def model_execution_succeeded(status, returncode):
+    """Require explicit new-schema proof; historical status text is insufficient."""
+    if returncode != 0 or status.get('status') not in ('passed', 'completed_with_differences'):
+        return False
+    required = ('execution_complete', 'resources_verified', 'baseline_reference_match',
+                'execution_policy_passed', 'model_loading', 'inference')
+    if not all(status.get(key) is True for key in required):
+        return False
+    if status.get('run_count') != 11 or status.get('n_per_run') != 777:
+        return False
+    qwen, strict = status.get('qwen_reference_match'), status.get('strict_reference_match')
+    if not isinstance(qwen, bool) or not isinstance(strict, bool) or strict != qwen:
+        return False  # With matching classifiers, all-model agreement equals Qwen agreement.
+    return (status['status'] == 'passed') == strict
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--work-dir", help="New, empty directory outside the extracted submission")
@@ -124,11 +140,20 @@ def main(argv=None):
             receipt['model_loading'] = model_status.get('model_loading', False)
             if model_status.get('status') == 'completed_with_differences':
                 receipt.update(status='completed_with_differences', downloaded_input_count=len(items))
+                for key in ('execution_complete', 'resources_verified', 'baseline_reference_match',
+                            'qwen_reference_match', 'strict_reference_match', 'execution_policy_passed'):
+                    receipt[key] = model_status.get(key)
                 (work / 'submission-status.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-                print('All model runs completed with metric differences; see results/model-reproduction/metrics.json', flush=True)
-                return 1
-            if result.returncode or model_status.get('status') != 'passed':
+                succeeded = model_execution_succeeded(model_status, result.returncode)
+                print('Model outputs differ from the historical reference; full execution '
+                      + ('completed with matching classifiers. ' if succeeded else 'did not meet completion/classifier checks. ')
+                      + 'See results/model-reproduction/metrics.json and prediction-differences.jsonl', flush=True)
+                return 0 if succeeded else 1
+            if not model_execution_succeeded(model_status, result.returncode):
                 raise RuntimeError('Real-model reproduction failed: ' + model_status.get('error', 'see model-stderr.log'))
+            for key in ('execution_complete', 'resources_verified', 'baseline_reference_match',
+                        'qwen_reference_match', 'strict_reference_match', 'execution_policy_passed'):
+                receipt[key] = model_status[key]
         receipt.update(status="passed", downloaded_input_count=len(items))
         print("Real-model reproduction passed." if args.models else "Saved-prediction audit passed. This is not new model inference.", flush=True)
         code = 0

@@ -1,0 +1,12 @@
+{
+  "validation_samples": 16,
+  "raw_output_differences_from_frozen_validation": [
+    {
+      "method": "qwen_zero_shot",
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5500",
+      "reference": "根据评论内容，整体情感是**",
+      "new": "1"
+    }
+  ],
+  "diagnostic_only": true
+}

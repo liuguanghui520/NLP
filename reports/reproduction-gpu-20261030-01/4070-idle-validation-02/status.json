@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "timestamp": "2026-10-29T19:09:25.151382+00:00",
+  "runs": [
+    {
+      "profile": "original",
+      "returncode": 0,
+      "command": [
+        "/home/lgh/.venvs/llamafactory/bin/python",
+        "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/scripts/diagnose_gpu_reproduction.py",
+        "--work-root",
+        "/mnt/c/Users/lgh/Documents/ChatGPT/NLP",
+        "--output",
+        "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/reports/reproduction-gpu-20261030-01/4070-idle-validation-02",
+        "--child",
+        "original"
+      ]
+    },
+    {
+      "profile": "controlled_flash",
+      "returncode": 0,
+      "command": [
+        "/home/lgh/.venvs/llamafactory/bin/python",
+        "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/scripts/diagnose_gpu_reproduction.py",
+        "--work-root",
+        "/mnt/c/Users/lgh/Documents/ChatGPT/NLP",
+        "--output",
+        "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/reports/reproduction-gpu-20261030-01/4070-idle-validation-02",
+        "--child",
+        "controlled_flash"
+      ]
+    },
+    {
+      "profile": "controlled_math",
+      "returncode": 0,
+      "command": [
+        "/home/lgh/.venvs/llamafactory/bin/python",
+        "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/scripts/diagnose_gpu_reproduction.py",
+        "--work-root",
+        "/mnt/c/Users/lgh/Documents/ChatGPT/NLP",
+        "--output",
+        "/mnt/c/Users/lgh/Documents/ChatGPT/NLP/reports/reproduction-gpu-20261030-01/4070-idle-validation-02",
+        "--child",
+        "controlled_math"
+      ]
+    }
+  ],
+  "diagnostic_only": true,
+  "training": false,
+  "formal_inference": false,
+  "script_sha256": "a392681a0cac98f9925935dc65282b3a28f2a27e32aa50a214d364962f26aafd"
+}

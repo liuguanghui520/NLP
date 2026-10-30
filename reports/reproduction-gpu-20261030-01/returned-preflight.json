@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "python": "3.11.17 (main, Oct 21 2026, 17:46:53) [Clang 23.1.3 ]",
+  "executable": "/home/yilin/.venvs/nlp-course-repro-20261030-02/bin/python",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "errors": [],
+  "packages": {
+    "torch": "2.14.1",
+    "transformers": "5.8.0",
+    "peft": "0.18.1",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "jieba": "0.42.1",
+    "joblib": "1.6.0",
+    "psutil": "7.2.2",
+    "accelerate": "1.11.0",
+    "datasets": "4.0.0",
+    "trl": "0.24.0",
+    "torchdata": "0.11.0",
+    "sentencepiece": "0.2.2",
+    "modelscope": "1.40.2",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "huggingface_hub": "1.33.0",
+    "gradio": "5.50.0"
+  },
+  "model_loading": false,
+  "inference": false,
+  "training": false,
+  "storage": {
+    "wsl": true,
+    "paths": {
+      "virtual_environment": "/home/yilin/.venvs/nlp-course-repro-20261030-02",
+      "factory_root": "/home/yilin/LLaMA-Factory-nlp-20261030",
+      "project_root": "/home/yilin/nlp-course-repro-20261030/submission/src/project"
+    },
+    "windows_mounts": [],
+    "errors": [],
+    "warnings": []
+  },
+  "warnings": [],
+  "nvidia_smi": {
+    "returncode": 0,
+    "stdout": "NVIDIA GeForce RTX 4060 Laptop GPU, 621.01, 8188 MiB",
+    "stderr": ""
+  },
+  "torch_build": "2.14.1+cu130",
+  "torch_cuda": "13.0",
+  "cuda_available": true,
+  "bf16_matmul": [
+    [
+      2.0,
+      2.0
+    ],
+    [
+      2.0,
+      2.0
+    ]
+  ],
+  "factory_commit": "c683e59edd8f893abc5e1403184a1d0644817d2a",
+  "factory_import": {
+    "returncode": 0,
+    "stdout": "ChatModel import passed\n",
+    "stderr": "/home/yilin/.venvs/nlp-course-repro-20261030-02/lib/python3.11/site-packages/torch/cuda/__init__.py:68: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.\n  import pynvml  # type: ignore[import]\n"
+  },
+  "pip_check": {
+    "returncode": 0,
+    "stdout": "No broken requirements found.\n",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "n": 16,
+  "output_differences": [],
+  "first_step_score_differences": 0,
+  "diagnostic_only": true,
+  "concurrent_game_reported_for_attempt01": true,
+  "does_not_establish_unique_root_cause": true
+}

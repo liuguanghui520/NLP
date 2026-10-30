@@ -99,6 +99,26 @@ class PortableDownloadTests(unittest.TestCase):
 
 
 class PreflightAndStateTests(unittest.TestCase):
+    def complete_status(self, **changes):
+        status = dict(status='completed_with_differences', run_count=11, n_per_run=777,
+            model_loading=True, inference=True, execution_complete=True, resources_verified=True,
+            baseline_reference_match=True, qwen_reference_match=False, strict_reference_match=False,
+            execution_policy_passed=True)
+        status.update(changes)
+        return status
+
+    def test_explicit_model_completion_requires_both_proof_and_zero_exit(self):
+        status = self.complete_status()
+        self.assertTrue(entry.model_execution_succeeded(status, 0))
+        self.assertFalse(entry.model_execution_succeeded(status, 1))
+        self.assertFalse(entry.model_execution_succeeded({'status': 'completed_with_differences'}, 0))
+        for key in ('execution_complete', 'resources_verified', 'baseline_reference_match', 'execution_policy_passed'):
+            with self.subTest(key=key):
+                self.assertFalse(entry.model_execution_succeeded(self.complete_status(**{key: False}), 0))
+        for changes in ({'run_count': 10}, {'n_per_run': 776}, {'qwen_reference_match': None},
+                        {'status': 'failed'}, {'status': 'interrupted'}, {'strict_reference_match': True}):
+            self.assertFalse(entry.model_execution_succeeded(self.complete_status(**changes), 0))
+
     def test_old_driver_returns_specific_error_before_any_download(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -120,6 +140,17 @@ class PreflightAndStateTests(unittest.TestCase):
             self.assertFalse(result["model_loading"])
 
     def test_complete_but_different_is_not_recorded_as_infrastructure_failure(self):
+        self.run_model_wrapper_fixture(dict(status='completed_with_differences', run_count=11,
+            maximum_metric_difference=0.001, model_loading=True), 1, 1)
+
+    def test_new_complete_qwen_difference_returns_zero_and_keeps_difference_state(self):
+        self.run_model_wrapper_fixture(self.complete_status(maximum_metric_difference=.020592,
+            prediction_difference_count=85), 0, 0)
+
+    def test_forged_complete_flag_with_nonzero_process_exit_is_not_accepted(self):
+        self.run_model_wrapper_fixture(self.complete_status(), 1, 1)
+
+    def run_model_wrapper_fixture(self, model_status, child_code, expected_code):
         with tempfile.TemporaryDirectory() as directory:
             parent = Path(directory)
             source = parent / "source"
@@ -137,18 +168,18 @@ class PreflightAndStateTests(unittest.TestCase):
                 if "src.model_reproduction" in command:
                     output = work / "results/model-reproduction"
                     output.mkdir(parents=True)
-                    (output / "status.json").write_text(json.dumps(dict(
-                        status="completed_with_differences", run_count=11,
-                        maximum_metric_difference=0.001, model_loading=True)), encoding="utf-8")
-                    return subprocess.CompletedProcess(command, 1)
+                    (output / "status.json").write_text(json.dumps(model_status), encoding="utf-8")
+                    return subprocess.CompletedProcess(command, child_code)
                 return subprocess.CompletedProcess(command, 0)
             with patch.object(entry, "ROOT", source), patch.object(entry.subprocess, "run", side_effect=execute), patch(
                     "src.model_preflight.inspect_environment", return_value={"status": "passed"}):
                 code = entry.main(["--models", "--paths", str(specification), "--work-dir", str(work)])
             result = json.loads((work / "submission-status.json").read_text())
-            self.assertEqual(code, 1)
+            self.assertEqual(code, expected_code)
             self.assertEqual(result["status"], "completed_with_differences")
             self.assertEqual(result["model_result"]["run_count"], 11)
+            self.assertEqual(result['teacher_acceptance'], 'not_recorded')
+            self.assertEqual(result['model_result'], model_status)
 
 
 if __name__ == "__main__":

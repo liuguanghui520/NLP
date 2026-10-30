@@ -1,0 +1,40 @@
+{
+  "native_environment": {
+    "wsl": true,
+    "paths": {
+      "virtual_environment": "/home/lgh/.venvs/llamafactory",
+      "factory_root": "/home/lgh/LLaMA-Factory",
+      "project_root": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP"
+    },
+    "windows_mounts": [
+      "project_root"
+    ],
+    "errors": [],
+    "warnings": [
+      "提交包位于Windows挂载目录，可继续；若读取缓慢，可复制源码到WSL的/home目录。"
+    ]
+  },
+  "mounted_environment": {
+    "wsl": true,
+    "paths": {
+      "virtual_environment": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP",
+      "factory_root": "/home/lgh/LLaMA-Factory",
+      "project_root": "/mnt/c/Users/lgh/Documents/ChatGPT/NLP"
+    },
+    "windows_mounts": [
+      "virtual_environment",
+      "project_root"
+    ],
+    "errors": [
+      "virtual_environment位于Windows挂载目录：/mnt/c/Users/lgh/Documents/ChatGPT/NLP。这可能导致导入超时。请保留旧环境，在WSL原生/home目录重新创建虚拟环境、重新获取固定版本框架并安装冻结依赖；不要直接剪切虚拟环境。激活新环境并更新路径JSON后重新预检，详见README的挂载目录超时处理。"
+    ],
+    "warnings": [
+      "提交包位于Windows挂载目录，可继续；若读取缓慢，可复制源码到WSL的/home目录。"
+    ]
+  },
+  "actual_windows_mount_detected": true,
+  "status": "passed",
+  "model_loading": false,
+  "inference": false,
+  "training": false
+}

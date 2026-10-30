@@ -1,0 +1,12 @@
+{
+  "before": {
+    "allocated": 6882300928,
+    "reserved": 8485076992,
+    "free": 0
+  },
+  "after": {
+    "allocated": 6882300928,
+    "reserved": 8172601344,
+    "free": 0
+  }
+}

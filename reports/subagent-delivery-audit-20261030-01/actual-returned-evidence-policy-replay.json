@@ -1,0 +1,32 @@
+{
+  "status": "passed_offline_policy_replay",
+  "historical_evidence_sha256": "d96eb6d45c2b0431bb579713190b537c6a5bbc6e8ca624219727e5f28fce1494",
+  "historical_status_preserved": {
+    "status": "completed_with_differences",
+    "model_loading": true,
+    "inference": true,
+    "training": false,
+    "run_count": 11,
+    "n_per_run": 777,
+    "maximum_metric_difference": 0.020592020592020588,
+    "prediction_difference_count": 85,
+    "comparison": "each seed and method mean; frozen reference is not overwritten"
+  },
+  "historical_exit_code_from_returned_report": 1,
+  "new_policy_would_return": 0,
+  "new_policy": {
+    "execution_complete": true,
+    "resources_verified": true,
+    "baseline_reference_match": true,
+    "qwen_reference_match": false,
+    "strict_reference_match": false,
+    "execution_policy_passed": true,
+    "teacher_acceptance": "not_recorded"
+  },
+  "actual_predictions_recomputed": 8547,
+  "actual_difference_rows": 85,
+  "resource_verification_assumption": "Returned full-run resource/hash verification evidence; models not reloaded by this audit",
+  "new_model_run_performed": false,
+  "teacher_acceptance": "not_recorded",
+  "historical_files_modified": false
+}

@@ -164,12 +164,13 @@ def render(source, target, font_path):
     for n,page in enumerate(pages,1):
         story.append(BodyPage(parse(page),width,pageh-87,n,scales));story.append(PageBreak())
     for n,section in enumerate(appendix.split('<!-- PAGEBREAK -->')):
-        if n:story.append(Spacer(1,16))
+        if n:
+            story.append(PageBreak() if section.lstrip().startswith('# 附录G') else Spacer(1,16))
         story.extend(parse(section))
     def decoration(canvas,doc):
         canvas.saveState();canvas.setFont('CN',8)
         canvas.setFillColor(colors.HexColor('#537085'))
-        canvas.drawString(38,pageh-24,'自然语言处理课程项目 | 中文酒店评论情感分析 | 2026-10-29')
+        canvas.drawString(38,pageh-24,'自然语言处理课程项目 | 中文酒店评论情感分析 | 2026-10-30')
         canvas.drawRightString(pagew-38,23,f'{"正文" if doc.page<=12 else "附录"} · {doc.page if doc.page<=12 else doc.page-12}')
         canvas.restoreState()
     target.parent.mkdir(parents=True,exist_ok=True)

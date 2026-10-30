@@ -1,0 +1,124 @@
+{
+  "diagnostic_status": "completed",
+  "diagnostic_only": true,
+  "formal_results_modified": false,
+  "input_package_sha256": "6a40e15ac7053d83d9688cc649e46a98d246936ed57cc331aa26cdecff4625ea",
+  "input_manifest": {
+    "entries": 8,
+    "matches": 8,
+    "passed": true
+  },
+  "runs": {
+    "first": {
+      "directory": "/home/yilin/nlp-course-repro-20261030/gpu-diagnostic-001",
+      "status": "completed",
+      "return_codes": [
+        0,
+        0,
+        0
+      ],
+      "elapsed_seconds": 54.963,
+      "diagnostic_predictions": 48
+    },
+    "same_machine_repeat": {
+      "directory": "/home/yilin/nlp-course-repro-20261030/gpu-diagnostic-002",
+      "status": "completed",
+      "return_codes": [
+        0,
+        0,
+        0
+      ],
+      "elapsed_seconds": 56.077,
+      "diagnostic_predictions": 48
+    }
+  },
+  "cross_gpu": {
+    "reference_gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "reference_multiprocessors": 36,
+    "current_gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "current_multiprocessors": 24,
+    "same_compute_capability": [
+      8,
+      9
+    ],
+    "non_device_runtime_fields_match": true,
+    "model_files_match": true,
+    "buffer_fingerprints_match": true,
+    "profiles": {
+      "original": {
+        "n": 16,
+        "input_differences": 0,
+        "output_differences": 1,
+        "first_step_score_differences": 16,
+        "historical_validation_raw_matches": 15,
+        "historical_validation_parsed_matches": 16
+      },
+      "controlled_flash": {
+        "n": 16,
+        "input_differences": 0,
+        "output_differences": 1,
+        "first_step_score_differences": 14,
+        "historical_validation_raw_matches": 15,
+        "historical_validation_parsed_matches": 15
+      },
+      "controlled_math": {
+        "n": 16,
+        "input_differences": 0,
+        "output_differences": 1,
+        "first_step_score_differences": 14,
+        "historical_validation_raw_matches": 15,
+        "historical_validation_parsed_matches": 15
+      }
+    },
+    "only_output_difference": {
+      "method": "qwen_zero_shot",
+      "sample_id": "1d414b9c65caf3a836abdb4efded621968502ad3338e1a9d885ae131c86083f0:5500",
+      "true_label": 0,
+      "first_different_generated_step": 0,
+      "original_4070_raw_output": "1",
+      "original_4060_raw_output": "0\n\n说明：评论整体表达了强烈的",
+      "original_4070_parsed_label": 1,
+      "original_4060_parsed_label": null,
+      "original_4070_first_token": 16,
+      "original_4060_first_token": 15,
+      "original_4070_top1_top2_margin": 0.25,
+      "original_4060_top1_top2_margin": 0.25
+    }
+  },
+  "same_machine_repeatability": {
+    "original": {
+      "n": 16,
+      "same_input_ids": 16,
+      "same_generated_ids": 16,
+      "same_first_step_scores": 16,
+      "same_all_score_steps": 16
+    },
+    "controlled_flash": {
+      "n": 16,
+      "same_input_ids": 16,
+      "same_generated_ids": 16,
+      "same_first_step_scores": 16,
+      "same_all_score_steps": 16
+    },
+    "controlled_math": {
+      "n": 16,
+      "same_input_ids": 16,
+      "same_generated_ids": 16,
+      "same_first_step_scores": 16,
+      "same_all_score_steps": 16
+    }
+  },
+  "confirmed": [
+    "All three diagnostic profiles completed without timeout or OOM.",
+    "Input token IDs, model file identities, numerical buffer fingerprints, and non-device runtime fields match across GPUs.",
+    "The 4060 produces stable, repeatable outputs across two independent runs.",
+    "Cross-GPU score tensors differ even when the generated token remains the same.",
+    "The only output difference is a first-step ranking reversal on a low-margin zero-shot validation sample.",
+    "Controlled Flash and Math profiles reduce the number of score-different samples from 16 to 14 but do not remove the output difference."
+  ],
+  "not_confirmed": [
+    "The exact kernel, driver-version, or hardware-scale factor responsible for the score difference.",
+    "That the controlled profiles are a valid full-model fix.",
+    "That this small validation diagnostic changes the prior strict formal result."
+  ]
+}

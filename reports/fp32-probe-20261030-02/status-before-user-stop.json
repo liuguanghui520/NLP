@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "precision": "float32",
+  "split": "validation",
+  "training": false,
+  "formal_results_modified": false,
+  "cpu_offload": false,
+  "quantization": false,
+  "predictions_completed": 16,
+  "load_seconds": 5.431110078000017,
+  "wall_seconds": 82.5597019,
+  "peak_allocated_bytes": 8438129152,
+  "peak_reserved_bytes": 8485076992,
+  "timing_scope": "validation probe including cold predictions; not formal 20/200 benchmark"
+}

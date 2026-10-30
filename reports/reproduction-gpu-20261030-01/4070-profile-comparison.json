@@ -1,0 +1,17 @@
+{
+  "original": {
+    "n": 16,
+    "raw_output_differences_from_original": 0,
+    "first_step_score_differences_from_original": 0
+  },
+  "controlled_flash": {
+    "n": 16,
+    "raw_output_differences_from_original": 1,
+    "first_step_score_differences_from_original": 16
+  },
+  "controlled_math": {
+    "n": 16,
+    "raw_output_differences_from_original": 1,
+    "first_step_score_differences_from_original": 16
+  }
+}

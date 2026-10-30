@@ -5,6 +5,7 @@ Run only when explicitly selecting --models. No training or test-based selection
 import argparse
 from collections import defaultdict
 import json
+import math
 from pathlib import Path
 import shutil
 import statistics
@@ -116,6 +117,41 @@ def reference_matches(maximum_metric_difference, prediction_difference_count):
     return maximum_metric_difference <= 1e-12 and prediction_difference_count == 0
 
 
+def completion_policy(records, prediction_differences, resources_verified):
+    """Separate successful execution from exact numerical agreement.
+
+    Qwen differences are observations, never rewritten reference scores. The
+    six classifier runs must still match, and incomplete/duplicate jobs cannot
+    qualify as a completed model reproduction.
+    """
+    keys = ('macro_f1', 'accuracy', 'weighted_f1', 'invalid_rate')
+    identities = [(r.get('method'), r.get('seed')) for r in records]
+    by_run = {r.get('run_id'): r.get('method') for r in records}
+    coverage = (len(identities) == len(jobs()) and len(set(identities)) == len(jobs())
+                and set(identities) == set(jobs()) and len(by_run) == len(records)
+                and None not in by_run)
+    valid_rows = all(r.get('complete') is True and r.get('metrics', {}).get('n') == 777
+                     and all(math.isfinite(r.get('metrics', {}).get(k, float('nan')))
+                             and math.isfinite(r.get('metric_differences', {}).get(k, float('nan')))
+                             for k in keys) for r in records)
+    known_differences = all(d.get('run_id') in by_run for d in prediction_differences)
+    complete = resources_verified is True and coverage and valid_rows and known_differences
+
+    def group_matches(methods):
+        subset = [r for r in records if r.get('method') in methods]
+        return complete and all(abs(r['metric_differences'][k]) <= 1e-12
+                                for r in subset for k in keys) and not any(
+            by_run[d['run_id']] in methods for d in prediction_differences)
+
+    baseline = group_matches({'tfidf', 'bert'})
+    qwen = group_matches({'qwen_lora', 'qwen_zero_shot', 'qwen_few_shot'})
+    strict = baseline and qwen
+    return dict(execution_complete=complete, resources_verified=resources_verified is True,
+                baseline_reference_match=baseline, qwen_reference_match=qwen,
+                strict_reference_match=strict, execution_policy_passed=complete and baseline,
+                teacher_acceptance='not_recorded')
+
+
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--specification',type=Path,required=True)
@@ -126,6 +162,7 @@ def main(argv=None):
     output.mkdir(parents=True,exist_ok=False)
     completed=[]
     active_run=None
+    resources_verified=False
     save(output/'status.json',dict(status='preparing',inference=True,training=False))
     try:
         from src.model_preflight import inspect_environment
@@ -134,6 +171,7 @@ def main(argv=None):
         if check['status']!='passed':
             raise RuntimeError('Model environment preflight failed: '+'; '.join(check['errors']))
         prepare(root,load(args.specification),args.download_prefix)
+        resources_verified=True
         references={(item['method'],item.get('seed')):item for item in rows(root/'results/run_index.jsonl') if item['split']=='test'}
         prediction_differences=[]
         for method,seed in jobs():
@@ -147,14 +185,22 @@ def main(argv=None):
             result=load(root/'results/local'/run_id/'metrics.json')
             if not result['complete']:raise ValueError(f'Incomplete prediction: {run_id}')
             reference=references[(method,seed)]
+            original_rows=rows(root/'results/predictions'/(reference['run_id']+'.jsonl'))
+            predictions=rows(root/'results/local'/run_id/'predictions.jsonl')
+            if (len(predictions)!=777 or len(original_rows)!=777
+                    or len({r['sample_id'] for r in predictions})!=777
+                    or [r['sample_id'] for r in predictions]!=[r['sample_id'] for r in original_rows]
+                    or any(a['true_label']!=b['true_label'] for a,b in zip(predictions,original_rows))):
+                raise ValueError(f'Prediction cardinality, IDs/order or truth mismatch: {run_id}')
             delta={key:result['metrics'][key]-reference['metrics'][key] for key in ('macro_f1','accuracy','weighted_f1','invalid_rate')}
             completed.append(dict(method=method,seed=seed,run_id=run_id,metrics=result['metrics'],
+                                  complete=result['complete'],
                                   reference_run_id=reference['run_id'],reference_metrics=reference['metrics'],metric_differences=delta))
-            original={item['sample_id']:item for item in rows(root/'results/predictions'/(reference['run_id']+'.jsonl'))}
-            for item in rows(root/'results/local'/run_id/'predictions.jsonl'):
+            original={item['sample_id']:item for item in original_rows}
+            for item in predictions:
                 old=original[item['sample_id']]
                 if item['parsed_label']!=old['parsed_label'] or item['raw_output']!=old['raw_output']:
-                    prediction_differences.append(dict(run_id=run_id,reference_run_id=reference['run_id'],
+                    prediction_differences.append(dict(run_id=run_id,method=method,reference_run_id=reference['run_id'],
                         sample_id=item['sample_id'],true_label=item['true_label'],
                         reference_label=old['parsed_label'],new_label=item['parsed_label'],
                         reference_raw_output=old['raw_output'],new_raw_output=item['raw_output']))
@@ -166,17 +212,22 @@ def main(argv=None):
         differences.extend(abs(value) for item in completed for value in item['metric_differences'].values())
         maximum=max(differences)
         matched=reference_matches(maximum,len(prediction_differences))
+        policy=completion_policy(completed,prediction_differences,resources_verified)
+        if not policy['execution_complete']:
+            raise ValueError('Full model job coverage, finite metrics or resource verification failed')
         save(output/'status.json',dict(status='passed' if matched else 'completed_with_differences',
               model_loading=True,
               inference=True,training=False,run_count=len(completed),n_per_run=777,
               maximum_metric_difference=maximum,prediction_difference_count=len(prediction_differences),
-              comparison='each seed and method mean; frozen reference is not overwritten'))
-        return 0 if matched else 1
+              comparison='each seed and method mean; frozen reference is not overwritten',**policy))
+        return 0 if policy['execution_policy_passed'] else 1
     except BaseException as error:
         save(output/'status.json',dict(status='interrupted' if isinstance(error,KeyboardInterrupt) else 'failed',
               error=str(error),completed=completed,active_run=active_run,
               model_loading=bool(completed) or (active_run is not None and (root/'results/local'/active_run/'config.json').exists()),
-              model_loading_attempted=active_run is not None,inference=True,training=False))
+              model_loading_attempted=active_run is not None,inference=True,training=False,
+              execution_complete=False,resources_verified=resources_verified,
+              execution_policy_passed=False,teacher_acceptance='not_recorded'))
         raise
 
 

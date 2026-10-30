@@ -1,0 +1,12 @@
+{
+  "status": "interrupted",
+  "reason": "controlled_flash took over 8 minutes with only two samples completed; user later confirmed gaming during diagnostic; no exclusive root cause attribution",
+  "original_completed": true,
+  "controlled_flash_completed": false,
+  "controlled_math_started": false,
+  "processes_verified_and_stopped": [
+    12,
+    171
+  ],
+  "source_snapshot": "attempt01-diagnostic-source.py"
+}

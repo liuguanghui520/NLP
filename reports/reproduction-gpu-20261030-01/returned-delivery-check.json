@@ -1,0 +1,14 @@
+{
+  "verified_at": "2026-10-30T02:42:08.6473014+08:00",
+  "package": "C:\\Users\\LJYL0\\Desktop\\2\\repro_20245726_20261030\\本机独立复现证据包_20245726_20261030_final.zip",
+  "package_bytes": 2600905,
+  "package_sha256": "d96eb6d45c2b0431bb579713190b537c6a5bbc6e8ca624219727e5f28fce1494",
+  "extraction_verified": true,
+  "extracted_files": 378,
+  "manifest_hash_failures": 0,
+  "inventory_differences": 0,
+  "original_submission": "C:\\Users\\LJYL0\\Desktop\\2\\20245726_刘广徽_中文评论情感分析.zip",
+  "original_submission_bytes": 1444746,
+  "original_submission_sha256_after": "129a6f6ec4ae54ab6eb7b1066dda47b22160697bf39aa1c9addc0e4699f2b5f8",
+  "strict_result_passed": false
+}

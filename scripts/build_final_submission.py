@@ -28,7 +28,7 @@ def build(output):
     output.mkdir(parents=True,exist_ok=False)
     stage=output/NAME
     stage.mkdir()
-    for source,target in [(ROOT/'output/pdf/报告-20261029.pdf','报告.pdf'),
+    for source,target in [(ROOT/'output/pdf/报告-20261030.pdf','报告.pdf'),
                           (FINAL/'项目摘要.md','项目摘要.md'),(FINAL/'README.md','README.md')]:
         shutil.copy2(source,stage/target)
     for path in sorted(FINAL.glob('贡献声明_*_*.md')):shutil.copy2(path,stage/path.name)
@@ -51,7 +51,8 @@ def build(output):
     for name in ('reproduce.py','submission_reproduce.py','requirements.analysis.lock','requirements.integration.lock','requirements.integration.txt'):
         shutil.copy2(ROOT/name,project/name)
     (project/'artifacts').mkdir()
-    for name in ('lora-lock.json','evaluation-freeze.json','reproduction-downloads.json','qwen-prompt-model-lock.json'):
+    for name in ('lora-lock.json','evaluation-freeze.json','reproduction-downloads.json','qwen-prompt-model-lock.json',
+                 'cross-machine-study-20261030.json'):
         shutil.copy2(ROOT/'artifacts'/name,project/'artifacts'/name)
     (stage/'src/run.py').write_text('''"""One command entry for saved-result or real-model reproduction."""
 from pathlib import Path
@@ -63,10 +64,10 @@ if __name__=='__main__':
 ''',encoding='utf-8')
     (stage/'src/一键复现.cmd').write_text('@echo off\r\npython "%~dp0run.py" %*\r\nexit /b %errorlevel%\r\n',encoding='utf-8')
     manifest={
-        'date':'2026-10-29','status':'submission_edition','edition':'reproduction-boundaries-20261029-01','entry':'python src/run.py',
+        'date':'2026-10-30','status':'submission_edition','edition':'audited-delivery-20261030-02','entry':'python src/run.py',
         'model_entry':'python src/run.py --models --paths src/project/configs/reproduce-models.local.json',
         'data_and_weights_and_video_in_zip':False,'files':{},
-        'new_machine_reproduction_status':'saved_prediction_audit_passed_real_models_blocked_on_returned_machine',
+        'new_machine_reproduction_status':'4070 and 4060 completed 11 full runs each; TF-IDF/MacBERT identical, Qwen hardware-related differences reported as experiment results',
         'signature_representation':'typed member names entered at the group leader request; no simulated handwriting'}
     for path in sorted(stage.rglob('*')):
         if path.is_file():manifest['files'][path.relative_to(stage).as_posix()]=hashlib.sha256(path.read_bytes()).hexdigest()

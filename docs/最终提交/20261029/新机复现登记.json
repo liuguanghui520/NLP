@@ -1,23 +1,50 @@
 {
-  "date": "2026-10-29",
-  "status": "partial_saved_prediction_audit_passed_models_blocked",
-  "source": "User-supplied reproduction evidence ZIP; replaces the earlier group-leader completion statement",
-  "evidence": "reports/reproduction-repair/20261029-01/returned-evidence/reproduction-summary.json",
-  "saved_predictions": {
-    "status": "passed",
-    "input_count": 47,
-    "test_runs": 11,
-    "n_per_run": 777,
-    "max_metric_difference": 0.0
+  "date": "2026-10-30",
+  "status": "both_hosts_full_inference_completed_hardware_differences_reported",
+  "expected_runs_per_host": 11,
+  "n_per_run": 777,
+  "saved_prediction_audit": "passed",
+  "reference_4070": {
+    "status": "passed_exact_reference_comparison",
+    "completed_runs": 11,
+    "prediction_differences": 0,
+    "evidence": "results/reproduction/repaired-models-20261029-01/submission-status.json"
   },
-  "real_models_on_teammate_machine": {
-    "status": "failed",
-    "completed_runs": 0,
-    "expected_runs": 11,
-    "driver": "537.70",
-    "driver_cuda_support": "12.2",
-    "torch_cuda_build": "13.0",
-    "reason": "CUDA initialization failed before model loading"
+  "reproduced_4060": {
+    "status": "completed_with_differences",
+    "completed_runs": 11,
+    "prediction_differences": 85,
+    "parsed_label_differences": 61,
+    "historical_exit_code": 1,
+    "evidence": "reports/reproduction-gpu-20261030-01/incoming-audit.json"
   },
-  "repair": "See docs/reproduction/复现失败定位与修复-20261029.md; new-machine driver update and a fresh full-model run are required"
+  "numerical_diagnostic": "reports/reproduction-gpu-diagnosis-20261030-02/independent-verification.json",
+  "new_exit_policy_validation": "reports/subagent-delivery-audit-20261030-01/actual-returned-evidence-policy-replay.json",
+  "new_policy_checked_without_model_rerun": true,
+  "teacher_acceptance": "not_recorded",
+  "historical_events": [
+    {
+      "date": "2026-10-29",
+      "status": "partial_saved_prediction_audit_passed_models_blocked",
+      "source": "User-supplied reproduction evidence ZIP; replaces the earlier group-leader completion statement",
+      "evidence": "reports/reproduction-repair/20261029-01/returned-evidence/reproduction-summary.json",
+      "saved_predictions": {
+        "status": "passed",
+        "input_count": 47,
+        "test_runs": 11,
+        "n_per_run": 777,
+        "max_metric_difference": 0.0
+      },
+      "real_models_on_teammate_machine": {
+        "status": "failed",
+        "completed_runs": 0,
+        "expected_runs": 11,
+        "driver": "537.70",
+        "driver_cuda_support": "12.2",
+        "torch_cuda_build": "13.0",
+        "reason": "CUDA initialization failed before model loading"
+      },
+      "repair": "See docs/reproduction/复现失败定位与修复-20261029.md; new-machine driver update and a fresh full-model run are required"
+    }
+  ]
 }

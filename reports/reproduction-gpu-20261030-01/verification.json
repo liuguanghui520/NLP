@@ -1,0 +1,31 @@
+{
+  "status": "engineering_checks_passed_cross_gpu_result_unresolved",
+  "date": "2026-10-30",
+  "edition": "gpu-evidence-20261030-01",
+  "archive_sha256": "3ee0fc7b33310ede179a6ffbb4ae1c764802e5d96a625df7aa284914e3162e6b",
+  "archive_bytes": 1451506,
+  "software_checks_passed": 78,
+  "packaged_software_checks_passed": 61,
+  "pdf_unchanged": true,
+  "frozen_47_inputs_unchanged": true,
+  "manifest_verified": true,
+  "changed_zip_entries": [
+    "README.md",
+    "src/project/scripts/diagnose_gpu_reproduction.py",
+    "src/project/src/adapters/inference.py",
+    "src/project/src/common/runtime.py",
+    "src/project/tests/test_gpu_diagnostic.py",
+    "src/提交清单.json"
+  ],
+  "formal_predictions_modified": false,
+  "formal_inference_rerun": false,
+  "training": false,
+  "returned_4060_runs": 11,
+  "returned_n_per_run": 777,
+  "returned_prediction_differences": 85,
+  "returned_label_differences": 61,
+  "returned_strict_result": "completed_with_differences",
+  "maximum_metric_difference": 0.020592020592020588,
+  "diagnostic_status": "4070 comparison in progress; awaiting 4060 diagnostic",
+  "release_status": "local_updated_not_uploaded"
+}

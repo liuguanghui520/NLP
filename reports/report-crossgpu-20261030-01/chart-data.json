@@ -1,0 +1,42 @@
+[
+  {
+    "method": "tfidf",
+    "label": "TF-IDF",
+    "reference_macro_f1": 0.8610404578332407,
+    "reproduced_macro_f1": 0.8610404578332407,
+    "delta_pp": 0.0,
+    "output_differences": 0
+  },
+  {
+    "method": "bert",
+    "label": "MacBERT",
+    "reference_macro_f1": 0.9151823475962212,
+    "reproduced_macro_f1": 0.9151823475962212,
+    "delta_pp": 0.0,
+    "output_differences": 0
+  },
+  {
+    "method": "qwen_zero_shot",
+    "label": "Qwen零样本",
+    "reference_macro_f1": 0.6255889395226694,
+    "reproduced_macro_f1": 0.6438018909929022,
+    "delta_pp": 1.821295147023283,
+    "output_differences": 72
+  },
+  {
+    "method": "qwen_few_shot",
+    "label": "Qwen四样本",
+    "reference_macro_f1": 0.7610490182055945,
+    "reproduced_macro_f1": 0.7592737988416673,
+    "delta_pp": -0.17752193639271052,
+    "output_differences": 7
+  },
+  {
+    "method": "qwen_lora",
+    "label": "Qwen LoRA",
+    "reference_macro_f1": 0.9111601981888208,
+    "reproduced_macro_f1": 0.9092532506841977,
+    "delta_pp": -0.19069475046230577,
+    "output_differences": 6
+  }
+]
